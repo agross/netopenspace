@@ -1,0 +1,43 @@
+body {
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+body form {
+	width: 937px;
+	margin: 0 auto;
+}
+
+#HeaderDiv, #ContainerDiv, #FooterDiv {
+	clear: both;
+}
+
+#ContainerDiv, #FooterDiv .content {
+	padding: 1em 1em;
+}
+
+#HeaderDiv {
+	padding-top: 6px;
+}
+
+#ContainerDiv {
+	padding-bottom: 2em;
+}
+
+#SidebarDiv {
+	float: left;
+	width: 200px;
+	overflow: hidden;
+}
+
+#MainDiv {
+	margin-left: 200px;
+}
+
+#FooterDiv {
+	padding-bottom: 6px;
+}
+
+#FooterDiv .content {
+	padding-bottom: 2em;
+}

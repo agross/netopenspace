@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd">
+	<!--
+	Rename this file to local.properties and override properties
+	specified in default.properties like this.
+
+	Please don't check in local.properties afterwards as it is
+	*your* personal configuration file.
+	-->
+	<!-- <property name="test.results"
+			  value="my-test-results" /> -->
+</project>

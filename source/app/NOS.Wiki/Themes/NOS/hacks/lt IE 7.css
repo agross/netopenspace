@@ -1,0 +1,31 @@
+﻿body form {
+	background-color: #AFAAA6;
+}
+
+.clearfix {
+	font-size: 0;
+}
+
+#HeaderDiv {
+	overflow: hidden;
+}
+/*
+#HeaderDiv .basictab ul.submenu {
+	behavior: expression(this.firstChild.style.marginTop = "-22px");
+}*/
+
+#PageListTable, #FileListTable, #RevisionListTable {
+	width: 99%;
+}
+
+#SearchControlsDiv input {
+	vertical-align: middle;
+}
+
+#FooterDiv {
+	padding-bottom: 5px;
+}
+
+#PageContentDiv a.copy-code {
+	margin-right: 1.6em;
+}

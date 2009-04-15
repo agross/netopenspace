@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /AllPages.aspx
+Disallow: /Admin.aspx
+Disallow: /Login.aspx
+Disallow: /Profile.aspx
+Disallow: /Upload.aspx
+Disallow: /Edit.aspx
+Disallow: /Search.aspx
+Disallow: /History.aspx
+Disallow: /Message.aspx
+Disallow: /RandPage.aspx
+Disallow: /Register.aspx
+Disallow: /RSS.aspx
+Disallow: /AccessDenied.aspx
+Disallow: /Language.aspx
+Disallow: /GetFile.aspx
+Disallow: /Mitfahrzentrale.ashx

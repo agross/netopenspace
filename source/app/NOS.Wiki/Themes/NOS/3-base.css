@@ -1,0 +1,645 @@
+html {
+	min-height: 100%;
+	margin-bottom: 1px;
+	font-size: .9em;
+}
+
+html, input, textarea {
+	font-family: Segoe UI, Verdana, Tahoma, Arial, Sans-Serif;
+}
+
+body {
+	line-height: 1.5em;
+	background: #e1df9e url(images/layout/page-background.png) repeat-x scroll left top;
+	color: #111;
+}
+
+body form {
+	background: transparent url(images/layout/content-border.png) repeat-y scroll left top;
+	padding: 0 6px;
+}
+
+pre {
+	font-family: Consolas, Lucida Console, Monospace;
+	margin: .5em 1em;
+	overflow: scroll;
+}
+
+a {
+	color: #648c13;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+input[type="text"], input[type="password"], input[type="file"], select, textarea {
+	color: #3f3e3e;
+	padding: .2em;
+	border: 1px solid #c2c2c2;
+	margin-bottom: .5em;
+}
+
+label, input[type="submit"], input[type="image"], button {
+	cursor: pointer;
+}
+
+label {
+	margin-right: .5em;
+}
+
+select {
+	padding-top: .07em;
+	padding-bottom: .07em;
+	vertical-align: top;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+blockquote {
+	border-left: 0.3em solid #5b5b5b;
+	margin-left: 1em;
+	padding-left: .5em;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, Palatino, Serif;
+	font-size: 1.5em;
+	line-height: 1.6em;
+	padding-bottom: .5em;
+	color: #a12d0d;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+ul li {
+	list-style-type: square;
+	margin-left: 2em;
+}
+
+ul li li {
+	list-style-type: disc;
+}
+
+ol li {
+	list-style-type: decimal;
+	margin-left: 2em;
+}
+
+ol li li {
+	list-style-type: lower-alpha;
+}
+
+.small {
+	font-size: .9em;
+}
+
+.smaller {
+	font-size: .8em;
+}
+
+.smallest {
+	font-size: .7em;
+}
+
+.large {
+	font-size: 1.1em;
+}
+
+.larger {
+	font-size: 1.2em;
+}
+
+.largest {
+	font-size: 1.3em;
+}
+
+/*
+Tables
+------------------------------------------------------------------------------------------------------------------------
+*/
+#PageContentDiv table {
+	vertical-align: top;
+	border-collapse: collapse;
+	border: 2px solid #ccc;
+}
+
+#PageContentDiv table th, #PageContentDiv table td {
+	padding: .2em;
+	border: 1px solid #ddd;
+}
+
+#PageContentDiv table th {
+	font-weight: bold;
+	background-color: #ddd;
+	border-color: #fff;
+}
+
+table td {
+	vertical-align: top;
+}
+
+#PageContentDiv table.imageauto, #PageContentDiv table.imageauto td {
+	border: 0;
+}
+
+#PageListTable, #FileListTable, #RevisionListTable {
+	width: 100%;
+}
+
+#PageListHeader, #FileListHeader, #RevisionListHeader {
+	background-color: #ddd;
+}
+
+#PageListHeader td, #FileListHeader td, #RevisionListHeader td, th {
+	vertical-align: middle;
+}
+
+.pagelistcelleven, .pagelistcellodd, .filelistcelleven, .filelistcellodd, .revisionlistcelleven, .revisionlistcellodd {
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+.pagelistcellodd, .filelistcellodd, .revisionlistcellodd {
+	background-color: #f4f4f4;
+}
+
+#PageTreeP {
+	margin-left: 1em;
+	padding-left: .5em;
+	border-left: 4px solid #ccc;
+}
+
+#FileListTable {
+	margin-top: 2em;
+}
+
+table#TocContainerTable, table#TocContainerTable td {
+	border: 0;
+}
+
+/*
+Header
+------------------------------------------------------------------------------------------------------------------------
+*/
+#HeaderDiv {
+	background: transparent url(images/layout/header-background.png) no-repeat scroll left top;
+	height: 134px;
+}
+
+#HeaderDiv h1 {
+	left: -2500px;
+	position: absolute;
+}
+
+#HeaderDiv #logo {
+	background: transparent url(images/layout/header-logo.png) no-repeat scroll left top;
+	width: 500px;
+	height: 134px;
+	float: left;
+}
+
+#HeaderDiv a:hover {
+	text-decoration: none;
+}
+
+#HeaderDiv .basictab {
+	float: right;
+	width: 30%;
+	height: 134px;
+	font-size: 1.2em;
+	position: relative;
+}
+
+#HeaderDiv .basictab li {
+	display: block;
+	list-style-type: none;
+}
+
+#HeaderDiv .pos1 {
+	position: absolute;
+	top: 20px;
+	right: 7em;
+}
+
+#HeaderDiv .pos2 {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+}
+
+#HeaderDiv .pos3 {
+	position: absolute;
+	top: 3.8em;
+	right: 7em;
+}
+
+#HeaderDiv .pos4 {
+	position: absolute;
+	top: 5.5em;
+	right: 15px;
+}
+
+#HeaderDiv .pos5 {
+	position: absolute;
+	top: 3.5em;
+	right: 54px;
+}
+
+#HeaderDiv .pos6 {
+	position: absolute;
+	top: 6em;
+	right: 11.5em;
+}
+
+#HeaderDiv .pos7 {
+	position: absolute;
+	top: 6em;
+	right: 6em;
+}
+
+#HeaderDiv .pos8 {
+	position: absolute;
+	top: 20px;
+	right: 15.1em;
+}
+
+#HeaderDiv .basictab li a {
+	color: #fff;
+	background-color: #9dab42;
+	padding: 5px 9px;
+}
+
+#HeaderDiv .basictab li a:hover {
+	background-color: #e1df9e;
+	color: #111;
+}
+
+#HeaderDiv .basictab li.selected a {
+	background-color: #a12d0d;
+}
+
+#HeaderDiv .basictab li .language a {
+	background-image: url(images/layout/language.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 3px center;
+	padding-left: 21px;
+}
+
+#HeaderDiv .basictab ul.submenu {
+	margin-top: 7px;
+}
+
+#HeaderDiv .basictab ul.submenu li {
+	padding: 0;
+	margin: 0;
+}
+
+#HeaderDiv .basictab ul.submenu li a {
+	display: block;
+	padding: 3px 5px 3px 9px;
+}
+
+/*
+Sidebar
+------------------------------------------------------------------------------------------------------------------------
+*/
+#SidebarDiv .rss {
+	display: inline;
+	margin-left: 1em;
+}
+
+#SidebarDiv .separator a {
+	color: #a12d0d;
+}
+
+/*
+Partners
+------------------------------------------------------------------------------------------------------------------------
+*/
+.partner ul li {
+	margin-left: 0;
+	margin-bottom: .5em;
+	list-style-type: none;
+	}
+
+.partner ul li img {
+	border: 1px solid #ccc;
+	padding: .2em;
+}
+
+#SidebarDiv .partner {
+	margin-left: 2em;
+	}
+
+#PageContentDiv .partner li {
+	display: inline;
+	margin-right: .5em;
+	}
+
+/*
+Content
+------------------------------------------------------------------------------------------------------------------------
+*/
+#ContainerDiv {
+	background-color: #fff;
+}
+
+h1.pagetitle {
+	font-weight: bold;
+}
+
+#PageContentDiv {
+	margin-top: 1em;
+}
+
+table td {
+	padding: .2em;
+}
+
+#PageContentDiv pre {
+	width: 90%;
+	background-color: #f6f6f6;
+	border: 1px solid #e1df9e;
+	padding: 1em;
+}
+
+#PageContentDiv a.copy-code {
+	font-size: 0.8em;
+	display: block;
+	float: right;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 0 0.5em 0 0.5em;
+	margin-top: 0.5em;
+	margin-right: 4em;
+	cursor: pointer;
+}
+
+#PageContentDiv a.copy-code:hover {
+	background-color: #9dab42;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*
+Footer
+------------------------------------------------------------------------------------------------------------------------
+*/
+#FooterDiv {
+	background: transparent url(images/layout/footer-background.png) no-repeat scroll left bottom;
+}
+
+#FooterDiv .content {
+	background-color: #132e28;
+	color: #fff;
+}
+
+#FooterDiv .logos {
+	float: right;
+}
+
+#FooterDiv .logos ul li {
+	float: right;
+	list-style-type: none;
+	margin-left: 1em;
+}
+
+/*
+ScrewTurn Wiki-related styles
+------------------------------------------------------------------------------------------------------------------------
+*/
+#EditHistoryLinkDiv {
+	float: right;
+	margin-left: 1em;
+}
+
+#EditHistoryLinkDiv a {
+	margin-left: 1em;
+	color: #132e28 !important;
+	border-color: #132e28 !important;
+	float: left;
+}
+
+#EditHistoryLinkDiv a:hover {
+	color: #fff !important;
+	background-color: #132e28 !important;
+	text-decoration: none;
+}
+
+a.externallink {
+	background-image: url(images/ExternalLink.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 14px;
+}
+
+#EditHistoryLinkDiv a, a.editsectionlink {
+	margin: .5em 0 0 .5em;
+	padding: 0 .2em;
+	font-size: .8em;
+	border: 1px solid #e1df9e;
+	color: #e1df9e;
+}
+
+a.editsectionlink {
+	float: right;
+}
+
+a.editsectionlink:hover {
+	text-decoration: none;
+	background-color: #e1df9e;
+	color: #111;
+}
+
+#RssLinkDiv, #PrintLinkDiv {
+	float: right;
+	position: relative;
+}
+
+#RssLink, #PrintLink {
+	background-repeat: no-repeat;
+	text-indent: -2500px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	margin-left: .5em;
+	margin-top: .3em;
+}
+
+#RssLink {
+	background-image: url(Images/RSS.png);
+}
+
+#PrintLink {
+	background-image: url(Images/Print.png);
+	margin-left: .5em;
+}
+
+#PageInfoDiv {
+	color: #aaa;
+	font-size: .8em;
+}
+
+#FormatUl {
+	margin: 0;
+	padding: 0;
+}
+
+#FormatUl li {
+	display: inline;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+a.formatlink:focus {
+	outline: 0;
+}
+
+/* Editing: Page title. */
+#ctl00_CphMaster_txtTitle {
+	font-size: 1.5em;
+	width: 95% !important;
+}
+
+#SnippetListDiv, #SpecialTagsDiv, #AnchorsDiv, #ImagesDiv, #FileListDiv, #PageListDiv {
+	border: 1px solid #c2c2c2;
+	background-color: #fff;
+	font-size: .8em;
+}
+
+a.snippetlistlink, a.specialtaglink, a.anchorlink, a.imagelink, a.filelink, a.pagelistlink, a.subdirlink, a.dirlink, a.itemlink, a#UpLevelLink {
+	display: block;
+	padding: 0 .4em;
+}
+
+#SpecialCharsDiv a:hover, a.snippetlistlink:hover, a.specialtaglink:hover, a.anchorlink:hover, a.imagelink:hover, a.filelink:hover, a.pagelistlink:hover, a.subdirlink:hover, a.dirlink:hover, a.itemlink:hover, a#UpLevelLink:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #9dab42;
+}
+
+#SpecialCharsDiv a {
+	padding: 1px;
+}
+
+.subtreediv {
+	margin-left: 1em;
+}
+
+a.subdirlink {
+	background: transparent url(../../images/dir.png) no-repeat scroll 2px center;
+	padding-left: 20px;
+}
+
+a.filelink {
+	background: transparent url(../../images/file.png) no-repeat scroll 2px center;
+	padding-left: 20px;
+}
+
+#TxtSearchPage, #AttachmentChk {
+	margin-top: 1em;
+}
+
+#TxtSearchPage {
+	margin-left: .5em;
+	background: transparent url(images/search.png) no-repeat scroll 98% center;
+	padding-right: 20px;
+	width: 80%;
+}
+
+#SearchCatExtDiv {
+	float: right;
+	margin: 1em 0 1em 1em;
+}
+
+#SearchControlsDiv input {
+	font-size: 1.5em;
+}
+
+div.imageleft {
+	float: left;
+	margin: .5em 1em .5em 0;
+}
+
+div.imageright {
+	float: right;
+	margin: .5em 0 .5em 1em;
+}
+
+div.transcludedpage {
+	clear: right;
+}
+
+a.unknownlink {
+	color: #a12d0d;
+	background-image: url(images/layout/broken-link.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 19px;
+}
+
+#BackgroundDiv {
+	background-color: #111 !important;
+}
+
+#ImageDialogDiv, #ImageBrowserDiv, #BrowserControlsDiv {
+	background-color: #fff !important;
+	border: 1px solid #000 !important;
+	padding: 1em !important;
+}

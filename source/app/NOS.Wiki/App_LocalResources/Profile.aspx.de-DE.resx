@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmResource1.Text" xml:space="preserve">
+    <value>Bestätigen</value>
+    <comment>Confirm</comment>
+  </data>
+  <data name="btnConfirmResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteAccountResource1.Text" xml:space="preserve">
+    <value>Zugang löschen</value>
+    <comment>Delete Account</comment>
+  </data>
+  <data name="btnDeleteAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveEmailResource1.Text" xml:space="preserve">
+    <value>Speichere deine E-Mail-Adresse</value>
+    <comment>Save Email</comment>
+  </data>
+  <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
+    <value>Klicke hier, um deine E-Mail-Adresse zu speichern</value>
+    <comment>Click here to save your Email address</comment>
+  </data>
+  <data name="btnSavePasswordResource1.Text" xml:space="preserve">
+    <value>Speichere dein Kennwort</value>
+    <comment>Save Password</comment>
+  </data>
+  <data name="btnSavePasswordResource1.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier um Ihr neues Kennwort zu speichern</value>
+    <comment>Click here to save your new Password</comment>
+  </data>
+  <data name="lblAccountTypeDescriptionResource1.Text" xml:space="preserve">
+    <value>Das Benutzerkonto ist vom Typ</value>
+    <comment>Account type</comment>
+  </data>
+  <data name="lblAccountTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
+    <value>Du kannst hier deinen Zugang löschen, in dem du auf &lt;i&gt;Zugang löschen&lt;/i&gt; klickst. Zur Sicherheit muss die Aktion durch einen Klick auf &lt;i&gt;Bestätigen&lt;/i&gt; abgeschlossen werden.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Warnung:&lt;/b&gt; Dieser Vorgang kann nicht rückgängig gemacht werden.</value>
+    <comment>You can delete your account by clicking on the Delete Account button and then confirming with the Confirm button.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: the operation is irreversible.</comment>
+  </data>
+  <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
+    <value>Zugang löschen</value>
+    <comment>Delete Account</comment>
+  </data>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>Willkommen in deinem Profil,</value>
+    <comment>Welcome to your Profile, </comment>
+  </data>
+  <data name="lblEmail1Resource1.Text" xml:space="preserve">
+    <value>E-Mail-Adresse</value>
+  </data>
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
+    <value>E-Mail-Adresse (Wiederholung)</value>
+    <comment>Email (repeat)</comment>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>Hier kannst du deine Profilinformationen, wie E-Mail-Adresse und Kennwort, ändern. Der Benutzername kann nicht geändert werden.</value>
+    <comment>Here you can edit your Profile settings, such as Email address and Password. You cannot change your Username.</comment>
+  </data>
+  <data name="lblOldPasswordResource1.Text" xml:space="preserve">
+    <value>Altes Kennwort</value>
+    <comment>Old Password</comment>
+  </data>
+  <data name="lblPassword1Resource1.Text" xml:space="preserve">
+    <value>Neues Kennwort</value>
+    <comment>Password</comment>
+  </data>
+  <data name="lblPassword2Resource1.Text" xml:space="preserve">
+    <value>Neues Kennwort (Wiederholung)</value>
+    <comment>Password (repeat)</comment>
+  </data>
+  <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Benutzerprofil</value>
+    <comment>User Profile</comment>
+  </data>
+  <data name="lblUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Unbenannte Seite</value>
+    <comment>Untitled Page</comment>
+  </data>
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
+    <value>Geben Sie hier Ihre Email Adresse ein</value>
+    <comment>Type here your Email address</comment>
+  </data>
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
+    <value>Wiederholen Sie Ihre Email Adresse</value>
+    <comment>Repeat your Email address</comment>
+  </data>
+  <data name="txtOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value>Geben Sie hier Ihr aktuelles Passwort ein</value>
+  </data>
+  <data name="txtPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
+    <value>Geben Sie hier Ihr neues Passwort ein</value>
+    <comment>Type here your new Password</comment>
+  </data>
+  <data name="txtPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
+    <value>Wiederholen Sie Ihr neues Passwort</value>
+    <comment>Repeat your new Password</comment>
+  </data>
+</root>
