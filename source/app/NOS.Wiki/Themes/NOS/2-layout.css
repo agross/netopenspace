@@ -6,6 +6,7 @@ body {
 body form {
 	width: 937px;
 	margin: 0 auto;
+	position: relative;
 }
 
 #HeaderDiv, #ContainerDiv, #FooterDiv {
@@ -40,4 +41,16 @@ body form {
 
 #FooterDiv .content {
 	padding-bottom: 2em;
+}
+
+.past-spaces, .remote-spaces {
+background-color: #fff;
+left: 949px;
+padding: .2em;
+position: absolute;
+width:15em;
+}
+
+.remote-spaces {
+top: 20em;
 }
