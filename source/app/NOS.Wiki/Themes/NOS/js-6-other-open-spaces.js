@@ -5,18 +5,19 @@ function isLocalEvent(item)
 
 function buildList(items, listClass, listHeader, itemText, itemTitle, itemUrl)
 {
-	var ul = $("<ul>");
+	var ul = $("<ul>").attr("class", "submenu").css("display", "none");
 					
 	var list = $("<div>")
 		.attr("class", listClass())
-		.append("<p>")
-		.text(listHeader())
+		.append($("<p>").text(listHeader()))
 		.append(ul);
 						
 	$(items).each(function(i, item) {
 		var a = $("<a>").text(itemText(item)).attr("href", itemUrl(item)).attr("title", itemTitle(item));
-		$('<li>').append(a).appendTo(ul); 
+		$('<li>').append(a).appendTo(ul);
 	});
+
+	list.droppy('> p');
 	
 	return list;
 }

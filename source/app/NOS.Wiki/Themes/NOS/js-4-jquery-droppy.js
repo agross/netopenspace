@@ -1,43 +1,47 @@
-/*
- * Based on Droppy 0.1.2
- * (c) 2008 Jason Frame (jason@onehackoranother.com)
- */
-$.fn.droppy = function(options) {
+$.fn.droppy = function(hoverOn, options)
+{
+	options = $.extend({ speed: 250 }, options || {});
 
-	options = $.extend({speed: 250}, options || {});
+	this.each(function()
+	{
+		var root = this, zIndex = 1000;
 
-	this.each(function() {
-
-	var root = this, zIndex = 1000;
-
-	function getSubnav(ele) {
-		var subnav = $('ul', ele);
-		return subnav.length ? subnav[0] : null;
-	}
-
-	function hide() {
-		var subnav = getSubnav(root);
-		if (!subnav) return;
-
-		$.data(subnav, 'cancelHide', false);
-
-		setTimeout(function() {
-		if (!$.data(subnav, 'cancelHide'))
+		function getSubnav(ele)
 		{
-			$(subnav).hide();
+			var subnav = $('ul', ele);
+			return subnav.length ? subnav[0] : null;
 		}
-		}, 500);
-	}
 
-	function show() {
-		var subnav = getSubnav(root);
-		if (!subnav) return;
+		function hide()
+		{
+			var subnav = getSubnav(root);
+			if (!subnav) return;
 
-		$.data(subnav, 'cancelHide', true);
-		$(subnav).css({zIndex: zIndex++}).show();
-	}
+			$.data(subnav, 'cancelHide', false);
 
-	$('> span > a', this).hover(show, hide);
-	$('ul', $('#workspaces')).each(function(){ $(this).hover(show, hide); });
+			setTimeout(function()
+			{
+				if (!$.data(subnav, 'cancelHide'))
+				{
+					$(subnav).hide();
+				}
+			}, 500);
+		}
+
+		function show()
+		{
+			var subnav = getSubnav(root);
+			if (!subnav) return;
+
+			$.data(subnav, 'cancelHide', true);
+			$(subnav).css({ zIndex: zIndex++ }).show();
+		}
+
+		if (hoverOn)
+		{
+			$(hoverOn, root).hover(show, hide);
+		}
+
+		$('ul', root).each(function() { $(this).hover(show, hide); });
 	});
 };
