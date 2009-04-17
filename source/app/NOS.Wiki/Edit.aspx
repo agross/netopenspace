@@ -217,12 +217,14 @@
                 pos.width = obj.offsetWidth;
                 pos.height= obj.offsetHeight;
           
-                obj = obj.offsetParent;
+                /*
+				This breaks positioning popups with relative elements (in DOM order) above the popup.
+				obj = obj.offsetParent;
                 while(obj != null) {
                     pos.top += obj.offsetTop;
                     pos.left += obj.offsetLeft;
                     obj = obj.offsetParent;
-                }
+                }*/
             }
             return(pos);
         }
