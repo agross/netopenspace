@@ -217,8 +217,8 @@
 				<include name="**\*.dll" />
 				<include name="**\*.resx" />
 				<include name="**\*.swf" />
-				<exclude name="**\*.full.js" if="${build.configuration == 'Debug'}" />
-				<exclude name="**\*.min.js" if="${build.configuration == 'Release'}" />
+				<exclude name="**\*.full.js" unless="${build.configuration == 'Debug'}" />
+				<exclude name="**\*.min.js" unless="${build.configuration == 'Release'}" />
 			</fileset>
 		</copy>
 
