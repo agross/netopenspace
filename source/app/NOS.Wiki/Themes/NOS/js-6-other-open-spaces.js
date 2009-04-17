@@ -42,7 +42,7 @@ $(document).ready(function()
 				if (local && local.PastEvents)
 				{
 					buildList(local.PastEvents,
-						function() { return "past-spaces"; },
+						function() { return "past-spaces no-print"; },
 						function() { return "Vergangene .NET Open Spaces in " + local.City; },
 						function(item) { return item.Year; },
 						function(item) { return ".NET Open Space " + item.Year + " in " + local.City; },
@@ -54,7 +54,7 @@ $(document).ready(function()
 				if (remotes)
 				{
 					buildList(remotes,
-						function() { return "remote-spaces"; },
+						function() { return "remote-spaces no-print"; },
 						function() { return "Andere .NET Open Spaces"; },
 						function(item) { return item.City; },
 						function(item) { return ".NET Open Space in " + item.City; },
