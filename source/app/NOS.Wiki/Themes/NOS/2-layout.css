@@ -44,13 +44,12 @@ body form {
 }
 
 .past-spaces, .remote-spaces {
-background-color: #fff;
-left: 949px;
-padding: .2em;
-position: absolute;
-width:15em;
+	left: 949px;
+	padding: .2em;
+	position: absolute;
+	width: 15em;
 }
 
 .remote-spaces {
-top: 20em;
+	top: 20em;
 }

@@ -367,6 +367,15 @@ Sidebar
 	color: #a12d0d;
 }
 
+.past-spaces, .remote-spaces {
+	background-color: #A12D0D;
+	color: #FFF;
+}
+
+.past-spaces a, .remote-spaces a {
+	color: #FFF;
+}
+
 /*
 Partners
 ------------------------------------------------------------------------------------------------------------------------
