@@ -8,7 +8,7 @@ $.fn.droppy = function(hoverOn, options)
 
 		function getSubnav(ele)
 		{
-			var subnav = $('ul', ele);
+			var subnav = $(hoverOn, ele);
 			return subnav.length ? subnav[0] : null;
 		}
 
@@ -42,6 +42,6 @@ $.fn.droppy = function(hoverOn, options)
 			$(hoverOn, root).hover(show, hide);
 		}
 
-		$('ul', root).each(function() { $(this).hover(show, hide); });
+		$(root).each(function() { $(this).hover(show, hide); });
 	});
 };

@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$('#workspaces').droppy('> span > a');
+	$('#workspaces').droppy('> ul');
 		
 	if($.browser.msie)
 	{

@@ -1,23 +1,25 @@
-function isLocalEvent(item)
+﻿function isLocalEvent(item)
 {
 	return document.URL.startsWith(item.URL, true);
 }
 
 function buildList(items, listClass, listHeader, itemText, itemTitle, itemUrl)
 {
-	var ul = $("<ul>").attr("class", "submenu").css("display", "none");
+	var ul = $("<ul>");
 					
 	var list = $("<div>")
 		.attr("class", listClass())
-		.append($("<p>").text(listHeader()))
-		.append(ul);
+		.append($("<div>")
+			.attr("class", "submenu")
+			.append($("<p>").text(listHeader()))
+			.append(ul));
 						
 	$(items).each(function(i, item) {
 		var a = $("<a>").text(itemText(item)).attr("href", itemUrl(item)).attr("title", itemTitle(item));
 		$('<li>').append(a).appendTo(ul);
 	});
 
-	list.droppy('> p');
+	list.droppy('> div');
 	
 	return list;
 }
@@ -44,7 +46,7 @@ $(document).ready(function()
 				{
 					buildList(local.PastEvents,
 						function() { return "past-spaces no-print"; },
-						function() { return "Vergangene .NET Open Spaces in " + local.City; },
+						function() { return "Vorige .NET Open Spaces in " + local.City; },
 						function(item) { return item.Year; },
 						function(item) { return ".NET Open Space " + item.Year + " in " + local.City; },
 						function(item) { return item.URL; }

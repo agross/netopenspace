@@ -368,8 +368,24 @@ Sidebar
 }
 
 .past-spaces, .remote-spaces {
-	background-color: #A12D0D;
 	color: #FFF;
+	background: #A12D0D none no-repeat scroll top right;
+}
+
+.past-spaces {
+	background-image: url(images/layout/past-spaces.png);
+	min-height: 172px;
+}
+
+.past-spaces .submenu, .remote-spaces .submenu {
+	display: none;
+	margin: 0 26px 0 .5em;
+	width: 12em;
+}
+
+.remote-spaces {
+	background-image: url(images/layout/remote-spaces.png);
+	min-height: 76px;
 }
 
 .past-spaces a, .remote-spaces a {
