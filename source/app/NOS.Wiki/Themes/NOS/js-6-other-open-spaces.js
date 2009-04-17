@@ -10,13 +10,13 @@
 		return (instance.toLowerCase() == this.substring(0, instance.length).toLowerCase());
 	};
 
+	var developmentFilter = function(item)
+	{
+		return !(!document.URL.startsWith("http://nos.local") && item.Private);
+	}
+	
 	var localEventFilter = function(item)
 	{
-		if (!document.URL.startsWith("http://nos.local") && item.Private)
-		{
-			return false;
-		}
-		
 		return document.URL.startsWith(item.URL, true);
 	}
 
@@ -45,6 +45,7 @@
 	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
 			function(json)
 			{
+				json = $.grep(json, developmentFilter);
 				var local = $.grep(json, localEventFilter)[0];
 				var remotes = $($.grep(json, localEventFilter, true));
 
