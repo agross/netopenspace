@@ -12,6 +12,11 @@
 
 	var localEventFilter = function(item)
 	{
+		if (!document.URL.startsWith("http://nos.local") && item.Private)
+		{
+			return false;
+		}
+		
 		return document.URL.startsWith(item.URL, true);
 	}
 
