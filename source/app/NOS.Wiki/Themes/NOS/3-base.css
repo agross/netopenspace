@@ -367,20 +367,20 @@ Sidebar
 	color: #a12d0d;
 }
 
-.past-spaces, .remote-spaces {
+.other-years, .remote-spaces {
 	color: #FFF;
 	background: #A12D0D none no-repeat scroll top right;
 }
 
-.past-spaces {
-	background-image: url(images/layout/past-spaces.png);
-	min-height: 172px;
+.other-years {
+	background-image: url(images/layout/other-years.png);
+	min-height: 123px;
 }
 
-.past-spaces .submenu, .remote-spaces .submenu {
+.other-years .submenu, .remote-spaces .submenu {
 	display: none;
 	margin: 0 26px 0 .5em;
-	width: 12em;
+	width: 7em;
 }
 
 .remote-spaces {
@@ -388,7 +388,7 @@ Sidebar
 	min-height: 76px;
 }
 
-.past-spaces a, .remote-spaces a {
+.other-years a, .remote-spaces a {
 	color: #FFF;
 }
 

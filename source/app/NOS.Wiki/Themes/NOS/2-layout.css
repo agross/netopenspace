@@ -43,7 +43,7 @@ body form {
 	padding-bottom: 2em;
 }
 
-.past-spaces, .remote-spaces {
+.other-years, .remote-spaces {
 	left: 943px;
 	padding: .2em;
 	position: absolute;

@@ -25,9 +25,9 @@
 		var ul = $("<ul>");
 
 		var list = $("<div>")
-		.attr("class", listClass())
+		.addClass(listClass())
 		.append($("<div>")
-			.attr("class", "submenu")
+			.addClass("submenu")
 			.append($("<p>").text(listHeader()))
 			.append(ul));
 
@@ -52,8 +52,8 @@
 				if (local && local.PastEvents)
 				{
 					buildList(local.PastEvents,
-						function() { return "past-spaces no-print"; },
-						function() { return "Vorige .NET Open Spaces in " + local.City; },
+						function() { return "other-years no-print"; },
+						function() { return "in " + local.City; },
 						function(item) { return item.Year; },
 						function(item) { return ".NET Open Space " + item.Year + " in " + local.City; },
 						function(item) { return item.URL; }
@@ -65,7 +65,7 @@
 				{
 					buildList(remotes,
 						function() { return "remote-spaces no-print"; },
-						function() { return "Andere .NET Open Spaces"; },
+						function() { return "Andere Städte"; },
 						function(item) { return item.City; },
 						function(item) { return ".NET Open Space in " + item.City; },
 						function(item) { return item.URL; }
