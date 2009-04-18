@@ -1,4 +1,16 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="AutoRegistration.ascx.cs" Inherits="NOS.AutoRegistration" %>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$("#<%=chkAutoRegister.ClientID %>").change(function()
+		{
+			var enabled = $(this).is(":checked");
+			ValidatorEnable($("#<%= rfvName.ClientID %>").get(0), enabled);
+			ValidatorEnable($("#<%= revBlog.ClientID %>").get(0), enabled);
+			ValidatorEnable($("#<%= revPicture.ClientID %>").get(0), enabled);
+		});
+	});
+</script>
 <asp:Panel ID="AutoRegistrationPanel" runat="server">
 	</table>
 	<br />
@@ -29,7 +41,7 @@
 			</td>
 			<td>
 				<asp:TextBox ID="txtName" runat="server" Width="200px" meta:resourcekey="txtName" CausesValidation="True" />
-				<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" meta:resourcekey="rfvRequired" EnableClientScript="False"><img src="Images/InputError.png" alt="*" /></asp:RequiredFieldValidator>
+				<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" meta:resourcekey="rfvRequired"><img src="Images/InputError.png" alt="*" /></asp:RequiredFieldValidator>
 			</td>
 		</tr>
 		<tr>
@@ -49,7 +61,7 @@
 			<td>
 				<asp:TextBox ID="txtBlog" runat="server" Width="200px" meta:resourcekey="txtBlog" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revBlog" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"
-					ControlToValidate="txtBlog" meta:resourcekey="revUrl" EnableClientScript="False"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
+					ControlToValidate="txtBlog" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
 			</td>
 		</tr>
 		<tr>
@@ -78,7 +90,7 @@
 			<td>
 				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revPicture" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"
-					ControlToValidate="txtPicture" meta:resourcekey="revUrl" EnableClientScript="False"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
+					ControlToValidate="txtPicture" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
 			</td>
 		</tr>
 	</table>
