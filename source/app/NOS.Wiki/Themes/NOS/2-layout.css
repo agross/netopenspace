@@ -48,8 +48,9 @@ body form {
 	padding: .2em;
 	position: absolute;
 	min-width: 1.5em;
+	margin-top: 1.5em;
 }
 
 .remote-spaces {
-	top: 23em;
+	margin-top: 12em;
 }
