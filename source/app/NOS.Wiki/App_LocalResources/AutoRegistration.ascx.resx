@@ -136,7 +136,7 @@
     <value>Twitter user name</value>
   </data>
   <data name="lblXingUserName.Text" xml:space="preserve">
-    <value>XING user name</value>
+    <value>XING profile name</value>
   </data>
   <data name="litIntroduction1.Text" xml:space="preserve">
     <value>Once you activate your Wiki account after receiving the activation e-mail we can automatically add you to the </value>

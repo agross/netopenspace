@@ -9,6 +9,57 @@
 			ValidatorEnable($("#<%= revBlog.ClientID %>").get(0), enabled);
 			ValidatorEnable($("#<%= revPicture.ClientID %>").get(0), enabled);
 		});
+
+		function updateLink(element, href)
+		{
+			var link = $(element).nextAll("a.preview").get(0);
+			if ($(element).val().length === 0)
+			{
+				if (link)
+				{
+					$(element).parent().children("br:last").remove();
+					$(link).remove();
+				}
+				return;
+			}
+
+			if (!link)
+			{
+				link = $("<a>")
+					.addClass("preview")
+					.addClass("externallink")
+					.attr("target", "_blank")
+					.attr("disabled", "true");
+
+				$(element).parent().children(":last").after("<br>");
+				$(element).parent().children(":last").after(link);
+			}
+
+			$(link)
+				.attr("href", href)
+				.text(href);
+		}
+
+		$("#<%=txtXingUserName.ClientID %>").data("href", function(e) { return "http://www.xing.com/profile/" + $(e).val(); });
+		$("#<%=txtTwitterUserName.ClientID %>").data("href", function(e) { return "http://twitter.com/" + $(e).val() + "/"; });
+		$("#<%=txtBlog.ClientID %>").data("href", function(e) { return $(e).val(); });
+		$("#<%=txtPicture.ClientID %>").data("href", function(e) { return $(e).val(); });
+
+		$("#<%=txtXingUserName.ClientID %>, #<%=txtTwitterUserName.ClientID %>, #<%=txtBlog.ClientID %>, #<%=txtPicture.ClientID %>")
+			.each(function(e)
+			{
+				$(this).focus(function()
+				{
+					$(this).keyup();
+				});
+
+				$(this).keyup(function()
+				{
+					updateLink(this, $(this).data("href")(this));
+				});
+
+				$(this).keyup();
+			});
 	});
 </script>
 <asp:Panel ID="AutoRegistrationPanel" runat="server">
