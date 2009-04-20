@@ -65,7 +65,7 @@
 				{
 					buildList(remotes,
 						function() { return "remote-spaces no-print"; },
-						function() { return "Andere Städte"; },
+						function() { return "andere Städte"; },
 						function(item) { return item.City; },
 						function(item) { return ".NET Open Space in " + item.City; },
 						function(item) { return item.URL; }
