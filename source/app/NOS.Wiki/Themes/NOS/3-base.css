@@ -448,22 +448,15 @@ table td {
 	padding: 1em;
 }
 
-#PageContentDiv a.copy-code {
+#PageContentDiv div.copy-code {
 	font-size: 0.8em;
 	display: block;
 	float: right;
 	border: 1px solid #ccc;
 	border-bottom: none;
-	padding: 0 0.5em 0 0.5em;
 	margin-top: 0.5em;
 	margin-right: 4em;
 	cursor: pointer;
-}
-
-#PageContentDiv a.copy-code:hover {
-	background-color: #9dab42;
-	color: #fff;
-	text-decoration: none;
 }
 
 /*
