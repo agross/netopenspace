@@ -31,9 +31,10 @@
 			
 			containerWidth = parseInt(getParameter("width", stage.width.toString()));
 			containerHeight = parseInt(getParameter("height", stage.height.toString()));
+			
 			//trace("\n\ncontainer dimension: " + containerWidth + "x" + containerHeight);
 
-			addChild(loadContent(getParameter("backgroundAsset", "header-logo.png")));
+			addChild(loadContent(getParameter("backgroundAsset", "nos-badge-125x125.png")));
 		}
 		
 		private function getParameter(name:String, defaultValue:String = null):String
@@ -50,7 +51,7 @@
 		
 		private function copy(e:Event = null):void
 		{
-			var clipboardContent:String = loaderInfo.parameters["clipboard"];
+			var clipboardContent:String = getParameter("clipboard");
 			
 			if (clipboardContent != null)
 			{
@@ -60,6 +61,21 @@
 			{
 				System.setClipboard("No parameters set.");
 			}
+			
+			executeCommand(getParameter("callback"));
+		}
+		
+		private function executeCommand(callback:String) : Object
+		{
+			trace("callback: " + callback);
+			
+			if (ExternalInterface.available && callback != null)
+				return ExternalInterface.call(
+					"eval",
+					callback
+				);
+				
+			return null;
 		}
 		
 		public function loadContent(url:String):Loader
