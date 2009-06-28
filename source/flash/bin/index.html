@@ -9,12 +9,18 @@
 	
 	<script src="js/swfobject.js" type="text/javascript"></script>
 	<script type="text/javascript">
+		function sayHelloCallback(name)
+		{
+			alert("Hello " + name);
+		}
+		
 		var now = new Date();
 		var flashvars = {
 			clipboard: "this is just a test " + now.toLocaleString(),
 			backgroundAsset: "nos-badge-125x125.png",
 			width:70,
-			height:70
+			height:70,
+			callback: "sayHelloCallback('marci')"
 		};
 		
 		var params = {
@@ -47,7 +53,7 @@
 				type="application/x-shockwave-flash" 
 				src="clipboard.swf" 
 				pluginspage="http://www.adobe.com/go/getflashplayer" 
-				flashvars="width=200&amp;height=200&amp;backgroundAsset=nos-badge-125x125.png&amp;clipboard=%3Ca%20href%3D%22http%3A%2F%2Fnetopenspace.de%2F%22%0A%20%20%20%20%20%20%20%20title%3D%22.NET%20Open%20Space%20vom%2018.10.%20bis%2019.10.2008%20in%20Leipzig%22%3E%0A%20%20%20%20%3Cimg%20src%3D%22http%3A%2F%2Fnetopenspace.de%2FGetFile.aspx%3FFile%3DLogos%2Fnos-logo-1.png%22%0A%20%20%20%20%20%20%20%20%20alt%3D%22.NET%20Open%20Space%20vom%2018.10.%20bis%2019.10.2008%20in%20Leipzig%22%20%2F%3E%0A%3C%2Fa%3E&amp;callback=copyCode.flash(1242905495287)"/>
+				flashvars="width=200&amp;height=200&amp;callback=sayHelloCallback('marci')&amp;backgroundAsset=nos-badge-125x125.png&amp;clipboard=%3Ca%20href%3D%22http%3A%2F%2Fnetopenspace.de%2F%22%0A%20%20%20%20%20%20%20%20title%3D%22.NET%20Open%20Space%20vom%2018.10.%20bis%2019.10.2008%20in%20Leipzig%22%3E%0A%20%20%20%20%3Cimg%20src%3D%22http%3A%2F%2Fnetopenspace.de%2FGetFile.aspx%3FFile%3DLogos%2Fnos-logo-1.png%22%0A%20%20%20%20%20%20%20%20%20alt%3D%22.NET%20Open%20Space%20vom%2018.10.%20bis%2019.10.2008%20in%20Leipzig%22%20%2F%3E%0A%3C%2Fa%3E&amp;callback=copyCode.flash(1242905495287)"/>
 	<div class="alt"/>
 
 	
