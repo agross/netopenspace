@@ -26,6 +26,8 @@
 
 		private function init(e:Event = null):void 
 		{
+			buttonMode = true;
+			
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			addEventListener(MouseEvent.MOUSE_DOWN, copy);
 			
