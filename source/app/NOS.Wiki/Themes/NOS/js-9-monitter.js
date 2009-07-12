@@ -22,33 +22,25 @@ String.prototype.linktag = function () {
 
 function fetch_tweets(elem) {
     elem = $(elem);
-    input = elem.attr('title').replace(/#/g, '%23');
-    lang = elem.attr('lang');
+    query = elem.attr('rel').replace(/#/g, '%23');
 	
-    if (input != window.monitter['text-' + input]) {
-        window.monitter['last_id' + input] = 0;
-        window.monitter['text-' + input] = input;
-        window.monitter['count-' + input] = 12;;
+    if (query != window.monitter['query-' + query]) {
+        window.monitter['query-' + query] = query;
+		window.monitter['last_id' + query] = 0;
+		window.monitter['limit-' + query] = 6;
     }
 	
-    if (window.monitter['count-' + input] > 10) {
-        elem.prepend('<div class="tweet">real time twitter by: <a href="http://monitter.com" target="_blank">monitter.com</a></div>');
-        window.monitter['count-' + input] = 0;
-    }
-	
-    var url = "http://search.twitter.com/search.json?q=" + input + "&lang=" + lang + "&rpp=" + rrp + "&since_id=" + window.monitter['last_id' + input] + "&callback=?";
+	var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + window.monitter['limit-' + query] + "&since_id=" + window.monitter['last_id' + query] + "&callback=?";
 	
     $.getJSON(url, function (json) {
-        $('div.tweet:gt(' + window.monitter['limit'] + ')', elem).each(function () {
-            $(this).fadeOut(1000)
+        $('div.tweet:gt(' + window.monitter['limit-' + query] + ')', elem).each(function () {
+			$(this).fadeOut(500, function(){ $(this).remove(); });
         });
 		
         $(json.results).reverse().each(function () {
             if ($('#tw' + this.id, elem).length == 0) {
-                window.monitter['count-' + input]++;
-                var thedatestr = this.created_at.prettyDate();
 				
-				var div = $('<div>')
+				var tweet = $('<div>')
 					.attr('id', 'tw' + this.id)
 					.addClass('tweet')
 					.append($('<a>')
@@ -66,18 +58,17 @@ function fetch_tweets(elem) {
 							.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
 							.attr('target', '_blank')
 							.text(this.created_at.prettyDate())))
+					.hide();
 		
-                window.monitter['last_id' + input] = this.id;
-                elem.prepend(div);
+                window.monitter['last_id' + query] = this.id;
+                elem.prepend(tweet);
 				
-                div.hide().fadeIn(1000);
+                tweet.slideToggle(1000);
             }
         });
 		
-        input = escape(input);
-        rrp = 1;
         setTimeout(function () {
-            fetch_tweets(elem)
+			fetch_tweets(elem)
 		}, 2000);
     });
 	
@@ -86,8 +77,9 @@ function fetch_tweets(elem) {
 
 $(document).ready(function () {
     window.monitter = {};
-    $('.monitter').each(function (e) {
-        rrp = 6;
-        fetch_tweets(this);
-    });
+	
+	jQuery.fn.monitter = function() {
+		fetch_tweets(this);
+		return this;
+	}; 
 });
