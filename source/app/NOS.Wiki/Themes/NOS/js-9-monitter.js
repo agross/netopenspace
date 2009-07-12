@@ -69,7 +69,7 @@ function fetch_tweets(elem) {
 		
         setTimeout(function () {
 			fetch_tweets(elem)
-		}, 2000);
+		}, 10000);
     });
 	
     return (false);
