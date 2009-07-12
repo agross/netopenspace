@@ -14,6 +14,6 @@
 	margin: 1px 2px 2px 0;
 }
 
-.tweet p.text b {
-	font-weight: normal;
+.tweet .time a {
+	color: #aaa;
 }
