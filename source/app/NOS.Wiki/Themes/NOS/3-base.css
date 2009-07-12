@@ -372,7 +372,7 @@ Sidebar
 	color: #a12d0d;
 }
 
-.other-years, .remote-spaces {
+.other-years, .remote-spaces, .buzz {
 	color: #FFF;
 	background: #A12D0D none no-repeat scroll top right;
 }
@@ -393,8 +393,13 @@ Sidebar
 	min-height: 76px;
 }
 
-.other-years a, .remote-spaces a {
+.other-years a, .remote-spaces a, .buzz a {
 	color: #FFF;
+}
+
+.buzz .content {
+	margin-left: .5em;
+	width: 8.8em;
 }
 
 /*

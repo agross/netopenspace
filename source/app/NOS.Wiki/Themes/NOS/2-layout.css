@@ -43,7 +43,7 @@ body form {
 	padding-bottom: 2em;
 }
 
-.other-years, .remote-spaces {
+.other-years, .remote-spaces, .buzz {
 	left: 943px;
 	padding: .2em;
 	position: absolute;
@@ -54,3 +54,8 @@ body form {
 .remote-spaces {
 	margin-top: 12em;
 }
+
+.buzz {
+	margin-top: 19.3em;
+}
+
