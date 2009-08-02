@@ -130,7 +130,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Label ID="lblXingUserName" runat="server" meta:resourcekey="lblXingUserName" />:</p>
+					<asp:Literal ID="lblXingUserName" runat="server" meta:resourcekey="lblXingUserName" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtXingUserName" runat="server" Width="200px" meta:resourcekey="txtXingUserName" CausesValidation="True" />
@@ -139,7 +139,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Label ID="lblPicture" runat="server" meta:resourcekey="lblPicture" AssociatedControlID="txtPicture" />:</p>
+					<asp:Literal ID="lblPicture" runat="server" meta:resourcekey="lblPicture" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CausesValidation="True" />
