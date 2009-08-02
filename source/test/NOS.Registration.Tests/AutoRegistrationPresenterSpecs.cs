@@ -44,6 +44,7 @@ namespace NOS.Registration.Tests
 				View.Stub(x => x.Email).Return("email");
 				View.Stub(x => x.Blog).Return("blog");
 				View.Stub(x => x.Picture).Return("picture");
+				View.Stub(x => x.Sponsoring).Return(12.34m);
 
 				new AutoRegistrationPresenter(View, Repository, Logger);
 			};
@@ -73,6 +74,9 @@ namespace NOS.Registration.Tests
 	
 		It should_save_the_picture_URL_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Picture.Equals("picture"))));
+	
+		It should_save_the_sponsoring_value_from_the_view =
+			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Sponsoring.Equals(12.34m))));
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]

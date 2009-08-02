@@ -1,4 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="AutoRegistration.ascx.cs" Inherits="NOS.AutoRegistration" %>
+
 <script type="text/javascript">
 	$(document).ready(function()
 	{
@@ -8,6 +9,7 @@
 			ValidatorEnable($("#<%= rfvName.ClientID %>").get(0), enabled);
 			ValidatorEnable($("#<%= revBlog.ClientID %>").get(0), enabled);
 			ValidatorEnable($("#<%= revPicture.ClientID %>").get(0), enabled);
+			ValidatorEnable($("#<%= rngSponsoring.ClientID %>").get(0), enabled);
 		});
 
 		function updateLink(element, href)
@@ -62,6 +64,7 @@
 			});
 	});
 </script>
+
 <asp:Panel ID="AutoRegistrationPanel" runat="server">
 	</table>
 	<br />
@@ -88,7 +91,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblName" runat="server" meta:resourcekey="lblName" Text="Name" />:</p>
+					<asp:Literal ID="lblName" runat="server" meta:resourcekey="lblName" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtName" runat="server" Width="200px" meta:resourcekey="txtName" CausesValidation="True" />
@@ -98,7 +101,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblEmail" runat="server" meta:resourcekey="lblEmail" Text="E-mail" /></p>
+					<asp:Literal ID="lblEmail" runat="server" meta:resourcekey="lblEmail" /></p>
 			</td>
 			<td>
 				<asp:CheckBox ID="chkPublishEmail" runat="server" meta:resourcekey="chkPublishEmail" Checked="false" />
@@ -107,7 +110,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblBlog" runat="server" meta:resourcekey="lblBlog" Text="Blog" />:</p>
+					<asp:Literal ID="lblBlog" runat="server" meta:resourcekey="lblBlog" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtBlog" runat="server" Width="200px" meta:resourcekey="txtBlog" CausesValidation="True" />
@@ -118,7 +121,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblTwitterUserName" runat="server" meta:resourcekey="lblTwitterUserName" Text="Twitter" />:</p>
+					<asp:Literal ID="lblTwitterUserName" runat="server" meta:resourcekey="lblTwitterUserName" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtTwitterUserName" runat="server" Width="200px" meta:resourcekey="txtTwitterUserName" CausesValidation="True" />
@@ -127,7 +130,7 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblXingUserName" runat="server" meta:resourcekey="lblXingUserName" Text="XING" />:</p>
+					<asp:Label ID="lblXingUserName" runat="server" meta:resourcekey="lblXingUserName" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtXingUserName" runat="server" Width="200px" meta:resourcekey="txtXingUserName" CausesValidation="True" />
@@ -136,12 +139,38 @@
 		<tr>
 			<td>
 				<p style="text-align: right;">
-					<asp:Literal ID="lblPicture" runat="server" meta:resourcekey="lblPicture" Text="Picture" />:</p>
+					<asp:Label ID="lblPicture" runat="server" meta:resourcekey="lblPicture" AssociatedControlID="txtPicture" />:</p>
 			</td>
 			<td>
 				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revPicture" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"
 					ControlToValidate="txtPicture" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>
+					Die Teilnahme am .NET Open Space 2009 in Leipzig ist völlig kostenlos. Wenn du möchtest, kannst du den <a href="Organisation.ashx">
+						Organisatoren</a> einen Geldbetrag zukommen lassen, welcher für die Gestaltung (Abendveranstaltung, Getränke etc.) verwendet
+					wird. Trage den Betrag hier mit in die Teilnehmerliste ein und gib <a href="mailto:tweber@netopenspace.de">Torsten</a> per
+					E-Mail Bescheid. Du bekommst danach eine Rechnung von ihm. Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR
+					oder mehr, entscheidest du vollkommen frei und selbst. <strong>Bedenke, dass die Veranstaltung gerade vom Sponsoring der Teilnehmer
+						lebt.</strong>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p style="text-align: right;">
+					<asp:Literal ID="lblSponsoring" runat="server" meta:resourcekey="lblSponsoring" />:</p>
+			</td>
+			<td>
+				<p>
+				<asp:TextBox ID="txtSponsoring" runat="server" Width="200px" meta:resourcekey="txtSponsoring" CausesValidation="True" />
+				&euro;
+				<asp:RangeValidator ID="rngSponsoring" runat="server" ControlToValidate="txtSponsoring" meta:resourcekey="rngSponsoring"
+					MinimumValue="0" MaximumValue="9999999" Type="Currency"><img src="Images/InputError.png" alt="*" /></asp:RangeValidator>
+				</p>
 			</td>
 		</tr>
 	</table>

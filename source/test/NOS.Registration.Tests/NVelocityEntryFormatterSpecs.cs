@@ -73,6 +73,27 @@ namespace NOS.Registration.Tests
 		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("twitter was given");
 		It should_turn_empty_strings_into_null_values = () => Entry.ShouldEqual("twitter was given");
 	}
+	
+	[Subject(typeof(NVelocityEntryFormatter))]
+	public class When_an_entry_with_conditional_decimal_elements_is_formatted : With_entry_formatter
+	{
+		Establish context = () =>
+			{
+				Formatter.EntryTemplate = "#if($user.Data.Sponsoring > 0)" +
+				                          "$user.Data.Sponsoring was given" +
+				                          "#end";
+
+				User = new User("user")
+				       {
+				       	Data =
+				       		{
+				       			Sponsoring = 0.01m
+				       		}
+				       };
+			};
+		
+		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("was given");
+	}
 
 	[Subject(typeof(NVelocityEntryFormatter))]
 	public class When_a_complex_entry_is_formatted : With_entry_formatter

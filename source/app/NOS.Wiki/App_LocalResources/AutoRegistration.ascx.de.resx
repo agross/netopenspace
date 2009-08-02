@@ -132,6 +132,9 @@
   <data name="lblPicture.Text" xml:space="preserve">
     <value>Bild-URL</value>
   </data>
+  <data name="lblSponsoring.Text" xml:space="preserve">
+    <value>Mein Sponsoring-Beitrag</value>
+  </data>
   <data name="lblTwitterUserName.Text" xml:space="preserve">
     <value>Benutzername bei Twitter</value>
   </data>
@@ -159,6 +162,9 @@
   <data name="rfvRequired.ErrorMessage" xml:space="preserve">
     <value>Ein benötigtes Feld wurde nicht ausgefüllt</value>
   </data>
+  <data name="rngSponsoring.ErrorMessage" xml:space="preserve">
+    <value>Bitte gib einen Betrag größer oder gleich 0 mit maximal 2 Nachkommastellen ein</value>
+  </data>
   <data name="txtBlog.ToolTip" xml:space="preserve">
     <value>Sofern vorhanden, gib hier den URL deines Blogs an</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="txtPicture.ToolTip" xml:space="preserve">
     <value>Sofern vorhanden, gib hier den URL zu einem Bild auf dem du zu sehen bist ein</value>
+  </data>
+  <data name="txtSponsoring.ToolTip" xml:space="preserve">
+    <value>Gib hier deinen Sponsoring-Beitrag ein. Lass das Feld leer wenn du nicht sponsorn möchtest</value>
   </data>
   <data name="txtTwitterUserName.ToolTip" xml:space="preserve">
     <value>Sofern vorhanden, gib hier deinen Benutzernamen bei Twitter ein</value>

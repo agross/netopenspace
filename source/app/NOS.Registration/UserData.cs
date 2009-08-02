@@ -1,4 +1,6 @@
 using System;
+using System.Globalization;
+using System.Web.Script.Serialization;
 
 namespace NOS.Registration
 {
@@ -45,6 +47,33 @@ namespace NOS.Registration
 		{
 			get { return EmptyStringToNull(_name); }
 			set { _name = value; }
+		}
+
+		public decimal Sponsoring
+		{
+			get;
+			set;
+		}
+
+		[ScriptIgnore]
+		public string FormattedSponsoring
+		{
+			get
+			{
+				if (Sponsoring == decimal.Zero)
+				{
+					return String.Empty;
+				}
+
+				var culture = CultureInfo.GetCultureInfo("de-DE");
+
+				if (decimal.Ceiling(Sponsoring) == Sponsoring)
+				{
+					return Sponsoring.ToString("0", culture);
+				}
+
+				return Sponsoring.ToString("0.00", culture);
+			}
 		}
 
 		static string EmptyStringToNull(string value)

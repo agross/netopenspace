@@ -44,6 +44,11 @@ namespace NOS.Registration
 			get;
 		}
 
+		decimal Sponsoring
+		{
+			get;
+		}
+
 		event EventHandler<EventArgs> UserCreated;
 	}
 }

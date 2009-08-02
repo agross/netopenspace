@@ -62,6 +62,19 @@ namespace NOS
 			get { return txtPicture.Text.Trim(); }
 		}
 
+		public decimal Sponsoring
+		{
+			get
+			{
+				decimal value;
+				if (decimal.TryParse(txtSponsoring.Text, out value))
+				{
+					return value;
+				}
+				return 0;
+			}
+		}
+
 		public event EventHandler<EventArgs> UserCreated;
 		#endregion
 
