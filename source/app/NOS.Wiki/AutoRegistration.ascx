@@ -152,8 +152,8 @@
 				<p>
 					Die Teilnahme am .NET Open Space 2009 in Leipzig ist völlig kostenlos. Wenn du möchtest, kannst du den <a href="Organisation.ashx">
 						Organisatoren</a> einen Geldbetrag zukommen lassen, welcher für die Gestaltung (Abendveranstaltung, Getränke etc.) verwendet
-					wird. Trage den Betrag hier mit in die Teilnehmerliste ein und gib <a href="mailto:tweber@netopenspace.de">Torsten</a> per
-					E-Mail Bescheid. Du bekommst danach eine Rechnung von ihm. Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR
+					wird. Trage den Betrag hier mit in die Teilnehmerliste ein. <a href="mailto:tweber@netopenspace.de">Torsten</a> gibt dir dann per
+					E-Mail wegen einer Rechnung Bescheid. Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR
 					oder mehr, entscheidest du vollkommen frei und selbst. <strong>Bedenke, dass die Veranstaltung gerade vom Sponsoring der Teilnehmer
 						lebt.</strong>
 				</p>
