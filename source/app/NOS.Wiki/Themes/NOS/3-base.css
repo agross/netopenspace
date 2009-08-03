@@ -39,7 +39,7 @@ a.preview {
 	color: #aaa;
 }
 
-strong, b {
+strong, b, strong *, b * {
 	font-weight: bold;
 }
 
