@@ -91,3 +91,7 @@ textarea {
 #SearchControlsDiv input {
 	vertical-align: top;
 }
+
+#PageContentDiv div.copy-code {
+	margin-left: 61%;
+}

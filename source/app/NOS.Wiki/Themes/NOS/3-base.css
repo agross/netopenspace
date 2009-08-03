@@ -22,6 +22,7 @@ body form {
 pre {
 	font-family: Consolas, Lucida Console, Monospace;
 	margin: .5em 1em;
+	margin-top: 0;
 	overflow: scroll;
 }
 
@@ -467,12 +468,12 @@ table td {
 #PageContentDiv div.copy-code {
 	font-size: 0.8em;
 	display: block;
-	float: right;
 	border: 1px solid #ccc;
 	border-bottom: none;
 	margin-top: 0.5em;
-	margin-right: 4em;
+	margin-left: 80%;
 	cursor: pointer;
+	width: 77px;
 }
 
 /*
