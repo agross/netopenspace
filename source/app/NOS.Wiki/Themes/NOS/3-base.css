@@ -39,6 +39,17 @@ a.preview {
 	color: #aaa;
 }
 
+a.direct-link {
+	display: inline;
+	text-decoration: none;
+	color: #fff;
+	margin-left: .1em;
+}
+
+.separator:hover a.direct-link {
+	color: #648c13;
+}
+
 strong, b, strong *, b * {
 	font-weight: bold;
 }

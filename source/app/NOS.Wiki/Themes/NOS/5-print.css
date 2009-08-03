@@ -44,4 +44,8 @@
 		background: none;
 		padding-right: 0;
 	}
+	
+	a.direct-link {
+		display: none;
+	}
 }
