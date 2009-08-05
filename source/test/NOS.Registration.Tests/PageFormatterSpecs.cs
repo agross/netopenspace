@@ -13,6 +13,7 @@ namespace NOS.Registration.Tests
 		protected static ILogger Logger;
 		protected static string NewContent;
 		protected static string OldContent;
+		protected static User User;
 		static IPageFormatter PageFormatter;
 
 		Establish context = () =>
@@ -28,9 +29,11 @@ namespace NOS.Registration.Tests
 				                };
 
 				OldContent = String.Empty;
+
+				User = new User("user");
 			};
 
-		Because of = () => { Exception = Catch.Exception(() => NewContent = PageFormatter.AddEntry(OldContent, "\nentry")); };
+		Because of = () => { Exception = Catch.Exception(() => NewContent = PageFormatter.AddEntry(OldContent, "\nentry", User)); };
 	}
 
 	[Subject(typeof(PageFormatter))]
@@ -152,5 +155,19 @@ namespace NOS.Registration.Tests
 
 		It should_add_the_user_to_the_waiting_list =
 			() => NewContent.ShouldEqual("list start\n# Entry 1\n# Entry 2\nlist end\nentry\nwaiting list end");
+	}
+
+	[Subject(typeof(PageFormatter))]
+	public class When_content_is_formatted_and_the_attendee_list_is_full_but_the_user_sponsored_some_amount_of_money : With_formatter
+	{
+		Establish context = () =>
+			{
+				OldContent = "list start\n# Entry 1\n# Entry 2\nlist end\nwaiting list end";
+
+				User.Data.Sponsoring = 0.1m;
+			};
+
+		It should_add_the_user_to_the_attendee_list =
+			() => NewContent.ShouldEqual("list start\n# Entry 1\n# Entry 2\nentry\nlist end\nwaiting list end");
 	}
 }

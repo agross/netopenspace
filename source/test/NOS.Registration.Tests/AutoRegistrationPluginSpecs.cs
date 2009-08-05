@@ -180,7 +180,7 @@ namespace NOS.Registration.Tests
 		static IPagesStorageProvider Provider;
 		static UserAccountActivityEventArgs EventArgs;
 		protected static UserInfo UserInfo;
-		static User User;
+		protected static User User;
 
 		Establish context = () =>
 			{
@@ -207,7 +207,7 @@ namespace NOS.Registration.Tests
 				Host.Stub(x => x.SendEmail(null, null, null, null, false)).IgnoreArguments().Return(true);
 
 				EntryFormatter.Stub(x => x.FormatUserEntry(User)).Return(" and entry");
-				PageFormatter.Stub(x => x.AddEntry("content", " and entry")).Return("content and entry");
+				PageFormatter.Stub(x => x.AddEntry("content", " and entry", User)).Return("content and entry");
 			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
@@ -224,7 +224,7 @@ namespace NOS.Registration.Tests
 		It should_format_the_users_entry = () => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User));
 
 		It should_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", " and entry"));
+			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", " and entry", User));
 
 		It should_save_the_modified_page_contents =
 			() => PageRepository.AssertWasCalled(x => x.Save(Arg<PageInfo>.Is.Equal(PageInfo),
@@ -274,7 +274,7 @@ namespace NOS.Registration.Tests
 			};
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
 	}
 
 	[Behaviors]
@@ -311,7 +311,7 @@ namespace NOS.Registration.Tests
 			() => Logger.AssertWasCalled(x => x.Error("The attendee page 'page' does not exist.", "SYSTEM"));
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
 
 		Behaves_like<FailureNotificationBehavior> failing_activation;
 	}
@@ -336,7 +336,7 @@ namespace NOS.Registration.Tests
 			                             	Is.Equal("SYSTEM")));
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
 
 		Behaves_like<FailureNotificationBehavior> failing_activation;
 	}
@@ -348,7 +348,7 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				PageFormatter.BackToRecord();
-				PageFormatter.Stub(x => x.AddEntry(null, null)).IgnoreArguments().Throw(new Exception());
+				PageFormatter.Stub(x => x.AddEntry(null, null, User)).IgnoreArguments().Throw(new Exception());
 				PageFormatter.Replay();
 			};
 

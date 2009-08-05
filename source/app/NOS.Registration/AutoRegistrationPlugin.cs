@@ -282,7 +282,7 @@ namespace NOS.Registration
 						try
 						{
 							string entry = _entryFormatter.FormatUserEntry(user);
-							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry);
+							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry, user);
 
 							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, Comment, newContent);
 

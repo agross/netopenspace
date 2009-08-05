@@ -32,6 +32,6 @@ namespace NOS.Registration
 			set;
 		}
 
-		string AddEntry(string content, string entry);
+		string AddEntry(string content, string entry, User user);
 	}
 }

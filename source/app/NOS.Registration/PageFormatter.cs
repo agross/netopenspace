@@ -71,7 +71,7 @@ namespace NOS.Registration
 			set;
 		}
 
-		public string AddEntry(string content, string entry)
+		public string AddEntry(string content, string entry, User user)
 		{
 			int listStart = AssertMatchesOnce(content, ListStartMatcher, "list start");
 			int listEnd = AssertMatchesOnce(content, ListEndMatcher, "list end");
@@ -93,7 +93,7 @@ namespace NOS.Registration
 			int addAtIndex = listEnd;
 
 			int numberOfAttendees = CountNumberOfEntries(content.Substring(listStart, listEnd - listStart), EntryMatcher);
-			if (numberOfAttendees >= MaximumAttendees)
+			if (numberOfAttendees >= MaximumAttendees && user.Data.Sponsoring <= decimal.Zero)
 			{
 				_logger.Info(String.Format("User entry '{0}' is on the waiting list, attendee list is full with {1} entries",
 				                           entry.Substring(0, entry.Length > 20 ? 19 : entry.Length) + "...",
