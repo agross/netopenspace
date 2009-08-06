@@ -514,7 +514,7 @@
     <comment>Missing required field</comment>
   </data>
   <data name="ActivationAdmin" xml:space="preserve">
-    <value>Das Benutzerkonto muss erst durch einen Administrator aktiviert werden, bevor Sie sich anmelden können.</value>
+	<value>Das Benutzerkonto muss erst durch einen Administrator aktiviert werden, bevor du dich anmelden kannst.</value>
     <comment>Your Account will need to be approved by an Administrator before you can login.</comment>
   </data>
   <data name="ActivationAuto" xml:space="preserve">
@@ -522,7 +522,7 @@
     <comment>Your Account will be active right afer the registration.</comment>
   </data>
   <data name="ActivationEmail" xml:space="preserve">
-    <value>Das Benutzerkonto muss binnen 24 Stunden aktiviert werden. Folgen Sie dazu den Anweisungen, die an die eingegebene E-Mail-Adresse geschickt werden.</value>
+    <value>Das Benutzerkonto muss binnen 24 Stunden aktiviert werden. Folge dazu den Anweisungen, die an die eingegebene E-Mail-Adresse geschickt werden.</value>
     <comment>You must activate your Account within 24 hours, following the instructions that you'll receive via Email.</comment>
   </data>
   <data name="Print" xml:space="preserve">
