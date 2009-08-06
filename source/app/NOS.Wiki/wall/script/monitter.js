@@ -82,12 +82,27 @@ function fetch_tweets(elem) {
 			$(this).fadeTo('normal', opacity(i, window.monitter['limit-' + query], 2, .4, 1));
 		});
 		
+		var lastUpdate = new Date();
+		var hours = prefixWithZero(lastUpdate.getHours());
+		var minutes = prefixWithZero(lastUpdate.getMinutes());
+		var seconds = prefixWithZero(lastUpdate.getSeconds());
+		$('#last-update').text("Letzte Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
+		
         setTimeout(function () {
 			fetch_tweets(elem)
 		}, 10000);
     });
 	
     return (false);
+}
+
+function prefixWithZero(value)
+{
+	if (value < 10)
+	{
+		return '0' + value;
+	}
+	return value;
 }
 
 $(document).ready(function () {

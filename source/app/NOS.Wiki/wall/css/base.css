@@ -17,7 +17,7 @@ h1 {
 	display: block;
 	background: transparent url("../images/logo.png") no-repeat left top;
 	text-align: right;
-	margin-right: 35px;
+	margin-right: 40px;
 }
 
 a {
@@ -27,6 +27,15 @@ a {
 
 img {
 	border: 0;
+}
+
+#last-update {
+	font-size:0.75em;
+	height: 0;
+	position: relative;
+	text-align: right;
+	top: -30px;
+	margin-right: 40px;
 }
 
 #wrapper {
