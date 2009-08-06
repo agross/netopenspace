@@ -49,7 +49,7 @@ namespace NOS.Registration.Tests.EntryPositioning
 		protected static IPluginConfiguration Configuration;
 		protected static EvaluationContext Context;
 		protected static DefaultOpinionEvaluator Evaluator;
-		protected static IHasOpinionAboutEntryPosition[] Opinions;
+		static IHasOpinionAboutEntryPosition[] Opinions;
 
 		Establish context = () =>
 			{
