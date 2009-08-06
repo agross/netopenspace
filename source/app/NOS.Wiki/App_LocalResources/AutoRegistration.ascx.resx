@@ -121,7 +121,7 @@
     <value>Yes, I want to enroll!</value>
   </data>
   <data name="chkPublishEmail.Text" xml:space="preserve">
-    <value>Yes, I want to publish the e-mail address above as part of my entry</value>
+    <value>Yes, I want to publish the e-mail address above as part of my entry.</value>
   </data>
   <data name="lblBlog.Text" xml:space="preserve">
     <value>Blog URL</value>

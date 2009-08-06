@@ -121,7 +121,7 @@
     <value>Ja, ich möchte als Teilnehmer eingetragen werden!</value>
   </data>
   <data name="chkPublishEmail.Text" xml:space="preserve">
-    <value>Ja, ich möchte meine E-Mail-Adresse als Teil meines Eintrags veröffentlichen</value>
+    <value>Ja, ich möchte meine E-Mail-Adresse als Teil meines Eintrags veröffentlichen.</value>
   </data>
   <data name="lblBlog.Text" xml:space="preserve">
     <value>Blog-URL</value>
