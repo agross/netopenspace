@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<title>.NET Open Space</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="robots" content="noindex, follow">
+	
+	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
+
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/monitter.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		String.prototype.startsWith = function(instance, ignoreCase)
+		{
+			if (ignoreCase)
+			{
+				return (instance == this.substring(0, instance.length));
+			}
+
+			return (instance.toLowerCase() == this.substring(0, instance.length).toLowerCase());
+		};
+		
+		$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
+			function(json)
+			{
+				var developmentFilter = function(item)
+				{
+					return !(!document.URL.startsWith("http://nos.local") && item.Private);
+				}
+				
+				json = $.grep(json, developmentFilter);
+							
+				var query = $(json).map(function() {
+					return this.TwitterSearch;
+				});
+				
+				query = $.makeArray(query).join(' OR ');
+				
+				$('.loading').fadeOut();
+				
+				$('#tweets')
+					.attr('rel', query)
+					.monitter();
+			});
+	});
+	</script>
+</head>
+<body id="body">
+	<div id="wrapper">
+		<h1>Twitter-Hashtag <em>#netos2009</em> benutzen!</h1>
+		<div id="tweets">
+			<span class="loading" style="display:block; text-align:center; padding-top:100px;"><img src="images/ajax-loader.gif" alt="loading..." /></span>
+		</div>
+	</div>
+</body></html>

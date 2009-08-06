@@ -1,0 +1,79 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #e1df9e url(../images/page-background.png) repeat-x scroll left top;
+	font-family: Segoe UI, Verdana, Tahoma, Arial, Sans-Serif;
+	color: #fff;
+}
+
+h1 {
+	font-family: Georgia, Palatino, Serif;
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #a12d0d;
+	height: 71px;
+	display: block;
+	background: transparent url("../images/logo.png") no-repeat left top;
+	text-align: right;
+	margin-right: 35px;
+}
+
+a {
+	color: #648C13;
+	text-decoration: none;
+}
+
+img {
+	border: 0;
+}
+
+#wrapper {
+	width: 920px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#wrapper #tweets > div {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#wrapper #tweets .bubble {
+	background :#fff;
+	color: #000;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 130px;
+}
+
+#wrapper #tweets .bubble p {
+	width: 185px;
+	height: 130px;
+	overflow: hidden;
+	text-align: left;
+	margin: 0;
+}
+
+#wrapper #tweets .author {
+	padding: 13px 8px 0;
+	vertical-align: top;
+	background: url("../images/bubble.png") no-repeat;
+}
+
+#wrapper #tweets .author a {
+	color: #fff;
+}
+
+#wrapper #tweets .author .avatar {
+	width: 30px;
+	height: 30px;
+	vertical-align: top;
+	margin-right: 5px;
+	display: inline-block;
+}
