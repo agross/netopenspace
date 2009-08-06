@@ -1,4 +1,7 @@
 using System;
+using System.Linq;
+
+using NOS.Registration.EntryPositioning;
 
 using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
@@ -7,23 +10,32 @@ namespace NOS.Registration
 {
 	public class AutoRegistrationPlugin : IFormatterProvider
 	{
+		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
 		readonly ILogger _logger;
+		readonly INotificationSender _notificationSender;
 		readonly IPageFormatter _pageFormatter;
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
 		readonly ISynchronizer _synchronizer;
 		IHost _host;
-		INotificationSender _notificationSender;
 
 		public AutoRegistrationPlugin()
 			: this(new CrossContextSynchronizer(),
 			       new RegistrationRepository(),
 			       new PageRepository(),
-			       new PageFormatter(new DefaultLogger()),
+			       new PageFormatter(new DefaultLogger(),
+			                         new DefaultOpinionEvaluator(
+			                         	new IHasOpinionAboutEntryPosition[]
+			                         	{
+			                         		new AtListEnd(),
+			                         		new AtListEndWhenSponsoring(),
+			                         		new AtWaitingListEndWhenHardLimitReached()
+			                         	})),
 			       new NVelocityEntryFormatter(),
 			       new EmailNotificationSender(),
-			       new DefaultLogger())
+			       new DefaultLogger(),
+			       new DefaultPluginConfiguration())
 		{
 		}
 
@@ -33,7 +45,8 @@ namespace NOS.Registration
 		                              IPageFormatter pageFormatter,
 		                              IEntryFormatter entryFormatter,
 		                              INotificationSender notificationSender,
-		                              ILogger logger)
+		                              ILogger logger,
+		                              IPluginConfiguration configuration)
 		{
 			_synchronizer = synchronizer;
 			_registrationRepository = registrationRepository;
@@ -42,18 +55,7 @@ namespace NOS.Registration
 			_entryFormatter = entryFormatter;
 			_notificationSender = notificationSender;
 			_logger = logger;
-		}
-
-		string PageName
-		{
-			get;
-			set;
-		}
-
-		string Comment
-		{
-			get;
-			set;
+			_configuration = configuration;
 		}
 
 		#region IFormatterProvider Members
@@ -64,9 +66,17 @@ namespace NOS.Registration
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
-			}
+				_notificationSender.Configure(_host);
 
-			_notificationSender.Configure(_host);
+				_logger.Info(String.Format("Waiting list is enabled after {0} attendees with a hard limit of {1}.",
+				                           _configuration.MaximumAttendees,
+				                           _configuration.HardLimit),
+				             "SYSTEM");
+			}
+			else
+			{
+				_logger.Error("The auto registration plugin will be disabled.", "SYSTEM");
+			}
 		}
 
 		public void Shutdown()
@@ -101,143 +111,11 @@ namespace NOS.Registration
 
 		bool Configure(string config)
 		{
-			ConfigureDefaults();
-			ParseConfig(config ?? String.Empty);
-			return AssertConfigurationIsValid();
-		}
+			var errors = _configuration.Parse(config ?? String.Empty, _pageRepository);
 
-		void ConfigureDefaults()
-		{
-			_entryFormatter.EntryTemplate = "# $user.UserName";
-			Comment = "AutoRegistration";
-		}
+			errors.Each(x => _logger.Error(x, "SYSTEM"));
 
-		void ParseConfig(string config)
-		{
-			config
-				.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)
-				.Each(x =>
-					{
-						string key = x.Substring(0, x.IndexOf('=')).ToLowerInvariant();
-						string value = x.Substring(x.IndexOf('=') + 1).Trim();
-
-						switch (key)
-						{
-							case "entrytemplate":
-								_entryFormatter.EntryTemplate = value;
-								break;
-
-							case "entrypattern":
-								_pageFormatter.EntryPattern = value;
-								break;
-
-							case "pagename":
-								PageName = value;
-								break;
-
-							case "liststartpattern":
-								_pageFormatter.ListStartPattern = value;
-								break;
-
-							case "listendpattern":
-								_pageFormatter.ListEndPattern = value;
-								break;
-
-							case "waitinglistendpattern":
-								_pageFormatter.WaitingListEndPattern = value;
-								break;
-
-							case "maximumattendees":
-								int result;
-								if (!int.TryParse(value, out result))
-								{
-									_logger.Error(String.Format("Could not convert configuration value to integer: Key='{0}' Value='{1}'",
-									                            key,
-									                            value),
-									              "SYSTEM");
-								}
-								else
-								{
-									_pageFormatter.MaximumAttendees = result;
-								}
-								break;
-
-							case "comment":
-								Comment = value;
-								break;
-
-							default:
-								_logger.Error(String.Format("Unknown configuration key: {0}", key), "SYSTEM");
-								break;
-						}
-					});
-		}
-
-		bool AssertConfigurationIsValid()
-		{
-			bool isInvalid = false;
-
-			if (String.IsNullOrEmpty(PageName))
-			{
-				_logger.Error("The page name for the attendee page is missing. Configuration sample: 'PageName=Attendee list'.",
-				              "SYSTEM");
-
-				isInvalid |= true;
-			}
-
-			if (!String.IsNullOrEmpty(PageName))
-			{
-				if (_pageRepository.FindPage(PageName) == null)
-				{
-					_logger.Error(String.Format("The attendee page '{0}' does not exist.", PageName), "SYSTEM");
-					isInvalid |= true;
-				}
-			}
-
-			if (String.IsNullOrEmpty(_pageFormatter.EntryPattern))
-			{
-				_logger.Error(
-					"The entry pattern is missing. Configuration sample: 'EntryPattern=^#.*$'.",
-					"SYSTEM");
-
-				isInvalid |= true;
-			}
-
-			if (String.IsNullOrEmpty(_pageFormatter.ListStartPattern))
-			{
-				_logger.Error(
-					"The attendee list start pattern is missing. Configuration sample: 'ListStartPattern=<!--DO NOT REMOVE List start-->'.",
-					"SYSTEM");
-
-				isInvalid |= true;
-			}
-
-			if (String.IsNullOrEmpty(_pageFormatter.ListEndPattern))
-			{
-				_logger.Error(
-					"The attendee list end pattern is missing. Configuration sample: 'ListEndPattern=<!--DO NOT REMOVE List end-->'.",
-					"SYSTEM");
-
-				isInvalid |= true;
-			}
-
-			if (String.IsNullOrEmpty(_pageFormatter.WaitingListEndPattern))
-			{
-				_logger.Error(
-					"The attendee waiting list end pattern is missing. Configuration sample: 'WaitingListEndPattern=<!--DO NOT REMOVE Waiting list end-->'.",
-					"SYSTEM");
-
-				isInvalid |= true;
-			}
-
-			_logger.Info(String.Format("Waiting list is enabled after {0} attendees", _pageFormatter.MaximumAttendees), "SYSTEM");
-
-			if (isInvalid)
-			{
-				_logger.Error("The auto registration plugin will be disabled.", "SYSTEM");
-			}
-
-			return !isInvalid;
+			return !errors.Any();
 		}
 
 		void Host_UserAccountActivity(object sender, UserAccountActivityEventArgs e)
@@ -258,10 +136,10 @@ namespace NOS.Registration
 							return;
 						}
 
-						var pageInfo = _pageRepository.FindPage(PageName);
+						var pageInfo = _pageRepository.FindPage(_configuration.PageName);
 						if (pageInfo == null)
 						{
-							_logger.Error(String.Format("The attendee page '{0}' does not exist.", PageName), "SYSTEM");
+							_logger.Error(String.Format("The attendee page '{0}' does not exist.", _configuration.PageName), "SYSTEM");
 							failed = true;
 							return;
 						}
@@ -273,18 +151,19 @@ namespace NOS.Registration
 						}
 						catch (Exception ex)
 						{
-							_logger.Error(String.Format("The attendee page's content ('{0}') could not be loaded: {1}", PageName, ex),
-							              "SYSTEM");
+							_logger.Error(
+								String.Format("The attendee page's content ('{0}') could not be loaded: {1}", _configuration.PageName, ex),
+								"SYSTEM");
 							failed = true;
 							return;
 						}
 
 						try
 						{
-							string entry = _entryFormatter.FormatUserEntry(user);
-							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry, user);
+							string entry = _entryFormatter.FormatUserEntry(user, _configuration.EntryTemplate);
+							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry, user, _configuration);
 
-							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, Comment, newContent);
+							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, _configuration.Comment, newContent);
 
 							_registrationRepository.Delete(user.UserName);
 
@@ -298,10 +177,10 @@ namespace NOS.Registration
 					}
 					finally
 					{
-						_notificationSender.SendMessage(e.User.Username, e.User.Email, Comment, failed);
+						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
 						if (failed)
 						{
-							_notificationSender.SendMessage(e.User.Username, Settings.ContactEmail, Comment, true);
+							_notificationSender.SendMessage(e.User.Username, Settings.ContactEmail, _configuration.Comment, true);
 						}
 					}
 				});

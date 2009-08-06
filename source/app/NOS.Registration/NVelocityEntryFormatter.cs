@@ -9,8 +9,6 @@ namespace NOS.Registration
 	{
 		readonly VelocityEngine _engine;
 
-		string _entryTemplate;
-
 		public NVelocityEntryFormatter()
 		{
 			_engine = new VelocityEngine();
@@ -18,31 +16,29 @@ namespace NOS.Registration
 		}
 
 		#region IEntryFormatter Members
-		public string EntryTemplate
-		{
-			get { return _entryTemplate; }
-			set
-			{
-				if (value != null)
-				{
-					value = value.Replace("\\n", "\n");
-				}
-				_entryTemplate = value;
-			}
-		}
-
-		public string FormatUserEntry(User user)
+		public string FormatUserEntry(User user, string entryTemplate)
 		{
 			var context = new VelocityContext();
 			context.Put("user", user);
 
 			using (StringWriter writer = new StringWriter())
 			{
-				_engine.Evaluate(context, writer, null, EntryTemplate);
+				entryTemplate = PrepareTemplate(entryTemplate);
+				_engine.Evaluate(context, writer, null, entryTemplate);
 
 				return writer.ToString();
 			}
 		}
 		#endregion
+
+		static string PrepareTemplate(string value)
+		{
+			if (value != null)
+			{
+				return value.Replace("\\n", "\n");
+			}
+
+			return value;
+		}
 	}
 }

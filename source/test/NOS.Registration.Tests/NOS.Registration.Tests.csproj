@@ -65,9 +65,11 @@
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="AutoRegistrationPresenterSpecs.cs" />
+    <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
     <Compile Include="NVelocityEntryFormatterSpecs.cs" />
     <Compile Include="PageFormatterSpecs.cs" />
     <Compile Include="CrossContextSynchronizationSpecs.cs" />
+    <Compile Include="DefaultPluginConfigurationSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationRepositorySpecs.cs" />
     <Compile Include="UserDataSpecs.cs" />

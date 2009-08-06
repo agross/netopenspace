@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 using Machine.Specifications;
@@ -12,6 +13,7 @@ namespace NOS.Registration.Tests
 {
 	public class With_auto_registration_plugin
 	{
+		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
 		protected static IHost Host;
 		protected static ILogger Logger;
@@ -40,82 +42,34 @@ namespace NOS.Registration.Tests
 
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
+				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();
 				Plugin = new AutoRegistrationPlugin(synchronizer,
 				                                    RegistrationRepository,
 				                                    PageRepository,
 				                                    PageFormatter,
 				                                    EntryFormatter,
 				                                    NotificationSender,
-				                                    Logger);
-			};
-	}
-
-	public class With_configured_auto_registration_plugin : With_auto_registration_plugin
-	{
-		protected static PageInfo PageInfo;
-
-		Establish context = () =>
-			{
-				PageInfo = new PageInfo("page", null, PageStatus.Normal, DateTime.Now);
-				PageRepository.Stub(x => x.FindPage("page")).Repeat.Once().Return(PageInfo);
-
-				Plugin.Init(Host,
-				            "PageName=page\nEntryTemplate=EntryTemplate\nEntryPattern=Entry\nListStartPattern=ListStart\nListEndPattern=ListEnd\nWaitingListEndPattern=WaitingListEnd\nMaximumAttendees=10");
-
-				PageRepository.BackToRecord(BackToRecordOptions.All ^ BackToRecordOptions.EventSubscribers);
-				PageRepository.Replay();
+				                                    Logger,
+				                                    Configuration);
 			};
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_the_auto_registration_is_initialized_with_invalid_configuration_data : With_auto_registration_plugin
 	{
-		Because of = () => Plugin.Init(Host, "foo=bar\nMaximumAttendees=not an int");
+		Establish context = () =>
+			{
+				Configuration.Stub(x => x.Parse(null, null))
+					.IgnoreArguments()
+					.Return(new List<string> { "error1", "error2" });
+			};
 
-		It should_log_unknown_entries = () => Logger.AssertWasCalled(x => x.Error(Arg<string>.Matches(y => y.Contains("foo")),
-		                                                                          Arg<string>.Is.Equal("SYSTEM")));
+		Because of = () => Plugin.Init(Host, "invalid");
 
-		It should_log_the_invalid_maximum_attendee_number =
-			() => Logger.AssertWasCalled(x => x.Error(
-			                                  	Arg<string>.Matches(y => y.Contains("MaximumAttendees".ToLowerInvariant())),
-			                                  	Arg<string>.Is.Equal("SYSTEM")));
-	}
-
-	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_the_auto_registration_is_initialized_without_required_options_being_configured
-		: With_auto_registration_plugin
-	{
-		Because of = () => Plugin.Init(Host, String.Empty);
-
-		It should_log_the_missing_page_name =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The page name for the attendee page is missing"),
-			                                          Text.Like("SYSTEM")));
-
-		It should_log_the_missing_entry_pattern =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The entry pattern is missing"),
-			                                          Text.Like("SYSTEM")));
-
-		It should_log_the_missing_list_start_pattern =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The attendee list start pattern is missing"),
-			                                          Text.Like("SYSTEM")));
-
-		It should_log_the_missing_list_end_pattern =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The attendee list end pattern is missing"),
-			                                          Text.Like("SYSTEM")));
-
-		It should_log_the_missing_waiting_list_end_pattern =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The attendee waiting list end pattern is missing"),
-			                                          Text.Like("SYSTEM")));
+		It should_log_all_configuration_errors =
+			() => Logger.AssertWasCalled(x => x.Error(Arg<string>.Matches(y => y.StartsWith("error")),
+			                                          Arg<string>.Is.Equal("SYSTEM")),
+			                             o => o.Repeat.Twice());
 
 		It should_log_that_the_plugin_is_disabled =
 			() => Logger.AssertWasCalled(x => x.Error("The auto registration plugin will be disabled.", "SYSTEM"));
@@ -126,61 +80,41 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_the_auto_registration_is_initialized_with_a_non_existing_page_name
-		: With_auto_registration_plugin
+	public class When_the_auto_registration_is_initialized_successfully : With_auto_registration_plugin
 	{
-		Because of = () =>
+		Establish context = () =>
 			{
-				Host.Stub(x => x.FindPage("does not exist")).Return(null);
-				Plugin.Init(Host, "PageName=does not exist");
+				Configuration
+					.Stub(x => x.Parse(null, null))
+					.IgnoreArguments()
+					.Return(new List<string>());
+
+				Configuration.Stub(x => x.MaximumAttendees).Return(15);
+				Configuration.Stub(x => x.HardLimit).Return(42);
 			};
 
-		It should_log_the_non_existing_page =
-			() =>
-			Logger.AssertWasCalled(x => x.Error(null, null),
-			                       o => o.Constraints(Text.Contains("The attendee page 'does not exist' does not exist"),
-			                                          Text.Like("SYSTEM")));
+		Because of = () => Plugin.Init(Host, String.Empty);
 
-		It should_disable_the_plugin =
-			() => Host.AssertWasNotCalled(x => x.UserAccountActivity += Arg<EventHandler<UserAccountActivityEventArgs>>
-			                                                            	.Is.Anything);
-	}
-
-	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_the_auto_registration_has_been_initialized : With_configured_auto_registration_plugin
-	{
 		It should_enable_the_plugin =
 			() => Host.AssertWasCalled(x => x.UserAccountActivity += Arg<EventHandler<UserAccountActivityEventArgs>>.Is.NotNull);
+
+		It should_log_the_maximum_attendee_count_and_the_hard_limit =
+			() =>
+			Logger.AssertWasCalled(x => x.Info("Waiting list is enabled after 15 attendees with a hard limit of 42.", "SYSTEM"));
 
 		It should_not_respond_to_formatting_requests_in_phase_1 = () => Plugin.PerformPhase1.ShouldBeFalse();
 		It should_not_respond_to_formatting_requests_in_phase_2 = () => Plugin.PerformPhase2.ShouldBeFalse();
 		It should_not_respond_to_formatting_requests_in_phase_3 = () => Plugin.PerformPhase3.ShouldBeFalse();
-
-		It should_have_set_the_entry_template_on_the_formatter =
-			() => EntryFormatter.EntryTemplate.ShouldEqual("EntryTemplate");
-
-		It should_have_set_the_entry_pattern_on_the_formatter =
-			() => PageFormatter.EntryPattern.ShouldEqual("Entry");
-
-		It should_have_set_the_list_start_on_the_formatter =
-			() => PageFormatter.ListStartPattern.ShouldEqual("ListStart");
-
-		It should_have_set_the_list_end_on_the_formatter = () => PageFormatter.ListEndPattern.ShouldEqual("ListEnd");
-
-		It should_have_set_the_waiting_list_end_on_the_formatter =
-			() => PageFormatter.WaitingListEndPattern.ShouldEqual("WaitingListEnd");
-
-		It should_have_set_the_maximum_attendee_number_on_the_formatter =
-			() => PageFormatter.MaximumAttendees.ShouldEqual(10);
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_a_user_account_is_activated : With_configured_auto_registration_plugin
+	public class When_a_user_account_is_activated : With_auto_registration_plugin
 	{
 		static IPagesStorageProvider Provider;
 		static UserAccountActivityEventArgs EventArgs;
 		protected static UserInfo UserInfo;
 		protected static User User;
+		protected static PageInfo PageInfo;
 
 		Establish context = () =>
 			{
@@ -195,19 +129,39 @@ namespace NOS.Registration.Tests
 				User = new User("user");
 				RegistrationRepository.Stub(x => x.FindByUserName("user")).Return(User);
 
-				PageInfo = new PageInfo("page", null, PageStatus.Normal, DateTime.Now);
-				PageRepository.Stub(x => x.FindPage("page")).Return(PageInfo);
+				Configuration
+					.Stub(x => x.Parse(null, null))
+					.IgnoreArguments()
+					.Return(new List<string>());
 
-				Host.Stub(x => x.GetPageContent(PageInfo)).Return(new PageContent(PageInfo,
-				                                                                  "title",
-				                                                                  "user that saved the content last",
-				                                                                  DateTime.Now,
-				                                                                  String.Empty,
-				                                                                  "content"));
-				Host.Stub(x => x.SendEmail(null, null, null, null, false)).IgnoreArguments().Return(true);
+				Configuration.Stub(x => x.Comment).Return("comment");
+				Configuration.Stub(x => x.PageName).Return("page");
+				Configuration.Stub(x => x.EntryTemplate).Return(" and entry");
 
-				EntryFormatter.Stub(x => x.FormatUserEntry(User)).Return(" and entry");
-				PageFormatter.Stub(x => x.AddEntry("content", " and entry", User)).Return("content and entry");
+				PageInfo = new PageInfo(Configuration.PageName, null, PageStatus.Normal, DateTime.Now);
+				PageRepository.Stub(x => x.FindPage(Configuration.PageName)).Return(PageInfo);
+
+				Host
+					.Stub(x => x.GetPageContent(PageInfo))
+					.Return(new PageContent(PageInfo,
+					                        "title",
+					                        "user that saved the content last",
+					                        DateTime.Now,
+					                        String.Empty,
+					                        "content"));
+				Host
+					.Stub(x => x.SendEmail(null, null, null, null, false))
+					.IgnoreArguments()
+					.Return(true);
+
+				Plugin.Init(Host, String.Empty);
+
+				EntryFormatter
+					.Stub(x => x.FormatUserEntry(User, Configuration.EntryTemplate))
+					.Return(Configuration.EntryTemplate);
+				PageFormatter
+					.Stub(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration))
+					.Return("content and entry");
 			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
@@ -215,16 +169,17 @@ namespace NOS.Registration.Tests
 		It should_try_to_find_the_user_in_the_user_list =
 			() => RegistrationRepository.AssertWasCalled(x => x.FindByUserName(User.UserName));
 
-		It should_find_the_attendee_page =
-			() => PageRepository.AssertWasCalled(x => x.FindPage("page"), o => o.Repeat.Twice());
+		It should_try_to_find_the_attendee_page =
+			() => PageRepository.AssertWasCalled(x => x.FindPage(Configuration.PageName));
 
 		It should_load_the_attendee_page_contents =
 			() => Host.AssertWasCalled(x => x.GetPageContent(PageInfo));
 
-		It should_format_the_users_entry = () => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User));
+		It should_format_the_users_entry =
+			() => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User, Configuration.EntryTemplate));
 
 		It should_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", " and entry", User));
+			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration));
 
 		It should_save_the_modified_page_contents =
 			() => PageRepository.AssertWasCalled(x => x.Save(Arg<PageInfo>.Is.Equal(PageInfo),
@@ -251,13 +206,13 @@ namespace NOS.Registration.Tests
 			() => PageRepository.AssertWasCalled(x => x.Save(Arg<PageInfo>.Is.Equal(PageInfo),
 			                                                 Arg<string>.Is.Anything,
 			                                                 Arg<string>.Is.Anything,
-			                                                 Arg<string>.Is.Equal("AutoRegistration"),
+			                                                 Arg<string>.Is.Equal(Configuration.Comment),
 			                                                 Arg<string>.Is.Anything));
 
 		It should_notify_the_user_about_the_activation =
 			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Username),
 			                                                            Arg<string>.Is.Equal(UserInfo.Email),
-			                                                            Arg<string>.Is.NotNull,
+			                                                            Arg<string>.Is.Equal(Configuration.Comment),
 			                                                            Arg<bool>.Is.Equal(false)));
 
 		It should_delete_the_user = () => RegistrationRepository.AssertWasCalled(x => x.Delete("user"));
@@ -274,7 +229,7 @@ namespace NOS.Registration.Tests
 			};
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, null, null), o => o.IgnoreArguments());
 	}
 
 	[Behaviors]
@@ -303,7 +258,7 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				PageRepository.BackToRecord();
-				PageRepository.Stub(x => x.FindPage("page")).Return(null);
+				PageRepository.Stub(x => x.FindPage(Configuration.PageName)).Return(null);
 				PageRepository.Replay();
 			};
 
@@ -311,7 +266,7 @@ namespace NOS.Registration.Tests
 			() => Logger.AssertWasCalled(x => x.Error("The attendee page 'page' does not exist.", "SYSTEM"));
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, null, null), o => o.IgnoreArguments());
 
 		Behaves_like<FailureNotificationBehavior> failing_activation;
 	}
@@ -336,7 +291,7 @@ namespace NOS.Registration.Tests
 			                             	Is.Equal("SYSTEM")));
 
 		It should_not_add_the_users_entry_to_the_attendee_page =
-			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, User), o => o.IgnoreArguments());
+			() => PageFormatter.AssertWasNotCalled(x => x.AddEntry(null, null, null, null), o => o.IgnoreArguments());
 
 		Behaves_like<FailureNotificationBehavior> failing_activation;
 	}
@@ -348,7 +303,7 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				PageFormatter.BackToRecord();
-				PageFormatter.Stub(x => x.AddEntry(null, null, User)).IgnoreArguments().Throw(new Exception());
+				PageFormatter.Stub(x => x.AddEntry(null, null, null, null)).IgnoreArguments().Throw(new Exception());
 				PageFormatter.Replay();
 			};
 
@@ -365,7 +320,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_any_other_user_account_activity_takes_place : With_configured_auto_registration_plugin
+	public class When_any_other_user_account_activity_takes_place : With_auto_registration_plugin
 	{
 		static UserAccountActivityEventArgs EventArgs;
 		static UserInfo UserInfo;

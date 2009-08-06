@@ -15,9 +15,9 @@ namespace NOS.Registration
 		}
 
 		#region IPageRepository Members
-		public void Save(PageInfo page, string title, string username, string comment, string content)
+		public void Save(PageInfo page, string title, string userName, string comment, string content)
 		{
-			_pages.ModifyPage(page, title, username, DateTime.Now, comment, content, true);
+			_pages.ModifyPage(page, title, userName, DateTime.Now, comment, content, true);
 		}
 
 		public PageInfo FindPage(string pageName)

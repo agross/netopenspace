@@ -1,84 +1,36 @@
 using System;
 using System.Text.RegularExpressions;
 
+using NOS.Registration.EntryPositioning;
+
 namespace NOS.Registration
 {
 	internal class PageFormatter : IPageFormatter
 	{
 		readonly ILogger _logger;
+		readonly IOpinionEvaluator _opinionEvaluator;
 
-		public PageFormatter(ILogger logger)
+		public PageFormatter(ILogger logger, IOpinionEvaluator opinionEvaluator)
 		{
 			_logger = logger;
-			EntryPattern = String.Empty;
-			ListStartPattern = String.Empty;
-			ListEndPattern = String.Empty;
-			WaitingListEndPattern = String.Empty;
-		}
-
-		Regex EntryMatcher
-		{
-			get;
-			set;
-		}
-
-		Regex ListStartMatcher
-		{
-			get;
-			set;
-		}
-
-		Regex ListEndMatcher
-		{
-			get;
-			set;
-		}
-
-		Regex WaitingListEndMatcher
-		{
-			get;
-			set;
+			_opinionEvaluator = opinionEvaluator;
 		}
 
 		#region IPageFormatter Members
-		public string EntryPattern
+		public string AddEntry(string content, string entry, User user, IPluginConfiguration configuration)
 		{
-			get { return EntryMatcher.ToString(); }
-			set { EntryMatcher = NewRegex(value); }
-		}
+			var entryMatcher = NewRegex(configuration.EntryPattern);
+			var listStartMatcher = NewRegex(configuration.ListStartPattern);
+			var listEndMatcher = NewRegex(configuration.ListEndPattern);
+			var waitingListEndMatcher = NewRegex(configuration.WaitingListEndPattern);
 
-		public string ListStartPattern
-		{
-			get { return ListStartMatcher.ToString(); }
-			set { ListStartMatcher = NewRegex(value); }
-		}
-
-		public string ListEndPattern
-		{
-			get { return ListEndMatcher.ToString(); }
-			set { ListEndMatcher = NewRegex(value); }
-		}
-
-		public string WaitingListEndPattern
-		{
-			get { return WaitingListEndMatcher.ToString(); }
-			set { WaitingListEndMatcher = NewRegex(value); }
-		}
-
-		public int MaximumAttendees
-		{
-			get;
-			set;
-		}
-
-		public string AddEntry(string content, string entry, User user)
-		{
-			int listStart = AssertMatchesOnce(content, ListStartMatcher, "list start");
-			int listEnd = AssertMatchesOnce(content, ListEndMatcher, "list end");
-			int waitingListEnd = AssertMatchesOnce(content, WaitingListEndMatcher, "waiting list end");
+			int listStart = AssertMatchesOnce(content, listStartMatcher, "list start");
+			int listEnd = AssertMatchesOnce(content, listEndMatcher, "list end");
+			int waitingListEnd = AssertMatchesOnce(content, waitingListEndMatcher, "waiting list end");
 			if (listEnd == -1 || listEnd == -1 || waitingListEnd == -1)
 			{
-				throw new InvalidOperationException("The list and/or waiting list regular expressions did not match once. See previous errors.");
+				throw new InvalidOperationException(
+					"The list and/or waiting list regular expressions did not match once. See previous errors.");
 			}
 
 			if (listEnd < listStart)
@@ -90,18 +42,17 @@ namespace NOS.Registration
 				throw new InvalidOperationException("The list start and end positions are not sanitized. See previous error.");
 			}
 
-			int addAtIndex = listEnd;
+			int numberOfAttendees = CountNumberOfEntries(content.Substring(listStart, listEnd - listStart), entryMatcher);
 
-			int numberOfAttendees = CountNumberOfEntries(content.Substring(listStart, listEnd - listStart), EntryMatcher);
-			if (numberOfAttendees >= MaximumAttendees && user.Data.Sponsoring <= decimal.Zero)
-			{
-				_logger.Info(String.Format("User entry '{0}' is on the waiting list, attendee list is full with {1} entries",
-				                           entry.Substring(0, entry.Length > 20 ? 19 : entry.Length) + "...",
-				                           numberOfAttendees),
-				             "SYSTEM");
-
-				addAtIndex = waitingListEnd;
-			}
+			int addAtIndex = _opinionEvaluator.Evaluate(new EvaluationContext
+				                           {
+				                           	NumberOfAttendees = numberOfAttendees,
+				                           	ListEnd = listEnd,
+				                           	WaitingListEnd = waitingListEnd,
+				                           	Configuration = configuration,
+				                           	User = user,
+				                           	Logger = _logger
+				                           });
 
 			return content.Insert(addAtIndex, entry);
 		}
