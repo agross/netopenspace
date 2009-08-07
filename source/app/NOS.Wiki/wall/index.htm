@@ -43,9 +43,30 @@
 				
 				$('.loading').fadeOut();
 				
+				var prefixWithZero = function(value)
+				{
+					if (value < 10)
+					{
+						return '0' + value;
+					}
+					return value;
+				}
+				
 				$('#tweets')
 					.attr('rel', query)
-					.monitter();
+					.monitter({
+						limit: 12,
+						timeout: 10000,
+						callback: function(params) {
+							var nextUpdate = new Date();
+							nextUpdate = new Date(params.timeout + nextUpdate.getTime());
+							
+							var hours = prefixWithZero(nextUpdate.getHours());
+							var minutes = prefixWithZero(nextUpdate.getMinutes());
+							var seconds = prefixWithZero(nextUpdate.getSeconds());
+							$('#last-update').text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
+							}
+						});
 			});
 	});
 	</script>

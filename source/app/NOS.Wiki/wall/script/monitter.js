@@ -1,53 +1,53 @@
-jQuery.fn.reverse = Array.prototype.reverse;
+jQuery.fn.reverse = Array.prototype.reverse,
 
 String.prototype.linkify = function () {
-    return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/g, function (m) {
-        return m.link(m);
-    });
+	return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/g, function (m) {
+		return m.link(m);
+	});
 };
 
 String.prototype.linkuser = function () {
-    return this.replace(/[@]+[A-Za-z0-9-_]+/g, function (u) {
-        var username = u.replace("@", "")
-        return u.link("http://twitter.com/" + username);
-    });
+	return this.replace(/[@]+[A-Za-z0-9-_]+/g, function (u) {
+		var username = u.replace("@", "")
+		return u.link("http://twitter.com/" + username);
+	});
 };
 
 String.prototype.linktag = function () {
-    return this.replace(/[#]+[A-Za-z0-9-_]+/, function (t) {
-        var tag = t.replace("#", "%23")
+	return this.replace(/[#]+[A-Za-z0-9-_]+/, function (t) {
+		var tag = t.replace("#", "%23")
 		return t.link("http://search.twitter.com/search?q=" + tag);
-    });
+	});
 };
-
-function opacity(i, limit, opaque, minOpacity, maxOpacity) {
-	if (i <= opaque)
+	
+var monitter =
+{
+	opacity: function(i, limit, opaqueCount, minOpacity, maxOpacity)
 	{
-		return maxOpacity;
-	}
-	
-	i = i - opaque;
-	limit = limit - opaque;
-	
-	return (-1 * (maxOpacity - minOpacity) / limit)  * i + maxOpacity;
-}
+		if (i <= opaqueCount)
+		{
+			return maxOpacity;
+		}
+		
+		i = i - opaqueCount;
+		limit = limit - opaqueCount;
+		
+		return (-1 * (maxOpacity - minOpacity) / limit)  * i + maxOpacity;
+	},
 
-function fetch_tweets(elem) {
-    elem = $(elem);
-    query = elem.attr('rel').replace(/#/g, '%23');
-	
-    if (query != window.monitter['query-' + query]) {
-        window.monitter['query-' + query] = query;
-		window.monitter['last_id' + query] = 0;
-		window.monitter['limit-' + query] = 12;
-    }
-	
-	var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + window.monitter['limit-' + query] + "&since_id=" + window.monitter['last_id' + query] + "&callback=?";
-	
-    $.getJSON(url, function (json) {
-        $(json.results).reverse().each(function (i) {
-            if ($('#tw' + this.id, elem).length == 0) {
-				
+	fetchTweets: function(element, params) {
+		element = $(element);
+		query = element.attr('rel').replace(/#/g, '%23');
+		
+		var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
+		
+		$.getJSON(url, function (json) {
+			$(json.results).reverse().each(function (i) {
+				if ($('#tw' + this.id, element).length != 0)
+				{
+					return;
+				}
+					
 				var tweet = $('<div>')
 					.attr('id', 'tw' + this.id)
 					.addClass('tweet')
@@ -69,48 +69,33 @@ function fetch_tweets(elem) {
 								.html(this.from_user))));
 					
 		
-                window.monitter['last_id' + query] = this.id;
-                elem.prepend(tweet);
+				params.lastId = this.id;
+				element.prepend(tweet);
+			});
+			
+			$('div.tweet:gt(' + (params.limit - 1) + ')', element).each(function () {
+				$(this).remove();
+			});
+			
+			$('div.tweet', element).each(function (i) {
+				$(this).fadeTo('normal', monitter.opacity(i, params.limit, 2, .4, 1));
+			});
+			
+			if ($.isFunction(params.callback))
+			{
+				params.callback(params);
 			}
-        });
-		
-		$('div.tweet:gt(' + (window.monitter['limit-' + query] - 1) + ')', elem).each(function () {
-			$(this).remove();
+			
+			setTimeout(function () {
+				monitter.fetchTweets(element, params)
+			}, params.timeout);  
 		});
-		
-		$('div.tweet', elem).each(function (i) {
-			$(this).fadeTo('normal', opacity(i, window.monitter['limit-' + query], 2, .4, 1));
-		});
-		
-		var timeout = 10000;
-		var nextUpdate = new Date();
-		nextUpdate = new Date(timeout + nextUpdate.getTime());
-		
-		var hours = prefixWithZero(nextUpdate.getHours());
-		var minutes = prefixWithZero(nextUpdate.getMinutes());
-		var seconds = prefixWithZero(nextUpdate.getSeconds());
-		$('#last-update').text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
-		
-        setTimeout(function () {
-			fetch_tweets(elem)
-		}, timeout);
-    });
-}
-
-function prefixWithZero(value)
-{
-	if (value < 10)
-	{
-		return '0' + value;
 	}
-	return value;
 }
 
 $(document).ready(function () {
-    window.monitter = {};
-	
-	jQuery.fn.monitter = function() {
-		fetch_tweets(this);
+	jQuery.fn.monitter = function(params) {
+		monitter.fetchTweets(this, params);
 		return this;
 	}; 
 });
