@@ -82,18 +82,19 @@ function fetch_tweets(elem) {
 			$(this).fadeTo('normal', opacity(i, window.monitter['limit-' + query], 2, .4, 1));
 		});
 		
-		var lastUpdate = new Date();
-		var hours = prefixWithZero(lastUpdate.getHours());
-		var minutes = prefixWithZero(lastUpdate.getMinutes());
-		var seconds = prefixWithZero(lastUpdate.getSeconds());
-		$('#last-update').text("Letzte Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
+		var timeout = 10000;
+		var nextUpdate = new Date();
+		nextUpdate = new Date(timeout + nextUpdate.getTime());
+		
+		var hours = prefixWithZero(nextUpdate.getHours());
+		var minutes = prefixWithZero(nextUpdate.getMinutes());
+		var seconds = prefixWithZero(nextUpdate.getSeconds());
+		$('#last-update').text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
 		
         setTimeout(function () {
 			fetch_tweets(elem)
-		}, 10000);
+		}, timeout);
     });
-	
-    return (false);
 }
 
 function prefixWithZero(value)
