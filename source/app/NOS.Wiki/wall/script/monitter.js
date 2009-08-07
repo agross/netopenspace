@@ -46,59 +46,60 @@ var monitter =
 		
 		var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
 	
-		$.ajaxSetup({
-			complete: function(res, status) {
+		$.jsonp({
+			url: url,
+			success: function(json, textStatus)
+			{
+				$(json.results).reverse().each(function (i) {
+					if ($('#tw' + this.id, element).length != 0)
+					{
+						return;
+					}
+						
+					var tweet = $('<div>')
+						.attr('id', 'tw' + this.id)
+						.addClass('tweet')
+						.attr('style', 'display: block;')
+						.append($('<div>')
+							.addClass('bubble')
+							.append($('<p>')
+								.html(this.text.linkify().linkuser().linktag())))
+						.append($('<div>')
+							.addClass('author')
+							.append($('<a>')
+								.attr('href', 'http://twitter.com/' + this.from_user)
+								.attr('target', '_blank')
+								.attr('title', this.from_user)
+								.append($('<img>')
+									.addClass('avatar')
+									.attr('src', this.profile_image_url))
+								.append($('<span>')
+									.html(this.from_user))));
+						
+			
+					params.lastId = this.id;
+					element.prepend(tweet);
+				});
+				
+				$('div.tweet:gt(' + (params.limit - 1) + ')', element).each(function () {
+					$(this).remove();
+				});
+				
+				$('div.tweet', element).each(function (i) {
+					$(this).fadeTo('normal', monitter.opacity(i, params.limit, 2, .4, 1));
+				});
+			},
+			complete: function(xOptions, textStatus)
+			{
 				if ($.isFunction(params.callback))
 				{
-					params.callback(params, status);
+					params.callback(params, textStatus);
 				}
 				
 				setTimeout(function() {
 					monitter.fetchTweets(element, params)
 				}, params.timeout);  
-			}
-			});
-		
-		$.getJSON(url, function (json) {
-			$(json.results).reverse().each(function (i) {
-				if ($('#tw' + this.id, element).length != 0)
-				{
-					return;
-				}
-					
-				var tweet = $('<div>')
-					.attr('id', 'tw' + this.id)
-					.addClass('tweet')
-					.attr('style', 'display: block;')
-					.append($('<div>')
-						.addClass('bubble')
-						.append($('<p>')
-							.html(this.text.linkify().linkuser().linktag())))
-					.append($('<div>')
-						.addClass('author')
-						.append($('<a>')
-							.attr('href', 'http://twitter.com/' + this.from_user)
-							.attr('target', '_blank')
-							.attr('title', this.from_user)
-							.append($('<img>')
-								.addClass('avatar')
-								.attr('src', this.profile_image_url))
-							.append($('<span>')
-								.html(this.from_user))));
-					
-		
-				params.lastId = this.id;
-				element.prepend(tweet);
-			});
-			
-			$('div.tweet:gt(' + (params.limit - 1) + ')', element).each(function () {
-				$(this).remove();
-			});
-			
-			$('div.tweet', element).each(function (i) {
-				$(this).fadeTo('normal', monitter.opacity(i, params.limit, 2, .4, 1));
-			});
-		});
+			}});
 	}
 }
 

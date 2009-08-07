@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
 
 	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="http://jquery-jsonp.googlecode.com/files/jquery.jsonp-1.0.6.min.js"></script>
 	<script type="text/javascript" src="script/monitter.js"></script>
 	
 	<script type="text/javascript">
@@ -64,12 +65,9 @@
 							var hours = prefixWithZero(nextUpdate.getHours());
 							var minutes = prefixWithZero(nextUpdate.getMinutes());
 							var seconds = prefixWithZero(nextUpdate.getSeconds());
-							$('#last-update').text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
-							$('#last-update').attr('class', '');
-							if (status)
-							{
-								$('#last-update').attr('class', status);
-							}
+							$('#last-update')
+								.attr('class', status)
+								.text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
 						}
 					});
 			});
