@@ -39,6 +39,11 @@ var monitter =
 		element = $(element);
 		query = element.attr('rel').replace(/#/g, '%23');
 		
+		if (!params.lastId)
+		{
+			params.lastId = 0;
+		}
+		
 		var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
 		
 		$.getJSON(url, function (json) {
