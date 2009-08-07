@@ -30,12 +30,16 @@ img {
 }
 
 #last-update {
-	font-size:0.75em;
-	height: 0;
-	position: relative;
+	font-size: .75em;
+	position: absolute;
 	text-align: right;
-	top: -30px;
-	margin-right: 40px;
+	top: 60px;
+	right: 40px;
+}
+
+#last-update.error {
+	background: transparent url("../images/warning.png") no-repeat left top;
+	padding-left: 20px;
 }
 
 #wrapper {
@@ -44,6 +48,7 @@ img {
 	overflow: hidden;
 	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 }
 
 #wrapper #tweets > div {

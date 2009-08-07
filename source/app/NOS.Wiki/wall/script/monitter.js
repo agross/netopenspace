@@ -45,6 +45,19 @@ var monitter =
 		}
 		
 		var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
+	
+		$.ajaxSetup({
+			complete: function(res, status) {
+				if ($.isFunction(params.callback))
+				{
+					params.callback(params, status);
+				}
+				
+				setTimeout(function() {
+					monitter.fetchTweets(element, params)
+				}, params.timeout);  
+			}
+			});
 		
 		$.getJSON(url, function (json) {
 			$(json.results).reverse().each(function (i) {
@@ -85,15 +98,6 @@ var monitter =
 			$('div.tweet', element).each(function (i) {
 				$(this).fadeTo('normal', monitter.opacity(i, params.limit, 2, .4, 1));
 			});
-			
-			if ($.isFunction(params.callback))
-			{
-				params.callback(params);
-			}
-			
-			setTimeout(function () {
-				monitter.fetchTweets(element, params)
-			}, params.timeout);  
 		});
 	}
 }

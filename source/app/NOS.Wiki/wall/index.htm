@@ -57,7 +57,7 @@
 					.monitter({
 						limit: 12,
 						timeout: 10000,
-						callback: function(params) {
+						callback: function(params, status) {
 							var nextUpdate = new Date();
 							nextUpdate = new Date(params.timeout + nextUpdate.getTime());
 							
@@ -65,8 +65,13 @@
 							var minutes = prefixWithZero(nextUpdate.getMinutes());
 							var seconds = prefixWithZero(nextUpdate.getSeconds());
 							$('#last-update').text("Nächste Aktualisierung: " + hours + ":" + minutes + ":" + seconds);
+							$('#last-update').attr('class', '');
+							if (status)
+							{
+								$('#last-update').attr('class', status);
 							}
-						});
+						}
+					});
 			});
 	});
 	</script>
