@@ -48,6 +48,7 @@ var monitter =
 	
 		$.jsonp({
 			url: url,
+			timeout: params.timeout,
 			success: function(json, textStatus)
 			{
 				$(json.results).reverse().each(function (i) {
