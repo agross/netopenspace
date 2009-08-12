@@ -30,16 +30,26 @@
 				link = $("<a>")
 					.addClass("preview")
 					.addClass("externallink")
-					.attr("target", "_blank")
-					.attr("disabled", "true");
+					.attr("target", "_blank");
 
-				$(element).parent().children(":last").after("<br>");
+				if (!$(element).hasClass("has-prefix"))
+				{
+					$(element).parent().children(":last").after("<br>");
+				}
+
 				$(element).parent().children(":last").after(link);
 			}
 
-			$(link)
-				.attr("href", href)
-				.text(href);
+			$(link).attr("href", href)
+
+			if ($(element).hasClass("has-prefix"))
+			{
+				$(link).html("&#65279;");
+			}
+			else
+			{
+				$(link).text(href);
+			}
 		}
 
 		$("#<%=txtXingUserName.ClientID %>").data("href", function(e) { return "http://www.xing.com/profile/" + $(e).val(); });
@@ -47,7 +57,7 @@
 		$("#<%=txtBlog.ClientID %>").data("href", function(e) { return $(e).val(); });
 		$("#<%=txtPicture.ClientID %>").data("href", function(e) { return $(e).val(); });
 
-		$("#<%=txtXingUserName.ClientID %>, #<%=txtTwitterUserName.ClientID %>, #<%=txtBlog.ClientID %>, #<%=txtPicture.ClientID %>")
+		$(".linkify")
 			.each(function(e)
 			{
 				$(this).focus(function()
@@ -61,6 +71,15 @@
 				});
 
 				$(this).keyup();
+			});
+
+		$("span.prefix")
+			.each(function()
+			{
+				$(this).click(function()
+				{
+					$(this).next().focus();
+				});
 			});
 	});
 </script>
@@ -113,7 +132,7 @@
 					<asp:Literal ID="lblBlog" runat="server" meta:resourcekey="lblBlog" />:</p>
 			</td>
 			<td>
-				<asp:TextBox ID="txtBlog" runat="server" Width="200px" meta:resourcekey="txtBlog" CausesValidation="True" />
+				<asp:TextBox ID="txtBlog" runat="server" Width="200px" meta:resourcekey="txtBlog" CssClass="linkify" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revBlog" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"
 					ControlToValidate="txtBlog" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
 			</td>
@@ -124,7 +143,7 @@
 					<asp:Literal ID="lblTwitterUserName" runat="server" meta:resourcekey="lblTwitterUserName" />:</p>
 			</td>
 			<td>
-				<asp:TextBox ID="txtTwitterUserName" runat="server" Width="200px" meta:resourcekey="txtTwitterUserName" CausesValidation="True" />
+				<span class="prefix">http://twitter.com/</span><asp:TextBox ID="txtTwitterUserName" runat="server" Width="261px" meta:resourcekey="txtTwitterUserName" CssClass="linkify has-prefix" CausesValidation="True" />
 			</td>
 		</tr>
 		<tr>
@@ -133,7 +152,7 @@
 					<asp:Literal ID="lblXingUserName" runat="server" meta:resourcekey="lblXingUserName" />:</p>
 			</td>
 			<td>
-				<asp:TextBox ID="txtXingUserName" runat="server" Width="200px" meta:resourcekey="txtXingUserName" CausesValidation="True" />
+				<span class="prefix">http://www.xing.com/profile/</span><asp:TextBox ID="txtXingUserName" runat="server" Width="200px" meta:resourcekey="txtXingUserName" CssClass="linkify has-prefix" CausesValidation="True" />
 			</td>
 		</tr>
 		<tr>
@@ -142,7 +161,7 @@
 					<asp:Literal ID="lblPicture" runat="server" meta:resourcekey="lblPicture" />:</p>
 			</td>
 			<td>
-				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CausesValidation="True" />
+				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CssClass="linkify" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revPicture" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/.*)?"
 					ControlToValidate="txtPicture" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
 			</td>
@@ -156,6 +175,12 @@
 					E-Mail wegen einer Rechnung Bescheid. Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR
 					oder mehr, entscheidest du vollkommen frei und selbst. <strong>Bedenke, dass die Veranstaltung gerade vom Sponsoring der Teilnehmer
 						lebt.</strong>
+					<br/>
+					<br/>
+				</p>
+				<p>
+					Die Organisation weist darauf hin, dass wir aufgrund der großen Teilnehmerzahl aktuell Neuanmeldungen, die keinen freiwilligen
+					Sponsoringbetrag zur Ausgestaltung der Veranstaltung leisten, auf die Warteliste setzen.
 				</p>
 			</td>
 		</tr>
@@ -165,12 +190,10 @@
 					<asp:Literal ID="lblSponsoring" runat="server" meta:resourcekey="lblSponsoring" />:</p>
 			</td>
 			<td>
-				<p>
 				<asp:TextBox ID="txtSponsoring" runat="server" Width="200px" meta:resourcekey="txtSponsoring" CausesValidation="True" />
 				&euro;
 				<asp:RangeValidator ID="rngSponsoring" runat="server" ControlToValidate="txtSponsoring" meta:resourcekey="rngSponsoring"
 					MinimumValue="0" MaximumValue="9999999" Type="Currency"><img src="Images/InputError.png" alt="*" /></asp:RangeValidator>
-				</p>
 			</td>
 		</tr>
 	</table>

@@ -59,11 +59,23 @@ em {
 	font-style: italic;
 }
 
-input[type="text"], input[type="password"], input[type="file"], select, textarea {
+input[type="text"], input[type="password"], input[type="file"], select, textarea, span.prefix {
 	color: #3f3e3e;
 	padding: .2em;
 	border: 1px solid #c2c2c2;
 	margin-bottom: .5em;
+	font-size: .9em;
+}
+
+span.prefix {
+	border-right: 0;
+	color: #aaa;
+	padding-right: 0;
+}
+
+input.has-prefix {
+	border-left: 0;
+	padding-left: 0;
 }
 
 label, input[type="submit"], input[type="image"], button {

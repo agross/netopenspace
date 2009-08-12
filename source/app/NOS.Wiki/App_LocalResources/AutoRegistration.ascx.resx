@@ -130,7 +130,7 @@
     <value>Publish e-mail address?</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Name to be printed on your name card</value>
   </data>
   <data name="lblPicture.Text" xml:space="preserve">
     <value>Picture URL:</value>
@@ -139,10 +139,10 @@
     <value>My sponsoring</value>
   </data>
   <data name="lblTwitterUserName.Text" xml:space="preserve">
-    <value>Twitter user name</value>
+    <value>Twitter</value>
   </data>
   <data name="lblXingUserName.Text" xml:space="preserve">
-    <value>XING profile name</value>
+    <value>XING profile</value>
   </data>
   <data name="litIntroduction1.Text" xml:space="preserve">
     <value>Once you activate your Wiki account after receiving the activation e-mail we can automatically add you to the </value>
@@ -184,6 +184,6 @@
     <value>Type your Twitter user name, if available</value>
   </data>
   <data name="txtXingUserName.ToolTip" xml:space="preserve">
-    <value>Type your XING user name, if available</value>
+    <value>Type your XING profile name, if available</value>
   </data>
 </root>

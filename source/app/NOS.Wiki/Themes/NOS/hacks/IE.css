@@ -95,3 +95,12 @@ textarea {
 #PageContentDiv div.copy-code {
 	margin-left: 61%;
 }
+
+table td * {
+	vertical-align: top;
+}
+
+table td span.prefix {
+	position: relative;
+	top: 4px;
+}
