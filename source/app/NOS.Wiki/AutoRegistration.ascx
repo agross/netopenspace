@@ -178,10 +178,10 @@
 					<br/>
 					<br/>
 				</p>
-				<p>
+				<%--<p>
 					Die Organisation weist darauf hin, dass wir aufgrund der großen Teilnehmerzahl aktuell Neuanmeldungen, die keinen freiwilligen
 					Sponsoringbetrag zur Ausgestaltung der Veranstaltung leisten, auf die Warteliste setzen.
-				</p>
+				</p>--%>
 			</td>
 		</tr>
 		<tr>
