@@ -8,7 +8,7 @@
 | <span class="pos5"><span class="smallest">[FAQ|Fragen]</span></span>
 | <span class="pos6"><span class="smallest">[Presse]</span></span>
 | <span class="pos7"><span class="smaller">[Sponsoren]</span></span>
-| <span class="pos8" id="workspaces" style="display: none"><span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span><ul class="submenu smallest" style="display: none"><li>[Arbeitsbereich .NET Micro Framework|.NET Micro Framework]</li><li>[Arbeitsbereich ALT.NET|ALT.NET]</li><li>[Arbeitsbereich Mobile Computing|Mobile Computing]</li><li>[Arbeitsbereich Soft Skills|Soft Skills]</li></ul></span>
+| <span class="pos8" id="workspaces" style="display: none"><span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span><ul class="submenu smallest" style="display: none"><li>[Arbeitsbereich ALT.NET|ALT.NET]</li><li>[Arbeitsbereich Clean Code Developer|Clean Code]</li><li>[Arbeitsbereich Mobile Computing|Mobile Computing]</li><li>[Arbeitsbereich Soft Skills|Soft Skills]</li><li>[Arbeitsbereich UI und UX|UI und UX]</li></ul></span>
 }
 </div>
 <div class="clearfix"></div>
