@@ -1,5 +1,0 @@
-cd "@sftp.remotedir@"
-lcd production
-put App_Offline.htm
-mput -r *.*
-del App_Offline.htm

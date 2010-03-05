@@ -1,15 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3223D8B5-B7B6-4C03-A840-E1145C8A8B0E}"
-	ProjectSection(SolutionItems) = preProject
-		..\default.build = ..\default.build
-		..\default.properties = ..\default.properties
-		..\production.build = ..\production.build
-		..\production.properties = ..\production.properties
-		..\psftp.batch.template = ..\psftp.batch.template
-	EndProjectSection
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Wiki", "app\NOS.Wiki\", "{9042FB6F-5A70-409D-A1DF-31A1092196A0}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "3.5"

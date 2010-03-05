@@ -1,0 +1,42 @@
+<%= optional_yaml('local-properties') %>
+
+global:
+  project: NOS
+  dir:
+    build: build
+    test_results: build/test-results
+    for_deployment: build/for-deployment
+    deploy: deploy
+    source: source
+    app: source/app
+    test: source/test
+  build:
+    configuration: Debug
+    number: <%= ENV['BUILD_NUMBER'] %>
+    commit_sha: <%= ENV['BUILD_VCS_NUMBER'] || "no SHA" %>
+  app:
+    pagechangealerts:
+  deployment:
+    instance_name:
+    logfile: build/msdeploy.log
+    identity: NT-AUTORITÄT\NETZWERKDIENST
+    iis:
+      custom_errors: "Off"
+      cookie_path: "/crimson"
+    connection:
+      address:
+  tools:
+    mspec: tools/Machine.Specifications/mspec.exe
+    cloc: tools/CLOC/cloc.exe
+    msdeploy: tools/MSDeploy/msdeploy.exe
+    ncover: tools/NCover/NCover.Console.exe
+    ncoverexplorer: tools/NCoverExplorer/NCoverExplorer.Console.exe
+    zip: tools/7-Zip/7za.exe
+    fxcop: tools/FxCop/FxCopCmd.exe
+    stylecop: tools/StyleCop/StyleCopCmd.exe
+
+development:
+  default_to: global
+
+production:
+  default_to: global

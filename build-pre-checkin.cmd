@@ -1,0 +1,1 @@
+@build.cmd tests:stylecop tests:run

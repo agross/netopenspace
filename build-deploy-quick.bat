@@ -1,1 +1,0 @@
-@build.bat deploy "-D:quick=true"
