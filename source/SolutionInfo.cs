@@ -6,4 +6,4 @@
 
 [assembly: AssemblyCompany("Alexander Groß")]
 [assembly: AssemblyProduct(".NET Open Space Wiki")]
-[assembly: AssemblyCopyright("Copyright © Alexander Groß 2008")]
+[assembly: AssemblyCopyright("Copyright © Alexander Groß 2008-2010")]
