@@ -13,6 +13,7 @@ teamcity-info.xml
 local.properties
 desktop.ini
 *.suo
+!/tools/Rake/bin
  
 /deploy
 /temp
