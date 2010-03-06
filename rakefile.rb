@@ -193,7 +193,7 @@ namespace :tests do
 			:show_summary => true,
 			:fail_on_error => false,
 			:assemblies => FileList.new() \
-				.include("#{configatron.dir.app}/#{configatron.project}.Web.Application/**/#{configatron.project}*.dll") \
+				.include("#{configatron.dir.build}/Wiki/**/#{configatron.project}*.dll") \
 				.exclude('**/*.vshost') \
 			do |violations|
 				TeamCity.append_build_status_text "#{violations} FxCop violation(s)"
