@@ -244,7 +244,24 @@ namespace :package do
 					.include("#{sourceDir}/**/*.htm") \
 					.include("#{sourceDir}/**/*.html") \
 					.include("#{sourceDir}/**/*.swf") \
-					.include("#{sourceDir}/**/*.cs") \
+					.include("#{sourceDir}/public/Plugins/**/*.cs") \
+					.include("#{sourceDir}/public/Snippets/") \
+					.include("#{sourceDir}/public/Upload/") \
+					.include("#{sourceDir}/public/AccessDeniedNotice.cs") \
+					.include("#{sourceDir}/public/AccountActivationMessage.cs") \
+					.include("#{sourceDir}/public/ApproveDraftMessage.cs") \
+					.include("#{sourceDir}/public/AutoRegistration*.cs") \
+					.include("#{sourceDir}/public/DiscussionChangeMessage.cs") \
+					.include("#{sourceDir}/public/EditNotice.cs") \
+					.include("#{sourceDir}/public/Footer.cs") \
+					.include("#{sourceDir}/public/Header.cs") \
+					.include("#{sourceDir}/public/LoginNotice.cs") \
+					.include("#{sourceDir}/public/PageChangeMessage.cs") \
+					.include("#{sourceDir}/public/PageFooter.cs") \
+					.include("#{sourceDir}/public/PageHeader.cs") \
+					.include("#{sourceDir}/public/PasswordResetProcedureMessage.cs") \
+					.include("#{sourceDir}/public/RegisterNotice.cs") \
+					.include("#{sourceDir}/public/Sidebar.cs")
 
 		webAppFiles.copy_hierarchy \
 			:source_dir => sourceDir, 
