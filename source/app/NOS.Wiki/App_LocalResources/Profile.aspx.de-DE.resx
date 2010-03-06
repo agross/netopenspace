@@ -117,6 +117,247 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
+    <value>Eine Emailnotifikation senden, wenn eine neue &lt;b&gt;Mitteilung &lt;/b&gt; in einem der folgenden Namensräume eingestellt wird (gilt nur für Diskussionen zu denen Sie über Zugriffsrechte verfügen):</value>
+    <comment>Receive an email notification whenever a &lt;b&gt;message&lt;/b&gt; is posted for a page in the following namespaces (only discussions you have access to):</comment>
+  </data>
+  <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
+    <value>Eine Emailnotifikation senden, wenn eine &lt;b&gt;Seite&lt;/b&gt; in den folgenden Namensräumen geändert wird (gilt nur für Seiten zu denen Sie über Zugriffsrechte verfügen):</value>
+    <comment>Receive an email notification whenever a &lt;b&gt;page&lt;/b&gt; in the following namespaces is updated (only pages you have access to):</comment>
+  </data>
+  <data name="lblNoChangesResource1.Text" xml:space="preserve">
+    <value>Die aktuellen Systemeinstellungen lassen keine Änderungen an Ihren persönlichen Informationen zu.</value>
+    <comment>Current system settings do not allow any change to your personal information.</comment>
+  </data>
+  <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
+    <value>Anzeigename speichern</value>
+    <comment>Save Display Name</comment>
+  </data>
+  <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>Klicken Sie hier um ihren Anzeigename zu speichern</value>
+    <comment>Click here to save your Display Name</comment>
+  </data>
+  <data name="lblDisplayNameResource1.Text" xml:space="preserve">
+    <value>Anzeigename</value>
+    <comment>Display Name</comment>
+  </data>
+  <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
+    <value>Anzeigename, Emailadresse und Passwort bearbeiten</value>
+    <comment>Edit Display Name, Email and Password</comment>
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültiger Anzeigename</value>
+    <comment>Invalid Display Name</comment>
+  </data>
+  <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>Hier einen Anzeigename für Ihr Benutzerkonto eingeben</value>
+    <comment>Type here a display name for your account</comment>
+  </data>
+  <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
+    <value>Speichern</value>
+    <comment>Save</comment>
+  </data>
+  <data name="btnSaveLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGroupsListResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGroupsResource1.Text" xml:space="preserve">
+    <value>Sie sind mittglied der folgenden Gruppen</value>
+    <comment>You are member of the following groups:</comment>
+  </data>
+  <data name="lblLanguageResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageTimeZoneResource1.Text" xml:space="preserve">
+    <value>Sprache und Zeitzone</value>
+    <comment>Language and Time Zone</comment>
+  </data>
+  <data name="btnSaveNotificationsResource1.Text" xml:space="preserve">
+    <value>Speichern</value>
+    <comment>Save</comment>
+  </data>
+  <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadressen sind nicht identisch</value>
+    <comment>Email addresses are not equal</comment>
+  </data>
+  <data name="cvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadressen sind nicht identisch</value>
+    <comment>Email addresses are not equal</comment>
+  </data>
+  <data name="cvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Falsches Passwort</value>
+    <comment>Incorrect Password</comment>
+  </data>
+  <data name="cvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwörter sind nicht identisch</value>
+    <comment>Passwords are not equal</comment>
+  </data>
+  <data name="cvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwörter sind nicht identisch</value>
+    <comment>Passwords are not equal</comment>
+  </data>
+  <data name="cvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotificationsResource1.Text" xml:space="preserve">
+    <value>Emailnotifikations-Einstellungen</value>
+    <comment>Email Notification Settings</comment>
+  </data>
+  <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotificationsResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveEmailResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDiscussionMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPageChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadresse ist erforderlich</value>
+    <comment>Email is required</comment>
+  </data>
+  <data name="rfvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadresse ist erforderlich</value>
+  </data>
+  <data name="rfvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Das alte Passwort ist erforderlich</value>
+    <comment>Old Password is required</comment>
+  </data>
+  <data name="rfvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ein Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ein Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige Emailadresse</value>
+    <comment>Invalid Email address</comment>
+  </data>
+  <data name="rxvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültiges Passwort</value>
+    <comment>Invalid Password</comment>
+  </data>
+  <data name="rxvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btnConfirmResource1.Text" xml:space="preserve">
     <value>Bestätigen</value>
     <comment>Confirm</comment>
@@ -132,61 +373,55 @@
     <value />
   </data>
   <data name="btnSaveEmailResource1.Text" xml:space="preserve">
-    <value>Speichere deine E-Mail-Adresse</value>
+    <value>Email speichern</value>
     <comment>Save Email</comment>
   </data>
   <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
-    <value>Klicke hier, um deine E-Mail-Adresse zu speichern</value>
+    <value>Klicken Sie hier um die Email Adresse zu speichern</value>
     <comment>Click here to save your Email address</comment>
   </data>
   <data name="btnSavePasswordResource1.Text" xml:space="preserve">
-    <value>Speichere dein Kennwort</value>
+    <value>Passwort speichern</value>
     <comment>Save Password</comment>
   </data>
   <data name="btnSavePasswordResource1.ToolTip" xml:space="preserve">
     <value>Klicken Sie hier um Ihr neues Kennwort zu speichern</value>
     <comment>Click here to save your new Password</comment>
   </data>
-  <data name="lblAccountTypeDescriptionResource1.Text" xml:space="preserve">
-    <value>Das Benutzerkonto ist vom Typ</value>
-    <comment>Account type</comment>
-  </data>
-  <data name="lblAccountTypeResource1.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
-    <value>Du kannst hier deinen Zugang löschen, in dem du auf &lt;i&gt;Zugang löschen&lt;/i&gt; klickst. Zur Sicherheit muss die Aktion durch einen Klick auf &lt;i&gt;Bestätigen&lt;/i&gt; abgeschlossen werden.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Warnung:&lt;/b&gt; Dieser Vorgang kann nicht rückgängig gemacht werden.</value>
+    <value>Sie können Ihren Zugang löschen, in dem Sie auf die &lt;i&gt;Zugang löschen&lt;/i&gt; Schaltfläche klicken. Zur Sicherheit muß die Aktion durch klick auf die Schaltfläche &lt;i&gt;Bestätigen&lt;/i&gt; abgeschlossen werden.&lt;br /&gt;&lt;b&gt;Warnung:&lt;/b&gt; Dieser Vorgang kann nicht rückgängig gemacht werden.</value>
     <comment>You can delete your account by clicking on the Delete Account button and then confirming with the Confirm button.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: the operation is irreversible.</comment>
   </data>
   <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
-    <value>Zugang löschen</value>
+    <value>Benutzerkonto löschen</value>
     <comment>Delete Account</comment>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Willkommen in deinem Profil,</value>
+    <value>Willkommen in Ihrem Profil,</value>
     <comment>Welcome to your Profile, </comment>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse</value>
+    <value>Email</value>
+    <comment>Email</comment>
   </data>
   <data name="lblEmail2Resource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse (Wiederholung)</value>
+    <value>Email (Wiederholung)</value>
     <comment>Email (repeat)</comment>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Hier kannst du deine Profilinformationen, wie E-Mail-Adresse und Kennwort, ändern. Der Benutzername kann nicht geändert werden.</value>
+    <value>Hier können Sie Ihre Profilinformationen, wie Email Adresse und Passwort, ändern. Der Benutzername kann nicht geändert werden.</value>
     <comment>Here you can edit your Profile settings, such as Email address and Password. You cannot change your Username.</comment>
   </data>
   <data name="lblOldPasswordResource1.Text" xml:space="preserve">
-    <value>Altes Kennwort</value>
+    <value>Altes Passwort</value>
     <comment>Old Password</comment>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
-    <value>Neues Kennwort</value>
+    <value>Passwort</value>
     <comment>Password</comment>
   </data>
   <data name="lblPassword2Resource1.Text" xml:space="preserve">
-    <value>Neues Kennwort (Wiederholung)</value>
+    <value>Passwort (Wiederholung)</value>
     <comment>Password (repeat)</comment>
   </data>
   <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">

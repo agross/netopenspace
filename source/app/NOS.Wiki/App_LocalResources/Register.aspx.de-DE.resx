@@ -118,43 +118,102 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnRegisterResource1.Text" xml:space="preserve">
-    <value>Zugang erstellen</value>
+    <value>Benutzerkonto erstellen</value>
     <comment>Create Account</comment>
   </data>
   <data name="btnRegisterResource1.ToolTip" xml:space="preserve">
-    <value>Klicke hier um einen neuen Zugang zu erstellen</value>
+    <value>Hier klicken um ein neues Benutzerkonto zu erstellen</value>
     <comment>Click here to create your Account</comment>
   </data>
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadressen sind nicht identisch</value>
+    <comment>Emails are not equal</comment>
+  </data>
+  <data name="cvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadressen sind nicht identisch</value>
+    <comment>Emails are not equal</comment>
+  </data>
+  <data name="cvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwörter sind nicht identisch</value>
+    <comment>Passwords are not equal</comment>
+  </data>
+  <data name="cvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwörter sind nicht identisch</value>
+    <comment>Passwords are not equal</comment>
+  </data>
+  <data name="cvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>Der Benutzername existiert bereits</value>
+    <comment>Username already exists</comment>
+  </data>
+  <data name="cvUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccountActivationModeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblCaptchaResource1.Text" xml:space="preserve">
-    <value>Text aus dem Bild (Groß-/Kleinschreibung):</value>
-    <comment>Control Text (case sensitive)
-</comment>
+    <value>Kontroltext (Gross- /Kleinschreibung beachten):</value>
+    <comment>Control Text (case sensitive):</comment>
+  </data>
+  <data name="lblDisplayNameResource1.Text" xml:space="preserve">
+    <value>Anzeigename</value>
+    <comment>Display Name</comment>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse</value>
-    <comment>E-Mail</comment>
+    <value>Emailadresse</value>
+    <comment>Email</comment>
   </data>
   <data name="lblEmail2Resource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse (Wiederholung)</value>
-    <comment>E-Mail (repeat)</comment>
+    <value>Emailadresse (wiederholung)</value>
+    <comment>Email (repeat)</comment>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
-    <value>Kennwort</value>
+    <value>Passwort</value>
     <comment>Password</comment>
   </data>
   <data name="lblPassword2Resource1.Text" xml:space="preserve">
-    <value>Kennwort (Wiederholung)</value>
+    <value>Passwort (wiederholung)</value>
     <comment>Password (repeat)</comment>
   </data>
   <data name="lblRegisterDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier kannst du einen neuen Zugang zu dem Wiki erstellen.&lt;br /&gt;&lt;b&gt;&lt;br /&gt;Wichtig&lt;/b&gt;: Alle Eingaben sind notwendig. Die E-Mail-Adresse wird (sofern unten nicht anders angegeben) an keiner Stelle publiziert, sie ist nur für die Administratoren sichtbar.</value>
-    <comment>Here you can create a new Account for this Wiki.&lt;br /&gt;Please activate your Account within 24 hours, following the instructions that you'll receive at your email address.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: all the fields are mandatory. The email address will not be published in any way, but it will be visible to the Administrators.&lt;br /&gt;If you don't see the Control Text Image, you need to enable images in your browser and then refresh this page.</comment>
+    <value>Hier können Sie ein neues Benutzerkonto für dieses Wiki erstellen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Alle Felder müssen ausgefüllt werden. Die Emailadresse wird in keiner weise Publik gemacht, wird aber für Administratoren sichtbar sein.</value>
+    <comment>Here you can create a new Account for this Wiki.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: all the fields are mandatory. The Email address will not be published in any way, but it will be visible to the Administrators.</comment>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Erstelle einen neuen Zugang</value>
+    <value>Benutzerkonto erstellen</value>
     <comment>Create a new Account</comment>
   </data>
   <data name="lblUsernameResource1.Text" xml:space="preserve">
@@ -163,40 +222,144 @@
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Unbenannte Seite</value>
+    <comment>Untitled Page</comment>
+  </data>
+  <data name="pnlRegisterResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadresse ist erfoderlich</value>
+    <comment>Email is required</comment>
+  </data>
+  <data name="rfvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Emailadresse ist erfoderlich</value>
+    <comment>Email is required</comment>
+  </data>
+  <data name="rfvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>Benutzername ist erforderlich</value>
+    <comment>Username is required</comment>
+  </data>
+  <data name="rfvUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültiger Anzeigename</value>
+    <comment>Invalid Display Name</comment>
+  </data>
+  <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige Emailadresse</value>
+    <comment>Invalid Email</comment>
+  </data>
+  <data name="rxvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültiges Passwort</value>
+    <comment>Invalid Password</comment>
+  </data>
+  <data name="rxvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvUserNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültiger Benutzername</value>
+    <comment>Invalid Username</comment>
+  </data>
+  <data name="rxvUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>Hier einen Anzeigename für Ihr Benutzerkonto eingeben</value>
+    <comment>Type here a display name for your account</comment>
   </data>
   <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
-    <value>Gib hier deine E-Mail-Adresse ein</value>
-    <comment>Type here your email address</comment>
+    <value>Hier Ihre Emailadresse eingeben</value>
+    <comment>Type here your Email address</comment>
   </data>
   <data name="txtEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
-    <value>Wiederhole hier deine E-Mail-Adresse</value>
-    <comment>Repeat your email address</comment>
+    <value>Die Emailadresse wiederholt eingeben</value>
+    <comment>Repeat your Email address</comment>
   </data>
   <data name="txtPassword1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
-    <value>Gib hier dein Kennwort ein</value>
+    <value>Hier Ihr Passwort eingeben</value>
     <comment>Type here your Password</comment>
   </data>
   <data name="txtPassword2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
-    <value>Wiederhole hier dein Kennwort</value>
-    <comment>Repeat your Password</comment>
+    <value>Hier Ihr Passwort eingeben</value>
+    <comment>Type here your Password</comment>
   </data>
   <data name="txtUsernameResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
-    <value>Gib hier deinen Benutzernamen ein</value>
+    <value>Hier Ihren Benutzernamen eingeben</value>
     <comment>Type here your Username</comment>
   </data>
 </root>

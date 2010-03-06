@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
+    <value>Send Bulk Email</value>
+  </data>
+  <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
+    <value>You must select at least one group</value>
+  </data>
+  <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
+    <value>You can send an email message to all users of one or more groups.</value>
+  </data>
+  <data name="lblBulkEmailResource1.Text" xml:space="preserve">
+    <value>Mass Email</value>
+  </data>
+  <data name="lblSubjectResource1.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
+    <value>Body is required</value>
+  </data>
+  <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
+    <value>Subject is required</value>
+  </data>
+  <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
+    <value>Shutdown Application</value>
+  </data>
+  <data name="btnShutdownConfirmResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRebuildPageLinksResource1.Text" xml:space="preserve">
+    <value>Rebuild Page Links</value>
+  </data>
+  <data name="btnRebuildPageLinksResource1.ToolTip" xml:space="preserve">
+    <value>Rebuild the links structure</value>
+  </data>
+  <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
+    <value>orphan pages in the wiki</value>
+  </data>
+  <data name="lblOrphanPagesInfoPreResource1.Text" xml:space="preserve">
+    <value>There seem to be </value>
+  </data>
+  <data name="lblOrphanPagesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt;: a page is considered an &lt;i&gt;orphan&lt;/i&gt; when it has no incoming links from other pages.</value>
+  </data>
+  <data name="lblOrphanPagesResource1.Text" xml:space="preserve">
+    <value>Orphan Pages</value>
+  </data>
+  <data name="lblRebuildPageLinksInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Warning&lt;/b&gt;: rebuilding page links might take some time. Please do not close this screen while the links are being rebuilt.</value>
+  </data>
+  <data name="lnkPagesResource1.Text" xml:space="preserve">
+    <value>see Pages</value>
+  </data>
+  <data name="lnkPagesResource1.ToolTip" xml:space="preserve">
+    <value>Go to the Pages administration tab</value>
+  </data>
+  <data name="btnClearCacheResource1.Text" xml:space="preserve">
+    <value>Önbelleği Temizle</value>
+  </data>
+  <data name="btnClearCacheResource1.ToolTip" xml:space="preserve">
+    <value>Önbelleği temizler</value>
+  </data>
+  <data name="btnRebuildResource1.Text" xml:space="preserve">
+    <value>Endeksi tekrar oluştur</value>
+  </data>
+  <data name="btnRebuildResource1.ToolTip" xml:space="preserve">
+    <value>Bu endeksi tekrar oluşturur</value>
+  </data>
+  <data name="btnRebuildResource2.Text" xml:space="preserve">
+    <value>Tekrar oluştur</value>
+  </data>
+  <data name="btnRebuildResource2.ToolTip" xml:space="preserve">
+    <value>Bu endeksi tekrar oluştur</value>
+  </data>
+  <data name="lblAdminHomeResource1.Text" xml:space="preserve">
+    <value>Yönetim - Ana sayfa</value>
+  </data>
+  <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
+    <value>Web uygulamasını yeniden başlatabilirsiniz. Bu işlem için iki kere onayınız alınacaktır ve ardından izleyen ilk istek ile uygulama yenilenecektir. &lt;br /&gt;&lt;b&gt;Dikkat&lt;/b&gt;:  tüm açık oturumlar kapanacaktır; bu nedenle kullanıcılar sorun yaşayabilir. &lt;br /&gt;&lt;b&gt;Not&lt;/b&gt;: yeniden başlatma işlemi sadece bu uygulamayı etkiler.</value>
+  </data>
+  <data name="lblAppShutdownResource1.Text" xml:space="preserve">
+    <value>Web uygulamasını kapat</value>
+  </data>
+  <data name="lblDocCountResource1.Text" xml:space="preserve">
+    <value>Dokumanlar</value>
+  </data>
+  <data name="lblIndexStatusResource1.Text" xml:space="preserve">
+    <value>Arama endeks durumu</value>
+  </data>
+  <data name="lblLinkedInResource1.Text" xml:space="preserve">
+    <value>Şuralarda linkli</value>
+  </data>
+  <data name="lblMissingPagesResource1.Text" xml:space="preserve">
+    <value>Olmayan sayfalar</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Ad alanı</value>
+  </data>
+  <data name="lblOccurrenceCountResource1.Text" xml:space="preserve">
+    <value>Eşleşenler</value>
+  </data>
+  <data name="lblPageResource1.Text" xml:space="preserve">
+    <value>Sayfa Adı</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>Sağlayıcı</value>
+  </data>
+  <data name="lblRebuildIndexInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Dikkat&lt;/b&gt;:  arama indeksini tekrar oluşturmak vakit alabilir. Lütfen bu pencereyi indeks oluşturulduğu sırada kapatmayınız. İndeks oluşturulduktan sonra uygulamayı yeniden başlatmanızı tavsiye ederiz. </value>
+  </data>
+  <data name="lblSizeResource1.Text" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="lblStatusResource1.Text" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="lblSystemStatusContentResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWordCountResource1.Text" xml:space="preserve">
+    <value>Sözcük</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Yönetim</value>
+  </data>
+</root>

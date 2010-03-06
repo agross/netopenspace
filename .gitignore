@@ -12,4 +12,28 @@ desktop.ini
 /deploy
 
 local-properties.yml
+!/source/app/NOS.Wiki/bin
+/source/app/NOS.Wiki/Web.config
 /source/app/NOS.Wiki/public/Plugins/Config/PageChangeAlerts.PageChangeAlerts.cs
+
+# ScrewTurn instance-specific files
+/source/app/NOS.Wiki/public/Pages
+/source/app/NOS.Wiki/public/*.bak.cs
+/source/app/NOS.Wiki/public/ACL.cs
+/source/app/NOS.Wiki/public/AttachmentDownloads.cs
+/source/app/NOS.Wiki/public/Categories.cs
+/source/app/NOS.Wiki/public/Config.cs
+/source/app/NOS.Wiki/public/FileDownloads.cs
+/source/app/NOS.Wiki/public/Groups.cs
+/source/app/NOS.Wiki/public/IndexDocuments.cs
+/source/app/NOS.Wiki/public/IndexMappings.cs
+/source/app/NOS.Wiki/public/IndexWords.cs
+/source/app/NOS.Wiki/public/Links.cs
+/source/app/NOS.Wiki/public/Log.cs
+/source/app/NOS.Wiki/public/LoginNotice.cs
+/source/app/NOS.Wiki/public/Namespaces.cs
+/source/app/NOS.Wiki/public/NavigationPaths.cs
+/source/app/NOS.Wiki/public/Pages.cs
+/source/app/NOS.Wiki/public/RecentChanges3.cs
+/source/app/NOS.Wiki/public/Users.cs
+/source/app/NOS.Wiki/public/UsersData.cs

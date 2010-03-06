@@ -1,0 +1,752 @@
+
+body {
+	background-color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+	padding: 0px;
+	margin: 0px;
+}
+
+.resulterror, .resulterror * {
+	color: #FF0000;
+}
+
+.resultok, .resultok * {
+	color: #009900;
+}
+
+input, label {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 2px;
+	margin: 0px;
+}
+
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	margin: 0px;
+}
+
+#MainDiv {
+	 padding: 10px 20px 10px 20px;
+}
+
+#TabDiv {
+	white-space: nowrap;
+}
+
+/* Small text */
+.small, small {
+	font-size: 11px;
+}
+
+/* Big text */
+.big, big {
+	font-size: 15px;
+}
+
+/* General purpose links */
+a, a:link, a:active {
+	color: #214C9A;
+	text-decoration: none;
+}
+a:hover {
+	color: #D9671E;
+	text-decoration: underline;
+}
+
+.tab, .tab:visited {
+	background-color: #DDDDDD;
+	border: solid 3px #DDDDDD;
+	color: #214C9A;
+	font-size: 11px;
+	padding: 2px 4px 2px 4px;
+	text-decoration: none;
+}
+
+.tab:hover {
+	background-color: #214C9A;
+	border: solid 3px #214C9A;
+	color: #FFFFFF;
+	font-size: 11px;
+	padding: 2px 4px 2px 4px;
+	text-decoration: none;
+}
+
+.tabselected, .tabselected:visited {
+	background-color: #214C9A;
+	border: solid 3px #214C9A;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 4px 2px 4px;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1.admintitle {
+	font-size: 22px;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+h2.sectiontitle {
+	background-color: #214C9A;
+	color: #FFFFFF;
+	padding: 4px 24px 4px 24px;
+	margin: 5px -20px 10px -20px;
+}
+
+h1.pagetitle {
+	font-size: 22px;
+	border-bottom: solid 1px #CCCCCC;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+
+/* Class for applying a separator under H elements (useful to avoid usage of HR) */
+h1.separator, h2.separator, h3.separator {
+	border-bottom: solid 1px #CCCCCC;
+	padding-bottom: 2px;
+	margin-bottom: 8px;
+}
+
+ul, ol {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 28px;
+	padding-right: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+code, pre {
+	font-family: Courier New, Lucida Console, Monospace;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+pre {
+	border: dashed 1px #999999;
+	background-color: #FFFFFF;
+	margin: 6px 0px 6px 0px;
+	padding: 8px;
+}
+
+table, div {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: none;
+}
+
+div.warning {
+	padding: 6px;
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+	display: table-cell;
+}
+
+#LicenseInfoDiv {
+	background-color: #F0F0F0;
+	border-top: solid 3px #CCCCCC;
+	margin: -10px -20px -10px -20px;
+	padding: 10px;
+}
+
+table.generic {
+}
+
+tr.tableheader td, th {
+	background-color: #CCCCCC;
+	color: #000000;
+	font-weight: bold;
+	margin: 0px;
+	padding: 2px 5px 2px 5px;
+	border-bottom: solid 1px #999999;
+}
+
+tr.tablerow td {
+	margin: 0px;
+	padding: 2px 5px 2px 5px;
+	border-bottom: solid 1px #999999;
+	font-size: 11px;
+}
+tr.tablerow:hover, tr.tablerow:hover td {
+	background-color: #FFFFCC;
+}
+
+tr.tablerowalternate td {
+	background-color: #F0F0F0;
+	margin: 0px;
+	padding: 2px 5px 2px 5px;
+	border-bottom: solid 1px #999999;
+	font-size: 11px;
+}
+tr.tablerowalternate:hover, tr.tablerowalternate:hover td {
+	background-color: #FFFFCC;
+}
+
+tr.selected td, tr.selected:hover td {
+	background-color: #214C9A;
+	color: #FFFFFF;
+}
+tr.selected td a, tr.selected:hover td a {
+	color: #FFFFFF;
+}
+
+tr.inactive td {
+	color: #FF0000;
+	font-style: italic;
+}
+
+tr.admin td {
+	font-weight: bold;
+}
+
+tr.disabled td {
+	color: #BBBBBB;
+	font-style: italic;
+}
+
+tr.error td {
+	color: #FF0000;
+}
+
+tr.warning td {
+	color: #FF9900;
+}
+
+.imagebutton {
+	margin-bottom: -4px;
+}
+
+.block {
+	display: block;
+}
+
+.verticalpadding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.horizontalmargin {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+/* BEGIN AdminHome.aspx */
+
+#BulkEmailDiv {
+	float: right;
+	width: 33%;
+	padding: 8px;
+	border: solid 1px #999999;
+	background-color: #FFFFFF;
+}
+#BulkEmailDiv input.textbox {
+	width: 98%;
+}
+#BulkEmailDiv textarea.body {
+	width: 98%;
+	height: 150px;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#ShutdownDiv {
+	padding: 10px;
+	float: left;
+}
+
+/* END AdminHome.aspx */
+
+/* BEGIN AdminUsers.aspx, AdminGroups.aspx, AdminNamespaces.aspx,
+	AdminPages.aspx, AdminCategories.aspx, AdminSnippets.aspx,
+	AdminNavPaths.aspx, AdminLog.aspx, AdminProviders.aspx */
+
+/* AdminPages.aspx - specific */
+#NamespaceSelectorDiv {
+	float: left;
+}
+#DraftPreviewDiv {
+	height: 250px;
+	padding: 6px;
+	margin-top: 10px;
+	border: solid 1px #999999;
+	overflow: auto;
+}
+
+/* AdminPages.aspx - specific */
+#FilterDiv {
+	float: left;
+	margin-top: 11px;
+	margin-left: 30px;
+	margin-bottom: 6px;
+}
+
+/* AdminPages.aspx/AdminCategories.aspx - specific */
+div.pagefeaturecontainer, div.pagefeaturecontainerwarning, div.pagefeaturecontainerapprove, div.categoryfeaturecontainer, div.categoryfeaturecontainerwarning {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	border: solid 1px #999999;
+	background-color: #F5F5F5;
+	float: left;
+	height: 150px;
+	min-width: 150px;
+}
+
+div.pagefeaturecontainerapprove {
+	background-color: #C6DB7B;
+	border: solid 1px #639A39;
+}
+
+div.pagefeaturecontainerwarning, div.categoryfeaturecontainerwarning {
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+}
+
+#UsersListContainerDiv, #GroupsListContainerDiv, #NamespacesListContainerDiv, #PagesListContainerDiv, #CategoriesListContainerDiv, #SnippetsListContainerDiv, #NavPathsListContainerDiv, #LogListContainerDiv, #ProvidersListContainerDiv {
+	border: solid 1px #999999;
+	padding: 6px;
+	margin: 6px 0px 6px 0px;
+	float: left;
+}
+
+#PagesListContainerDiv, #CategoriesListContainerDiv, #NavPathsListContainerDiv {
+	clear: left;
+}
+
+#LogListContainerDiv {
+	margin-top: 10px;
+}
+
+/* AdminProviders.aspx - specific */
+#EditProviderDiv {
+	margin-top: 6px;
+	margin-left: 20px;
+	float: left;
+	border: solid 1px #999999;
+	padding: 6px;
+}
+#EditProviderDiv textarea.config, #CopySettingsConfigDiv textarea.config {
+	width: 600px;
+	height: 100px;
+}
+#ProviderConfigHelpDiv {
+	font-size: 11px;
+	max-height: 100px;
+	overflow: auto;
+	margin-top: 10px;
+	background-color: #F5F5F5;
+	padding: 4px;
+}
+
+/* AdminProviders.aspx - specific */
+div.defaultprov {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+div.defaultprovbutton {
+	clear: both;
+}
+
+/* AdminProviders.aspx - specific */
+#DllsListContainerDiv {
+	margin-top: 16px;
+}
+#DllNoticeDiv {
+	margin-top: 8px;
+	clear: both;
+}
+#ProvidersUpdateDiv {
+	clear: both;
+	padding-top: 10px;
+}
+
+#EditAccountDiv, #EditGroupDiv, #EditNamespaceDiv, #EditNavPathsDiv {
+	width: 600px;
+	padding: 6px;
+}
+#EditSnippetDiv {
+}
+
+#EditAccountDiv input.textbox, #EditGroupDiv input.textbox, #EditNamespaceDiv input.textbox, #EditSnippetDiv input.textbox, #EditNavPathDiv input.textbox, #SubjectsManagementDiv input.textbox {
+	margin-bottom: 6px;
+	width: 200px;
+}
+
+#EditNamespaceDiv select.dropdown, #SubjectsManagementDiv select.dropdown, #EditNavPathDiv select.dropdown {
+	margin-bottom: 6px;
+	width: 205px;
+}
+
+#SubjectsDiv select.listbox, #EditNavPathDiv select.listbox {
+	width: 250px;
+	height: 120px;
+	margin-bottom: 6px;
+}
+
+#EditAccountDiv .storageproviderselector, #EditGroupDiv .storageproviderselector, #EditNamespaceDiv .storageproviderselector, #EditSnippetDiv .storageproviderselector {
+	margin-bottom: 6px;
+}
+
+#EditAccountDiv input.button, #EditGroupDiv input.button, #EditNamespaceDiv input.button, #EditSnippetDiv input.button {
+	margin-top: 10px;
+}
+
+#NavPathPagesListDiv {
+	float: left;
+	margin-right: 6px;
+}
+
+input.searchtextbox {
+	font-size: 11px;
+	width: 80px;
+	margin-left: 20px;
+}
+
+.rightaligned {
+	float: right;
+}
+
+#AclSelectorDiv {
+	margin: 10px 0px 10px 0px;
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+	padding: 10px;
+	float: left;
+}
+
+#AclSelectorDiv label {
+	padding-right: 10px;
+}
+
+#MembershipDiv {
+	margin: 10px 0px 10px 10px;
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+	padding: 10px;
+	float: left;
+}
+
+#MembershipDiv label {
+	padding-left: 10px;
+}
+
+#ButtonsDiv, #ButtonsDiv2, #ButtonsDiv3 {
+	clear: left;
+}
+
+#ButtonsDiv.log {
+	float: right;
+}
+
+.injectedmessage {
+	display: block;
+	margin: 0px 0px 10px 0px;
+}
+
+#SubjectsDiv {
+	float: left;
+}
+
+#SubjectsManagementDiv {
+	margin-top: 12px;
+	margin-left: 10px;
+	float: left;
+	border: solid 1px #999999;
+	padding: 6px;
+}
+
+#InternalButtonsDiv {
+	clear: left;
+	float: left;
+	margin-bottom: 10px;
+}
+
+/* AdminNamespaces.aspx - specific, AdminPages.aspx - specific */
+#PermissionsTemplatesDiv {
+	background-color: #F5F5F5;
+	padding: 6px;
+	margin: 10px 0px 10px 0px;
+	width: 500px;
+}
+#PermissionsTemplatesDiv li {
+	margin-bottom: 4px;
+}
+/* AdminUsers.aspx - specific, AdminPages.aspx - specific */
+#PageSelectorDiv {
+	margin: 6px 0px 6px 0px;
+	font-size: 11px;
+	clear: left;
+}
+
+#PageSelectorDiv a {
+	padding: 2px;
+	line-height: 17px;
+}
+#PageSelectorDiv a:hover, a.selected, a:hover.selected {
+	text-decoration: none;
+	background-color: #214C9A;
+	color: #FFFFFF;
+}
+#PageSelectorDiv a.selected, a:hover.selected {
+	font-weight: bold;
+}
+
+/* AdminCategories.aspx - specific */
+#CategoryBulkAdminDiv #PageSelectionDiv {
+	height: 250px;
+	float: left;
+	margin-right: 16px;
+}
+#CategoryBulkAdminDiv #PageSelectionDiv #PagesListDiv select.listbox {
+	width: 250px;
+	height: 120px;
+	margin-bottom: 6px;
+}
+#CategoryBulkAdminDiv #PageSelectionDiv input.textbox {
+	margin-bottom: 6px;
+	width: 200px;
+}
+#CategoryBulkAdminDiv #PageSelectionDiv select.dropdown {
+	margin-bottom: 6px;
+	width: 205px;
+}
+#CategoryBulkAdminDiv #CategorySelectionDiv {
+	width: 200px;
+	height: 250px;
+	float: left;
+	margin-right: 16px;
+}
+#CategoryBulkAdminDiv #CategorySelectionDiv #ListContainerDiv {
+	border: solid 1px #999999;
+	overflow: auto;
+	padding: 2px;
+	height: 180px;
+}
+#CategoryBulkAdminDiv #BatchControlDiv {
+	height: 250px;
+	width: 200px;
+	float: left;
+	margin-right: 16px;
+}
+#CategoryBulkAdminDiv #ButtonsDiv2 {
+	clear: left;
+	padding-top: 30px;
+}
+
+/* AdminPages.aspx - specific */
+#PageBulkMigrateDiv #PageSelectionDiv {
+	height: 250px;
+	float: left;
+	margin-right: 16px;
+}
+#PageBulkMigrateDiv #PageSelectionDiv #PagesListDiv select.listbox {
+	width: 250px;
+	height: 120px;
+	margin-bottom: 6px;
+}
+#PageBulkMigrateDiv #PageSelectionDiv input.textbox {
+	margin-bottom: 6px;
+	width: 200px;
+}
+#PageBulkMigrateDiv #PageSelectionDiv select.dropdown {
+	margin-bottom: 6px;
+	width: 205px;
+}
+#PageBulkMigrateDiv #NamespaceSelectionDiv {
+	width: 200px;
+	height: 250px;
+	float: left;
+	margin-right: 16px;
+}
+#PageBulkMigrateDiv #BatchControlDiv {
+	height: 250px;
+	width: 200px;
+	float: left;
+	margin-right: 16px;
+}
+#PageBulkMigrateDiv #ButtonsDiv3 {
+	clear: left;
+	padding-top: 30px;
+}
+
+/* END AdminUsers.aspx, AdminGroups.aspx, AdminNamespaces.aspx,
+	AdminPages.aspx, AdminCategories.aspx, AdminSnippets.aspx,
+	AdminNavPaths.aspx, AdminLog.aspx, AdminProviders.aspx */
+
+/* BEGIN AdminConfig.aspx */
+
+.featurecontainer {
+	margin-bottom: 12px;
+}
+
+.featurecontainer label {
+	color: #555555;
+}
+
+.configlarge {
+	width: 350px;
+}
+
+.configmedium {
+	width: 200px;
+}
+
+.configsmall {
+	width: 100px;
+}
+
+.configsmallest {
+	width: 60px;
+}
+
+.smalllabel, .smalllabel * {
+	font-size: 10px;
+}
+
+#ConfigGeneralDiv, #ConfigContentDiv {
+	background-color: #F0F0F0;
+	border: solid 1px #999999;
+	padding: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+#ConfigSecurityDiv {
+	background-color: #CCDDEE;
+	border: solid 1px #214C9A;
+	padding: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+#ConfigAdvancedDiv {
+	background-color: #FEF693;
+	border: solid 1px #FFCF10;
+	padding: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+/* END AdminConfig.aspx */
+
+/* BEGIN AdminContent.aspx */
+
+#PageLayoutElements {
+	float: left;
+	margin-right: 100px;
+	width: 320px;
+}
+
+#LayoutTable {
+	 width: 300px;
+	 text-align: center;
+}
+
+#HtmlHeadTd {
+	background-color: #F9F9F9;
+	border: dashed 1px #999999;
+	height: 25px;
+}
+#HeaderTd {
+	background-color: #CFDF95;
+	height: 25px;
+}
+#SidebarTd {
+	background-color: #FCE7A8;
+	width: 60px;
+}
+#PageHeaderTd {
+	background-color: #F0F0F0;
+	height: 20px;
+}
+#PageContentTd {
+	height: 150px;
+}
+#PageFooterTd {
+	background-color: #F0F0F0;
+	height: 20px;
+}
+#FooterTd {
+	background-color: #CFDF95;
+	height: 25px;
+}
+
+ul.spaced li {
+	margin-bottom: 6px;
+}
+
+#InlineToolsDiv {
+	float: right;
+}
+
+/* END AdminContent.aspx */

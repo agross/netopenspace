@@ -1,0 +1,339 @@
+﻿
+div.toolbar {
+	background-color: #F0F0F0;
+	padding: 4px;
+	height: 22px;
+	border-left: solid 1px #AAAAAA;
+	border-top: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	width: 760px;
+}
+
+div.toolbar div.sizebuttons {
+	float: right;
+}
+
+a.toolbarbutton {
+	width: 20px;
+	height: 18px;
+	display: block;
+	float: left;
+	margin-right: 2px;
+	border: solid 1px #214C9A;
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 2px;
+}
+
+a.toolbarbutton:hover {
+	border: solid 1px #D9671E;
+}
+
+div.menucontainer {
+	height: auto;
+	width: 150px;
+	overflow: visible;
+	border: solid 1px #CCCCCC;
+	background-color: #FFFFFF;
+}
+
+/* Increase/decrease editor size buttons */
+.helperbutton {
+	border: none;
+	padding: 0px;
+	margin: 7px 0px 0px 0px;
+}
+
+a.menulink {
+	padding: 3px;
+	font-size: 11px;
+	display: block;
+}
+
+a.menulink:hover, a.menulinkcompact:hover {
+	background-color: #214C9A;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.menulinkcompact {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0px 3px 2px 3px;
+}
+
+/* Tabs */
+
+#TabContainerDiv {
+}
+
+input.tabbutton {
+	border-top: solid 1px #AAAAAA;
+	border-left: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	border-bottom: solid 1px #AAAAAA;
+	margin-bottom: -1px;
+	background-color: #BBBBBB;
+	color: #F5F5F5;
+	font-weight: bold;
+	z-index: 1000;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+input.tabbutton:hover {
+	background-color: #BBBBBB;
+	border-top: solid 1px #AAAAAA;
+	border-left: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	border-bottom: solid 1px #AAAAAA;
+	background-color: #F0F0F0;
+	color: #214C9A;
+}
+
+input.tabbuttonactive {
+	border-top: solid 1px #AAAAAA;
+	border-left: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	border-bottom: solid 1px #F0F0F0;
+	margin-bottom: -1px;
+	background-color: #F0F0F0;
+	color: #214C9A;
+	font-weight: bold;
+	z-index: 1000;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	cursor: default;
+}
+input.tabbuttonactive:hover {
+	background-color: #F0F0F0;
+	border-top: solid 1px #AAAAAA;
+	border-left: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	border-bottom: solid 1px #F0F0F0;
+}
+
+#WysiwygDiv {
+	border: solid 1px #A5ACB2;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Trees */
+
+div.subtree {
+	margin-left: 16px;
+}
+
+a.menulinkfile {
+	background-image: url(../Images/Editor/File.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+}
+
+a.menulinkdirectory {
+	background-image: url(../Images/Editor/Directory.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+}
+
+/* Image Browser */
+
+a.imageitem {
+	font-size: 10px;
+	text-decoration: none;
+}
+
+a.imageitem:hover {
+	text-decoration: none;
+}
+
+a.imageitem img {
+	display: inline;
+}
+a.imageitem span.imageinfo {
+	font-size: 10px;
+	padding: 0px 2px 0px 2px;
+	background-color: #FFFFFF;
+	z-index: 999;
+}
+
+a.imageitem:hover span.imageinfo {
+	background-color: #FFFFFF;
+	z-index: 1010;
+}
+
+div.imageitem:hover {
+	overflow: visible;
+	z-index: 1000;
+}
+div.imageitem:hover span.imageinfo {
+	background-color: #FFFFFF;
+}
+
+a.folderitem {
+	font-size: 10px;
+	text-decoration: none;
+}
+
+a.folderitem:hover {
+	text-decoration: none;
+}
+
+a.upitem {
+	font-size: 10px;
+	text-decoration: none;
+}
+
+a.upitem:hover {
+	text-decoration: none;
+}
+
+div.imageitem, div.folderitem, div.upitem {
+	border: solid 1px #DDDDDD;
+	width: 64px;
+	height: 62px;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+	padding-top: 2px;
+	margin: 2px;
+	line-height: 10px;
+}
+
+#MainPopupDiv {
+	padding: 6px;
+	background-color: transparent;
+}
+
+#ClientTreePagesDiv, #ClientTreeFilesDiv {
+	height: 220px;
+	width: 270px;
+	overflow: auto;
+	margin-bottom: 8px;
+	background-color: #FFFFFF;
+	border: solid 1px #999999;
+}
+
+#ImageBrowserTable tr td {
+	vertical-align: bottom;
+}
+
+#ClientImageBrowserDiv {
+	height: 220px;
+	width: 375px;
+	overflow: auto;
+	margin-bottom: 8px;
+	background-color: #FFFFFF;
+	border: solid 1px #999999;
+}
+
+#ImagePreviewDiv {
+	height: 220px;
+	width: 220px;
+	margin-bottom: 8px;
+	border: solid 1px #999999;
+	text-align: center;
+	background-image: url(../Images/Editor/TranspBG.png);
+}
+#ImagePreviewDiv img {
+	margin: 10px;
+}
+
+#ImageControlsTable tr td {
+	 vertical-align: bottom;
+	 width: 400px;
+}
+
+div.popupbuttons {
+	 text-align: right;
+	 width: 270px;
+}
+
+/* Image Editor */
+
+#ImageEditorMainDiv {
+	width: 560px;
+	height: 330px;
+}
+
+#ImageEditorMainDiv #PreviewDiv {
+	float: left;
+	width: 290px;
+	height: 290px;
+	margin: 4px;
+	border: solid 1px #999999;
+	padding: 4px;
+	text-align: center;
+	background-image: url(../Images/Editor/TranspBG.png);
+}
+
+#ImageEditorMainDiv #ResizeOptionsDiv {
+	float: left;
+	width: 230px;
+	height: 290px;
+	margin: 4px;
+}
+
+#ImageEditorMainDiv #CurrentSizeDiv {
+	margin-bottom: 10px;
+}
+
+#ImageEditorMainDiv #PercentageDiv {
+	float: left;
+	width: 200px;
+	margin: 5px 0px 10px 10px;
+}
+#ImageEditorMainDiv #PercentageDiv input {
+	text-align: center;
+	width: 30px;
+}
+
+#ImageEditorMainDiv #PixelDiv {
+	float: left;
+	clear: left;
+	margin: 0px 0px 0px 0px;
+}
+
+#ImageEditorMainDiv #PixelDiv #PixelSizeDiv {
+	float: left;
+	width: 200px;
+	margin: 5px 0px 0px 10px;
+}
+#ImageEditorMainDiv #PixelDiv #PixelSizeDiv input {
+	text-align: center;
+	width: 40px;
+}
+
+#ImageEditorMainDiv #RotateDiv {
+	float: left;
+	width: 200px;
+	margin: 10px 0px 0px 0px;
+}
+
+#ImageEditorMainDiv #PreviewLinkDiv {
+	float: left;
+	clear: left;
+	margin: 20px 0px 0px 0px;
+}
+
+#ImageEditorMainDiv #MainSaveDiv {
+	clear: both;
+	margin: 10px;
+	padding-top: 10px;
+}
+
+#ImageEditorMainDiv #MainSaveDiv #SaveDiv {
+	margin-left: 80px;
+}
+
+#ImageEditorMainDiv #MainSaveDiv #ResultDiv {
+	float: right;
+	margin: 10px 80px 0px 0px;
+}
+
+#VisualEditorBody {
+	padding: 5px;
+}

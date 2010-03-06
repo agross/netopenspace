@@ -1,0 +1,19 @@
+
+body, ul, ol, li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+#HeaderDiv, #SidebarDiv, #FooterDiv, #EditHistoryLinkDiv, #RssLinkDiv, #PageLockedDiv, #PageInfoDiv {
+	display: none;
+}
+
+#MainDiv {
+	border: none;
+	margin: 0px;
+}
+
+a.editsectionlink, a.headeranchor {
+	display: none;
+}

@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
+    <value>Regular Expression for validating usernames and group names</value>
+  </data>
+  <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
+    <value>Regular Expression for validating passwords</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
+    <value>Afficher les ancres pour les sections de la page</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIpHostFilterResource1.Text" xml:space="preserve">
+    <value>IP/Filtre hôte pour l'édition permise (séparer par une virgule, utiliser '*' pour les wild cards)</value>
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.Text" xml:space="preserve">
+    <value>Accepter les retour de chariots simples dans le contenu(expérimental)</value>
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAutoGeneratePageNamesResource1.Text" xml:space="preserve">
+    <value>Auto-générer par défaut les noms de page dans Éditeur</value>
+  </data>
+  <data name="lblExtensionsAllowedForUploadResource2.Text" xml:space="preserve">
+    <value>Extensions de fichier permises pour le téléversement(séparer par une virgule, '*' pour tous les types)</value>
+  </data>
+  <data name="lblRssFeedsModeResource1.Text" xml:space="preserve">
+    <value>Mode de service de Flux RSS Feeds</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>Texte complet</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>FullText</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>Sommaire</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>Désactivé (Flux RSS complètement désactivés)</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="lstFileDownloadCountFilterModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>Compter tous les fichiers téléchargés</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>Compter tout</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>Compter les téléchargements pour des extensions spécifiques (séparer par des virgules)</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>CountSpecifiedExtensions</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>Compter les téléchargements pour toutes les extensions  (separer par des virgules)</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>ExcludeSpecifiedExtensions</value>
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAutoWikiUrlResource1.Text" xml:space="preserve">
+    <value>autodétection</value>
+  </data>
+  <data name="btnAutoWikiUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Sauvegarder la configuration</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowScriptTagsResource1.Text" xml:space="preserve">
+    <value>Permettre les SCRIPT tags dans le WikiMarkup</value>
+  </data>
+  <data name="chkAllowScriptTagsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.Text" xml:space="preserve">
+    <value>Permettre aux utilisateurs de s'enregistrer</value>
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisableCacheResource1.Text" xml:space="preserve">
+    <value>Désactiver complètement la cache</value>
+  </data>
+  <data name="chkDisableCacheResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisplayGravatarsResource1.Text" xml:space="preserve">
+    <value>Afficher les Gravatars pour le compte utilisateur</value>
+  </data>
+  <data name="chkDisplayGravatarsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.Text" xml:space="preserve">
+    <value>Activer les vérification de mise à jour automatiques (Système et fournisseurs)</value>
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.Text" xml:space="preserve">
+    <value>Activer les fils d'ariane</value>
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableCaptchaControlResource1.Text" xml:space="preserve">
+    <value>Activer le contrôle CAPTCHA pour toutes les fonctionnalités publiques</value>
+  </data>
+  <data name="chkEnableCaptchaControlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.Text" xml:space="preserve">
+    <value>Activer l'édition par double-clique</value>
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableHttpCompressionResource1.Text" xml:space="preserve">
+    <value>Activer la compression HTTP</value>
+  </data>
+  <data name="chkEnableHttpCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageInfoDivResource1.Text" xml:space="preserve">
+    <value>Activer la section d'information sur la page (Modifié le, Catégorisé comme, etc.)</value>
+  </data>
+  <data name="chkEnablePageInfoDivResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageToolbarResource1.Text" xml:space="preserve">
+    <value>Activer la barre d'outils de la page(Éditer cette page , Historique, Admin)</value>
+  </data>
+  <data name="chkEnablePageToolbarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSectionEditingResource1.Text" xml:space="preserve">
+    <value>Activer l'édition des sections de la page</value>
+  </data>
+  <data name="chkEnableSectionEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSslForSmtpResource1.Text" xml:space="preserve">
+    <value>Activer le SSL</value>
+  </data>
+  <data name="chkEnableSslForSmtpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewPageCodeResource1.Text" xml:space="preserve">
+    <value>Activer la fonctionnalité "Voir le code de la page"</value>
+  </data>
+  <data name="chkEnableViewPageCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.Text" xml:space="preserve">
+    <value>Activer la compression du ViewState</value>
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.Text" xml:space="preserve">
+    <value>Empêcher l'édition concurente de pages</value>
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.Text" xml:space="preserve">
+    <value>Utiliser l'éditeur visuel (WYSIWYG) par défaut</value>
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>Format de Date/Heure invalide</value>
+  </data>
+  <data name="cvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ErrorMessage" xml:space="preserve">
+    <value>Adresse courriel invalide</value>
+  </data>
+  <data name="cvErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Nom d'utilisateur requis</value>
+  </data>
+  <data name="cvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>Mot de passe requis</value>
+  </data>
+  <data name="cvUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblActivationModeResource1.Text" xml:space="preserve">
+    <value>Mode d'activation de compte</value>
+  </data>
+  <data name="lblAdvancedConfigResource1.Text" xml:space="preserve">
+    <value>Configuration avancée</value>
+  </data>
+  <data name="lblCacheCutSizeResource1.Text" xml:space="preserve">
+    <value>Taille de coupe de cache</value>
+  </data>
+  <data name="lblCacheSizeResource1.Text" xml:space="preserve">
+    <value>Taille de la cache</value>
+  </data>
+  <data name="lblChangeModerationModeResource1.Text" xml:space="preserve">
+    <value>Mode de modération de changement de page</value>
+  </data>
+  <data name="lblConfigResource1.Text" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="lblContactEmailResource1.Text" xml:space="preserve">
+    <value>Courriel de contact</value>
+  </data>
+  <data name="lblContentConfigResource1.Text" xml:space="preserve">
+    <value>Configuration de contenu</value>
+  </data>
+  <data name="lblDateTimeFormatResource1.Text" xml:space="preserve">
+    <value>Format de Date/Heure</value>
+  </data>
+  <data name="lblDateTimeFormatTemplatesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultAdministratorsGroupResource1.Text" xml:space="preserve">
+    <value>Groupe d'administrateurs par défaut</value>
+  </data>
+  <data name="lblDefaultAnonymousGroupResource1.Text" xml:space="preserve">
+    <value>Groupe d'utilisateurs anonymes par défaut</value>
+  </data>
+  <data name="lblDefaultLanguageResource1.Text" xml:space="preserve">
+    <value>Langue par défaut</value>
+  </data>
+  <data name="lblDefaultTimeZoneResource1.Text" xml:space="preserve">
+    <value>Fuseau horaire par défaut</value>
+  </data>
+  <data name="lblDefaultUsersGroupResource1.Text" xml:space="preserve">
+    <value>Groupe d'utilisateurs par défaut</value>
+  </data>
+  <data name="lblErrorsEmailsResource1.Text" xml:space="preserve">
+    <value>Adresses courriels à notifier en cas d'erreurs (séparer par une virgule)</value>
+  </data>
+  <data name="lblGeneralConfigResource1.Text" xml:space="preserve">
+    <value>Configuration générale</value>
+  </data>
+  <data name="lblKeptBackupNumberPostResource1.Text" xml:space="preserve">
+    <value>copies de sureté pour chaque page (laisser vide pour aucune limite)</value>
+  </data>
+  <data name="lblKeptBackupNumberPreResource1.Text" xml:space="preserve">
+    <value>Garder le plus possible</value>
+  </data>
+  <data name="lblLoggingLevelResource1.Text" xml:space="preserve">
+    <value>Niveau de logging</value>
+  </data>
+  <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
+    <value>Taille maximale pour le téléversement</value>
+  </data>
+  <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
+    <value>Taille du log maximale</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
+    <value>éléments dans &lt;code&gt;{RecentChanges}&lt;/code&gt; balises</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPreResource1.Text" xml:space="preserve">
+    <value>Afficher le plus</value>
+  </data>
+  <data name="lblNamespaces1Resource1.Text" xml:space="preserve">
+    <value>Espaces de nom</value>
+  </data>
+  <data name="lblNamespaces2Resource1.Text" xml:space="preserve">
+    <value>Espaces de nom</value>
+  </data>
+  <data name="lblPages1Resource1.Text" xml:space="preserve">
+    <value>pages</value>
+  </data>
+  <data name="lblPages2Resource1.Text" xml:space="preserve">
+    <value>pages</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRootMainPageResource1.Text" xml:space="preserve">
+    <value>Espace de nom racine pour la page principale</value>
+  </data>
+  <data name="lblRootThemeResource1.Text" xml:space="preserve">
+    <value>Theme de l'espace de nom racine</value>
+  </data>
+  <data name="lblSecurityConfigResource1.Text" xml:space="preserve">
+    <value>Configuration de sécurité</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces1Resource1.Text" xml:space="preserve">
+    <value>voir aussi</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces2Resource1.Text" xml:space="preserve">
+    <value>voir aussi</value>
+  </data>
+  <data name="lblSelectFormatResource1.Text" xml:space="preserve">
+    <value>Sélectionner...</value>
+  </data>
+  <data name="lblSenderEmailResource1.Text" xml:space="preserve">
+    <value>Courriel de l'expéditeur</value>
+  </data>
+  <data name="lblSmtpAuthenticationResource1.Text" xml:space="preserve">
+    <value>Utilisateur et mot de passe SMTP</value>
+  </data>
+  <data name="lblSmtpServerResource1.Text" xml:space="preserve">
+    <value>Adresse et port du serveur SMTP</value>
+  </data>
+  <data name="lblStringsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
+    <value>utilisé pour les communications par courriel</value>
+  </data>
+  <data name="lblWikiTitleResource1.Text" xml:space="preserve">
+    <value>Titre du wiki</value>
+  </data>
+  <data name="lblWikiUrlResource1.Text" xml:space="preserve">
+    <value>URL du wiki</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>(GMT-12:00) Date de la ligne ouest internationale</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>-720</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>(GMT-03:30) Terre-Neuve</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>-210</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>(GMT-03:00) Groenland</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>-180</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>(GMT-02:00) Milieu de l'Atlantique</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>-120</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>(GMT-01:00) Açores</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>-60</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>(GMT) Greenwich</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>(GMT+01:00) Europe centrale</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>(GMT+02:00) Europe de l'est</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>(GMT+03:00) Moscou, Baghdad</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>(GMT+03:30) Iran</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>210</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>(GMT+04:00) Abu Dhabi, Dubai</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>(GMT-11:00) Îles Midway, Samoa</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>-660</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>(GMT+04:30) Kaboul</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>270</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>(GMT+05:00) Islamabad, Karachi</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>300</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>(GMT+05:30) Inde</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>330</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>(GMT+05:45) Kathmandou</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>345</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>(GMT+06:00) Astana, Dhaka</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>(GMT+06:30) Rangoon</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>390</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>(GMT+07:00) Bangkok, Jakarta</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>420</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>(GMT+08:00) Côte de la Chine, Ouest de l'Australie </value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>480</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>(GMT+09:00) Japohn, Corée</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>540</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>(GMT+09:30) Australie centrale</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>570</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>(GMT-10:00) Hawaii</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>-600</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>(GMT+10:00) Est de l'Australie</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>(GMT+11:00) Magadan, Îles Salomon</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>660</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>(GMT+12:00) Nouvelle Zélande, Fidji</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>720</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>(GMT+12:45) Île de Chatham, NZ</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>765</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>(GMT+13:00) Tonga, Îles Phoenix</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>780</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>(GMT+14:00) Îles Christmas</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>840</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>Les utilisateurs doivent activer leur compte par courriel</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>Les administrateurs doivent activer leur compte</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>Les comptes sont actifs par défaut</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>(GMT-09:00) Alaska</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>-540</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>(GMT-08:00) Pacifique</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>-480</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>(GMT-07:00) Rocheuses</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>-420</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>(GMT-06:00) Central</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>-360</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>(GMT-05:00) Est</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>-300</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>(GMT-04:00) Atlantique</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>-240</value>
+  </data>
+  <data name="lstAccountActivationModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAdministratorsGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAnonymousGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultTimeZoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultUsersGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstMainPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRootThemeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="rdoAllMessagesResource1.Text" xml:space="preserve">
+    <value>Tous les messages</value>
+  </data>
+  <data name="rdoAllMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoDisableLogResource1.Text" xml:space="preserve">
+    <value>Désactiver le Log</value>
+  </data>
+  <data name="rdoDisableLogResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoErrorsOnlyResource1.Text" xml:space="preserve">
+    <value>Erreurs seulement</value>
+  </data>
+  <data name="rdoErrorsOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoNoModerationResource1.Text" xml:space="preserve">
+    <value>Désactiver la modération</value>
+  </data>
+  <data name="rdoNoModerationResource1.ToolTip" xml:space="preserve">
+    <value>Aucun système de modération n'est utilisé: les pages ne peuvent être éditées que par les utilisateurs qui ont des permissions d'édition.</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.Text" xml:space="preserve">
+    <value>Requiert des permissions d'édition de page</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>Les pages peuvent être éditées par les utilisateurs qui ont des droits d'édition, mais pas de permissions de gestion, et les changements sont retenus pour modération</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.Text" xml:space="preserve">
+    <value>Requiert des permissions de visualisation de pages</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>Les pages peuvent être éditées par les utilisateurs qui ont des permissions de visualisation mais pas de permissions d'édition, et les changements sont retenus pour modération.</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.Text" xml:space="preserve">
+    <value>Avertissements et erreurs</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>Adresse courriel invalide</value>
+  </data>
+  <data name="revContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>URL du wiki invalide</value>
+  </data>
+  <data name="revMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>Adresse courriel invalide</value>
+  </data>
+  <data name="revSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>Adresse du serveur SMTP invalide</value>
+  </data>
+  <data name="revSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>Titre du wiki invalide</value>
+  </data>
+  <data name="revWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>La taille de la coupe de cache est requise</value>
+  </data>
+  <data name="rfvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>La taille de la cache est requise</value>
+  </data>
+  <data name="rfvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>Le courriel du contact est requis</value>
+  </data>
+  <data name="rfvContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>Le format Date/Heure est requis</value>
+  </data>
+  <data name="rfvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>L'URL du wiki est requis</value>
+  </data>
+  <data name="rfvMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>La taille maximale du fichier est requise</value>
+  </data>
+  <data name="rfvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>La taille maximale du log est requise</value>
+  </data>
+  <data name="rfvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>Le nombre est requis</value>
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>Le courriel de l'expéditeur est requis</value>
+  </data>
+  <data name="rfvSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>Le serveur SMTP est requis</value>
+  </data>
+  <data name="rfvSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>Le titre du wiki est requis</value>
+  </data>
+  <data name="rfvWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Taille de coupe de cache invalide (min. 5, max. 50000)</value>
+  </data>
+  <data name="rvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Taille invalide (min. 10, max. 100000)</value>
+  </data>
+  <data name="rvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ErrorMessage" xml:space="preserve">
+    <value>Le nombre doit être entre 0 et 1000</value>
+  </data>
+  <data name="rvKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Taille du log invalide (min. 16, max. 10240)</value>
+  </data>
+  <data name="rvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Taille du log invalide (min. 16, max. 10240)</value>
+  </data>
+  <data name="rvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>Le nombre doit êter entre 0 et 50</value>
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ErrorMessage" xml:space="preserve">
+    <value>Port invalide (min. 1, max. 65535)</value>
+  </data>
+  <data name="rvSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

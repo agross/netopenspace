@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnManualNameResource1.Text" xml:space="preserve">
+    <value>Введите имя страницы...</value>
+  </data>
+  <data name="btnManualNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCategoryResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCategoryResource2.ToolTip" xml:space="preserve">
+    <value>Введите название категории</value>
+  </data>
+  <data name="txtCommentResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCommentResource2.ToolTip" xml:space="preserve">
+    <value>Прокомментируйте свои изменения (не обязательно)</value>
+  </data>
+  <data name="txtDescriptionResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource2.ToolTip" xml:space="preserve">
+    <value>Опишите содержание этой страницы (не обязательно)</value>
+  </data>
+  <data name="txtKeywordsResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeywordsResource2.ToolTip" xml:space="preserve">
+    <value>Укажите ключевые слова этой страницы, отделяя их запятыми (не обязательно)</value>
+  </data>
+  <data name="txtNameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNameResource2.ToolTip" xml:space="preserve">
+    <value>Придумайте название для этой страницы</value>
+  </data>
+  <data name="txtTitleResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleResource2.ToolTip" xml:space="preserve">
+    <value>Укажите тайтл этой страницы</value>
+  </data>
+  <data name="btnAutoTemplateOKResource1.Text" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="btnAutoTemplateOKResource1.ToolTip" xml:space="preserve">
+    <value>Закрыть это сообщение</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelTemplateResource1.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="btnCancelTemplateResource1.ToolTip" xml:space="preserve">
+    <value>Закрыть тулбар Шаблонов</value>
+  </data>
+  <data name="btnCreateCategoryResource1.Text" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="btnCreateCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveAndContinueResource1.Text" xml:space="preserve">
+    <value>Сохранить и продолжить</value>
+  </data>
+  <data name="btnSaveAndContinueResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnTemplatesResource1.Text" xml:space="preserve">
+    <value>Шаблоны оформления...</value>
+  </data>
+  <data name="btnTemplatesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUseTemplateResource1.Text" xml:space="preserve">
+    <value>Использовать Шаблон</value>
+  </data>
+  <data name="btnUseTemplateResource1.ToolTip" xml:space="preserve">
+    <value>Использовать этот Шаблон (замена текущего содержания)</value>
+  </data>
+  <data name="chkMinorChangeResource1.Text" xml:space="preserve">
+    <value>Незначительное изменение (без бэкапа)</value>
+  </data>
+  <data name="chkMinorChangeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkSaveAsDraftResource1.Text" xml:space="preserve">
+    <value>Сохранить как Черновик</value>
+  </data>
+  <data name="chkSaveAsDraftResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCategory1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ошибочное Имя</value>
+  </data>
+  <data name="cvCategory1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCategory1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCategory2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Такая Категория уже существует</value>
+  </data>
+  <data name="cvCategory2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvCategory2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvName1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Ошибочное Имя Страницы</value>
+  </data>
+  <data name="cvName1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvName1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvName2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Такая Страница уже существует</value>
+  </data>
+  <data name="cvName2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvName2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApprovalRequiredInfoResource1.Text" xml:space="preserve">
+    <value>Ваши изменения содержания обязательно будут сохранены, однако не будут опубликованы до тех пор, пока редактор или администратор их не одобрит</value>
+  </data>
+  <data name="lblAttachmentManagerResource1.Text" xml:space="preserve">
+    <value>Управление Вложениями Страницы</value>
+  </data>
+  <data name="lblAutoTemplateResource1.Text" xml:space="preserve">
+    <value>Содержание Шаблона "##TEMPLATE##" было выбрано автоматически. Вы, вправе отказаться от этого содержания, а также выбрать иной шаблон, используя ссылку, находящуюся выше на странице.</value>
+  </data>
+  <data name="lblCategoriesResource1.Text" xml:space="preserve">
+    <value>Категории Страницы</value>
+  </data>
+  <data name="lblCategoryResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCategoryResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCommentResource1.Text" xml:space="preserve">
+    <value>Цель Ваших изменений (коротко)</value>
+  </data>
+  <data name="lblConcurrentEditingResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Предупреждение&lt;/b&gt;: эта Страница редактируется другим пользователем</value>
+  </data>
+  <data name="lblConcurrentEditingUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>Содержание тэга Description страницы</value>
+  </data>
+  <data name="lblDraftInfo2Resource1.Text" xml:space="preserve">
+    <value>Если Вы считаете, что Ваш текст готов для обозрения, снимите отметку 'Сохранить как Черновик' возле кнопки 'Сохранить'. Примечание: черновики сохраняются без контроля версий.</value>
+  </data>
+  <data name="lblDraftInfoResource1.Text" xml:space="preserve">
+    <value>Вы редактируете ранее сохранённый &lt;b&gt;черновик&lt;/b&gt; этой страницы, изменённый &lt;b&gt;##USER##&lt;/b&gt;, &lt;b&gt;##DATETIME##&lt;/b&gt; (##VIEWCHANGES##).</value>
+  </data>
+  <data name="lblEditNoticeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIpLoggedResource1.Text" xml:space="preserve">
+    <value>В связи с тем, что Вы не авторизованы, вместо Вашего Логина будет отображён IP, который Вы используете для сёрфинга в Сети.</value>
+  </data>
+  <data name="lblKeywordsResource1.Text" xml:space="preserve">
+    <value>Содержание тэга Keywords страницы (отделяйте запятыми)</value>
+  </data>
+  <data name="lblMetaResource1.Text" xml:space="preserve">
+    <value>Содержание Мета Тэгов Страницы</value>
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Имя Страницы (будет использовано, как часть URL-а)</value>
+  </data>
+  <data name="lblNewCategoryResource1.Text" xml:space="preserve">
+    <value>Новая Категория</value>
+  </data>
+  <data name="lblRefreshLinkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveDangerousResource1.Text" xml:space="preserve">
+    <value>Сохранение этой Страницы возможно приведёт к &lt;b&gt;потере данных&lt;/b&gt;.</value>
+  </data>
+  <data name="lblSaveDisabledResource1.Text" xml:space="preserve">
+    <value>Администраторы запретили сохранение этой Страницы.</value>
+  </data>
+  <data name="lblSessionRefreshResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemplatePreviewResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTemplatePreviewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Название Страницы</value>
+  </data>
+  <data name="lblUnloadPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstCategoriesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstTemplatesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="pnlAnonymousResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAnonymousResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlApprovalRequiredResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlApprovalRequiredResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAutoTemplateResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAutoTemplateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCaptchaResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCategoryCreationResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCategoryCreationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCollisionsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCollisionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDraftResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDraftResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTemplatesResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTemplatesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCategoryResource1.ErrorMessage" xml:space="preserve">
+    <value>Имя обязательно</value>
+  </data>
+  <data name="rfvCategoryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCategoryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Имя обязательно</value>
+  </data>
+  <data name="rfvNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>Название обязательно</value>
+  </data>
+  <data name="rfvTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

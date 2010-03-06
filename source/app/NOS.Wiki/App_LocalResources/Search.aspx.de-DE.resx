@@ -117,72 +117,82 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblSearchInstructionsResource1.Text" xml:space="preserve">
-    <value>Du kannst folgende Optionen verwenden:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Anführungszeichen, für eine Suche nach einer ganz bestimmten Zeichenfolge, zum Beispiel &lt;i&gt;&amp;quot;Hallo Welt&amp;quot;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;Sternchen, als Platzhalter für beliebige Zeichen, zum Beispiel &lt;i&gt;Hallo*&lt;/i&gt;&lt;/li&gt;&lt;li&gt;Fragezeichen, für ein einziges beliebiges Zeichen, zum Beispiel &lt;i&gt;H?llo&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+  <data name="chkFilesAndAttachmentsResource1.Text" xml:space="preserve">
+    <value>Dateien und Anhänge suchen</value>
+    <comment>Search Files and Attachments</comment>
   </data>
-  <data name="lblAllResource1.Text" xml:space="preserve">
-    <value>Alle</value>
-  </data>
-  <data name="lblInvertResource1.Text" xml:space="preserve">
-    <value>Umkehren</value>
-  </data>
-  <data name="lblNoneResource1.Text" xml:space="preserve">
-    <value>Keine</value>
-  </data>
-  <data name="chkUncategorizedResource1.Text" xml:space="preserve">
-    <value>Einträge ohne Kategorie</value>
-    <comment>Uncategorized Pages</comment>
-  </data>
-  <data name="chkUncategorizedResource1.ToolTip" xml:space="preserve">
+  <data name="chkFilesAndAttachmentsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Nach Kategorien filtern</value>
-    <comment>Filter by Categories</comment>
+  <data name="chkAllNamespacesResource1.Text" xml:space="preserve">
+    <value>In allen Namensräumen und Kategorien suchen</value>
+    <comment>Search in all Namespaces and all Categories</comment>
+  </data>
+  <data name="chkAllNamespacesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblInstructionsResource1.Text" xml:space="preserve">
+    <value>Hier können Sie durch die Seiten in diesem Namensraum, sowie den Anhängen und Dateien die ins System hochgeladen wurden suchen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Es werden nur Objekte aufgelistet für die Sie leseberechtigung besitzen.</value>
+    <comment>Here you can search through the pages of this Namespace, their attachments and the files uploaded to the system.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the results will only display the items you have permissions to read.</comment>
+  </data>
+  <data name="btnGoResource1.Text" xml:space="preserve">
+    <value>Los</value>
+    <comment>Go</comment>
+  </data>
+  <data name="btnGoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkUncategorizedPagesResource1.Text" xml:space="preserve">
+    <value>Unkategorisierte Seiten</value>
+    <comment>Uncategorized Pages</comment>
+  </data>
+  <data name="chkUncategorizedPagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCategoryFilterResource1.Text" xml:space="preserve">
+    <value>Nach Kategorie Filtern</value>
+    <comment>Filter by Category</comment>
+  </data>
+  <data name="lblStatsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Suchmaschine</value>
+    <comment>Search Engine</comment>
   </data>
   <data name="lstCategoriesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnGoResource1.Text" xml:space="preserve">
-    <value>Suchen</value>
-    <comment>Go</comment>
-  </data>
-  <data name="btnGoResource1.ToolTip" xml:space="preserve">
-    <value>Klicken Sie hier um die Suche zu starten</value>
-    <comment>Click here to start the search</comment>
-  </data>
-  <data name="chkFullSearchResource1.Text" xml:space="preserve">
-    <value>Den gesamten Text durchsuchen (langsamer)</value>
-    <comment>Full-text search (slower)</comment>
-  </data>
-  <data name="chkFullSearchResource1.ToolTip" xml:space="preserve">
-    <value>Hier auswählen um den Inhalt und Titel der Seiten zu durchsuchen</value>
-    <comment>Check this to search the pages title AND contents</comment>
-  </data>
-  <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier kann man die vorhandenen Seiten des Wiki durchsuchen.&lt;br /&gt;Das ist eine gute Möglichkeit um zu prüfen, ob bereits Inhalte, die angelegt werden sollen, schon im Wiki vorhanden sind.</value>
-    <comment>Here you can search throught the pages of the Wiki.&lt;br /&gt;It's a good habit to perform a search before creating a new page that may already exist in the Wiki.</comment>
-  </data>
-  <data name="lblResultsResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblSearchResource1.Text" xml:space="preserve">
-    <value>Suche</value>
-    <comment>Search</comment>
-  </data>
-  <data name="lblSearchTermsResource1.Text" xml:space="preserve">
-    <value>Suchbegriffe</value>
-    <comment>Search terms</comment>
-  </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Unbennante Seite</value>
-    <comment>Untitled Page</comment>
+    <value>Titel</value>
+    <comment>Title</comment>
   </data>
-  <data name="txtSearchResource1.Text" xml:space="preserve">
+  <data name="rdoAllWordsResource1.Text" xml:space="preserve">
+    <value>Alle Worte</value>
+    <comment>All words</comment>
+  </data>
+  <data name="rdoAllWordsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtSearchResource1.ToolTip" xml:space="preserve">
-    <value>Geben Sie hier Ihre Suchbegriffe ein</value>
-    <comment>Type here your search terms</comment>
+  <data name="rdoAtLeastOneWordResource1.Text" xml:space="preserve">
+    <value>Mindestens eines der Worte</value>
+    <comment>At least one word</comment>
+  </data>
+  <data name="rdoAtLeastOneWordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoExactPhraseResource1.Text" xml:space="preserve">
+    <value>genaue Wortgruppe</value>
+    <comment>Exact phrase</comment>
+  </data>
+  <data name="rdoExactPhraseResource1.ToolTip" xml:space="preserve">
+    <value />
+    <comment>as per Google :-)</comment>
+  </data>
+  <data name="txtQueryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtQueryResource1.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

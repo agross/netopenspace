@@ -1,57 +1,21 @@
-﻿<en-us>
-====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Subscribe to the RSS Feed of {WIKITITLE}"><img src="{THEMEPATH}images/RSS-16x16.png" alt="RSS" title="Subscribe to the RSS Feed of {WIKITITLE}"/></a></div>====
+<div style="float: right;">
+<a href="RSS.aspx" title="Update notifications for {WIKITITLE} (RSS 2.0)"><img src="{THEMEPATH}Images/RSS.png" alt="RSS" /></a>
+<a href="RSS.aspx?Discuss=1" title="Update notifications for {WIKITITLE} Discussions (RSS 2.0)"><img src="{THEMEPATH}Images/RSS-Discussion.png" alt="RSS" /></a></div>
+====Navigation====
 * '''[MainPage|Main Page]'''
-* [News]
 
-* [Category.aspx|Page Categories]
-* [AllPages.aspx|All Pages]
-
-* [Login.aspx|Login/Logout]
-* [Register.aspx|Register]
-* [Profile.aspx|Your Profile]
-* [Language.aspx|Language Selection]
-
+* [RandPage.aspx|Random Page]
 * [Edit.aspx|Create a new Page]
+* [AllPages.aspx|All Pages]
+* [Category.aspx|Categories]
+* [NavPath.aspx|Navigation Paths]
+
+* [AdminHome.aspx|Administration]
 * [Upload.aspx|File Management]
-* [Admin.aspx|Administration]
 
-====Search====
-{SEARCHBOX}{BR}
-<small>[Search.aspx?FullText=1|Advanced Search &raquo;]</small>
+* [Register.aspx|Create Account]
 
-====Partners====
-{t:Partnerlogos}
+<small>'''Search the wiki'''</small>{BR}
+{SEARCHBOX}
 
-====Sponsors====
-{t:Sponsorenlogos}
-('''Want to sponsor?''' [slieser@netopenspace.de| Write us!])
-</en-us>
-
-<de-de>
-====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Den RSS-Feed von {WIKITITLE} abonnieren"><img src="{THEMEPATH}images/RSS-16x16.png" alt="RSS" title="Den RSS-Feed von {WIKITITLE} abonnieren"/></a></div>====
-* '''[MainPage|Hauptseite]'''
-* [News|Aktuelles]
-
-* [AllPages.aspx|Alle Seiten]
-* [Category.aspx|Nach Kategorien]
-
-* [Login.aspx|An-/Abmelden]
-* [Register.aspx|Registrieren]
-* [Profile.aspx|Dein Profil]
-* [Language.aspx|Sprachauswahl]
-
-* [Edit.aspx|Neue Seite erstellen]
-* [Upload.aspx|Dateiverwaltung]
-* [Admin.aspx|Administration]
-
-====Suche====
-{SEARCHBOX}{BR}
-<small>[Search.aspx?FullText=1|Erweiterte Suche &raquo;]</small>
-
-====Partner====
-{t:Partnerlogos}
-
-====[Sponsoren]====
-{t:Sponsorenlogos}
-('''[FAQ#Sponsoring_Unternehmen|Wie wird gesponsert?]''')
-</de-de>
+[image|PoweredBy|Images/PoweredBy.png|http://www.screwturn.eu]

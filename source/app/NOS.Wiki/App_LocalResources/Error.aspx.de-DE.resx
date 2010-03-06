@@ -117,12 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblAdminResource1.Text" xml:space="preserve">
+    <value>Fehlerdetails</value>
+    <comment>Exception Details</comment>
+  </data>
+  <data name="lblExceptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlExceptionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlExceptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Während der Bearbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Die Fehlerinformatinoen wurden protokolliert und werden zur Beseitigung des Fehlers näher untersucht.&lt;br /&gt;Bitte beginnen Sie erneut von der &lt;a href="Default.aspx"&gt;Startseite&lt;/a&gt;.</value>
+    <value>Während der Bearbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Die Fehlerinformatinoen wurden protokolliert und werden zur Beseitigung des Fehlers näher untersucht.&lt;br /&gt;Bitte beginnen Sie erneut bei der &lt;a href="Default.aspx"&gt;Startseite&lt;/a&gt;.</value>
     <comment>We're sorry, an error occurred while processing your request. The error information has been registered and it will investigated.&lt;br /&gt;Please restart from the &lt;a href="Default.aspx"&gt;Main Page&lt;/a&gt;.</comment>
   </data>
   <data name="lblErrorResource1.Text" xml:space="preserve">
-    <value>Systemfehler</value>
+    <value>System Fehler</value>
     <comment>System Error</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">

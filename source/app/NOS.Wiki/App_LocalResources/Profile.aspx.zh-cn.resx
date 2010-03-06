@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
+    <value>当有&lt;b&gt;消息&lt;/b&gt;发布在下列命名空间中的页面时（仅限您可以访问的讨论），接收电子邮件通知：</value>
+  </data>
+  <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
+    <value>当在下列命名空间中的&lt;b&gt;页面&lt;/b&gt;更新时（仅限您可以访问的页面），接收电子邮件通知：</value>
+  </data>
+  <data name="lblNoChangesResource1.Text" xml:space="preserve">
+    <value>当前系统设置不允许对个人信息作任何更改。</value>
+  </data>
+  <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
+    <value>保存显示名称</value>
+  </data>
+  <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>点击这里保存您的显示名称</value>
+  </data>
+  <data name="lblDisplayNameResource1.Text" xml:space="preserve">
+    <value>显示名称</value>
+  </data>
+  <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
+    <value>编辑显示名称、电子邮件地址和密码</value>
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
+    <value>显示名称无效</value>
+  </data>
+  <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>键入您帐户的显示名称</value>
+  </data>
+  <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSaveLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGroupsListResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGroupsResource1.Text" xml:space="preserve">
+    <value>您是下列组的成员：</value>
+  </data>
+  <data name="lblLanguageResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageTimeZoneResource1.Text" xml:space="preserve">
+    <value>语言和时区</value>
+  </data>
+  <data name="btnSaveNotificationsResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>电子邮件地址不匹配</value>
+  </data>
+  <data name="cvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>电子邮件地址不匹配</value>
+  </data>
+  <data name="cvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>密码错误</value>
+  </data>
+  <data name="cvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>密码不匹配</value>
+  </data>
+  <data name="cvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>密码不匹配</value>
+  </data>
+  <data name="cvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotificationsResource1.Text" xml:space="preserve">
+    <value>电子邮件通知设置</value>
+  </data>
+  <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotificationsResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveEmailResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDiscussionMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPageChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>需要电子邮件地址</value>
+  </data>
+  <data name="rfvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>需要电子邮件地址</value>
+  </data>
+  <data name="rfvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>需要旧密码</value>
+  </data>
+  <data name="rfvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>需要密码</value>
+  </data>
+  <data name="rfvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>需要密码</value>
+  </data>
+  <data name="rfvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>电子邮件地址无效</value>
+  </data>
+  <data name="rxvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>密码无效</value>
+  </data>
+  <data name="rxvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfirmResource1.Text" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="btnConfirmResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteAccountResource1.Text" xml:space="preserve">
+    <value>删除帐户</value>
+  </data>
+  <data name="btnDeleteAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveEmailResource1.Text" xml:space="preserve">
+    <value>保存电子邮件地址</value>
+  </data>
+  <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
+    <value>点击这里保存您的电子邮件地址</value>
+  </data>
+  <data name="btnSavePasswordResource1.Text" xml:space="preserve">
+    <value>保存密码</value>
+  </data>
+  <data name="btnSavePasswordResource1.ToolTip" xml:space="preserve">
+    <value>点击这里保存您的密码</value>
+  </data>
+  <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
+    <value>您可以通过先点击“删除帐户”按钮然后点击“确认”按钮进行确定以删除您的帐户。&lt;br /&gt;&lt;b&gt;警告&lt;/b&gt;：此操作不可逆。</value>
+  </data>
+  <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
+    <value>删除帐户</value>
+  </data>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>欢迎访问您的用户概要，</value>
+  </data>
+  <data name="lblEmail1Resource1.Text" xml:space="preserve">
+    <value>电子邮件地址</value>
+  </data>
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
+    <value>电子邮件地址（重复）</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>在这里您可以编辑您的概要设置，例如电子邮件地址和密码。您不能更改您的用户名。</value>
+  </data>
+  <data name="lblOldPasswordResource1.Text" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="lblPassword1Resource1.Text" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="lblPassword2Resource1.Text" xml:space="preserve">
+    <value>密码（重复）</value>
+  </data>
+  <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>用户概要</value>
+  </data>
+  <data name="lblUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>无标题页面</value>
+  </data>
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
+    <value>输入您的电子邮件地址</value>
+  </data>
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
+    <value>重复您的电子邮件地址</value>
+  </data>
+  <data name="txtOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value>输入您的当前密码</value>
+  </data>
+  <data name="txtPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
+    <value>输入您的新密码</value>
+  </data>
+  <data name="txtPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
+    <value>重复您的新密码</value>
+  </data>
+</root>

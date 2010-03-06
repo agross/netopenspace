@@ -7,7 +7,7 @@ Disallow: /Upload.aspx
 Disallow: /Edit.aspx
 Disallow: /Search.aspx
 Disallow: /History.aspx
-Disallow: /Message.aspx
+Disallow: /User.aspx
 Disallow: /RandPage.aspx
 Disallow: /Register.aspx
 Disallow: /RSS.aspx

@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
+    <value>Regular Expression for validating usernames and group names</value>
+  </data>
+  <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
+    <value>Regular Expression for validating passwords</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
+    <value>Display anchors for pages' sections</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIpHostFilterResource1.Text" xml:space="preserve">
+    <value>允許編輯 IP/主機篩選（用英文逗號分隔，使用“*”作為通配符）</value>
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.Text" xml:space="preserve">
+    <value>處理內容中的單個換行符（試驗）</value>
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAutoGeneratePageNamesResource1.Text" xml:space="preserve">
+    <value>默認在編輯器中自動創建頁面名稱</value>
+  </data>
+  <data name="lblExtensionsAllowedForUploadResource2.Text" xml:space="preserve">
+    <value>允許上傳的檔副檔名（用英文逗號分隔，“*”表示任何類型）</value>
+  </data>
+  <data name="lblRssFeedsModeResource1.Text" xml:space="preserve">
+    <value>RSS 源發佈模式</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>全文</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>FullText</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>總結</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>已禁用（完全禁用 RSS 源）</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="lstFileDownloadCountFilterModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>計算所有檔下載</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>CountAll</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>計算含下列副檔名的文件下載（用英文逗號分隔）</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>CountSpecifiedExtensions</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>計算不含下列副檔名的文件下載（用英文逗號分隔）</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>ExcludeSpecifiedExtensions</value>
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAutoWikiUrlResource1.Text" xml:space="preserve">
+    <value>自動檢測</value>
+  </data>
+  <data name="btnAutoWikiUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>保存配置</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowScriptTagsResource1.Text" xml:space="preserve">
+    <value>允許在 WikiMarkup 中使用 SCRIPT 標籤</value>
+  </data>
+  <data name="chkAllowScriptTagsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.Text" xml:space="preserve">
+    <value>允許用戶註冊</value>
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisableCacheResource1.Text" xml:space="preserve">
+    <value>完全禁用快取</value>
+  </data>
+  <data name="chkDisableCacheResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisplayGravatarsResource1.Text" xml:space="preserve">
+    <value>為用戶帳戶顯示 Gravatars</value>
+  </data>
+  <data name="chkDisplayGravatarsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.Text" xml:space="preserve">
+    <value>啟用自動更新檢查（系統和提供者）</value>
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.Text" xml:space="preserve">
+    <value>啟用流覽路徑記錄</value>
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableCaptchaControlResource1.Text" xml:space="preserve">
+    <value>為所有公用功能啟用驗證碼控制</value>
+  </data>
+  <data name="chkEnableCaptchaControlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.Text" xml:space="preserve">
+    <value>啟用雙擊編輯</value>
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableHttpCompressionResource1.Text" xml:space="preserve">
+    <value>啟用 HTTP 壓縮</value>
+  </data>
+  <data name="chkEnableHttpCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageInfoDivResource1.Text" xml:space="preserve">
+    <value>啟用頁面資訊欄（修改於，歸類為，等等）</value>
+  </data>
+  <data name="chkEnablePageInfoDivResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageToolbarResource1.Text" xml:space="preserve">
+    <value>啟用頁面工具欄（編輯，歷史，管理）</value>
+  </data>
+  <data name="chkEnablePageToolbarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSectionEditingResource1.Text" xml:space="preserve">
+    <value>啟用頁面區域編輯</value>
+  </data>
+  <data name="chkEnableSectionEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSslForSmtpResource1.Text" xml:space="preserve">
+    <value>啟用 SSL</value>
+  </data>
+  <data name="chkEnableSslForSmtpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewPageCodeResource1.Text" xml:space="preserve">
+    <value>啟用“查看頁面代碼”功能</value>
+  </data>
+  <data name="chkEnableViewPageCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.Text" xml:space="preserve">
+    <value>啟用 ViewState 壓縮</value>
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.Text" xml:space="preserve">
+    <value>防止併發頁面編輯</value>
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.Text" xml:space="preserve">
+    <value>默認使用所見即所得（WYSIWYG）編輯器</value>
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>日期/時間格式無效</value>
+  </data>
+  <data name="cvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ErrorMessage" xml:space="preserve">
+    <value>電子郵件位址無效</value>
+  </data>
+  <data name="cvErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>需要用戶名</value>
+  </data>
+  <data name="cvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>需要密碼</value>
+  </data>
+  <data name="cvUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblActivationModeResource1.Text" xml:space="preserve">
+    <value>帳戶啟動模式</value>
+  </data>
+  <data name="lblAdvancedConfigResource1.Text" xml:space="preserve">
+    <value>高級配置</value>
+  </data>
+  <data name="lblCacheCutSizeResource1.Text" xml:space="preserve">
+    <value>縮減快取大小</value>
+  </data>
+  <data name="lblCacheSizeResource1.Text" xml:space="preserve">
+    <value>快取大小</value>
+  </data>
+  <data name="lblChangeModerationModeResource1.Text" xml:space="preserve">
+    <value>頁面更改限制模式</value>
+  </data>
+  <data name="lblConfigResource1.Text" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="lblContactEmailResource1.Text" xml:space="preserve">
+    <value>連絡人電子郵件位址</value>
+  </data>
+  <data name="lblContentConfigResource1.Text" xml:space="preserve">
+    <value>內容配置</value>
+  </data>
+  <data name="lblDateTimeFormatResource1.Text" xml:space="preserve">
+    <value>日期/時間格式</value>
+  </data>
+  <data name="lblDateTimeFormatTemplatesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultAdministratorsGroupResource1.Text" xml:space="preserve">
+    <value>默認管理員組</value>
+  </data>
+  <data name="lblDefaultAnonymousGroupResource1.Text" xml:space="preserve">
+    <value>默認匿名用戶組</value>
+  </data>
+  <data name="lblDefaultLanguageResource1.Text" xml:space="preserve">
+    <value>默認語言</value>
+  </data>
+  <data name="lblDefaultTimeZoneResource1.Text" xml:space="preserve">
+    <value>默認時區</value>
+  </data>
+  <data name="lblDefaultUsersGroupResource1.Text" xml:space="preserve">
+    <value>默認用戶組</value>
+  </data>
+  <data name="lblErrorsEmailsResource1.Text" xml:space="preserve">
+    <value>用於接受錯誤通知的電子郵件位址（用英文逗號分隔）</value>
+  </data>
+  <data name="lblGeneralConfigResource1.Text" xml:space="preserve">
+    <value>常規配置</value>
+  </data>
+  <data name="lblKeptBackupNumberPostResource1.Text" xml:space="preserve">
+    <value>份備份（留空表示無限制）</value>
+  </data>
+  <data name="lblKeptBackupNumberPreResource1.Text" xml:space="preserve">
+    <value>為每個頁面保留最多</value>
+  </data>
+  <data name="lblLoggingLevelResource1.Text" xml:space="preserve">
+    <value>日誌記錄等級</value>
+  </data>
+  <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
+    <value>允許上傳的檔的最大尺寸</value>
+  </data>
+  <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
+    <value>最大日誌大小</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
+    <value>個項目</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPreResource1.Text" xml:space="preserve">
+    <value>在 &lt;code&gt;{RecentChanges}&lt;/code&gt; 標籤中顯示最多</value>
+  </data>
+  <data name="lblNamespaces1Resource1.Text" xml:space="preserve">
+    <value>命名空間</value>
+  </data>
+  <data name="lblNamespaces2Resource1.Text" xml:space="preserve">
+    <value>命名空間</value>
+  </data>
+  <data name="lblPages1Resource1.Text" xml:space="preserve">
+    <value>頁面</value>
+  </data>
+  <data name="lblPages2Resource1.Text" xml:space="preserve">
+    <value>頁面</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRootMainPageResource1.Text" xml:space="preserve">
+    <value>根命名空間首頁</value>
+  </data>
+  <data name="lblRootThemeResource1.Text" xml:space="preserve">
+    <value>根命名空間主題</value>
+  </data>
+  <data name="lblSecurityConfigResource1.Text" xml:space="preserve">
+    <value>安全配置</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces1Resource1.Text" xml:space="preserve">
+    <value>另見</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces2Resource1.Text" xml:space="preserve">
+    <value>另見</value>
+  </data>
+  <data name="lblSelectFormatResource1.Text" xml:space="preserve">
+    <value>選擇...</value>
+  </data>
+  <data name="lblSenderEmailResource1.Text" xml:space="preserve">
+    <value>發件人電子郵件位址</value>
+  </data>
+  <data name="lblSmtpAuthenticationResource1.Text" xml:space="preserve">
+    <value>SMTP 用戶名和密碼</value>
+  </data>
+  <data name="lblSmtpServerResource1.Text" xml:space="preserve">
+    <value>SMTP 伺服器位址和埠</value>
+  </data>
+  <data name="lblStringsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
+    <value>用於電子郵件通訊</value>
+  </data>
+  <data name="lblWikiTitleResource1.Text" xml:space="preserve">
+    <value>維基標題</value>
+  </data>
+  <data name="lblWikiUrlResource1.Text" xml:space="preserve">
+    <value>維基網址</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>(GMT-12:00) 國際換日線西</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>-720</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>(GMT-03:30) 紐芬蘭</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>-210</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>(GMT-03:00) 格陵蘭</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>-180</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>(GMT-02:00) 中大西洋</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>-120</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>(GMT-01:00) 亞速爾群島</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>-60</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>(GMT) 格林威治標準時間</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>(GMT+01:00) 中歐</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>(GMT+02:00) 東歐</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>(GMT+03:00) 莫斯科，巴格達</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>(GMT+03:30) 伊朗</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>210</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>(GMT+04:00) 阿布扎比，迪拜</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>(GMT-11:00) 中途島，薩摩亞群島</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>-660</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>(GMT+04:30) 喀布爾</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>270</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>(GMT+05:00) 伊斯蘭堡，卡拉奇</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>300</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>(GMT+05:30) 印度</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>330</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>(GMT+05:45) 加德滿都</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>345</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>(GMT+06:00) 阿斯塔納，達卡</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>(GMT+06:30) 仰光</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>390</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>(GMT+07:00) 曼谷，雅加達</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>420</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>(GMT+08:00) 中國，台灣，西澳大利亞</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>480</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>(GMT+09:00) 日本，韓國</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>540</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>(GMT+09:30) 中澳大利亞</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>570</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>(GMT-10:00) 夏威夷</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>-600</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>(GMT+10:00) 東澳大利亞</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>(GMT+11:00) 馬加丹，索羅門群島</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>660</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>(GMT+12:00) 新西蘭，斐濟</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>720</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>(GMT+12:45) 查塔姆群島</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>765</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>(GMT+13:00) 東加，費尼克斯群島</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>780</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>(GMT+14:00) 聖誕島</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>840</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>用戶必須通過電子郵件啟動帳戶</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>用戶帳戶由管理員啟動</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>用戶帳戶默認已啟動</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>(GMT-09:00) 阿拉斯加</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>-540</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>(GMT-08:00) 太平洋時間(美國和加拿大)</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>-480</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>(GMT-07:00) 山地時間(美國和加拿大)</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>-420</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>(GMT-06:00) 中部時間(美國和加拿大)</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>-360</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>(GMT-05:00) 東部時間(美國和加拿大)</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>-300</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>(GMT-04:00) 大西洋時間(加拿大)</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>-240</value>
+  </data>
+  <data name="lstAccountActivationModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAdministratorsGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAnonymousGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultTimeZoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultUsersGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstMainPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRootThemeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="rdoAllMessagesResource1.Text" xml:space="preserve">
+    <value>所有消息</value>
+  </data>
+  <data name="rdoAllMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoDisableLogResource1.Text" xml:space="preserve">
+    <value>禁用日誌</value>
+  </data>
+  <data name="rdoDisableLogResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoErrorsOnlyResource1.Text" xml:space="preserve">
+    <value>僅錯誤</value>
+  </data>
+  <data name="rdoErrorsOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoNoModerationResource1.Text" xml:space="preserve">
+    <value>無限制</value>
+  </data>
+  <data name="rdoNoModerationResource1.ToolTip" xml:space="preserve">
+    <value>不使用限制系統：頁面可被有編輯許可權的用戶更改</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.Text" xml:space="preserve">
+    <value>需要頁面編輯許可權</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>頁面可被有編輯許可權但無管理許可權的用戶更改，更改需要審查</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.Text" xml:space="preserve">
+    <value>需要頁面查看許可權</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>頁面可被有查看許可權但無編輯許可權的用戶更改，更改需要審查</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.Text" xml:space="preserve">
+    <value>警告和錯誤</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>電子郵件位址無效</value>
+  </data>
+  <data name="revContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>維基網址無效</value>
+  </data>
+  <data name="revMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>電子郵件位址無效</value>
+  </data>
+  <data name="revSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>SMTP 伺服器地址無效</value>
+  </data>
+  <data name="revSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>維基標題無效</value>
+  </data>
+  <data name="revWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>需要縮減快取大小</value>
+  </data>
+  <data name="rfvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>需要快取大小</value>
+  </data>
+  <data name="rfvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>需要連絡人電子郵件位址</value>
+  </data>
+  <data name="rfvContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>需要日期/時間格式</value>
+  </data>
+  <data name="rfvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>需要維基網址</value>
+  </data>
+  <data name="rfvMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>需要最大檔尺寸</value>
+  </data>
+  <data name="rfvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>需要最大日誌大小</value>
+  </data>
+  <data name="rfvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>需要數位</value>
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>需要發件人電子郵件位址</value>
+  </data>
+  <data name="rfvSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>需要 SMTP 伺服器</value>
+  </data>
+  <data name="rfvSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>需要維基標題</value>
+  </data>
+  <data name="rfvWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>快取剪切大小無效（最小 5，最大 50000）</value>
+  </data>
+  <data name="rvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>大小無效（最小 10，最大 100000）</value>
+  </data>
+  <data name="rvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ErrorMessage" xml:space="preserve">
+    <value>數字必須在 0 到 1000 之間</value>
+  </data>
+  <data name="rvKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>檔尺寸無效（最小 256，最大 102400）</value>
+  </data>
+  <data name="rvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>日誌大小無效（最小 16，最大 10240）</value>
+  </data>
+  <data name="rvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>數字必須在 0 到 50 之間</value>
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ErrorMessage" xml:space="preserve">
+    <value>埠無效（最小 1，最大 65535）</value>
+  </data>
+  <data name="rvSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

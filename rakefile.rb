@@ -31,7 +31,7 @@ namespace :env do
 			instanceName = "-#{configatron.deployment.instance_name}"
 		end
 		
-		configatron.deployment.debugging_enabled = configatron.build.configuration == 'Debug'
+		configatron.app.debugging_enabled = configatron.build.configuration == 'Debug'
 		configatron.deployment.package = "#{configatron.project}#{instanceName || ''}-#{configatron.build.number || '1.0.0.0'}.zip".in(configatron.dir.deploy)
 
 		CLEAN.clear
@@ -42,6 +42,7 @@ namespace :env do
 		CLOBBER.clear
 		CLOBBER.include(configatron.dir.build)
 		CLOBBER.include(configatron.dir.deploy)
+		CLOBBER.exclude('NOS.Wiki/bin'.in(configatron.dir.app))
 		CLOBBER.include('**/bin'.in(configatron.dir.source))
 		CLOBBER.include('**/*.template'.in(configatron.dir.source))
 		# Clean template results.
@@ -229,6 +230,7 @@ namespace :package do
 					.include("#{sourceDir}/**/*.deploy") \
 					.include("#{sourceDir}/**/*.txt") \
 					.include("#{sourceDir}/**/*.as?x") \
+					.include("#{sourceDir}/**/*.master") \
 					.include("#{sourceDir}/**/*.gif") \
 					.include("#{sourceDir}/**/*.jpeg") \
 					.include("#{sourceDir}/**/*.png") \

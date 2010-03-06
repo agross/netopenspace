@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>Retour à la liste d'espaces de nom</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value>Annuler et retourner à la liste d'espaces de nom</value>
+  </data>
+  <data name="btnConfirmDeletionResource1.Text" xml:space="preserve">
+    <value>Confirmer la suppression de l'espace de nom</value>
+  </data>
+  <data name="btnConfirmDeletionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCreateResource1.Text" xml:space="preserve">
+    <value>Créer un espace de nom</value>
+  </data>
+  <data name="btnCreateResource1.ToolTip" xml:space="preserve">
+    <value>Sauvegarder le nouvel espace de nom</value>
+  </data>
+  <data name="btnDeleteResource1.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
+    <value>Supprimer l'espace de nom</value>
+  </data>
+  <data name="btnNewNamespaceResource1.Text" xml:space="preserve">
+    <value>Nouvel espace de nom</value>
+  </data>
+  <data name="btnNewNamespaceResource1.ToolTip" xml:space="preserve">
+    <value>Créer un nouvel espace de nom</value>
+  </data>
+  <data name="btnNormalResource1.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="btnNormalResource1.ToolTip" xml:space="preserve">
+    <value>Utiliser ce gabarit</value>
+  </data>
+  <data name="btnPermsResource1.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="btnPermsResource1.ToolTip" xml:space="preserve">
+    <value>Gérer les permissions pour cet espace de nom</value>
+  </data>
+  <data name="btnPermsResource2.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="btnPermsResource2.ToolTip" xml:space="preserve">
+    <value>Gérer les permissions pour cet espace de nom</value>
+  </data>
+  <data name="btnPrivateResource1.Text" xml:space="preserve">
+    <value>Privé</value>
+  </data>
+  <data name="btnPrivateResource1.ToolTip" xml:space="preserve">
+    <value>Utiliser ce gabarit</value>
+  </data>
+  <data name="btnPublicResource1.Text" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="btnPublicResource1.ToolTip" xml:space="preserve">
+    <value>Utiliser ce gabarit</value>
+  </data>
+  <data name="btnRenameResource1.Text" xml:space="preserve">
+    <value>Renommer</value>
+  </data>
+  <data name="btnRenameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Sauvegarder l'espace de nom</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value>Sauvegarder les modifications</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>Sélectionner</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value>Select this Namespace for editing</value>
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value>Sélectionner cet espace de nom pour édition</value>
+  </data>
+  <data name="cvName2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Nom invalide</value>
+  </data>
+  <data name="cvName2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvName2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNameResource1.ErrorMessage" xml:space="preserve">
+    <value>L'espace de nom existe déjà</value>
+  </data>
+  <data name="cvNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewName2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Nom invalide</value>
+  </data>
+  <data name="cvNewName2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewName2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>L'espace de nom existe déjà</value>
+  </data>
+  <data name="cvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCategoriesResource1.Text" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="lblConfirmDeletionResource1.Text" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer de façon permanente cet espace de nom? Si oui, toutes les données qu'il contient seront perdues.</value>
+  </data>
+  <data name="lblDefaultPageInfoResource1.Text" xml:space="preserve">
+    <value>La page par défaut sera créée automatiquement avec comme nom 'MainPage'.</value>
+  </data>
+  <data name="lblDefaultPageInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultPageResource1.Text" xml:space="preserve">
+    <value>Page par défaut</value>
+  </data>
+  <data name="lblDefaultPageResource2.Text" xml:space="preserve">
+    <value>Page par défaut</value>
+  </data>
+  <data name="lblEditTitleResource1.Text" xml:space="preserve">
+    <value>Détails de l'espace de nom</value>
+  </data>
+  <data name="lblInheritanceInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt;: les sous espaces de nom héritent toujours des permissions de &lt;b&gt;root&lt;/b&gt; l'espace de nom.&lt;br /&gt;Modifier les permissions au niveau de l'espace de nom &lt;b&gt;racine&lt;/b&gt; ne change pas les  permissions explicitement déterminées dans le sous espaces de nom.</value>
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lblNameResource2.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lblNamespaceNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNamespacePermissionsResource1.Text" xml:space="preserve">
+    <value>Permissions d'espace de nom</value>
+  </data>
+  <data name="lblNamespacesResource1.Text" xml:space="preserve">
+    <value>Espaces de nom</value>
+  </data>
+  <data name="lblNewNameResource1.Text" xml:space="preserve">
+    <value>Nouveau nom</value>
+  </data>
+  <data name="lblNormalInfoResource1.Text" xml:space="preserve">
+    <value>Les utilisateurs enregistrés peuvent &lt;b&gt;éditer&lt;/b&gt; et &lt;b&gt;créer&lt;/b&gt; des pages et &lt;b&gt;gérer&lt;/b&gt; des catégories.</value>
+  </data>
+  <data name="lblPagesResource1.Text" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Attention&lt;/b&gt;: appliquer un gabarit remplacera toutes les permissions pour le groupe d'utilisateurs par défaut.</value>
+  </data>
+  <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
+    <value>Gabarit de permissions</value>
+  </data>
+  <data name="lblPrivateInfoResource1.Text" xml:space="preserve">
+    <value>Seulement les utilisateurs enregistrés peuvent &lt;b&gt;voir&lt;/b&gt; les pages (et aussi les &lt;b&gt;créer&lt;/b&gt; et les&lt;b&gt;éditer&lt;/b&gt; ainsi que &lt;b&gt;gérer&lt;/b&gt; les catégories).</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>Fournisseur</value>
+  </data>
+  <data name="lblProviderResource2.Text" xml:space="preserve">
+    <value>Fournisseur</value>
+  </data>
+  <data name="lblPublicInfoResource1.Text" xml:space="preserve">
+    <value>Quiconque, incluant les utilisateurs anonymes peut  &lt;b&gt;éditer&lt;/b&gt; les pages, les utilisateurs enregistrés peuvent aussi &lt;b&gt;créer&lt;/b&gt; des pages et&lt;b&gt;gérer&lt;/b&gt; des catégories.</value>
+  </data>
+  <data name="lblRenameInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Attention&lt;/b&gt;: renommer un espace de nom brisera tous les liens existants avec d'autres espaces de nom.</value>
+  </data>
+  <data name="lblRenameResource1.Text" xml:space="preserve">
+    <value>Renommer cet espace de nom</value>
+  </data>
+  <data name="lblRenameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRenameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblThemeResource1.Text" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="lblThemeResource2.Text" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="lstDefaultPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstThemeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="pnlDeleteResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditNamespaceResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Le nom est requis</value>
+  </data>
+  <data name="rfvNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Un nouveau nom est requis</value>
+  </data>
+  <data name="rfvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

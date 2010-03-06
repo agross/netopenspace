@@ -117,14 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>Die komplette Liste mit allen Seitenkategorien in diesem Namensraum.</value>
+    <comment>The complete list of Page Categories of this Namespace.</comment>
+  </data>
   <data name="lblCatListResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Die komplette Liste aller Seiten im Wiki, gruppiert nach Kategorien.</value>
-  </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Eintragskategorien</value>
+    <value>Seitenkategorien</value>
     <comment>Page Categories</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">

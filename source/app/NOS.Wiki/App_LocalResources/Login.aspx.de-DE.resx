@@ -117,15 +117,104 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnSaveNewPasswordResource1.Text" xml:space="preserve">
+    <value>Das neue Passwort speichern</value>
+  </data>
+  <data name="btnSaveNewPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewPasswordsResource1.ErrorMessage" xml:space="preserve">
+    <value>Die Passwörter sind nicht identisch</value>
+  </data>
+  <data name="cvNewPasswordsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewPasswordsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLostPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNewPassword1Resource1.Text" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="lblNewPassword2Resource1.Text" xml:space="preserve">
+    <value>Passwort (wiederholung)</value>
+  </data>
   <data name="lblOrResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;--- oder ---&lt;/b&gt;</value>
+    <value>oder</value>
+  </data>
+  <data name="lblResetPassword2InfoResource1.Text" xml:space="preserve">
+    <value>Bitte das neue Passwort zwei mal eingeben</value>
+    <comment>Please enter your new password twice.</comment>
+  </data>
+  <data name="lblResetPassword2Resource1.Text" xml:space="preserve">
+    <value>Passwort zurücksetzen</value>
+    <comment>Reset Password</comment>
+  </data>
+  <data name="lblResetPasswordInformationResource1.Text" xml:space="preserve">
+    <value>Sollten Sie ihr Passwort vergessen haben, geben Sie bitte Ihren Benutzernamen &lt;b&gt; oder &lt;/b&gt; Ihre Emailadresse ein und klicken sie auf den 'Passwort zurücksetzen' Knopf. Sie werden dann eine Email mit einem Link zum zurücksetzen des Passwortes erhalten</value>
+    <comment>If you forgot your Password, please insert your Username &lt;b&gt;or&lt;/b&gt; Email address, then click on the Reset Password button.&lt;br /&gt;You will receive an email with a link to reset your password.</comment>
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Das Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Das Passwort ist erforderlich</value>
+    <comment>Password is required</comment>
+  </data>
+  <data name="rfvNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Das Passwort ist falsch</value>
+  </data>
+  <data name="rxNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Das Passwort ist falsch</value>
+  </data>
+  <data name="rxNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="btnLoginResource1.Text" xml:space="preserve">
     <value>Anmelden</value>
     <comment>Login</comment>
   </data>
   <data name="btnLoginResource1.ToolTip" xml:space="preserve">
-    <value>Klicke hier, um dich anzumelden</value>
+    <value>Klicken Sie hier um sich anzumelden</value>
     <comment>Click to Login</comment>
   </data>
   <data name="btnLogoutResource1.Text" xml:space="preserve">
@@ -133,15 +222,15 @@
     <comment>Logout</comment>
   </data>
   <data name="btnLogoutResource1.ToolTip" xml:space="preserve">
-    <value>Klicke hier, um dich abzumelden</value>
+    <value>Klicken Sie hier um sich abzumelden</value>
     <comment>Click to Logout</comment>
   </data>
   <data name="btnResetPasswordResource1.Text" xml:space="preserve">
-    <value>Kennwort zurücksetzen</value>
+    <value>Passwort zurücksetzen</value>
     <comment>Reset Password</comment>
   </data>
   <data name="btnResetPasswordResource1.ToolTip" xml:space="preserve">
-    <value>Das Kennwort für diesen Benutzernamen zurücksetzen</value>
+    <value>Das Passwort für diesen Benutzernamen zurücksetzen</value>
     <comment>Reset the Password for the Username</comment>
   </data>
   <data name="chkRememberResource1.Text" xml:space="preserve">
@@ -149,27 +238,23 @@
     <comment>Remember me</comment>
   </data>
   <data name="chkRememberResource1.ToolTip" xml:space="preserve">
-    <value>Wählen diese Option, um deine Anmeldeinformationen zu speichern</value>
+    <value>Wählen Sie diese Option um Ihre Anmeldeinformationen zu speichern</value>
     <comment>Check this if you want the system to remember you next time</comment>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier kannst du dich am Wiki anmelden. Du bist dann in der Lage, Seiten im Wiki anzupassen und zu erstellen. Wenn du Administrator bist, hast du auch die Möglichkeit, das Wiki zu administrieren.&lt;br /&gt;&lt;br /&gt;Du hast noch keinen Zugang? Du kannst &lt;a href="Register.aspx" title="Neuen Zugang erstellen"&gt;hier&lt;/a&gt; einen Zugang erstellen.</value>
+    <value>Hier können Sie sich an das Wiki anmelden. Sie sind dann in der Lage Seiten anzupassen und zu erstellen. Wenn Sie Administrator sind, haben Sie auch die Möglichkeit, das Wiki zu administrieren.&lt;br /&gt;Noch kein Zugang? Sie können hier einen &lt;a href="Register.aspx" title="Neuen Zugang erstellen"&gt;Zugang erstellen&lt;/a&gt;.</value>
     <comment>Here you can login to the wiki. You'll be able to edit and create pages. If you are an Administrator, you'll also be able to perform administration tasks.&lt;br /&gt;Don't you have an account? You can &lt;a href="Register.aspx" title="Create a new Account"&gt;create one&lt;/a&gt;.</comment>
   </data>
   <data name="lblEmailResetResource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse</value>
+    <value>Email</value>
   </data>
   <data name="lblLogoutResource1.Text" xml:space="preserve">
-    <value>du bist angemeldet. Um dich abzumelden, klicke auf die Schaltfläche &lt;i&gt;Abmelden&lt;/i&gt;.</value>
+    <value>Sie sind angemeldet. Um sich abzumelden klicken Sie auf die Schaltfläche &lt;i&gt;Abmelden&lt;/i&gt;.</value>
     <comment>you are currently logged in. To logout, please click on the Logout button.</comment>
   </data>
   <data name="lblPasswordResource1.Text" xml:space="preserve">
-    <value>Kennwort</value>
+    <value>Passwort</value>
     <comment>Password</comment>
-  </data>
-  <data name="lblResetPasswordInfoResource1.Text" xml:space="preserve">
-    <value>Solltest du dein Kennwort vergessen haben, gib bitte deinen Benutzernamen und die zugehörige E-Mail-Adresse ein und klicke auf &lt;i&gt;Kennwort zurücksetzen&lt;/i&gt;. Das System generiert ein neues Kennwort und sendet es an deine E-Mail-Adresse.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Achtung:&lt;/b&gt; Der Benutzername und die E-Mail-Adresse müssen mit den Angaben in deinem Profil übereinstimmen.</value>
-    <comment>If you forgot your Password, please insert your Username and Email address, then click on the Reset Password button.&lt;br /&gt;A new Password will be generated and sent to you by Email.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: Username and Email address must match with the ones saved in your Account.</comment>
   </data>
   <data name="lblResetPasswordResource1.Text" xml:space="preserve">
     <value>Passwort zurücksetzen</value>
@@ -204,7 +289,7 @@
     <value />
   </data>
   <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
-    <value>Gib hier dein Kennwort ein</value>
+    <value>Geben Sie hier Ihr Passwort ein</value>
     <comment>Type here your Password</comment>
   </data>
   <data name="txtUsernameResetResource1.Text" xml:space="preserve">
@@ -217,7 +302,7 @@
     <value />
   </data>
   <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
-    <value>Gib hier deinen Benutzernamen ein</value>
+    <value>Geben Sie hier Ihren Benutzernamen ein</value>
     <comment>Type here your Username</comment>
   </data>
 </root>

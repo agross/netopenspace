@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBulkMigrateBackResource1.Text" xml:space="preserve">
+    <value>Wróć</value>
+  </data>
+  <data name="btnBulkMigrateBackResource1.ToolTip" xml:space="preserve">
+    <value>Wróć do listy Stron</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.Text" xml:space="preserve">
+    <value>Migruj</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>Skopiuj kategorie Strony</value>
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>Skopiuj kategorie Strony do wybranej Sekcji</value>
+  </data>
+  <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Uwaga&lt;/b&gt;: domyślna strona sekcji nie może być migrowana i zostanie pominięta.</value>
+  </data>
+  <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Uwaga&lt;/b&gt;: ta lista wyświetla tylko te sekcje, w których jesteś upoważniony do zarządzania wszystkimi stronami.</value>
+  </data>
+  <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
+    <value>1. Wybierz Strony</value>
+  </data>
+  <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
+    <value>2. Wybierz docelową sekcję</value>
+  </data>
+  <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
+    <value>3. Wykonaj migrację</value>
+  </data>
+  <data name="rfvBulkMigrateTargetNamespaceResource1.ErrorMessage" xml:space="preserve">
+    <value>Docelowa sekcja jest wymagana</value>
+  </data>
+  <data name="btnApproveResource1.Text" xml:space="preserve">
+    <value>Zatwierdź</value>
+  </data>
+  <data name="btnApproveResource1.ToolTip" xml:space="preserve">
+    <value>Zatwierdź tę Rewizję</value>
+  </data>
+  <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
+    <value>Jako Sekcja</value>
+  </data>
+  <data name="btnAsNamespaceResource1.ToolTip" xml:space="preserve">
+    <value>Użyj tego szablonu</value>
+  </data>
+  <data name="btnBack2Resource1.Text" xml:space="preserve">
+    <value>Wróć</value>
+  </data>
+  <data name="btnBack2Resource1.ToolTip" xml:space="preserve">
+    <value>Wróć do listy Stron</value>
+  </data>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>Wróć</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>Wróć do listy Stron</value>
+  </data>
+  <data name="btnClearDiscussionResource1.Text" xml:space="preserve">
+    <value>Wyczyść dyskusję</value>
+  </data>
+  <data name="btnClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value>Usuń wszystkie wypopwiedzi z dyskusji Strony</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.Text" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value>Usuń kopie zapasowe Strony</value>
+  </data>
+  <data name="btnDeletePageResource1.Text" xml:space="preserve">
+    <value>Usuń Stronę</value>
+  </data>
+  <data name="btnDeletePageResource1.ToolTip" xml:space="preserve">
+    <value>Usuń tę Stronę</value>
+  </data>
+  <data name="btnFilterResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFilterResource1.ToolTip" xml:space="preserve">
+    <value>Zastosuj filtr</value>
+  </data>
+  <data name="btnLockedResource1.Text" xml:space="preserve">
+    <value>Zablokowany</value>
+  </data>
+  <data name="btnLockedResource1.ToolTip" xml:space="preserve">
+    <value>Użyj tego szablonu</value>
+  </data>
+  <data name="btnNewPageResource1.Text" xml:space="preserve">
+    <value>Nowa Strona</value>
+  </data>
+  <data name="btnNewPageResource1.ToolTip" xml:space="preserve">
+    <value>Stwórz nową Stroną</value>
+  </data>
+  <data name="btnPermissionsResource1.Text" xml:space="preserve">
+    <value>Upoważnienia</value>
+  </data>
+  <data name="btnPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>Zarządzaj upoważnieniami dla tej Strony </value>
+  </data>
+  <data name="btnPermissionsResource2.Text" xml:space="preserve">
+    <value>Upoważnienia</value>
+  </data>
+  <data name="btnPermissionsResource2.ToolTip" xml:space="preserve">
+    <value>Zarządzaj upoważnieniami dla tej Strony</value>
+  </data>
+  <data name="btnPublicResource1.Text" xml:space="preserve">
+    <value>Publiczne</value>
+  </data>
+  <data name="btnPublicResource1.ToolTip" xml:space="preserve">
+    <value>Użyj tego szablonu</value>
+  </data>
+  <data name="btnRejectResource1.Text" xml:space="preserve">
+    <value>Odrzuć</value>
+  </data>
+  <data name="btnRejectResource1.ToolTip" xml:space="preserve">
+    <value>Odrzuć tę rewizję</value>
+  </data>
+  <data name="btnRenameResource1.Text" xml:space="preserve">
+    <value>Zmień nazwę</value>
+  </data>
+  <data name="btnRenameResource1.ToolTip" xml:space="preserve">
+    <value>Zmień nazwę tej rewizji</value>
+  </data>
+  <data name="btnRollbackResource1.Text" xml:space="preserve">
+    <value>Cofnij zmiany</value>
+  </data>
+  <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
+    <value>Cofnij zmiany na Stronie</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>Wybierz</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value>Wybierz tę Stronę do administracji</value>
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>Wybierz</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value>Wybierz tę Stronę do administracji</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
+    <value>Wyświetl tylko strony sieroce</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkShadowPageResource1.Text" xml:space="preserve">
+    <value>Zachowaj Stronę-cień</value>
+  </data>
+  <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
+    <value>Zachowaj starą Stronę i ustaw na niej automatyczne przekierowanie do nowej Strony</value>
+  </data>
+  <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Nieprawidłowa nazwa Strony</value>
+  </data>
+  <data name="cvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveTitleResource1.Text" xml:space="preserve">
+    <value>Zatwierdź/odrzuć szkic</value>
+  </data>
+  <data name="lblBackupResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBackupResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblByResource1.Text" xml:space="preserve">
+    <value>Przez:</value>
+  </data>
+  <data name="lblClearDiscussionTitleResource1.Text" xml:space="preserve">
+    <value>Wyczyść dyskusję na Stronie</value>
+  </data>
+  <data name="lblCreatedByResource1.Text" xml:space="preserve">
+    <value>Stworzona przez</value>
+  </data>
+  <data name="lblCreatedOnResource1.Text" xml:space="preserve">
+    <value>Data utworzenia</value>
+  </data>
+  <data name="lblCurrentPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCurrentTitleResource1.Text" xml:space="preserve">
+    <value>Aktualny tytuł</value>
+  </data>
+  <data name="lblDateTimeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteBackupsTitleResource1.Text" xml:space="preserve">
+    <value>Usuń kopie zapasowe</value>
+  </data>
+  <data name="lblDeletePageResource1.Text" xml:space="preserve">
+    <value>Usuń Stronę</value>
+  </data>
+  <data name="lblDeleteResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResource1.Text" xml:space="preserve">
+    <value>Dys.</value>
+  </data>
+  <data name="lblDiscussionResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEditResource1.Text" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="lblEditResource2.Text" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="lblEditTitleResource1.Text" xml:space="preserve">
+    <value>Operacje Strony</value>
+  </data>
+  <data name="lblLastModifiedByResource1.Text" xml:space="preserve">
+    <value>Zmieniona przez</value>
+  </data>
+  <data name="lblLastModifiedOnResource1.Text" xml:space="preserve">
+    <value>Data zmiany</value>
+  </data>
+  <data name="lblLockedInfoResource1.Text" xml:space="preserve">
+    <value>Tylko Administratorzy mogą &lt;b&gt;edytować&lt;/b&gt; tę Stronę.</value>
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Sekcja</value>
+  </data>
+  <data name="lblNewNameResource1.Text" xml:space="preserve">
+    <value>Nowa nazwa</value>
+  </data>
+  <data name="lblNormalInfoResource1.Text" xml:space="preserve">
+    <value>Przyjmij upoważnienia z Sekcji - rodzica.</value>
+  </data>
+  <data name="lblOrphanResource1.Text" xml:space="preserve">
+    <value>Sieroca</value>
+  </data>
+  <data name="lblPageNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPagePermissionsResource1.Text" xml:space="preserve">
+    <value>Upoważnienia Strony</value>
+  </data>
+  <data name="lblPagesResource1.Text" xml:space="preserve">
+    <value>Strony Wiki</value>
+  </data>
+  <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Ostrzeżenie&lt;/b&gt;: ustawienie szablonu spowoduje zastąpienie wszystkich istniejących upoważnień dla domyślnych grup użytkowników.</value>
+  </data>
+  <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
+    <value>Szablony upoważnień</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="lblPublicInfoResource1.Text" xml:space="preserve">
+    <value>Każdy, włącznie z anonimowymi użytkownikami, może &lt;b&gt;edytować&lt;/b&gt; tę stronę.</value>
+  </data>
+  <data name="lblRenamePageTitleResource1.Text" xml:space="preserve">
+    <value>Zmień nazwę Strony</value>
+  </data>
+  <data name="lblRenameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRenameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRevisionResource1.Text" xml:space="preserve">
+    <value>Docelowa rewizja</value>
+  </data>
+  <data name="lblRevisionsResource1.Text" xml:space="preserve">
+    <value>Rew.</value>
+  </data>
+  <data name="lblRollbackPageTitleResource1.Text" xml:space="preserve">
+    <value>Cofnij zmiany na Stronie</value>
+  </data>
+  <data name="lblRollbackResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRollbackResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavedOnResource1.Text" xml:space="preserve">
+    <value>Data zapisania:</value>
+  </data>
+  <data name="lblUserResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkDiffResource1.Text" xml:space="preserve">
+    <value>Różnice</value>
+  </data>
+  <data name="lnkDiffResource1.ToolTip" xml:space="preserve">
+    <value>Pokaż zmiany</value>
+  </data>
+  <data name="lnkEditResource1.Text" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="lnkEditResource1.ToolTip" xml:space="preserve">
+    <value>Edytuj ten szkic</value>
+  </data>
+  <data name="lstBackupResource1.ToolTip" xml:space="preserve">
+    <value>Dostępne kopie zapasowe, nowsze najpierw</value>
+  </data>
+  <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRevisionResource1.ToolTip" xml:space="preserve">
+    <value>Dostępne kopie zapasowe, nowsze najpierw</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Administracja</value>
+  </data>
+  <data name="pnlApproveRevisionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlApproveRevisionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoAllBackupsResource1.Text" xml:space="preserve">
+    <value>Usuń wszystkie kopie zapasowe</value>
+  </data>
+  <data name="rdoAllBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoUpToResource1.Text" xml:space="preserve">
+    <value>Usuń kopie zapasowe o dacie starszej lub równej</value>
+  </data>
+  <data name="rdoUpToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Nowa nazwa jest wymagana</value>
+  </data>
+  <data name="rfvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.ToolTip" xml:space="preserve">
+    <value>Filtruj Strony po nazwie</value>
+  </data>
+  <data name="btnMigrateResource1.Text" xml:space="preserve">
+    <value>Migruj</value>
+  </data>
+  <data name="btnMigrateResource1.ToolTip" xml:space="preserve">
+    <value>Migruj Stronę</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>Skopiuj kategorie Strony</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>Skopiuj kategorie Strony do wybranej Sekcji</value>
+  </data>
+  <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
+    <value>Migruj Stronę</value>
+  </data>
+  <data name="lblMigrateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTargetNamespaceResource1.Text" xml:space="preserve">
+    <value>Docelowa sekcja</value>
+  </data>
+  <data name="lstTargetNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

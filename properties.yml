@@ -16,13 +16,14 @@ global:
     commit_sha: <%= ENV['BUILD_VCS_NUMBER'] || "no SHA" %>
   app:
     pagechangealerts:
+    password: <%= ENV['ADMIN_PASSWORD'] || 'password' %>
+    iis:
+      custom_errors: "Off"
+      cookie_path: "/"
   deployment:
     instance_name:
     logfile: build/msdeploy.log
     identity: NT-AUTORITÄT\NETZWERKDIENST
-    iis:
-      custom_errors: "Off"
-      cookie_path: "/crimson"
     connection:
       address:
   tools:
@@ -40,3 +41,8 @@ development:
 
 production:
   default_to: global
+  app:
+    pagechangealerts: tw@torstenweber.de
+    iis:
+      custom_errors: "RemoteOnly"
+      cookie_path: "/2010/"  

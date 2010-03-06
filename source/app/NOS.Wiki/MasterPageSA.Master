@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageSA.master.cs" Inherits="ScrewTurn.Wiki.MasterPageSA" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+</head>
+
+<body id="SABody">
+    <form id="FrmMasterSA" runat="server">
+		<asp:Literal ID="lblStrings" runat="server" EnableViewState="False" meta:resourcekey="lblStringsResource1" />
+		<script type="text/javascript">
+		<!--
+			function __GetServerElementById(id) {
+				return document.getElementById(__BaseName + id);
+			}
+			function __RequestConfirm() {
+				return confirm(__ConfirmMessage);
+			}
+		// -->
+		</script>
+    
+		<div id="HeaderSADiv">
+            <asp:Literal ID="lblHeaderDiv" runat="server" EnableViewState="False" meta:resourcekey="lblHeaderDivResource1" />
+        </div>
+        
+        <div id="NavigationSADiv">
+			<asp:HyperLink ID="lnkPreviousPage" runat="server" Text="&laquo; Back to previous page" ToolTip="Go to the previous page" meta:resourcekey="lnkPreviousPageResource1" />
+			&bull;
+			<asp:HyperLink ID="lnkMainPage" runat="server" Text="Main Page" ToolTip="Go to the main page of the current namespace" meta:resourcekey="lnkMainPageResource1" />
+		</div>
+			
+		<div id="ContainerSADiv">
+			<asp:ContentPlaceHolder ID="CphMasterSA" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+    
+		<div id="FooterSADiv">
+            <asp:Literal ID="lblFooterDiv" runat="server" EnableViewState="False" meta:resourcekey="lblFooterDivResource1" />
+        </div>
+    </form>
+</body>
+</html>

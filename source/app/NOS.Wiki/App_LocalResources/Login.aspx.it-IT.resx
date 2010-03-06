@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSaveNewPasswordResource1.Text" xml:space="preserve">
+    <value>Salva nuova password</value>
+  </data>
+  <data name="btnSaveNewPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewPasswordsResource1.ErrorMessage" xml:space="preserve">
+    <value>Le password non sono uguali</value>
+  </data>
+  <data name="cvNewPasswordsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewPasswordsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLostPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNewPassword1Resource1.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblNewPassword2Resource1.Text" xml:space="preserve">
+    <value>Password (ripeti)</value>
+  </data>
+  <data name="lblOrResource1.Text" xml:space="preserve">
+    <value>oppure</value>
+  </data>
+  <data name="lblResetPassword2InfoResource1.Text" xml:space="preserve">
+    <value>Inserisci due volte la nuova password.</value>
+  </data>
+  <data name="lblResetPassword2Resource1.Text" xml:space="preserve">
+    <value>Reimposta password</value>
+  </data>
+  <data name="lblResetPasswordInformationResource1.Text" xml:space="preserve">
+    <value>Se hai dimenticato la password, inserisci il tuo username &lt;b&gt;o&lt;/b&gt; il tuo indirizzo email, quindi fai click sul pulsante Reimposta Password.&lt;br /&gt;Riceverai una email con un link per procedere al reset.</value>
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Password richiesta</value>
+  </data>
+  <data name="rfvNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Password richiesta</value>
+  </data>
+  <data name="rfvNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Password non valida</value>
+  </data>
+  <data name="rxNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Password non valida</value>
+  </data>
+  <data name="rxNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLoginResource1.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btnLoginResource1.ToolTip" xml:space="preserve">
+    <value>Fai click per effettuare il Login</value>
+  </data>
+  <data name="btnLogoutResource1.Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="btnLogoutResource1.ToolTip" xml:space="preserve">
+    <value>Fai click per effettuare il Logout</value>
+  </data>
+  <data name="btnResetPasswordResource1.Text" xml:space="preserve">
+    <value>Reimposta Password</value>
+  </data>
+  <data name="btnResetPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkRememberResource1.Text" xml:space="preserve">
+    <value>Ricordati di me</value>
+  </data>
+  <data name="chkRememberResource1.ToolTip" xml:space="preserve">
+    <value>Spunta questo se desideri che il sistema si ricordi di te la prossima volta</value>
+  </data>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>In questa pagina puoi effettuare il login al Wiki. Sarai in grado di modificare le Pagine. Se sei un Amministratore, sarai anche in grado di eseguire operazioni di amministrazione.&lt;br /&gt;Non hai un Account? Puoi &lt;a href="Register.aspx" title="Create a new Account"&gt;crearne uno&lt;/a&gt;.</value>
+  </data>
+  <data name="lblEmailResetResource1.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblLogoutResource1.Text" xml:space="preserve">
+    <value>hai effettuato il Login. Per effettuare il Logout, clicca sul pulsante Logout.</value>
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblResetPasswordResource1.Text" xml:space="preserve">
+    <value>Reimposta Password</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="lblUsernameResetResource1.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblUsernameResource1.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Untitled Page</value>
+  </data>
+  <data name="txtEmailResetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value>Digita qui la tua Password</value>
+  </data>
+  <data name="txtUsernameResetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value>Digita qui il tuo Username</value>
+  </data>
+</root>

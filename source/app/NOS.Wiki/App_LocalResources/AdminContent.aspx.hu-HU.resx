@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCopyFromResource1.Text" xml:space="preserve">
+    <value>Mehet</value>
+  </data>
+  <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
+    <value>A kiválasztott névtér ugyanezen mezője tartalmának átmásolása ide</value>
+  </data>
+  <data name="lblCopyFromResource1.Text" xml:space="preserve">
+    <value>Innen másol:</value>
+  </data>
+  <data name="btnAccessDeniedNoticeResource1.Text" xml:space="preserve">
+    <value>Nincs jogosultságod üzenet (Globális)</value>
+  </data>
+  <data name="btnAccessDeniedNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnAccountActivationMessageResource1.Text" xml:space="preserve">
+    <value>Fiók aktiválás üzenet (Globális)</value>
+  </data>
+  <data name="btnAccountActivationMessageResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnApproveDraftMessageResource1.Text" xml:space="preserve">
+    <value>Vázlat jóváhagyása üzenet (Globális)</value>
+  </data>
+  <data name="btnApproveDraftMessageResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Mégse</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value>Mégse, és visszatérés</value>
+  </data>
+  <data name="btnDiscussionChangeMessageResource1.Text" xml:space="preserve">
+    <value>Megbeszélés változtatás üzenet (Globális)</value>
+  </data>
+  <data name="btnDiscussionChangeMessageResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
+    <value>Lap szerkesztés üzenet (Névtér függő)</value>
+  </data>
+  <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnFooterResource1.Text" xml:space="preserve">
+    <value>Lábléc</value>
+  </data>
+  <data name="btnFooterResource1.ToolTip" xml:space="preserve">
+    <value>Lábléc szerkesztése</value>
+  </data>
+  <data name="btnHeaderResource1.Text" xml:space="preserve">
+    <value>Fejléc</value>
+  </data>
+  <data name="btnHeaderResource1.ToolTip" xml:space="preserve">
+    <value>Fejléc szerkesztése</value>
+  </data>
+  <data name="btnHtmlHeadResource1.Text" xml:space="preserve">
+    <value>HTML fejléc</value>
+  </data>
+  <data name="btnHtmlHeadResource1.ToolTip" xml:space="preserve">
+    <value>HTML fejléc szerkesztése</value>
+  </data>
+  <data name="btnLoginNoticeResource1.Text" xml:space="preserve">
+    <value>Bejelentkezési üzenet (Globális)</value>
+  </data>
+  <data name="btnLoginNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnPageChangeMessageResource1.Text" xml:space="preserve">
+    <value>Lap változtatás üzenet (Globális)</value>
+  </data>
+  <data name="btnPageChangeMessageResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnPageFooterResource1.Text" xml:space="preserve">
+    <value>Lap lábléc</value>
+  </data>
+  <data name="btnPageFooterResource1.ToolTip" xml:space="preserve">
+    <value>Lap lábléc szerkesztése</value>
+  </data>
+  <data name="btnPageHeaderResource1.Text" xml:space="preserve">
+    <value>Lap fejléc</value>
+  </data>
+  <data name="btnPageHeaderResource1.ToolTip" xml:space="preserve">
+    <value>Lap fejléc szerkesztése</value>
+  </data>
+  <data name="btnPasswordResetProcedureMessageResource1.Text" xml:space="preserve">
+    <value>Jelszó visszaállítás üzenet (Globális)</value>
+  </data>
+  <data name="btnPasswordResetProcedureMessageResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnRegisterNoticeResource1.Text" xml:space="preserve">
+    <value>Regisztrálási üzenet (Globális)</value>
+  </data>
+  <data name="btnRegisterNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Ment</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value>Tartalom mentése</value>
+  </data>
+  <data name="btnSidebarResource1.Text" xml:space="preserve">
+    <value>Oldalsáv</value>
+  </data>
+  <data name="btnSidebarResource1.ToolTip" xml:space="preserve">
+    <value>Oldalsáv szerkesztése (oldalmenü)</value>
+  </data>
+  <data name="lblAccessDeniedNoticeInfoResource1.Text" xml:space="preserve">
+    <value>A "Nincs jogosultságod" lap tetején megjelenő üzenet. (Ha nem üres.)</value>
+  </data>
+  <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
+    <value>Fiók aktiválásáról szóló üzenet az új felhasználónak.</value>
+  </data>
+  <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
+    <value>Szerkesztő/Admin számára küldött üzenet, ha egy lap vázlatát engedélyezni kell.</value>
+  </data>
+  <data name="lblContentResource1.Text" xml:space="preserve">
+    <value>Tartalom szerkesztés</value>
+  </data>
+  <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
+    <value>Email a lap megbeszélésébe érkezett új üzenetről.</value>
+  </data>
+  <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
+    <value>A szerkesztő oldal tetején megjelenő üzenet.</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Figyelem&lt;/b&gt;: Az oldal pontos megjelenése eltérhet a fentitől, az aktuális témától függően.</value>
+  </data>
+  <data name="lblLoginNoticeInfoResource1.Text" xml:space="preserve">
+    <value>A bejelentkezési lap tetején megjelenő üzenet. (Ha nem üres.)</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Névterek</value>
+  </data>
+  <data name="lblOtherResource1.Text" xml:space="preserve">
+    <value>További elemek</value>
+  </data>
+  <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
+    <value>Lap módosításáról szóló email üzenet a felhasználóknak.</value>
+  </data>
+  <data name="lblPageContentResource1.Text" xml:space="preserve">
+    <value>Lap tartalom</value>
+  </data>
+  <data name="lblPageLayoutResource1.Text" xml:space="preserve">
+    <value>Oldal szerkezet elemei (Névtér függő)</value>
+  </data>
+  <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
+    <value>Jelszó visszaállításról szóló email üzenet.</value>
+  </data>
+  <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">
+    <value>A regisztrációs lap tetején megjelenő üzenet. (Ha nem üres.)</value>
+  </data>
+  <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Adminisztráció</value>
+  </data>
+  <data name="pnlEditorResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

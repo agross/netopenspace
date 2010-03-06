@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ScrewTurn.Wiki.AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Administration</title>
+    <link rel="shortcut icon" href="Images/Icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Themes/Admin.css" />
+    <link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
+    <asp:Literal ID="lblJS" runat="server" EnableViewState="false" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="frmAdmin" runat="server">
+    <div id="MainDiv">
+    
+		<asp:Literal ID="lblStrings" runat="server" meta:resourcekey="lblStringsResource1" />
+		<script type="text/javascript">
+		<!--
+			function RequestConfirm() {
+				return confirm(ConfirmMessage);
+			}
+		// -->
+		</script>
+    
+		<h1 class="admintitle">
+			<a href="?Refresh=1" title="<% Response.Write(ScrewTurn.Wiki.Properties.Messages.Refresh); %>"><img src="Images/Refresh.png" alt="<% Response.Write(ScrewTurn.Wiki.Properties.Messages.Refresh); %>" /></a>
+			<asp:Literal ID="lblAdminTitle" runat="server" Text="Administration" meta:resourcekey="lblAdminTitleResource1" /> - 
+			<a href="Default.aspx"><asp:Literal ID="lblHomeLink" runat="server" Text="Main Page" meta:resourcekey="lblHomeLinkResource1" /> &raquo;</a>
+		</h1>
+		<asp:Label ID="lblBrowserSupport" runat="server" Visible="False" CssClass="resulterror" 
+			Text="Your Browser might present problems with this Page (Internet Explorer 7+ and Firefox 3+ are suggested)." 
+			meta:resourcekey="lblBrowserSupportResource1" />
+		<br />
+		
+		<div id="TabDiv">
+			<asp:HyperLink ID="lnkSelectAdminHome" runat="server" Text="Admin Home" 
+				CssClass="tab" NavigateUrl="~/AdminHome.aspx" meta:resourcekey="lnkSelectAdminHomeResource1" />
+			<asp:HyperLink ID="lnkSelectGroups" runat="server" Text="User Groups" 
+				CssClass="tab" NavigateUrl="~/AdminGroups.aspx" meta:resourcekey="lnkSelectGroupsResource1" />
+			<asp:HyperLink ID="lnkSelectAccounts" runat="server" Text="Accounts" 
+				CssClass="tab" NavigateUrl="~/AdminUsers.aspx" meta:resourcekey="lnkSelectAccountsResource1" />
+			<asp:HyperLink ID="lnkSelectNamespaces" runat="server" Text="Namespaces" 
+				CssClass="tab" NavigateUrl="~/AdminNamespaces.aspx" meta:resourcekey="lnkSelectNamespacesResource1" />
+			<asp:HyperLink ID="lnkSelectPages" runat="server" Text="Wiki Pages" 
+				CssClass="tab" NavigateUrl="~/AdminPages.aspx" meta:resourcekey="lnkSelectPagesResource1" />
+			<asp:HyperLink ID="lnkSelectCategories" runat="server" Text="Categories" 
+				CssClass="tab" NavigateUrl="~/AdminCategories.aspx" meta:resourcekey="lnkSelectCategoriesResource1" />
+			<asp:HyperLink ID="lnkSelectSnippets" runat="server" Text="Snippets/Templates" 
+				CssClass="tab" NavigateUrl="~/AdminSnippets.aspx" meta:resourcekey="lnkSelectSnippetsResource1" />
+			<asp:HyperLink ID="lnkSelectNavPaths" runat="server" Text="Nav. Paths" 
+				CssClass="tab" NavigateUrl="~/AdminNavPaths.aspx" meta:resourcekey="lnkSelectNavPathsResource1" />
+			<asp:HyperLink ID="lnkSelectContent" runat="server" Text="Content Editing" 
+				CssClass="tab" NavigateUrl="~/AdminContent.aspx" meta:resourcekey="lnkSelectContentResource1" />
+			<asp:HyperLink ID="lnkSelectLog" runat="server" Text="System Log" 
+				CssClass="tab" NavigateUrl="~/AdminLog.aspx" meta:resourcekey="lnkSelectLogResource1" />
+			<asp:HyperLink ID="lnkSelectProviders" runat="server" Text="Providers" 
+				CssClass="tab" NavigateUrl="~/AdminProviders.aspx" meta:resourcekey="lnkSelectProvidersResource1" />
+			<asp:HyperLink ID="lnkSelectConfig" runat="server" Text="Configuration" 
+				CssClass="tab" NavigateUrl="~/AdminConfig.aspx" meta:resourcekey="lnkSelectConfigResource1" />
+		</div>
+    
+        <asp:ContentPlaceHolder ID="cphAdmin" runat="server" />
+        <br /><br /><br />
+        
+        <div id="LicenseInfoDiv">
+			<h2 class="separator">GNU General Public License v2</h2>
+			<p>This Program is released under the GNU General Public License v2. You cannot remove this statement.<br />
+			<a href="GPL.txt" target="_blank">View the GNU General Public License v2</a> or visit the <a class="externallink" href="http://www.gnu.org" target="_blank">GNU</a> website.</p>
+		</div>
+        
+        <!-- Used to keep the session alive -->
+		<iframe src="SessionRefresh.aspx" style="width: 1px; height: 1px; border: none;" scrolling="no"></iframe> 
+		
+    </div>
+    </form>
+</body>
+</html>

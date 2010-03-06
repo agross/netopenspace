@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBulkMigrateBackResource1.Text" xml:space="preserve">
+    <value>Повернутися</value>
+  </data>
+  <data name="btnBulkMigrateBackResource1.ToolTip" xml:space="preserve">
+    <value>Повренутися до переліку Сторінок</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.Text" xml:space="preserve">
+    <value>Міграція</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>Копіювати Категорії Сторінки</value>
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>Копіювати Категорії Сторінки до цільового Простору Імен</value>
+  </data>
+  <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Примітка&lt;/b&gt;: головна сторінка простору імен не може мігрувати, такий запит буде пропущений.</value>
+  </data>
+  <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Примітка&lt;/b&gt;: в цьому переліку відображені тільки ті простори імен, до керування сторінок яких, Ви маєте доступ.</value>
+  </data>
+  <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
+    <value>1. Вибір Сторінок</value>
+  </data>
+  <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
+    <value>2. Вибір цільового Простору Імен</value>
+  </data>
+  <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
+    <value>3. Здійснення Міграції</value>
+  </data>
+  <data name="rfvBulkMigrateTargetNamespaceResource1.ErrorMessage" xml:space="preserve">
+    <value>Потрібен цільовий Простір Імен</value>
+  </data>
+  <data name="btnMigrateResource1.Text" xml:space="preserve">
+    <value>Міграція</value>
+  </data>
+  <data name="btnMigrateResource1.ToolTip" xml:space="preserve">
+    <value>Міграція Сторінки</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>Копіювати Категорії Сторінки</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>Копіювати Категорії Сторінки до цільового Простору Імен</value>
+  </data>
+  <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
+    <value>Міграція Сторінки</value>
+  </data>
+  <data name="lblMigrateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTargetNamespaceResource1.Text" xml:space="preserve">
+    <value>Цільовий Простір Імен</value>
+  </data>
+  <data name="lstTargetNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.ToolTip" xml:space="preserve">
+    <value>Фільтрувати сторінки за Іменем</value>
+  </data>
+  <data name="btnApproveResource1.Text" xml:space="preserve">
+    <value>Схвалити</value>
+  </data>
+  <data name="btnApproveResource1.ToolTip" xml:space="preserve">
+    <value>Схвалити цю версію</value>
+  </data>
+  <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
+    <value>Як Простір Імен</value>
+  </data>
+  <data name="btnAsNamespaceResource1.ToolTip" xml:space="preserve">
+    <value>Використовувати цей Шаблон</value>
+  </data>
+  <data name="btnBack2Resource1.Text" xml:space="preserve">
+    <value>Повернутися</value>
+  </data>
+  <data name="btnBack2Resource1.ToolTip" xml:space="preserve">
+    <value>Повернутися до переліку сторінок</value>
+  </data>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>Повернутися</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>Повернутися до переліку сторінок</value>
+  </data>
+  <data name="btnClearDiscussionResource1.Text" xml:space="preserve">
+    <value>Вичистити Обговорення</value>
+  </data>
+  <data name="btnClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value>Видалити всі повідомлення в розділі Обговорення</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.Text" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value>Знищити версії Сторінки</value>
+  </data>
+  <data name="btnDeletePageResource1.Text" xml:space="preserve">
+    <value>Видалити Сторінку</value>
+  </data>
+  <data name="btnDeletePageResource1.ToolTip" xml:space="preserve">
+    <value>Знищити цю Сторінку</value>
+  </data>
+  <data name="btnFilterResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFilterResource1.ToolTip" xml:space="preserve">
+    <value>Застосувати Фільтр</value>
+  </data>
+  <data name="btnLockedResource1.Text" xml:space="preserve">
+    <value>Заблокована</value>
+  </data>
+  <data name="btnLockedResource1.ToolTip" xml:space="preserve">
+    <value>Використати цей Шаблон</value>
+  </data>
+  <data name="btnNewPageResource1.Text" xml:space="preserve">
+    <value>Нова Сторінка</value>
+  </data>
+  <data name="btnNewPageResource1.ToolTip" xml:space="preserve">
+    <value>Створити нову Сторінку</value>
+  </data>
+  <data name="btnPermissionsResource1.Text" xml:space="preserve">
+    <value>Дозволи</value>
+  </data>
+  <data name="btnPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>Керувати Дозволами цієї Сторінки</value>
+  </data>
+  <data name="btnPermissionsResource2.Text" xml:space="preserve">
+    <value>Дозволи</value>
+  </data>
+  <data name="btnPermissionsResource2.ToolTip" xml:space="preserve">
+    <value>Керувати Дозволами цієї Сторінки</value>
+  </data>
+  <data name="btnPublicResource1.Text" xml:space="preserve">
+    <value>Публічна</value>
+  </data>
+  <data name="btnPublicResource1.ToolTip" xml:space="preserve">
+    <value>Використати цей Шаблон</value>
+  </data>
+  <data name="btnRejectResource1.Text" xml:space="preserve">
+    <value>Відмовити</value>
+  </data>
+  <data name="btnRejectResource1.ToolTip" xml:space="preserve">
+    <value>Відмовити застосування цієї редакції</value>
+  </data>
+  <data name="btnRenameResource1.Text" xml:space="preserve">
+    <value>Перейменувати</value>
+  </data>
+  <data name="btnRenameResource1.ToolTip" xml:space="preserve">
+    <value>Перейменувати цю Сторінку</value>
+  </data>
+  <data name="btnRollbackResource1.Text" xml:space="preserve">
+    <value>Відкат</value>
+  </data>
+  <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
+    <value>Відновити зміст</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>Обрати</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value>Обрати цю Сторінку для адміністрування</value>
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>Обрати</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value>Обрати цю Сторінку для адміністрування</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
+    <value>Показати лише не зв'язані сторінки</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkShadowPageResource1.Text" xml:space="preserve">
+    <value>Зберігати тіньову Сторінку</value>
+  </data>
+  <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
+    <value>Зберігати попередній зміст та направляти (при цьому) всіх на Сторінку з новим змістом</value>
+  </data>
+  <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Помилкове Ім'я Сторінки</value>
+  </data>
+  <data name="cvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveTitleResource1.Text" xml:space="preserve">
+    <value>Схвалити/Відхилити чернетку </value>
+  </data>
+  <data name="lblBackupResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBackupResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblByResource1.Text" xml:space="preserve">
+    <value>Автор:</value>
+  </data>
+  <data name="lblClearDiscussionTitleResource1.Text" xml:space="preserve">
+    <value>Вичистити розділ Обговорення</value>
+  </data>
+  <data name="lblCreatedByResource1.Text" xml:space="preserve">
+    <value>Створено</value>
+  </data>
+  <data name="lblCreatedOnResource1.Text" xml:space="preserve">
+    <value>Створено в</value>
+  </data>
+  <data name="lblCurrentPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCurrentTitleResource1.Text" xml:space="preserve">
+    <value>Поточний Тайтл</value>
+  </data>
+  <data name="lblDateTimeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteBackupsTitleResource1.Text" xml:space="preserve">
+    <value>Видалити Бекапи</value>
+  </data>
+  <data name="lblDeletePageResource1.Text" xml:space="preserve">
+    <value>Видалити Сторінку</value>
+  </data>
+  <data name="lblDeleteResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResource1.Text" xml:space="preserve">
+    <value>Обгов.</value>
+  </data>
+  <data name="lblDiscussionResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEditResource1.Text" xml:space="preserve">
+    <value>Змінити</value>
+  </data>
+  <data name="lblEditResource2.Text" xml:space="preserve">
+    <value>Змінити</value>
+  </data>
+  <data name="lblEditTitleResource1.Text" xml:space="preserve">
+    <value>Операції Сторінки</value>
+  </data>
+  <data name="lblLastModifiedByResource1.Text" xml:space="preserve">
+    <value>Змінено</value>
+  </data>
+  <data name="lblLastModifiedOnResource1.Text" xml:space="preserve">
+    <value>Змінено в</value>
+  </data>
+  <data name="lblLockedInfoResource1.Text" xml:space="preserve">
+    <value>Тільки Адміністратори мають змогу &lt;b&gt;змінювати&lt;/b&gt; цю сторінку.</value>
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Простір Імен</value>
+  </data>
+  <data name="lblNewNameResource1.Text" xml:space="preserve">
+    <value>Нове Ім'я</value>
+  </data>
+  <data name="lblNormalInfoResource1.Text" xml:space="preserve">
+    <value>Спадкувати дозволи від батьківських Просторів Імен</value>
+  </data>
+  <data name="lblOrphanResource1.Text" xml:space="preserve">
+    <value>Без спадкування</value>
+  </data>
+  <data name="lblPageNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPagePermissionsResource1.Text" xml:space="preserve">
+    <value>Дозволи Сторінки</value>
+  </data>
+  <data name="lblPagesResource1.Text" xml:space="preserve">
+    <value>Сторінки Wiki</value>
+  </data>
+  <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Попередження&lt;/b&gt;: застосування шаблону змінить всі існуючі дозволи для звичайних груп користувачів</value>
+  </data>
+  <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
+    <value>Шаблони Дозволів</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>Несуча</value>
+  </data>
+  <data name="lblPublicInfoResource1.Text" xml:space="preserve">
+    <value>Будь хто, ба навіть анонімні користувачі, мають змогу &lt;b&gt;змінювати&lt;/b&gt; цю сторінку.</value>
+  </data>
+  <data name="lblRenamePageTitleResource1.Text" xml:space="preserve">
+    <value>Перейменувати Сторінку</value>
+  </data>
+  <data name="lblRenameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRenameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRevisionResource1.Text" xml:space="preserve">
+    <value>Мета Змін</value>
+  </data>
+  <data name="lblRevisionsResource1.Text" xml:space="preserve">
+    <value>Верс.</value>
+  </data>
+  <data name="lblRollbackPageTitleResource1.Text" xml:space="preserve">
+    <value>Відновити зміст</value>
+  </data>
+  <data name="lblRollbackResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRollbackResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavedOnResource1.Text" xml:space="preserve">
+    <value>Збережено в:</value>
+  </data>
+  <data name="lblUserResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkDiffResource1.Text" xml:space="preserve">
+    <value>Відмінності</value>
+  </data>
+  <data name="lnkDiffResource1.ToolTip" xml:space="preserve">
+    <value>Відобразити зміни</value>
+  </data>
+  <data name="lnkEditResource1.Text" xml:space="preserve">
+    <value>Змінити</value>
+  </data>
+  <data name="lnkEditResource1.ToolTip" xml:space="preserve">
+    <value>Змінити цю Чернетку</value>
+  </data>
+  <data name="lstBackupResource1.ToolTip" xml:space="preserve">
+    <value>Існуючи бекапи, першими йдуть останні</value>
+  </data>
+  <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRevisionResource1.ToolTip" xml:space="preserve">
+    <value>Иснуючі версії, першими йдуть останні</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Адміністрування</value>
+  </data>
+  <data name="pnlApproveRevisionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlApproveRevisionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoAllBackupsResource1.Text" xml:space="preserve">
+    <value>Видалити всі Бекапи</value>
+  </data>
+  <data name="rdoAllBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoUpToResource1.Text" xml:space="preserve">
+    <value>Видалити найстарші Бекапи, в тому числі й</value>
+  </data>
+  <data name="rdoUpToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Потрібне Нове Ім'я</value>
+  </data>
+  <data name="rfvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

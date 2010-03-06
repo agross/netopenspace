@@ -1,0 +1,61 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="ScrewTurn.Wiki.MasterPage" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title runat="server">Title</title>
+</head>
+<body>
+    <form runat="server" id="FrmMaster">
+		<asp:Literal ID="lblStrings" runat="server" EnableViewState="false" />
+		<script type="text/javascript">
+		<!--
+			function __GetServerElementById(id) {
+				return document.getElementById(__BaseName + id);
+			}
+			function __RequestConfirm() {
+				return confirm(__ConfirmMessage);
+			}
+		// -->
+		</script>
+    
+        <div id="HeaderDiv">
+            <asp:Literal ID="lblHeaderDiv" runat="server" EnableViewState="false" />
+        </div>
+                   
+        <div id="ContainerDiv">
+                 
+            <div id="SidebarDiv">
+                <div id="SidebarHeaderDiv">
+                    <!-- Used for layout purposes only -->
+                </div>
+                <div id="SidebarContentDiv">
+                    <asp:Literal ID="lblSidebarDiv" runat="server" EnableViewState="false" />
+                </div>
+                <div id="SidebarFooterDiv">
+                    <!-- Used for layout purposes only -->
+                </div>
+            </div>
+            <div id="MainDiv">
+                <div id="MainHeaderDiv">
+                    <!-- Used for layout purposes only -->
+                </div>
+                <asp:Literal ID="lblPageHeaderDiv" runat="server" EnableViewState="false" />
+                <asp:contentplaceholder id="CphMaster" runat="server" />
+                <asp:Literal ID="lblPageFooterDiv" runat="server" EnableViewState="false" />
+                <div id="MainFooterDiv">
+                    <!-- Used for layout purposes only -->
+                </div>
+            </div>
+
+        </div>
+            
+        <div id="FooterDiv">
+            <asp:Literal ID="lblFooterDiv" runat="server" EnableViewState="false" />
+        </div>
+
+    </form>  
+</body>
+</html>

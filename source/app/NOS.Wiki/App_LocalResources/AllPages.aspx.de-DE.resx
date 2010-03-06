@@ -117,13 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lnkCategoriesResource1.Text" xml:space="preserve">
+    <value>Seiten Kategorien</value>
+    <comment>Page Categories</comment>
+  </data>
+  <data name="lnkCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>Alle Seitenkategorien anzeigen</value>
+    <comment>View all Page Categories</comment>
+  </data>
+  <data name="lnkSearchResource1.Text" xml:space="preserve">
+    <value>Suchen</value>
+    <comment>Search</comment>
+  </data>
+  <data name="lnkSearchResource1.ToolTip" xml:space="preserve">
+    <value>Suchen...</value>
+    <comment>Perform a Search</comment>
+  </data>
+  <data name="pnlPageListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPageListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Die komplette Liste aller Seiten im Wiki.</value>
-    <comment>The complete list of the Wiki's Pages.</comment>
+    <value>Liste mit allen Seiten die in diesem Namensraum enthalten sind.</value>
+    <comment>The list of all pages contained in the current namespace.</comment>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
-    <value>Vorhandene Einträge</value>
-    <comment>Pages</comment>
+    <value>Seitenindex</value>
+    <comment>Page Index</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Unbenannte Seite</value>

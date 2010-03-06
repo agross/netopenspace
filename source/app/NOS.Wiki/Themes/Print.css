@@ -1,0 +1,207 @@
+
+* {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+p.small, small {
+	font-size: 11px;
+}
+
+p.big, big {
+	font-size: 15px;
+}
+
+a, a:link, a:active {
+	color: #000099;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 6px;
+}
+
+h1.pagetitle {
+	font-size: 22px;
+	margin-bottom: 4px;
+}
+
+/* Class for applying a separator under H elements (useful to avoid usage of HR) */
+h1.separator, h2.separator, h3.separator {
+}
+
+ul, ol {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 28px;
+	padding-right: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+code, pre {
+	font-family: Courier New, Lucida Console, Monospace;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+pre {
+	border: solid 1px #999999;
+	background-color: #FFFFF0;
+	margin: 0px 10px 0px 10px;
+	padding: 8px;
+}
+
+table, div {
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	border: none;
+}
+
+img.image {
+	border: solid 1px #CCCCCC;
+}
+
+div.clear {
+	clear: both;
+}
+
+div.imageleft {
+	border: solid 1px #CCCCCC;
+	background-color: #F9F9F9;
+	padding: 4px;
+	margin-left: 0px;
+	margin-right: 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	float: left;
+}
+
+div.imageright {
+	border: solid 1px #CCCCCC;
+	background-color: #F9F9F9;
+	padding: 4px;
+	margin-left: 8px;
+	margin-right: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	float: right;
+}
+
+table.imageauto {
+	border: solid 1px #CCCCCC;
+	background-color: #F9F9F9;
+	padding: 4px;
+	margin: 4px;
+}
+
+p.imagedescription {
+	font-size: 11px;
+	font-style: italic;
+	margin-top: 4px;
+}
+
+div.box {
+	border: solid 1px #CCCCCC;
+	background-color: #F9F9F9;
+	display: table-cell;
+	padding: 4px;
+	margin: 4px 4px 0px 4px;
+}
+
+#ExpandTocSpan {
+	display: none;
+}
+
+/* Discussion */
+
+div.messagecontainer {
+	margin: 0px 0px 0px 16px;
+}
+
+div.rootmessagecontainer {
+	border-top: solid 4px #999999;
+}
+
+div.messageheader {
+	font-size: 10px;
+	border-top: solid 1px #F0F0F0;
+	border-left: solid 1px #F0F0F0;
+	border-right: solid 1px #F0F0F0;
+	padding: 2px;
+}
+
+span.messagesubject {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.messagebody {
+	border-bottom: solid 1px #F0F0F0;
+	border-left: solid 1px #F0F0F0;
+	border-right: solid 1px #F0F0F0;
+	margin: 0px 0px 6px 0px;
+	padding: 4px;
+}
+
+a.editsectionlink {
+	display: none;
+}
+
+#RedirectionInfoDiv, #RedirectionDiv {
+	display: none;
+}
+
+a.editsectionlink, a.headeranchor {
+	display: none;
+}
+
+#TocContainerTable, #TocContainer {
+	display: none;
+}
