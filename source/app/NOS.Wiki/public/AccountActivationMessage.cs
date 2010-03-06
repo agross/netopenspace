@@ -1,11 +1,12 @@
-Hi ##USERNAME## and welcome to ##WIKITITLE##!
-You must activate your new ##WIKITITLE## Account within 24 hours, following the link below.
+Hallo ##USERNAME## und willkommen zum ##WIKITITLE##!
+
+Du musst Dein neues ##WIKITITLE##-Konto innerhalb von 24 Stunden mit dem untenstehenden Link aktivieren.
 
 ##ACTIVATIONLINK##
 
-If you have any trouble, please contact us at our Email address, ##EMAILADDRESS## .
+Falls du Probleme mit der Aktivierung hast, kontaktiere uns bitte per E-Mail unter ##EMAILADDRESS## 
 
-Thank you.
+Vielen Dank!
 
-Best regards,
-The ##WIKITITLE## Team.
+Beste Grüße,
+Das ##WIKITITLE##-Team.

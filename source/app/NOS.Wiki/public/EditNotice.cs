@@ -1,2 +1,1 @@
-Please '''do not''' include contents covered by copyright without the explicit permission of the Author. Always preview the result before saving.{BR}
-If you are having trouble, please visit the [http://www.screwturn.eu/Help.aspx|Help section] at the [http://www.screwturn.eu|ScrewTurn Wiki Website].
+Bitte füge '''keinen''' Copyright-geschützten Inhalt ein, ohne vorher die explizite Erlaubnis des Urhebers einzuholen. Benutze die Vorschaufunktion vor dem Speichern des Eintrags. Hinweise zum Umgang mit dem Wiki-Markup findest du [http://www.screwturn.eu/PageEditing.ashx|auf der ScrewTurn Wiki-Website].
