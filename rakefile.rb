@@ -206,7 +206,7 @@ namespace :tests do
 		results = StyleCop.analyze \
 			:tool => configatron.tools.stylecop,
 			:directories => configatron.dir.app,
-			:ignore_file_pattern => ['(?:Version|Solution|Assembly|FxCop)Info\.cs$', '\.Designer\.cs$'],
+			:ignore_file_pattern => ['(?:Version|Solution|Assembly|FxCop)Info\.cs$', '\.Designer\.cs$', '\.(as.x|master)\.cs$', '\\\\public\\\\.*'],
 			:settings_file => 'Settings.StyleCop'.in(configatron.dir.source),
 			:report => 'StyleCop.xml'.in(configatron.dir.test_results),
 			:report_xsl => 'StyleCopReport.xsl'.in(configatron.tools.stylecop.dirname) \
