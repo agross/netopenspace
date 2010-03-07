@@ -4,18 +4,8 @@
 * [image|In Kooperation mit der .NET User Group Leipzig|{UP}Layout/logo-dnug-leipzig.gif|http://dotnet-leipzig.de/]
 * [image|Powered by ScrewTurn Wiki|{UP}Layout/logo-screwturn.gif|http://www.screwturn.eu/]
 * [Impressum]
-</div>
-Das Design dieser Seite wurde von [http://therightstuff.de/|Alexander Groß] erstellt.{BR}
-Einige Icons stammen von [http://www.famfamfam.com|FamFamFam]. Die Figuren im Logo sind von [http://pixelplastic.de/|Marcel Hoyer].{BR}
+</div>Das Design dieser Seite wurde von [http://therightstuff.de/|Alexander Groß] erstellt.
+Einige Icons stammen von [http://www.famfamfam.com|FamFamFam]. Die Figuren im Logo sind von [http://pixelplastic.de/|Marcel Hoyer].
 Bildquelle: [http://www.aboutpixel.de|aboutpixel.de] / [http://www.aboutpixel.de/index.php4?toppage=imagedetails&image_id=44930|Weißgrün - das Zebragras] / &copy; [http://www.aboutpixel.de/index.php4?toppage=imagebank&subpage=member&user_id=52283|Thorwald Hoffmann].
 </div>
 <div class="clearfix"></div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-124781-9");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
