@@ -643,11 +643,13 @@ a.editsectionlink:empty {
 	border: 0;
 }
 
-#RssLinkDiv, #PrintLinkDiv {
+#RssLinkDiv, #PrintLinkDiv, #EmailNotificationDiv {
 	float: right;
 	position: relative;
 }
 
+input.activenotification,
+input.inactivenotification,
 #RssLink, #PrintLink {
 	background-repeat: no-repeat;
 	text-indent: -2500px;
@@ -656,6 +658,27 @@ a.editsectionlink:empty {
 	width: 16px;
 	margin-left: .5em;
 	margin-top: .3em;
+}
+
+input.activenotification,
+input.inactivenotification {
+	height: 17px;
+}
+
+input.activenotification {
+	background-image: url(Images/EmailNotifOn.png);
+}
+
+input.inactivenotification {
+	background-image: url(Images/EmailNotifOff.png);
+}
+
+input.activenotification.discuss {
+	background-image: url(Images/EmailNotifOn-Discussion.png);
+}
+
+input.inactivenotification.discuss {
+	background-image: url(Images/EmailNotifOff-Discussion.png);
 }
 
 #RssLink {
