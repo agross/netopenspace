@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("TabsMenu")]
+[assembly: AssemblyTitle("NOS.TabMenu.Tests")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -18,4 +18,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("dea3c9aa-5850-4df2-aa55-a460a01e8da1")]
+[assembly: Guid("f8b1e1e1-0ce3-44d1-a2dd-5a6b0ea85014")]
