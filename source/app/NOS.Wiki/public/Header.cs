@@ -1,7 +1,7 @@
 <div class="content">
 	[/|<h1>{WIKITITLE}</h1><div id="logo"></div>]
 	<tab-menu item-selector="//ul/li" selected-attr="class" selected-value="selected">
-		<ul>
+		<ul class="basictab">
 			<li>
 				<span class="pos1"><span class="largest">[Teilnehmer]</span></span>
 			</li>
