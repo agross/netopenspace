@@ -535,8 +535,14 @@ ScrewTurn Wiki-related styles
 	border-bottom: 1px solid #ccc;
 }
 
-body#VisualEditorBody {
-	background-color: #fff;
+body#VisualEditorBody,
+body#VisualEditorBody form,
+body#ToolWindowBody,
+body#ToolWindowBody form {
+	margin: 0;
+	width: auto;
+	padding: 0;
+	background: #fff;
 	background-image: none;
 }
 
