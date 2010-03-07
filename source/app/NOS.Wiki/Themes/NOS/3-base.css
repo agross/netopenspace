@@ -626,6 +626,10 @@ a.editsectionlink:hover {
 	color: #111;
 }
 
+a.editsectionlink:empty {
+	border: 0;
+}
+
 #RssLinkDiv, #PrintLinkDiv {
 	float: right;
 	position: relative;
