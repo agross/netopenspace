@@ -19,6 +19,7 @@ local-properties.yml
 
 # ScrewTurn instance-specific files
 /source/app/NOS.Wiki/public/Attachments/
+/source/app/NOS.Wiki/public/Messages/
 /source/app/NOS.Wiki/public/Pages
 /source/app/NOS.Wiki/public/*.bak.cs
 /source/app/NOS.Wiki/public/ACL.cs
