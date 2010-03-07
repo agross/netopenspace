@@ -132,6 +132,12 @@
   <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
     <value />
   </data>
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Die E-Mail-Adressen sind nicht identisch</value>
+  </data>  
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Die E-Mail-Adressen sind nicht identisch</value>
+  </data>  
   <data name="pnlAccountResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -150,7 +156,7 @@
     <comment>Click here to save your Display Name</comment>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Anzeigename</value>
+    <value>Anzeigename:</value>
     <comment>Display Name</comment>
   </data>
   <data name="lblEditE-MailPasswordResource1.Text" xml:space="preserve">
