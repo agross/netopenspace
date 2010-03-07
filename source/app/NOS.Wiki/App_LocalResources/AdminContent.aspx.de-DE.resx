@@ -270,11 +270,11 @@
     <comment>The message replacing the information at the top of the access denied page (if not empty).</comment>
   </data>
   <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
-    <value>Email-Mitteilung die an einen frisch registrierten Benutzer gesendet wird, welcher sein Konto noch aktivieren muss.</value>
+    <value>E-Mail-Mitteilung die an einen frisch registrierten Benutzer gesendet wird, welcher sein Konto noch aktivieren muss.</value>
     <comment>The email message sent to a newly registered user that have to activate her account.</comment>
   </data>
   <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
-    <value>Email-Mitteilung die an den Editor/Administrator gesendet wird, wenn ein Seitenentwurf bestätigt werden muss.</value>
+    <value>E-Mail-Mitteilung die an den Editor/Administrator gesendet wird, wenn ein Seitenentwurf bestätigt werden muss.</value>
     <comment>The email message sent to editor/administrators when a page draft requires approval.</comment>
   </data>
   <data name="lblContentResource1.Text" xml:space="preserve">
@@ -282,7 +282,7 @@
     <comment>Content Editing</comment>
   </data>
   <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>Email-Mitteilung die an die Benutzer gesendet wird, wenn eine neue Mitteilung zu einer Diskussion hinzugefügt wurde.</value>
+    <value>E-Mail-Mitteilung die an die Benutzer gesendet wird, wenn eine neue Mitteilung zu einer Diskussion hinzugefügt wurde.</value>
     <comment>The email message sent to users when a new message is poste to a discussion.</comment>
   </data>
   <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
@@ -306,7 +306,7 @@
     <comment>Other Elements</comment>
   </data>
   <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>Email-Mitteilung die an die Benutzer gesendet wird wenn eine Seite bearbeitet wurde</value>
+    <value>E-Mail-Mitteilung die an die Benutzer gesendet wird wenn eine Seite bearbeitet wurde</value>
     <comment>The email message sent to users when a page is modified.</comment>
   </data>
   <data name="lblPageContentResource1.Text" xml:space="preserve">
@@ -318,7 +318,7 @@
     <comment>Page Layout Elements (Namespace-Specific)</comment>
   </data>
   <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
-    <value>Email-Mitteilung die an Benutzer gesendet wird, die das Passwort zurücksetzen wollen.</value>
+    <value>E-Mail-Mitteilung die an Benutzer gesendet wird, die das Passwort zurücksetzen wollen.</value>
     <comment>The email message sent to when a user want to reset her password.</comment>
   </data>
   <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">

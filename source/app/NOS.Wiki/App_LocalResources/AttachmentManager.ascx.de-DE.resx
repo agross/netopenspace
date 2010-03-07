@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblNoUploadResource1.Text" xml:space="preserve">
-    <value>&lt;br /&gt;Seite speichern vor dem Hochladen</value>
+    <value>&lt;br /&gt;Vor dem Hochladen Seite speichern</value>
     <comment>&lt;br /&gt;Save the page before uploading</comment>
   </data>
   <data name="lblNoUploadResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblDownloadsResource1.Text" xml:space="preserve">
-    <value>Anzahl herunterladungen</value>
+    <value>Download-Anzahl</value>
     <comment>Downloads</comment>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
@@ -172,7 +172,7 @@
     <comment>Name</comment>
   </data>
   <data name="lblSizeResource1.Text" xml:space="preserve">
-    <value>Grösse</value>
+    <value>Größe</value>
     <comment>Size</comment>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">

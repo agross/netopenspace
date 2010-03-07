@@ -150,7 +150,7 @@
     <value />
   </data>
   <data name="txtCaptchaResource1.ToolTip" xml:space="preserve">
-    <value>Hier die oben angezeigten Zeichen eingeben (Gross- Kleinschreibung beachten)</value>
+    <value>Hier die oben angezeigten Zeichen eingeben (Groß- und Kleinschreibung beachten)</value>
     <comment>Copy here the text displayed above (case sensitive)</comment>
   </data>
 </root>

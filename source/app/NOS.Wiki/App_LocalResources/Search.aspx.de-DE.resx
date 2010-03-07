@@ -132,11 +132,11 @@
     <value />
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Hier können Sie durch die Seiten in diesem Namensraum, sowie den Anhängen und Dateien die ins System hochgeladen wurden suchen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Es werden nur Objekte aufgelistet für die Sie leseberechtigung besitzen.</value>
+    <value>Hier können Sie durch die Seiten in diesem Namensraum, sowie den Anhängen und Dateien die ins Wiki hochgeladen wurden suchen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Es werden nur Objekte aufgelistet für die Sie Leseberechtigung besitzen.</value>
     <comment>Here you can search through the pages of this Namespace, their attachments and the files uploaded to the system.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the results will only display the items you have permissions to read.</comment>
   </data>
   <data name="btnGoResource1.Text" xml:space="preserve">
-    <value>Los</value>
+    <value>Suchen</value>
     <comment>Go</comment>
   </data>
   <data name="btnGoResource1.ToolTip" xml:space="preserve">
@@ -150,7 +150,7 @@
     <value />
   </data>
   <data name="lblCategoryFilterResource1.Text" xml:space="preserve">
-    <value>Nach Kategorie Filtern</value>
+    <value>Nach Kategorie filtern</value>
     <comment>Filter by Category</comment>
   </data>
   <data name="lblStatsResource1.Text" xml:space="preserve">
@@ -182,7 +182,7 @@
     <value />
   </data>
   <data name="rdoExactPhraseResource1.Text" xml:space="preserve">
-    <value>genaue Wortgruppe</value>
+    <value>Genaue Wortgruppe</value>
     <comment>Exact phrase</comment>
   </data>
   <data name="rdoExactPhraseResource1.ToolTip" xml:space="preserve">

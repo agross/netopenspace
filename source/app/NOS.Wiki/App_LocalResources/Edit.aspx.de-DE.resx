@@ -171,7 +171,7 @@
     <comment>Close</comment>
   </data>
   <data name="btnAutoTemplateOKResource1.ToolTip" xml:space="preserve">
-    <value>Diese Mitteilung schliessen</value>
+    <value>Diese Mitteilung schließen</value>
     <comment>Close this message</comment>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
@@ -186,7 +186,7 @@
     <comment>Cancel</comment>
   </data>
   <data name="btnCancelTemplateResource1.ToolTip" xml:space="preserve">
-    <value>Vorlagensymbolleiste schliessen</value>
+    <value>Vorlagensymbolleiste schließen</value>
     <comment>Close the Templates toolbar</comment>
   </data>
   <data name="btnCreateCategoryResource1.Text" xml:space="preserve">

@@ -254,13 +254,13 @@
     <value>Kontodetails</value>
     <comment>Account Details</comment>
   </data>
-  <data name="lblEmailResource1.Text" xml:space="preserve">
-    <value>Email</value>
-    <comment>Email</comment>
+  <data name="lblE-MailResource1.Text" xml:space="preserve">
+    <value>E-Mail</value>
+    <comment>E-Mail</comment>
   </data>
-  <data name="lblEmailResource2.Text" xml:space="preserve">
-    <value>Email</value>
-    <comment>Email</comment>
+  <data name="lblE-MailResource2.Text" xml:space="preserve">
+    <value>E-Mail</value>
+    <comment>E-Mail</comment>
   </data>
   <data name="lblFilterResource1.Text" xml:space="preserve">
     <value>Anzeigen:</value>
@@ -354,14 +354,14 @@
   <data name="revDisplayNameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="revEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Emailadresse</value>
-    <comment>Invalid Email</comment>
+  <data name="revE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige E-Mail-Adresse</value>
+    <comment>Invalid E-Mail</comment>
   </data>
-  <data name="revEmailResource1.Text" xml:space="preserve">
+  <data name="revE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="revEmailResource1.ToolTip" xml:space="preserve">
+  <data name="revE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="revPassword1Resource1.ErrorMessage" xml:space="preserve">
@@ -384,14 +384,14 @@
   <data name="revUsernameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Emailadresse ist erforderlich</value>
-    <comment>Email is required</comment>
+  <data name="rfvE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>E-Mail-Adresse ist erforderlich</value>
+    <comment>E-Mail is required</comment>
   </data>
-  <data name="rfvEmailResource1.Text" xml:space="preserve">
+  <data name="rfvE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvEmailResource1.ToolTip" xml:space="preserve">
+  <data name="rfvE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
@@ -420,10 +420,10 @@
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEmailResource1.Text" xml:space="preserve">
+  <data name="txtEMailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+  <data name="txtEMailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtFilterResource1.Text" xml:space="preserve">

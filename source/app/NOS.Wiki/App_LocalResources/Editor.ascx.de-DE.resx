@@ -121,7 +121,7 @@
     <value />
   </data>
   <data name="btnBiggerMarkupVisualResource3.ToolTip" xml:space="preserve">
-    <value>Editor vergrössern</value>
+    <value>Editor vergrößern</value>
     <comment>Increase editor size</comment>
   </data>
   <data name="btnSmallerMarkupVisualResource3.AlternateText" xml:space="preserve">
@@ -135,7 +135,7 @@
     <value />
   </data>
   <data name="btnBiggerMarkupResource3.ToolTip" xml:space="preserve">
-    <value>Editor vergrössern</value>
+    <value>Editor vergrößern</value>
     <comment>Increase editor size</comment>
   </data>
   <data name="btnPreviewResource3.Text" xml:space="preserve">

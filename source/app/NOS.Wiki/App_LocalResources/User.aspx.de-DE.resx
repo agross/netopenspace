@@ -125,14 +125,14 @@
     <value />
   </data>
   <data name="lblActivityResource1.Text" xml:space="preserve">
-    <value>letzte Aktivitäten von diesem Benutzer</value>
+    <value>Letzte Aktivitäten dieses Benutzers:</value>
     <comment>Recent activity by this user:</comment>
   </data>
   <data name="lblGravatarResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblMessageInfoResource1.Text" xml:space="preserve">
-    <value>Sie können diesem Benutzer eine Email senden. &lt;b&gt;Beachte&lt;/b&gt;: Ihre Emailadresse wird nicht ausgewiesen.</value>
+    <value>Sie können diesem Benutzer eine E-Mail senden. &lt;b&gt;Hinweis&lt;/b&gt;: Ihre E-Mail-Adresse wird nicht ausgewiesen.</value>
     <comment>You can send an email message to this user. &lt;b&gt;Note&lt;/b&gt;: your email address won't be disclosed.</comment>
   </data>
   <data name="lblMessageTitleResource1.Text" xml:space="preserve">

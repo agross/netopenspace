@@ -126,7 +126,7 @@
     <comment>Page Not Found</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Seite ohne Titel</value>
+    <value>Unbenannte Seite</value>
     <comment>Untitled Page</comment>
   </data>
 </root>

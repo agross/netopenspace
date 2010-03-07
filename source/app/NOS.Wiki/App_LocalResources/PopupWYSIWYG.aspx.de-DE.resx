@@ -234,7 +234,7 @@
     <comment>Anchor ID (required)</comment>
   </data>
   <data name="lblAnchorTitleResource1.Text" xml:space="preserve">
-    <value>Link Titel (optional)</value>
+    <value>Link-Titel (optional)</value>
     <comment>Link Title (optional)</comment>
   </data>
   <data name="lblExistingAnchorsResource1.Text" xml:space="preserve">
@@ -246,7 +246,7 @@
     <comment>File Path (required)</comment>
   </data>
   <data name="lblFileTitleResource1.Text" xml:space="preserve">
-    <value>Link Titel (optional)</value>
+    <value>Link-Titel (optional)</value>
     <comment>Link Title (optional)</comment>
   </data>
   <data name="lblImageDescrResource1.Text" xml:space="preserve">
@@ -270,8 +270,8 @@
     <comment>Link Title (optional)</comment>
   </data>
   <data name="lblLinkUrlResource1.Text" xml:space="preserve">
-    <value>Verknüpfungs-URL oder Emailadresse (erforderlich)</value>
-    <comment>Link URL or Email address (required)</comment>
+    <value>Verknüpfungs-URL oder E-Mail-Adresse (erforderlich)</value>
+    <comment>Link URL or E-Mail address (required)</comment>
   </data>
   <data name="lblPageNameResource1.Text" xml:space="preserve">
     <value>Seitenname (erforderlich)</value>
@@ -324,7 +324,7 @@
     <value />
   </data>
   <data name="rdoImageInlineResource1.Text" xml:space="preserve">
-    <value>In Reihe</value>
+    <value>Fließend in Zeile</value>
     <comment>Inline</comment>
   </data>
   <data name="rdoImageInlineResource1.ToolTip" xml:space="preserve">
@@ -348,7 +348,7 @@
     <value />
   </data>
   <data name="rdoImagePathResource1.ToolTip" xml:space="preserve">
-    <value>Wähle diese Option, um das Bild mit dem Browser zu selektieren</value>
+    <value>Wähle diese Option, um das Bild mit dem Browser auszuwählen</value>
     <comment>Check this to select the image using the browser</comment>
   </data>
   <data name="rdoImageRightResource1.Text" xml:space="preserve">

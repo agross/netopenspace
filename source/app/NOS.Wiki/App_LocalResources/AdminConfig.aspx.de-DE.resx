@@ -352,14 +352,14 @@
   <data name="cvDateTimeFormatResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="cvErrorsEmailsResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Emailadresse</value>
+  <data name="cvErrorsE-MailsResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige E-Mail-Adresse</value>
     <comment>Invalid email address</comment>
   </data>
-  <data name="cvErrorsEmailsResource1.Text" xml:space="preserve">
+  <data name="cvErrorsE-MailsResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="cvErrorsEmailsResource1.ToolTip" xml:space="preserve">
+  <data name="cvErrorsE-MailsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvPasswordResource1.ErrorMessage" xml:space="preserve">
@@ -391,11 +391,11 @@
     <comment>Advanced Configuration</comment>
   </data>
   <data name="lblCacheCutSizeResource1.Text" xml:space="preserve">
-    <value>Cache cut grösse</value>
+    <value>Cache cut Größe</value>
     <comment>?? Cache cut size</comment>
   </data>
   <data name="lblCacheSizeResource1.Text" xml:space="preserve">
-    <value>Cachegrösse</value>
+    <value>Cachegröße</value>
     <comment>Cache Size</comment>
   </data>
   <data name="lblChangeModerationModeResource1.Text" xml:space="preserve">
@@ -406,7 +406,7 @@
     <value>Konfiguration</value>
     <comment>Configuration</comment>
   </data>
-  <data name="lblContactEmailResource1.Text" xml:space="preserve">
+  <data name="lblContactE-MailResource1.Text" xml:space="preserve">
     <value>Kontaktemail</value>
     <comment>Contact email</comment>
   </data>
@@ -441,9 +441,9 @@
     <value>Standardbenutzergruppe</value>
     <comment>Default Users Group</comment>
   </data>
-  <data name="lblErrorsEmailsResource1.Text" xml:space="preserve">
-    <value>Emailadressen die im Fehlerfall Informiert werden (durch Komma getrennt)</value>
-    <comment>Email addresses to notify in case of errors (separate with commas)</comment>
+  <data name="lblErrorsE-MailsResource1.Text" xml:space="preserve">
+    <value>E-Mail-Adressen die im Fehlerfall Informiert werden (durch Komma getrennt)</value>
+    <comment>E-Mail addresses to notify in case of errors (separate with commas)</comment>
   </data>
   <data name="lblGeneralConfigResource1.Text" xml:space="preserve">
     <value>Allgemeine Konfiguration</value>
@@ -462,11 +462,11 @@
     <comment>Logging level</comment>
   </data>
   <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
-    <value>Maximal erlaubte Dateigrösse zum upload</value>
+    <value>Maximal erlaubte Dateigröße zum upload</value>
     <comment>Max file size allowed for upload</comment>
   </data>
   <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
-    <value>Maximale Protokoll grösse</value>
+    <value>Maximale Protokoll Größe</value>
     <comment>Max log size</comment>
   </data>
   <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
@@ -523,8 +523,8 @@
     <value>Selektiere...</value>
     <comment>Select...</comment>
   </data>
-  <data name="lblSenderEmailResource1.Text" xml:space="preserve">
-    <value>Absender Emailadresse</value>
+  <data name="lblSenderE-MailResource1.Text" xml:space="preserve">
+    <value>Absender E-Mail-Adresse</value>
     <comment>Sender email</comment>
   </data>
   <data name="lblSmtpAuthenticationResource1.Text" xml:space="preserve">
@@ -538,8 +538,8 @@
   <data name="lblStringsResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
-    <value>wird für alle Emailkommunikation verwendet</value>
+  <data name="lblUsedForE-MailCommunicationsResource1.Text" xml:space="preserve">
+    <value>wird für alle E-Mailkommunikation verwendet</value>
     <comment>used for email communications</comment>
   </data>
   <data name="lblWikiTitleResource1.Text" xml:space="preserve">
@@ -737,8 +737,8 @@
     <value>840</value>
   </data>
   <data name="ListItemResource36.Text" xml:space="preserve">
-    <value>Benutzer müssen ihr Konto via Email aktivieren</value>
-    <comment>Users must activate their account via Email</comment>
+    <value>Benutzer müssen ihr Konto via E-Mail aktivieren</value>
+    <comment>Users must activate their account via E-Mail</comment>
   </data>
   <data name="ListItemResource36.Value" xml:space="preserve">
     <value>EMAIL</value>
@@ -878,14 +878,14 @@
   <data name="rdoWarningsAndErrorsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="revContactEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Emailadresse</value>
+  <data name="revContactE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige E-Mail-Adresse</value>
     <comment>Invalid email address</comment>
   </data>
-  <data name="revContactEmailResource1.Text" xml:space="preserve">
+  <data name="revContactE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="revContactEmailResource1.ToolTip" xml:space="preserve">
+  <data name="revContactE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="revMainUrlResource1.ErrorMessage" xml:space="preserve">
@@ -898,14 +898,14 @@
   <data name="revMainUrlResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="revSenderEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Emailadresse</value>
+  <data name="revSenderE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>Ungültige E-Mail-Adresse</value>
     <comment>Invalid email address</comment>
   </data>
-  <data name="revSenderEmailResource1.Text" xml:space="preserve">
+  <data name="revSenderE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="revSenderEmailResource1.ToolTip" xml:space="preserve">
+  <data name="revSenderE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="revSmtpServerResource1.ErrorMessage" xml:space="preserve">
@@ -929,7 +929,7 @@
     <value />
   </data>
   <data name="rfvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Cache Cut Grösse ist notwendig</value>
+    <value>Cache Cut-Größe ist notwendig</value>
     <comment>Cache Cut Size is required</comment>
   </data>
   <data name="rfvCacheCutSizeResource1.Text" xml:space="preserve">
@@ -939,7 +939,7 @@
     <value />
   </data>
   <data name="rfvCacheSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Cache grösse ist notwendig</value>
+    <value>Cache-Größe ist notwendig</value>
     <comment>Cache Size is required</comment>
   </data>
   <data name="rfvCacheSizeResource1.Text" xml:space="preserve">
@@ -948,14 +948,14 @@
   <data name="rfvCacheSizeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvContactEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Kontak Emailadresse ist notwendig</value>
-    <comment>Contact Email is required</comment>
+  <data name="rfvContactE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>Kontak E-Mail-Adresse ist notwendig</value>
+    <comment>Contact E-Mail is required</comment>
   </data>
-  <data name="rfvContactEmailResource1.Text" xml:space="preserve">
+  <data name="rfvContactE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvContactEmailResource1.ToolTip" xml:space="preserve">
+  <data name="rfvContactE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
@@ -979,7 +979,7 @@
     <value />
   </data>
   <data name="rfvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Maximale Dateigrösse ist notwendig</value>
+    <value>Maximale Dateigröße ist notwendig</value>
     <comment>Max File Size is required</comment>
   </data>
   <data name="rfvMaxFileSizeResource1.Text" xml:space="preserve">
@@ -989,7 +989,7 @@
     <value />
   </data>
   <data name="rfvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Maximale Protokollgrösse ist notwendig</value>
+    <value>Maximale Protokollgröße ist notwendig</value>
     <comment>Max Log Size is required</comment>
   </data>
   <data name="rfvMaxLogSizeResource1.Text" xml:space="preserve">
@@ -1008,14 +1008,14 @@
   <data name="rfvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvSenderEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Absender Emailadresse notwendig</value>
-    <comment>Sender Email is required</comment>
+  <data name="rfvSenderE-MailResource1.ErrorMessage" xml:space="preserve">
+    <value>Absender E-Mail-Adresse notwendig</value>
+    <comment>Sender E-Mail is required</comment>
   </data>
-  <data name="rfvSenderEmailResource1.Text" xml:space="preserve">
+  <data name="rfvSenderE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvSenderEmailResource1.ToolTip" xml:space="preserve">
+  <data name="rfvSenderE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvSmtpServerResource1.ErrorMessage" xml:space="preserve">
@@ -1039,7 +1039,7 @@
     <value />
   </data>
   <data name="rvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige 'Cache Cut' grösse (min. 5, max- 50000)</value>
+    <value>Ungültige 'Cache Cut' Größe (min. 5, max- 50000)</value>
     <comment>Invalid Cache Cut Size (min. 5, max. 50000)</comment>
   </data>
   <data name="rvCacheCutSizeResource1.Text" xml:space="preserve">
@@ -1049,7 +1049,7 @@
     <value />
   </data>
   <data name="rvCacheSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Grösse (min. 10, max. 100000)</value>
+    <value>Ungültige Größe (min. 10, max. 100000)</value>
     <comment>Invalid Size (min. 10, max. 100000)</comment>
   </data>
   <data name="rvCacheSizeResource1.Text" xml:space="preserve">
@@ -1059,7 +1059,7 @@
     <value />
   </data>
   <data name="rvKeptBackupNumberResource1.ErrorMessage" xml:space="preserve">
-    <value>Anzahl der Backups muss eine Nummber zwischen 0 und 1000 sein.</value>
+    <value>Anzahl der Backups muss eine Zahl zwischen 0 und 1000 sein.</value>
     <comment>Number must be between 0 and 1000</comment>
   </data>
   <data name="rvKeptBackupNumberResource1.Text" xml:space="preserve">
@@ -1069,7 +1069,7 @@
     <value />
   </data>
   <data name="rvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige maximale Dateigrösse (min. 256, max. 102400)</value>
+    <value>Ungültige maximale Dateigröße (min. 256, max. 102400)</value>
     <comment>Invalid File Size (min. 256, max. 102400)</comment>
   </data>
   <data name="rvMaxFileSizeResource1.Text" xml:space="preserve">
@@ -1079,7 +1079,7 @@
     <value />
   </data>
   <data name="rvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige maximale Protokollgrösse (min. 16, max. 10240)</value>
+    <value>Ungültige maximale Protokollgröße (min. 16, max. 10240)</value>
     <comment>Invalid Log Size (min. 16, max. 10240)</comment>
   </data>
   <data name="rvMaxLogSizeResource1.Text" xml:space="preserve">
@@ -1089,7 +1089,7 @@
     <value />
   </data>
   <data name="rvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
-    <value>Anzahl der angezeigten Änderungen muss eine Nummber zwischen 0 und 50 sein</value>
+    <value>Anzahl der angezeigten Änderungen muss eine Zahl zwischen 0 und 50 sein</value>
     <comment>Number must be between 0 and 50</comment>
   </data>
   <data name="rvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
@@ -1120,10 +1120,10 @@
   <data name="txtCacheSizeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtContactEmailResource1.Text" xml:space="preserve">
+  <data name="txtContactE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtContactEmailResource1.ToolTip" xml:space="preserve">
+  <data name="txtContactE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtDateTimeFormatResource1.Text" xml:space="preserve">
@@ -1132,10 +1132,10 @@
   <data name="txtDateTimeFormatResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtErrorsEmailsResource1.Text" xml:space="preserve">
+  <data name="txtErrorsE-MailsResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtErrorsEmailsResource1.ToolTip" xml:space="preserve">
+  <data name="txtErrorsE-MailsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtExtensionsAllowedResource1.Text" xml:space="preserve">
@@ -1180,10 +1180,10 @@
   <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtSenderEmailResource1.Text" xml:space="preserve">
+  <data name="txtSenderE-MailResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtSenderEmailResource1.ToolTip" xml:space="preserve">
+  <data name="txtSenderE-MailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtSmtpPortResource1.Text" xml:space="preserve">

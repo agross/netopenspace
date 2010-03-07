@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnEmailNotificationResource1.AlternateText" xml:space="preserve">
+  <data name="btnE-MailNotificationResource1.AlternateText" xml:space="preserve">
     <value />
   </data>
-  <data name="btnEmailNotificationResource1.ToolTip" xml:space="preserve">
+  <data name="btnE-MailNotificationResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblAdministratePageResource1.Text" xml:space="preserve">

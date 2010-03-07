@@ -122,7 +122,7 @@
     <comment>Close</comment>
   </data>
   <data name="btnCancelResource2.ToolTip" xml:space="preserve">
-    <value>Werkzeugleiste schliessen</value>
+    <value>Werkzeugleiste schließen</value>
     <comment>Close this tolbox</comment>
   </data>
   <data name="lblRotateResource1.Text" xml:space="preserve">
@@ -154,19 +154,19 @@
     <comment>JPEG format, medium quality</comment>
   </data>
   <data name="rdoPercentageResource2.Text" xml:space="preserve">
-    <value>Grösse ändern nach skalierung</value>
+    <value>Größe ändern nach skalierung</value>
     <comment>Resize by scale</comment>
   </data>
   <data name="rdoPercentageResource2.ToolTip" xml:space="preserve">
-    <value>Grösse des Bildes ändern, indem eine skalierung (Prozent zum Original) angegeben wird</value>
+    <value>Größe des Bildes ändern, indem eine skalierung (Prozent zum Original) angegeben wird</value>
     <comment>Resize the image specifying a scale</comment>
   </data>
   <data name="rdoPixelResource2.Text" xml:space="preserve">
-    <value>Grösse ändern nach absoluter Grösse</value>
+    <value>Größe ändern nach absoluter Größe</value>
     <comment>Resize by absolute size</comment>
   </data>
   <data name="rdoPixelResource2.ToolTip" xml:space="preserve">
-    <value>Grösse des Bildes ändern, indem die neue grösse in Pixel eingegeben wird</value>
+    <value>Größe des Bildes ändern, indem die neue Größe in Pixel eingegeben wird</value>
     <comment>Resize the image specifying the size in pixels</comment>
   </data>
   <data name="rdoPngResource2.ToolTip" xml:space="preserve">
@@ -178,7 +178,7 @@
     <comment>100</comment>
   </data>
   <data name="txtPercentageResource2.ToolTip" xml:space="preserve">
-    <value>Prozent vergrösserung/verkleinerung zum Original</value>
+    <value>Prozent vergrößerung/verkleinerung zum Original</value>
     <comment>Resize scale (percentage)</comment>
   </data>
   <data name="rdoPngResource2.Text" xml:space="preserve">
@@ -215,7 +215,7 @@
     <value />
   </data>
   <data name="lblCurrentSizeInfoResource1.Text" xml:space="preserve">
-    <value>Aktuelle Grösse</value>
+    <value>Aktuelle Größe</value>
     <comment>Current size:</comment>
   </data>
   <data name="lblCurrentSizePixelsResource1.Text" xml:space="preserve">
@@ -229,7 +229,7 @@
     <value />
   </data>
   <data name="lblOptionsResource1.Text" xml:space="preserve">
-    <value>Optionen zum anpassen der Bildgrösse</value>
+    <value>Optionen zum anpassen der Bildgröße</value>
     <comment>Image Resize Options</comment>
   </data>
   <data name="lblOptionsResource1.ToolTip" xml:space="preserve">

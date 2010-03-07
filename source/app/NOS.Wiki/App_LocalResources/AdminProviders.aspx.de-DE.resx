@@ -329,7 +329,7 @@
     <value />
   </data>
   <data name="lblMigrateUsersInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Hinweis&lt;/b&gt;: migrieren der Benutzerkonten wird deren Passwörter zurücksetzen (alle betroffenen Benutzer werden via Email benachrichtigt).</value>
+    <value>&lt;b&gt;Hinweis&lt;/b&gt;: migrieren der Benutzerkonten wird deren Passwörter zurücksetzen (alle betroffenen Benutzer werden via E-Mail benachrichtigt).</value>
     <comment>&lt;b&gt;Note&lt;/b&gt;: migrating user accounts will reset all their passwords (an email notice will be sent to all users).</comment>
   </data>
   <data name="lblMigrateUsersResource1.Text" xml:space="preserve">

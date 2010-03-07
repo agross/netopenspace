@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Navigationspfade weisen Ihnen den Weg zu den Inhalten dieses Wiki.</value>
+    <value>Navigationspfade weisen Ihnen den Weg zu den Inhalten dieses Wikis.</value>
     <comment>Navigation Paths guide you through the contents of the Wiki.</comment>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Hier können sie mit einem Pfad beginnen.</value>
+    <value>Hier können sie mit dem Durchsuchen eines Pfads beginnen.</value>
     <comment>Here you can start to browse a Path.</comment>
   </data>
   <data name="lblNavPathResource1.Text" xml:space="preserve">
@@ -130,7 +130,7 @@
     <comment>Navigation Paths</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Seite ohne Titel</value>
+    <value>Unbenannte Seite</value>
     <comment>Untitled Page</comment>
   </data>
 </root>
