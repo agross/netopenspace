@@ -10,10 +10,10 @@
 					<span class="pos2"><span class="large">[Anreise]</span></span>
 				</li>
 				<li>
-					<span class="pos3"><span>[Hotels|Unterkünfte]</span></span>
+					<span class="pos3">[Hotels|Unterkünfte]</span>
 				</li>
 				<li>
-					<span class="pos4"><span class="smaller"><span class="language">[English|English]</span></span></span>
+					<span class="pos4"><span class="smaller language">[English|English]</span></span>
 				</li>
 				<li>
 					<span class="pos5"><span class="smallest">[FAQ|Fragen]</span></span>
