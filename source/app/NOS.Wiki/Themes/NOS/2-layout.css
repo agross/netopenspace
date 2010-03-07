@@ -9,19 +9,22 @@ body form {
 	position: relative;
 }
 
-#HeaderDiv, #ContainerDiv, #FooterDiv {
+#header, #ContainerDiv, #ContainerSADiv, #footer {
 	clear: both;
 }
 
-#ContainerDiv, #FooterDiv .content {
+#ContainerDiv, 
+#ContainerSADiv,
+#footer .content {
 	padding: 1em 1em;
 }
 
-#HeaderDiv {
+#header {
 	padding-top: 6px;
 }
 
-#ContainerDiv {
+#ContainerDiv,
+#ContainerSADiv {
 	padding-bottom: 2em;
 }
 
@@ -35,11 +38,11 @@ body form {
 	margin-left: 200px;
 }
 
-#FooterDiv {
+#footer {
 	padding-bottom: 6px;
 }
 
-#FooterDiv .content {
+#footer .content {
 	padding-bottom: 2em;
 }
 

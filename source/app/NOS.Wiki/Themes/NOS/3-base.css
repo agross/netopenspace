@@ -264,28 +264,28 @@ table#TocContainerTable, table#TocContainerTable td {
 Header
 ------------------------------------------------------------------------------------------------------------------------
 */
-#HeaderDiv {
+#header {
 	background: transparent url(images/layout/header-background.png) no-repeat scroll left top;
 	height: 134px;
 }
 
-#HeaderDiv h1 {
+#header h1 {
 	left: -2500px;
 	position: absolute;
 }
 
-#HeaderDiv #logo {
+#header #logo {
 	background: transparent url(images/layout/header-logo.png) no-repeat scroll left top;
 	width: 500px;
 	height: 134px;
 	float: left;
 }
 
-#HeaderDiv a:hover {
+#header a:hover {
 	text-decoration: none;
 }
 
-#HeaderDiv .basictab {
+#header .basictab {
 	float: right;
 	width: 30%;
 	height: 134px;
@@ -293,75 +293,75 @@ Header
 	position: relative;
 }
 
-#HeaderDiv .basictab li {
+#header .basictab li {
 	display: block;
 	list-style-type: none;
 }
 
-#HeaderDiv .pos1 {
+#header .pos1 {
 	position: absolute;
 	top: 20px;
 	right: 7em;
 }
 
-#HeaderDiv .pos2 {
+#header .pos2 {
 	position: absolute;
 	top: 20px;
 	right: 25px;
 }
 
-#HeaderDiv .pos3 {
+#header .pos3 {
 	position: absolute;
 	top: 3.8em;
 	right: 7em;
 }
 
-#HeaderDiv .pos4 {
+#header .pos4 {
 	position: absolute;
 	top: 5.5em;
 	right: 15px;
 }
 
-#HeaderDiv .pos5 {
+#header .pos5 {
 	position: absolute;
 	top: 3.5em;
 	right: 54px;
 }
 
-#HeaderDiv .pos6 {
+#header .pos6 {
 	position: absolute;
 	top: 6em;
 	right: 11.5em;
 }
 
-#HeaderDiv .pos7 {
+#header .pos7 {
 	position: absolute;
 	top: 6em;
 	right: 6em;
 }
 
-#HeaderDiv .pos8 {
+#header .pos8 {
 	position: absolute;
 	top: 20px;
 	right: 15.1em;
 }
 
-#HeaderDiv .basictab li a {
+#header .basictab li a {
 	color: #fff;
 	background-color: #9dab42;
 	padding: 5px 9px;
 }
 
-#HeaderDiv .basictab li a:hover {
+#header .basictab li a:hover {
 	background-color: #e1df9e;
 	color: #111;
 }
 
-#HeaderDiv .basictab li.selected a {
+#header .basictab li.selected a {
 	background-color: #a12d0d;
 }
 
-#HeaderDiv .basictab li .language a {
+#header .basictab li .language a {
 	background-image: url(images/layout/language.png);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -369,16 +369,16 @@ Header
 	padding-left: 21px;
 }
 
-#HeaderDiv .basictab ul.submenu {
+#header .basictab ul.submenu {
 	margin-top: 7px;
 }
 
-#HeaderDiv .basictab ul.submenu li {
+#header .basictab ul.submenu li {
 	padding: 0;
 	margin: 0;
 }
 
-#HeaderDiv .basictab ul.submenu li a {
+#header .basictab ul.submenu li a {
 	display: block;
 	padding: 3px 5px 3px 9px;
 }
@@ -458,7 +458,7 @@ Partners
 Content
 ------------------------------------------------------------------------------------------------------------------------
 */
-#ContainerDiv {
+#ContainerDiv, #ContainerSADiv {
 	background-color: #fff;
 }
 
@@ -496,30 +496,31 @@ table td {
 Footer
 ------------------------------------------------------------------------------------------------------------------------
 */
-#FooterDiv {
+#footer {
 	background: transparent url(images/layout/footer-background.png) no-repeat scroll left bottom;
 }
 
-#FooterDiv .content {
+#footer .content {
 	background-color: #132e28;
 	color: #fff;
 }
 
-#FooterDiv .logos {
+#footer .logos {
 	float: right;
 }
 
-#FooterDiv .logos ul li {
+#footer .logos ul li {
 	float: right;
 	list-style-type: none;
 	margin-left: 1em;
 }
 
-#FooterDiv br {
+#FooterDiv br,
+#FooterSADiv br {
 	display: none;
 }
 
-#FooterDiv .content br {
+#footer .content br {
 	display: block;
 }
 
