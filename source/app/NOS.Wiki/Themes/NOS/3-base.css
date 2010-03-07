@@ -103,7 +103,8 @@ blockquote {
 	padding-left: .5em;
 }
 
-.clearfix:after {
+.clearfix:after, 
+.cleanup:after {
 	clear: both;
 	content: ".";
 	display: block;
@@ -111,16 +112,19 @@ blockquote {
 	visibility: hidden;
 }
 
-.clearfix {
+.clearfix,
+.cleanup {
 	display: inline-block;
 }
 
 /* Hides from IE-mac \*/
-* html .clearfix {
+* html .clearfix,
+* html .cleanup {
 	height: 1%;
 }
 
-.clearfix {
+.clearfix,
+.cleanup {
 	display: block;
 }
 /* End hide from IE-mac */
@@ -199,65 +203,46 @@ ol li li {
 Tables
 ------------------------------------------------------------------------------------------------------------------------
 */
-#PageContentDiv table {
+table {
 	vertical-align: top;
 	border-collapse: collapse;
-	border: 2px solid #ccc;
+	width: 100%;
 }
 
-#PageContentDiv table th, #PageContentDiv table td {
+table th, table td {
 	padding: .2em;
-	border: 1px solid #ddd;
+	vertical-align: top;
 }
 
-#PageContentDiv table th {
+table th {
 	font-weight: bold;
 	background-color: #ddd;
 	border-color: #fff;
 }
 
-table td {
-	vertical-align: top;
-}
-
-#PageContentDiv table.imageauto, #PageContentDiv table.imageauto td {
-	border: 0;
-}
-
-#PageListTable, #FileListTable, #RevisionListTable {
-	width: 100%;
-}
-
-#PageListHeader, #FileListHeader, #RevisionListHeader {
-	background-color: #ddd;
-}
-
-#PageListHeader td, #FileListHeader td, #RevisionListHeader td, th {
-	vertical-align: middle;
-}
-
-.pagelistcelleven, .pagelistcellodd, .filelistcelleven, .filelistcellodd, .revisionlistcelleven, .revisionlistcellodd {
+table.generic tr td {
 	border-bottom: 1px solid #ccc;
-	vertical-align: middle;
-	background-color: #fff;
 }
 
-.pagelistcellodd, .filelistcellodd, .revisionlistcellodd {
-	background-color: #f4f4f4;
+#PageContentDiv table {
+	border: 2px solid #ccc;
+	width: auto;
 }
 
-#PageTreeP {
-	margin-left: 1em;
-	padding-left: .5em;
-	border-left: 4px solid #ccc;
+#PageContentDiv table th,
+#PageContentDiv table td {
+	border: 1px solid #ddd;
 }
 
-#FileListTable {
-	margin-top: 2em;
+#PageContentDiv table th {
+	border-color: #fff;
 }
 
-table#TocContainerTable, table#TocContainerTable td {
-	border: 0;
+#TocContainerTable,
+#TocContainerTable td,
+#PageContentDiv table.imageauto,
+#PageContentDiv table.imageauto td {
+	border: 0 !important;
 }
 
 /*
@@ -470,10 +455,6 @@ h1.pagetitle {
 	margin-top: 1em;
 }
 
-table td {
-	padding: .2em;
-}
-
 #PageContentDiv pre {
 	width: 90%;
 	background-color: #f6f6f6;
@@ -528,6 +509,75 @@ Footer
 ScrewTurn Wiki-related styles
 ------------------------------------------------------------------------------------------------------------------------
 */
+.resulterror, .resultok {
+	padding-left: 18px;
+}
+
+.resulterror {
+	background: transparent url(images/layout/error.png) no-repeat scroll left center;
+	color: red;
+}
+
+.resultok {
+	background: transparent url(images/layout/success.png) no-repeat scroll left center;
+	color: green;
+}
+
+body#VisualEditorBody {
+	background-color: #fff;
+	background-image: none;
+}
+
+#EditNoticeDiv,
+#UploadAttachmentDiv p.small {
+	padding: .5em;
+	background-color: #F0F0F0;
+}
+
+div.draftmanagement
+{
+	padding: .5em;
+	background: none repeat scroll 0 0 #FFF6BF;
+	border: 2px solid #FFD324;
+	color: #514721;
+}
+
+#EditNoticeDiv,
+div.draftmanagement {
+	margin: 0 0 1em 0;
+}
+
+#ButtonsDiv {
+	float:right;
+}
+
+#PageNameAndTitleDiv {
+	width: 63%;
+}
+
+#PageNameAndTitleDiv input.large {
+	width: 95%;
+	font-size: 1.5em
+}
+
+#CategoriesDiv, #EditCommentDiv,
+#MainAttachmentManagerDiv, #UploadAttachmentDiv {
+	float: left;
+	width: 49%;
+}
+
+#CategoriesDiv, #MainAttachmentManagerDiv {
+	padding-right: 10px;
+}
+
+#AttachmentsDiv {
+	clear: both;
+}
+
+#AttachmentManagerTable {
+	font-size: .8em;
+}
+
 #EditHistoryLinkDiv {
 	float: right;
 	margin-left: 1em;
@@ -600,81 +650,8 @@ a.editsectionlink:hover {
 	font-size: .8em;
 }
 
-#FormatUl {
-	margin: 0;
-	padding: 0;
-}
-
-#FormatUl li {
-	display: inline;
-	list-style-image: none;
-	margin: 0;
-	padding: 0;
-}
-
 a.formatlink:focus {
 	outline: 0;
-}
-
-/* Editing: Page title. */
-#ctl00_CphMaster_txtTitle {
-	font-size: 1.5em;
-	width: 95% !important;
-}
-
-#SnippetListDiv, #SpecialTagsDiv, #AnchorsDiv, #ImagesDiv, #FileListDiv, #PageListDiv {
-	border: 1px solid #c2c2c2;
-	background-color: #fff;
-	font-size: .8em;
-}
-
-a.snippetlistlink, a.specialtaglink, a.anchorlink, a.imagelink, a.filelink, a.pagelistlink, a.subdirlink, a.dirlink, a.itemlink, a#UpLevelLink {
-	display: block;
-	padding: 0 .4em;
-}
-
-#SpecialCharsDiv a:hover, a.snippetlistlink:hover, a.specialtaglink:hover, a.anchorlink:hover, a.imagelink:hover, a.filelink:hover, a.pagelistlink:hover, a.subdirlink:hover, a.dirlink:hover, a.itemlink:hover, a#UpLevelLink:hover {
-	text-decoration: none;
-	color: #fff;
-	background-color: #9dab42;
-}
-
-#SpecialCharsDiv a {
-	padding: 1px;
-}
-
-.subtreediv {
-	margin-left: 1em;
-}
-
-a.subdirlink {
-	background: transparent url(../../images/dir.png) no-repeat scroll 2px center;
-	padding-left: 20px;
-}
-
-a.filelink {
-	background: transparent url(../../images/file.png) no-repeat scroll 2px center;
-	padding-left: 20px;
-}
-
-#TxtSearchPage, #AttachmentChk {
-	margin-top: 1em;
-}
-
-#TxtSearchPage {
-	margin-left: .5em;
-	background: transparent url(images/search.png) no-repeat scroll 98% center;
-	padding-right: 20px;
-	width: 80%;
-}
-
-#SearchCatExtDiv {
-	float: right;
-	margin: 1em 0 1em 1em;
-}
-
-#SearchControlsDiv input {
-	font-size: 1.5em;
 }
 
 div.imageleft {
@@ -697,14 +674,4 @@ a.unknownlink {
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 19px;
-}
-
-#BackgroundDiv {
-	background-color: #111 !important;
-}
-
-#ImageDialogDiv, #ImageBrowserDiv, #BrowserControlsDiv {
-	background-color: #fff !important;
-	border: 1px solid #000 !important;
-	padding: 1em !important;
 }
