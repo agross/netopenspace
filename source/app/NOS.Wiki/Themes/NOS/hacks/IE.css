@@ -6,65 +6,65 @@
 	cursor: pointer;
 }
 
-#HeaderDiv .basictab li a {
+#header .basictab li a {
 	display: block;
 }
 
-#HeaderDiv .basictab li .largest a {
+#header .basictab li .largest a {
 	padding-top: 9px;
 	padding-bottom: 9px;
 }
 
-#HeaderDiv .basictab li .large a {
+#header .basictab li .large a {
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
 
-#HeaderDiv .basictab li .smaller a {
+#header .basictab li .smaller a {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
 
-#HeaderDiv .basictab li .smallest a {
+#header .basictab li .smallest a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
 
-#HeaderDiv .basictab ul.submenu {
+#header .basictab ul.submenu {
 	margin-top: 0;
 	zoom: 1;
 }
 
-#HeaderDiv .pos1 {
+#header .pos1 {
 	top: 11px;
 }
 
-#HeaderDiv .pos2, #HeaderDiv .pos8 {
+#header .pos2, #header .pos8 {
 	top: 14px;
 }
 
-#HeaderDiv .pos3 {
+#header .pos3 {
 	top: 3.5em;
 }
 
-#HeaderDiv .pos4 {
+#header .pos4 {
 	top: 5.3em;
 }
 
-#HeaderDiv .pos5 {
+#header .pos5 {
 	top: 3.5em;
 }
 
-#HeaderDiv .pos6 {
+#header .pos6 {
 	top: 5.7em;
 }
 
-#HeaderDiv .pos7 {
+#header .pos7 {
 	top: 5.7em;
 	right: 5.8em;
 }
 
-#HeaderDiv .pos8 {
+#header .pos8 {
 	right: 15.3em;;
 }
 
@@ -76,11 +76,11 @@
 	clear: both;
 }
 
-#FooterDiv .logos {
+#footer .logos {
 	width: 38%;
 }
 
-#FooterDiv .logos li img {
+#footer .logos li img {
 	vertical-align: text-bottom;
 }
 
