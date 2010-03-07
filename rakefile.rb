@@ -23,16 +23,8 @@ namespace :env do
 		yaml = Configuration.load_yaml 'properties.yml', :hash => env_key, :inherit => :default_to, :override_with => :local_properties
 		configatron.configure_from_hash yaml
 		
-		configatron.deployment.iis.app_name = configatron.deployment.iis.exists?(:app_name) ? configatron.deployment.iis.app_name : configatron.project
-
-		if configatron.deployment.exists?(:instance_name) and configatron.deployment.instance_name
-			configatron.deployment.location = "#{configatron.deployment.location}/#{configatron.deployment.instance_name}" 
-			configatron.deployment.iis.app_name = "#{configatron.deployment.iis.app_name}_#{configatron.deployment.instance_name}"
-			instanceName = "-#{configatron.deployment.instance_name}"
-		end
-		
 		configatron.app.debugging_enabled = configatron.build.configuration == 'Debug'
-		configatron.deployment.package = "#{configatron.project}#{instanceName || ''}-#{configatron.build.number || '1.0.0.0'}.zip".in(configatron.dir.deploy)
+		configatron.deployment.package = "#{configatron.project}-#{configatron.build.number || '1.0.0.0'}.zip".in(configatron.dir.deploy)
 
 		CLEAN.clear
 		CLEAN.include('teamcity-info.xml')
@@ -265,25 +257,11 @@ namespace :package do
 
 		webAppFiles.copy_hierarchy \
 			:source_dir => sourceDir, 
-			:target_dir => "Web".in(configatron.dir.for_deployment).to_absolute
+			:target_dir => configatron.dir.for_deployment.to_absolute
 	end
 
-	desc 'Prepares deployment tools for packaging'
-	task :deployment_tools do
-		FileUtils.cp "deploy.ps1".in(configatron.dir.source), configatron.dir.for_deployment.to_absolute
-	end
-	
-	desc 'Prepares OSS licenses for packaging'
-	task :licenses do
-		licenses = FileList.new("lib/**/*-license.txt", "tools/**/*-license.txt")
-		target = "Licenses".in(configatron.dir.for_deployment).to_absolute
-		
-		mkdir_p target
-		FileUtils.cp licenses, target
-	end
-	
 	desc 'Creates a zipped archive for deployment'
-	task :zip => [:webapp, :deployment_tools, :licenses] do
+	task :zip => [:webapp] do
 		sz = SevenZip.new \
 			:tool => configatron.tools.zip,
 			:zip_name => configatron.deployment.package
@@ -308,36 +286,37 @@ task :deploy => ['package:all'] do
 		remote[:computerName] = configatron.deployment.connection.address
 	end
 	
+#	This would require the deployment user to be an administrator.
+#
+#	MSDeploy.run \
+#		:tool => configatron.tools.msdeploy,
+#		:log_file => configatron.deployment.logfile,
+#		:verb => :sync,
+#		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+#		:source =>  Dictionary[:recycleApp, true],
+#		:dest => remote.merge({
+#			:recycleApp => "#{configatron.deployment.iis.app_name.escape}",
+#			:recycleMode => "RecycleAppPool"
+#			})
+
 	MSDeploy.run \
 		:tool => configatron.tools.msdeploy,
 		:log_file => configatron.deployment.logfile,
 		:verb => :sync,
-		:allowUntrusted => true,
-		:source =>  Dictionary[:recycleApp, true],
+		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+		:source => Dictionary[:contentPath, "App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
 		:dest => remote.merge({
-			:recycleApp => "#{configatron.deployment.iis.app_name}/",
-			:recycleMode => "RecycleAppPool"
+			:contentPath => "#{configatron.deployment.iis.app_name}/App_Offline.htm".escape
 			})
-	
-	preSyncCommand = "exit"
-	postSyncCommand = "exit"
-	
-	if configatron.deployment.modes.before_deployment.any?
-		preSyncCommand = "\"powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command #{"deploy.ps1".in(configatron.deployment.location)} #{configatron.deployment.modes.before_deployment.join(" ")} \""
-	end
-	
-	if configatron.deployment.modes.after_deployment.any?
-		postSyncCommand = "\"powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command #{"deploy.ps1".in(configatron.deployment.location)} #{configatron.deployment.modes.after_deployment.join(" ")} \""
-	end
-	
+				
 	MSDeploy.run \
 		:tool => configatron.tools.msdeploy,
 		:log_file => configatron.deployment.logfile,
 		:verb => :sync,
-		:allowUntrusted => true,
-		:source => Dictionary[:dirPath, configatron.dir.for_deployment.to_absolute.escape],
+		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+		:source => Dictionary[:contentPath, configatron.dir.for_deployment.to_absolute.escape],
 		:dest => remote.merge({
-			:dirPath => configatron.deployment.location
+			:contentPath => "#{configatron.deployment.iis.app_name.escape}"
 			}),
 		:usechecksum => true,
 		:skip =>[
@@ -349,20 +328,21 @@ task :deploy => ['package:all'] do
 			Dictionary[
 				:objectName, "filePath",
 				:skipAction, "Delete",
-				:absolutePath, "\\\\Logs\\\\.*\\.txt$"
+				:absolutePath, "\\\\public\\\\.*$"
 			],
 			Dictionary[
 				:objectName, "dirPath",
 				:skipAction, "Delete",
-				:absolutePath, "\\\\Logs.*$"
+				:absolutePath, "\\\\public.*$"
 			]
-		],
-		:preSync => Dictionary[
-			:runCommand, preSyncCommand,
-			:waitInterval, 60000
-		],
-		:postSyncOnSuccess => Dictionary[
-			:runCommand, postSyncCommand,
-			:waitInterval, 60000
 		]
+	
+	MSDeploy.run \
+		:tool => configatron.tools.msdeploy,
+		:log_file => configatron.deployment.logfile,
+		:verb => :delete,
+		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+		:dest => remote.merge({
+			:contentPath => "#{configatron.deployment.iis.app_name}/App_Offline.htm".escape
+			})
 end

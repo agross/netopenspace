@@ -20,11 +20,7 @@ global:
       custom_errors: "Off"
       cookie_path: "/"
   deployment:
-    instance_name:
     logfile: build/msdeploy.log
-    identity: NT-AUTORITÄT\NETZWERKDIENST
-    connection:
-      address:
   tools:
     mspec: tools/Machine.Specifications/mspec.exe
     cloc: tools/CLOC/cloc.exe
@@ -43,4 +39,13 @@ production:
   app:
     iis:
       custom_errors: "RemoteOnly"
-      cookie_path: "/2010/"  
+      cookie_path: "/2010-testing/"
+  deployment:
+    iis:
+      app_name: "(agross) netopenspace.de/2010-testing"
+    connection:
+      wmsvc: true
+      allow_untrusted_https: false
+      address: team.torstenweber.de
+      user: <%= ENV['DEPLOY_USER'] || 'secret' %>
+      password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
