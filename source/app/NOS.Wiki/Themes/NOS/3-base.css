@@ -222,6 +222,7 @@ table th {
 
 table.generic tr td {
 	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
 }
 
 #PageContentDiv table {
@@ -674,4 +675,15 @@ a.unknownlink {
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 19px;
+}
+
+#PageAttachmentsDiv, #AdminToolsDiv {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: .2em;
+	font-size: .8em;
+}
+
+#AdminToolsDiv a {
+	display: block;
 }
