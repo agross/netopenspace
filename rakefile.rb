@@ -164,7 +164,7 @@ namespace :tests do
 			:html_report => 'Coverage.html',
 			:xml_report => 'Coverage.xml',
 			:min_coverage => 80,
-			:fail_if_under_min_coverage => true,
+			:fail_if_under_min_coverage => false,
 			:statistics => {
 				:NCoverCodeCoverage => "/coverageReport/project/@functionCoverage"
 			} do |key, value|
