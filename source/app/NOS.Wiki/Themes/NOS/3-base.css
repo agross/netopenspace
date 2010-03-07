@@ -448,7 +448,8 @@ Partners
 Content
 ------------------------------------------------------------------------------------------------------------------------
 */
-#ContainerDiv, #ContainerSADiv {
+#ContainerDiv,
+#ContainerSADiv {
 	background-color: #fff;
 }
 
@@ -526,6 +527,12 @@ ScrewTurn Wiki-related styles
 .resultok {
 	background: transparent url(images/layout/success.png) no-repeat scroll left center;
 	color: green;
+}
+
+#NavigationSADiv {
+	background: #fff url(images/layout/go-back.png) no-repeat scroll 1em center;
+	padding-left: 35px;
+	border-bottom: 1px solid #ccc;
 }
 
 body#VisualEditorBody {
