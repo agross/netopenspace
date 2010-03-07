@@ -707,6 +707,11 @@ a.unknownlink {
 	margin-top: -15px;
 }
 
+.menucontainer {
+	margin-left: -183px;
+	margin-top: -15px;
+}
+
 #AdminToolsDiv a {
 	display: block;
 }
