@@ -683,9 +683,11 @@ a.unknownlink {
 
 #PageAttachmentsDiv, #AdminToolsDiv {
 	background-color: #fff;
-	border: 1px solid #ccc;
+	border: 1px solid #132E28;
 	padding: .2em;
 	font-size: .8em;
+	margin-left: -183px;
+	margin-top: -15px;
 }
 
 #AdminToolsDiv a {
