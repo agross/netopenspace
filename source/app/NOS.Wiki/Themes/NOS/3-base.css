@@ -220,6 +220,10 @@ table th {
 	border-color: #fff;
 }
 
+table th a {
+	font-weight: bold;
+}
+
 table.generic tr td {
 	border-bottom: 1px solid #ccc;
 	vertical-align: middle;
