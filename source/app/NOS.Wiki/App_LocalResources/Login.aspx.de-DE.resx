@@ -245,7 +245,7 @@
     <comment>Check this if you want the system to remember you next time</comment>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier können Sie sich am Wiki anmelden. Sie sind dann in der Lage Seiten zu erstellen oder zu bearbeiten. Wenn Sie Administrator sind, haben Sie auch die Möglichkeit, das Wiki zu verwalten.&lt;br /&gt;Noch kein Zugang? Sie können hier einen &lt;a href="Register.aspx" title="Neuen Zugang erstellen"&gt;Zugang erstellen&lt;/a&gt;.</value>
+    <value>Hier können Sie sich am Wiki anmelden. Sie sind dann in der Lage Seiten zu erstellen oder zu bearbeiten. Wenn Sie Administrator sind, haben Sie auch die Möglichkeit, das Wiki zu verwalten.&lt;br /&gt;Noch kein Konto vorhanden? &lt;a href="Register.aspx" title="Neues Konto erstellen"&gt;Erstellen Sie ein neues Konto!&lt;/a&gt;</value>
     <comment>Here you can login to the wiki. You'll be able to edit and create pages. If you are an Administrator, you'll also be able to perform administration tasks.&lt;br /&gt;Don't you have an account? You can &lt;a href="Register.aspx" title="Create a new Account"&gt;create one&lt;/a&gt;.</comment>
   </data>
   <data name="lblE-MailResetResource1.Text" xml:space="preserve">

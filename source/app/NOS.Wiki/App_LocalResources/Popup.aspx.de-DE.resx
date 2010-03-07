@@ -209,21 +209,21 @@
     <value />
   </data>
   <data name="chkImageNWResource1.Text" xml:space="preserve">
-    <value>Link in einem neuen Fesnter öffnen</value>
+    <value>Link in einem neuen Fenster öffnen</value>
     <comment>Open link in new window</comment>
   </data>
   <data name="chkImageNWResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkLinkNWResource1.Text" xml:space="preserve">
-    <value>Link in einem neuen Fesnter öffnen</value>
+    <value>Link in einem neuen Fenster öffnen</value>
     <comment>Open link in new window</comment>
   </data>
   <data name="chkLinkNWResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkPageNWResource1.Text" xml:space="preserve">
-    <value>Link in einem neuen Fesnter öffnen</value>
+    <value>Link in einem neuen Fenster öffnen</value>
     <comment>Open link in new window</comment>
   </data>
   <data name="chkPageNWResource1.ToolTip" xml:space="preserve">
