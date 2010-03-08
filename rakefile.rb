@@ -269,6 +269,7 @@ namespace :package do
 					.include("#{sourceDir}/public/EditNotice.cs") \
 					.include("#{sourceDir}/public/Footer.cs") \
 					.include("#{sourceDir}/public/Header.cs") \
+					.include("#{sourceDir}/public/HtmlHead.cs") \
 					.include("#{sourceDir}/public/LoginNotice.cs") \
 					.include("#{sourceDir}/public/PageChangeMessage.cs") \
 					.include("#{sourceDir}/public/PageFooter.cs") \
