@@ -639,6 +639,7 @@ a.editsectionlink:hover {
 	color: #111;
 }
 
+/* HACK */
 a.editsectionlink:empty {
 	border: 0;
 }
@@ -726,10 +727,12 @@ a.unknownlink {
 	border: 1px solid #132E28;
 	padding: .2em;
 	font-size: .8em;
+	/* HACK */
 	margin-left: -183px;
 	margin-top: -15px;
 }
 
+/* HACK */
 .menucontainer {
 	margin-left: -183px;
 	margin-top: -15px;
