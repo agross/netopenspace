@@ -44,7 +44,11 @@ class MSDeploy
 			if value.kind_of? Enumerable
 				switches += ":"
 				switches += value.collect { |key, value|
-					"#{key}#{"=#{value}" unless value.kind_of? TrueClass or value.kind_of? FalseClass}" if value
+					if value
+						"#{key}#{"=#{value}" unless value.kind_of? TrueClass or value.kind_of? FalseClass}"
+					else
+						key
+					end
 				}.join ","
 			end
 			

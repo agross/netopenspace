@@ -39,10 +39,10 @@ production:
   app:
     iis:
       custom_errors: "RemoteOnly"
-      cookie_path: "/2010-testing/"
+      cookie_path: "/2010-testing"
   deployment:
     iis:
-      app_name: "(agross) netopenspace.de/2010-testing"
+      app_name: "(agross) netopenspace.de"
     connection:
       wmsvc: true
       allow_untrusted_https: false

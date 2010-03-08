@@ -215,7 +215,7 @@ end
 
 desc 'Packages the build artifacts'
 namespace :package do
-	desc 'Prepares the web application for packaging'
+	desc 'Prepares the year\'s web application for packaging'
 	task :webapp => ['compile:app'] do
 		sourceDir = "#{configatron.dir.app}/#{configatron.project}.Wiki"
 		webAppFiles = FileList.new() \
@@ -257,11 +257,22 @@ namespace :package do
 
 		webAppFiles.copy_hierarchy \
 			:source_dir => sourceDir, 
-			:target_dir => configatron.dir.for_deployment.to_absolute
+			:target_dir => "Wiki".in(configatron.dir.for_deployment).to_absolute
+	end
+	
+	desc 'Prepares the root web application for packaging'
+	task :root => ['compile:app'] do
+		sourceDir = "#{configatron.dir.app}/#{configatron.project}.Root"
+		rootFiles = FileList.new() \
+					.include("#{sourceDir}/**/*.*")
+
+		rootFiles.copy_hierarchy \
+			:source_dir => sourceDir, 
+			:target_dir => "Root".in(configatron.dir.for_deployment).to_absolute
 	end
 
 	desc 'Creates a zipped archive for deployment'
-	task :zip => [:webapp] do
+	task :zip => [:webapp, :root] do
 		sz = SevenZip.new \
 			:tool => configatron.tools.zip,
 			:zip_name => configatron.deployment.package
@@ -304,19 +315,20 @@ task :deploy => ['package:all'] do
 		:log_file => configatron.deployment.logfile,
 		:verb => :sync,
 		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:source => Dictionary[:contentPath, "App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
+		:source => Dictionary[:contentPath, "Wiki/App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
 		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}/App_Offline.htm".escape
+			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/App_Offline.htm".escape
 			})
-				
+
+	# Deploy web application.		
 	MSDeploy.run \
 		:tool => configatron.tools.msdeploy,
 		:log_file => configatron.deployment.logfile,
 		:verb => :sync,
 		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:source => Dictionary[:contentPath, configatron.dir.for_deployment.to_absolute.escape],
+		:source => Dictionary[:contentPath, "Wiki".in(configatron.dir.for_deployment).to_absolute.escape],
 		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name.escape}"
+			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}".escape
 			}),
 		:usechecksum => true,
 		:skip =>[
@@ -336,6 +348,19 @@ task :deploy => ['package:all'] do
 				:absolutePath, "\\\\public.*$"
 			]
 		]
+		
+	# Deploy root.
+	MSDeploy.run \
+		:tool => configatron.tools.msdeploy,
+		:log_file => configatron.deployment.logfile,
+		:verb => :sync,
+		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+		:source => Dictionary[:contentPath, "Root".in(configatron.dir.for_deployment).to_absolute.escape],
+		:dest => remote.merge({
+			:contentPath => "#{configatron.deployment.iis.app_name}".escape
+			}),
+		:usechecksum => true,
+		:enableRule => ["DoNotDeleteRule", "SkipNewerFilesRule"]
 	
 	MSDeploy.run \
 		:tool => configatron.tools.msdeploy,
@@ -343,6 +368,6 @@ task :deploy => ['package:all'] do
 		:verb => :delete,
 		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
 		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}/App_Offline.htm".escape
+			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/App_Offline.htm".escape
 			})
 end
