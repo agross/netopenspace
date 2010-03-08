@@ -95,6 +95,7 @@ namespace :generate do
 		
 		Minify.css \
 			:tool => configatron.tools.ajaxmin,
+			:opts => ["-comments:hacks"],
 			:source => css,
 			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.css"
 	end
