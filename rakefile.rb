@@ -256,6 +256,7 @@ namespace :package do
 					.include("#{sourceDir}/**/*.htm") \
 					.include("#{sourceDir}/**/*.html") \
 					.include("#{sourceDir}/**/*.swf") \
+					.exclude("#{sourceDir}/Themes/#{configatron.project}/includes/") \
 					.include("#{sourceDir}/public/Plugins/**/*.cs") \
 					.include("#{sourceDir}/public/Snippets/") \
 					.include("#{sourceDir}/public/Upload/") \
