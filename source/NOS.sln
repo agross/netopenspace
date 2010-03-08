@@ -22,6 +22,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Wiki", "app\NOS.Wiki\",
 		VWDPort = "1071"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Root", "app\NOS.Root\", "{A042FB6F-5A70-409D-A1DF-31A1092196A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/NOS.Root"
+		Debug.AspNetCompiler.PhysicalPath = "app\NOS.Root\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\NOS.Root\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/NOS.Root"
+		Release.AspNetCompiler.PhysicalPath = "app\NOS.Root\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\NOS.Root\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1072"
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOS.TabMenu", "app\NOS.TabMenu\NOS.TabMenu.csproj", "{5061E26D-2408-4C19-9F4F-CCCBF96482DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOS.Registration", "app\NOS.Registration\NOS.Registration.csproj", "{9C6A19D4-CB96-4599-8D69-0CAF206607D8}"
@@ -38,6 +59,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9042FB6F-5A70-409D-A1DF-31A1092196A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9042FB6F-5A70-409D-A1DF-31A1092196A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A042FB6F-5A70-409D-A1DF-31A1092196A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A042FB6F-5A70-409D-A1DF-31A1092196A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Release|Any CPU.ActiveCfg = Release|Any CPU

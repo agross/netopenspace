@@ -1,10 +1,8 @@
 <%@ WebHandler Language="C#" Class="JSONPHandler" %>
 
 using System;
-using System.Globalization;
 using System.IO;
 using System.Web;
-using System.Web.Caching;
 
 public class JSONPHandler : IHttpHandler
 {
