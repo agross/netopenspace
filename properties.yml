@@ -37,6 +37,8 @@ development:
 
 production:
   default_to: global
+  build:
+    configuration: Release  
   app:
     iis:
       custom_errors: "RemoteOnly"
