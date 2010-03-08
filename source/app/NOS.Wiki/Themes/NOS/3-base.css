@@ -585,6 +585,14 @@ div.draftmanagement {
 	width: 49%;
 }
 
+#EditCommentDiv input {
+	display: block;
+}
+
+#EditCommentDiv br {
+	display: none;
+}
+
 #CategoriesDiv, #MainAttachmentManagerDiv {
 	padding-right: 10px;
 }
