@@ -797,5 +797,57 @@ a.edit {
 }
 
 a.delete {
-	background-image: url(Images/MessageDelete.png);
+	background-image: url(images/message-delete.png);
+}
+
+input.txtsearchbox {
+	background: transparent url(images/search.png) scroll no-repeat 3px center;
+	padding-left: 20px;
+}
+
+#SearchControlsDiv {
+	margin-top: 1.5em;
+}
+
+#SearchControlsDiv input.textbox {
+	width: 80%;
+}
+
+#SearchControlsDiv input.textbox,
+#SearchControlsDiv input.button {
+	font-size: 1.5em;
+}
+
+#RadiosDiv {
+	margin-top: .5em;
+}
+
+#SearchStatsDiv {
+	margin-top: 1em;
+	color: #aaa;
+}
+
+#SearchStatsDiv b:last-child {
+	color: #000;
+}
+
+h3.searchresultpage,
+h3.searchresultmessage,
+h3.searchresultfile,
+h3.searchresultattachment {
+	margin-top: 1em;
+	background: transparent url(images/type-page.png) scroll no-repeat left 30%;
+	padding-left: 18px;
+}
+
+h3.searchresultmessage {
+	background-image: url(images/type-message.png);
+}
+
+h3.searchresultfile {
+	background-image: url(images/type-file.png);
+}
+
+h3.searchresultattachment {
+	background-image: url(images/type-attachment.png);
 }
