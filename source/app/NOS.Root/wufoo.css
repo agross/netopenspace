@@ -1,0 +1,71 @@
+@import url("2009/Themes/NOS/3-base.css");
+
+body, form.wufoo {
+	background: none;
+}
+
+form.wufoo {
+	font-family: Segoe UI, Verdana, Tahoma, Arial, Sans-Serif;
+	padding: inherit;
+}
+
+form.wufoo h2 {
+	font-family: Georgia, Palatino, Serif !important;
+	font-weight: inherit !important;
+	margin: 0;
+}
+
+form.wufoo .info {
+	margin: inherit;
+}
+
+form.wufoo .info div {
+	color: inherit !important;
+	font-family: inherit !important;
+	font-size: inherit !important;
+	line-height: inherit !important;
+	margin: 0 !important;
+}
+
+form.wufoo li {
+	padding: 0;
+	margin: .5em 0;
+}
+
+form.wufoo label {
+	font-size: 100% !important;
+}
+
+form.wufoo input.text, form.wufoo textarea.textarea {
+	background-image: none !important;
+}
+
+form.wufoo .buttons input {
+	font-weight: bold;
+	font-size: 100% !important;
+}
+
+.embed .confirm h2 {
+	padding-bottom: 9999px !important;
+}
+
+#errorLi {
+	border: 0 !important;
+}
+
+form.wufoo li.error {
+	background-color: transparent !important;
+}
+
+form.wufoo p.error {
+	font-size: 100% !important;
+	line-height: 115% !important;
+}
+
+.embed a.power, .embed a.power strong {
+	height: 0 !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: #fff !important;
+}
