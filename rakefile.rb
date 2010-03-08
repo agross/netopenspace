@@ -78,11 +78,31 @@ namespace :generate do
 			QuickTemplate.new(template).exec(configatron)
 		end
 	end
+	
+	desc 'Minifies and packages up JavaScript files'
+	task :javascript do
+		scripts = FileList.new("#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/includes/*.js")
+		
+		Minify.javascript \
+			:tool => configatron.tools.ajaxmin,
+			:source => scripts,
+			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.js"
+	end
+	
+	desc 'Minifies and packages up CSS files'
+	task :css do
+		css = FileList.new("#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/includes/*.css")
+		
+		Minify.css \
+			:tool => configatron.tools.ajaxmin,
+			:source => css,
+			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.css"
+	end
 end
 
 namespace :compile do
 	desc 'Compiles the application'
-	task :app => [:clobber, 'generate:version', 'generate:config'] do
+	task :app => [:clobber, 'generate:version', 'generate:config', 'generate:javascript', 'generate:css'] do
 		FileList.new("#{configatron.dir.app}/**/*.csproj").each do |project|
 			MSBuild.compile \
 				:project => project,

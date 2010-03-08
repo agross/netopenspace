@@ -22,6 +22,7 @@ global:
   deployment:
     logfile: build/msdeploy.log
   tools:
+    ajaxmin: tools/AjaxMin/ajaxmin.exe
     mspec: tools/Machine.Specifications/mspec.exe
     cloc: tools/CLOC/cloc.exe
     msdeploy: tools/MSDeploy/msdeploy.exe
