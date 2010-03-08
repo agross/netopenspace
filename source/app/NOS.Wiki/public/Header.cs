@@ -28,7 +28,7 @@
 					<span class="pos8" id="workspaces">
 						<span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span>
 						<ul class="submenu smallest" style="display: none">
-							<li>[Arbeitsbereich ALT.NET|ALT.NET]</li>
+							<li>[Arbeitsbereich ALT_NET|ALT.NET]</li>
 							<li>[Arbeitsbereich Clean Code Developer|Clean Code]</li>
 							<li>[Arbeitsbereich Language Oriented Programming|Language-Oriented Programming]</li>
 							<li>[Arbeitsbereich Mobile Computing|Mobile Computing]</li>
