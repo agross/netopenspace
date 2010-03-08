@@ -352,7 +352,7 @@ Header
 }
 
 #header .basictab li .language a {
-	background-image: url(images/layout/language.png);
+	background-image: url(images/language.png);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: 3px center;
@@ -520,17 +520,17 @@ ScrewTurn Wiki-related styles
 }
 
 .resulterror {
-	background: transparent url(images/layout/error.png) no-repeat scroll left center;
+	background: transparent url(images/error.png) no-repeat scroll left center;
 	color: red;
 }
 
 .resultok {
-	background: transparent url(images/layout/success.png) no-repeat scroll left center;
+	background: transparent url(images/success.png) no-repeat scroll left center;
 	color: green;
 }
 
 #NavigationSADiv {
-	background: #fff url(images/layout/go-back.png) no-repeat scroll 1em center;
+	background: #fff url(images/go-back.png) no-repeat scroll 1em center;
 	padding-left: 35px;
 	border-bottom: 1px solid #ccc;
 }
@@ -615,7 +615,7 @@ div.draftmanagement {
 }
 
 a.externallink {
-	background-image: url(images/ExternalLink.gif);
+	background-image: url(images/link-external.gif);
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 14px;
@@ -667,27 +667,27 @@ input.inactivenotification {
 }
 
 input.activenotification {
-	background-image: url(Images/EmailNotifOn.png);
+	background-image: url(images/email-notification-on.png);
 }
 
 input.inactivenotification {
-	background-image: url(Images/EmailNotifOff.png);
+	background-image: url(images/email-notification-off.png);
 }
 
 input.activenotification.discuss {
-	background-image: url(Images/EmailNotifOn-Discussion.png);
+	background-image: url(images/email-notification-discussion-on.png);
 }
 
 input.inactivenotification.discuss {
-	background-image: url(Images/EmailNotifOff-Discussion.png);
+	background-image: url(images/email-notification-discussion-off.png);
 }
 
 #RssLink {
-	background-image: url(Images/RSS.png);
+	background-image: url(images/RSS.png);
 }
 
 #PrintLink {
-	background-image: url(Images/Print.png);
+	background-image: url(images/print.png);
 	margin-left: .5em;
 }
 
@@ -716,7 +716,7 @@ div.transcludedpage {
 
 a.unknownlink {
 	color: #a12d0d;
-	background-image: url(images/layout/broken-link.png);
+	background-image: url(images/link-broken.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 19px;
@@ -787,13 +787,13 @@ div.reply {
 }
 
 a.reply, a.edit, a.delete {
-	background: transparent url(Images/MessageReply.png) scroll no-repeat left center;
+	background: transparent url(images/message-reply.png) scroll no-repeat left center;
 	padding-left: 12px;
 	margin-left: 1em;
 }
 
 a.edit {
-	background-image: url(Images/MessageEdit.png);
+	background-image: url(images/message-edit.png);
 }
 
 a.delete {
