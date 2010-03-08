@@ -1,9 +1,9 @@
 ﻿<div id="footer">
 	<div class="content">
 		<div class="logos">
-* [image|Dieses Wiki steht unter der Creative Commons-Lizenz|{UP}Layout/logo-cc-wiki.png|http://creativecommons.org/licenses/by-sa/3.0/deed.de]
-* [image|In Kooperation mit der .NET User Group Leipzig|{UP}Layout/logo-dnug-leipzig.gif|http://dotnet-leipzig.de/]
-* [image|Powered by ScrewTurn Wiki|{UP}Layout/logo-screwturn.gif|http://www.screwturn.eu/]
+* [image|Dieses Wiki steht unter der Creative Commons-Lizenz|{THEMEPATH}page/images/layout/logo-cc-wiki.png|http://creativecommons.org/licenses/by-sa/3.0/deed.de]
+* [image|In Kooperation mit der .NET User Group Leipzig|{THEMEPATH}page/images/layout/logo-dnug-leipzig.gif|http://dotnet-leipzig.de/]
+* [image|Powered by ScrewTurn Wiki|{THEMEPATH}page/images/layout/logo-screwturn.gif|http://www.screwturn.eu/]
 * [Impressum]
 		</div>
 		Das Design dieser Seite wurde von [http://therightstuff.de/|Alexander Groß] erstellt.
