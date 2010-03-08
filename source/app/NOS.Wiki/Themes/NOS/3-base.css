@@ -386,7 +386,8 @@ Sidebar
 	color: #a12d0d;
 }
 
-#SidebarDiv .editsectionlink {
+#SidebarDiv .editsectionlink,
+#SidebarContentDiv big {
 	display: none;
 }
 
