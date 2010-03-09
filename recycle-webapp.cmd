@@ -1,1 +1,1 @@
-@build.cmd generate:config
+@build.cmd generate:config generate:css generate:javascript
