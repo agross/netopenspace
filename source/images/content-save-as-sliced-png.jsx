@@ -6,19 +6,19 @@ var logoBounds = new Array(6, 6, 506, 140);
 var contentBounds = new Array(0, 143, 949, 144);
 var footerBounds = new Array(6, 144, 943, 150);
 
-cropAndSave(sourceDocument, headerBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\images\\layout\\header-background.png", function(doc) {
+cropAndSave(sourceDocument, headerBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\page\\images\\layout\\header-background.png", function(doc) {
 	doc.layerSets["Logo"].visible = false;
 });
 
-cropAndSave(sourceDocument, logoBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\images\\layout\\header-logo.png");
-cropAndSave(sourceDocument, contentBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\images\\layout\\content-border.png");
-cropAndSave(sourceDocument, footerBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\images\\layout\\footer-background.png");
+cropAndSave(sourceDocument, logoBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\page\\images\\layout\\header-logo.png");
+cropAndSave(sourceDocument, contentBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\page\\images\\layout\\content-border.png");
+cropAndSave(sourceDocument, footerBounds, "..\\app\\NOS.Wiki\\Themes\\NOS\\page\\images\\layout\\footer-background.png");
 
 function cropAndSave(sourceDocument, bounds, filename, processClone)
 {
 	doc = sourceDocument.duplicate("current");
 
-	if (typeof(processClone) !== "undefined")
+	if (processClone)
 	{
 		processClone(doc);
 	}
@@ -36,6 +36,12 @@ function saveAsPng(sourceDocument, document, filename)
 
 	png = new PNGSaveOptions();
 	png.interlaced = false;
+	png.embedColorProfile = false; 
+	png.formatOptions = FormatOptions.STANDARDBASELINE;
+	png.matte = MatteType.NONE;
+	png.quality = 1;
+	png.PNG8 = false;
+	png.transparency = true; 
 
 	document.saveAs(file, png, true, Extension.LOWERCASE);
 }
