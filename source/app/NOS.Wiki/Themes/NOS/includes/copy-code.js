@@ -32,7 +32,7 @@
 					{
 						width: 77,
 						height: 20,
-						backgroundAsset: "Themes/NOS/images/layout/copy-code.png",
+						backgroundAsset: "Themes/NOS/page/images/layout/copy-code.png",
 						clipboard: $.trim($(pre).text()),
 						callback: "copyCode.flash(" + $(pre).attr("id")  + ")"
 					}
