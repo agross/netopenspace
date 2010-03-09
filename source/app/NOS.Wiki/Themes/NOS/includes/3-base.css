@@ -728,6 +728,15 @@ a.unknownlink {
 	padding-right: 19px;
 }
 
+#PageAttachmentsLink, #AdminToolsLink {
+	background: transparent url(images/dropdown.png) scroll no-repeat right center;
+	padding-right: 16px !important;
+}
+
+#PageAttachmentsLink:hover, #AdminToolsLink:hover {
+	background-image: url(images/dropdown-selected.png);
+}
+
 #PageAttachmentsDiv, #AdminToolsDiv {
 	background-color: #fff;
 	border: 1px solid #132E28;
