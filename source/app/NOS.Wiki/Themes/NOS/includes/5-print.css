@@ -28,7 +28,7 @@
 		padding: 0;
 	}
 
-	#HeaderDiv, #SidebarDiv, #FooterDiv, #EditHistoryLinkDiv, #PageInfoDiv, #RssLinkDiv, #PrintLinkDiv, a.editsectionlink {
+	#HeaderDiv, #HeaderSADiv, #SidebarDiv, #FooterDiv, #FooterSADiv, #EditHistoryLinkDiv, #NavigationSADiv, #PageInfoDiv, #RssLinkDiv, #PrintLinkDiv, a.editsectionlink {
 		display: none;
 	}
 
