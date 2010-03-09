@@ -509,15 +509,6 @@ Footer
 	margin-left: 1em;
 }
 
-#FooterDiv br,
-#FooterSADiv br {
-	display: none;
-}
-
-#footer .content br {
-	display: block;
-}
-
 /*
 ScrewTurn Wiki-related styles
 ------------------------------------------------------------------------------------------------------------------------
