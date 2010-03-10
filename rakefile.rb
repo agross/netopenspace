@@ -87,7 +87,7 @@ namespace :generate do
 			:tool => configatron.tools.ajaxmin,
 			:pretty => configatron.app.debugging_enabled,
 			:source => scripts,
-			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.js"
+			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/#{configatron.project}.generated.js"
 	end
 	
 	desc 'Minifies and packages up CSS files'
@@ -99,7 +99,7 @@ namespace :generate do
 			:pretty => configatron.app.debugging_enabled,
 			:opts => ["-comments:hacks"],
 			:source => css,
-			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.css"
+			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/#{configatron.project}.generated.css"
 	end
 end
 

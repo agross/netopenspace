@@ -1,5 +1,5 @@
 ﻿<en-us>
-====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Subscribe to the RSS Feed of {WIKITITLE}"><img src="{THEMEPATH}page/images/RSS-16x16.png" alt="RSS" title="Subscribe to the RSS Feed of {WIKITITLE}"/></a></div>====
+====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Subscribe to the RSS Feed of {WIKITITLE}"><img src="{THEMEPATH}images/RSS-16x16.png" alt="RSS" title="Subscribe to the RSS Feed of {WIKITITLE}"/></a></div>====
 * '''[MainPage|Main Page]'''
 * [News]
 
@@ -28,7 +28,7 @@
 </en-us>
 
 <de-de>
-====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Den RSS-Feed von {WIKITITLE} abonnieren"><img src="{THEMEPATH}page/images/RSS-16x16.png" alt="RSS" title="Den RSS-Feed von {WIKITITLE} abonnieren"/></a></div>====
+====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Den RSS-Feed von {WIKITITLE} abonnieren"><img src="{THEMEPATH}images/RSS-16x16.png" alt="RSS" title="Den RSS-Feed von {WIKITITLE} abonnieren"/></a></div>====
 * '''[MainPage|Hauptseite]'''
 * [News|Aktuelles]
 
