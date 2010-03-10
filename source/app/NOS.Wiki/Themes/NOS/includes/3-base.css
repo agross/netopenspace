@@ -885,3 +885,8 @@ table.recentchanges {
 	width: 95.5%;
 	height: 15em;
 }
+
+p.excerpt b.searchkeyword, b.searchkeyword {
+	font-weight: normal;
+	background-color: #FFEE64;
+}
