@@ -12,7 +12,7 @@
 
 	var developmentFilter = function(item)
 	{
-		return !(!document.URL.startsWith("http://nos.local") && item.Private);
+		return !(!(/^http:\/\/nos\.local/i.test(document.URL)) && item.Private);
 	}
 	
 	var localEventFilter = function(item)
