@@ -27,7 +27,7 @@
 				return value;
 			}
 			
-			var opacity	= function(i, limit, opaqueCount, minOpacity, maxOpacity)
+			var opacity = function(i, limit, opaqueCount, minOpacity, maxOpacity)
 			{
 				if (i <= opaqueCount)
 				{
