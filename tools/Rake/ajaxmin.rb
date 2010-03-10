@@ -24,6 +24,8 @@ class Minify
 		destination = attributes.fetch(:destination)
 		opts = attributes.fetch(:opts, [])
 		
+		opts.push "-pretty:4" if attributes.fetch(:pretty, false)
+		
 		FileUtils.mkdir_p destination.dirname
 		
 		ajaxmin = tool.to_absolute
