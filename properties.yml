@@ -18,7 +18,7 @@ global:
     password: <%= ENV['ADMIN_PASSWORD'] || 'password' %>
     iis:
       custom_errors: "Off"
-      cookie_path: ""
+      cookie_path: /
       root_url: http://nos.local/
   deployment:
     logfile: build/msdeploy.log
