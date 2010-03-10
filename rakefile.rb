@@ -301,7 +301,8 @@ namespace :package do
 	task :root => ['compile:app'] do
 		sourceDir = "#{configatron.dir.app}/#{configatron.project}.Root"
 		rootFiles = FileList.new() \
-					.include("#{sourceDir}/**/*.*")
+					.include("#{sourceDir}/**/*.*") \
+					.exclude("**/*.template")
 
 		rootFiles.copy_hierarchy \
 			:source_dir => sourceDir, 
@@ -354,7 +355,7 @@ task :deploy => ['package:all'] do
 		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
 		:source => Dictionary[:contentPath, "Wiki/App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
 		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/App_Offline.htm".escape
+			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
 			})
 
 	# Deploy web application.		
@@ -377,12 +378,12 @@ task :deploy => ['package:all'] do
 			Dictionary[
 				:objectName, "filePath",
 				:skipAction, "Delete",
-				:absolutePath, "\\\\public\\\\.*$"
+				:absolutePath, "/public\\\\.*$"
 			],
 			Dictionary[
 				:objectName, "dirPath",
 				:skipAction, "Delete",
-				:absolutePath, "\\\\public.*$"
+				:absolutePath, "/public.*$"
 			]
 		]
 		
@@ -405,6 +406,6 @@ task :deploy => ['package:all'] do
 		:verb => :delete,
 		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
 		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/App_Offline.htm".escape
+			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
 			})
 end

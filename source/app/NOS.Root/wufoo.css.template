@@ -1,4 +1,4 @@
-@import url("2010/Themes/NOS/page/NOS.generated.css");
+@import url("@configatron.app.iis.root_url@@configatron.app.iis.cookie_path@Themes/@configatron.project@/@configatron.project@.generated.css");
 
 body, form.wufoo {
 	background: none;
@@ -7,11 +7,13 @@ body, form.wufoo {
 form.wufoo {
 	font-family: Segoe UI, Verdana, Tahoma, Arial, Sans-Serif;
 	padding: inherit;
+	width: 100%;
 }
 
 form.wufoo h2 {
 	font-family: Georgia, Palatino, Serif !important;
 	font-weight: inherit !important;
+	font-size: 1.4em !important;
 	margin: 0;
 }
 

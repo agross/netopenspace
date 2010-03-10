@@ -18,6 +18,7 @@ local-properties.yml
 /source/app/NOS.Wiki/public/Plugins/NOS.*.dll
 /source/app/NOS.Wiki/public/Plugins/NOS.*.pdb
 /source/app/NOS.Wall/index.htm
+/source/app/NOS.Root/wufoo.css
 
 # ScrewTurn instance-specific files.
 /source/app/NOS.Wiki/public/Attachments/
