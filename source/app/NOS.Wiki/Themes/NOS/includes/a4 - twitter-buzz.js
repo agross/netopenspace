@@ -28,21 +28,22 @@
 								timeout: 60000,
 								buildTweet: function() {
 									var element = 
-										$('<a>')
+										$('<div>')
+										.append($('<a>')
 											.attr('href', 'http://twitter.com/' + this.from_user)
 											.attr('target', '_blank')
 											.attr('title', this.from_user)
 											.append($('<img>')
-												.attr('src', this.profile_image_url))
-										.after($('<p>')
+												.attr('src', this.profile_image_url)))
+										.append($('<p>')
 											.addClass('text')
 											.html(this.text.linkify().linkuser().linktag()))
-										.after($('<p>')
+										.append($('<p>')
 											.addClass('time')
 											.append($('<a>')
 												.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
 												.attr('target', '_blank')
-												.text(this.created_at.prettyDate())))
+												.text(this.created_at.prettyDate())));
 									return element;
 								},
 								showTweet: function(parent)

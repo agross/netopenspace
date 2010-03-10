@@ -48,10 +48,11 @@
 					buildTweet: function() {
 						var element = 
 							$('<div>')
+							.append($('<div>')
 								.addClass('bubble')
 								.append($('<p>')
-									.html(this.text.linkify().linkuser().linktag()))
-							.after($('<div>')
+									.html(this.text.linkify().linkuser().linktag())))
+							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')
 									.attr('href', 'http://twitter.com/' + this.from_user)
