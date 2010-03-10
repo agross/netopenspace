@@ -319,6 +319,7 @@
     <a href="#" onclick="javascript:return InsertMarkup('{WIKIVERSION}');" class="menulink">{WikiVersion}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{MAINURL}');" class="menulink">{MainURL}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{PAGECOUNT}');" class="menulink">{PageCount}</a>
+    <a href="#" onclick="javascript:return InsertMarkup('{PAGECOUNT(*)}');" class="menulink">{PageCount(*)}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{USERNAME}');" class="menulink">{Username}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{LOGINLOGOUT}');" class="menulink">{LoginLogout}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{CLEAR}');" class="menulink">{Clear}</a>

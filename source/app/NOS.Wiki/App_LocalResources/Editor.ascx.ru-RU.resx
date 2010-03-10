@@ -121,13 +121,13 @@
     <value />
   </data>
   <data name="btnBiggerMarkupVisualResource3.ToolTip" xml:space="preserve">
-    <value>Увеличение размера редактора</value>
+    <value>Увеличение размера окна редактора</value>
   </data>
   <data name="btnSmallerMarkupVisualResource3.AlternateText" xml:space="preserve">
     <value />
   </data>
   <data name="btnSmallerMarkupVisualResource3.ToolTip" xml:space="preserve">
-    <value>Уменьшение размера редактора</value>
+    <value>Уменьшение размера окна редактора</value>
   </data>
   <data name="btnBiggerMarkupResource3.AlternateText" xml:space="preserve">
     <value />

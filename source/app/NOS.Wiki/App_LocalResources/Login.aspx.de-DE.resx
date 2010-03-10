@@ -248,7 +248,7 @@
     <value>Hier können Sie sich am Wiki anmelden. Sie sind dann in der Lage Seiten zu erstellen oder zu bearbeiten. Wenn Sie Administrator sind, haben Sie auch die Möglichkeit, das Wiki zu verwalten.&lt;br /&gt;Noch kein Konto vorhanden? &lt;a href="Register.aspx" title="Neues Konto erstellen"&gt;Erstellen Sie ein neues Konto!&lt;/a&gt;</value>
     <comment>Here you can login to the wiki. You'll be able to edit and create pages. If you are an Administrator, you'll also be able to perform administration tasks.&lt;br /&gt;Don't you have an account? You can &lt;a href="Register.aspx" title="Create a new Account"&gt;create one&lt;/a&gt;.</comment>
   </data>
-  <data name="lblE-MailResetResource1.Text" xml:space="preserve">
+  <data name="lblEmailResetResource1.Text" xml:space="preserve">
     <value>E-Mail</value>
   </data>
   <data name="lblLogoutResource1.Text" xml:space="preserve">
@@ -282,10 +282,10 @@
     <value>Unbenannte Seite</value>
     <comment>Untitled Page</comment>
   </data>
-  <data name="txtEMailResetResource1.Text" xml:space="preserve">
+  <data name="txtEmailResetResource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEMailResetResource1.ToolTip" xml:space="preserve">
+  <data name="txtEmailResetResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txtPasswordResource1.Text" xml:space="preserve">

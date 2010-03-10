@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lnkCategoriesResource1.Text" xml:space="preserve">
-    <value>Сторінки категорії</value>
+    <value>Категорії сторінок</value>
   </data>
   <data name="lnkCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Переглянути всі сторінки Категорії</value>
+    <value>Переглянути всі Категорії сторінок</value>
   </data>
   <data name="lnkSearchResource1.Text" xml:space="preserve">
     <value>Пошук</value>

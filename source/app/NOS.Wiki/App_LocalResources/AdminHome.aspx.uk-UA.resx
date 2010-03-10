@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
-    <value>Send Bulk Email</value>
+    <value>Здійснити масову розсилку</value>
   </data>
   <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
-    <value>You must select at least one group</value>
+    <value>Оберіть хоча б одну групу...</value>
   </data>
   <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to all users of one or more groups.</value>
+    <value>Ви маєте можливість надіслати повідомлення усім користувачам однієї чи декількох груп.</value>
   </data>
   <data name="lblBulkEmailResource1.Text" xml:space="preserve">
-    <value>Mass Email</value>
+    <value>Масова розсилка</value>
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
-    <value>Subject</value>
+    <value>Тема</value>
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Потрібен текст повідомлення...</value>
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Потрібна тема повідомлення...</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
     <value>Перезапуск Аплікації</value>

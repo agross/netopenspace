@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
-    <value>Regular Expression for validating usernames and group names</value>
+    <value>Регулярные выражения для валидации юзернеймов и названий групп</value>
   </data>
   <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
-    <value>Regular Expression for validating passwords</value>
+    <value>Регулярные выражения для валидации паролей</value>
   </data>
   <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
-    <value>Display anchors for pages' sections</value>
+    <value>Отображать анкоры для категорий страниц</value>
   </data>
   <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
     <value />

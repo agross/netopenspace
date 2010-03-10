@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblEditSnippetWarningResource1.Text" xml:space="preserve">
-    <value>&lt;div class='warning' style='float: right;'&gt;You are now editing a snippet. After you are done,&lt;br /&gt;it is &lt;b&gt;strongly&lt;/b&gt; suggested to rebuild the search engine index in the &lt;i&gt;Admin Home&lt;/i&gt; page.&lt;/div&gt;</value>
+    <value>&lt;div class='warning' style='float: right;'&gt;Вы редактируете свой сниппет. После этого,&lt;br /&gt;it is &lt;b&gt;настоятельно&lt;/b&gt; рекомендуем перестроить поисковый индекс на странице &lt;i&gt;Администрирования&lt;/i&gt;.&lt;/div&gt;</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
     <value>Отмена</value>

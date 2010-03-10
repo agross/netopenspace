@@ -121,7 +121,7 @@
     <value />
   </data>
   <data name="btnBiggerMarkupVisualResource3.ToolTip" xml:space="preserve">
-    <value>Збільшення розміру редактора</value>
+    <value>Збільшення розміру вікна редактора</value>
   </data>
   <data name="btnSmallerMarkupVisualResource3.AlternateText" xml:space="preserve">
     <value />
@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="btnWikiMarkupResource3.Text" xml:space="preserve">
-    <value>Мова форматування (WikiMarkup)</value>
+    <value>Мова форматування-розмічування (WikiMarkup)</value>
   </data>
   <data name="btnWikiMarkupResource3.ToolTip" xml:space="preserve">
     <value />

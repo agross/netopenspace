@@ -163,7 +163,7 @@
     <value>Включити</value>
   </data>
   <data name="btnEnableResource1.ToolTip" xml:space="preserve">
-    <value>Відключити цю Несучу</value>
+    <value>Включити цю Несучу</value>
   </data>
   <data name="btnMigrateFilesResource1.Text" xml:space="preserve">
     <value>Перенести</value>

@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnNoLimitResource1.Text" xml:space="preserve">
-    <value>Display all</value>
+    <value>Відображати все</value>
   </data>
   <data name="btnNoLimitResource1.ToolTip" xml:space="preserve">
-    <value>Display all log entries (might take a few seconds)</value>
+    <value>Відображати всі записи логу (може знадобитися деякий час)</value>
   </data>
   <data name="lblLimitResource1.Text" xml:space="preserve">
-    <value>Currently displaying only 100 log entries &amp;mdash;</value>
+    <value>Одночасно відображати тільки 100 записів логу &amp;mdash;</value>
   </data>
   <data name="btnClearLogResource1.Text" xml:space="preserve">
     <value>Звільнити місце</value>

@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Повний перелік Сторінок цієї Категорії в Просторі Імен</value>
+    <value>Повний перелік Категорій Сторінок в цьому Просторі Імен</value>
   </data>
   <data name="lblCatListResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Сторінки категорії</value>
+    <value>Категорії Сторінок</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Untitled Page</value>

@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
-    <value>Send Bulk Email</value>
+    <value>Осуществить массовую рассылку</value>
   </data>
   <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
-    <value>You must select at least one group</value>
+    <value>Выберите хотя бы одну группу...</value>
   </data>
   <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to all users of one or more groups.</value>
+    <value>Вы имеете возможность отправить сообщение всем пользователям одной или нескольких групп.</value>
   </data>
   <data name="lblBulkEmailResource1.Text" xml:space="preserve">
-    <value>Mass Email</value>
+    <value>Массовая рассылка</value>
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
-    <value>Subject</value>
+    <value>Тема</value>
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Должен быть текст сообщения...</value>
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Необходима тема сообщения...</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
     <value>Перегрузить Аппликацию</value>

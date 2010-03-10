@@ -159,9 +159,9 @@
     <value>Anzeigename:</value>
     <comment>Display Name</comment>
   </data>
-  <data name="lblEditE-MailPasswordResource1.Text" xml:space="preserve">
+  <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
     <value>Anzeigename, E-Mail-Adresse und Passwort bearbeiten</value>
-    <comment>Edit Display Name, E-Mail and Password</comment>
+    <comment>Edit Display Name, Email and Password</comment>
   </data>
   <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
     <value />
@@ -217,24 +217,24 @@
   <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="cvE-Mail1Resource1.ErrorMessage" xml:space="preserve">
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
     <value>E-Mail-Adressen sind nicht identisch</value>
-    <comment>E-Mail addresses are not equal</comment>
+    <comment>Email addresses are not equal</comment>
   </data>
-  <data name="cvE-Mail1Resource1.Text" xml:space="preserve">
+  <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="cvE-Mail1Resource1.ToolTip" xml:space="preserve">
+  <data name="cvEmail1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="cvE-Mail2Resource1.ErrorMessage" xml:space="preserve">
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
     <value>E-Mail-Adressen sind nicht identisch</value>
-    <comment>E-Mail addresses are not equal</comment>
+    <comment>Email addresses are not equal</comment>
   </data>
-  <data name="cvE-Mail2Resource1.Text" xml:space="preserve">
+  <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="cvE-Mail2Resource1.ToolTip" xml:space="preserve">
+  <data name="cvEmail2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
@@ -269,7 +269,7 @@
   </data>
   <data name="lblNotificationsResource1.Text" xml:space="preserve">
     <value>E-Mail-Benachrichtungen</value>
-    <comment>E-Mail Notification Settings</comment>
+    <comment>Email Notification Settings</comment>
   </data>
   <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
     <value />
@@ -277,7 +277,7 @@
   <data name="lblNotificationsResultResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblSaveE-MailResultResource1.ToolTip" xml:space="preserve">
+  <data name="lblSaveEmailResultResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblSavePasswordResultResource1.ToolTip" xml:space="preserve">
@@ -295,23 +295,23 @@
   <data name="pnlDetailsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvE-Mail1Resource1.ErrorMessage" xml:space="preserve">
+  <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
     <value>E-Mail-Adresse ist erforderlich</value>
-    <comment>E-Mail is required</comment>
+    <comment>Email is required</comment>
   </data>
-  <data name="rfvE-Mail1Resource1.Text" xml:space="preserve">
+  <data name="rfvEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvE-Mail1Resource1.ToolTip" xml:space="preserve">
+  <data name="rfvEmail1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvE-Mail2Resource1.ErrorMessage" xml:space="preserve">
+  <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
     <value>E-Mail-Adresse ist erforderlich</value>
   </data>
-  <data name="rfvE-Mail2Resource1.Text" xml:space="preserve">
+  <data name="rfvEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rfvE-Mail2Resource1.ToolTip" xml:space="preserve">
+  <data name="rfvEmail2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
@@ -344,14 +344,14 @@
   <data name="rfvPassword2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="rxvE-Mail1Resource1.ErrorMessage" xml:space="preserve">
+  <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
     <value>Ungültige E-Mail-Adresse</value>
-    <comment>Invalid E-Mail address</comment>
+    <comment>Invalid Email address</comment>
   </data>
-  <data name="rxvE-Mail1Resource1.Text" xml:space="preserve">
+  <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="rxvE-Mail1Resource1.ToolTip" xml:space="preserve">
+  <data name="rxvEmail1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
@@ -378,13 +378,13 @@
   <data name="btnDeleteAccountResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnSaveE-MailResource1.Text" xml:space="preserve">
+  <data name="btnSaveEmailResource1.Text" xml:space="preserve">
     <value>E-Mail speichern</value>
-    <comment>Save E-Mail</comment>
+    <comment>Save Email</comment>
   </data>
-  <data name="btnSaveE-MailResource1.ToolTip" xml:space="preserve">
+  <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
     <value>Klicken Sie hier um die E-Mail-Adresse zu speichern</value>
-    <comment>Click here to save your E-Mail address</comment>
+    <comment>Click here to save your Email address</comment>
   </data>
   <data name="btnSavePasswordResource1.Text" xml:space="preserve">
     <value>Passwort speichern</value>
@@ -406,13 +406,13 @@
     <value>Willkommen in Ihrem Profil,</value>
     <comment>Welcome to your Profile, </comment>
   </data>
-  <data name="lblEMail1Resource1.Text" xml:space="preserve">
+  <data name="lblEmail1Resource1.Text" xml:space="preserve">
     <value>E-Mail</value>
-    <comment>E-Mail</comment>
+    <comment>Email</comment>
   </data>
-  <data name="lblEMail2Resource1.Text" xml:space="preserve">
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
     <value>E-Mail (Wiederholung)</value>
-    <comment>E-Mail (repeat)</comment>
+    <comment>Email (repeat)</comment>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
     <value>Hier können Sie Ihre Profilinformationen, wie E-Mail-Adresse und Passwort, ändern. Der Benutzername kann nicht geändert werden.</value>
@@ -433,7 +433,7 @@
     <value>Neues Passwort (Wiederholung)</value>
     <comment>Password (repeat)</comment>
   </data>
-  <data name="lblSaveE-MailResultResource1.Text" xml:space="preserve">
+  <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblSavePasswordResultResource1.Text" xml:space="preserve">
@@ -450,19 +450,19 @@
     <value>Unbenannte Seite</value>
     <comment>Untitled Page</comment>
   </data>
-  <data name="txtEMail1Resource1.Text" xml:space="preserve">
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEMail1Resource1.ToolTip" xml:space="preserve">
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
     <value>Geben Sie hier Ihre E-Mail-Adresse ein</value>
-    <comment>Type here your E-Mail address</comment>
+    <comment>Type here your Email address</comment>
   </data>
-  <data name="txtEMail2Resource1.Text" xml:space="preserve">
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEMail2Resource1.ToolTip" xml:space="preserve">
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
     <value>Wiederholen Sie Ihre E-Mail-Adresse</value>
-    <comment>Repeat your E-Mail address</comment>
+    <comment>Repeat your Email address</comment>
   </data>
   <data name="txtOldPasswordResource1.Text" xml:space="preserve">
     <value />
