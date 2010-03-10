@@ -43,7 +43,7 @@ production:
   app:
     iis:
       custom_errors: RemoteOnly
-      cookie_path: 2010-testing/
+      cookie_path: 2010/
       root_url: http://netopenspace.de/
   deployment:
     iis:
