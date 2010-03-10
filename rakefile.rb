@@ -37,6 +37,7 @@ namespace :env do
 		CLOBBER.exclude('NOS.Wiki/bin'.in(configatron.dir.app))
 		CLOBBER.include('**/bin'.in(configatron.dir.source))
 		CLOBBER.include('**/*.template'.in(configatron.dir.source))
+		CLOBBER.include('**/*.generated.*'.in(configatron.dir.source))
 		# Clean template results.
 		CLOBBER.map! do |f|
 			next f.ext() if f.pathmap('%x') == '.template'
