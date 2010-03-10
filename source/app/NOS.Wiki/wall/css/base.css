@@ -29,7 +29,7 @@ img {
 	border: 0;
 }
 
-#last-update {
+#next-update {
 	font-size: .75em;
 	position: absolute;
 	text-align: right;
@@ -37,7 +37,7 @@ img {
 	right: 40px;
 }
 
-#last-update.error {
+#next-update.error {
 	background: transparent url("../images/warning.png") no-repeat left top;
 	padding-left: 20px;
 }
