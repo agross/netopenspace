@@ -85,6 +85,7 @@ namespace :generate do
 		
 		Minify.javascript \
 			:tool => configatron.tools.ajaxmin,
+			:pretty => configatron.app.debugging_enabled,
 			:source => scripts,
 			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.js"
 	end
@@ -95,6 +96,7 @@ namespace :generate do
 		
 		Minify.css \
 			:tool => configatron.tools.ajaxmin,
+			:pretty => configatron.app.debugging_enabled,
 			:opts => ["-comments:hacks"],
 			:source => css,
 			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/page/#{configatron.project}.generated.css"
