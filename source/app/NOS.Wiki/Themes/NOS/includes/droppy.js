@@ -1,4 +1,4 @@
-$.fn.droppy = function(hoverOn, options)
+﻿$.fn.droppy = function(hoverOn, options)
 {
 	options = $.extend({ speed: 250 }, options || {});
 

@@ -1,4 +1,4 @@
-function addLink(element) {
+﻿function addLink(element) {
     element = $(element);
 	
 	var anchor = element.children('a[id]:first')

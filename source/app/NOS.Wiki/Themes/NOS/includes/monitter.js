@@ -1,4 +1,4 @@
-jQuery.fn.reverse = Array.prototype.reverse;
+﻿jQuery.fn.reverse = Array.prototype.reverse;
 
 String.prototype.linkify = function () {
     return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/g, function (m) {
