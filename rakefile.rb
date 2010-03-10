@@ -285,6 +285,18 @@ namespace :package do
 			:target_dir => "Wiki".in(configatron.dir.for_deployment).to_absolute
 	end
 	
+	desc 'Prepares the Twitter Wall for packaging'
+	task :wall => ['generate:css', 'generate:javascript'] do
+		sourceDir = "#{configatron.dir.app}/#{configatron.project}.Wall"
+		files = FileList.new() \
+					.include("#{sourceDir}/**/*.*") \
+					.exclude("**/*.template")
+
+		files.copy_hierarchy \
+			:source_dir => sourceDir, 
+			:target_dir => "Wiki/wall".in(configatron.dir.for_deployment).to_absolute
+	end
+	
 	desc 'Prepares the root web application for packaging'
 	task :root => ['compile:app'] do
 		sourceDir = "#{configatron.dir.app}/#{configatron.project}.Root"
@@ -297,7 +309,7 @@ namespace :package do
 	end
 
 	desc 'Creates a zipped archive for deployment'
-	task :zip => [:webapp, :root] do
+	task :zip => [:webapp, :root, :wall] do
 		sz = SevenZip.new \
 			:tool => configatron.tools.zip,
 			:zip_name => configatron.deployment.package
