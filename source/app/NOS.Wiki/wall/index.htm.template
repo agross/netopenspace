@@ -1,0 +1,23 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<title>.NET Open Space</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="robots" content="noindex, follow">
+	
+	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
+
+	<script type="text/javascript" src="@configatron.app.iis.root_url@@configatron.app.iis.cookie_path@Themes/NOS/page/NOS.generated.js"></script>
+	<script type="text/javascript" src="script/monitter-start.js"></script>
+</head>
+<body id="body">
+	<div id="wrapper">
+		<a href="http://netopenspace.de/"><h1>Twitter-Hashtag <em>#netos2010</em> benutzen!</h1></a>
+		<div id="next-update"></div>
+		<div id="tweets">
+			<span class="loading" style="display: block; text-align: center; padding-top: 100px;"><img src="images/ajax-loader.gif" alt="Laden..." /></span>
+		</div>
+	</div>
+</body></html>

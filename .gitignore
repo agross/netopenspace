@@ -14,11 +14,12 @@ desktop.ini
 local-properties.yml
 !/source/app/NOS.Wiki/bin
 /source/app/NOS.Wiki/Web.config
+/source/app/NOS.Wiki/wall/index.htm
 *.generated.*
 /source/app/NOS.Wiki/public/Plugins/NOS.*.dll
 /source/app/NOS.Wiki/public/Plugins/NOS.*.pdb
 
-# ScrewTurn instance-specific files
+# ScrewTurn instance-specific files.
 /source/app/NOS.Wiki/public/Attachments/
 /source/app/NOS.Wiki/public/Messages/
 /source/app/NOS.Wiki/public/Pages

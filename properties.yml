@@ -18,7 +18,8 @@ global:
     password: <%= ENV['ADMIN_PASSWORD'] || 'password' %>
     iis:
       custom_errors: "Off"
-      cookie_path: "/"
+      cookie_path: /
+      root_url: http://nos.local
   deployment:
     logfile: build/msdeploy.log
   tools:
@@ -41,11 +42,12 @@ production:
     configuration: Release  
   app:
     iis:
-      custom_errors: "RemoteOnly"
-      cookie_path: "/2010-testing"
+      custom_errors: RemoteOnly
+      cookie_path: /2010-testing
+      root_url: http://netopenspace.de
   deployment:
     iis:
-      app_name: "(agross) netopenspace.de"
+      app_name: (agross) netopenspace.de
     connection:
       wmsvc: true
       allow_untrusted_https: false
