@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Web;
 using System.Xml;
 
 namespace NOS.TabMenu
@@ -21,6 +22,8 @@ namespace NOS.TabMenu
 
 		public string FormatMenu(string raw, string requestedPage)
 		{
+			requestedPage = HttpUtility.UrlPathEncode(requestedPage);
+
 			StringBuilder markup = new StringBuilder(raw);
 
 			Match match = TabMenu.Match(markup.ToString());
