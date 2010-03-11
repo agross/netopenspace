@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
-    <value>Regular Expression for validating usernames and group names</value>
+    <value>Regulärer Ausdruck für Komplexitätsanforderung an Benutzernamen und Benutzergruppen</value>
   </data>
   <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
-    <value>Regular Expression for validating passwords</value>
+    <value>Regulärer Ausdruck für Komplexitätsanforderung an Passwörter</value>
   </data>
   <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
-    <value>Sprungmarken für Seitenbereiche Anzeigen</value>
+    <value>Sprungmarken für Seitenbereiche anzeigen</value>
     <comment>Display anchors for pages' sections</comment>
   </data>
   <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblIpHostFilterResource1.Text" xml:space="preserve">
-    <value>Diese IPs/Hosts haben Zugriff zur Konfiguration (durch Komma getrennt, * für alle)</value>
+    <value>Diese IPs und Hosts dürfen Seiten bearbeiten (durch Komma getrennt, * für alle)</value>
     <comment>IP/Host Filter for allowed editing (seperate with commas, Use '*' for wild cards)</comment>
   </data>
   <data name="chkProcessSingleLineBreaksResource2.Text" xml:space="preserve">
-    <value>Einzelne Zeilenvorschübe im Inhalt beachten (experimentierphase)</value>
+    <value>Einzelne Zeilenvorschübe im Inhalt beachten (experimentell)</value>
     <comment>Process single line breaks in content (experimental)</comment>
   </data>
   <data name="chkProcessSingleLineBreaksResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkAutoGeneratePageNamesResource1.Text" xml:space="preserve">
-    <value>Namen für neue Seiten im Editor automatisch generieren</value>
+    <value>Namen für neue Seiten automatisch generieren</value>
     <comment>Auto-Generate Page Names in Editor by default</comment>
   </data>
   <data name="lblExtensionsAllowedForUploadResource2.Text" xml:space="preserve">
-    <value>Zum heraufladen zugelassene Dateierweiterungen (durch Komma getrennt, * für alle)</value>
+    <value>Zum Hochladen zugelassene Dateierweiterungen (durch Komma getrennt, * für alle)</value>
     <comment>File extensions allowed for upload (separate with commas, '*' for any type)</comment>
   </data>
   <data name="lblRssFeedsModeResource1.Text" xml:space="preserve">
-    <value>RSS Feeds Serving Mode</value>
+    <value>RSS Feed-Modus</value>
     <comment>RSS Feeds Serving Mode</comment>
   </data>
   <data name="ListItemResource42.Text" xml:space="preserve">
@@ -180,7 +180,7 @@
     <value />
   </data>
   <data name="ListItemResource39.Text" xml:space="preserve">
-    <value>Alle herunter geladenen Dateien zählen</value>
+    <value>Alle heruntergeladenen Dateien zählen</value>
     <comment>Count all file downloads</comment>
   </data>
   <data name="ListItemResource39.Value" xml:space="preserve">
@@ -188,7 +188,7 @@
     <comment>CountAll</comment>
   </data>
   <data name="ListItemResource40.Text" xml:space="preserve">
-    <value>Count downloads for specified extensions (separate with commas)</value>
+    <value>heruntergeladene Dateien mit folgenden Erweiterungen zählen (durch Komma getrennt)</value>
     <comment>Count downloads for specified extensions (separate with commas)</comment>
   </data>
   <data name="ListItemResource40.Value" xml:space="preserve">
@@ -196,7 +196,7 @@
     <comment>CountSpecifiedExtensions</comment>
   </data>
   <data name="ListItemResource41.Text" xml:space="preserve">
-    <value>Count downloads for all extensions except (separate with commas)</value>
+    <value>heruntergeladene Dateien außer mit folgenden Erweiterungen zählen (durch Komma getrennt)</value>
     <comment>Count downloads for all extensions except (separate with commas)</comment>
   </data>
   <data name="ListItemResource41.Value" xml:space="preserve">
@@ -210,7 +210,7 @@
     <value />
   </data>
   <data name="btnAutoWikiUrlResource1.Text" xml:space="preserve">
-    <value>automatische detektion</value>
+    <value>automatische Erkennung</value>
     <comment>autodetect</comment>
   </data>
   <data name="btnAutoWikiUrlResource1.ToolTip" xml:space="preserve">
@@ -224,14 +224,14 @@
     <value />
   </data>
   <data name="chkAllowScriptTagsResource1.Text" xml:space="preserve">
-    <value>SCRIPT tags in in WikiMarkup erlauben</value>
+    <value>SCRIPT tags in Wiki-Markup erlauben</value>
     <comment>Allow SCRIPT tags in WikiMarkup</comment>
   </data>
   <data name="chkAllowScriptTagsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkAllowUsersToRegisterResource1.Text" xml:space="preserve">
-    <value>neue Benutzer können sich registrieren</value>
+    <value>Neue Benutzer können sich registrieren</value>
     <comment>Allow users to register</comment>
   </data>
   <data name="chkAllowUsersToRegisterResource1.ToolTip" xml:space="preserve">
@@ -252,35 +252,35 @@
     <value />
   </data>
   <data name="chkEnableAutomaticUpdateChecksResource1.Text" xml:space="preserve">
-    <value>Automatische überprüfung auf neue Versionen aktivieren (System und Provider)</value>
+    <value>Automatische Überprüfung auf neue Versionen aktivieren (Wiki und Provider)</value>
     <comment>Enable automatic update checks (system and providers)</comment>
   </data>
   <data name="chkEnableAutomaticUpdateChecksResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkEnableBreadcrumbsTrailResource1.Text" xml:space="preserve">
-    <value>Verlaufsnavigation aktivieren</value>
+    <value>Brotkrümelnavigation aktivieren</value>
     <comment>Enable Breadcrumbs Trail</comment>
   </data>
   <data name="chkEnableBreadcrumbsTrailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkEnableCaptchaControlResource1.Text" xml:space="preserve">
-    <value>CAPTCHA control für alle öffentlichen funktionen aktivieren</value>
+    <value>CAPTCHA für alle öffentlichen Funktionen aktivieren</value>
     <comment>Enable CAPTCHA control for all public functionalities</comment>
   </data>
   <data name="chkEnableCaptchaControlResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkEnableDoubleClickEditingResource1.Text" xml:space="preserve">
-    <value>Editieren durch Doppelklick aktivieren</value>
+    <value>Bearbeiten durch Doppelklick aktivieren</value>
     <comment>Enable Double-Click editing</comment>
   </data>
   <data name="chkEnableDoubleClickEditingResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkEnableHttpCompressionResource1.Text" xml:space="preserve">
-    <value>HTTP kompression aktivieren</value>
+    <value>HTTP-Kompression aktivieren</value>
     <comment>Enable HTTP compression</comment>
   </data>
   <data name="chkEnableHttpCompressionResource1.ToolTip" xml:space="preserve">
@@ -294,7 +294,7 @@
     <value />
   </data>
   <data name="chkEnablePageToolbarResource1.Text" xml:space="preserve">
-    <value>Seiten Symbolleiste aktivieren (Seite Bearbeiten, Verlauf, Administration)</value>
+    <value>Seiten-Symbolleiste aktivieren (Seite bearbeiten, Verlauf, Administration)</value>
     <comment>Enable Page Toolbar (Edit this Page, History, Admin)</comment>
   </data>
   <data name="chkEnablePageToolbarResource1.ToolTip" xml:space="preserve">
@@ -315,35 +315,35 @@
     <value />
   </data>
   <data name="chkEnableViewPageCodeResource1.Text" xml:space="preserve">
-    <value>Funktion 'Seitencode anzeigen' aktivieren</value>
+    <value>Funktion 'Quelltext der Seite anzeigen' aktivieren</value>
     <comment>Enable 'View Page Code' feature</comment>
   </data>
   <data name="chkEnableViewPageCodeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkEnableViewStateCompressionResource1.Text" xml:space="preserve">
-    <value>Kompression des 'ViewState' aktivieren</value>
+    <value>Kompression des ViewState aktivieren</value>
     <comment>Enable ViewState compression</comment>
   </data>
   <data name="chkEnableViewStateCompressionResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkPreventConcurrentEditingResource1.Text" xml:space="preserve">
-    <value>Gleichzeitiges bearbeiten von Seiten verhindern</value>
+    <value>Gleichzeitiges Bearbeiten von Seiten verhindern</value>
     <comment>Prevent concurrent page editing</comment>
   </data>
   <data name="chkPreventConcurrentEditingResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkUseVisualEditorAsDefaultResource1.Text" xml:space="preserve">
-    <value>Den visuellen Editor (WYSIWYG) als Standardeditor verwenden</value>
+    <value>Visuellen Editor (WYSIWYG) als Standardeditor verwenden</value>
     <comment>Use visual (WYSIWYG) editor as default</comment>
   </data>
   <data name="chkUseVisualEditorAsDefaultResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültiges Datums- / Zeitformat</value>
+    <value>Ungültiges Datums- oder Zeitformat</value>
     <comment>Invalid Date/Time Format</comment>
   </data>
   <data name="cvDateTimeFormatResource1.Text" xml:space="preserve">
@@ -391,7 +391,7 @@
     <comment>Advanced Configuration</comment>
   </data>
   <data name="lblCacheCutSizeResource1.Text" xml:space="preserve">
-    <value>Cache cut Größe</value>
+    <value>Cache Cut-Größe</value>
     <comment>?? Cache cut size</comment>
   </data>
   <data name="lblCacheSizeResource1.Text" xml:space="preserve">
@@ -399,7 +399,7 @@
     <comment>Cache Size</comment>
   </data>
   <data name="lblChangeModerationModeResource1.Text" xml:space="preserve">
-    <value>Seitenänderung-moderationsmodus</value>
+    <value>Moderation für Seitenänderungen</value>
     <comment>Page change moderation mode</comment>
   </data>
   <data name="lblConfigResource1.Text" xml:space="preserve">
@@ -407,26 +407,26 @@
     <comment>Configuration</comment>
   </data>
   <data name="lblContactEmailResource1.Text" xml:space="preserve">
-    <value>Kontaktemail</value>
+    <value>Kontakt-E-Mail</value>
     <comment>Contact email</comment>
   </data>
   <data name="lblContentConfigResource1.Text" xml:space="preserve">
-    <value>Inhaltkonfiguration</value>
+    <value>Inhalte</value>
     <comment>Content Configuration</comment>
   </data>
   <data name="lblDateTimeFormatResource1.Text" xml:space="preserve">
-    <value>Datums- / Zeitformat</value>
+    <value>Datums- und Zeitformat</value>
     <comment>Date/time format</comment>
   </data>
   <data name="lblDateTimeFormatTemplatesResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblDefaultAdministratorsGroupResource1.Text" xml:space="preserve">
-    <value>Standard Administratorengruppe</value>
+    <value>Standard-Administratorengruppe</value>
     <comment>Default Administrators Group</comment>
   </data>
   <data name="lblDefaultAnonymousGroupResource1.Text" xml:space="preserve">
-    <value>Standardbenutzergruppe für Anonyme Benutzer</value>
+    <value>Standard-Benutzergruppe für anonyme Benutzer</value>
     <comment>Default Anonymous Users Group</comment>
   </data>
   <data name="lblDefaultLanguageResource1.Text" xml:space="preserve">
@@ -438,7 +438,7 @@
     <comment>Default time zone</comment>
   </data>
   <data name="lblDefaultUsersGroupResource1.Text" xml:space="preserve">
-    <value>Standardbenutzergruppe</value>
+    <value>Standard-Benutzergruppe</value>
     <comment>Default Users Group</comment>
   </data>
   <data name="lblErrorsEmailsResource1.Text" xml:space="preserve">
@@ -446,15 +446,15 @@
     <comment>E-Mail addresses to notify in case of errors (separate with commas)</comment>
   </data>
   <data name="lblGeneralConfigResource1.Text" xml:space="preserve">
-    <value>Allgemeine Konfiguration</value>
+    <value>Allgemein</value>
     <comment>General Configuration</comment>
   </data>
   <data name="lblKeptBackupNumberPostResource1.Text" xml:space="preserve">
-    <value>Sicherungen für jede Seite beibehalten (leer lassen für keine Limmite).</value>
+    <value>Sicherungen für jede Seite beibehalten (leerer Wert für kein Limit)</value>
     <comment>backups for each page (leave empty for no limit)</comment>
   </data>
   <data name="lblKeptBackupNumberPreResource1.Text" xml:space="preserve">
-    <value>Höchstens </value>
+    <value>Höchstens</value>
     <comment>Keep at most</comment>
   </data>
   <data name="lblLoggingLevelResource1.Text" xml:space="preserve">
@@ -462,7 +462,7 @@
     <comment>Logging level</comment>
   </data>
   <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
-    <value>Maximal erlaubte Dateigröße zum upload</value>
+    <value>Maximal erlaubte Dateigröße für Datei-Upload</value>
     <comment>Max file size allowed for upload</comment>
   </data>
   <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
@@ -470,11 +470,11 @@
     <comment>Max log size</comment>
   </data>
   <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
-    <value>Anzahl Einträge in &lt;code&gt;{kürzliche Änderungen}&lt;/code&gt; tags</value>
+    <value>Einträge in &lt;code&gt;{RecentChanges}&lt;/code&gt;-Tags</value>
     <comment>items in &lt;code&gt;{RecentChanges}&lt;/code&gt; tags</comment>
   </data>
   <data name="lblMaxRecentChangesToDisplayPreResource1.Text" xml:space="preserve">
-    <value>Maximal angezeigte Einträge</value>
+    <value>Zeige maximal</value>
     <comment>Display at most</comment>
   </data>
   <data name="lblNamespaces1Resource1.Text" xml:space="preserve">
@@ -500,11 +500,11 @@
     <value />
   </data>
   <data name="lblRootMainPageResource1.Text" xml:space="preserve">
-    <value>Root Namensraum Hauptseite</value>
+    <value>Hauptseite des Root-Namensraums</value>
     <comment>Root namespace main page</comment>
   </data>
   <data name="lblRootThemeResource1.Text" xml:space="preserve">
-    <value>Root Namensraum Motiv</value>
+    <value>Theme des Root-Namensraums</value>
     <comment>Root namespace theme</comment>
   </data>
   <data name="lblSecurityConfigResource1.Text" xml:space="preserve">
@@ -520,34 +520,34 @@
     <comment>see also</comment>
   </data>
   <data name="lblSelectFormatResource1.Text" xml:space="preserve">
-    <value>Selektiere...</value>
+    <value>Auswählen...</value>
     <comment>Select...</comment>
   </data>
   <data name="lblSenderEmailResource1.Text" xml:space="preserve">
-    <value>Absender E-Mail-Adresse</value>
+    <value>Absender-E-Mail-Adresse</value>
     <comment>Sender email</comment>
   </data>
   <data name="lblSmtpAuthenticationResource1.Text" xml:space="preserve">
-    <value>SMTP Benutzername und Passwort</value>
+    <value>SMTP-Benutzername und -Passwort</value>
     <comment>SMTP username and password</comment>
   </data>
   <data name="lblSmtpServerResource1.Text" xml:space="preserve">
-    <value>SMTP Serveradresse und Port</value>
+    <value>Adresse und Port des SMTP-Servers</value>
     <comment>SMTP server address and port</comment>
   </data>
   <data name="lblStringsResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
-    <value>wird für jede E-Mail-Kommunikation verwendet</value>
+    <value>wird in durch das Wiki gesendeten E-Mails verwendet</value>
     <comment>used for email communications</comment>
   </data>
   <data name="lblWikiTitleResource1.Text" xml:space="preserve">
-    <value>Wikititel</value>
+    <value>Wiki-Titel</value>
     <comment>Wiki title</comment>
   </data>
   <data name="lblWikiUrlResource1.Text" xml:space="preserve">
-    <value>Wiki URL</value>
+    <value>Wiki-URL</value>
     <comment>Wiki URL</comment>
   </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
@@ -737,7 +737,7 @@
     <value>840</value>
   </data>
   <data name="ListItemResource36.Text" xml:space="preserve">
-    <value>Benutzer müssen ihr Konto via E-Mail aktivieren</value>
+    <value>Benutzer müssen ihr Konto per E-Mail aktivieren</value>
     <comment>Users must activate their account via E-Mail</comment>
   </data>
   <data name="ListItemResource36.Value" xml:space="preserve">
@@ -752,7 +752,7 @@
     <value>ADMIN</value>
   </data>
   <data name="ListItemResource38.Text" xml:space="preserve">
-    <value>Benutzerkonten sind sofort aktiv</value>
+    <value>Benutzerkonten sind standardmäßig aktiviert</value>
     <comment>Accounts are active by default</comment>
   </data>
   <data name="ListItemResource38.Value" xml:space="preserve">
@@ -824,17 +824,17 @@
     <value />
   </data>
   <data name="PageResource2.Title" xml:space="preserve">
-    <value>Administration</value>
+    <value>Verwaltung</value>
   </data>
   <data name="rdoAllMessagesResource1.Text" xml:space="preserve">
-    <value>Alle Mitteilungen</value>
+    <value>Alle Meldungen</value>
     <comment>All Messages</comment>
   </data>
   <data name="rdoAllMessagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoDisableLogResource1.Text" xml:space="preserve">
-    <value>Protokollierung deaktiviert</value>
+    <value>Protokoll deaktiviert</value>
     <comment>Disable Log</comment>
   </data>
   <data name="rdoDisableLogResource1.ToolTip" xml:space="preserve">
@@ -856,19 +856,19 @@
     <comment>No moderation system is used: pages can be edited only by users who have editing permissions</comment>
   </data>
   <data name="rdoRequirePageEditingPermissionsResource1.Text" xml:space="preserve">
-    <value>Berechtigung zum Bearbeiten der Seite benötigt</value>
+    <value>Berechtigung zum Bearbeiten der Seite erforderlich</value>
     <comment>Require Page Editing permissions</comment>
   </data>
   <data name="rdoRequirePageEditingPermissionsResource1.ToolTip" xml:space="preserve">
-    <value>Benutzer ohne 'management' Berechtigung aber mit 'bearbeiten' Berechtigung können Seiten bearbeiten. Änderungen werden bis zur Bestätigung durch einen Administrator zurückgehalten</value>
+    <value>Benutzer ohne Management-Berechtigung aber mit Bearbeiten-Berechtigung können Seiten bearbeiten. Änderungen werden bis zur Bestätigung durch einen Administrator zurückgehalten</value>
     <comment>Pages can be edited by users who have editing permissions but not management permissions, and the changes are held in moderation</comment>
   </data>
   <data name="rdoRequirePageViewingPermissionsResource1.Text" xml:space="preserve">
-    <value>Berechtigung zum Anzeigen der Seite benötigt</value>
+    <value>Berechtigung zum Anzeigen von Seiten erforderlich</value>
     <comment>Require Page Viewing permissions</comment>
   </data>
   <data name="rdoRequirePageViewingPermissionsResource1.ToolTip" xml:space="preserve">
-    <value>Benutzer ohne 'bearbeiten' Berechtigung aber mit 'anzeigen' Berechtigung können Seiten bearbeiten. Änderungen werden bis zur Bestätigung durch einen Administrator zurückgehalten</value>
+    <value>Benutzer ohne Bearbeiten-Berechtigung aber mit Anzeigen-Berechtigung können Seiten bearbeiten. Änderungen werden bis zur Bestätigung durch einen Administrator zurückgehalten</value>
     <comment>Pages can be edited by users who have viewing permissions but not editing permissions, and the changes are help in moderation</comment>
   </data>
   <data name="rdoWarningsAndErrorsResource1.Text" xml:space="preserve">
@@ -889,7 +889,7 @@
     <value />
   </data>
   <data name="revMainUrlResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Wiki URL</value>
+    <value>Ungültige Wiki-URL</value>
     <comment>Invalid Wiki URL</comment>
   </data>
   <data name="revMainUrlResource1.Text" xml:space="preserve">
@@ -909,7 +909,7 @@
     <value />
   </data>
   <data name="revSmtpServerResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige SMTP Server Adresse</value>
+    <value>Ungültige Adresse für SMTP-Server</value>
     <comment>Invalid SMTP Server address</comment>
   </data>
   <data name="revSmtpServerResource1.Text" xml:space="preserve">
@@ -919,7 +919,7 @@
     <value />
   </data>
   <data name="revWikiTitleResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültiger Wiki Titel</value>
+    <value>Ungültiger Wiki-Titel</value>
     <comment>Invalid Wiki Title</comment>
   </data>
   <data name="revWikiTitleResource1.Text" xml:space="preserve">
@@ -929,7 +929,7 @@
     <value />
   </data>
   <data name="rfvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Cache Cut-Größe ist notwendig</value>
+    <value>Cache Cut-Größe ist erforderlich</value>
     <comment>Cache Cut Size is required</comment>
   </data>
   <data name="rfvCacheCutSizeResource1.Text" xml:space="preserve">
@@ -939,7 +939,7 @@
     <value />
   </data>
   <data name="rfvCacheSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Cache-Größe ist notwendig</value>
+    <value>Cachegröße ist erforderlich</value>
     <comment>Cache Size is required</comment>
   </data>
   <data name="rfvCacheSizeResource1.Text" xml:space="preserve">
@@ -949,7 +949,7 @@
     <value />
   </data>
   <data name="rfvContactEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Kontak E-Mail-Adresse ist notwendig</value>
+    <value>Kontakt-E-Mail-Adresse ist erforderlich</value>
     <comment>Contact Email is required</comment>
   </data>
   <data name="rfvContactEmailResource1.Text" xml:space="preserve">
@@ -959,7 +959,7 @@
     <value />
   </data>
   <data name="rfvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
-    <value>Datums- / Zeitformat ist notwendig</value>
+    <value>Datums- / Zeitformat ist erforderlich</value>
     <comment>Date/Time Format is required</comment>
   </data>
   <data name="rfvDateTimeFormatResource1.Text" xml:space="preserve">
@@ -969,7 +969,7 @@
     <value />
   </data>
   <data name="rfvMainUrlResource1.ErrorMessage" xml:space="preserve">
-    <value>Wiki URL ist notwendig</value>
+    <value>Wiki-URL ist erforderlich</value>
     <comment>Wiki URL is required</comment>
   </data>
   <data name="rfvMainUrlResource1.Text" xml:space="preserve">
@@ -979,7 +979,7 @@
     <value />
   </data>
   <data name="rfvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Maximale Dateigröße ist notwendig</value>
+    <value>Maximale Dateigröße ist erforderlich</value>
     <comment>Max File Size is required</comment>
   </data>
   <data name="rfvMaxFileSizeResource1.Text" xml:space="preserve">
@@ -989,7 +989,7 @@
     <value />
   </data>
   <data name="rfvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Maximale Protokollgröße ist notwendig</value>
+    <value>Maximale Protokollgröße ist erforderlich</value>
     <comment>Max Log Size is required</comment>
   </data>
   <data name="rfvMaxLogSizeResource1.Text" xml:space="preserve">
@@ -999,7 +999,7 @@
     <value />
   </data>
   <data name="rfvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
-    <value>Es muss eine Nummer eingegeben werden</value>
+    <value>Es muss eine Zahl eingegeben werden</value>
     <comment>Number is required</comment>
   </data>
   <data name="rfvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
@@ -1009,7 +1009,7 @@
     <value />
   </data>
   <data name="rfvSenderEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>Absender E-Mail-Adresse notwendig</value>
+    <value>Absender-E-Mail-Adresse erforderlich</value>
     <comment>Sender Email is required</comment>
   </data>
   <data name="rfvSenderEmailResource1.Text" xml:space="preserve">
@@ -1019,7 +1019,7 @@
     <value />
   </data>
   <data name="rfvSmtpServerResource1.ErrorMessage" xml:space="preserve">
-    <value>SMTP Server ist notwendig</value>
+    <value>SMTP-Server ist erforderlich</value>
     <comment>SMTP Server is required</comment>
   </data>
   <data name="rfvSmtpServerResource1.Text" xml:space="preserve">
@@ -1029,7 +1029,7 @@
     <value />
   </data>
   <data name="rfvWikiTitleResource1.ErrorMessage" xml:space="preserve">
-    <value>Wikititel ist notwendig</value>
+    <value>Wiki-Titel ist erforderlich</value>
     <comment>Wiki Title is required</comment>
   </data>
   <data name="rfvWikiTitleResource1.Text" xml:space="preserve">
@@ -1039,7 +1039,7 @@
     <value />
   </data>
   <data name="rvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige 'Cache Cut' Größe (min. 5, max- 50000)</value>
+    <value>Ungültige Cache Cut-Größe (min. 5, max. 50.000)</value>
     <comment>Invalid Cache Cut Size (min. 5, max. 50000)</comment>
   </data>
   <data name="rvCacheCutSizeResource1.Text" xml:space="preserve">
@@ -1049,7 +1049,7 @@
     <value />
   </data>
   <data name="rvCacheSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Größe (min. 10, max. 100000)</value>
+    <value>Ungültige Größe (min. 10, max. 100.000)</value>
     <comment>Invalid Size (min. 10, max. 100000)</comment>
   </data>
   <data name="rvCacheSizeResource1.Text" xml:space="preserve">
@@ -1059,7 +1059,7 @@
     <value />
   </data>
   <data name="rvKeptBackupNumberResource1.ErrorMessage" xml:space="preserve">
-    <value>Anzahl der Backups muss eine Zahl zwischen 0 und 1000 sein.</value>
+    <value>Anzahl der Backups muss zwischen 0 und 1.000 liegen</value>
     <comment>Number must be between 0 and 1000</comment>
   </data>
   <data name="rvKeptBackupNumberResource1.Text" xml:space="preserve">
@@ -1069,7 +1069,7 @@
     <value />
   </data>
   <data name="rvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige maximale Dateigröße (min. 256, max. 102400)</value>
+    <value>Ungültige maximale Dateigröße (min. 256, max. 102.400)</value>
     <comment>Invalid File Size (min. 256, max. 102400)</comment>
   </data>
   <data name="rvMaxFileSizeResource1.Text" xml:space="preserve">
@@ -1079,7 +1079,7 @@
     <value />
   </data>
   <data name="rvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige maximale Protokollgröße (min. 16, max. 10240)</value>
+    <value>Ungültige maximale Protokollgröße (min. 16, max. 1.0240)</value>
     <comment>Invalid Log Size (min. 16, max. 10240)</comment>
   </data>
   <data name="rvMaxLogSizeResource1.Text" xml:space="preserve">
@@ -1089,7 +1089,7 @@
     <value />
   </data>
   <data name="rvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
-    <value>Anzahl der angezeigten Änderungen muss eine Zahl zwischen 0 und 50 sein</value>
+    <value>Anzahl der angezeigten Änderungen muss zwischen 0 und 50 liegen</value>
     <comment>Number must be between 0 and 50</comment>
   </data>
   <data name="rvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
@@ -1099,7 +1099,7 @@
     <value />
   </data>
   <data name="rvSmtpPortResource1.ErrorMessage" xml:space="preserve">
-    <value>Ungültige Portnummer (Portnummern liegen zwischen 1 und 65535)</value>
+    <value>Ungültige Portnummer (Portnummern liegen zwischen 1 und 65.535)</value>
     <comment>Invalid Port (min. 1, max. 65535)</comment>
   </data>
   <data name="rvSmtpPortResource1.Text" xml:space="preserve">
