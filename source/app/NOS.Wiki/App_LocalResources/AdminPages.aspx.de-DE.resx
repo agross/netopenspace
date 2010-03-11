@@ -137,15 +137,15 @@
     <comment>Copy Page Categories</comment>
   </data>
   <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Seitenkategorien in den Ziel-Namensraum kppieren</value>
+    <value>Seitenkategorien in den Ziel-Namensraum kopieren</value>
     <comment>Copy Page Categories to target Namespace</comment>
   </data>
   <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Beachte&lt;/b&gt;:die Standardseite des Namensraum kann nicht migriert werden und wird stillschweigend übersprungen.</value>
+    <value>&lt;b&gt;Hinweis:&lt;/b&gt; Die Standardseite des Namensraum kann nicht migriert werden und wird stillschweigend übersprungen.</value>
     <comment>&lt;b&gt;Note&lt;/b&gt;: the default page of the namespace cannot be migrated and is silently skipped.</comment>
   </data>
   <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Beachte&lt;/b&gt;: Diese Liste zeigt nur Namensräume in denen Sie über ausreichend Berechtigungen verfügen um alle Seiten zu bearbeiten.</value>
+    <value>&lt;b&gt;Hinweis:&lt;/b&gt; Diese Liste zeigt nur Namensräume in denen Sie über ausreichend Berechtigungen verfügen, um alle Seiten zu bearbeiten.</value>
     <comment>&lt;b&gt;Note&lt;/b&gt;: this list only displays namespaces in which you are allowed to manage all pages.</comment>
   </data>
   <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
@@ -153,7 +153,7 @@
     <comment>1. Select Pages</comment>
   </data>
   <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
-    <value>2. Ziel-Namensraum selektieren</value>
+    <value>2. Ziel-Namensraum auswählen</value>
     <comment>2. Select Target Namespace</comment>
   </data>
   <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
@@ -177,7 +177,7 @@
     <comment>Copy Page Categories</comment>
   </data>
   <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Seitenkategorien in den Ziel-Namensraum kppieren</value>
+    <value>Seitenkategorien in den Ziel-Namensraum kopieren</value>
     <comment>Copy Page Categories to target Namespace</comment>
   </data>
   <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
@@ -204,7 +204,7 @@
     <value />
   </data>
   <data name="txtFilterResource1.ToolTip" xml:space="preserve">
-    <value>Seiten nach Namen Filtern</value>
+    <value>Seiten nach Namen filtern</value>
     <comment>Filter Pages by name</comment>
   </data>
   <data name="btnApproveResource1.Text" xml:space="preserve">
@@ -212,7 +212,7 @@
     <comment>Approve</comment>
   </data>
   <data name="btnApproveResource1.ToolTip" xml:space="preserve">
-    <value>Diese Revision genehmigen</value>
+    <value>Diese Version genehmigen</value>
     <comment>Approve this Revision</comment>
   </data>
   <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
@@ -244,7 +244,7 @@
     <comment>Clear Discussion</comment>
   </data>
   <data name="btnClearDiscussionResource1.ToolTip" xml:space="preserve">
-    <value>Alle Mitteilungen in der Seitendiskussion löschen</value>
+    <value>Alle Nachrichten in der Seitendiskussion löschen</value>
     <comment>Delete all Messages in the Page's Discussion</comment>
   </data>
   <data name="btnDeleteBackupsResource1.Text" xml:space="preserve">
@@ -303,7 +303,7 @@
     <comment>Manage Permissions for this Page</comment>
   </data>
   <data name="btnPublicResource1.Text" xml:space="preserve">
-    <value>Publik</value>
+    <value>Öffentlich</value>
     <comment>Public</comment>
   </data>
   <data name="btnPublicResource1.ToolTip" xml:space="preserve">
@@ -311,11 +311,11 @@
     <comment>Use this Template</comment>
   </data>
   <data name="btnRejectResource1.Text" xml:space="preserve">
-    <value>Zurückweisen</value>
+    <value>Ablehnen</value>
     <comment>Reject</comment>
   </data>
   <data name="btnRejectResource1.ToolTip" xml:space="preserve">
-    <value>Diese Revision zurückweisen</value>
+    <value>Diese Version ablehen</value>
     <comment>Reject this Revision</comment>
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
@@ -339,7 +339,7 @@
     <comment>Select</comment>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Diese Seite zur Administration selektieren</value>
+    <value>Diese Seite verwalten</value>
     <comment>Select this Page for administration</comment>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
@@ -347,7 +347,7 @@
     <comment>Select</comment>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Diese Seite zur Administration selektieren</value>
+    <value>Diese Seite verwalten</value>
     <comment>Select this Page for administration</comment>
   </data>
   <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
@@ -362,7 +362,7 @@
     <comment>Keep shadow Page</comment>
   </data>
   <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
-    <value>Die alte Seite behalten und zum automatischen weiterleiten zur neuen Seite konfigurieren</value>
+    <value>Die alte Seite behalten und automatische Weiterleitung zur neuen Seite konfigurieren</value>
     <comment>Keep the old Page and set it to auto-redirect to the new Page</comment>
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
@@ -382,7 +382,7 @@
     <value />
   </data>
   <data name="lblApproveTitleResource1.Text" xml:space="preserve">
-    <value>Entwurf Genehmigen/Zurückweisen</value>
+    <value>Entwurf genehmigen/ablehnen</value>
     <comment>Approve/Reject Draft</comment>
   </data>
   <data name="lblBackupResultResource1.Text" xml:space="preserve">
@@ -529,15 +529,15 @@
     <value />
   </data>
   <data name="lblRevisionResource1.Text" xml:space="preserve">
-    <value>Ziel Revision</value>
+    <value>Ziel-Version</value>
     <comment>Target Revision</comment>
   </data>
   <data name="lblRevisionsResource1.Text" xml:space="preserve">
-    <value>Rev.</value>
+    <value>Version</value>
     <comment>Rev.</comment>
   </data>
   <data name="lblRollbackPageTitleResource1.Text" xml:space="preserve">
-    <value>Seite zurückrollen</value>
+    <value>Seite zurücksetzen</value>
     <comment>Rollback Page</comment>
   </data>
   <data name="lblRollbackResultResource1.Text" xml:space="preserve">
@@ -577,11 +577,11 @@
     <value />
   </data>
   <data name="lstRevisionResource1.ToolTip" xml:space="preserve">
-    <value>Verfügbare Revisionen, neue zuerst</value>
+    <value>Verfügbare Versionen, neue zuerst</value>
     <comment>Available revisions, newer first</comment>
   </data>
   <data name="PageResource2.Title" xml:space="preserve">
-    <value>Administration</value>
+    <value>Verwaltung</value>
   </data>
   <data name="pnlApproveRevisionResource1.GroupingText" xml:space="preserve">
     <value />
@@ -638,21 +638,21 @@
     <value />
   </data>
   <data name="rdoAllBackupsResource1.Text" xml:space="preserve">
-    <value>Sicherungen löschen</value>
+    <value>Alle Sicherungen löschen</value>
     <comment>Delete all Backups</comment>
   </data>
   <data name="rdoAllBackupsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoUpToResource1.Text" xml:space="preserve">
-    <value>Sicherungen löschen, die älter sind bis und mit</value>
+    <value>Alte Sicherungen löschen, einschließlich</value>
     <comment>Delete Backups older than and including</comment>
   </data>
   <data name="rdoUpToResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Neuer Name wird benötigt</value>
+    <value>Neuer Name ist erforderlich</value>
     <comment>New Name is required</comment>
   </data>
   <data name="rfvNewNameResource1.Text" xml:space="preserve">

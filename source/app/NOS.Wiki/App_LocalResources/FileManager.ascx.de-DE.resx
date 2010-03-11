@@ -155,7 +155,7 @@
     <value />
   </data>
   <data name="lblDownloadsResource1.Text" xml:space="preserve">
-    <value>herunterladungen</value>
+    <value>Download-Anzahl</value>
     <comment>Downloads</comment>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
@@ -237,7 +237,7 @@
     <value />
   </data>
   <data name="chkOverwriteResource1.Text" xml:space="preserve">
-    <value>Exisitierende Datei überschreiben</value>
+    <value>Existierende Datei überschreiben</value>
     <comment>Overwrite existing file</comment>
   </data>
   <data name="chkOverwriteResource1.ToolTip" xml:space="preserve">
@@ -283,7 +283,7 @@
     <comment>You can upload files up to $1. Allowed file types are: $2.</comment>
   </data>
   <data name="lblUploadFilesResource1.Text" xml:space="preserve">
-    <value>Dateien Hochladen</value>
+    <value>Dateien hochladen</value>
     <comment>Upload Files</comment>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">

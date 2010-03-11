@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblAdminTitleResource1.Text" xml:space="preserve">
-    <value>Administration</value>
+    <value>Verwaltung</value>
   </data>
   <data name="lblBrowserSupportResource1.Text" xml:space="preserve">
-    <value>Ihr Browser könnte probleme haben beim Anzeigen dieser Seiten. IE 7 oder höher, respektive Firefox 3 und höher wird empfohlen.</value>
+    <value>Ihr Browser könnte beim Anzeigen dieser Seiten Probleme verursache. Wir empfehlen Internet Explorer 7 und höher oder Firefox 3 und höher.</value>
     <comment>Your Browser might present problems with this Page (Internet Explorer 7+ and Firefox 3+ are suggested).</comment>
   </data>
   <data name="lblBrowserSupportResource1.ToolTip" xml:space="preserve">
@@ -142,7 +142,7 @@
     <value />
   </data>
   <data name="lnkSelectAdminHomeResource1.Text" xml:space="preserve">
-    <value>Administrator Home</value>
+    <value>Verwaltung</value>
     <comment>Admin Home</comment>
   </data>
   <data name="lnkSelectAdminHomeResource1.ToolTip" xml:space="preserve">
@@ -198,7 +198,7 @@
     <value />
   </data>
   <data name="lnkSelectPagesResource1.Text" xml:space="preserve">
-    <value>Wikiseiten</value>
+    <value>Wiki-Seiten</value>
     <comment>Wiki Pages</comment>
   </data>
   <data name="lnkSelectPagesResource1.ToolTip" xml:space="preserve">
@@ -212,7 +212,7 @@
     <value />
   </data>
   <data name="lnkSelectSnippetsResource1.Text" xml:space="preserve">
-    <value>Snippets / Vorlagen</value>
+    <value>Snippets und Vorlagen</value>
     <comment>Snippets/Templates</comment>
   </data>
   <data name="lnkSelectSnippetsResource1.ToolTip" xml:space="preserve">

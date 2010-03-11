@@ -157,7 +157,7 @@
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Suchmaschine</value>
+    <value>Suche</value>
     <comment>Search Engine</comment>
   </data>
   <data name="lstCategoriesResource1.ToolTip" xml:space="preserve">

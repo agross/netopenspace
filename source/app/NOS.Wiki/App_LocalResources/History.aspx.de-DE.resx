@@ -125,14 +125,14 @@
     <value />
   </data>
   <data name="btnRollbackResource1.Text" xml:space="preserve">
-    <value>Zurückrollen</value>
+    <value>Zurücksetzen</value>
     <comment>Rollback</comment>
   </data>
   <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRollbackResource2.Text" xml:space="preserve">
-    <value>Zurückrollen</value>
+    <value>Zurücksetzen</value>
     <comment>Rollback</comment>
   </data>
   <data name="btnRollbackResource2.ToolTip" xml:space="preserve">
@@ -143,7 +143,7 @@
     <comment>Comment</comment>
   </data>
   <data name="lblCompareResource1.Text" xml:space="preserve">
-    <value>Seitenrevisionen vergleichen</value>
+    <value>Seitenversionen vergleichen</value>
     <comment>Compare Page Revisions</comment>
   </data>
   <data name="lblHistoryResource1.Text" xml:space="preserve">

@@ -124,10 +124,10 @@
     <value />
   </data>
   <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
-    <value>You must select at least one group</value>
+    <value>Sie müssen mindestens eine Benutzergruppe auswählen</value>
   </data>
   <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to all users of one or more groups.</value>
+    <value>Sie können eine E-Mail an alle Benutzer einer oder mehrerer Benutzergruppen senden.</value>
   </data>
   <data name="lblBulkEmailResource1.Text" xml:space="preserve">
     <value>Massen-E-Mail</value>
@@ -136,10 +136,10 @@
     <value>Betreff</value>
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Der Nachrichtentext ist erforderlich</value>
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Der Betreff ist erforderlich</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
     <value>Anwendung herunterfahren</value>
@@ -157,7 +157,7 @@
     <comment>Rebuild the links structure</comment>
   </data>
   <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
-    <value>verwaiste Seiten im Wiki zu haben</value>
+    <value>verwaiste Seiten im Wiki zu geben</value>
     <comment>orphan pages in the wiki</comment>
   </data>
   <data name="lblOrphanPagesInfoPreResource1.Text" xml:space="preserve">
@@ -169,7 +169,7 @@
     <comment>&lt;b&gt;Note&lt;/b&gt;: a page is considered an &lt;i&gt;orphan&lt;/i&gt; when it has no incoming links from other pages.</comment>
   </data>
   <data name="lblOrphanPagesResource1.Text" xml:space="preserve">
-    <value>Vewaiste Seiten</value>
+    <value>Verwaiste Seiten</value>
     <comment>Orphan Pages</comment>
   </data>
   <data name="lblRebuildPageLinksInfoResource1.Text" xml:space="preserve">
@@ -181,7 +181,7 @@
     <comment>see Pages</comment>
   </data>
   <data name="lnkPagesResource1.ToolTip" xml:space="preserve">
-    <value>Wechselt zum Bereich 'Wikiseiten' und zeigt verwaiste Seiten an.</value>
+    <value>Wechselt zum Bereich 'Wiki-Seiten' und zeigt verwaiste Seiten an.</value>
     <comment>Go to the Pages administration tab</comment>
   </data>
   <data name="btnClearCacheResource1.Text" xml:space="preserve">
@@ -209,7 +209,7 @@
     <comment>Rebuild this index</comment>
   </data>
   <data name="lblAdminHomeResource1.Text" xml:space="preserve">
-    <value>Startseite Administration</value>
+    <value>Startseite der Verwaltung</value>
     <comment>Administration Home</comment>
   </data>
   <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
