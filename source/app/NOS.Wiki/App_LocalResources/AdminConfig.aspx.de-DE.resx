@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
-    <value>Regulärer Ausdruck für Komplexitätsanforderung an Benutzernamen und Benutzergruppen</value>
+    <value>Regulärer Ausdruck für Komplexitätsanforderung von Benutzernamen und Benutzergruppen</value>
   </data>
   <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
-    <value>Regulärer Ausdruck für Komplexitätsanforderung an Passwörter</value>
+    <value>Regulärer Ausdruck für Komplexitätsanforderung von Passwörtern</value>
   </data>
   <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
     <value>Sprungmarken für Seitenbereiche anzeigen</value>
