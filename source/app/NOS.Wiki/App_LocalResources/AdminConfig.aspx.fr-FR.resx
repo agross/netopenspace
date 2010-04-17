@@ -142,7 +142,7 @@
     <value>Auto-générer par défaut les noms de page dans Éditeur</value>
   </data>
   <data name="lblExtensionsAllowedForUploadResource2.Text" xml:space="preserve">
-    <value>Extensions de fichier permises pour le téléversement(séparer par une virgule, '*' pour tous les types)</value>
+    <value>Extensions de fichier permises pour le téléchargement (séparer par une virgule, '*' pour tous les types)</value>
   </data>
   <data name="lblRssFeedsModeResource1.Text" xml:space="preserve">
     <value>Mode de service de Flux RSS Feeds</value>
@@ -403,7 +403,7 @@
     <value>Niveau de logging</value>
   </data>
   <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
-    <value>Taille maximale pour le téléversement</value>
+    <value>Taille maximale pour le téléchargement</value>
   </data>
   <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
     <value>Taille du log maximale</value>

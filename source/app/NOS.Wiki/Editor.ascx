@@ -32,11 +32,11 @@
 		    iframe.document.designMode='On';
 	    } else {
 		    iframe = document.getElementById('iframe').contentWindow;
-		    iframe.focus();
 		    iframe.document.designMode='On';
 		    iframe.document.execCommand('styleWithCSS',false,false);
 		    iframe.document.execCommand('backcolor', false, 'white');
 		    try { // This seems to throw an exception in Firefox
+		    	iframe.focus();
 		    	iframe.document.execCommand('inserthtml', false, document.getElementById(VisualControl).value);
 		    } catch(ex) { }
 	    }
@@ -327,6 +327,7 @@
     <a href="#" onclick="javascript:return InsertMarkup('{SEARCHBOX}');" class="menulink">{SearchBox}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{PAGENAME}');" class="menulink">{PageName}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{NAMESPACE}');" class="menulink">{Namespace}</a>
+    <a href="#" onclick="javascript:return InsertMarkup('{CATEGORIES}');" class="menulink">{Categories}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{NAMESPACEDROPDOWN}');" class="menulink">{NamespaceDropDown}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{NAMESPACELIST}');" class="menulink">{NamespaceList}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{ORPHANS}');" class="menulink">{Orphans}</a>

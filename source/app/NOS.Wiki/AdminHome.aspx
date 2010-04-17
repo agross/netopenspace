@@ -38,7 +38,7 @@
 		<h2 class="separator"><asp:Literal ID="lblBulkEmail" runat="server" Text="Mass Email" EnableViewState="false" meta:resourcekey="lblBulkEmailResource1" /></h2>
 		<asp:Literal ID="lblBulkEmailInfo" runat="server" Text="You can send an email message to all users of one or more groups." EnableViewState="false" meta:resourcekey="lblBulkEmailInfoResource1" />
 		<br /><br />
-		<asp:CheckBoxList ID="lstGroups" runat="server" RepeatDirection="Horizontal" />
+		<asp:CheckBoxList ID="lstGroups" runat="server" CellSpacing="3" RepeatDirection="Horizontal" RepeatLayout="Table" RepeatColumns="2" />
 		<br />
 		<asp:Literal ID="lblSubject" runat="server" Text="Subject" EnableViewState="false" meta:resourcekey="lblSubjectResource1" /><br />
 		<asp:TextBox ID="txtSubject" runat="server" CssClass="textbox" /><br />

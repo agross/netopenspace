@@ -250,7 +250,7 @@
     <value>Mot de passe(répéter)</value>
   </data>
   <data name="lblPasswordInfoResource1.Text" xml:space="preserve">
-    <value>Laissez les champs de mot de passe vide pour garder le mot de passe courrant.</value>
+    <value>Laissez les champs de mot de passe vide pour garder le mot de passe courant.</value>
   </data>
   <data name="lblPasswordInfoResource1.ToolTip" xml:space="preserve">
     <value />

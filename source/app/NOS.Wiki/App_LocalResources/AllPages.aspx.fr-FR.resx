@@ -136,7 +136,7 @@
     <value />
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>La liste de toutes les pages contenues dans l'espace de nom courrant.</value>
+    <value>La liste de toutes les pages contenues dans l'espace de nom courant.</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
     <value>Index de la page</value>

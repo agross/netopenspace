@@ -4,10 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Administration</title>
     <link rel="shortcut icon" href="Images/Icon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="Themes/Admin.css" />
     <link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
     <asp:Literal ID="lblJS" runat="server" EnableViewState="false" />
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>

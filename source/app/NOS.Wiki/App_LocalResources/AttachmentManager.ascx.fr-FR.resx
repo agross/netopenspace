@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblNoUploadResource1.Text" xml:space="preserve">
-    <value>&lt;br /&gt;Sauvegarde la page avant le téléversement</value>
+    <value>&lt;br /&gt;Sauvegarde la page avant le téléchargement</value>
   </data>
   <data name="lblNoUploadResource1.ToolTip" xml:space="preserve">
     <value />
@@ -175,7 +175,7 @@
     <value />
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
-    <value>Téléverser</value>
+    <value>Télécharger</value>
   </data>
   <data name="btnUploadResource1.ToolTip" xml:space="preserve">
     <value />
@@ -208,7 +208,7 @@
     <value />
   </data>
   <data name="lblUploadFilesInfoResource1.Text" xml:space="preserve">
-    <value>Vous pouvez téléverser des fichiers attachés pour la page courranteYou can upload attachments jusqu'à $1. Les types de fichiers permis sont: $2.</value>
+    <value>Vous pouvez télécharger des fichiers attachés pour la page courante. Taille des fichiers jusqu'à $1. Les types de fichiers permis sont: $2.</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />

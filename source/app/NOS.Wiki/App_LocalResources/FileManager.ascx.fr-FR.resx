@@ -211,7 +211,7 @@
     <value />
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
-    <value>Téléverser</value>
+    <value>Télécharger</value>
   </data>
   <data name="btnUploadResource1.ToolTip" xml:space="preserve">
     <value />
@@ -256,10 +256,10 @@
     <value />
   </data>
   <data name="lblUploadFilesInfoResource1.Text" xml:space="preserve">
-    <value>Vous pouvez téléverser des fichiers jusqu'à $1. Types de fichiers permis: $2.</value>
+    <value>Vous pouvez télécharger des fichiers jusqu'à $1. Types de fichiers permis: $2.</value>
   </data>
   <data name="lblUploadFilesResource1.Text" xml:space="preserve">
-    <value>Téléverser des fichiers</value>
+    <value>Télécharger des fichiers</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />

@@ -169,7 +169,7 @@
     <value>PNG</value>
   </data>
   <data name="btnPreviewResource1.Text" xml:space="preserve">
-    <value>Apperçu de la mise à jour</value>
+    <value>Aperçu de la mise à jour</value>
   </data>
   <data name="btnPreviewResource1.ToolTip" xml:space="preserve">
     <value />
@@ -187,13 +187,13 @@
     <value />
   </data>
   <data name="imgPreviewResource1.AlternateText" xml:space="preserve">
-    <value>Apperçu de l'image</value>
+    <value>Aperçu de l'image</value>
   </data>
   <data name="imgPreviewResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblCurrentSizeInfoResource1.Text" xml:space="preserve">
-    <value>Taille courrante: </value>
+    <value>Taille courante: </value>
   </data>
   <data name="lblCurrentSizePixelsResource1.Text" xml:space="preserve">
     <value> pixels</value>

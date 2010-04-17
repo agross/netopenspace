@@ -130,7 +130,7 @@
     <value />
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Vous pouvez rechercher ici les pages de cet espace de nom, les fichiers attachés ou les fichiers téléversés au système.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: le résultat ne montrera que les éléments dont vous avez les permissions en lecture.</value>
+    <value>Vous pouvez rechercher ici les pages de cet espace de nom, les fichiers attachés ou les fichiers téléchargés au système.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: le résultat ne montrera que les éléments dont vous avez les permissions en lecture.</value>
   </data>
   <data name="btnGoResource1.Text" xml:space="preserve">
     <value>Allez</value>

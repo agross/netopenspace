@@ -214,7 +214,7 @@
     <value>Décharge le fournisseur</value>
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
-    <value>Téléverser</value>
+    <value>Télécharger</value>
   </data>
   <data name="btnUploadResource1.ToolTip" xml:space="preserve">
     <value />
@@ -229,7 +229,7 @@
     <value>Chaîne de configuration</value>
   </data>
   <data name="lblCopySettingsInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: pour être détecté, le fournisseur de destination doit être téléverser en utilisant l'otuil de téléversement.&lt;br /&gt;Le log et les changements récents ne seront pas copiés.</value>
+    <value>&lt;b&gt;Note&lt;/b&gt;: pour être détecté, le fournisseur de destination doit être télécharger en utilisant l'otuil de téléchargement.&lt;br /&gt;Le log et les changements récents ne seront pas copiés.</value>
   </data>
   <data name="lblCopySettingsResource1.Text" xml:space="preserve">
     <value>Copier les paramètres et données reliées</value>
@@ -334,10 +334,10 @@
     <value />
   </data>
   <data name="lblUploadInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: enlever une DLL ne désactivera pas les fournisseurs avant le redémarrage du wiki,&lt;br /&gt;mais téléverser une nouvelle DLL chargera automatiquement les fournisseurs qu'elle contient.</value>
+    <value>&lt;b&gt;Note&lt;/b&gt;: enlever une DLL ne désactivera pas les fournisseurs avant le redémarrage du wiki,&lt;br /&gt;mais télécharger une nouvelle DLL chargera automatiquement les fournisseurs qu'elle contient.</value>
   </data>
   <data name="lblUploadNewDllResource1.Text" xml:space="preserve">
-    <value>Téléverser une nouvelle DLL</value>
+    <value>Télécharger une nouvelle DLL</value>
   </data>
   <data name="lblUploadProvidersTitleResource1.Text" xml:space="preserve">
     <value>Gestion des DLL des fournisseurs</value>
