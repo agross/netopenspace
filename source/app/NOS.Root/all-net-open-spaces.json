@@ -1,5 +1,10 @@
 [
 	{
+		"City": "Karlsruhe",
+		"URL": "http://karlsruhe.netopenspace.de/",
+		"TwitterSearch": ["#nos_sued", "from:nos_sued"]
+	},
+	{
 		"City": "Leipzig",
 		"URL": "http://netopenspace.de/",
 		"PastEvents":
