@@ -294,7 +294,7 @@ namespace :package do
 
 		files.copy_hierarchy \
 			:source_dir => sourceDir, 
-			:target_dir => "Wiki/wall".in(configatron.dir.for_deployment).to_absolute
+			:target_dir => "Wall".in(configatron.dir.for_deployment).to_absolute
 	end
 	
 	desc 'Prepares the root web application for packaging'
@@ -340,7 +340,7 @@ namespace :deploy do
 			:enableRule => ["DoNotDeleteRule", "SkipNewerFilesRule"]
 	end
 	
-	task :app, :remote, :needs => ['package:all'] do |t, args|
+	task :wiki, :remote, :needs => ['package:all'] do |t, args|
 		remote = args[:remote]
 		
 		MSDeploy.run \
@@ -389,6 +389,21 @@ namespace :deploy do
 			:dest => remote.merge({
 				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
 				})
+	end
+	
+	task :wall, :remote, :needs => ['package:all'] do |t, args|
+		remote = args[:remote]
+		
+		MSDeploy.run \
+			:tool => configatron.tools.msdeploy,
+			:log_file => configatron.deployment.logfile,
+			:verb => :sync,
+			:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+			:source => Dictionary[:contentPath, "Wall".in(configatron.dir.for_deployment).to_absolute.escape],
+			:dest => remote.merge({
+				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/wall".escape
+				}),
+			:usechecksum => true
 	end
 	
 	desc 'Deploys the build artifacts to QA or production systems'

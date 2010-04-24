@@ -60,7 +60,8 @@ leipzig:
   deployment:
     tasks:
       - root
-      - app
+      - wiki
+      - wall
     iis:
       app_name: (agross) netopenspace.de/
   
@@ -72,6 +73,6 @@ karlsruhe:
       root_url: http://karlsruhe.netopenspace.de/
   deployment:
     tasks:
-      - app  
+      - wiki
     iis:
       app_name: (agross) karlsruhe.netopenspace.de/
