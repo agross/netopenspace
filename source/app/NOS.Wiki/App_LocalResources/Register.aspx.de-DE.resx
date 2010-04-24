@@ -122,7 +122,7 @@
     <comment>Create Account</comment>
   </data>
   <data name="btnRegisterResource1.ToolTip" xml:space="preserve">
-    <value>Hier klicken um ein neues Benutzerkonto zu erstellen</value>
+    <value>Hier klicken, um ein neues Benutzerkonto zu erstellen</value>
     <comment>Click here to create your Account</comment>
   </data>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
@@ -191,7 +191,7 @@
     <comment>Email</comment>
   </data>
   <data name="lblEmail2Resource1.Text" xml:space="preserve">
-    <value>E-Mail-Adresse (wiederholung)</value>
+    <value>E-Mail-Adresse (Wiederholung)</value>
     <comment>Email (repeat)</comment>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
@@ -199,11 +199,11 @@
     <comment>Password</comment>
   </data>
   <data name="lblPassword2Resource1.Text" xml:space="preserve">
-    <value>Passwort (wiederholung)</value>
+    <value>Passwort (Wiederholung)</value>
     <comment>Password (repeat)</comment>
   </data>
   <data name="lblRegisterDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier können Sie ein neues Benutzerkonto für dieses Wiki erstellen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Alle Felder müssen ausgefüllt werden. Die E-Mail-Adresse wird in keiner weise Publik gemacht, wird aber für Administratoren sichtbar sein.</value>
+    <value>Hier können Sie ein neues Benutzerkonto für dieses Wiki erstellen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Alle Felder müssen ausgefüllt werden. Die E-Mail-Adresse wird nicht veröffentlicht, ist aber für Administratoren sichtbar.</value>
     <comment>Here you can create a new Account for this Wiki.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: all the fields are mandatory. The Email address will not be published in any way, but it will be visible to the Administrators.</comment>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
