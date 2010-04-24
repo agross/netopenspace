@@ -1,1 +1,1 @@
-﻿http://netopenspace.de/
+﻿http://karlsruhe.netopenspace.de/
