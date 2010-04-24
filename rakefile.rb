@@ -237,7 +237,6 @@ namespace :tests do
 	task :quality => [:ncover, :cloc, :fxcop, :stylecop]
 end
 
-desc 'Packages the build artifacts'
 namespace :package do
 	desc 'Prepares the year\'s web application for packaging'
 	task :webapp => ['compile:app'] do
@@ -324,89 +323,88 @@ namespace :package do
 	task :all => [:zip]
 end
 
-desc 'Deploys the build artifacts to QA or production systems'
-task :deploy => ['package:all'] do
-	remote = Dictionary[]
+namespace :deploy do
+	task :root, :remote, :needs => ['package:all'] do |t, args|
+		remote = args[:remote]
 		
-	if configatron.deployment.connection.exists?(:wmsvc) and configatron.deployment.connection.wmsvc
-		remote[:wmsvc] = configatron.deployment.connection.address
-		remote[:username] = configatron.deployment.connection.user
-		remote[:password] = configatron.deployment.connection.password
-	else
-		remote[:computerName] = configatron.deployment.connection.address
+		MSDeploy.run \
+			:tool => configatron.tools.msdeploy,
+			:log_file => configatron.deployment.logfile,
+			:verb => :sync,
+			:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+			:source => Dictionary[:contentPath, "Root".in(configatron.dir.for_deployment).to_absolute.escape],
+			:dest => remote.merge({
+				:contentPath => "#{configatron.deployment.iis.app_name}".escape
+				}),
+			:usechecksum => true,
+			:enableRule => ["DoNotDeleteRule", "SkipNewerFilesRule"]
 	end
 	
-#	This would require the deployment user to be an administrator.
-#
-#	MSDeploy.run \
-#		:tool => configatron.tools.msdeploy,
-#		:log_file => configatron.deployment.logfile,
-#		:verb => :sync,
-#		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-#		:source =>  Dictionary[:recycleApp, true],
-#		:dest => remote.merge({
-#			:recycleApp => "#{configatron.deployment.iis.app_name.escape}",
-#			:recycleMode => "RecycleAppPool"
-#			})
-
-	MSDeploy.run \
-		:tool => configatron.tools.msdeploy,
-		:log_file => configatron.deployment.logfile,
-		:verb => :sync,
-		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:source => Dictionary[:contentPath, "Wiki/App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
-		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
-			})
-
-	# Deploy web application.		
-	MSDeploy.run \
-		:tool => configatron.tools.msdeploy,
-		:log_file => configatron.deployment.logfile,
-		:verb => :sync,
-		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:source => Dictionary[:contentPath, "Wiki".in(configatron.dir.for_deployment).to_absolute.escape],
-		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}".escape
-			}),
-		:usechecksum => true,
-		:skip =>[
-			Dictionary[
-				:objectName, "filePath",
-				:skipAction, "Delete",
-				:absolutePath, "App_Offline\\.htm$"
-			],
-			Dictionary[
-				:objectName, "filePath",
-				:skipAction, "Delete",
-				:absolutePath, "/public\\\\.*$"
-			],
-			Dictionary[
-				:objectName, "dirPath",
-				:skipAction, "Delete",
-				:absolutePath, "/public.*$"
-			]
-		]
+	task :app, :remote, :needs => ['package:all'] do |t, args|
+		remote = args[:remote]
 		
-	# Deploy root.
-	MSDeploy.run \
-		:tool => configatron.tools.msdeploy,
-		:log_file => configatron.deployment.logfile,
-		:verb => :sync,
-		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:source => Dictionary[:contentPath, "Root".in(configatron.dir.for_deployment).to_absolute.escape],
-		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}".escape
-			}),
-		:usechecksum => true,
-		:enableRule => ["DoNotDeleteRule", "SkipNewerFilesRule"]
+		MSDeploy.run \
+			:tool => configatron.tools.msdeploy,
+			:log_file => configatron.deployment.logfile,
+			:verb => :sync,
+			:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+			:source => Dictionary[:contentPath, "Wiki/App_Offline.htm.deploy".in(configatron.dir.for_deployment).to_absolute.escape],
+			:dest => remote.merge({
+				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
+				})
+
+		MSDeploy.run \
+			:tool => configatron.tools.msdeploy,
+			:log_file => configatron.deployment.logfile,
+			:verb => :sync,
+			:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+			:source => Dictionary[:contentPath, "Wiki".in(configatron.dir.for_deployment).to_absolute.escape],
+			:dest => remote.merge({
+				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}".escape
+				}),
+			:usechecksum => true,
+			:skip =>[
+				Dictionary[
+					:objectName, "filePath",
+					:skipAction, "Delete",
+					:absolutePath, "App_Offline\\.htm$"
+				],
+				Dictionary[
+					:objectName, "filePath",
+					:skipAction, "Delete",
+					:absolutePath, "/public\\\\.*$"
+				],
+				Dictionary[
+					:objectName, "dirPath",
+					:skipAction, "Delete",
+					:absolutePath, "/public.*$"
+				]
+			]
+			
+		MSDeploy.run \
+			:tool => configatron.tools.msdeploy,
+			:log_file => configatron.deployment.logfile,
+			:verb => :delete,
+			:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
+			:dest => remote.merge({
+				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
+				})
+	end
 	
-	MSDeploy.run \
-		:tool => configatron.tools.msdeploy,
-		:log_file => configatron.deployment.logfile,
-		:verb => :delete,
-		:allowUntrusted => configatron.deployment.connection.allow_untrusted_https,
-		:dest => remote.merge({
-			:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}App_Offline.htm".escape
-			})
+	desc 'Deploys the build artifacts to QA or production systems'
+	task :run do
+		remote = Dictionary[]
+			
+		if configatron.deployment.connection.exists?(:wmsvc) and configatron.deployment.connection.wmsvc
+			remote[:wmsvc] = configatron.deployment.connection.address
+			remote[:username] = configatron.deployment.connection.user
+			remote[:password] = configatron.deployment.connection.password
+		else
+			remote[:computerName] = configatron.deployment.connection.address
+		end
+		
+		configatron.deployment.tasks.each do |task|
+			Rake::Task["deploy:#{task}"].invoke remote
+		end
+	end
 end

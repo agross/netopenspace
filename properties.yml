@@ -43,14 +43,35 @@ production:
   app:
     iis:
       custom_errors: RemoteOnly
-      cookie_path: 2010/
-      root_url: http://netopenspace.de/
   deployment:
-    iis:
-      app_name: (agross) netopenspace.de/
     connection:
       wmsvc: true
       allow_untrusted_https: false
       address: team.torstenweber.de
       user: <%= ENV['DEPLOY_USER'] || 'secret' %>
       password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
+  
+leipzig:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2010/
+      root_url: http://netopenspace.de/
+  deployment:
+    tasks:
+      - root
+      - app
+    iis:
+      app_name: (agross) netopenspace.de/
+  
+karlsruhe:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2010/
+      root_url: http://karlsruhe.netopenspace.de/
+  deployment:
+    tasks:
+      - app  
+    iis:
+      app_name: (agross) karlsruhe.netopenspace.de/
