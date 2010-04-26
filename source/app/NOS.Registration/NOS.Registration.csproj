@@ -49,6 +49,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -63,12 +64,13 @@
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="AutoRegistrationPresenter.cs" />
     <Compile Include="EmailNotificationSender.cs" />
-    <Compile Include="EntryPositioning\AtListEnd.cs" />
-    <Compile Include="EntryPositioning\AtListEndWhenSponsoring.cs" />
-    <Compile Include="EntryPositioning\AtWaitingListEndWhenHardLimitReached.cs" />
+    <Compile Include="EntryPositioning\Opinion.cs" />
+    <Compile Include="EntryPositioning\Opinions\ListEnd.cs" />
+    <Compile Include="EntryPositioning\Opinions\ListEndWhenSponsoring.cs" />
+    <Compile Include="EntryPositioning\Opinions\WaitingListWhenHardLimitReached.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluator.cs" />
     <Compile Include="EntryPositioning\EvaluationContext.cs" />
-    <Compile Include="EntryPositioning\IHasOpinionAboutEntryPosition.cs" />
+    <Compile Include="EntryPositioning\IHaveOpinionAboutEntryPosition.cs" />
     <Compile Include="EntryPositioning\IOpinionEvaluator.cs" />
     <Compile Include="IEntryFormatter.cs" />
     <Compile Include="INotificationSender.cs" />

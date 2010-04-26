@@ -16,7 +16,6 @@ namespace NOS.Registration
 			_opinionEvaluator = opinionEvaluator;
 		}
 
-		#region IPageFormatter Members
 		public string AddEntry(string content, string entry, User user, IPluginConfiguration configuration)
 		{
 			var entryMatcher = NewRegex(configuration.EntryPattern);
@@ -44,19 +43,31 @@ namespace NOS.Registration
 
 			int numberOfAttendees = CountNumberOfEntries(content.Substring(listStart, listEnd - listStart), entryMatcher);
 
-			int addAtIndex = _opinionEvaluator.Evaluate(new EvaluationContext
+			Opinion opinion = _opinionEvaluator.Evaluate(new EvaluationContext
 				                           {
 				                           	NumberOfAttendees = numberOfAttendees,
-				                           	ListEnd = listEnd,
-				                           	WaitingListEnd = waitingListEnd,
 				                           	Configuration = configuration,
 				                           	User = user,
 				                           	Logger = _logger
 				                           });
 
-			return content.Insert(addAtIndex, entry);
+			int index = MapOpinionToIndexInDocument(opinion, listEnd, waitingListEnd);
+
+			return content.Insert(index, entry);
 		}
-		#endregion
+
+		static int MapOpinionToIndexInDocument(Opinion opinion, int listEnd, int waitingListEnd)
+		{
+			switch (opinion)
+			{
+				case Opinion.IncludeInList:
+					return listEnd;
+				case Opinion.IncludeInWaitingList:
+					return waitingListEnd;
+			}
+
+			throw new ArgumentException(String.Format("The opinion {0} is not supported", opinion), "opinion");
+		}
 
 		int AssertMatchesOnce(string content, Regex matcher, string matchType)
 		{

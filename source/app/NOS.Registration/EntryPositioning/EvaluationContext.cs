@@ -8,18 +8,6 @@ namespace NOS.Registration.EntryPositioning
 			set;
 		}
 
-		public int ListEnd
-		{
-			get;
-			set;
-		}
-
-		public int WaitingListEnd
-		{
-			get;
-			set;
-		}
-
 		public IPluginConfiguration Configuration
 		{
 			get;

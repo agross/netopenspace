@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 
 using NOS.Registration.EntryPositioning;
+using NOS.Registration.EntryPositioning.Opinions;
 
 using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
@@ -26,11 +27,11 @@ namespace NOS.Registration
 			       new PageRepository(),
 			       new PageFormatter(new DefaultLogger(),
 			                         new DefaultOpinionEvaluator(
-			                         	new IHasOpinionAboutEntryPosition[]
+			                         	new IHaveOpinionAboutEntryPosition[]
 			                         	{
-			                         		new AtListEnd(),
-			                         		new AtListEndWhenSponsoring(),
-			                         		new AtWaitingListEndWhenHardLimitReached()
+			                         		new ListEnd(),
+			                         		new ListEndWhenSponsoring(),
+			                         		new WaitingListWhenHardLimitReached()
 			                         	})),
 			       new NVelocityEntryFormatter(),
 			       new EmailNotificationSender(),

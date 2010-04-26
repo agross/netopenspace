@@ -2,6 +2,6 @@ namespace NOS.Registration.EntryPositioning
 {
 	public interface IOpinionEvaluator
 	{
-		int Evaluate(EvaluationContext context);
+		Opinion Evaluate(EvaluationContext context);
 	}
 }

@@ -4,21 +4,19 @@ namespace NOS.Registration.EntryPositioning
 {
 	public class DefaultOpinionEvaluator : IOpinionEvaluator
 	{
-		readonly IHasOpinionAboutEntryPosition[] _opinions;
+		readonly IHaveOpinionAboutEntryPosition[] _opinions;
 
-		public DefaultOpinionEvaluator(IHasOpinionAboutEntryPosition[] opinions)
+		public DefaultOpinionEvaluator(IHaveOpinionAboutEntryPosition[] opinions)
 		{
 			_opinions = opinions;
 		}
 
-		#region IOpinionEvaluator Members
-		public int Evaluate(EvaluationContext context)
+		public Opinion Evaluate(EvaluationContext context)
 		{
 			return _opinions
-				.Select(x => x.GetPosition(context))
-				.Where(x => x >= 0)
+				.Select(x => x.GetOpinionAboutPosition(context))
+				.Where(x => x != Opinion.NoOpinion)
 				.Last();
 		}
-		#endregion
 	}
 }
