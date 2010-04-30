@@ -57,7 +57,7 @@ namespace NOS.Registration.Tests
 				                                    NotificationSender,
 				                                    Logger,
 				                                    Configuration,
-													settingsAccessor);
+				                                    settingsAccessor);
 			};
 	}
 
@@ -112,10 +112,10 @@ namespace NOS.Registration.Tests
 		It should_not_respond_to_formatting_requests_in_phase_2 =
 			() => Plugin.PerformPhase2.ShouldBeFalse();
 
-		It should_not_respond_to_formatting_requests_in_phase_3 =
-			() => Plugin.PerformPhase3.ShouldBeFalse();
+		It should_render_on_each_request_regardless_of_the_cache =
+			() => Plugin.PerformPhase3.ShouldBeTrue();
 	}
-	
+
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_the_auto_registration_is_shut_down : AutoRegistrationPluginSpecs
 	{

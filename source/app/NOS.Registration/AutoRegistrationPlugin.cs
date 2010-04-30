@@ -117,7 +117,7 @@ namespace NOS.Registration
 
 		public bool PerformPhase3
 		{
-			get { return false; }
+			get { return true; }
 		}
 
 		public int ExecutionPriority
