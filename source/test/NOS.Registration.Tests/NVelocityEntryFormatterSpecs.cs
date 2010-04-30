@@ -4,7 +4,7 @@ using Machine.Specifications;
 
 namespace NOS.Registration.Tests
 {
-	public abstract class With_entry_formatter
+	public abstract class EntryFormatterSpecs
 	{
 		protected static string Entry;
 		protected static IEntryFormatter Formatter;
@@ -27,23 +27,25 @@ namespace NOS.Registration.Tests
 
 	[Subject(typeof(NVelocityEntryFormatter))]
 	public class When_a_simple_entry_with_escaped_newlines_in_the_template_is_formatted
-		: With_entry_formatter
+		: EntryFormatterSpecs
 	{
 		Because of = () => { Entry = Formatter.FormatUserEntry(User, "some template\\n\\n"); };
 
-		It should_convert_escaped_newline_characters_to_newline_characters = () => Entry.ShouldEndWith("\n\n");
+		It should_convert_escaped_newline_characters_to_newline_characters =
+			() => Entry.ShouldEndWith("\n\n");
 	}
 
 	[Subject(typeof(NVelocityEntryFormatter))]
-	public class When_a_simple_entry_with_a_placeholder_is_formatted : With_entry_formatter
+	public class When_a_simple_entry_with_a_placeholder_is_formatted : EntryFormatterSpecs
 	{
 		Because of = () => { Entry = Formatter.FormatUserEntry(User, "$user.UserName"); };
 
-		It should_fill_the_template_with_the_user_name = () => Entry.ShouldEqual("user");
+		It should_fill_the_template_with_the_user_name =
+			() => Entry.ShouldEqual("user");
 	}
 
 	[Subject(typeof(NVelocityEntryFormatter))]
-	public class When_an_entry_with_conditional_placeholders_is_formatted : With_entry_formatter
+	public class When_an_entry_with_conditional_placeholders_is_formatted : EntryFormatterSpecs
 	{
 		static string EntryTemplate;
 
@@ -68,12 +70,15 @@ namespace NOS.Registration.Tests
 
 		Because of = () => { Entry = Formatter.FormatUserEntry(User, EntryTemplate); };
 
-		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("twitter was given");
-		It should_turn_empty_strings_into_null_values = () => Entry.ShouldEqual("twitter was given");
+		It should_fill_the_template_with_satisfied_conditonals =
+			() => Entry.ShouldContain("twitter was given");
+
+		It should_turn_empty_strings_into_null_values =
+			() => Entry.ShouldEqual("twitter was given");
 	}
 
 	[Subject(typeof(NVelocityEntryFormatter))]
-	public class When_an_entry_with_conditional_decimal_placeholders_is_formatted : With_entry_formatter
+	public class When_an_entry_with_conditional_decimal_placeholders_is_formatted : EntryFormatterSpecs
 	{
 		static string EntryTemplate;
 
@@ -94,11 +99,12 @@ namespace NOS.Registration.Tests
 
 		Because of = () => { Entry = Formatter.FormatUserEntry(User, EntryTemplate); };
 
-		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("was given");
+		It should_fill_the_template_with_satisfied_conditonals =
+			() => Entry.ShouldContain("was given");
 	}
 
 	[Subject(typeof(NVelocityEntryFormatter))]
-	public class When_a_complex_entry_is_formatted : With_entry_formatter
+	public class When_a_complex_entry_is_formatted : EntryFormatterSpecs
 	{
 		static string EntryTemplate;
 

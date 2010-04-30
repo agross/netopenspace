@@ -62,19 +62,19 @@ namespace NOS.Registration.Tests
 
 		It should_save_the_Twitter_user_name_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Twitter.Equals("twitter"))));
-	
+
 		It should_save_the_name_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Name.Equals("name"))));
-	
+
 		It should_save_the_email_address_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Email.Equals("email"))));
-	
+
 		It should_save_the_blog_URL_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Blog.Equals("blog"))));
-	
+
 		It should_save_the_picture_URL_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Picture.Equals("picture"))));
-	
+
 		It should_save_the_sponsoring_value_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Sponsoring.Equals(12.34m))));
 	}
@@ -121,8 +121,7 @@ namespace NOS.Registration.Tests
 			() => Repository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
 
 		It should_log_the_fact_that_the_user_does_not_want_to_be_registered_automatically =
-			() =>
-			Logger.AssertWasCalled(
-				x => x.Info(Arg<string>.Matches(y => y.Contains("opted-out")), Arg<string>.Is.Equal("username")));
+			() => Logger.AssertWasCalled(x => x.Info(Arg<string>.Matches(y => y.Contains("opted-out")),
+			                                         Arg<string>.Is.Equal("username")));
 	}
 }

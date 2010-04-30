@@ -7,9 +7,14 @@ namespace NOS.Registration
 {
 	internal class EmailNotificationSender : INotificationSender
 	{
-		IHost _host;
+		readonly IFileReader _fileReader;
+		IHostV30 _host;
 
-		#region INotificationSender Members
+		public EmailNotificationSender(IFileReader fileReader)
+		{
+			_fileReader = fileReader;
+		}
+
 		public void SendMessage(string userName, string recipient, string subject, bool failed)
 		{
 			string message = LoadTemplate(userName, failed);
@@ -17,11 +22,10 @@ namespace NOS.Registration
 			SendEmail(recipient, subject, message);
 		}
 
-		public void Configure(IHost host)
+		public void Configure(IHostV30 host)
 		{
 			_host = host;
 		}
-		#endregion
 
 		string LoadTemplate(string userName, bool failed)
 		{
@@ -32,7 +36,7 @@ namespace NOS.Registration
 				file = "AutoRegistrationFailedMessage.cs";
 			}
 
-			var template = _host.ReadFile(Settings.PublicDirectory + file);
+			var template = _fileReader.Read(Settings.PublicDirectory + file);
 
 			return template
 				.Replace("##WIKITITLE##", Settings.WikiTitle)

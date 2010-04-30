@@ -1,14 +1,23 @@
+using System.IO;
+
 using ScrewTurn.Wiki;
 
 namespace NOS.Registration
 {
 	internal class DefaultFileWriter : IFileWriter
 	{
-		#region IFileWriter Members
 		public void Write(string path, string content)
 		{
-			Tools.WriteFile(path, content);
+			var provider = Collectors.FilesProviderCollector.GetProvider(Settings.DefaultFilesProvider);
+
+			using (var stream = new MemoryStream())
+			{
+				var success = provider.StoreFile(path, stream, true);
+				if (!success)
+				{
+					throw new ScrewTurnException("Could not write stream to {0}", path);
+				}
+			}
 		}
-		#endregion
 	}
 }

@@ -11,11 +11,11 @@ using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Tests
 {
-	public class With_auto_registration_plugin
+	public abstract class AutoRegistrationPluginSpecs
 	{
 		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
-		protected static IHost Host;
+		protected static IHostV30 Host;
 		protected static ILogger Logger;
 		protected static INotificationSender NotificationSender;
 		protected static IPageFormatter PageFormatter;
@@ -25,7 +25,7 @@ namespace NOS.Registration.Tests
 
 		Establish context = () =>
 			{
-				Host = MockRepository.GenerateStub<IHost>();
+				Host = MockRepository.GenerateStub<IHostV30>();
 
 				ISynchronizer synchronizer = MockRepository.GenerateStub<ISynchronizer>();
 				synchronizer
@@ -43,6 +43,9 @@ namespace NOS.Registration.Tests
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
 				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();
+
+				var settingsAccessor = MockRepository.GenerateStub<ISettingsAccessor>();
+
 				Plugin = new AutoRegistrationPlugin(synchronizer,
 				                                    RegistrationRepository,
 				                                    PageRepository,
@@ -50,19 +53,17 @@ namespace NOS.Registration.Tests
 				                                    EntryFormatter,
 				                                    NotificationSender,
 				                                    Logger,
-				                                    Configuration);
+				                                    Configuration,
+													settingsAccessor);
 			};
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_the_auto_registration_is_initialized_with_invalid_configuration_data : With_auto_registration_plugin
+	public class When_the_auto_registration_is_initialized_with_invalid_configuration_data : AutoRegistrationPluginSpecs
 	{
-		Establish context = () =>
-			{
-				Configuration.Stub(x => x.Parse(null, null))
-					.IgnoreArguments()
-					.Return(new List<string> { "error1", "error2" });
-			};
+		Establish context = () => Configuration.Stub(x => x.Parse(null, null))
+		                          	.IgnoreArguments()
+		                          	.Return(new List<string> { "error1", "error2" });
 
 		Because of = () => Plugin.Init(Host, "invalid");
 
@@ -80,7 +81,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_the_auto_registration_is_initialized_successfully : With_auto_registration_plugin
+	public class When_the_auto_registration_is_initialized_successfully : AutoRegistrationPluginSpecs
 	{
 		Establish context = () =>
 			{
@@ -99,31 +100,36 @@ namespace NOS.Registration.Tests
 			() => Host.AssertWasCalled(x => x.UserAccountActivity += Arg<EventHandler<UserAccountActivityEventArgs>>.Is.NotNull);
 
 		It should_log_the_maximum_attendee_count_and_the_hard_limit =
-			() =>
-			Logger.AssertWasCalled(x => x.Info("Waiting list is enabled after 15 attendees with a hard limit of 42.", "SYSTEM"));
+			() => Logger.AssertWasCalled(x => x.Info("Waiting list is enabled after 15 attendees with a hard limit of 42.",
+			                                         "SYSTEM"));
 
-		It should_not_respond_to_formatting_requests_in_phase_1 = () => Plugin.PerformPhase1.ShouldBeFalse();
-		It should_not_respond_to_formatting_requests_in_phase_2 = () => Plugin.PerformPhase2.ShouldBeFalse();
-		It should_not_respond_to_formatting_requests_in_phase_3 = () => Plugin.PerformPhase3.ShouldBeFalse();
+		It should_not_respond_to_formatting_requests_in_phase_1 =
+			() => Plugin.PerformPhase1.ShouldBeFalse();
+
+		It should_not_respond_to_formatting_requests_in_phase_2 =
+			() => Plugin.PerformPhase2.ShouldBeFalse();
+
+		It should_not_respond_to_formatting_requests_in_phase_3 =
+			() => Plugin.PerformPhase3.ShouldBeFalse();
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_a_user_account_is_activated : With_auto_registration_plugin
+	public class When_a_user_account_is_activated : AutoRegistrationPluginSpecs
 	{
-		static IPagesStorageProvider Provider;
+		static IPagesStorageProviderV30 Provider;
 		static UserAccountActivityEventArgs EventArgs;
 		protected static UserInfo UserInfo;
-		protected static User User;
+		static User User;
 		protected static PageInfo PageInfo;
 
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "The User",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountActivated);
 
 				User = new User("user");
@@ -138,7 +144,7 @@ namespace NOS.Registration.Tests
 				Configuration.Stub(x => x.PageName).Return("page");
 				Configuration.Stub(x => x.EntryTemplate).Return(" and entry");
 
-				PageInfo = new PageInfo(Configuration.PageName, null, PageStatus.Normal, DateTime.Now);
+				PageInfo = new PageInfo(Configuration.PageName, null, DateTime.Now);
 				PageRepository.Stub(x => x.FindPage(Configuration.PageName)).Return(PageInfo);
 
 				Host
@@ -147,8 +153,10 @@ namespace NOS.Registration.Tests
 					                        "title",
 					                        "user that saved the content last",
 					                        DateTime.Now,
-					                        String.Empty,
-					                        "content"));
+					                        "comment",
+					                        "content",
+					                        new[] { "keyword" },
+					                        "description"));
 				Host
 					.Stub(x => x.SendEmail(null, null, null, null, false))
 					.IgnoreArguments()
@@ -314,13 +322,14 @@ namespace NOS.Registration.Tests
 			                             	Text.StartsWith("Could not add the user's entry to the attendee list:"),
 			                             	Is.Equal("SYSTEM")));
 
-		It should_swallow_the_error = () => true.ShouldBeTrue();
+		It should_swallow_the_error =
+			() => true.ShouldBeTrue();
 
 		Behaves_like<FailureNotificationBehavior> failing_activation;
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
-	public class When_any_other_user_account_activity_takes_place : With_auto_registration_plugin
+	public class When_any_other_user_account_activity_takes_place : AutoRegistrationPluginSpecs
 	{
 		static UserAccountActivityEventArgs EventArgs;
 		static UserInfo UserInfo;
@@ -328,20 +337,23 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "The User",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountAdded);
 			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
-		It should_not_load_users = () => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
+		It should_not_load_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
 
-		It should_not_save_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
+		It should_not_save_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
 
-		It should_not_delete_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Delete(Arg<string>.Is.Anything));
+		It should_not_delete_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.Delete(Arg<string>.Is.Anything));
 	}
 }

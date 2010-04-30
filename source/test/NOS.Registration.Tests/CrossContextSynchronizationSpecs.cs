@@ -44,8 +44,11 @@ namespace NOS.Registration.Tests
 				reader.Join();
 			};
 
-		It should_write_the_new_value = () => SharedValue.ShouldEqual(42);
-		It should_read_after_the_writer_finished = () => ReadValue.ShouldEqual(42);
+		It should_write_the_new_value =
+			() => SharedValue.ShouldEqual(42);
+
+		It should_read_after_the_writer_finished =
+			() => ReadValue.ShouldEqual(42);
 	}
 
 	[Subject(typeof(CrossContextSynchronizer))]
@@ -65,6 +68,7 @@ namespace NOS.Registration.Tests
 				worker.Join(TimeSpan.FromMinutes(1));
 			};
 
-		It should_succeed = () => Status.ShouldBeTrue();
+		It should_succeed =
+			() => Status.ShouldBeTrue();
 	}
 }

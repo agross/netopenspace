@@ -33,17 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\lib\ScrewTurn Wiki\Core.dll</HintPath>
-    </Reference>
     <Reference Include="NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\NVelocity\NVelocity.dll</HintPath>
     </Reference>
-    <Reference Include="ScrewTurn.Wiki.PluginFramework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ScrewTurn.Wiki.Core, Version=3.0.2.534, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\lib\ScrewTurn Wiki\ScrewTurn.Wiki.PluginFramework.dll</HintPath>
+      <HintPath>..\NOS.Wiki\bin\ScrewTurn.Wiki.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ScrewTurn.Wiki.PluginFramework, Version=3.0.2.534, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NOS.Wiki\bin\ScrewTurn.Wiki.PluginFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="AutoRegistrationPresenter.cs" />
+    <Compile Include="DefaultSettingsAccessor.cs" />
     <Compile Include="EmailNotificationSender.cs" />
     <Compile Include="EntryPositioning\Opinion.cs" />
     <Compile Include="EntryPositioning\Opinions\ListEnd.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="IEntryFormatter.cs" />
     <Compile Include="INotificationSender.cs" />
     <Compile Include="IPluginConfiguration.cs" />
+    <Compile Include="ISettingsAccessor.cs" />
     <Compile Include="PageFormatter.cs" />
     <Compile Include="CrossContextSynchronization.cs" />
     <Compile Include="EnumerableExtensions.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationRepository.cs" />
     <Compile Include="NVelocityEntryFormatter.cs" />
+    <Compile Include="ScrewTurnException.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserData.cs" />
   </ItemGroup>

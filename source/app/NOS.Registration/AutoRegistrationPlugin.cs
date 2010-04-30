@@ -1,15 +1,15 @@
 using System;
 using System.Linq;
+using System.Reflection;
 
 using NOS.Registration.EntryPositioning;
 using NOS.Registration.EntryPositioning.Opinions;
 
-using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration
 {
-	public class AutoRegistrationPlugin : IFormatterProvider
+	public class AutoRegistrationPlugin : IFormatterProviderV30
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
@@ -18,8 +18,9 @@ namespace NOS.Registration
 		readonly IPageFormatter _pageFormatter;
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
+		readonly ISettingsAccessor _settingsAccessor;
 		readonly ISynchronizer _synchronizer;
-		IHost _host;
+		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
 			: this(new CrossContextSynchronizer(),
@@ -34,9 +35,10 @@ namespace NOS.Registration
 			                         		new WaitingListWhenHardLimitReached()
 			                         	})),
 			       new NVelocityEntryFormatter(),
-			       new EmailNotificationSender(),
+			       new EmailNotificationSender(new DefaultFileReader()),
 			       new DefaultLogger(),
-			       new DefaultPluginConfiguration())
+			       new DefaultPluginConfiguration(),
+			       new DefaultSettingsAccessor())
 		{
 		}
 
@@ -47,7 +49,8 @@ namespace NOS.Registration
 		                              IEntryFormatter entryFormatter,
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
-		                              IPluginConfiguration configuration)
+		                              IPluginConfiguration configuration,
+		                              ISettingsAccessor settingsAccessor)
 		{
 			_synchronizer = synchronizer;
 			_registrationRepository = registrationRepository;
@@ -57,10 +60,10 @@ namespace NOS.Registration
 			_notificationSender = notificationSender;
 			_logger = logger;
 			_configuration = configuration;
+			_settingsAccessor = settingsAccessor;
 		}
 
-		#region IFormatterProvider Members
-		public void Init(IHost host, string config)
+		public void Init(IHostV30 host, string config)
 		{
 			_host = host;
 
@@ -86,12 +89,26 @@ namespace NOS.Registration
 
 		public ComponentInformation Information
 		{
-			get { return new ComponentInformation(GetType().Name, "Alexander Groﬂ", "http://therightstuff.de"); }
+			get
+			{
+				string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+				return new ComponentInformation(GetType().Name, "Alexander Groﬂ", version, "http://therightstuff.de", null);
+			}
+		}
+
+		public string ConfigHelpHtml
+		{
+			get { return String.Empty; }
 		}
 
 		public string Format(string raw, ContextInformation context, FormattingPhase phase)
 		{
 			return raw;
+		}
+
+		public string PrepareTitle(string title, ContextInformation context)
+		{
+			return title;
 		}
 
 		public bool PerformPhase1
@@ -108,7 +125,11 @@ namespace NOS.Registration
 		{
 			get { return false; }
 		}
-		#endregion
+
+		public int ExecutionPriority
+		{
+			get { throw new NotImplementedException(); }
+		}
 
 		bool Configure(string config)
 		{
@@ -181,7 +202,7 @@ namespace NOS.Registration
 						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
 						if (failed)
 						{
-							_notificationSender.SendMessage(e.User.Username, Settings.ContactEmail, _configuration.Comment, true);
+							_notificationSender.SendMessage(e.User.Username, _settingsAccessor.ContactEmail, _configuration.Comment, true);
 						}
 					}
 				});
