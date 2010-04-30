@@ -6,11 +6,12 @@ namespace NOS.Registration.UI
 {
 	public class AutoRegistrationPresenter
 	{
-		readonly IRegistrationRepository _repository;
 		readonly ILogger _logger;
+		readonly IRegistrationRepository _repository;
 		readonly IAutoRegistrationView _view;
 
-		public AutoRegistrationPresenter(IAutoRegistrationView view) : this(view, new RegistrationRepository(), new Logger())
+		public AutoRegistrationPresenter(IAutoRegistrationView view)
+			: this(view, Container.GetInstance<IRegistrationRepository>(), Container.GetInstance<ILogger>())
 		{
 		}
 
@@ -39,11 +40,11 @@ namespace NOS.Registration.UI
 				           		{
 				           			Xing = _view.Xing,
 				           			Twitter = _view.Twitter,
-									Name = _view.Name,
-									Blog = _view.Blog,
-									Email = _view.Email,
-									Picture = _view.Picture,
-									Sponsoring = _view.Sponsoring
+				           			Name = _view.Name,
+				           			Blog = _view.Blog,
+				           			Email = _view.Email,
+				           			Picture = _view.Picture,
+				           			Sponsoring = _view.Sponsoring
 				           		}
 				           };
 

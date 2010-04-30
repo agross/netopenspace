@@ -47,6 +47,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\app\NOS.Wiki\bin\ScrewTurn.Wiki.PluginFramework.dll</HintPath>
     </Reference>
+    <Reference Include="StructureMap, Version=2.6.2.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -61,6 +65,7 @@
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="AutoRegistrationPresenterSpecs.cs" />
+    <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
     <Compile Include="NVelocityEntryFormatterSpecs.cs" />
     <Compile Include="PageFormatterSpecs.cs" />

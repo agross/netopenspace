@@ -3,8 +3,6 @@ using System.Linq;
 using System.Reflection;
 
 using NOS.Registration.Abstractions;
-using NOS.Registration.EntryPositioning;
-using NOS.Registration.EntryPositioning.Opinions;
 
 using ScrewTurn.Wiki.PluginFramework;
 
@@ -24,22 +22,15 @@ namespace NOS.Registration
 		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
-			: this(new CrossContextSynchronizer(),
-			       new RegistrationRepository(),
-			       new PageRepository(),
-			       new PageFormatter(new Logger(),
-			                         new DefaultOpinionEvaluator(
-			                         	new IHaveOpinionAboutEntryPosition[]
-			                         	{
-			                         		new OnAttendeeList(),
-			                         		new OnWaitingListIfNotSponsoring(),
-			                         		new OnWaitingListIfHardLimitIsReached()
-			                         	})),
-			       new NVelocityEntryFormatter(),
-			       new EmailNotificationSender(new FileReader()),
-			       new Logger(),
-			       new DefaultPluginConfiguration(),
-			       new SettingsAccessor())
+			: this(Container.GetInstance<ISynchronizer>(),
+				   Container.GetInstance<IRegistrationRepository>(),
+				   Container.GetInstance<IPageRepository>(),
+				   Container.GetInstance<IPageFormatter>(),
+				   Container.GetInstance<IEntryFormatter>(),
+				   Container.GetInstance<INotificationSender>(),
+				   Container.GetInstance<ILogger>(),
+				   Container.GetInstance<IPluginConfiguration>(),
+				   Container.GetInstance<ISettingsAccessor>())
 		{
 		}
 
@@ -67,7 +58,7 @@ namespace NOS.Registration
 		public void Init(IHostV30 host, string config)
 		{
 			_host = host;
-
+			
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
@@ -130,7 +121,7 @@ namespace NOS.Registration
 
 		public int ExecutionPriority
 		{
-			get { throw new NotImplementedException(); }
+			get { return 100; }
 		}
 
 		bool Configure(string config)

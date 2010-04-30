@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\build\Wiki\</OutputPath>
+    <OutputPath>..\NOS.Wiki\public\Plugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\build\Wiki\</OutputPath>
+    <OutputPath>..\NOS.Wiki\public\Plugins\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -40,10 +40,16 @@
     <Reference Include="ScrewTurn.Wiki.Core, Version=3.0.2.534, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\NOS.Wiki\bin\ScrewTurn.Wiki.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ScrewTurn.Wiki.PluginFramework, Version=3.0.2.534, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\NOS.Wiki\bin\ScrewTurn.Wiki.PluginFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.6.2.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\StructureMap\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -62,6 +68,7 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
+    <Compile Include="Container.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="EmailNotificationSender.cs" />
@@ -108,4 +115,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(TargetDir)StructureMap.*" "$(TargetDir)..\..\bin"
+xcopy /y "$(TargetDir)NVelocity.*" "$(TargetDir)..\..\bin"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

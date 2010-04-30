@@ -5,8 +5,6 @@ using System.Web.Script.Serialization;
 
 using NOS.Registration.Abstractions;
 
-using ScrewTurn.Wiki;
-
 namespace NOS.Registration
 {
 	internal class RegistrationRepository : IRegistrationRepository
@@ -17,14 +15,7 @@ namespace NOS.Registration
 		readonly ISynchronizer _synchronizer;
 		readonly IFileWriter _writer;
 
-		public RegistrationRepository() : this(Settings.PublicDirectory + "AutoRegistration.cs",
-		                                       new CrossContextSynchronizer(),
-		                                       new FileReader(),
-		                                       new FileWriter())
-		{
-		}
-
-		internal RegistrationRepository(string file, ISynchronizer synchronizer, IFileReader reader, IFileWriter writer)
+		public RegistrationRepository(string file, ISynchronizer synchronizer, IFileReader reader, IFileWriter writer)
 		{
 			_synchronizer = synchronizer;
 			_reader = reader;
