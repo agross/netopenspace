@@ -2,7 +2,7 @@ using System;
 
 namespace NOS.Registration.EntryPositioning.Opinions
 {
-	class WaitingListWhenHardLimitReached : IHaveOpinionAboutEntryPosition
+	class OnWaitingListIfHardLimitIsReached : IHaveOpinionAboutEntryPosition
 	{
 		public Opinion GetOpinionAboutPosition(EvaluationContext context)
 		{

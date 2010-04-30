@@ -66,9 +66,9 @@
     <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="EmailNotificationSender.cs" />
     <Compile Include="EntryPositioning\Opinion.cs" />
-    <Compile Include="EntryPositioning\Opinions\ListEnd.cs" />
-    <Compile Include="EntryPositioning\Opinions\ListEndWhenSponsoring.cs" />
-    <Compile Include="EntryPositioning\Opinions\WaitingListWhenHardLimitReached.cs" />
+    <Compile Include="EntryPositioning\Opinions\OnAttendeeList.cs" />
+    <Compile Include="EntryPositioning\Opinions\OnWaitingListIfNotSponsoring.cs" />
+    <Compile Include="EntryPositioning\Opinions\OnWaitingListIfHardLimitIsReached.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluator.cs" />
     <Compile Include="EntryPositioning\EvaluationContext.cs" />
     <Compile Include="EntryPositioning\IHaveOpinionAboutEntryPosition.cs" />

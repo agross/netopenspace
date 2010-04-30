@@ -60,9 +60,9 @@ namespace NOS.Registration.Tests.EntryPositioning
 			{
 				Opinions = new IHaveOpinionAboutEntryPosition[]
 				           {
-				           	new ListEnd(),
-				           	new ListEndWhenSponsoring(),
-				           	new WaitingListWhenHardLimitReached()
+				           	new OnAttendeeList(),
+				           	new OnWaitingListIfNotSponsoring(),
+				           	new OnWaitingListIfHardLimitIsReached()
 				           };
 
 				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();

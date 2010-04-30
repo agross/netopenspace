@@ -1,6 +1,6 @@
 namespace NOS.Registration.EntryPositioning.Opinions
 {
-	class ListEnd : IHaveOpinionAboutEntryPosition
+	class OnAttendeeList : IHaveOpinionAboutEntryPosition
 	{
 		public Opinion GetOpinionAboutPosition(EvaluationContext context)
 		{

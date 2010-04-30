@@ -2,7 +2,7 @@ using System;
 
 namespace NOS.Registration.EntryPositioning.Opinions
 {
-	class ListEndWhenSponsoring : IHaveOpinionAboutEntryPosition
+	class OnWaitingListIfNotSponsoring : IHaveOpinionAboutEntryPosition
 	{
 		public Opinion GetOpinionAboutPosition(EvaluationContext context)
 		{

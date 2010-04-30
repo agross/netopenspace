@@ -31,9 +31,9 @@ namespace NOS.Registration
 			                         new DefaultOpinionEvaluator(
 			                         	new IHaveOpinionAboutEntryPosition[]
 			                         	{
-			                         		new ListEnd(),
-			                         		new ListEndWhenSponsoring(),
-			                         		new WaitingListWhenHardLimitReached()
+			                         		new OnAttendeeList(),
+			                         		new OnWaitingListIfNotSponsoring(),
+			                         		new OnWaitingListIfHardLimitIsReached()
 			                         	})),
 			       new NVelocityEntryFormatter(),
 			       new EmailNotificationSender(new FileReader()),
