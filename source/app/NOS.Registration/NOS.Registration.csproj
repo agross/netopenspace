@@ -69,6 +69,9 @@
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="IQuery.cs" />
+    <Compile Include="Queries\AllUsers.cs" />
+    <Compile Include="Queries\UserByUserName.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="EmailNotificationSender.cs" />

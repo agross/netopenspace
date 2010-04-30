@@ -25,12 +25,11 @@ namespace NOS.Registration
 			_file = file;
 		}
 
-		#region IRegistrationRepository Members
 		public void Save(User user)
 		{
 			_synchronizer.Lock(() =>
 				{
-					var allUsers = GetAll().ToList();
+					var allUsers = LoadDocument().ToList();
 					allUsers.Add(user);
 
 					string serialized = _serializer.Serialize(allUsers);
@@ -38,7 +37,26 @@ namespace NOS.Registration
 				});
 		}
 
-		public IEnumerable<User> GetAll()
+		public void Delete(string userName)
+		{
+			_synchronizer.Lock(() =>
+				{
+					var allUsers = LoadDocument().ToList();
+					var toRemove = allUsers.Where(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)).ToList();
+					toRemove.Each(x => allUsers.Remove(x));
+
+					string serialized = _serializer.Serialize(allUsers);
+					_writer.Write(_file, serialized);
+				});
+		}
+
+		public T Query<T>(IQuery<T> query)
+		{
+			var users = LoadDocument();
+			return query.Apply(users);
+		}
+
+		IEnumerable<User> LoadDocument()
 		{
 			IList<User> deserialized = null;
 			_synchronizer.Lock(() =>
@@ -55,33 +73,5 @@ namespace NOS.Registration
 
 			return deserialized;
 		}
-
-		public User FindByUserName(string userName)
-		{
-			User user = null;
-
-			_synchronizer.Lock(() =>
-				{
-					var allUsers = GetAll();
-
-					user = allUsers.FirstOrDefault(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase));
-				});
-
-			return user;
-		}
-
-		public void Delete(string userName)
-		{
-			_synchronizer.Lock(() =>
-				{
-					var allUsers = GetAll().ToList();
-					var toRemove = allUsers.Where(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)).ToList();
-					toRemove.Each(x => allUsers.Remove(x));
-
-					string serialized = _serializer.Serialize(allUsers);
-					_writer.Write(_file, serialized);
-				});
-		}
-		#endregion
 	}
 }

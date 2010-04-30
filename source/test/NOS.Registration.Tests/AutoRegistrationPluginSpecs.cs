@@ -5,6 +5,7 @@ using System.Linq;
 using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Queries;
 
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
@@ -157,7 +158,9 @@ namespace NOS.Registration.Tests
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountActivated);
 
 				User = new User("user");
-				RegistrationRepository.Stub(x => x.FindByUserName("user")).Return(User);
+				RegistrationRepository
+					.Stub(x => x.Query(Arg<UserByUserName>.Matches(y => y.UserName == "user")))
+					.Return(User);
 
 				Configuration
 					.Stub(x => x.Parse(null, null))
@@ -199,7 +202,8 @@ namespace NOS.Registration.Tests
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_try_to_find_the_user_in_the_user_list =
-			() => RegistrationRepository.AssertWasCalled(x => x.FindByUserName(User.UserName));
+			() =>
+			RegistrationRepository.AssertWasCalled(x => x.Query(Arg<UserByUserName>.Matches(y => y.UserName == User.UserName)));
 
 		It should_try_to_find_the_attendee_page =
 			() => PageRepository.AssertWasCalled(x => x.FindPage(Configuration.PageName));
@@ -256,7 +260,9 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				RegistrationRepository.BackToRecord();
-				RegistrationRepository.Stub(x => x.FindByUserName("user")).Return(null);
+				RegistrationRepository
+					.Stub(x => x.Query(Arg<UserByUserName>.Matches(y=>y.UserName == "user")))
+					.Return(null);
 				RegistrationRepository.Replay();
 			};
 
@@ -372,7 +378,7 @@ namespace NOS.Registration.Tests
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_not_load_users =
-			() => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
+			() => RegistrationRepository.AssertWasNotCalled(x => x.Query(Arg<AllUsers>.Is.TypeOf));
 
 		It should_not_save_users =
 			() => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));

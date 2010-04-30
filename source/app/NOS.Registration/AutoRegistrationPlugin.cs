@@ -3,6 +3,7 @@ using System.Linq;
 using System.Reflection;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Queries;
 
 using ScrewTurn.Wiki.PluginFramework;
 
@@ -145,7 +146,7 @@ namespace NOS.Registration
 					var failed = false;
 					try
 					{
-						var user = _registrationRepository.FindByUserName(e.User.Username);
+						var user = _registrationRepository.Query(new UserByUserName(e.User.Username));
 						if (user == null)
 						{
 							return;

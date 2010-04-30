@@ -5,6 +5,7 @@ using System.Linq;
 using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Queries;
 
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
@@ -42,7 +43,7 @@ namespace NOS.Registration.Tests
 		                          	.Stub(x => x.Read("file"))
 		                          	.Return(String.Empty);
 
-		Because of = () => { Users = Repository.GetAll(); };
+		Because of = () => { Users = Repository.Query(new AllUsers()); };
 
 		It should_return_an_empty_list =
 			() => Users.ShouldBeEmpty();
@@ -55,9 +56,10 @@ namespace NOS.Registration.Tests
 		                          	.Stub(x => x.Read("file"))
 		                          	.Return(null);
 
-		Because of = () => { Users = Repository.GetAll(); };
+		Because of = () => { Users = Repository.Query(new AllUsers()); };
 
-		It should_return_an_empty_list = () => Users.ShouldBeEmpty();
+		It should_return_an_empty_list =
+			() => Users.ShouldBeEmpty();
 	}
 
 	[Subject(typeof(RegistrationRepository))]
@@ -68,15 +70,15 @@ namespace NOS.Registration.Tests
 		                          	.Return(
 		                          		"[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } }, { UserName: \"alex\", Data: { Xing: \"baz\" } } ]");
 
-		Because of = () => { Users = Repository.GetAll(); };
+		Because of = () => { Users = Repository.Query(new AllUsers()); };
 
-		It should_return_the_user_list =
+		It should_load_the_user_list =
 			() => Users.Count().ShouldEqual(2);
 
-		It should_return_matching_Xing_names =
+		It should_load_user_data =
 			() => Users.First().Data.Xing.ShouldEqual("foo");
 
-		It should_return_null_for_nonexistent_values =
+		It should_assign_null_to_nonexistent_values =
 			() => Users.Skip(1).First().Data.Twitter.ShouldBeNull();
 	}
 
@@ -102,36 +104,6 @@ namespace NOS.Registration.Tests
 		It should_retain_the_original_collection =
 			() => Writer.AssertWasCalled(x => x.Write(null, null),
 			                             o => o.Constraints(Is.Equal("file"), Text.Contains("torsten")));
-	}
-
-	[Subject(typeof(RegistrationRepository))]
-	public class When_a_user_is_loaded_by_name : RepositorySpecs
-	{
-		static User User;
-
-		Establish context = () => Reader
-		                          	.Stub(x => x.Read("file"))
-		                          	.Return(
-		                          		"[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } }, { UserName: \"alex\", Data: { Xing: \"baz\" } } ]");
-
-		Because of = () => { User = Repository.FindByUserName("torsten"); };
-
-		It should_return_the_user =
-			() => User.ShouldNotBeNull();
-	}
-
-	[Subject(typeof(RegistrationRepository))]
-	public class When_a_user_is_loaded_by_name_and_the_requested_user_does_not_exist : RepositorySpecs
-	{
-		static User User;
-
-		Establish context = () => Reader
-		                          	.Stub(x => x.Read("file"))
-		                          	.Return(null);
-
-		Because of = () => { User = Repository.FindByUserName("torsten"); };
-
-		It should_return_null = () => User.ShouldBeNull();
 	}
 
 	[Subject(typeof(RegistrationRepository))]
