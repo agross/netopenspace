@@ -86,6 +86,7 @@ namespace NOS.Registration
 
 		public void Shutdown()
 		{
+			_host.UserAccountActivity -= Host_UserAccountActivity;
 		}
 
 		public ComponentInformation Information

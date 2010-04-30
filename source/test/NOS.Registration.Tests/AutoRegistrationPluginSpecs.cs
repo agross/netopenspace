@@ -114,6 +114,28 @@ namespace NOS.Registration.Tests
 		It should_not_respond_to_formatting_requests_in_phase_3 =
 			() => Plugin.PerformPhase3.ShouldBeFalse();
 	}
+	
+	[Subject(typeof(AutoRegistrationPlugin))]
+	public class When_the_auto_registration_is_shut_down : AutoRegistrationPluginSpecs
+	{
+		Establish context = () =>
+			{
+				Configuration
+					.Stub(x => x.Parse(null, null))
+					.IgnoreArguments()
+					.Return(new List<string>());
+
+				Configuration.Stub(x => x.MaximumAttendees).Return(15);
+				Configuration.Stub(x => x.HardLimit).Return(42);
+
+				Plugin.Init(Host, String.Empty);
+			};
+
+		Because of = () => Plugin.Shutdown();
+
+		It should_disable_the_plugin =
+			() => Host.AssertWasCalled(x => x.UserAccountActivity -= Arg<EventHandler<UserAccountActivityEventArgs>>.Is.NotNull);
+	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_a_user_account_is_activated : AutoRegistrationPluginSpecs
