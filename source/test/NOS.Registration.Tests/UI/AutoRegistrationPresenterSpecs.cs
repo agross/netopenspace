@@ -7,9 +7,9 @@ using NOS.Registration.UI;
 
 using Rhino.Mocks;
 
-namespace NOS.Registration.Tests
+namespace NOS.Registration.Tests.UI
 {
-	public class With_auto_registration_view
+	public abstract class AutoRegistrationViewSpecs
 	{
 		protected static ILogger Logger;
 		protected static IRegistrationRepository Repository;
@@ -24,7 +24,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]
-	public class When_the_auto_registration_presenter_is_created : With_auto_registration_view
+	public class When_the_auto_registration_presenter_is_created : AutoRegistrationViewSpecs
 	{
 		static AutoRegistrationPresenter Presenter;
 
@@ -35,7 +35,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]
-	public class When_a_user_is_created : With_auto_registration_view
+	public class When_a_user_is_created : AutoRegistrationViewSpecs
 	{
 		Establish context = () =>
 			{
@@ -83,7 +83,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]
-	public class When_a_user_is_created_and_saving_the_registration_data_fails : With_auto_registration_view
+	public class When_a_user_is_created_and_saving_the_registration_data_fails : AutoRegistrationViewSpecs
 	{
 		static Exception Exception;
 
@@ -108,7 +108,7 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]
-	public class When_a_user_is_created_that_does_not_want_to_auto_register : With_auto_registration_view
+	public class When_a_user_is_created_that_does_not_want_to_auto_register : AutoRegistrationViewSpecs
 	{
 		Establish context = () =>
 			{

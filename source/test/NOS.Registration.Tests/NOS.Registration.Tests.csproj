@@ -64,7 +64,7 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
-    <Compile Include="AutoRegistrationPresenterSpecs.cs" />
+    <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
     <Compile Include="NVelocityEntryFormatterSpecs.cs" />
