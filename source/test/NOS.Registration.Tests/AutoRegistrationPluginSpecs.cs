@@ -5,6 +5,7 @@ using System.Linq;
 using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Formatting;
 using NOS.Registration.Queries;
 
 using Rhino.Mocks;
@@ -18,6 +19,7 @@ namespace NOS.Registration.Tests
 	{
 		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
+		protected static IFormatter[] Formatters;
 		protected static IHostV30 Host;
 		protected static ILogger Logger;
 		protected static INotificationSender NotificationSender;
@@ -49,6 +51,12 @@ namespace NOS.Registration.Tests
 
 				var settingsAccessor = MockRepository.GenerateStub<ISettingsAccessor>();
 
+				Formatters = new[]
+				             {
+				             	MockRepository.GenerateStub<IFormatter>(),
+				             	MockRepository.GenerateStub<IFormatter>()
+				             };
+
 				Plugin = new AutoRegistrationPlugin(synchronizer,
 				                                    RegistrationRepository,
 				                                    PageRepository,
@@ -57,7 +65,8 @@ namespace NOS.Registration.Tests
 				                                    NotificationSender,
 				                                    Logger,
 				                                    Configuration,
-				                                    settingsAccessor);
+				                                    settingsAccessor,
+				                                    Formatters);
 			};
 	}
 
@@ -136,6 +145,24 @@ namespace NOS.Registration.Tests
 
 		It should_disable_the_plugin =
 			() => Host.AssertWasCalled(x => x.UserAccountActivity -= Arg<EventHandler<UserAccountActivityEventArgs>>.Is.NotNull);
+	}
+
+	[Subject(typeof(AutoRegistrationPlugin))]
+	public class When_page_content_is_formatted : AutoRegistrationPluginSpecs
+	{
+		static string Formatted;
+
+		Establish context = () => Formatters.Last()
+		                          	.Stub(x => x.Format(null))
+		                          	.Return("formatted");
+
+		Because of = () => { Formatted = Plugin.Format("raw", null, FormattingPhase.Phase3); };
+
+		It should_return_the_formatted_result_of_the_last_formatter =
+			() => Formatted.ShouldEqual("formatted");
+
+		It should_format_the_content_with_all_known_formatters =
+			() => Formatters.Each(x => x.AssertWasCalled(y => y.Format(Arg<string>.Is.Anything)));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -261,7 +288,7 @@ namespace NOS.Registration.Tests
 			{
 				RegistrationRepository.BackToRecord();
 				RegistrationRepository
-					.Stub(x => x.Query(Arg<UserByUserName>.Matches(y=>y.UserName == "user")))
+					.Stub(x => x.Query(Arg<UserByUserName>.Matches(y => y.UserName == "user")))
 					.Return(null);
 				RegistrationRepository.Replay();
 			};

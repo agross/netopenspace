@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="Formatting\IFormatter.cs" />
     <Compile Include="IQuery.cs" />
     <Compile Include="Queries\AllUsers.cs" />
     <Compile Include="Queries\UserByUserName.cs" />

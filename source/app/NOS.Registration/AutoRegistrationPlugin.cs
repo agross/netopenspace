@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Formatting;
 using NOS.Registration.Queries;
 
 using ScrewTurn.Wiki.PluginFramework;
@@ -13,6 +15,7 @@ namespace NOS.Registration
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
+		readonly IList<IFormatter> _formatters;
 		readonly ILogger _logger;
 		readonly INotificationSender _notificationSender;
 		readonly IPageFormatter _pageFormatter;
@@ -24,14 +27,15 @@ namespace NOS.Registration
 
 		public AutoRegistrationPlugin()
 			: this(Container.GetInstance<ISynchronizer>(),
-				   Container.GetInstance<IRegistrationRepository>(),
-				   Container.GetInstance<IPageRepository>(),
-				   Container.GetInstance<IPageFormatter>(),
-				   Container.GetInstance<IEntryFormatter>(),
-				   Container.GetInstance<INotificationSender>(),
-				   Container.GetInstance<ILogger>(),
-				   Container.GetInstance<IPluginConfiguration>(),
-				   Container.GetInstance<ISettingsAccessor>())
+			       Container.GetInstance<IRegistrationRepository>(),
+			       Container.GetInstance<IPageRepository>(),
+			       Container.GetInstance<IPageFormatter>(),
+			       Container.GetInstance<IEntryFormatter>(),
+			       Container.GetInstance<INotificationSender>(),
+			       Container.GetInstance<ILogger>(),
+			       Container.GetInstance<IPluginConfiguration>(),
+			       Container.GetInstance<ISettingsAccessor>(),
+			       Container.GetAllInstances<IFormatter>())
 		{
 		}
 
@@ -43,7 +47,8 @@ namespace NOS.Registration
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
 		                              IPluginConfiguration configuration,
-		                              ISettingsAccessor settingsAccessor)
+		                              ISettingsAccessor settingsAccessor,
+		                              IList<IFormatter> formatters)
 		{
 			_synchronizer = synchronizer;
 			_registrationRepository = registrationRepository;
@@ -54,12 +59,13 @@ namespace NOS.Registration
 			_logger = logger;
 			_configuration = configuration;
 			_settingsAccessor = settingsAccessor;
+			_formatters = formatters;
 		}
 
 		public void Init(IHostV30 host, string config)
 		{
 			_host = host;
-			
+
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
@@ -97,7 +103,7 @@ namespace NOS.Registration
 
 		public string Format(string raw, ContextInformation context, FormattingPhase phase)
 		{
-			return raw;
+			return _formatters.Aggregate(raw, (partial, formatter) => formatter.Format(partial));
 		}
 
 		public string PrepareTitle(string title, ContextInformation context)

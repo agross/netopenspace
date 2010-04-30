@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
@@ -87,6 +88,16 @@ namespace NOS.Registration
 			}
 
 			return ObjectFactory.GetInstance<T>();
+		}
+
+		public static IList<T> GetAllInstances<T>()
+		{
+			if (String.IsNullOrEmpty(ObjectFactory.Profile))
+			{
+				BootstrapStructureMap();
+			}
+
+			return ObjectFactory.GetAllInstances<T>();
 		}
 
 		public static void Release()
