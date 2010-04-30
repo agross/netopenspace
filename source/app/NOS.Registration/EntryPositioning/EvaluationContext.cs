@@ -1,3 +1,5 @@
+using NOS.Registration.Abstractions;
+
 namespace NOS.Registration.EntryPositioning
 {
 	public class EvaluationContext

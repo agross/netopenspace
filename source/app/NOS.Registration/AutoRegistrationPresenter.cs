@@ -1,5 +1,7 @@
 using System;
 
+using NOS.Registration.Abstractions;
+
 namespace NOS.Registration
 {
 	public class AutoRegistrationPresenter
@@ -8,7 +10,7 @@ namespace NOS.Registration
 		readonly ILogger _logger;
 		readonly IAutoRegistrationView _view;
 
-		public AutoRegistrationPresenter(IAutoRegistrationView view) : this(view, new RegistrationRepository(), new DefaultLogger())
+		public AutoRegistrationPresenter(IAutoRegistrationView view) : this(view, new RegistrationRepository(), new Logger())
 		{
 		}
 

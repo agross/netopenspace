@@ -1,6 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 
+using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
 
 namespace NOS.Registration

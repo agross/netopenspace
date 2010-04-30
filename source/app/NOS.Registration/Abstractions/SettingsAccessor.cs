@@ -1,8 +1,8 @@
 using ScrewTurn.Wiki;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
-	class DefaultSettingsAccessor : ISettingsAccessor
+	class SettingsAccessor : ISettingsAccessor
 	{
 		public string ContactEmail
 		{

@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
+using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
 using NOS.Registration.EntryPositioning.Opinions;
 
@@ -26,7 +27,7 @@ namespace NOS.Registration
 			: this(new CrossContextSynchronizer(),
 			       new RegistrationRepository(),
 			       new PageRepository(),
-			       new PageFormatter(new DefaultLogger(),
+			       new PageFormatter(new Logger(),
 			                         new DefaultOpinionEvaluator(
 			                         	new IHaveOpinionAboutEntryPosition[]
 			                         	{
@@ -35,10 +36,10 @@ namespace NOS.Registration
 			                         		new WaitingListWhenHardLimitReached()
 			                         	})),
 			       new NVelocityEntryFormatter(),
-			       new EmailNotificationSender(new DefaultFileReader()),
-			       new DefaultLogger(),
+			       new EmailNotificationSender(new FileReader()),
+			       new Logger(),
 			       new DefaultPluginConfiguration(),
-			       new DefaultSettingsAccessor())
+			       new SettingsAccessor())
 		{
 		}
 

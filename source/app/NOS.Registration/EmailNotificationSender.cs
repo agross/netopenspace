@@ -1,5 +1,7 @@
 using System;
 
+using NOS.Registration.Abstractions;
+
 using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 

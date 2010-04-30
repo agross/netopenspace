@@ -1,4 +1,4 @@
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	public interface IFileWriter
 	{

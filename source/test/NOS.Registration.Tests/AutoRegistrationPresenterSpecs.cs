@@ -2,6 +2,8 @@ using System;
 
 using Machine.Specifications;
 
+using NOS.Registration.Abstractions;
+
 using Rhino.Mocks;
 
 namespace NOS.Registration.Tests

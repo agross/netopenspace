@@ -1,11 +1,10 @@
 using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
-	internal class DefaultLogger : ILogger
+	internal class Logger : ILogger
 	{
-		#region ILogger Members
 		public void Error(string message, string username)
 		{
 			Log.LogEntry(Tools.EscapeString(message), EntryType.Error, Tools.EscapeString(username));
@@ -20,6 +19,5 @@ namespace NOS.Registration
 		{
 			Log.LogEntry(Tools.EscapeString(message), EntryType.Warning, Tools.EscapeString(username));
 		}
-		#endregion
 	}
 }

@@ -4,6 +4,8 @@ using System.Linq;
 
 using Machine.Specifications;
 
+using NOS.Registration.Abstractions;
+
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
 

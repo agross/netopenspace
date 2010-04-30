@@ -2,9 +2,9 @@ using System.IO;
 
 using ScrewTurn.Wiki;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
-	internal class DefaultFileReader : IFileReader
+	internal class FileReader : IFileReader
 	{
 		public string Read(string path)
 		{
@@ -17,6 +17,7 @@ namespace NOS.Registration
 				{
 					throw new ScrewTurnException("Could not read stream from {0}", path);
 				}
+
 				return new StreamReader(stream).ReadToEnd();
 			}
 		}

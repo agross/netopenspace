@@ -2,9 +2,9 @@ using System.IO;
 
 using ScrewTurn.Wiki;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
-	internal class DefaultFileWriter : IFileWriter
+	internal class FileWriter : IFileWriter
 	{
 		public void Write(string path, string content)
 		{

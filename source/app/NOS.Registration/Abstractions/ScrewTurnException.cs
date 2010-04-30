@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	[Serializable]
 	internal class ScrewTurnException : Exception
