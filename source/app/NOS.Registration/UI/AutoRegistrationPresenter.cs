@@ -2,7 +2,7 @@ using System;
 
 using NOS.Registration.Abstractions;
 
-namespace NOS.Registration
+namespace NOS.Registration.UI
 {
 	public class AutoRegistrationPresenter
 	{

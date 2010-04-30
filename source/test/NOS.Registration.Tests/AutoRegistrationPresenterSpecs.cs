@@ -3,6 +3,7 @@ using System;
 using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.UI;
 
 using Rhino.Mocks;
 

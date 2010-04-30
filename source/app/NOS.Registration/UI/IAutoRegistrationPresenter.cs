@@ -1,6 +1,6 @@
 using System;
 
-namespace NOS.Registration
+namespace NOS.Registration.UI
 {
 	public interface IAutoRegistrationView
 	{

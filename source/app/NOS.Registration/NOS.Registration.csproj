@@ -62,7 +62,7 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
-    <Compile Include="AutoRegistrationPresenter.cs" />
+    <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="EmailNotificationSender.cs" />
     <Compile Include="EntryPositioning\Opinion.cs" />
@@ -82,7 +82,7 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Abstractions\FileReader.cs" />
     <Compile Include="Abstractions\FileWriter.cs" />
-    <Compile Include="IAutoRegistrationPresenter.cs" />
+    <Compile Include="UI\IAutoRegistrationPresenter.cs" />
     <Compile Include="IPageFormatter.cs" />
     <Compile Include="Abstractions\IFileReader.cs" />
     <Compile Include="Abstractions\IFileWriter.cs" />
