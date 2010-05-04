@@ -31,12 +31,12 @@ namespace NOS.TabMenu
 
 		public bool PerformPhase2
 		{
-			get { return true; }
+			get { return false; }
 		}
 
 		public bool PerformPhase3
 		{
-			get { return false; }
+			get { return true; }
 		}
 
 		public int ExecutionPriority
