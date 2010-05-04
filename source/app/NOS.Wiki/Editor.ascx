@@ -149,61 +149,59 @@
 			</div>
 			
 			<div id="MarkupToolbarDiv">
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Bold %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('\'\'\'', '\'\'\'');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.BoldTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('\'\'\'', '\'\'\'');">
 				<img src="Images/Editor/Bold.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Bold %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Italic %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('\'\'', '\'\'');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ItalicTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('\'\'', '\'\'');">
 				<img src="Images/Editor/Italic.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Italic %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Underlined %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('__', '__');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.UnderlinedTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('__', '__');">
 				<img src="Images/Editor/Underlined.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Underlined %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Striked %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('--', '--');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.StrikedTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('--', '--');">
 				<img src="Images/Editor/Striked.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Striked %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H1 %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('==', '==');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H1Title %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('==', '==');">
 				<img src="Images/Editor/H1.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H1 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H2 %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('===', '===');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H2Title %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('===', '===');">
 				<img src="Images/Editor/H2.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H2 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H3 %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('====', '====');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H3Title %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('====', '====');">
 				<img src="Images/Editor/H3.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H3 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H4 %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('=====', '=====');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H4Title %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('=====', '=====');">
 				<img src="Images/Editor/H4.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H4 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Superscript %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<sup>', '</sup>');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SuperscriptTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<sup>', '</sup>');">
 				<img src="Images/Editor/Superscript.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Superscript %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Subscript %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<sub>', '</sub>');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SubscriptTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<sub>', '</sub>');">
 				<img src="Images/Editor/Subscript.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Subscript %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.PageLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('PageLink');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.PageLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('PageLink');">
 				<img src="Images/Editor/PageLink.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.PageLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.FileLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('FileLink');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.FileLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('FileLink');">
 				<img src="Images/Editor/File.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.FileLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('ExternalLink');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('ExternalLink');">
 				<img src="Images/Editor/Link.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Image %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Image');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ImageTitle2 %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Image');">
 				<img src="Images/Editor/Image.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Image %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Anchor %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Anchor$' + ExtractAnchors());">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.AnchorTitle2 %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Anchor$' + ExtractAnchors());">
 				<img src="Images/Editor/Anchor.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Anchor %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.LineBreak %>" class="toolbarbutton" onclick="javascript:return InsertMarkup('{br}');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.LineBreakTitle %>" class="toolbarbutton" onclick="javascript:return InsertMarkup('{br}');">
 				<img src="Images/Editor/BR.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.LineBreak %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Snippets %>" id="SnippetsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSnippetsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SnippetsTitle %>" id="SnippetsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSnippetsMenuMarkup(event);">
 				<img src="Images/Editor/Snippet.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Snippets %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTags %>" id="SpecialTagsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSpecialTagsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTagsTitle %>" id="SpecialTagsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSpecialTagsMenuMarkup(event);">
 				<img src="Images/Editor/SpecialTags.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTags %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.HR %>" class="toolbarbutton" onclick="javascript:return InsertMarkup('----');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.HRTitle %>" class="toolbarbutton" onclick="javascript:return InsertMarkup('----');">
 				<img src="Images/Editor/HR.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.HR %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeInline %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('{{', '}}');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeInlineTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('{{', '}}');">
 				<img src="Images/Editor/Code.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeInline %>" /></a>
-			<!-- a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeBlock %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('{{{{', '}}}}');">
-				<img src="Images/Editor/PreEsc.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeBlock %>" /></a -->
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscaped %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('@@', '@@');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscapedTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('@@', '@@');">
 				<img src="Images/Editor/Pre.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscaped %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Escape %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<esc>', '</esc>');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.EscapeTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<esc>', '</esc>');">
 				<img src="Images/Editor/Escape.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Escape %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.NoWiki %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<nowiki>', '</nowiki>');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.NoWikiTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<nowiki>', '</nowiki>');">
 				<img src="Images/Editor/NoWiki.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.NoWiki %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.NoBr %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<nobr>', '</nobr>');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.NoBrTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<nobr>', '</nobr>');">
 				<img src="Images/Editor/NoBr.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.NoBr %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBox %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('(((', ')))');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBoxTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('(((', ')))');">
 				<img src="Images/Editor/Box.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBox %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Comment %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<!--', '-->');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CommentTitle %>" class="toolbarbutton" onclick="javascript:return WrapSelectedMarkup('<!--', '-->');">
 				<img src="Images/Editor/Comment.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Comment %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Symbols %>" id="SymbolsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSymbolsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SymbolsTitle %>" id="SymbolsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSymbolsMenuMarkup(event);">
 				<img src="Images/Editor/Symbol.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Symbols %>" /></a>
 			</div>
         </div>
@@ -225,60 +223,56 @@
 			</div>
         
 			<div id="VisualToolbarDiv">
-            <a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Bold %>" class="toolbarbutton" onclick="javascript:return execCmd('Bold',false,null);">
+            <a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.BoldTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Bold',false,null);">
 				<img src="Images/Editor/Bold.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Bold %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Italic %>" class="toolbarbutton" onclick="javascript:return execCmd('Italic',false,null);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ItalicTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Italic',false,null);">
 				<img src="Images/Editor/Italic.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Italic %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Underlined %>" class="toolbarbutton" onclick="javascript:return execCmd('Underline',false,null);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.UnderlinedTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Underline',false,null);">
 				<img src="Images/Editor/Underlined.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Underlined %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Striked %>" class="toolbarbutton" onclick="javascript:return execCmd('Strikethrough',false,null);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.StrikedTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Strikethrough',false,null);">
 				<img src="Images/Editor/Striked.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Striked %>" /></a>
-            <a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H1 %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h1','separator');">
+            <a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H1Title %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h1','separator');">
 				<img src="Images/Editor/H1.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H1 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H2 %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h2','separator');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H2Title %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h2','separator');">
 				<img src="Images/Editor/H2.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H2 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H3 %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h3','separator');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H3Title %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h3','separator');">
 				<img src="Images/Editor/H3.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H3 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H4 %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h4','separator');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.H4Title %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('h4','separator');">
 				<img src="Images/Editor/H4.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.H4 %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Superscript %>" class="toolbarbutton" onclick="javascript:return execCmd('Superscript',false,null);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SuperscriptTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Superscript',false,null);">
 				<img src="Images/Editor/Superscript.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Superscript %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Subscript %>" class="toolbarbutton" onclick="javascript:return execCmd('Subscript',false,null);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SubscriptTitle %>" class="toolbarbutton" onclick="javascript:return execCmd('Subscript',false,null);">
 				<img src="Images/Editor/Subscript.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Subscript %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.UnorderedList %>" class="toolbarbutton" onclick="javascript:return insertList('ul');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.UnorderedListTitle %>" class="toolbarbutton" onclick="javascript:return insertList('ul');">
 				<img src="Images/Editor/UL.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.UnorderedList %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.OrderedList %>" class="toolbarbutton" onclick="javascript:return insertList('ol');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.OrderedListTitle %>" class="toolbarbutton" onclick="javascript:return insertList('ol');">
 				<img src="Images/Editor/OL.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.OrderedList %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.PageLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('PageLink','WYSIWYG');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.PageLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('PageLink','WYSIWYG');">
 				<img src="Images/Editor/PageLink.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.PageLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.FileLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('FileLink','WYSIWYG');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.FileLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('FileLink','WYSIWYG');">
 				<img src="Images/Editor/File.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.FileLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLink %>" class="toolbarbutton" onclick="javascript:return OpenPopup('ExternalLink','WYSIWYG');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLinkTitle %>" class="toolbarbutton" onclick="javascript:return OpenPopup('ExternalLink','WYSIWYG');">
 				<img src="Images/Editor/Link.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.ExternalLink %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Image %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Image','WYSIWYG');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.ImageTitle2 %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Image','WYSIWYG');">
 				<img src="Images/Editor/Image.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Image %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Anchor %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Anchor$' + ExtractAnchorsWYSIWYG(),'WYSIWYG');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.AnchorTitle2 %>" class="toolbarbutton" onclick="javascript:return OpenPopup('Anchor$' + ExtractAnchorsWYSIWYG(),'WYSIWYG');">
 				<img src="Images/Editor/Anchor.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Anchor %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Snippets %>" id="SnippetsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSnippetsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SnippetsTitle %>" id="SnippetsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSnippetsMenuMarkup(event);">
 				<img src="Images/Editor/Snippet.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Snippets %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTags %>" id="SpecialTagsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSpecialTagsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTagsTitle %>" id="SpecialTagsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSpecialTagsMenuMarkup(event);">
 				<img src="Images/Editor/SpecialTags.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.SpecialTags %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.HR %>" class="toolbarbutton" onclick="javascript:return insertBreak();">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.HRTitle %>" class="toolbarbutton" onclick="javascript:return insertBreak();">
 				<img src="Images/Editor/HR.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.HR %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeInline %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('code');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeInlineTitle %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('code');">
 				<img src="Images/Editor/Code.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeInline %>" /></a>
-			<!-- a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeBlock %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('pre');">
-				<img src="Images/Editor/PreEsc.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeBlock %>" /></a -->
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscaped %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('pre');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscapedTitle %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('pre');">
 				<img src="Images/Editor/Pre.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.CodeEscaped %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Escape %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('esc');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.EscapeTitle %>" class="toolbarbutton" onclick="javascript:return wrapWithTag('esc');">
 				<img src="Images/Editor/Escape.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Escape %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBox %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('div', 'box');">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBoxTitle %>" class="toolbarbutton" onclick="javascript:return wrapWithTagClass('div', 'box');">
 				<img src="Images/Editor/Box.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.WrapperBox %>" /></a>
-			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.Symbols %>" id="SymbolsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSymbolsMenuMarkup(event);">
+			<a href="#" title="<%= ScrewTurn.Wiki.Properties.Messages.SymbolsTitle %>" id="SymbolsMenuLinkMarkup" class="toolbarbutton" onclick="javascript:return ShowSymbolsMenuMarkup(event);">
 				<img src="Images/Editor/Symbol.png" alt="<%= ScrewTurn.Wiki.Properties.Messages.Symbols %>" /></a>
-			<!-- a href="#" title="" id="A1" class="toolbarbutton" onclick="javascript:return alert(iframe.getSelection().anchorNode.parentNode.getAttribute('target'));">
-				P</a -->
 			</div>
         </div>
         

@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Le Body est requis</value>
+    <value>Le contenu est requis</value>
   </data>
   <data name="rfvBodyResource1.Text" xml:space="preserve">
     <value />

@@ -124,13 +124,13 @@
     <value />
   </data>
   <data name="btnRollbackResource1.Text" xml:space="preserve">
-    <value>Rollback</value>
+    <value>Revenir en arrière</value>
   </data>
   <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRollbackResource2.Text" xml:space="preserve">
-    <value>Rollback</value>
+    <value>Revenir en arrière</value>
   </data>
   <data name="btnRollbackResource2.ToolTip" xml:space="preserve">
     <value />
