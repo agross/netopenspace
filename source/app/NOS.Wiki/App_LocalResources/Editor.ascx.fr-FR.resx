@@ -136,7 +136,7 @@
     <value>Augmenter la taille de l'éditeur</value>
   </data>
   <data name="btnPreviewResource3.Text" xml:space="preserve">
-    <value>Apperçu</value>
+    <value>Aperçu</value>
   </data>
   <data name="btnPreviewResource3.ToolTip" xml:space="preserve">
     <value />
@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="lblPreviewWarningResource3.Text" xml:space="preserve">
-    <value>&lt;b&gt;Attention&lt;/b&gt;: ceci n'est qu'un apperçu. Le contenu n'a pas été sauvegardé.</value>
+    <value>&lt;b&gt;Attention&lt;/b&gt;: ceci n'est qu'un aperçu. Le contenu n'a pas été sauvegardé.</value>
   </data>
   <data name="lblPreviewWarningResource3.ToolTip" xml:space="preserve">
     <value />

@@ -127,7 +127,7 @@
     <value>Créer un nouveau répertoire</value>
   </data>
   <data name="lblNoListResource1.Text" xml:space="preserve">
-    <value>Vous ne pouvez afficher la liste du contenu de ce répertoire.</value>
+    <value>Vous ne pouvez pas afficher la liste du contenu de ce répertoire.</value>
   </data>
   <data name="lblNoListResource1.ToolTip" xml:space="preserve">
     <value />
@@ -157,25 +157,25 @@
     <value>Supprimer</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Supprimer cet item</value>
+    <value>Supprimer cet élément</value>
   </data>
   <data name="btnDeleteResource2.Text" xml:space="preserve">
     <value>Supprimer</value>
   </data>
   <data name="btnDeleteResource2.ToolTip" xml:space="preserve">
-    <value>Supprimer cet item</value>
+    <value>Supprimer cet élément</value>
   </data>
   <data name="btnRenameResource2.Text" xml:space="preserve">
     <value>Renommer</value>
   </data>
   <data name="btnRenameResource2.ToolTip" xml:space="preserve">
-    <value>Renommer cet item</value>
+    <value>Renommer cet élément</value>
   </data>
   <data name="btnRenameResource3.Text" xml:space="preserve">
     <value>Renommer</value>
   </data>
   <data name="btnRenameResource3.ToolTip" xml:space="preserve">
-    <value>Renommer cet item</value>
+    <value>Renommer cet élément</value>
   </data>
   <data name="lblLinkResource1.Text" xml:space="preserve">
     <value>Lien</value>
@@ -256,7 +256,7 @@
     <value />
   </data>
   <data name="lblUploadFilesInfoResource1.Text" xml:space="preserve">
-    <value>Vous pouvez télécharger des fichiers jusqu'à $1. Types de fichiers permis: $2.</value>
+    <value>Vous pouvez télécharger des fichiers jusqu'à $1. Types de fichiers permis : $2.</value>
   </data>
   <data name="lblUploadFilesResource1.Text" xml:space="preserve">
     <value>Télécharger des fichiers</value>

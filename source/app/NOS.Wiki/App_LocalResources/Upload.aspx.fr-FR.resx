@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Vous pouvez gérer ici vos fichiers et répertoires storés dans le wiki.</value>
+    <value>Vous pouvez gérer ici vos fichiers et répertoires enregistrés dans le wiki.</value>
   </data>
   <data name="lblManagementTitleResource1.Text" xml:space="preserve">
     <value>Gestion de Fichiers</value>

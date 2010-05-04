@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lnkCategoriesResource1.Text" xml:space="preserve">
-    <value>Catégories de page</value>
+    <value>Catégories</value>
   </data>
   <data name="lnkCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Voir toutes les catégories de pages</value>
+    <value>Voir toutes les catégories</value>
   </data>
   <data name="lnkSearchResource1.Text" xml:space="preserve">
     <value>Rechercher</value>
@@ -136,7 +136,7 @@
     <value />
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>La liste de toutes les pages contenues dans l'espace de nom courant.</value>
+    <value>La liste de toutes les pages contenues dans l'espace de nom actuel.</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
     <value>Index de la page</value>

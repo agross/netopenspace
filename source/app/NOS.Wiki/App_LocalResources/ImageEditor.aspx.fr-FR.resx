@@ -121,7 +121,7 @@
     <value>Fermer</value>
   </data>
   <data name="btnCancelResource2.ToolTip" xml:space="preserve">
-    <value>Fermer cette boîte d'outils</value>
+    <value>Fermer cette boîte à outils</value>
   </data>
   <data name="lblRotateResource1.Text" xml:space="preserve">
     <value>Rotation</value>
@@ -136,7 +136,7 @@
     <value>JPEG 100%</value>
   </data>
   <data name="rdoJpegHighResource2.ToolTip" xml:space="preserve">
-    <value>Format JPEG, Haute qualité</value>
+    <value>Format JPEG, haute qualité</value>
   </data>
   <data name="rdoJpegMediumResource2.Text" xml:space="preserve">
     <value>JPEG 60%</value>
@@ -223,7 +223,7 @@
     <value />
   </data>
   <data name="lblScalePreResource1.Text" xml:space="preserve">
-    <value>(Échelle: </value>
+    <value>(Échelle : </value>
   </data>
   <data name="lblScalePreResource1.ToolTip" xml:space="preserve">
     <value />

@@ -130,7 +130,7 @@
     <value>Page d'accueil</value>
   </data>
   <data name="lnkMainPageResource1.ToolTip" xml:space="preserve">
-    <value>Aller à la page d'accueil de l'espace de nom courant</value>
+    <value>Aller à la page d'accueil de l'espace de nom actuel</value>
   </data>
   <data name="lnkPreviousPageResource1.Text" xml:space="preserve">
     <value>« Retour à la page précédente</value>
