@@ -209,8 +209,9 @@ namespace :tests do
 			:console_xsl => 'FxCopRichConsoleOutput.xsl'.in("#{configatron.tools.fxcop.dirname}/Xml"),
 			:show_summary => true,
 			:fail_on_error => false,
+			:library_dirs => "#{configatron.dir.app}/#{configatron.project}.Wiki/bin",
 			:assemblies => FileList.new() \
-				.include("#{configatron.dir.build}/Wiki/**/#{configatron.project}*.dll") \
+				.include("#{configatron.dir.app}/#{configatron.project}.Wiki/**/#{configatron.project}*.dll") \
 				.exclude('**/*.vshost') \
 			do |violations|
 				TeamCity.append_build_status_text "#{violations} FxCop violation(s)"
