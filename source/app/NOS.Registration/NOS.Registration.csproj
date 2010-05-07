@@ -69,6 +69,14 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\Infrastructure\CommandInvoker.cs" />
+    <Compile Include="Commands\Infrastructure\CommandFactory.cs" />
+    <Compile Include="Commands\Infrastructure\GenericItemDictionary.cs" />
+    <Compile Include="Commands\Infrastructure\ICommandFactory.cs" />
+    <Compile Include="Commands\Infrastructure\ExecutionResult.cs" />
+    <Compile Include="Commands\Infrastructure\ICommandInvoker.cs" />
+    <Compile Include="Commands\ReturnValue.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
