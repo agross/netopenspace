@@ -1,5 +1,7 @@
 using System.IO;
 
+using NOS.Registration.Model;
+
 using NVelocity;
 using NVelocity.App;
 

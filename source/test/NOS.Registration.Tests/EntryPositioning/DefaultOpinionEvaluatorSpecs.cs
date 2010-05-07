@@ -3,6 +3,7 @@ using Machine.Specifications;
 using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
 using NOS.Registration.EntryPositioning.Opinions;
+using NOS.Registration.Model;
 
 using Rhino.Mocks;
 

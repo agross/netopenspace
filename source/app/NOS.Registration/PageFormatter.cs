@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 
 using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
+using NOS.Registration.Model;
 
 namespace NOS.Registration
 {

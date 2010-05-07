@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Script.Serialization;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Model;
 
 namespace NOS.Registration
 {

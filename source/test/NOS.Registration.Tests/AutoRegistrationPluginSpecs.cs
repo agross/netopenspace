@@ -6,6 +6,7 @@ using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
 using NOS.Registration.Formatting;
+using NOS.Registration.Model;
 using NOS.Registration.Queries;
 
 using Rhino.Mocks;

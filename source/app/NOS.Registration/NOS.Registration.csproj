@@ -71,6 +71,8 @@
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Formatting\AttendeeListFormatter.cs" />
+    <Compile Include="Model\ParticipationData.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Queries\Attendees.cs" />
     <Compile Include="Formatting\IFormatter.cs" />
     <Compile Include="IQuery.cs" />
@@ -111,8 +113,7 @@
     <Compile Include="RegistrationRepository.cs" />
     <Compile Include="NVelocityEntryFormatter.cs" />
     <Compile Include="Abstractions\ScrewTurnException.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserData.cs" />
+    <Compile Include="Model\UserData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

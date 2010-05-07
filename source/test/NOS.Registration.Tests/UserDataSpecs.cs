@@ -1,5 +1,7 @@
 using Machine.Specifications;
 
+using NOS.Registration.Model;
+
 namespace NOS.Registration.Tests
 {
 	[Subject(typeof(UserData))]

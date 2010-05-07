@@ -1,4 +1,5 @@
 using NOS.Registration.Abstractions;
+using NOS.Registration.Model;
 
 namespace NOS.Registration.EntryPositioning
 {

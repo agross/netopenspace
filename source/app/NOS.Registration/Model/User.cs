@@ -1,4 +1,4 @@
-namespace NOS.Registration
+namespace NOS.Registration.Model
 {
 	public class User
 	{
@@ -10,6 +10,7 @@ namespace NOS.Registration
 		{
 			UserName = userName;
 			Data = new UserData();
+			Participation = new ParticipationData();
 		}
 
 		public string UserName
@@ -19,6 +20,12 @@ namespace NOS.Registration
 		}
 
 		public UserData Data
+		{
+			get;
+			set;
+		}
+
+		public ParticipationData Participation
 		{
 			get;
 			set;

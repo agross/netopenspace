@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using NOS.Registration.Model;
+
 namespace NOS.Registration.Queries
 {
 	public class UserByUserName : IQuery<User>

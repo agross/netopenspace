@@ -1,3 +1,5 @@
+using NOS.Registration.Model;
+
 namespace NOS.Registration
 {
 	public interface IPageFormatter

@@ -1,5 +1,6 @@
 using Machine.Specifications;
 
+using NOS.Registration.Model;
 using NOS.Registration.Queries;
 
 namespace NOS.Registration.Tests.Queries

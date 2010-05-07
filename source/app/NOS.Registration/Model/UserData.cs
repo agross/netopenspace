@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Web.Script.Serialization;
 
-namespace NOS.Registration
+namespace NOS.Registration.Model
 {
 	public class UserData
 	{

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+using NOS.Registration.Model;
+
 namespace NOS.Registration.Queries
 {
 	public class AllUsers : IQuery<IEnumerable<User>>
