@@ -1,5 +1,3 @@
-using System.IO;
-
 using ScrewTurn.Wiki;
 
 namespace NOS.Registration.Abstractions
@@ -8,16 +6,9 @@ namespace NOS.Registration.Abstractions
 	{
 		public void Write(string path, string content)
 		{
-			var provider = Collectors.FilesProviderCollector.GetProvider(Settings.DefaultFilesProvider);
+			var provider = Collectors.SettingsProvider;
 
-			using (var stream = new MemoryStream())
-			{
-				var success = provider.StoreFile(path, stream, true);
-				if (!success)
-				{
-					throw new ScrewTurnException("Could not write stream to {0}", path);
-				}
-			}
+			provider.SetPluginConfiguration(path, content);
 		}
 	}
 }

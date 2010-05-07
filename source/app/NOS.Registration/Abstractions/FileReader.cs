@@ -1,5 +1,3 @@
-using System.IO;
-
 using ScrewTurn.Wiki;
 
 namespace NOS.Registration.Abstractions
@@ -8,18 +6,9 @@ namespace NOS.Registration.Abstractions
 	{
 		public string Read(string path)
 		{
-			var provider = Collectors.FilesProviderCollector.GetProvider(Settings.DefaultFilesProvider);
+			var provider = Collectors.SettingsProvider;
 
-			using (var stream = new MemoryStream())
-			{
-				var success = provider.RetrieveFile(path, stream, false);
-				if (!success)
-				{
-					throw new ScrewTurnException("Could not read stream from {0}", path);
-				}
-
-				return new StreamReader(stream).ReadToEnd();
-			}
+			return provider.GetPluginConfiguration(path);
 		}
 	}
 }

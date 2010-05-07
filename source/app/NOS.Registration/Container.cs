@@ -41,7 +41,7 @@ namespace NOS.Registration
 					x.For<IRegistrationRepository>()
 						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 						.Use<RegistrationRepository>()
-						.Ctor<string>("file").Is("AutoRegistration.cs");
+						.Ctor<string>("file").Is(typeof(AutoRegistrationPlugin).FullName + ".Data.cs");
 
 					x.For<IPageRepository>()
 						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
