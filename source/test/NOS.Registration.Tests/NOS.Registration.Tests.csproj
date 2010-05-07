@@ -55,6 +55,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\SolutionInfo.cs">
@@ -64,7 +65,12 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
-    <Compile Include="Formatting\AttendeeListFormatterSpecs.cs" />
+    <Compile Include="Formatting\ListItems\UserListItemFormatterSpecs.cs" />
+    <Compile Include="Formatting\ListMarkupFormatterSpecs.cs" />
+    <Compile Include="Formatting\Lists\OrderedListFormatterSpecs.cs" />
+    <Compile Include="Formatting\MarkupScannerSpecs.cs" />
+    <Compile Include="Formatting\Lists\UnorderedListFormatterSpecs.cs" />
+    <Compile Include="Formatting\RegistrationDataProviderSpecs.cs" />
     <Compile Include="Queries\AllUsersSpecs.cs" />
     <Compile Include="Queries\AttendeesSpecs.cs">
       <SubType>Code</SubType>

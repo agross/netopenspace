@@ -1,6 +1,6 @@
 namespace NOS.Registration.Formatting
 {
-	public interface IFormatter
+	public interface IMarkupFormatter
 	{
 		string Format(string raw);
 	}

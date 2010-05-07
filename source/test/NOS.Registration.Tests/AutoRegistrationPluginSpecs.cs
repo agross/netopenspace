@@ -20,7 +20,7 @@ namespace NOS.Registration.Tests
 	{
 		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
-		protected static IFormatter[] Formatters;
+		protected static IMarkupFormatter[] MarkupFormatters;
 		protected static IHostV30 Host;
 		protected static ILogger Logger;
 		protected static INotificationSender NotificationSender;
@@ -52,10 +52,10 @@ namespace NOS.Registration.Tests
 
 				var settingsAccessor = MockRepository.GenerateStub<ISettingsAccessor>();
 
-				Formatters = new[]
+				MarkupFormatters = new[]
 				             {
-				             	MockRepository.GenerateStub<IFormatter>(),
-				             	MockRepository.GenerateStub<IFormatter>()
+				             	MockRepository.GenerateStub<IMarkupFormatter>(),
+				             	MockRepository.GenerateStub<IMarkupFormatter>()
 				             };
 
 				Plugin = new AutoRegistrationPlugin(synchronizer,
@@ -67,7 +67,7 @@ namespace NOS.Registration.Tests
 				                                    Logger,
 				                                    Configuration,
 				                                    settingsAccessor,
-				                                    Formatters);
+				                                    MarkupFormatters);
 			};
 	}
 
@@ -153,7 +153,7 @@ namespace NOS.Registration.Tests
 	{
 		static string Formatted;
 
-		Establish context = () => Formatters.Last()
+		Establish context = () => MarkupFormatters.Last()
 		                          	.Stub(x => x.Format(null))
 		                          	.Return("formatted");
 
@@ -163,7 +163,7 @@ namespace NOS.Registration.Tests
 			() => Formatted.ShouldEqual("formatted");
 
 		It should_format_the_content_with_all_known_formatters =
-			() => Formatters.Each(x => x.AssertWasCalled(y => y.Format(Arg<string>.Is.Anything)));
+			() => MarkupFormatters.Each(x => x.AssertWasCalled(y => y.Format(Arg<string>.Is.Anything)));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]

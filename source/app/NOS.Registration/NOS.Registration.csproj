@@ -70,12 +70,22 @@
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Container.cs" />
-    <Compile Include="Formatting\AttendeeListFormatter.cs" />
+    <Compile Include="Formatting\IDataProvider.cs" />
+    <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
+    <Compile Include="Formatting\ListItems\UserListItemFormatter.cs" />
+    <Compile Include="Formatting\Lists\AbstractListFormatter.cs" />
+    <Compile Include="Formatting\ListMarkupFormatter.cs" />
+    <Compile Include="Formatting\MarkupScanner.cs" />
+    <Compile Include="Formatting\Lists\IListFormatter.cs" />
+    <Compile Include="Formatting\IMarkupScanner.cs" />
+    <Compile Include="Formatting\Lists\OrderedListFormatter.cs" />
+    <Compile Include="Formatting\Lists\UnorderedListFormatter.cs" />
+    <Compile Include="Formatting\RegistrationDataProvider.cs" />
     <Compile Include="Model\ParticipationData.cs" />
     <Compile Include="Model\ParticipationPreference.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Queries\Attendees.cs" />
-    <Compile Include="Formatting\IFormatter.cs" />
+    <Compile Include="Formatting\IMarkupFormatter.cs" />
     <Compile Include="IQuery.cs" />
     <Compile Include="Queries\AllUsers.cs" />
     <Compile Include="Queries\UserByUserName.cs" />

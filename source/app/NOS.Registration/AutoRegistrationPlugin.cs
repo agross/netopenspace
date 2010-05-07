@@ -15,7 +15,7 @@ namespace NOS.Registration
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
-		readonly IList<IFormatter> _formatters;
+		readonly IList<IMarkupFormatter> _formatters;
 		readonly ILogger _logger;
 		readonly INotificationSender _notificationSender;
 		readonly IPageFormatter _pageFormatter;
@@ -35,7 +35,7 @@ namespace NOS.Registration
 			       Container.GetInstance<ILogger>(),
 			       Container.GetInstance<IPluginConfiguration>(),
 			       Container.GetInstance<ISettingsAccessor>(),
-			       Container.GetAllInstances<IFormatter>())
+			       Container.GetAllInstances<IMarkupFormatter>())
 		{
 		}
 
@@ -48,7 +48,7 @@ namespace NOS.Registration
 		                              ILogger logger,
 		                              IPluginConfiguration configuration,
 		                              ISettingsAccessor settingsAccessor,
-		                              IList<IFormatter> formatters)
+		                              IList<IMarkupFormatter> formatters)
 		{
 			_synchronizer = synchronizer;
 			_registrationRepository = registrationRepository;
