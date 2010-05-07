@@ -16,8 +16,8 @@ namespace NOS.Registration.Tests.Queries
 			{
 				Users = new[]
 				        {
-				        	new User { UserName = "Alex", Data = new UserData() },
-				        	new User { UserName = "Torsten", Data = new UserData() }
+				        	new User("Alex"),
+				        	new User("Torsten")
 				        };
 
 				Query = new UserByUserName("torsten");
@@ -40,8 +40,8 @@ namespace NOS.Registration.Tests.Queries
 			{
 				Users = new[]
 				        {
-				        	new User { UserName = "Alex", Data = new UserData() },
-				        	new User { UserName = "Torsten", Data = new UserData() }
+				        	new User("Alex"),
+				        	new User("Torsten")
 				        };
 
 				Query = new UserByUserName("Peter");
