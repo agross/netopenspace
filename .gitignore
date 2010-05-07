@@ -28,6 +28,7 @@ local-properties.yml
 /source/app/NOS.Wiki/public/Attachments/
 /source/app/NOS.Wiki/public/Messages/
 /source/app/NOS.Wiki/public/Pages
+/source/app/NOS.Wiki/public/Plugins/Config/NOS.Registration.AutoRegistrationPlugin.Data.cs
 /source/app/NOS.Wiki/public/*.bak.cs
 /source/app/NOS.Wiki/public/ACL.cs
 /source/app/NOS.Wiki/public/AttachmentDownloads.cs
