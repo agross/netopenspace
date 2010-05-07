@@ -25,14 +25,6 @@ namespace NOS.Registration
 
 					DataAccess(x);
 
-					x.For<IPageRepository>()
-						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-						.Use<PageRepository>();
-
-					x.For<IPageFormatter>()
-						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-						.Use<PageFormatter>();
-
 					x.For<IEntryFormatter>()
 						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 						.Use<NVelocityEntryFormatter>();

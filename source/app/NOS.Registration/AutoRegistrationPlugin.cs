@@ -14,12 +14,9 @@ namespace NOS.Registration
 	public class AutoRegistrationPlugin : IFormatterProviderV30
 	{
 		readonly IPluginConfiguration _configuration;
-		readonly IEntryFormatter _entryFormatter;
 		readonly IList<IMarkupFormatter> _formatters;
 		readonly ILogger _logger;
 		readonly INotificationSender _notificationSender;
-		readonly IPageFormatter _pageFormatter;
-		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
 		readonly ISettingsAccessor _settingsAccessor;
 		readonly ISynchronizer _synchronizer;
@@ -28,9 +25,6 @@ namespace NOS.Registration
 		public AutoRegistrationPlugin()
 			: this(Container.GetInstance<ISynchronizer>(),
 			       Container.GetInstance<IRegistrationRepository>(),
-			       Container.GetInstance<IPageRepository>(),
-			       Container.GetInstance<IPageFormatter>(),
-			       Container.GetInstance<IEntryFormatter>(),
 			       Container.GetInstance<INotificationSender>(),
 			       Container.GetInstance<ILogger>(),
 			       Container.GetInstance<IPluginConfiguration>(),
@@ -41,9 +35,6 @@ namespace NOS.Registration
 
 		public AutoRegistrationPlugin(ISynchronizer synchronizer,
 		                              IRegistrationRepository registrationRepository,
-		                              IPageRepository pageRepository,
-		                              IPageFormatter pageFormatter,
-		                              IEntryFormatter entryFormatter,
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
 		                              IPluginConfiguration configuration,
@@ -52,9 +43,6 @@ namespace NOS.Registration
 		{
 			_synchronizer = synchronizer;
 			_registrationRepository = registrationRepository;
-			_pageRepository = pageRepository;
-			_pageFormatter = pageFormatter;
-			_entryFormatter = entryFormatter;
 			_notificationSender = notificationSender;
 			_logger = logger;
 			_configuration = configuration;
@@ -133,7 +121,7 @@ namespace NOS.Registration
 
 		bool Configure(string config)
 		{
-			var errors = _configuration.Parse(config ?? String.Empty, _pageRepository);
+			var errors = _configuration.Parse(config ?? String.Empty);
 
 			errors.Each(x => _logger.Error(x, "SYSTEM"));
 
@@ -158,51 +146,14 @@ namespace NOS.Registration
 							return;
 						}
 
-						var pageInfo = _pageRepository.FindPage(_configuration.PageName);
-						if (pageInfo == null)
-						{
-							_logger.Error(String.Format("The attendee page '{0}' does not exist.", _configuration.PageName), "SYSTEM");
-							failed = true;
-							return;
-						}
-
-						PageContent pageContent;
-						try
-						{
-							pageContent = _host.GetPageContent(pageInfo);
-						}
-						catch (Exception ex)
-						{
-							_logger.Error(
-								String.Format("The attendee page's content ('{0}') could not be loaded: {1}", _configuration.PageName, ex),
-								"SYSTEM");
-							failed = true;
-							return;
-						}
-
-						try
-						{
-							string entry = _entryFormatter.FormatUserEntry(user, _configuration.EntryTemplate);
-							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry, user, _configuration);
-
-							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, _configuration.Comment, newContent);
-
-							_registrationRepository.Delete(user.UserName);
-
-							_logger.Info("User entry written successfully, registration data has been deleted", user.UserName);
-						}
-						catch (Exception ex)
-						{
-							_logger.Error(String.Format("Could not add the user's entry to the attendee list: {0}", ex), "SYSTEM");
-							failed = true;
-						}
+						// TODO
 					}
 					finally
 					{
-						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
+						_notificationSender.SendMessage(e.User.Username, e.User.Email, "AutoRegistration", failed);
 						if (failed)
 						{
-							_notificationSender.SendMessage(e.User.Username, _settingsAccessor.ContactEmail, _configuration.Comment, true);
+							_notificationSender.SendMessage(e.User.Username, _settingsAccessor.ContactEmail, "AutoRegistration", true);
 						}
 					}
 				});

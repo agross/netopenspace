@@ -4,37 +4,7 @@ namespace NOS.Registration
 {
 	public interface IPluginConfiguration
 	{
-		string PageName
-		{
-			get;
-		}
-
-		string ListStartPattern
-		{
-			get;
-		}
-
-		string ListEndPattern
-		{
-			get;
-		}
-
-		string WaitingListEndPattern
-		{
-			get;
-		}
-
-		string EntryPattern
-		{
-			get;
-		}
-
 		string EntryTemplate
-		{
-			get;
-		}
-
-		string Comment
 		{
 			get;
 		}
@@ -49,6 +19,6 @@ namespace NOS.Registration
 			get;
 		}
 
-		IEnumerable<string> Parse(string configString, IPageRepository pageRepository);
+		IEnumerable<string> Parse(string configString);
 	}
 }

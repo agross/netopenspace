@@ -80,7 +80,6 @@
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
     <Compile Include="NVelocityEntryFormatterSpecs.cs" />
-    <Compile Include="PageFormatterSpecs.cs" />
     <Compile Include="CrossContextSynchronizationSpecs.cs" />
     <Compile Include="DefaultPluginConfigurationSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
