@@ -93,7 +93,7 @@ namespace NOS.Registration
 			x.For<IRegistrationRepository>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Use<RegistrationRepository>()
-				.Ctor<string>("file").Is(typeof(AutoRegistrationPlugin).FullName + ".Data.cs");
+				.Ctor<string>("file").Is(typeof(AutoRegistrationPlugin).FullName + ".Data");
 		}
 
 		static void ListMarkupFormatting(IInitializationExpression x)
