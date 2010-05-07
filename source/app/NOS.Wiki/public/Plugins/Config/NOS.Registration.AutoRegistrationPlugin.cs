@@ -5,4 +5,4 @@ WaitingListEndPattern=^\s*<!-- hier davor am Ende eintragen, nachfolgenden Zeile
 EntryPattern=^#.*$
 MaximumAttendees=100
 HardLimit=120
-EntryTemplate=# $user.Data.Name#if($user.Data.Email), [$user.Data.Email|E-Mail]#end#if($user.Data.Blog), [$user.Data.Blog|Blog]#end#if($user.Data.Twitter), [http://twitter.com/$user.Data.Twitter/|Twitter]#end#if($user.Data.Xing), [http://xing.com/profile/$user.Data.Xing|XING]#end#if($user.Data.Picture), [$user.Data.Picture|Bild]#end#if($user.Data.Sponsoring > 0), $user.Data.FormattedSponsoring &euro;#end\n\n
+EntryTemplate=$user.Data.Name#if($user.Data.Email), <a href="mailto:$user.Data.Email">E-Mail</a>#end#if($user.Data.Blog), <a href="$user.Data.Blog">Blog</a>#end#if($user.Data.Twitter), <a href="http://twitter.com/$user.Data.Twitter/">Twitter</a>#end#if($user.Data.Xing), <a href="http://xing.com/profile/$user.Data.Xing">XING</a>#end#if($user.Data.Picture), <a href="$user.Data.Picture">Bild</a>#end#if($user.Data.Sponsoring > 0), $user.Data.FormattedSponsoring &euro;#end
