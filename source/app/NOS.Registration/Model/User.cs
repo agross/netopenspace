@@ -30,5 +30,10 @@ namespace NOS.Registration.Model
 			get;
 			set;
 		}
+
+		public override string ToString()
+		{
+			return string.Format("UserName: {0}", UserName);
+		}
 	}
 }

@@ -66,6 +66,9 @@
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Formatting\AttendeeListFormatterSpecs.cs" />
     <Compile Include="Queries\AllUsersSpecs.cs" />
+    <Compile Include="Queries\AttendeesSpecs.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Queries\UserByNameSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />

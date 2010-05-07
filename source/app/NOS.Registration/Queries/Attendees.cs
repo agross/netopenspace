@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using NOS.Registration.Model;
 
@@ -9,7 +9,7 @@ namespace NOS.Registration.Queries
 	{
 		public IEnumerable<User> Apply(IEnumerable<User> data)
 		{
-			throw new NotImplementedException();
+			return data.Where(x => x.Participation.IsAttendee);
 		}
 	}
 }
