@@ -64,6 +64,7 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
+    <Compile Include="Formatting\AttendeeListFormatterSpecs.cs" />
     <Compile Include="Queries\AllUsersSpecs.cs" />
     <Compile Include="Queries\UserByNameSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using NOS.Registration.Abstractions;
 using NOS.Registration.EntryPositioning;
 using NOS.Registration.EntryPositioning.Opinions;
+using NOS.Registration.Formatting;
 
 using StructureMap;
 using StructureMap.Pipeline;
@@ -77,6 +78,10 @@ namespace NOS.Registration
 					x.For<IOpinionEvaluator>()
 						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 						.Use<DefaultOpinionEvaluator>();
+					
+					x.For<IFormatter>()
+						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+						.Use<AttendeeListFormatter>();
 				});
 		}
 

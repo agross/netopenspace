@@ -59,6 +59,7 @@
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\SolutionInfo.cs">
@@ -69,6 +70,8 @@
     </Compile>
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="Formatting\AttendeeListFormatter.cs" />
+    <Compile Include="Queries\Attendees.cs" />
     <Compile Include="Formatting\IFormatter.cs" />
     <Compile Include="IQuery.cs" />
     <Compile Include="Queries\AllUsers.cs" />
