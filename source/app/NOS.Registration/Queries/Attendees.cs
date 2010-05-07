@@ -9,7 +9,7 @@ namespace NOS.Registration.Queries
 	{
 		public IEnumerable<User> Apply(IEnumerable<User> data)
 		{
-			return data.Where(x => x.Participation.IsAttendee);
+			return data.Where(x => x.Participation.Preference == ParticipationPreference.Attending);
 		}
 	}
 }

@@ -19,14 +19,27 @@ namespace NOS.Registration.Tests.Queries
 
 		Establish context = () =>
 			{
-				Attendee1 = new User("Alex") { Participation = new ParticipationData { IsAttendee = true } };
-				Attendee2 = new User("Torsten") { Participation = new ParticipationData { IsAttendee = true } };
+				Attendee1 = new User("Alex")
+				            {
+				            	Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
+				            };
+				Attendee2 = new User("Torsten")
+				            {
+				            	Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
+				            };
 
 				Users = new[]
 				        {
 				        	Attendee1,
 				        	Attendee2,
-				        	new User("Peter") { Participation = new ParticipationData { IsAttendee = false } }
+				        	new User("Peter")
+				        	{
+				        		Participation = new ParticipationData { Preference = ParticipationPreference.InterestOnly }
+				        	},
+				        	new User("Klaus")
+				        	{
+				        		Participation = new ParticipationData { Preference = ParticipationPreference.Withdrawal }
+				        	}
 				        };
 
 				Query = new Attendees();

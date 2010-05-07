@@ -2,7 +2,7 @@ namespace NOS.Registration.Model
 {
 	public class ParticipationData
 	{
-		public bool IsAttendee
+		public ParticipationPreference Preference
 		{
 			get;
 			set;
