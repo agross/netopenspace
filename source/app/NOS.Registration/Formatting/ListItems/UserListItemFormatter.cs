@@ -1,5 +1,3 @@
-using System;
-
 using NOS.Registration.Model;
 
 namespace NOS.Registration.Formatting.ListItems
