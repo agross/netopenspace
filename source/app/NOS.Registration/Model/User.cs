@@ -1,5 +1,3 @@
-using System;
-
 namespace NOS.Registration.Model
 {
 	public class User

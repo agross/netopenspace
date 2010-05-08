@@ -8,34 +8,34 @@ using NOS.Registration.Tests.ForTesting;
 
 namespace NOS.Registration.Tests.Queries
 {
-	[Subject(typeof(Attendees))]
-	public class When_attendees_are_queried
+	[Subject(typeof(WaitingList))]
+	public class When_the_waiting_list_is_queried
 	{
 		static IEnumerable<User> Result;
 
 		static User[] Users;
-		static Attendees Query;
-		static User Attendee;
+		static WaitingList Query;
+		static User Waiting;
 
 		Establish context = () =>
 			{
-				Attendee = New.User.Named("Alex").Active().PrefersTo(Preference.Attend).WhichIs(Request.Accepted);
+				Waiting = New.User.Named("Torsten").Active().PrefersTo(Preference.Attend).WhichIs(Request.Refused);
 
 				Users = new[]
 				        {
-				        	Attendee,
-				        	New.User.Named("Torsten").Active().PrefersTo( Preference.Attend).WhichIs(Request.Refused),
-							New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend).WhichIs(Request.Accepted),
+				        	Waiting,
+				        	New.User.Named("Alex").Active().PrefersTo(Preference.Attend).WhichIs(Request.Accepted),
+							New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend).WhichIs(Request.Refused),
 				        	New.User.Named("Peter").Active().PrefersTo(Preference.InterestOnly),
 				        	New.User.Named("Klaus").Active().PrefersTo(Preference.Withdraw)
 				        };
 
-				Query = new Attendees();
+				Query = new WaitingList();
 			};
 
 		Because of = () => { Result = Query.Apply(Users); };
 
-		It should_return_active_attendees_preferring_to_attend =
-			() => Result.ShouldContainOnly(Attendee);
+		It should_return_active_waiting_list_members =
+			() => Result.ShouldContainOnly(Waiting);
 	}
 }

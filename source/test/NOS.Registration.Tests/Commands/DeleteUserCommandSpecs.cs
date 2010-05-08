@@ -6,6 +6,7 @@ using NOS.Registration.Commands;
 using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
 using NOS.Registration.Queries;
+using NOS.Registration.Tests.ForTesting;
 
 using Rhino.Mocks;
 

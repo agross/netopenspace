@@ -4,6 +4,7 @@ using Machine.Specifications;
 
 using NOS.Registration.Model;
 using NOS.Registration.Queries;
+using NOS.Registration.Tests.ForTesting;
 
 namespace NOS.Registration.Tests.Queries
 {
@@ -17,10 +18,10 @@ namespace NOS.Registration.Tests.Queries
 
 		Establish context = () =>
 			{
-				Users = new[]
+				Users = new User[]
 				        {
-				        	new User("Alex"),
-				        	new User("Torsten")
+				        	New.User.Named("Alex").Active(),
+				        	New.User.Named("Torsten").Inactive()
 				        };
 
 				Query = new AllUsers();
@@ -28,7 +29,7 @@ namespace NOS.Registration.Tests.Queries
 
 		Because of = () => { Result = Query.Apply(Users); };
 
-		It should_return_the_user_collection =
+		It should_return_all_users =
 			() => Result.ShouldEqual(Users);
 	}
 }

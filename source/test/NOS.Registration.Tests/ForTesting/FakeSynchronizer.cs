@@ -1,6 +1,6 @@
 using System;
 
-namespace NOS.Registration.Tests
+namespace NOS.Registration.Tests.ForTesting
 {
 	public class FakeSynchronizer:ISynchronizer
 	{

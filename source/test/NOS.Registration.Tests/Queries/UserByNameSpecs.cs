@@ -2,6 +2,7 @@ using Machine.Specifications;
 
 using NOS.Registration.Model;
 using NOS.Registration.Queries;
+using NOS.Registration.Tests.ForTesting;
 
 namespace NOS.Registration.Tests.Queries
 {
@@ -14,10 +15,10 @@ namespace NOS.Registration.Tests.Queries
 
 		Establish context = () =>
 			{
-				Users = new[]
+				Users = new User[]
 				        {
-				        	new User("Alex"),
-				        	new User("Torsten")
+				        	New.User.Named("Alex"),
+				        	New.User.Named("Torsten")
 				        };
 
 				Query = new UserByUserName("torsten");
@@ -38,10 +39,10 @@ namespace NOS.Registration.Tests.Queries
 
 		Establish context = () =>
 			{
-				Users = new[]
+				Users = new User[]
 				        {
-				        	new User("Alex"),
-				        	new User("Torsten")
+				        	New.User.Named("Alex"),
+				        	New.User.Named("Torsten")
 				        };
 
 				Query = new UserByUserName("Peter");

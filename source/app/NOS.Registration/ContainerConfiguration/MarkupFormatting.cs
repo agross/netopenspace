@@ -15,18 +15,37 @@ namespace NOS.Registration.ContainerConfiguration
 	{
 		public MarkupFormatting()
 		{
+			DataProviders();
 			MarkupScanners();
 			ListFormatters();
 			MarkupFormatters();
 
+			For<ITemplateEngine>()
+				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+				.Use<NVelocityTemplateEngine>();
+		}
+
+		void DataProviders()
+		{
 			For(typeof(IDataProvider<User>))
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Use(typeof(RegistrationDataProvider<Attendees>))
 				.Named("attendees");
-
-			For<ITemplateEngine>()
+			
+			For(typeof(IDataProvider<User>))
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<NVelocityTemplateEngine>();
+				.Use(typeof(RegistrationDataProvider<WaitingList>))
+				.Named("waiting list");
+			
+			For(typeof(IDataProvider<User>))
+				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+				.Use(typeof(RegistrationDataProvider<Withdrawals>))
+				.Named("withdrawal list");
+
+			For(typeof(IDataProvider<User>))
+				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+				.Use(typeof(RegistrationDataProvider<InterestOnly>))
+				.Named("interest-only list");
 		}
 
 		void MarkupFormatters()
@@ -43,7 +62,7 @@ namespace NOS.Registration.ContainerConfiguration
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Add<ListMarkupFormatter<User>>()
 				.Ctor<IMarkupScanner>().Is(y => y.TheInstanceNamed("waiting list"))
-				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("attendees"))
+				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("waiting list"))
 				.Ctor<IListFormatter<User>>("emptyListFormatter").Is(y => y.TheInstanceNamed("ul"))
 				.Ctor<IListFormatter<User>>("listFormatter").Is(y => y.TheInstanceNamed("ol"));
 
@@ -51,15 +70,15 @@ namespace NOS.Registration.ContainerConfiguration
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Add<ListMarkupFormatter<User>>()
 				.Ctor<IMarkupScanner>().Is(y => y.TheInstanceNamed("withdrawal list"))
-				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("attendees"))
+				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("withdrawal list"))
 				.Ctor<IListFormatter<User>>("emptyListFormatter").Is(y => y.TheInstanceNamed("ul"))
 				.Ctor<IListFormatter<User>>("listFormatter").Is(y => y.TheInstanceNamed("ul"));
 
 			For<IMarkupFormatter>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Add<ListMarkupFormatter<User>>()
-				.Ctor<IMarkupScanner>().Is(y => y.TheInstanceNamed("interest list"))
-				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("attendees"))
+				.Ctor<IMarkupScanner>().Is(y => y.TheInstanceNamed("interest-only list"))
+				.Ctor<IDataProvider<User>>().Is(y => y.TheInstanceNamed("interest-only list"))
 				.Ctor<IListFormatter<User>>("emptyListFormatter").Is(y => y.TheInstanceNamed("ul"))
 				.Ctor<IListFormatter<User>>("listFormatter").Is(y => y.TheInstanceNamed("ul"));
 		}
@@ -107,7 +126,7 @@ namespace NOS.Registration.ContainerConfiguration
 			For<IMarkupScanner>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Use<MarkupScanner>()
-				.Named("interest list")
+				.Named("interest-only list")
 				.Ctor<string>("name").Is("Interest list")
 				.Ctor<string>("expression").Is(@"<interest-list(.+?)/>");
 		}

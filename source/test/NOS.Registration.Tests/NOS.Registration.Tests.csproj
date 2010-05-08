@@ -72,18 +72,23 @@
     <Compile Include="Commands\FormatContentCommandSpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactorySpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandInvokerSpecs.cs" />
-    <Compile Include="FakeSynchronizer.cs" />
+    <Compile Include="ForTesting\FakeSynchronizer.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatterSpecs.cs" />
     <Compile Include="Formatting\ListMarkupFormatterSpecs.cs" />
     <Compile Include="Formatting\Lists\OrderedListFormatterSpecs.cs" />
     <Compile Include="Formatting\MarkupScannerSpecs.cs" />
     <Compile Include="Formatting\Lists\UnorderedListFormatterSpecs.cs" />
     <Compile Include="Formatting\RegistrationDataProviderSpecs.cs" />
+    <Compile Include="ForTesting\New.cs" />
+    <Compile Include="ForTesting\UserBuilder.cs" />
     <Compile Include="Queries\AllUsersSpecs.cs" />
     <Compile Include="Queries\AttendeesSpecs.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Queries\ActiveUsersSpecs.cs" />
+    <Compile Include="Queries\InterestOnlySpecs.cs" />
+    <Compile Include="Queries\WithdrawalsSpecs.cs" />
+    <Compile Include="Queries\WaitingListSpecs.cs" />
     <Compile Include="Queries\UserByNameSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
