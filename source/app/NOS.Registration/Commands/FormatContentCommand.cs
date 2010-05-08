@@ -5,7 +5,7 @@ using NOS.Registration.Formatting;
 
 namespace NOS.Registration.Commands
 {
-	internal class FormatContentCommand : Command<FormatContentMessage>
+	public class FormatContentCommand : Command<FormatContentMessage>
 	{
 		readonly IList<IMarkupFormatter> _formatters;
 

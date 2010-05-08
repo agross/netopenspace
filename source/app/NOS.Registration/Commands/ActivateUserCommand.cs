@@ -6,7 +6,7 @@ using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Commands
 {
-	internal class ActivateUserCommand : Command<ActivateUserMessage>
+	public class ActivateUserCommand : Command<ActivateUserMessage>
 	{
 		readonly INotificationSender _notificationSender;
 		readonly IRegistrationRepository _registrationRepository;

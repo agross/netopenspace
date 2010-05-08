@@ -1,3 +1,4 @@
+using NOS.Registration.Commands;
 using NOS.Registration.Commands.Infrastructure;
 
 using StructureMap;
@@ -21,6 +22,13 @@ namespace NOS.Registration.ContainerConfiguration
 			For<ISynchronizer>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Use<CrossContextSynchronizer>();
+
+			Scan(x =>
+			{
+				x.TheCallingAssembly();
+				x.AddAllTypesOf(typeof(Command<>));
+				x.WithDefaultConventions();
+			});
 		}
 	}
 }
