@@ -6,9 +6,9 @@ using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
-	public class ScrewTurnWikiAbstractionsRegistry : Registry
+	public class ScrewTurnWikiAbstractions : Registry
 	{
-		public ScrewTurnWikiAbstractionsRegistry()
+		public ScrewTurnWikiAbstractions()
 		{
 			For<ILogger>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))

@@ -81,11 +81,11 @@
     <Compile Include="Commands\Infrastructure\ICommandInvoker.cs" />
     <Compile Include="Commands\ReturnValue.cs" />
     <Compile Include="Container.cs" />
-    <Compile Include="ContainerConfiguration\CommandRegistry.cs" />
-    <Compile Include="ContainerConfiguration\DataAccessRegistry.cs" />
-    <Compile Include="ContainerConfiguration\EntryPositioningRegistry.cs" />
-    <Compile Include="ContainerConfiguration\MarkupFormattingRegistry.cs" />
-    <Compile Include="ContainerConfiguration\ScrewTurnWikiAbstractionsRegistry.cs" />
+    <Compile Include="ContainerConfiguration\Commands.cs" />
+    <Compile Include="ContainerConfiguration\DataAccess.cs" />
+    <Compile Include="ContainerConfiguration\EntryPositioning.cs" />
+    <Compile Include="ContainerConfiguration\MarkupFormatting.cs" />
+    <Compile Include="ContainerConfiguration\ScrewTurnWikiAbstractions.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatter.cs" />

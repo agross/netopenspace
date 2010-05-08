@@ -7,9 +7,9 @@ using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
-	public class EntryPositioningRegistry : Registry
+	public class EntryPositioning : Registry
 	{
-		public EntryPositioningRegistry()
+		public EntryPositioning()
 		{
 			For<IHaveOpinionAboutEntryPosition>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))

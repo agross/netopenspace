@@ -11,9 +11,9 @@ using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
-	public class MarkupFormattingRegistry : Registry
+	public class MarkupFormatting : Registry
 	{
-		public MarkupFormattingRegistry()
+		public MarkupFormatting()
 		{
 			MarkupScanners();
 			ListFormatters();

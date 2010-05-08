@@ -6,9 +6,9 @@ using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
-	public class CommandRegistry : Registry
+	public class Commands : Registry
 	{
-		public CommandRegistry()
+		public Commands()
 		{
 			For<ICommandInvoker>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))

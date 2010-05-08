@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-using NOS.Registration.ContainerConfiguration;
-
 using StructureMap;
 
 namespace NOS.Registration
@@ -11,14 +9,11 @@ namespace NOS.Registration
 	{
 		public static void BootstrapStructureMap()
 		{
-			ObjectFactory.Initialize(x =>
+			ObjectFactory.Initialize(x => x.Scan(y =>
 				{
-					x.AddRegistry<ScrewTurnWikiAbstractionsRegistry>();
-					x.AddRegistry<DataAccessRegistry>();
-					x.AddRegistry<EntryPositioningRegistry>();
-					x.AddRegistry<CommandRegistry>();
-					x.AddRegistry<MarkupFormattingRegistry>();
-				});
+					y.TheCallingAssembly();
+					y.LookForRegistries();
+				}));
 		}
 
 		public static T GetInstance<T>()

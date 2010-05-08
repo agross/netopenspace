@@ -6,9 +6,9 @@ using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
-	public class DataAccessRegistry : Registry
+	public class DataAccess : Registry
 	{
-		public DataAccessRegistry()
+		public DataAccess()
 		{
 			For<IRegistrationRepository>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
