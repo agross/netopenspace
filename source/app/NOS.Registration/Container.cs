@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.Commands.Infrastructure;
 using NOS.Registration.EntryPositioning;
 using NOS.Registration.EntryPositioning.Opinions;
 using NOS.Registration.Formatting;
@@ -52,6 +53,14 @@ namespace NOS.Registration
 					x.For<IOpinionEvaluator>()
 						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 						.Use<DefaultOpinionEvaluator>();
+					
+					x.For<ICommandInvoker>()
+						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+						.Use<CommandInvoker>();
+					
+					x.For<ICommandFactory>()
+						.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+						.Use<CommandFactory>();
 
 					ListMarkupFormatting(x);
 				});

@@ -65,6 +65,9 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
+    <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
+    <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />
+    <Compile Include="Commands\FormatContentCommandSpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactorySpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandInvokerSpecs.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatterSpecs.cs" />
