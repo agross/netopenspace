@@ -84,7 +84,7 @@
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
-    <Compile Include="Formatting\Templating\NVelocityEntryFormatterSpecs.cs" />
+    <Compile Include="Templating\NVelocityTemplateEngineSpecs.cs" />
     <Compile Include="CrossContextSynchronizationSpecs.cs" />
     <Compile Include="Abstractions\DefaultPluginConfigurationSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

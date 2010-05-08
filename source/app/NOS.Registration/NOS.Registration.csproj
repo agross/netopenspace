@@ -116,7 +116,7 @@
     <Compile Include="EntryPositioning\EvaluationContext.cs" />
     <Compile Include="EntryPositioning\IHaveOpinionAboutEntryPosition.cs" />
     <Compile Include="EntryPositioning\IOpinionEvaluator.cs" />
-    <Compile Include="Formatting\Templating\IEntryFormatter.cs" />
+    <Compile Include="Templating\ITemplateEngine.cs" />
     <Compile Include="Abstractions\INotificationSender.cs" />
     <Compile Include="Abstractions\IPluginConfiguration.cs" />
     <Compile Include="Abstractions\ISettingsAccessor.cs" />
@@ -134,7 +134,7 @@
     <Compile Include="Abstractions\DefaultPluginConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataAccess\RegistrationRepository.cs" />
-    <Compile Include="Formatting\Templating\NVelocityEntryFormatter.cs" />
+    <Compile Include="Templating\NVelocityTemplateEngine.cs" />
     <Compile Include="Abstractions\ScrewTurnException.cs" />
     <Compile Include="Model\UserData.cs" />
   </ItemGroup>

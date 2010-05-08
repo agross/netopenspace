@@ -25,9 +25,9 @@ namespace NOS.Registration.Tests.Formatting.ListItems
 					.Stub(x => x.EntryTemplate)
 					.Return("template");
 
-				var entryFormatter = MockRepository.GenerateStub<IEntryFormatter>();
+				var entryFormatter = MockRepository.GenerateStub<ITemplateEngine>();
 				entryFormatter
-					.Stub(x => x.FormatUserEntry(User, "template"))
+					.Stub(x => x.Format(User, "template"))
 					.Return("formatted template");
 
 				Formatter = new UserListItemFormatter(entryFormatter,

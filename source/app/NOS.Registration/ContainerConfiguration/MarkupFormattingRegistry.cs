@@ -24,9 +24,9 @@ namespace NOS.Registration.ContainerConfiguration
 				.Use(typeof(RegistrationDataProvider<Attendees>))
 				.Named("attendees");
 
-			For<IEntryFormatter>()
+			For<ITemplateEngine>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<NVelocityEntryFormatter>();
+				.Use<NVelocityTemplateEngine>();
 		}
 
 		void MarkupFormatters()
