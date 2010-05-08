@@ -29,7 +29,7 @@ namespace NOS.Registration.Tests.Queries
 		It should_return_a_matching_user =
 			() => Result.UserName.ShouldEqual("Torsten");
 	}
-	
+
 	[Subject(typeof(UserByUserName))]
 	public class When_a_user_cannot_be_found_by_the_user_name
 	{

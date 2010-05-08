@@ -24,8 +24,8 @@ namespace NOS.Registration.Tests.Queries
 				Users = new[]
 				        {
 				        	Attendee,
-				        	New.User.Named("Torsten").Active().PrefersTo( Preference.Attend).WhichIs(Request.Refused),
-							New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend).WhichIs(Request.Accepted),
+				        	New.User.Named("Torsten").Active().PrefersTo(Preference.Attend).WhichIs(Request.Refused),
+				        	New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend).WhichIs(Request.Accepted),
 				        	New.User.Named("Peter").Active().PrefersTo(Preference.InterestOnly),
 				        	New.User.Named("Klaus").Active().PrefersTo(Preference.Withdraw)
 				        };

@@ -25,7 +25,7 @@ namespace NOS.Registration.Tests.Queries
 				        {
 				        	Withdrawing,
 				        	New.User.Named("Alex").Active().PrefersTo(Preference.Attend).WhichIs(Request.Accepted),
-							New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend),
+				        	New.User.Named("Hans").Inactive().PrefersTo(Preference.Attend),
 				        	New.User.Named("Peter").Active().PrefersTo(Preference.InterestOnly),
 				        	New.User.Named("Klaus").Inactive().PrefersTo(Preference.Withdraw)
 				        };
