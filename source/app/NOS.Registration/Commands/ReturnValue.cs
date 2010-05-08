@@ -7,7 +7,7 @@ namespace NOS.Registration.Commands
 	{
 		readonly List<string> _messages = new List<string>();
 
-		protected ReturnValue()
+		ReturnValue()
 		{
 		}
 
