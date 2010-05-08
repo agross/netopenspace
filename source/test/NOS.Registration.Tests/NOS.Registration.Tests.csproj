@@ -67,9 +67,11 @@
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />
+    <Compile Include="Commands\DeleteUserCommandSpecs.cs" />
     <Compile Include="Commands\FormatContentCommandSpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactorySpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandInvokerSpecs.cs" />
+    <Compile Include="FakeSynchronizer.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatterSpecs.cs" />
     <Compile Include="Formatting\ListMarkupFormatterSpecs.cs" />
     <Compile Include="Formatting\Lists\OrderedListFormatterSpecs.cs" />

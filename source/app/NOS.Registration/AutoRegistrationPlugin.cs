@@ -107,12 +107,16 @@ namespace NOS.Registration
 
 		void Host_UserAccountActivity(object sender, UserAccountActivityEventArgs e)
 		{
-			if (e.Activity != UserAccountActivity.AccountActivated)
+			switch (e.Activity)
 			{
-				return;
-			}
+				case UserAccountActivity.AccountActivated:
+					_commandInvoker.Process(new ActivateUserMessage(e.User));
+					break;
 
-			_commandInvoker.Process(new ActivateUserMessage(e.User));
+				case UserAccountActivity.AccountRemoved:
+					_commandInvoker.Process(new DeleteUserMessage(e.User));
+					break;
+			}
 		}
 	}
 }

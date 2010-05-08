@@ -35,7 +35,8 @@ namespace NOS.Registration.Tests
 
 			CommandInvoker
 				.Stub(x => x.Process(Arg<ConfigureEnvironmentMessage>.Is.TypeOf))
-				.Return(result);
+				.Return(result)
+				.Repeat.Once();
 
 			plugin.Init(Host, String.Empty);
 		}
@@ -111,7 +112,7 @@ namespace NOS.Registration.Tests
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_the_auto_registration_plugin_is_shut_down : AutoRegistrationPluginSpecs
 	{
-		Establish context = () => { Initialize(Plugin); };
+		Establish context = () => Initialize(Plugin);
 
 		Because of = () => Plugin.Shutdown();
 
@@ -166,6 +167,31 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
+	public class When_a_user_account_is_deleted : AutoRegistrationPluginSpecs
+	{
+		static UserAccountActivityEventArgs EventArgs;
+		static UserInfo UserInfo;
+
+		Establish context = () =>
+			{
+				UserInfo = new UserInfo("user",
+				                        "The User",
+				                        "email@example.com",
+				                        true,
+				                        DateTime.Now,
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
+				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountRemoved);
+
+				Initialize(Plugin);
+			};
+
+		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
+
+		It should_process_the_user_account_deletion_message =
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeleteUserMessage>.Matches(y => y.User == UserInfo)));
+	}
+
+	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_any_other_user_account_activity_takes_place : AutoRegistrationPluginSpecs
 	{
 		static UserAccountActivityEventArgs EventArgs;
@@ -179,7 +205,10 @@ namespace NOS.Registration.Tests
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
-		It should_not_process_the_user_account_activation_message =
-			() => CommandInvoker.AssertWasNotCalled(x => x.Process(Arg<ActivateUserMessage>.Is.TypeOf));
+		It should_not_process_any_user_related_message = () =>
+			{
+				CommandInvoker.AssertWasNotCalled(x => x.Process(Arg<ActivateUserMessage>.Is.TypeOf));
+				CommandInvoker.AssertWasNotCalled(x => x.Process(Arg<DeleteUserMessage>.Is.TypeOf));
+			};
 	}
 }
