@@ -1,5 +1,6 @@
 using Machine.Specifications;
 
+using NOS.Registration.Abstractions;
 using NOS.Registration.Commands;
 
 using Rhino.Mocks;

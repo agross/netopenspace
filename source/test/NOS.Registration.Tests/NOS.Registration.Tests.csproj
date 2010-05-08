@@ -84,12 +84,12 @@
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
-    <Compile Include="NVelocityEntryFormatterSpecs.cs" />
+    <Compile Include="Formatting\Templating\NVelocityEntryFormatterSpecs.cs" />
     <Compile Include="CrossContextSynchronizationSpecs.cs" />
-    <Compile Include="DefaultPluginConfigurationSpecs.cs" />
+    <Compile Include="Abstractions\DefaultPluginConfigurationSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationRepositorySpecs.cs" />
-    <Compile Include="UserDataSpecs.cs" />
+    <Compile Include="DataAccess\RegistrationRepositorySpecs.cs" />
+    <Compile Include="Model\UserDataSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\app\NOS.Registration\NOS.Registration.csproj">

@@ -1,6 +1,6 @@
 using NOS.Registration.Model;
 
-namespace NOS.Registration
+namespace NOS.Registration.Templating
 {
 	public interface IEntryFormatter
 	{

@@ -1,6 +1,6 @@
 using ScrewTurn.Wiki.PluginFramework;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	public interface INotificationSender
 	{

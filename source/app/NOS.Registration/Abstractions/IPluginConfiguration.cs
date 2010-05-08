@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	public interface IPluginConfiguration
 	{

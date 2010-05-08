@@ -81,6 +81,11 @@
     <Compile Include="Commands\Infrastructure\ICommandInvoker.cs" />
     <Compile Include="Commands\ReturnValue.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="ContainerConfiguration\CommandRegistry.cs" />
+    <Compile Include="ContainerConfiguration\DataAccessRegistry.cs" />
+    <Compile Include="ContainerConfiguration\EntryPositioningRegistry.cs" />
+    <Compile Include="ContainerConfiguration\MarkupFormattingRegistry.cs" />
+    <Compile Include="ContainerConfiguration\ScrewTurnWikiAbstractionsRegistry.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatter.cs" />
@@ -97,12 +102,12 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Queries\Attendees.cs" />
     <Compile Include="Formatting\IMarkupFormatter.cs" />
-    <Compile Include="IQuery.cs" />
+    <Compile Include="Queries\IQuery.cs" />
     <Compile Include="Queries\AllUsers.cs" />
     <Compile Include="Queries\UserByUserName.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\SettingsAccessor.cs" />
-    <Compile Include="EmailNotificationSender.cs" />
+    <Compile Include="Abstractions\EmailNotificationSender.cs" />
     <Compile Include="EntryPositioning\Opinion.cs" />
     <Compile Include="EntryPositioning\Opinions\OnAttendeeList.cs" />
     <Compile Include="EntryPositioning\Opinions\OnWaitingListIfNotSponsoring.cs" />
@@ -111,9 +116,9 @@
     <Compile Include="EntryPositioning\EvaluationContext.cs" />
     <Compile Include="EntryPositioning\IHaveOpinionAboutEntryPosition.cs" />
     <Compile Include="EntryPositioning\IOpinionEvaluator.cs" />
-    <Compile Include="IEntryFormatter.cs" />
-    <Compile Include="INotificationSender.cs" />
-    <Compile Include="IPluginConfiguration.cs" />
+    <Compile Include="Formatting\Templating\IEntryFormatter.cs" />
+    <Compile Include="Abstractions\INotificationSender.cs" />
+    <Compile Include="Abstractions\IPluginConfiguration.cs" />
     <Compile Include="Abstractions\ISettingsAccessor.cs" />
     <Compile Include="CrossContextSynchronization.cs" />
     <Compile Include="EnumerableExtensions.cs" />
@@ -124,12 +129,12 @@
     <Compile Include="Abstractions\IFileWriter.cs" />
     <Compile Include="Abstractions\ILogger.cs" />
     <Compile Include="ISynchronizer.cs" />
-    <Compile Include="IRegistrationRepository.cs" />
+    <Compile Include="DataAccess\IRegistrationRepository.cs" />
     <Compile Include="Abstractions\Logger.cs" />
-    <Compile Include="DefaultPluginConfiguration.cs" />
+    <Compile Include="Abstractions\DefaultPluginConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationRepository.cs" />
-    <Compile Include="NVelocityEntryFormatter.cs" />
+    <Compile Include="DataAccess\RegistrationRepository.cs" />
+    <Compile Include="Formatting\Templating\NVelocityEntryFormatter.cs" />
     <Compile Include="Abstractions\ScrewTurnException.cs" />
     <Compile Include="Model\UserData.cs" />
   </ItemGroup>

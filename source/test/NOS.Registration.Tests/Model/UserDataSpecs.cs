@@ -2,7 +2,7 @@ using Machine.Specifications;
 
 using NOS.Registration.Model;
 
-namespace NOS.Registration.Tests
+namespace NOS.Registration.Tests.Model
 {
 	[Subject(typeof(UserData))]
 	public class When_the_formatted_sponsoring_for_zero_euros_is_created : With_user

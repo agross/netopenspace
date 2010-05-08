@@ -5,8 +5,9 @@ using System.Web.Script.Serialization;
 
 using NOS.Registration.Abstractions;
 using NOS.Registration.Model;
+using NOS.Registration.Queries;
 
-namespace NOS.Registration
+namespace NOS.Registration.DataAccess
 {
 	internal class RegistrationRepository : IRegistrationRepository
 	{

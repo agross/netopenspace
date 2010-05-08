@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 
+using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
+using NOS.Registration.Queries;
 
 namespace NOS.Registration.Formatting
 {

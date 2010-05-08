@@ -1,6 +1,7 @@
 using System;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
 
 namespace NOS.Registration.UI

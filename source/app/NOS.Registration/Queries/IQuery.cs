@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using NOS.Registration.Model;
 
-namespace NOS.Registration
+namespace NOS.Registration.Queries
 {
 	public interface IQuery<T>
 	{

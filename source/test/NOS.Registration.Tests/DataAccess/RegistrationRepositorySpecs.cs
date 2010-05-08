@@ -5,13 +5,14 @@ using System.Linq;
 using Machine.Specifications;
 
 using NOS.Registration.Abstractions;
+using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
 using NOS.Registration.Queries;
 
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
 
-namespace NOS.Registration.Tests
+namespace NOS.Registration.Tests.DataAccess
 {
 	public class RepositorySpecs
 	{

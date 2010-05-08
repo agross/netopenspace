@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
 
+using NOS.Registration.Abstractions;
+
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Commands

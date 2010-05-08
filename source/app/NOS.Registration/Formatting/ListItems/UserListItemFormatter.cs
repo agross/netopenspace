@@ -1,4 +1,6 @@
+using NOS.Registration.Abstractions;
 using NOS.Registration.Model;
+using NOS.Registration.Templating;
 
 namespace NOS.Registration.Formatting.ListItems
 {

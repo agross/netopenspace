@@ -4,7 +4,9 @@ using System.Linq;
 
 using Machine.Specifications;
 
-namespace NOS.Registration.Tests
+using NOS.Registration.Abstractions;
+
+namespace NOS.Registration.Tests.Abstractions
 {
 	[Subject(typeof(DefaultPluginConfiguration))]
 	public class When_the_plugin_configuration_is_created

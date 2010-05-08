@@ -3,8 +3,9 @@ using System;
 using Machine.Specifications;
 
 using NOS.Registration.Model;
+using NOS.Registration.Templating;
 
-namespace NOS.Registration.Tests
+namespace NOS.Registration.Tests.Templating
 {
 	public abstract class EntryFormatterSpecs
 	{

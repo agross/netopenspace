@@ -1,4 +1,5 @@
 using NOS.Registration.Abstractions;
+using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
 
 using ScrewTurn.Wiki.PluginFramework;

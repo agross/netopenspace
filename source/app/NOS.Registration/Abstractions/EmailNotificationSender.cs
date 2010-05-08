@@ -1,11 +1,9 @@
 using System;
 
-using NOS.Registration.Abstractions;
-
 using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	internal class EmailNotificationSender : INotificationSender
 	{

@@ -1,7 +1,9 @@
 using Machine.Specifications;
 
+using NOS.Registration.Abstractions;
 using NOS.Registration.Formatting.ListItems;
 using NOS.Registration.Model;
+using NOS.Registration.Templating;
 
 using Rhino.Mocks;
 

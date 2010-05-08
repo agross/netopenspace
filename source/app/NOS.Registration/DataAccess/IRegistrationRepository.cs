@@ -1,6 +1,7 @@
 using NOS.Registration.Model;
+using NOS.Registration.Queries;
 
-namespace NOS.Registration
+namespace NOS.Registration.DataAccess
 {
 	public interface IRegistrationRepository
 	{

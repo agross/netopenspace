@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NOS.Registration
+namespace NOS.Registration.Abstractions
 {
 	public class DefaultPluginConfiguration : IPluginConfiguration
 	{

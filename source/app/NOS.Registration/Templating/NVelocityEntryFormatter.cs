@@ -5,7 +5,7 @@ using NOS.Registration.Model;
 using NVelocity;
 using NVelocity.App;
 
-namespace NOS.Registration
+namespace NOS.Registration.Templating
 {
 	internal class NVelocityEntryFormatter : IEntryFormatter
 	{

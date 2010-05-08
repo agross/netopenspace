@@ -2,8 +2,10 @@ using System.Collections.Generic;
 
 using Machine.Specifications;
 
+using NOS.Registration.DataAccess;
 using NOS.Registration.Formatting;
 using NOS.Registration.Model;
+using NOS.Registration.Queries;
 
 using Rhino.Mocks;
 
