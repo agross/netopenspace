@@ -112,6 +112,10 @@ namespace NOS.Registration
 				case UserAccountActivity.AccountActivated:
 					_commandInvoker.Process(new ActivateUserMessage(e.User));
 					break;
+				
+				case UserAccountActivity.AccountDeactivated:
+					_commandInvoker.Process(new DeactivateUserMessage(e.User));
+					break;
 
 				case UserAccountActivity.AccountRemoved:
 					_commandInvoker.Process(new DeleteUserMessage(e.User));

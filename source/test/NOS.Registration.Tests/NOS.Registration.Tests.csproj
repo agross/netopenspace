@@ -67,6 +67,7 @@
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />
+    <Compile Include="Commands\DeactivateUserCommandSpecs.cs" />
     <Compile Include="Commands\DeleteUserCommandSpecs.cs" />
     <Compile Include="Commands\FormatContentCommandSpecs.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactorySpecs.cs" />

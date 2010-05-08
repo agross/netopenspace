@@ -73,6 +73,7 @@
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommand.cs" />
     <Compile Include="Commands\DeleteUserCommand.cs" />
+    <Compile Include="Commands\DeactivateUserCommand.cs" />
     <Compile Include="Commands\FormatContentCommand.cs" />
     <Compile Include="Commands\Infrastructure\CommandInvoker.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactory.cs" />

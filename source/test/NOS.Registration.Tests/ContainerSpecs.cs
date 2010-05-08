@@ -54,6 +54,8 @@ namespace NOS.Registration.Tests
 		static IEnumerable<ICommandMessageHandler> ConfigureHandlers;
 		static IEnumerable<ICommandMessageHandler> FormatHandlers;
 		static IEnumerable<ICommandMessageHandler> ActivateUserHandlers;
+		static IEnumerable<ICommandMessageHandler> DeleteUserHandlers;
+		static IEnumerable<ICommandMessageHandler> DeactivateUserHandlers;
 
 		Establish context = () =>
 			{
@@ -66,6 +68,8 @@ namespace NOS.Registration.Tests
 				ConfigureHandlers = Factory.GetCommands(new ConfigureEnvironmentMessage("", null));
 				FormatHandlers = Factory.GetCommands(new FormatContentMessage(""));
 				ActivateUserHandlers = Factory.GetCommands(new ActivateUserMessage(null));
+				DeactivateUserHandlers = Factory.GetCommands(new DeactivateUserMessage(null));
+				DeleteUserHandlers = Factory.GetCommands(new DeleteUserMessage(null));
 			};
 
 		Cleanup after = Container.Release;
@@ -78,5 +82,11 @@ namespace NOS.Registration.Tests
 
 		It should_be_able_to_resolve_user_activation_handlers =
 			() => ActivateUserHandlers.ShouldNotBeEmpty();
+
+		It should_be_able_to_resolve_user_deactivation_handlers =
+			() => DeactivateUserHandlers.ShouldNotBeEmpty();
+
+		It should_be_able_to_resolve_user_deletion_handlers =
+			() => DeleteUserHandlers.ShouldNotBeEmpty();
 	}
 }

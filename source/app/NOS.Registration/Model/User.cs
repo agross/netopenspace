@@ -1,3 +1,5 @@
+using System;
+
 namespace NOS.Registration.Model
 {
 	public class User
@@ -26,6 +28,12 @@ namespace NOS.Registration.Model
 		}
 
 		public ParticipationData Participation
+		{
+			get;
+			set;
+		}
+
+		public bool Active
 		{
 			get;
 			set;

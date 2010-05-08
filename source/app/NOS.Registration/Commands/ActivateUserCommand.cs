@@ -37,6 +37,8 @@ namespace NOS.Registration.Commands
 							return;
 						}
 
+						user.Active = true;
+
 						// TODO
 					}
 					finally
