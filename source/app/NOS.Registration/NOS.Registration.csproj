@@ -102,6 +102,7 @@
     <Compile Include="Model\ParticipationData.cs" />
     <Compile Include="Model\ParticipationPreference.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Queries\ActiveUsers.cs" />
     <Compile Include="Queries\Attendees.cs" />
     <Compile Include="Formatting\IMarkupFormatter.cs" />
     <Compile Include="Queries\IQuery.cs" />

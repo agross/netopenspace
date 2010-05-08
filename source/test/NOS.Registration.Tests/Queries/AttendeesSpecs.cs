@@ -8,37 +8,39 @@ using NOS.Registration.Queries;
 namespace NOS.Registration.Tests.Queries
 {
 	[Subject(typeof(Attendees))]
-	public class When_attendees_users_are_queried
+	public class When_attendees_are_queried
 	{
 		static IEnumerable<User> Result;
 
 		static User[] Users;
 		static Attendees Query;
-		static User Attendee2;
-		static User Attendee1;
+		static User ActiveAttendee;
 
 		Establish context = () =>
 			{
-				Attendee1 = new User("Alex")
+				ActiveAttendee = new User("Alex")
 				            {
-				            	Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
-				            };
-				Attendee2 = new User("Torsten")
-				            {
-				            	Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
+								Active = true,
+								Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
 				            };
 
 				Users = new[]
 				        {
-				        	Attendee1,
-				        	Attendee2,
+				        	ActiveAttendee,
+				        	new User("Torsten")
+				        	{
+				        		Active = false,
+				        		Participation = new ParticipationData { Preference = ParticipationPreference.Attending }
+				        	},
 				        	new User("Peter")
 				        	{
-				        		Participation = new ParticipationData { Preference = ParticipationPreference.InterestOnly }
+				        		Active = true,
+								Participation = new ParticipationData { Preference = ParticipationPreference.InterestOnly }
 				        	},
 				        	new User("Klaus")
 				        	{
-				        		Participation = new ParticipationData { Preference = ParticipationPreference.Withdrawal }
+				        		Active = true,
+								Participation = new ParticipationData { Preference = ParticipationPreference.Withdrawal }
 				        	}
 				        };
 
@@ -47,7 +49,7 @@ namespace NOS.Registration.Tests.Queries
 
 		Because of = () => { Result = Query.Apply(Users); };
 
-		It should_retun_attendees_only =
-			() => Result.ShouldContainOnly(Attendee1, Attendee2);
+		It should_return_active_attendees_only =
+			() => Result.ShouldContainOnly(ActiveAttendee);
 	}
 }

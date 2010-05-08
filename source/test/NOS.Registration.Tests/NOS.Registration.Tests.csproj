@@ -83,6 +83,7 @@
     <Compile Include="Queries\AttendeesSpecs.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Queries\ActiveUsersSpecs.cs" />
     <Compile Include="Queries\UserByNameSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />

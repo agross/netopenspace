@@ -5,11 +5,13 @@ using NOS.Registration.Model;
 
 namespace NOS.Registration.Queries
 {
-	public class Attendees : IQuery<IEnumerable<User>>
+	public class Attendees : ActiveUsers
 	{
-		public IEnumerable<User> Apply(IEnumerable<User> data)
+		public override IEnumerable<User> Apply(IEnumerable<User> data)
 		{
-			return data.Where(x => x.Participation.Preference == ParticipationPreference.Attending);
+			return base
+				.Apply(data)
+				.Where(x => x.Participation.Preference == ParticipationPreference.Attending);
 		}
 	}
 }
