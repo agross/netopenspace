@@ -8,28 +8,33 @@ namespace NOS.Registration
 		readonly Mutex _lock = new Mutex(false, "ScrewTurn Wiki AutoRegistration Synchronization");
 		bool _disposed;
 
-		#region IDisposable Members
 		public void Dispose()
 		{
 			Dispose(true);
 			GC.SuppressFinalize(this);
 		}
-		#endregion
 
-		#region ISynchronizer Members
 		public void Lock(Action synchronizedAction)
+		{
+			Lock<object>(() =>
+				{
+					synchronizedAction();
+					return null;
+				});
+		}
+
+		public T Lock<T>(Func<T> synchronizedAction)
 		{
 			try
 			{
 				_lock.WaitOne();
-				synchronizedAction();
+				return synchronizedAction();
 			}
 			finally
 			{
 				_lock.ReleaseMutex();
 			}
 		}
-		#endregion
 
 		~CrossContextSynchronizer()
 		{

@@ -1,3 +1,5 @@
+using System;
+
 using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
 
@@ -17,18 +19,25 @@ namespace NOS.Registration.Commands
 
 		protected override ReturnValue Execute(DeleteUserMessage message)
 		{
-			_synchronizer.Lock(() =>
+			return _synchronizer.Lock(() =>
 				{
 					var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 					if (user == null)
 					{
-						return;
+						return ReturnValue.Success();
 					}
 
-					_registrationRepository.Delete(user.UserName);
-				});
+					try
+					{
+						_registrationRepository.Delete(user.UserName);
+					}
+					catch (Exception ex)
+					{
+						return ReturnValue.Fail(ex.Message);
+					}
 
-			return ReturnValue.Success();
+					return ReturnValue.Success();
+				});
 		}
 	}
 

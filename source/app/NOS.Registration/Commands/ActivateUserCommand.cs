@@ -24,7 +24,7 @@ namespace NOS.Registration.Commands
 
 		protected override ReturnValue Execute(ActivateUserMessage message)
 		{
-			_synchronizer.Lock(() =>
+			return _synchronizer.Lock(() =>
 				{
 					var failed = false;
 					try
@@ -32,12 +32,13 @@ namespace NOS.Registration.Commands
 						var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 						if (user == null)
 						{
-							return;
+							return ReturnValue.Success();
 						}
 
 						user.Active = true;
 
 						// TODO
+						return ReturnValue.Success();
 					}
 					finally
 					{
@@ -48,8 +49,6 @@ namespace NOS.Registration.Commands
 						}
 					}
 				});
-
-			return ReturnValue.Success();
 		}
 	}
 

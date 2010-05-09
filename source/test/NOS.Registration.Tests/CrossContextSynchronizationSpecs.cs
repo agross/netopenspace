@@ -6,6 +6,20 @@ using Machine.Specifications;
 namespace NOS.Registration.Tests
 {
 	[Subject(typeof(CrossContextSynchronizer))]
+	public class When_a_synchronized_action_returns_a_result
+	{
+		static CrossContextSynchronizer Synchronizer;
+		static int Result;
+
+		Establish context = () => { Synchronizer = new CrossContextSynchronizer(); };
+
+		Because of = () => { Result = Synchronizer.Lock(() => 42); };
+
+		It should_return_the_result =
+			() => Result.ShouldEqual(42);
+	}
+
+	[Subject(typeof(CrossContextSynchronizer))]
 	public class When_a_reader_tries_to_read_while_a_writer_is_active
 	{
 		static ISynchronizer Synchronizer;
