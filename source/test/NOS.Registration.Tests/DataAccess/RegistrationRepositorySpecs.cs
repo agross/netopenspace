@@ -8,9 +8,9 @@ using NOS.Registration.Abstractions;
 using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
 using NOS.Registration.Queries;
+using NOS.Registration.Tests.ForTesting;
 
 using Rhino.Mocks;
-using Rhino.Mocks.Constraints;
 
 namespace NOS.Registration.Tests.DataAccess
 {
@@ -23,10 +23,7 @@ namespace NOS.Registration.Tests.DataAccess
 
 		Establish context = () =>
 			{
-				ISynchronizer synchronizer = MockRepository.GenerateStub<ISynchronizer>();
-				synchronizer
-					.Stub(x => x.Lock(Arg<Action>.Is.Anything))
-					.WhenCalled(invocation => ((Action) invocation.Arguments.First()).Invoke());
+				var synchronizer = new FakeSynchronizer();
 
 				Reader = MockRepository.GenerateStub<IFileReader>();
 				Writer = MockRepository.GenerateStub<IFileWriter>();
@@ -85,27 +82,35 @@ namespace NOS.Registration.Tests.DataAccess
 	}
 
 	[Subject(typeof(RegistrationRepository))]
-	public class When_a_user_is_saved : RepositorySpecs
+	public class When_a_new_user_is_saved : RepositorySpecs
 	{
 		Establish context = () => Reader
 		                          	.Stub(x => x.Read("file"))
 		                          	.Return("[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } } ]");
 
-		Because of = () => Repository.Save(new User("alex")
-		                                   {
-		                                   	Data =
-		                                   		{
-		                                   			Xing = "baz"
-		                                   		}
-		                                   });
+		Because of = () => Repository.Save(New.User.Named("alex"));
 
 		It should_add_the_user_to_the_list =
-			() => Writer.AssertWasCalled(x => x.Write(null, null),
-			                             o => o.Constraints(Is.Equal("file"), Text.Contains("alex")));
+			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
+			                                          Arg<string>.Matches(y => y.Contains("alex"))));
 
 		It should_retain_the_original_collection =
-			() => Writer.AssertWasCalled(x => x.Write(null, null),
-			                             o => o.Constraints(Is.Equal("file"), Text.Contains("torsten")));
+			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
+			                                          Arg<string>.Matches(y => y.Contains("torsten"))));
+	}
+
+	[Subject(typeof(RegistrationRepository))]
+	public class When_an_existing_user_is_saved : RepositorySpecs
+	{
+		Establish context = () => Reader
+		                          	.Stub(x => x.Read("file"))
+		                          	.Return("[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } } ]");
+
+		Because of = () => Repository.Save(New.User.Named("torsten"));
+
+		It should_update_the_user =
+			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
+			                                          Arg<string>.Matches(y => !y.Contains("foo"))));
 	}
 
 	[Subject(typeof(RegistrationRepository))]
@@ -119,12 +124,12 @@ namespace NOS.Registration.Tests.DataAccess
 		Because of = () => Repository.Delete("torsten");
 
 		It should_remove_the_user_from_the_list =
-			() => Writer.AssertWasCalled(x => x.Write(null, null),
-			                             o => o.Constraints(Is.Equal("file"), Is.Matching<string>(x => !x.Contains("torsten"))));
+			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
+			                                          Arg<string>.Matches(y => !y.Contains("torsten"))));
 
 		It should_retain_all_other_users =
-			() => Writer.AssertWasCalled(x => x.Write(null, null),
-			                             o => o.Constraints(Is.Equal("file"), Text.Contains("alex")));
+			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
+			                                          Arg<string>.Matches(y => y.Contains("alex"))));
 	}
 
 	[Subject(typeof(RegistrationRepository))]

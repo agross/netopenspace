@@ -32,6 +32,8 @@ namespace NOS.Registration.DataAccess
 			_synchronizer.Lock(() =>
 				{
 					var allUsers = LoadDocument().ToList();
+					var toRemove = allUsers.Where(x => x.UserName.Equals(user.UserName, StringComparison.OrdinalIgnoreCase)).ToList();
+					toRemove.Each(x => allUsers.Remove(x));
 					allUsers.Add(user);
 
 					string serialized = _serializer.Serialize(allUsers);
