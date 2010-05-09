@@ -2,7 +2,10 @@ using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using NOS.Registration;
+using NOS.Registration.DataAccess;
 using NOS.Registration.UI;
+using NOS.Registration.Abstractions;
 
 namespace NOS
 {
@@ -10,7 +13,7 @@ namespace NOS
 	{
 		public AutoRegistration()
 		{
-			new AutoRegistrationPresenter(this);
+			new AutoRegistrationPresenter(this, Container.GetInstance<IRegistrationRepository>(), Container.GetInstance<ILogger>());
 		}
 
 		public string UserName

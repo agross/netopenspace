@@ -136,7 +136,7 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Abstractions\FileReader.cs" />
     <Compile Include="Abstractions\FileWriter.cs" />
-    <Compile Include="UI\IAutoRegistrationPresenter.cs" />
+    <Compile Include="UI\IAutoRegistrationView.cs" />
     <Compile Include="Abstractions\IFileReader.cs" />
     <Compile Include="Abstractions\IFileWriter.cs" />
     <Compile Include="Abstractions\ILogger.cs" />

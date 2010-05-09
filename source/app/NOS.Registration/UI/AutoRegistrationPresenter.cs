@@ -12,11 +12,6 @@ namespace NOS.Registration.UI
 		readonly IRegistrationRepository _repository;
 		readonly IAutoRegistrationView _view;
 
-		public AutoRegistrationPresenter(IAutoRegistrationView view)
-			: this(view, Container.GetInstance<IRegistrationRepository>(), Container.GetInstance<ILogger>())
-		{
-		}
-
 		public AutoRegistrationPresenter(IAutoRegistrationView view, IRegistrationRepository repository, ILogger logger)
 		{
 			_view = view;
