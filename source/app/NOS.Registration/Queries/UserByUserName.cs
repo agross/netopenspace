@@ -21,7 +21,9 @@ namespace NOS.Registration.Queries
 
 		public User Apply(IEnumerable<User> data)
 		{
-			return data.SingleOrDefault(x => x.UserName.Equals(UserName, StringComparison.OrdinalIgnoreCase));
+			return data
+				.Where(x => x.UserName.Equals(UserName, StringComparison.OrdinalIgnoreCase))
+				.FirstOrDefault();
 		}
 	}
 }

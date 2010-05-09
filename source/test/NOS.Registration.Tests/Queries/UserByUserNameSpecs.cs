@@ -29,6 +29,31 @@ namespace NOS.Registration.Tests.Queries
 		It should_return_a_matching_user =
 			() => Result.UserName.ShouldEqual("Torsten");
 	}
+	
+	[Subject(typeof(UserByUserName))]
+	public class When_an_existing_user_is_queried_by_the_user_name_and_the_repository_contains_multiple_entries
+	{
+		static User Result;
+		static User[] Users;
+		static UserByUserName Query;
+
+		Establish context = () =>
+			{
+				Users = new User[]
+				        {
+				        	New.User.Named("Alex"),
+				        	New.User.Named("alex"),
+				        	New.User.Named("Torsten")
+				        };
+
+				Query = new UserByUserName("alex");
+			};
+
+		Because of = () => { Result = Query.Apply(Users); };
+
+		It should_return_the_first_matching_user =
+			() => Result.UserName.ShouldEqual("Alex");
+	}
 
 	[Subject(typeof(UserByUserName))]
 	public class When_a_user_cannot_be_found_by_the_user_name

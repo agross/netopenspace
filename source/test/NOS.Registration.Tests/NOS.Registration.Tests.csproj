@@ -91,7 +91,7 @@
     <Compile Include="Queries\InterestOnlySpecs.cs" />
     <Compile Include="Queries\WithdrawalsSpecs.cs" />
     <Compile Include="Queries\WaitingListSpecs.cs" />
-    <Compile Include="Queries\UserByNameSpecs.cs" />
+    <Compile Include="Queries\UserByUserNameSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
