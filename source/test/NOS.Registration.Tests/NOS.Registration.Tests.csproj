@@ -67,6 +67,7 @@
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />
+    <Compile Include="Commands\CreateUserCommandSpecs.cs" />
     <Compile Include="Commands\DeactivateUserCommandSpecs.cs" />
     <Compile Include="Commands\DeleteUserCommandSpecs.cs" />
     <Compile Include="Commands\FormatContentCommandSpecs.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Formatting\RegistrationDataProviderSpecs.cs" />
     <Compile Include="ForTesting\New.cs" />
     <Compile Include="ForTesting\UserBuilder.cs" />
+    <Compile Include="Model\UserSpecs.cs" />
     <Compile Include="Queries\AllUsersSpecs.cs" />
     <Compile Include="Queries\AttendeesSpecs.cs">
       <SubType>Code</SubType>
