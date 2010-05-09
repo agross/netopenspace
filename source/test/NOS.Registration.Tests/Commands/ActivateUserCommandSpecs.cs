@@ -2,6 +2,7 @@ using System;
 
 using Machine.Specifications;
 
+using NOS.Registration.Abstractions;
 using NOS.Registration.Commands;
 using NOS.Registration.DataAccess;
 using NOS.Registration.Model;
@@ -10,125 +11,173 @@ using NOS.Registration.Tests.ForTesting;
 
 using Rhino.Mocks;
 
-using ScrewTurn.Wiki.PluginFramework;
-
 namespace NOS.Registration.Tests.Commands
 {
 	[Subject(typeof(ActivateUserCommand))]
 	public class When_a_user_account_is_activated
 	{
-		/*Establish context = () => {  };
-
-		Because of = () => { };
-
-		It should_ = () => { };
-		 
-		 
-		 * static IPagesStorageProviderV30 Provider;
-		static UserAccountActivityEventArgs EventArgs;
-		protected static UserInfo UserInfo;
-		static User User;
-		protected static PageInfo PageInfo;
+		static ActivateUserCommand Command;
+		static ReturnValue Result;
+		static IRegistrationRepository Registrations;
+		static INotificationSender NotificationSender;
 
 		Establish context = () =>
 			{
-				UserInfo = new UserInfo("user",
-				                        "The User",
-				                        "email@example.com",
-				                        true,
-				                        DateTime.Now,
-				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
-				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountActivated);
+				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
+				Registrations
+					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
+					.Return(New.User.Named("user").Inactive());
 
-				User = new User("user");
-				RegistrationRepository
-					.Stub(x => x.Query(Arg<UserByUserName>.Matches(y => y.UserName == "user")))
-					.Return(User);
+				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
-				Configuration
-					.Stub(x => x.Parse(null))
-					.IgnoreArguments()
-					.Return(new List<string>());
-
-				Host
-					.Stub(x => x.SendEmail(null, null, null, null, false))
-					.IgnoreArguments()
-					.Return(true);
-
-				Plugin.Init(Host, String.Empty);
-
-				EntryFormatter
-					.Stub(x => x.FormatUserEntry(User, Configuration.EntryTemplate))
-					.Return(Configuration.EntryTemplate);
+				Command = new ActivateUserCommand(Registrations,
+				                                  new FakeSynchronizer(),
+				                                  NotificationSender,
+				                                  MockRepository.GenerateStub<ISettingsAccessor>());
 			};
 
-		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
+		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
 
-		It should_try_to_find_the_user_in_the_user_list =
-			() =>
-			RegistrationRepository.AssertWasCalled(x => x.Query(Arg<UserByUserName>.Matches(y => y.UserName == User.UserName)));
+		It should_succeed =
+			() => Result.Messages.ShouldBeEmpty();
 
-		It should_notify_the_user_about_the_activation =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Username),
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
-			                                                            Arg<string>.Is.Equal("AutoRegistration"),
-			                                                            Arg<bool>.Is.Equal(false)));
+		It should_save_the_user =
+			() => Registrations.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Active)));
 
-		It should_not_delete_the_user = () => RegistrationRepository.AssertWasNotCalled(x => x.Delete("user"));
-		 * 
-		 * 	[Behaviors]
-	public class FailureNotificationBehavior
-	{
-		protected static INotificationSender NotificationSender;
-		protected static UserInfo UserInfo;
+		It should_notify_the_user_about_the_successful_registration =
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
+			                                                            "email@example.com",
+			                                                            "AutoRegistration",
+			                                                            false));
 
-		It should_notify_the_administrator_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.NotEqual(UserInfo.Email),
-			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
-
-		It should_notify_the_user_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
-			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
-	}
-		 */
+		It should_not_delete_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());
 	}
 
-	/*[Subject(typeof(ActivateUserCommand))]
-	public class When_a_user_is_activated_for_the_second_time
+	[Subject(typeof(ActivateUserCommand))]
+	public class When_a_user_without_registration_data_is_activated
 	{
 		static ActivateUserCommand Command;
-		static UserInfo UserInfo;
 		static ReturnValue Result;
 		static IRegistrationRepository Registrations;
+		static INotificationSender NotificationSender;
 
 		Establish context = () =>
-		{
-			UserInfo = new UserInfo("user",
-									"The User",
-									"email@example.com",
-									false,
-									DateTime.Now,
-									MockRepository.GenerateStub<IUsersStorageProviderV30>());
+			{
+				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
+				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
-			Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
-			Registrations
-				.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
-				.Return(New.User.Named("user").Active());
+				Command = new ActivateUserCommand(Registrations,
+				                                  new FakeSynchronizer(),
+				                                  NotificationSender,
+				                                  MockRepository.GenerateStub<ISettingsAccessor>());
+			};
 
-			Command = new ActivateUserCommand(Registrations,
-												new FakeSynchronizer());
-		};
-
-		Because of = () => { Result = Command.Execute(new ActivateUserMessage(UserInfo)); };
+		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
 
 		It should_succeed =
 			() => Result.Messages.ShouldBeEmpty();
 
 		It should_not_save_the_user =
-			() => Registrations.AssertWasNotCalled(x => x.Save(Arg<User>.Is.NotNull));
-	}*/
+			() => Registrations.AssertWasNotCalled(x => x.Save(null), o => o.IgnoreArguments());
+
+		It should_not_notify_the_user =
+			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, false),
+			                                            o => o.IgnoreArguments());
+
+		It should_not_delete_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());
+	}
+
+	[Subject(typeof(ActivateUserCommand))]
+	public class When_a_user_is_activated_for_the_second_time
+	{
+		static ActivateUserCommand Command;
+		static ReturnValue Result;
+		static IRegistrationRepository Registrations;
+		static INotificationSender NotificationSender;
+
+		Establish context = () =>
+			{
+				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
+				Registrations
+					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
+					.Return(New.User.Named("user").Active());
+
+				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
+
+				Command = new ActivateUserCommand(Registrations,
+				                                  new FakeSynchronizer(),
+				                                  NotificationSender,
+				                                  MockRepository.GenerateStub<ISettingsAccessor>());
+			};
+
+		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
+
+		It should_succeed =
+			() => Result.Messages.ShouldBeEmpty();
+
+		It should_not_save_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Save(null), o => o.IgnoreArguments());
+
+		It should_not_notify_the_user =
+			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, false),
+			                                            o => o.IgnoreArguments());
+
+		It should_not_delete_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());
+	}
+
+	[Subject(typeof(ActivateUserCommand))]
+	public class When_a_user_account_is_activated_and_registration_fails
+	{
+		static ActivateUserCommand Command;
+		static ReturnValue Result;
+		static IRegistrationRepository Registrations;
+		static INotificationSender NotificationSender;
+
+		Establish context = () =>
+			{
+				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
+				Registrations
+					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
+					.Return(New.User.Named("user").Inactive());
+
+				Registrations
+					.Stub(x => x.Save(Arg<User>.Matches(y => y.Active)))
+					.Throw(new Exception());
+
+				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
+
+				var settingsAccessor = MockRepository.GenerateStub<ISettingsAccessor>();
+				settingsAccessor
+					.Stub(x => x.ContactEmail)
+					.Return("admin@example.com");
+
+				Command = new ActivateUserCommand(Registrations,
+				                                  new FakeSynchronizer(),
+				                                  NotificationSender,
+				                                  settingsAccessor);
+			};
+
+		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
+
+		It should_fail =
+			() => Result.Messages.ShouldNotBeEmpty();
+
+		It should_notify_the_user_about_the_failed_registration =
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
+			                                                            "email@example.com",
+			                                                            "AutoRegistration",
+			                                                            true));
+
+		It should_notify_the_administrator_about_the_failed_registration =
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
+			                                                            "admin@example.com",
+			                                                            "AutoRegistration",
+			                                                            true));
+
+		It should_not_delete_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());
+	}
 }

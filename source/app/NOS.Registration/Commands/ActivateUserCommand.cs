@@ -1,3 +1,5 @@
+using System;
+
 using NOS.Registration.Abstractions;
 using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
@@ -26,27 +28,31 @@ namespace NOS.Registration.Commands
 		{
 			return _synchronizer.Lock(() =>
 				{
-					var failed = false;
-					try
+					var user = _registrationRepository.Query(new UserByUserName(message.UserName));
+					if (user == null)
 					{
-						var user = _registrationRepository.Query(new UserByUserName(message.UserName));
-						if (user == null)
-						{
-							return ReturnValue.Success();
-						}
-
-						user.Active = true;
-
-						// TODO
 						return ReturnValue.Success();
 					}
-					finally
+
+					if (user.Active)
 					{
-						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", failed);
-						if (failed)
-						{
-							_notificationSender.SendMessage(message.UserName, _settingsAccessor.ContactEmail, "AutoRegistration", true);
-						}
+						return ReturnValue.Success();
+					}
+
+					try
+					{
+						user.Active = true;
+						_registrationRepository.Save(user);
+						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", false);
+						
+						return ReturnValue.Success();
+					}
+					catch (Exception ex)
+					{
+						_notificationSender.SendMessage(message.UserName, _settingsAccessor.ContactEmail, "AutoRegistration", true);
+						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", true);
+						
+						return ReturnValue.Fail(ex.Message);
 					}
 				});
 		}
