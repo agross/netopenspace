@@ -45,6 +45,8 @@ namespace NOS.Registration.Commands
 				_registrationRepository.Save(user);
 
 				_logger.Info("Saved registration data", message.View.UserName);
+				
+				return ReturnValue.Success();
 			}
 			catch (Exception ex)
 			{
@@ -53,8 +55,6 @@ namespace NOS.Registration.Commands
 				
 				return ReturnValue.Fail(error);
 			}
-			
-			return ReturnValue.Success();
 		}
 	}
 

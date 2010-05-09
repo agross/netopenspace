@@ -30,13 +30,13 @@ namespace NOS.Registration.Commands
 					try
 					{
 						_registrationRepository.Delete(user);
+
+						return ReturnValue.Success();
 					}
 					catch (Exception ex)
 					{
 						return ReturnValue.Fail(ex.Message);
 					}
-
-					return ReturnValue.Success();
 				});
 		}
 	}
