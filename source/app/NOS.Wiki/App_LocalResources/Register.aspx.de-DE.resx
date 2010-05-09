@@ -179,7 +179,7 @@
     <value />
   </data>
   <data name="lblCaptchaResource1.Text" xml:space="preserve">
-    <value>Kontroltext (Gross- /Kleinschreibung beachten):</value>
+    <value>Kontrolltext (Groß- und Kleinschreibung beachten)</value>
     <comment>Control Text (case sensitive):</comment>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
