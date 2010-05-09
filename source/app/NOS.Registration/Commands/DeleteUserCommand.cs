@@ -29,7 +29,7 @@ namespace NOS.Registration.Commands
 
 					try
 					{
-						_registrationRepository.Delete(user.UserName);
+						_registrationRepository.Delete(user);
 					}
 					catch (Exception ex)
 					{

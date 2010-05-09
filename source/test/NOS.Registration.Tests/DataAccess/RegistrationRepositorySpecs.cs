@@ -121,7 +121,7 @@ namespace NOS.Registration.Tests.DataAccess
 		                          	.Return(
 		                          		"[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } }, { UserName: \"alex\", Data: { Xing: \"baz\" } } ]");
 
-		Because of = () => Repository.Delete("torsten");
+		Because of = () => Repository.Delete(New.User.Named("torsten"));
 
 		It should_remove_the_user_from_the_list =
 			() => Writer.AssertWasCalled(x => x.Write(Arg<string>.Is.Equal("file"),
@@ -139,7 +139,7 @@ namespace NOS.Registration.Tests.DataAccess
 		                          	.Stub(x => x.Read("file"))
 		                          	.Return(null);
 
-		Because of = () => Repository.Delete("torsten");
+		Because of = () => Repository.Delete(New.User.Named("torsten"));
 
 		It should_succeed =
 			() => true.ShouldBeTrue();

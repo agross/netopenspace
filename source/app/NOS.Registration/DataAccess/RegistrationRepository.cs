@@ -32,7 +32,7 @@ namespace NOS.Registration.DataAccess
 			_synchronizer.Lock(() =>
 				{
 					var allUsers = LoadDocument().ToList();
-					var toRemove = allUsers.Where(x => x.UserName.Equals(user.UserName, StringComparison.OrdinalIgnoreCase)).ToList();
+					var toRemove = allUsers.Where(x => x == user).ToList();
 					toRemove.Each(x => allUsers.Remove(x));
 					allUsers.Add(user);
 
@@ -41,12 +41,12 @@ namespace NOS.Registration.DataAccess
 				});
 		}
 
-		public void Delete(string userName)
+		public void Delete(User user)
 		{
 			_synchronizer.Lock(() =>
 				{
 					var allUsers = LoadDocument().ToList();
-					var toRemove = allUsers.Where(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)).ToList();
+					var toRemove = allUsers.Where(x => x == user).ToList();
 					toRemove.Each(x => allUsers.Remove(x));
 
 					string serialized = _serializer.Serialize(allUsers);

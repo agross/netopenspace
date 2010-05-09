@@ -2,6 +2,7 @@ using Machine.Specifications;
 
 using NOS.Registration.Commands;
 using NOS.Registration.DataAccess;
+using NOS.Registration.Model;
 using NOS.Registration.Queries;
 using NOS.Registration.Tests.ForTesting;
 
@@ -33,7 +34,7 @@ namespace NOS.Registration.Tests.Commands
 			() => Result.Messages.ShouldBeEmpty();
 
 		It should_delete_the_user =
-			() => Registrations.AssertWasCalled(x => x.Delete("user"));
+			() => Registrations.AssertWasCalled(x => x.Delete(Arg<User>.Matches(y => y.UserName == "user")));
 	}
 
 	[Subject(typeof(DeleteUserCommand))]
@@ -48,7 +49,7 @@ namespace NOS.Registration.Tests.Commands
 				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
 
 				Command = new DeleteUserCommand(Registrations,
-												new FakeSynchronizer());
+				                                new FakeSynchronizer());
 			};
 
 		Because of = () => { Result = Command.Execute(new DeleteUserMessage("user")); };
