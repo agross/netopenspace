@@ -1,11 +1,11 @@
-Hallo ##USERNAME##!
+ï»¿Hallo ##USERNAME##!
 
-Du kannst dein Passwort zurücksetzen indem du die Anweisungen auf folgender Seite befolgst:
+Du kannst dein Passwort zurÃ¼cksetzen indem du die Anweisungen auf folgender Seite befolgst:
     ##LINK##
 
 Falls du Probleme hast, kontaktiere uns bitte per E-Mail unter ##EMAILADDRESS##
 
 Vielen Dank!
 
-Beste Grüße,
+Beste GrÃ¼ÃŸe,
 Das ##WIKITITLE##-Team.

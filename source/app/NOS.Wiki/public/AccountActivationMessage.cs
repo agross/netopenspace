@@ -1,4 +1,4 @@
-Hallo ##USERNAME## und willkommen zum ##WIKITITLE##!
+ï»¿Hallo ##USERNAME## und willkommen zum ##WIKITITLE##!
 
 Du musst Dein neues ##WIKITITLE##-Konto innerhalb von 24 Stunden mit dem untenstehenden Link aktivieren.
 
@@ -8,5 +8,5 @@ Falls du Probleme mit der Aktivierung hast, kontaktiere uns bitte per E-Mail unt
 
 Vielen Dank!
 
-Beste Grüße,
+Beste GrÃ¼ÃŸe,
 Das ##WIKITITLE##-Team.
