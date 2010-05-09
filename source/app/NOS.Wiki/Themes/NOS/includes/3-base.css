@@ -67,6 +67,10 @@ input[type="text"], input[type="password"], input[type="file"], select, textarea
 	font-size: .9em;
 }
 
+input[type="text"][disabled], input[type="password"][disabled], input[type="file"][disabled], select[disabled], textarea[disabled], span.prefix.disabled {
+	background-color: #f0f0f0;
+}
+
 span.prefix {
 	border-right: 0;
 	color: #aaa;

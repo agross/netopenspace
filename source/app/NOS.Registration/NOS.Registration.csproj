@@ -159,7 +159,8 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(TargetDir)StructureMap.*" "$(TargetDir)..\..\bin"
+    <PostBuildEvent>xcopy /y "$(TargetPath)" "$(TargetDir)..\..\bin"
+xcopy /y "$(TargetDir)StructureMap.*" "$(TargetDir)..\..\bin"
 xcopy /y "$(TargetDir)NVelocity.*" "$(TargetDir)..\..\bin"
 xcopy /y "$(TargetDir)AntiXSSLibrary.*" "$(TargetDir)..\..\bin"</PostBuildEvent>
   </PropertyGroup>
