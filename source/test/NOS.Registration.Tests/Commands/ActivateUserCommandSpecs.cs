@@ -48,7 +48,7 @@ namespace NOS.Registration.Tests.Commands
 			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
 			                                                            "email@example.com",
 			                                                            "AutoRegistration",
-			                                                            false));
+																		"AutoRegistrationSuccessfulMessage"));
 
 		It should_not_delete_the_user =
 			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());
@@ -82,7 +82,7 @@ namespace NOS.Registration.Tests.Commands
 			() => Registrations.AssertWasNotCalled(x => x.Save(null), o => o.IgnoreArguments());
 
 		It should_not_notify_the_user =
-			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, false),
+			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, null),
 			                                            o => o.IgnoreArguments());
 
 		It should_not_delete_the_user =
@@ -121,7 +121,7 @@ namespace NOS.Registration.Tests.Commands
 			() => Registrations.AssertWasNotCalled(x => x.Save(null), o => o.IgnoreArguments());
 
 		It should_not_notify_the_user =
-			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, false),
+			() => NotificationSender.AssertWasNotCalled(x => x.SendMessage(null, null, null, null),
 			                                            o => o.IgnoreArguments());
 
 		It should_not_delete_the_user =
@@ -169,13 +169,13 @@ namespace NOS.Registration.Tests.Commands
 			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
 			                                                            "email@example.com",
 			                                                            "AutoRegistration",
-			                                                            true));
+																		"AutoRegistrationFailedMessage"));
 
 		It should_notify_the_administrator_about_the_failed_registration =
 			() => NotificationSender.AssertWasCalled(x => x.SendMessage("user",
 			                                                            "admin@example.com",
 			                                                            "AutoRegistration",
-			                                                            true));
+																		"AutoRegistrationFailedMessage"));
 
 		It should_not_delete_the_user =
 			() => Registrations.AssertWasNotCalled(x => x.Delete(null), o => o.IgnoreArguments());

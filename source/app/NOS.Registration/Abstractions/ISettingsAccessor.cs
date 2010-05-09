@@ -6,5 +6,20 @@ namespace NOS.Registration.Abstractions
 		{
 			get;
 		}
+
+		string SenderEmail
+		{
+			get;
+		}
+
+		string WikiTitle
+		{
+			get;
+		}
+
+		string MainUrl
+		{
+			get;
+		}
 	}
 }

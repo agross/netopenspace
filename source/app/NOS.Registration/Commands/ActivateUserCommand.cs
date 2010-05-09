@@ -22,6 +22,21 @@ namespace NOS.Registration.Commands
 			_synchronizer = synchronizer;
 			_notificationSender = notificationSender;
 			_settingsAccessor = settingsAccessor;
+
+			SuccessNotificationTemplate = "AutoRegistrationSuccessfulMessage";
+			FailureNotificationTemplate = "AutoRegistrationFailedMessage";
+		}
+
+		public string SuccessNotificationTemplate
+		{
+			get;
+			set;
+		}
+
+		public string FailureNotificationTemplate
+		{
+			get;
+			set;
 		}
 
 		protected override ReturnValue Execute(ActivateUserMessage message)
@@ -43,15 +58,24 @@ namespace NOS.Registration.Commands
 					{
 						user.Active = true;
 						_registrationRepository.Save(user);
-						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", false);
-						
+						_notificationSender.SendMessage(message.UserName,
+						                                message.Email,
+						                                "AutoRegistration",
+						                                SuccessNotificationTemplate);
+
 						return ReturnValue.Success();
 					}
 					catch (Exception ex)
 					{
-						_notificationSender.SendMessage(message.UserName, _settingsAccessor.ContactEmail, "AutoRegistration", true);
-						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", true);
-						
+						_notificationSender.SendMessage(message.UserName,
+						                                _settingsAccessor.ContactEmail,
+						                                "AutoRegistration",
+						                                FailureNotificationTemplate);
+						_notificationSender.SendMessage(message.UserName,
+						                                message.Email,
+						                                "AutoRegistration",
+						                                FailureNotificationTemplate);
+
 						return ReturnValue.Fail(ex.Message);
 					}
 				});

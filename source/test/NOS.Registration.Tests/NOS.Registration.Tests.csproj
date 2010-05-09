@@ -64,6 +64,7 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Abstractions\EmailNotificationSenderSpecs.cs" />
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />

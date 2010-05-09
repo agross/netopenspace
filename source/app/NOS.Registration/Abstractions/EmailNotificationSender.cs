@@ -1,23 +1,24 @@
 using System;
 
-using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Abstractions
 {
-	internal class EmailNotificationSender : INotificationSender
+	public class EmailNotificationSender : INotificationSender
 	{
 		readonly IFileReader _fileReader;
+		readonly ISettingsAccessor _settingsAccessor;
 		IHostV30 _host;
 
-		public EmailNotificationSender(IFileReader fileReader)
+		public EmailNotificationSender(IFileReader fileReader, ISettingsAccessor settingsAccessor)
 		{
 			_fileReader = fileReader;
+			_settingsAccessor = settingsAccessor;
 		}
 
-		public void SendMessage(string userName, string recipient, string subject, bool failed)
+		public void SendMessage(string userName, string recipient, string subject, string templateFileName)
 		{
-			string message = LoadTemplate(userName, failed);
+			string message = LoadTemplate(userName, templateFileName);
 
 			SendEmail(recipient, subject, message);
 		}
@@ -27,28 +28,21 @@ namespace NOS.Registration.Abstractions
 			_host = host;
 		}
 
-		string LoadTemplate(string userName, bool failed)
+		string LoadTemplate(string userName, string templateFileName)
 		{
-			string file = "AutoRegistrationSuccessfulMessage.cs";
-
-			if (failed)
-			{
-				file = "AutoRegistrationFailedMessage.cs";
-			}
-
-			var template = _fileReader.Read(Settings.PublicDirectory + file);
+			var template = _fileReader.Read(templateFileName);
 
 			return template
-				.Replace("##WIKITITLE##", Settings.WikiTitle)
+				.Replace("##WIKITITLE##", _settingsAccessor.WikiTitle)
 				.Replace("##USERNAME##", userName)
-				.Replace("##WIKIURL##", Settings.MainUrl);
+				.Replace("##WIKIURL##", _settingsAccessor.MainUrl);
 		}
 
 		void SendEmail(string userEmail, string subject, string message)
 		{
 			_host.SendEmail(userEmail,
-			                Settings.SenderEmail,
-			                String.Format("{0} - {1}", subject, Settings.WikiTitle),
+			                _settingsAccessor.SenderEmail,
+			                String.Format("{0} - {1}", subject, _settingsAccessor.WikiTitle),
 			                message,
 			                false);
 		}
