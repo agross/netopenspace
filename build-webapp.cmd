@@ -1,0 +1,1 @@
+@build.cmd generate:config generate:css generate:javascript tests:run
