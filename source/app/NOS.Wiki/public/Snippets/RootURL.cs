@@ -1,1 +1,1 @@
-﻿http://netopenspace.de/
+﻿http://biztalkopenspace.de/
