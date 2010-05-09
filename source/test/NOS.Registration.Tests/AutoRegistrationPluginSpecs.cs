@@ -204,7 +204,7 @@ namespace NOS.Registration.Tests
 				UserInfo = new UserInfo("user",
 				                        "The User",
 				                        "email@example.com",
-				                        true,
+				                        false,
 				                        DateTime.Now,
 				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
@@ -231,7 +231,7 @@ namespace NOS.Registration.Tests
 				UserInfo = new UserInfo("user",
 				                        "The User",
 				                        "email@example.com",
-				                        false,
+				                        true,
 				                        DateTime.Now,
 				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);

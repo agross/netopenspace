@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Reflection;
 
 using NOS.Registration.Abstractions;
@@ -118,7 +119,8 @@ namespace NOS.Registration
 					break;
 
 				case UserAccountActivity.AccountModified:
-					if (e.User.Active)
+					// e.User.Active still holds the old data!
+					if (!e.User.Active)
 					{
 						_commandInvoker.Process(new ActivateUserMessage(e.User.Username, e.User.Email));
 					}
