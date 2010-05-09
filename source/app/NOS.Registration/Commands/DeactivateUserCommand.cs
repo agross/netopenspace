@@ -1,8 +1,6 @@
 using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
 
-using ScrewTurn.Wiki.PluginFramework;
-
 namespace NOS.Registration.Commands
 {
 	public class DeactivateUserCommand : Command<DeactivateUserMessage>
@@ -21,8 +19,13 @@ namespace NOS.Registration.Commands
 		{
 			_synchronizer.Lock(() =>
 				{
-					var user = _registrationRepository.Query(new UserByUserName(message.User.Username));
+					var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 					if (user == null)
+					{
+						return;
+					}
+
+					if (!user.Active)
 					{
 						return;
 					}
@@ -38,12 +41,12 @@ namespace NOS.Registration.Commands
 
 	public class DeactivateUserMessage
 	{
-		public DeactivateUserMessage(UserInfo user)
+		public DeactivateUserMessage(string userName)
 		{
-			User = user;
+			UserName = userName;
 		}
 
-		public UserInfo User
+		public string UserName
 		{
 			get;
 			private set;

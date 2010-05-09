@@ -110,26 +110,26 @@ namespace NOS.Registration
 			switch (e.Activity)
 			{
 				case UserAccountActivity.AccountActivated:
-					_commandInvoker.Process(new ActivateUserMessage(e.User));
+					_commandInvoker.Process(new ActivateUserMessage(e.User.Username, e.User.Email));
 					break;
 
 				case UserAccountActivity.AccountDeactivated:
-					_commandInvoker.Process(new DeactivateUserMessage(e.User));
+					_commandInvoker.Process(new DeactivateUserMessage(e.User.Username));
 					break;
 
 				case UserAccountActivity.AccountModified:
 					if (e.User.Active)
 					{
-						_commandInvoker.Process(new ActivateUserMessage(e.User));
+						_commandInvoker.Process(new ActivateUserMessage(e.User.Username, e.User.Email));
 					}
 					else
 					{
-						_commandInvoker.Process(new DeactivateUserMessage(e.User));
+						_commandInvoker.Process(new DeactivateUserMessage(e.User.Username));
 					}
 					break;
 
 				case UserAccountActivity.AccountRemoved:
-					_commandInvoker.Process(new DeleteUserMessage(e.User));
+					_commandInvoker.Process(new DeleteUserMessage(e.User.Username));
 					break;
 			}
 		}

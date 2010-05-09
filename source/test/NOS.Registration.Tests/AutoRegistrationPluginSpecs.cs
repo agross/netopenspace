@@ -163,9 +163,11 @@ namespace NOS.Registration.Tests
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_process_the_user_account_activation_message =
-			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<ActivateUserMessage>.Matches(y => y.User == UserInfo)));
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<ActivateUserMessage>
+			                                                    	.Matches(
+			                                                    		y => y.UserName == "user" && y.Email == "email@example.com")));
 	}
-	
+
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_a_user_account_is_deactivated : AutoRegistrationPluginSpecs
 	{
@@ -188,7 +190,7 @@ namespace NOS.Registration.Tests
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_process_the_user_account_activation_message =
-			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeactivateUserMessage>.Matches(y => y.User == UserInfo)));
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeactivateUserMessage>.Matches(y => y.UserName == "user")));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -198,22 +200,24 @@ namespace NOS.Registration.Tests
 		static UserInfo UserInfo;
 
 		Establish context = () =>
-		{
-			UserInfo = new UserInfo("user",
-									"The User",
-									"email@example.com",
-									true,
-									DateTime.Now,
-									MockRepository.GenerateStub<IUsersStorageProviderV30>());
-			EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
+			{
+				UserInfo = new UserInfo("user",
+				                        "The User",
+				                        "email@example.com",
+				                        true,
+				                        DateTime.Now,
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
+				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
 
-			Initialize(Plugin);
-		};
+				Initialize(Plugin);
+			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_process_the_user_account_activation_message =
-			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<ActivateUserMessage>.Matches(y => y.User == UserInfo)));
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<ActivateUserMessage>
+			                                                    	.Matches(
+			                                                    		y => y.UserName == "user" && y.Email == "email@example.com")));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -223,22 +227,22 @@ namespace NOS.Registration.Tests
 		static UserInfo UserInfo;
 
 		Establish context = () =>
-		{
-			UserInfo = new UserInfo("user",
-									"The User",
-									"email@example.com",
-									false,
-									DateTime.Now,
-									MockRepository.GenerateStub<IUsersStorageProviderV30>());
-			EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
+			{
+				UserInfo = new UserInfo("user",
+				                        "The User",
+				                        "email@example.com",
+				                        false,
+				                        DateTime.Now,
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
+				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
 
-			Initialize(Plugin);
-		};
+				Initialize(Plugin);
+			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_process_the_user_account_activation_message =
-			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeactivateUserMessage>.Matches(y => y.User == UserInfo)));
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeactivateUserMessage>.Matches(y => y.UserName == "user")));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -263,7 +267,7 @@ namespace NOS.Registration.Tests
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
 		It should_process_the_user_account_deletion_message =
-			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeleteUserMessage>.Matches(y => y.User == UserInfo)));
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeleteUserMessage>.Matches(y => y.UserName == "user")));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]

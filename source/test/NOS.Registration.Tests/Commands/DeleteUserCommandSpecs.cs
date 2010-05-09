@@ -1,16 +1,11 @@
-using System;
-
 using Machine.Specifications;
 
 using NOS.Registration.Commands;
 using NOS.Registration.DataAccess;
-using NOS.Registration.Model;
 using NOS.Registration.Queries;
 using NOS.Registration.Tests.ForTesting;
 
 using Rhino.Mocks;
-
-using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Tests.Commands
 {
@@ -18,29 +13,21 @@ namespace NOS.Registration.Tests.Commands
 	public class When_a_user_is_deleted
 	{
 		static DeleteUserCommand Command;
-		static UserInfo UserInfo;
 		static ReturnValue Result;
 		static IRegistrationRepository Registrations;
 
 		Establish context = () =>
 			{
-				UserInfo = new UserInfo("user",
-				                        "The User",
-				                        "email@example.com",
-				                        true,
-				                        DateTime.Now,
-				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
-
 				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
 				Registrations
 					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
-					.Return(new User("user"));
+					.Return(New.User.Named("user"));
 
 				Command = new DeleteUserCommand(Registrations,
 				                                new FakeSynchronizer());
 			};
 
-		Because of = () => { Result = Command.Execute(new DeleteUserMessage(UserInfo)); };
+		Because of = () => { Result = Command.Execute(new DeleteUserMessage("user")); };
 
 		It should_succeed =
 			() => Result.Messages.ShouldBeEmpty();
@@ -53,26 +40,18 @@ namespace NOS.Registration.Tests.Commands
 	public class When_a_user_without_registration_data_is_deleted
 	{
 		static DeleteUserCommand Command;
-		static UserInfo UserInfo;
 		static ReturnValue Result;
 		static IRegistrationRepository Registrations;
 
 		Establish context = () =>
 			{
-				UserInfo = new UserInfo("user",
-				                        "The User",
-				                        "email@example.com",
-				                        true,
-				                        DateTime.Now,
-				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
-
 				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
 
 				Command = new DeleteUserCommand(Registrations,
 												new FakeSynchronizer());
 			};
 
-		Because of = () => { Result = Command.Execute(new DeleteUserMessage(UserInfo)); };
+		Because of = () => { Result = Command.Execute(new DeleteUserMessage("user")); };
 
 		It should_succeed =
 			() => Result.Messages.ShouldBeEmpty();

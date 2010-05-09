@@ -3,6 +3,14 @@ using System;
 using Machine.Specifications;
 
 using NOS.Registration.Commands;
+using NOS.Registration.DataAccess;
+using NOS.Registration.Model;
+using NOS.Registration.Queries;
+using NOS.Registration.Tests.ForTesting;
+
+using Rhino.Mocks;
+
+using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Tests.Commands
 {
@@ -88,4 +96,39 @@ namespace NOS.Registration.Tests.Commands
 	}
 		 */
 	}
+
+	/*[Subject(typeof(ActivateUserCommand))]
+	public class When_a_user_is_activated_for_the_second_time
+	{
+		static ActivateUserCommand Command;
+		static UserInfo UserInfo;
+		static ReturnValue Result;
+		static IRegistrationRepository Registrations;
+
+		Establish context = () =>
+		{
+			UserInfo = new UserInfo("user",
+									"The User",
+									"email@example.com",
+									false,
+									DateTime.Now,
+									MockRepository.GenerateStub<IUsersStorageProviderV30>());
+
+			Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
+			Registrations
+				.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
+				.Return(New.User.Named("user").Active());
+
+			Command = new ActivateUserCommand(Registrations,
+												new FakeSynchronizer());
+		};
+
+		Because of = () => { Result = Command.Execute(new ActivateUserMessage(UserInfo)); };
+
+		It should_succeed =
+			() => Result.Messages.ShouldBeEmpty();
+
+		It should_not_save_the_user =
+			() => Registrations.AssertWasNotCalled(x => x.Save(Arg<User>.Is.NotNull));
+	}*/
 }

@@ -1,8 +1,6 @@
 using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
 
-using ScrewTurn.Wiki.PluginFramework;
-
 namespace NOS.Registration.Commands
 {
 	public class DeleteUserCommand : Command<DeleteUserMessage>
@@ -21,7 +19,7 @@ namespace NOS.Registration.Commands
 		{
 			_synchronizer.Lock(() =>
 				{
-					var user = _registrationRepository.Query(new UserByUserName(message.User.Username));
+					var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 					if (user == null)
 					{
 						return;
@@ -36,12 +34,12 @@ namespace NOS.Registration.Commands
 
 	public class DeleteUserMessage
 	{
-		public DeleteUserMessage(UserInfo user)
+		public DeleteUserMessage(string userName)
 		{
-			User = user;
+			UserName = userName;
 		}
 
-		public UserInfo User
+		public string UserName
 		{
 			get;
 			private set;

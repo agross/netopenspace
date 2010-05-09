@@ -67,7 +67,7 @@ namespace NOS.Registration.Tests
 			{
 				ConfigureHandlers = Factory.GetCommands(new ConfigureEnvironmentMessage("", null));
 				FormatHandlers = Factory.GetCommands(new FormatContentMessage(""));
-				ActivateUserHandlers = Factory.GetCommands(new ActivateUserMessage(null));
+				ActivateUserHandlers = Factory.GetCommands(new ActivateUserMessage(null, null));
 				DeactivateUserHandlers = Factory.GetCommands(new DeactivateUserMessage(null));
 				DeleteUserHandlers = Factory.GetCommands(new DeleteUserMessage(null));
 			};

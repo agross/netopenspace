@@ -2,8 +2,6 @@ using NOS.Registration.Abstractions;
 using NOS.Registration.DataAccess;
 using NOS.Registration.Queries;
 
-using ScrewTurn.Wiki.PluginFramework;
-
 namespace NOS.Registration.Commands
 {
 	public class ActivateUserCommand : Command<ActivateUserMessage>
@@ -31,7 +29,7 @@ namespace NOS.Registration.Commands
 					var failed = false;
 					try
 					{
-						var user = _registrationRepository.Query(new UserByUserName(message.User.Username));
+						var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 						if (user == null)
 						{
 							return;
@@ -43,10 +41,10 @@ namespace NOS.Registration.Commands
 					}
 					finally
 					{
-						_notificationSender.SendMessage(message.User.Username, message.User.Email, "AutoRegistration", failed);
+						_notificationSender.SendMessage(message.UserName, message.Email, "AutoRegistration", failed);
 						if (failed)
 						{
-							_notificationSender.SendMessage(message.User.Username, _settingsAccessor.ContactEmail, "AutoRegistration", true);
+							_notificationSender.SendMessage(message.UserName, _settingsAccessor.ContactEmail, "AutoRegistration", true);
 						}
 					}
 				});
@@ -57,12 +55,19 @@ namespace NOS.Registration.Commands
 
 	public class ActivateUserMessage
 	{
-		public ActivateUserMessage(UserInfo user)
+		public ActivateUserMessage(string userName, string email)
 		{
-			User = user;
+			UserName = userName;
+			Email = email;
 		}
 
-		public UserInfo User
+		public string UserName
+		{
+			get;
+			private set;
+		}
+
+		public string Email
 		{
 			get;
 			private set;
