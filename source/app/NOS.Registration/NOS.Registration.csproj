@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Anti-XSS Library\AntiXSSLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\NVelocity\NVelocity.dll</HintPath>
@@ -112,6 +116,7 @@
     <Compile Include="Queries\UserByUserName.cs" />
     <Compile Include="Queries\WaitingList.cs" />
     <Compile Include="Queries\Withdrawals.cs" />
+    <Compile Include="Templating\HtmlEncoder.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="Abstractions\EmailNotificationSender.cs" />
@@ -155,6 +160,7 @@
   -->
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "$(TargetDir)StructureMap.*" "$(TargetDir)..\..\bin"
-xcopy /y "$(TargetDir)NVelocity.*" "$(TargetDir)..\..\bin"</PostBuildEvent>
+xcopy /y "$(TargetDir)NVelocity.*" "$(TargetDir)..\..\bin"
+xcopy /y "$(TargetDir)AntiXSSLibrary.*" "$(TargetDir)..\..\bin"</PostBuildEvent>
   </PropertyGroup>
 </Project>

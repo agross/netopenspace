@@ -9,13 +9,13 @@ namespace NOS.Registration.Tests.Templating
 {
 	public abstract class NVelocityTemplateEngineSpecs
 	{
-		protected static string Entry;
-		protected static ITemplateEngine Formatter;
+		protected static string Formatted;
+		protected static ITemplateEngine Engine;
 		protected static User User;
 
 		Establish context = () =>
 			{
-				Formatter = new NVelocityTemplateEngine();
+				Engine = new NVelocityTemplateEngine();
 
 				User = new User("user")
 				       {
@@ -31,10 +31,10 @@ namespace NOS.Registration.Tests.Templating
 	[Subject(typeof(NVelocityTemplateEngine))]
 	public class When_a_simple_entry_with_a_placeholder_is_formatted : NVelocityTemplateEngineSpecs
 	{
-		Because of = () => { Entry = Formatter.Format(User, "$item.UserName"); };
+		Because of = () => { Formatted = Engine.Format(User, "$item.UserName"); };
 
 		It should_fill_the_template_with_the_user_name =
-			() => Entry.ShouldEqual("user");
+			() => Formatted.ShouldEqual("user");
 	}
 
 	[Subject(typeof(NVelocityTemplateEngine))]
@@ -61,13 +61,13 @@ namespace NOS.Registration.Tests.Templating
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.Format(User, EntryTemplate); };
+		Because of = () => { Formatted = Engine.Format(User, EntryTemplate); };
 
 		It should_fill_the_template_with_satisfied_conditonals =
-			() => Entry.ShouldContain("twitter was given");
+			() => Formatted.ShouldContain("twitter was given");
 
 		It should_turn_empty_strings_into_null_values =
-			() => Entry.ShouldEqual("twitter was given");
+			() => Formatted.ShouldEqual("twitter was given");
 	}
 
 	[Subject(typeof(NVelocityTemplateEngine))]
@@ -90,10 +90,10 @@ namespace NOS.Registration.Tests.Templating
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.Format(User, EntryTemplate); };
+		Because of = () => { Formatted = Engine.Format(User, EntryTemplate); };
 
 		It should_fill_the_template_with_satisfied_conditonals =
-			() => Entry.ShouldContain("was given");
+			() => Formatted.ShouldContain("was given");
 	}
 
 	[Subject(typeof(NVelocityTemplateEngine))]
@@ -134,11 +134,51 @@ namespace NOS.Registration.Tests.Templating
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.Format(User, EntryTemplate); };
+		Because of = () => { Formatted = Engine.Format(User, EntryTemplate); };
 
 		It should_fill_the_template_with_just_the_satisfied_conditonals =
-			() => Entry.ShouldEqual("# Peter Pan, [foo@example.com|E-Mail], [blog|Blog], " +
-			                        "[http://twitter.com/twitter/|Twitter], [http://xing.com/xing/|XING], "+
-									"[picture|Bild]");
+			() => Formatted.ShouldEqual("# Peter Pan, [foo@example.com|E-Mail], [blog|Blog], " +
+			                            "[http://twitter.com/twitter/|Twitter], [http://xing.com/xing/|XING], " +
+			                            "[picture|Bild]");
+	}
+
+	[Subject(typeof(NVelocityTemplateEngine))]
+	public class When_data_is_encoded_as_an_HTML_attribute
+	{
+		static NVelocityTemplateEngine Engine;
+		static string Formatted;
+		static User User;
+
+		Establish context = () =>
+			{
+				Engine = new NVelocityTemplateEngine();
+
+				User = new User("needs \"< encoding");
+			};
+
+		Because of = () => { Formatted = Engine.Format(User, "$enc.Attr($item.UserName)"); };
+
+		It should_encode_the_data =
+			() => Formatted.ShouldEqual("needs&#32;&#34;&#60;&#32;encoding");
+	}
+	
+	[Subject(typeof(NVelocityTemplateEngine))]
+	public class When_data_is_encoded_as_HTML
+	{
+		static NVelocityTemplateEngine Engine;
+		static string Formatted;
+		static User User;
+
+		Establish context = () =>
+			{
+				Engine = new NVelocityTemplateEngine();
+
+				User = new User("needs \"< encoding");
+			};
+
+		Because of = () => { Formatted = Engine.Format(User, "$enc.Html($item.UserName)"); };
+
+		It should_encode_the_data =
+			() => Formatted.ShouldEqual("needs &#34;&#60; encoding");
 	}
 }

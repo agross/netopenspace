@@ -19,6 +19,7 @@ namespace NOS.Registration.Templating
 		{
 			var context = new VelocityContext();
 			context.Put("item", item);
+			context.Put("enc", new HtmlEncoder());
 
 			using (StringWriter writer = new StringWriter())
 			{
