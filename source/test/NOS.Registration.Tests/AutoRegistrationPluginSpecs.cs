@@ -192,6 +192,56 @@ namespace NOS.Registration.Tests
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
+	public class When_a_user_account_is_activated_through_the_admin_interface : AutoRegistrationPluginSpecs
+	{
+		static UserAccountActivityEventArgs EventArgs;
+		static UserInfo UserInfo;
+
+		Establish context = () =>
+		{
+			UserInfo = new UserInfo("user",
+									"The User",
+									"email@example.com",
+									true,
+									DateTime.Now,
+									MockRepository.GenerateStub<IUsersStorageProviderV30>());
+			EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
+
+			Initialize(Plugin);
+		};
+
+		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
+
+		It should_process_the_user_account_activation_message =
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<ActivateUserMessage>.Matches(y => y.User == UserInfo)));
+	}
+
+	[Subject(typeof(AutoRegistrationPlugin))]
+	public class When_a_user_account_is_deactivated_through_the_admin_interface : AutoRegistrationPluginSpecs
+	{
+		static UserAccountActivityEventArgs EventArgs;
+		static UserInfo UserInfo;
+
+		Establish context = () =>
+		{
+			UserInfo = new UserInfo("user",
+									"The User",
+									"email@example.com",
+									false,
+									DateTime.Now,
+									MockRepository.GenerateStub<IUsersStorageProviderV30>());
+			EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountModified);
+
+			Initialize(Plugin);
+		};
+
+		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
+
+		It should_process_the_user_account_activation_message =
+			() => CommandInvoker.AssertWasCalled(x => x.Process(Arg<DeactivateUserMessage>.Matches(y => y.User == UserInfo)));
+	}
+
+	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_a_user_account_is_deleted : AutoRegistrationPluginSpecs
 	{
 		static UserAccountActivityEventArgs EventArgs;
