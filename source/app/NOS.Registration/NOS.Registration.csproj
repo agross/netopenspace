@@ -87,6 +87,7 @@
     <Compile Include="Commands\Infrastructure\ExecutionResult.cs" />
     <Compile Include="Commands\Infrastructure\ICommandInvoker.cs" />
     <Compile Include="Commands\ReturnValue.cs" />
+    <Compile Include="Commands\SynchronizedCommand.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="ContainerConfiguration\Commands.cs" />
     <Compile Include="ContainerConfiguration\DataAccess.cs" />
