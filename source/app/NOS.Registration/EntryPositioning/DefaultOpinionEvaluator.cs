@@ -11,9 +11,14 @@ namespace NOS.Registration.EntryPositioning
 			_opinions = opinions;
 		}
 
+		public IHaveOpinionAboutEntryPosition[] Opinions
+		{
+			get { return _opinions; }
+		}
+
 		public Opinion Evaluate(EvaluationContext context)
 		{
-			return _opinions
+			return Opinions
 				.Select(x => x.GetOpinionAboutPosition(context))
 				.Where(x => x != Opinion.NoOpinion)
 				.Last();
