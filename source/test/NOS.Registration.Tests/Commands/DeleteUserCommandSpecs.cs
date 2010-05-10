@@ -24,8 +24,7 @@ namespace NOS.Registration.Tests.Commands
 					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
 					.Return(New.User.Named("user"));
 
-				Command = new DeleteUserCommand(Registrations,
-				                                new FakeSynchronizer());
+				Command = new DeleteUserCommand(Registrations);
 			};
 
 		Because of = () => { Result = Command.Execute(new DeleteUserMessage("user")); };
@@ -48,8 +47,7 @@ namespace NOS.Registration.Tests.Commands
 			{
 				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
 
-				Command = new DeleteUserCommand(Registrations,
-				                                new FakeSynchronizer());
+				Command = new DeleteUserCommand(Registrations);
 			};
 
 		Because of = () => { Result = Command.Execute(new DeleteUserMessage("user")); };

@@ -24,8 +24,7 @@ namespace NOS.Registration.Tests.Commands
 					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
 					.Return(New.User.Named("user").Active());
 
-				Command = new DeactivateUserCommand(Registrations,
-				                                    new FakeSynchronizer());
+				Command = new DeactivateUserCommand(Registrations);
 			};
 
 		Because of = () => { Result = Command.Execute(new DeactivateUserMessage("user")); };
@@ -51,8 +50,7 @@ namespace NOS.Registration.Tests.Commands
 					.Stub(x => x.Query(Arg<UserByUserName>.Is.TypeOf))
 					.Return(New.User.Named("user").Inactive());
 
-				Command = new DeactivateUserCommand(Registrations,
-				                                    new FakeSynchronizer());
+				Command = new DeactivateUserCommand(Registrations);
 			};
 
 		Because of = () => { Result = Command.Execute(new DeactivateUserMessage("user")); };
@@ -75,8 +73,7 @@ namespace NOS.Registration.Tests.Commands
 			{
 				Registrations = MockRepository.GenerateStub<IRegistrationRepository>();
 
-				Command = new DeactivateUserCommand(Registrations,
-				                                    new FakeSynchronizer());
+				Command = new DeactivateUserCommand(Registrations);
 			};
 
 		Because of = () => { Result = Command.Execute(new DeactivateUserMessage("user")); };

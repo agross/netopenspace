@@ -1,15 +1,15 @@
 namespace NOS.Registration.Commands
 {
-	public interface ICommandMessageHandler<TCommand, TResult>
+	public interface ICommandMessageHandler
 	{
-		TResult Execute(TCommand message);
+		ReturnValue Execute(object message);
 	}
 
-	public interface ICommandMessageHandler : ICommandMessageHandler<object, ReturnValue>
+	public interface ICommandMessageHandler<T> : ICommandMessageHandler
 	{
 	}
 
-	public abstract class Command<T> : ICommandMessageHandler
+	public abstract class Command<T> : ICommandMessageHandler<T>
 	{
 		public ReturnValue Execute(object message)
 		{

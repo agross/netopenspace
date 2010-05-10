@@ -8,7 +8,7 @@ namespace NOS.Registration.Commands.Infrastructure
 {
 	public class CommandFactory : ICommandFactory
 	{
-		static readonly Type GenericHandler = typeof(Command<>);
+		static readonly Type GenericHandler = typeof(ICommandMessageHandler<>);
 		readonly IContainer _container;
 
 		public CommandFactory(IContainer container)
@@ -18,10 +18,10 @@ namespace NOS.Registration.Commands.Infrastructure
 
 		public IEnumerable<ICommandMessageHandler> GetCommands(object commandMessage)
 		{
-			Type concreteCommandType = GenericHandler.MakeGenericType(commandMessage.GetType());
-
-			var commands = _container.GetAllInstances(concreteCommandType).Cast<ICommandMessageHandler>();
-			return commands;
+			var commandType = GenericHandler.MakeGenericType(commandMessage.GetType());
+			var commands = _container.GetAllInstances(commandType);
+			
+			return commands.Cast<ICommandMessageHandler>();
 		}
 	}
 }

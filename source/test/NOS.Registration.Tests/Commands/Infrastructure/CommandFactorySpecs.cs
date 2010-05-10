@@ -21,13 +21,13 @@ namespace NOS.Registration.Tests.Commands.Infrastructure
 				var container = new StructureMap.Container();
 				container.Configure(x =>
 					{
-						x.For<Command<MatchingMessage>>()
+						x.For<ICommandMessageHandler<MatchingMessage>>()
 							.Use<MatchingHandler1>();
 
-						x.For<Command<MatchingMessage>>()
+						x.For<ICommandMessageHandler<MatchingMessage>>()
 							.Add<MatchingHandler2>();
 
-						x.For<Command<OtherMessage>>()
+						x.For<ICommandMessageHandler<OtherMessage>>()
 							.Use<OtherHandler>();
 					});
 

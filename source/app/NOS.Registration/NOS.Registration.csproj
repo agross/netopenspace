@@ -37,6 +37,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\Anti-XSS Library\AntiXSSLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
     <Reference Include="NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\NVelocity\NVelocity.dll</HintPath>
@@ -82,6 +90,7 @@
     <Compile Include="Commands\DeleteUserCommand.cs" />
     <Compile Include="Commands\DeactivateUserCommand.cs" />
     <Compile Include="Commands\FormatContentCommand.cs" />
+    <Compile Include="Commands\IAmSynchronized.cs" />
     <Compile Include="Commands\Infrastructure\CommandInvoker.cs" />
     <Compile Include="Commands\Infrastructure\CommandFactory.cs" />
     <Compile Include="Commands\Infrastructure\GenericItemDictionary.cs" />
@@ -89,7 +98,6 @@
     <Compile Include="Commands\Infrastructure\ExecutionResult.cs" />
     <Compile Include="Commands\Infrastructure\ICommandInvoker.cs" />
     <Compile Include="Commands\ReturnValue.cs" />
-    <Compile Include="Commands\SynchronizedCommand.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="ContainerConfiguration\Commands.cs" />
     <Compile Include="ContainerConfiguration\DataAccess.cs" />
@@ -163,6 +171,7 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "$(TargetPath)" "$(TargetDir)..\..\bin"
 xcopy /y "$(TargetDir)StructureMap.*" "$(TargetDir)..\..\bin"
+xcopy /y "$(TargetDir)Castle.*" "$(TargetDir)..\..\bin"
 xcopy /y "$(TargetDir)NVelocity.*" "$(TargetDir)..\..\bin"
 xcopy /y "$(TargetDir)AntiXSSLibrary.*" "$(TargetDir)..\..\bin"</PostBuildEvent>
   </PropertyGroup>

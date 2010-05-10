@@ -19,10 +19,12 @@ local-properties.yml
 /source/app/NOS.Wiki/public/Plugins/NOS.*.pdb
 /source/app/NOS.Wiki/public/Plugins/NVelocity.*
 /source/app/NOS.Wiki/public/Plugins/StructureMap.*
+/source/app/NOS.Wiki/public/Plugins/Castle.*
 /source/app/NOS.Wiki/public/Plugins/AntiXSSLibrary.*
 /source/app/NOS.Wiki/bin/NOS.*.dll
 /source/app/NOS.Wiki/bin/NVelocity.*
 /source/app/NOS.Wiki/bin/StructureMap.*
+/source/app/NOS.Wiki/bin/Castle.*
 /source/app/NOS.Wiki/bin/AntiXSSLibrary.*
 /source/app/NOS.Wall/index.htm
 /source/app/NOS.Root/wufoo.css

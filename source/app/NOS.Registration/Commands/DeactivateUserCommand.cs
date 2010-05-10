@@ -5,17 +5,16 @@ using NOS.Registration.Queries;
 
 namespace NOS.Registration.Commands
 {
-	public class DeactivateUserCommand : SynchronizedCommand<DeactivateUserMessage>
+	public class DeactivateUserCommand : Command<DeactivateUserMessage>
 	{
 		readonly IRegistrationRepository _registrationRepository;
 
-		public DeactivateUserCommand(IRegistrationRepository registrationRepository,
-		                             ISynchronizer synchronizer) : base(synchronizer)
+		public DeactivateUserCommand(IRegistrationRepository registrationRepository)
 		{
 			_registrationRepository = registrationRepository;
 		}
 
-		protected override ReturnValue ExecuteSynchronized(DeactivateUserMessage message)
+		protected override ReturnValue Execute(DeactivateUserMessage message)
 		{
 			var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 			if (user == null)

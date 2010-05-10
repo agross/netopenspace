@@ -6,16 +6,15 @@ using NOS.Registration.Queries;
 
 namespace NOS.Registration.Commands
 {
-	public class ActivateUserCommand : SynchronizedCommand<ActivateUserMessage>
+	public class ActivateUserCommand : Command<ActivateUserMessage>, IAmSynchronized
 	{
 		readonly INotificationSender _notificationSender;
 		readonly IRegistrationRepository _registrationRepository;
 		readonly IWikiSettings _settings;
 
 		public ActivateUserCommand(IRegistrationRepository registrationRepository,
-		                           ISynchronizer synchronizer,
 		                           INotificationSender notificationSender,
-		                           IWikiSettings settings) : base(synchronizer)
+		                           IWikiSettings settings)
 		{
 			_registrationRepository = registrationRepository;
 			_notificationSender = notificationSender;
@@ -37,7 +36,7 @@ namespace NOS.Registration.Commands
 			set;
 		}
 
-		protected override ReturnValue ExecuteSynchronized(ActivateUserMessage message)
+		protected override ReturnValue Execute(ActivateUserMessage message)
 		{
 			var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 			if (user == null)

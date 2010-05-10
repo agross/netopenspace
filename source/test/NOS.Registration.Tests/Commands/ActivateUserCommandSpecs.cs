@@ -31,7 +31,6 @@ namespace NOS.Registration.Tests.Commands
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
 				Command = new ActivateUserCommand(Registrations,
-				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
 				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
@@ -68,7 +67,6 @@ namespace NOS.Registration.Tests.Commands
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
 				Command = new ActivateUserCommand(Registrations,
-				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
 				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
@@ -107,7 +105,6 @@ namespace NOS.Registration.Tests.Commands
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
 				Command = new ActivateUserCommand(Registrations,
-				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
 				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
@@ -155,7 +152,6 @@ namespace NOS.Registration.Tests.Commands
 					.Return("admin@example.com");
 
 				Command = new ActivateUserCommand(Registrations,
-				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
 				                                  settingsAccessor);
 			};

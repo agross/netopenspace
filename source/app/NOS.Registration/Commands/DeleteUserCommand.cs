@@ -5,17 +5,16 @@ using NOS.Registration.Queries;
 
 namespace NOS.Registration.Commands
 {
-	public class DeleteUserCommand : SynchronizedCommand<DeleteUserMessage>
+	public class DeleteUserCommand : Command<DeleteUserMessage>, IAmSynchronized
 	{
 		readonly IRegistrationRepository _registrationRepository;
 
-		public DeleteUserCommand(IRegistrationRepository registrationRepository,
-		                         ISynchronizer synchronizer) : base(synchronizer)
+		public DeleteUserCommand(IRegistrationRepository registrationRepository)
 		{
 			_registrationRepository = registrationRepository;
 		}
 
-		protected override ReturnValue ExecuteSynchronized(DeleteUserMessage message)
+		protected override ReturnValue Execute(DeleteUserMessage message)
 		{
 			var user = _registrationRepository.Query(new UserByUserName(message.UserName));
 			if (user == null)
