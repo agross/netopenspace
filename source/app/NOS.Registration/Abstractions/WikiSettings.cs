@@ -2,7 +2,7 @@ using ScrewTurn.Wiki;
 
 namespace NOS.Registration.Abstractions
 {
-	internal class SettingsAccessor : ISettingsAccessor
+	internal class WikiSettings : IWikiSettings
 	{
 		public string ContactEmail
 		{

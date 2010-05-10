@@ -10,16 +10,16 @@ namespace NOS.Registration.Commands
 	{
 		readonly INotificationSender _notificationSender;
 		readonly IRegistrationRepository _registrationRepository;
-		readonly ISettingsAccessor _settingsAccessor;
+		readonly IWikiSettings _settings;
 
 		public ActivateUserCommand(IRegistrationRepository registrationRepository,
 		                           ISynchronizer synchronizer,
 		                           INotificationSender notificationSender,
-		                           ISettingsAccessor settingsAccessor) : base(synchronizer)
+		                           IWikiSettings settings) : base(synchronizer)
 		{
 			_registrationRepository = registrationRepository;
 			_notificationSender = notificationSender;
-			_settingsAccessor = settingsAccessor;
+			_settings = settings;
 
 			SuccessNotificationTemplate = "AutoRegistrationSuccessfulMessage";
 			FailureNotificationTemplate = "AutoRegistrationFailedMessage";
@@ -64,7 +64,7 @@ namespace NOS.Registration.Commands
 			catch (Exception ex)
 			{
 				_notificationSender.SendMessage(message.UserName,
-												_settingsAccessor.ContactEmail,
+												_settings.ContactEmail,
 												"AutoRegistration",
 												FailureNotificationTemplate);
 				_notificationSender.SendMessage(message.UserName,

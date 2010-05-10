@@ -72,6 +72,8 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Abstractions\IWikiSettings.cs" />
+    <Compile Include="Abstractions\WikiSettings.cs" />
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Commands\ActivateUserCommand.cs" />
     <Compile Include="Commands\Command.cs" />
@@ -120,7 +122,6 @@
     <Compile Include="Queries\Withdrawals.cs" />
     <Compile Include="Templating\HtmlEncoder.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
-    <Compile Include="Abstractions\SettingsAccessor.cs" />
     <Compile Include="Abstractions\EmailNotificationSender.cs" />
     <Compile Include="EntryPositioning\Opinion.cs" />
     <Compile Include="EntryPositioning\Opinions\OnAttendeeList.cs" />
@@ -133,7 +134,6 @@
     <Compile Include="Templating\ITemplateEngine.cs" />
     <Compile Include="Abstractions\INotificationSender.cs" />
     <Compile Include="Abstractions\IPluginConfiguration.cs" />
-    <Compile Include="Abstractions\ISettingsAccessor.cs" />
     <Compile Include="CrossContextSynchronization.cs" />
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Abstractions\FileReader.cs" />

@@ -14,7 +14,7 @@ namespace NOS.Registration.Tests.Abstractions
 		static IFileReader Reader;
 		static EmailNotificationSender Sender;
 		static IHostV30 Host;
-		static ISettingsAccessor Settings;
+		static IWikiSettings Settings;
 
 		Establish context = () =>
 			{
@@ -25,7 +25,7 @@ namespace NOS.Registration.Tests.Abstractions
 					.Stub(x => x.Read("template file"))
 					.Return("template contents");
 
-				Settings = MockRepository.GenerateStub<ISettingsAccessor>();
+				Settings = MockRepository.GenerateStub<IWikiSettings>();
 				Settings.Stub(x => x.SenderEmail).Return("sender@example.com");
 				Settings.Stub(x => x.WikiTitle).Return("My Wiki");
 				Settings.Stub(x => x.MainUrl).Return("http://example.com");
@@ -53,7 +53,7 @@ namespace NOS.Registration.Tests.Abstractions
 		static IFileReader Reader;
 		static EmailNotificationSender Sender;
 		static IHostV30 Host;
-		static ISettingsAccessor Settings;
+		static IWikiSettings Settings;
 
 		Establish context = () =>
 			{
@@ -64,7 +64,7 @@ namespace NOS.Registration.Tests.Abstractions
 					.Stub(x => x.Read("template file"))
 					.Return("##WIKITITLE##, ##USERNAME##, ##WIKIURL##");
 
-				Settings = MockRepository.GenerateStub<ISettingsAccessor>();
+				Settings = MockRepository.GenerateStub<IWikiSettings>();
 				Settings.Stub(x => x.SenderEmail).Return("sender@example.com");
 				Settings.Stub(x => x.WikiTitle).Return("My Wiki");
 				Settings.Stub(x => x.MainUrl).Return("http://example.com");

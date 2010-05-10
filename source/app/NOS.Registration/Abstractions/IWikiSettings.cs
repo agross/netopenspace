@@ -1,6 +1,6 @@
 namespace NOS.Registration.Abstractions
 {
-	public interface ISettingsAccessor
+	public interface IWikiSettings
 	{
 		string ContactEmail
 		{

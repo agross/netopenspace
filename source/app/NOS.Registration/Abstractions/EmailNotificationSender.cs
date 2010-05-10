@@ -7,13 +7,13 @@ namespace NOS.Registration.Abstractions
 	public class EmailNotificationSender : INotificationSender
 	{
 		readonly IFileReader _fileReader;
-		readonly ISettingsAccessor _settingsAccessor;
+		readonly IWikiSettings _settings;
 		IHostV30 _host;
 
-		public EmailNotificationSender(IFileReader fileReader, ISettingsAccessor settingsAccessor)
+		public EmailNotificationSender(IFileReader fileReader, IWikiSettings settings)
 		{
 			_fileReader = fileReader;
-			_settingsAccessor = settingsAccessor;
+			_settings = settings;
 		}
 
 		public void SendMessage(string userName, string recipient, string subject, string templateFileName)
@@ -33,16 +33,16 @@ namespace NOS.Registration.Abstractions
 			var template = _fileReader.Read(templateFileName);
 
 			return template
-				.Replace("##WIKITITLE##", _settingsAccessor.WikiTitle)
+				.Replace("##WIKITITLE##", _settings.WikiTitle)
 				.Replace("##USERNAME##", userName)
-				.Replace("##WIKIURL##", _settingsAccessor.MainUrl);
+				.Replace("##WIKIURL##", _settings.MainUrl);
 		}
 
 		void SendEmail(string userEmail, string subject, string message)
 		{
 			_host.SendEmail(userEmail,
-			                _settingsAccessor.SenderEmail,
-			                String.Format("{0} - {1}", subject, _settingsAccessor.WikiTitle),
+			                _settings.SenderEmail,
+			                String.Format("{0} - {1}", subject, _settings.WikiTitle),
 			                message,
 			                false);
 		}

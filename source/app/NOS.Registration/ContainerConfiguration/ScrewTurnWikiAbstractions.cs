@@ -22,9 +22,9 @@ namespace NOS.Registration.ContainerConfiguration
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
 				.Use<FileWriter>();
 
-			For<ISettingsAccessor>()
+			For<IWikiSettings>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<SettingsAccessor>();
+				.Use<WikiSettings>();
 
 			For<INotificationSender>()
 				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))

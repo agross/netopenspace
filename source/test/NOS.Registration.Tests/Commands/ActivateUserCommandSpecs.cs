@@ -33,7 +33,7 @@ namespace NOS.Registration.Tests.Commands
 				Command = new ActivateUserCommand(Registrations,
 				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
-				                                  MockRepository.GenerateStub<ISettingsAccessor>());
+				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
 
 		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
@@ -70,7 +70,7 @@ namespace NOS.Registration.Tests.Commands
 				Command = new ActivateUserCommand(Registrations,
 				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
-				                                  MockRepository.GenerateStub<ISettingsAccessor>());
+				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
 
 		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
@@ -109,7 +109,7 @@ namespace NOS.Registration.Tests.Commands
 				Command = new ActivateUserCommand(Registrations,
 				                                  new FakeSynchronizer(),
 				                                  NotificationSender,
-				                                  MockRepository.GenerateStub<ISettingsAccessor>());
+				                                  MockRepository.GenerateStub<IWikiSettings>());
 			};
 
 		Because of = () => { Result = Command.Execute(new ActivateUserMessage("user", "email@example.com")); };
@@ -149,7 +149,7 @@ namespace NOS.Registration.Tests.Commands
 
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
 
-				var settingsAccessor = MockRepository.GenerateStub<ISettingsAccessor>();
+				var settingsAccessor = MockRepository.GenerateStub<IWikiSettings>();
 				settingsAccessor
 					.Stub(x => x.ContactEmail)
 					.Return("admin@example.com");
