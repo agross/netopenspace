@@ -1,9 +1,7 @@
 using NOS.Registration.Commands;
 using NOS.Registration.Commands.Infrastructure;
 
-using StructureMap;
 using StructureMap.Configuration.DSL;
-using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
@@ -11,24 +9,16 @@ namespace NOS.Registration.ContainerConfiguration
 	{
 		public Commands()
 		{
-			For<ICommandInvoker>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<CommandInvoker>();
-
-			For<ICommandFactory>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<CommandFactory>();
-
-			For<ISynchronizer>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<CrossContextSynchronizer>();
+			ForSingletonOf<ICommandInvoker>().Use<CommandInvoker>();
+			ForSingletonOf<ICommandFactory>().Use<CommandFactory>();
+			ForSingletonOf<ISynchronizer>().Use<CrossContextSynchronizer>();
 
 			Scan(x =>
-			{
-				x.TheCallingAssembly();
-				x.AddAllTypesOf(typeof(Command<>));
-				x.WithDefaultConventions();
-			});
+				{
+					x.TheCallingAssembly();
+					x.AddAllTypesOf(typeof(Command<>));
+					x.WithDefaultConventions();
+				});
 		}
 	}
 }

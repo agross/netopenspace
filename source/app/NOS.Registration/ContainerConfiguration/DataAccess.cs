@@ -1,8 +1,6 @@
 using NOS.Registration.DataAccess;
 
-using StructureMap;
 using StructureMap.Configuration.DSL;
-using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
@@ -10,8 +8,7 @@ namespace NOS.Registration.ContainerConfiguration
 	{
 		public DataAccess()
 		{
-			For<IRegistrationRepository>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
+			ForSingletonOf<IRegistrationRepository>()
 				.Use<RegistrationRepository>()
 				.Ctor<string>("file").Is(typeof(AutoRegistrationPlugin).FullName + ".Data");
 		}

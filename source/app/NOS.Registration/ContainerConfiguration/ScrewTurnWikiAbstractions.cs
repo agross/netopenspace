@@ -1,8 +1,6 @@
 using NOS.Registration.Abstractions;
 
-using StructureMap;
 using StructureMap.Configuration.DSL;
-using StructureMap.Pipeline;
 
 namespace NOS.Registration.ContainerConfiguration
 {
@@ -10,29 +8,16 @@ namespace NOS.Registration.ContainerConfiguration
 	{
 		public ScrewTurnWikiAbstractions()
 		{
-			For<ILogger>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<Logger>();
+			ForSingletonOf<ILogger>().Use<Logger>();
 
-			For<IFileReader>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<FileReader>();
+			ForSingletonOf<IFileReader>().Use<FileReader>();
+			ForSingletonOf<IFileWriter>().Use<FileWriter>();
 
-			For<IFileWriter>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<FileWriter>();
+			ForSingletonOf<IWikiSettings>().Use<WikiSettings>();
 
-			For<IWikiSettings>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<WikiSettings>();
+			ForSingletonOf<INotificationSender>().Use<EmailNotificationSender>();
 
-			For<INotificationSender>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<EmailNotificationSender>();
-
-			For<IPluginConfiguration>()
-				.LifecycleIs(Lifecycles.GetLifecycle(InstanceScope.Singleton))
-				.Use<DefaultPluginConfiguration>();
+			ForSingletonOf<IPluginConfiguration>().Use<DefaultPluginConfiguration>();
 		}
 	}
 }
