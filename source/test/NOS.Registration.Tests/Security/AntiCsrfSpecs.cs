@@ -98,7 +98,7 @@ namespace NOS.Registration.Tests.Security
 			() => Exception.ShouldBeOfType<SecurityException>();
 
 		It should_end_the_session =
-			() => Session.AssertWasCalled(x => x.EndSession());
+			() => Session.AssertWasCalled(x => x.EndSessionAndEnforceLogin());
 
 		It should_log_that_token_verification_failed =
 			() => Logger.AssertWasCalled(x => x.Warning(Arg<string>.Matches(y => y.StartsWith("CSRF token verification failed")),
@@ -106,28 +106,43 @@ namespace NOS.Registration.Tests.Security
 	}
 
 	[Subject(typeof(AntiCsrf))]
-	public class When_a_token_is_verified_and_no_token_has_been_generated_before
+	public class When_a_token_is_verified_and_the_session_token_is_empty
 	{
 		static IAntiCsrf AntiCsrf;
 		static ISession Session;
-		static string Token;
 		static Exception Exception;
 
 		Establish context = () =>
 			{
-				Token = null;
-
 				Session = MockRepository.GenerateStub<ISession>();
 
 				AntiCsrf = new AntiCsrf(MockRepository.GenerateStub<ILogger>(), Session, MockRepository.GenerateStub<IUserContext>());
 			};
 
-		Because of = () => { Exception = Catch.Exception(() => AntiCsrf.Verify(Token)); };
+		Because of = () => { Exception = Catch.Exception(() => AntiCsrf.Verify("the token")); };
 
 		It should_refuse_the_token =
 			() => Exception.ShouldBeOfType<SecurityException>();
+	}
+	
+	[Subject(typeof(AntiCsrf))]
+	public class When_a_token_is_verified_and_the_submitted_token_is_empty
+	{
+		static IAntiCsrf AntiCsrf;
+		static ISession Session;
+		static Exception Exception;
 
-		It should_end_the_session =
-			() => Session.AssertWasCalled(x => x.EndSession());
+		Establish context = () =>
+			{
+				Session = MockRepository.GenerateStub<ISession>();
+				Session.CsrfToken = "the valid token";
+
+				AntiCsrf = new AntiCsrf(MockRepository.GenerateStub<ILogger>(), Session, MockRepository.GenerateStub<IUserContext>());
+			};
+
+		Because of = () => { Exception = Catch.Exception(() => AntiCsrf.Verify(null)); };
+
+		It should_refuse_the_token =
+			() => Exception.ShouldBeOfType<SecurityException>();
 	}
 }

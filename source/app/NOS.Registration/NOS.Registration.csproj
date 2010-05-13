@@ -80,9 +80,12 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Abstractions\IHttpRequest.cs" />
     <Compile Include="Abstractions\ISession.cs" />
     <Compile Include="Abstractions\IUserContext.cs" />
     <Compile Include="Abstractions\IWikiSettings.cs" />
+    <Compile Include="Abstractions\HttpRequest.cs" />
+    <Compile Include="Abstractions\Session.cs" />
     <Compile Include="Abstractions\UserContext.cs" />
     <Compile Include="Abstractions\WikiSettings.cs" />
     <Compile Include="AutoRegistrationPlugin.cs" />

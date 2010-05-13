@@ -28,16 +28,29 @@ namespace NOS.Registration.Security
 
 		public void Verify(string token)
 		{
-			if (!String.IsNullOrEmpty(_session.CsrfToken) && _session.CsrfToken == token)
+			if (SessionTokenIsEmpty() || FormTokenIsEmpty(token) || TokenDoNotMatch(token))
 			{
-				return;
+				_logger.Warning(String.Format("CSRF token verification failed. Should be {0}, was {1}", _session.CsrfToken, token),
+				                _userContext.UserName);
+
+				_session.EndSessionAndEnforceLogin();
+				throw new SecurityException();
 			}
+		}
 
-			_logger.Warning(String.Format("CSRF token verification failed. Should be {0}, was {1}", _session.CsrfToken, token),
-			                _userContext.UserName);
+		static bool FormTokenIsEmpty(string token)
+		{
+			return token.IsNullOrEmpty();
+		}
 
-			_session.EndSession();
-			throw new SecurityException();
+		bool SessionTokenIsEmpty()
+		{
+			return _session.CsrfToken.IsNullOrEmpty();
+		}
+
+		bool TokenDoNotMatch(string token)
+		{
+			return _session.CsrfToken != token;
 		}
 
 		static byte[] CreateRandomBytes(int length)
