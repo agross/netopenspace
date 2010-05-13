@@ -1,12 +1,13 @@
 using System.Security;
 using System.Web;
+using System.Web.SessionState;
 
 using NOS.Registration.Abstractions;
 using NOS.Registration.Security;
 
 namespace NOS.Registration
 {
-	public class AutoRegistrationHandler : IHttpHandler
+	public class AutoRegistrationHandler : IHttpHandler, IRequiresSessionState
 	{
 		readonly IAntiCsrf _antiCsrf;
 		readonly IHttpRequest _request;
