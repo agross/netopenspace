@@ -5,6 +5,7 @@ using NOS.Registration.Abstractions;
 using StructureMap.Configuration.DSL;
 
 using HttpRequest = NOS.Registration.Abstractions.HttpRequest;
+using HttpResponse = NOS.Registration.Abstractions.HttpResponse;
 
 namespace NOS.Registration.ContainerConfiguration
 {
@@ -26,6 +27,11 @@ namespace NOS.Registration.ContainerConfiguration
 			For<IHttpRequest>()
 				.HybridHttpOrThreadLocalScoped()
 				.Use<HttpRequest>()
+				.OnCreation(x => x.Connect(HttpContext.Current));
+			
+			For<IHttpResponse>()
+				.HybridHttpOrThreadLocalScoped()
+				.Use<HttpResponse>()
 				.OnCreation(x => x.Connect(HttpContext.Current));
 			
 			For<ISession>()
