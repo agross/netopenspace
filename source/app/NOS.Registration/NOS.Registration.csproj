@@ -109,7 +109,7 @@
     <Compile Include="ContainerConfiguration\DataAccess.cs" />
     <Compile Include="ContainerConfiguration\EntryPositioning.cs" />
     <Compile Include="ContainerConfiguration\MarkupFormatting.cs" />
-    <Compile Include="ContainerConfiguration\ScrewTurnWikiAbstractions.cs" />
+    <Compile Include="ContainerConfiguration\Abstractions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
