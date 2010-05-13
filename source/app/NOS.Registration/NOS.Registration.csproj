@@ -80,7 +80,10 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Abstractions\ISession.cs" />
+    <Compile Include="Abstractions\IUserContext.cs" />
     <Compile Include="Abstractions\IWikiSettings.cs" />
+    <Compile Include="Abstractions\UserContext.cs" />
     <Compile Include="Abstractions\WikiSettings.cs" />
     <Compile Include="AutoRegistrationPlugin.cs" />
     <Compile Include="Commands\ActivateUserCommand.cs" />
@@ -128,6 +131,8 @@
     <Compile Include="Queries\UserByUserName.cs" />
     <Compile Include="Queries\WaitingList.cs" />
     <Compile Include="Queries\Withdrawals.cs" />
+    <Compile Include="Security\AntiCsrf.cs" />
+    <Compile Include="Security\IAntiCsrf.cs" />
     <Compile Include="Templating\HtmlEncoder.cs" />
     <Compile Include="UI\AutoRegistrationPresenter.cs" />
     <Compile Include="Abstractions\EmailNotificationSender.cs" />

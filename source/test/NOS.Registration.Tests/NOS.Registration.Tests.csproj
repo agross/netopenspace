@@ -93,6 +93,7 @@
     <Compile Include="Queries\WithdrawalsSpecs.cs" />
     <Compile Include="Queries\WaitingListSpecs.cs" />
     <Compile Include="Queries\UserByUserNameSpecs.cs" />
+    <Compile Include="Security\AntiCsrfSpecs.cs" />
     <Compile Include="UI\AutoRegistrationPresenterSpecs.cs" />
     <Compile Include="ContainerSpecs.cs" />
     <Compile Include="EntryPositioning\DefaultOpinionEvaluatorSpecs.cs" />
