@@ -80,7 +80,9 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="Abstractions\HttpResponse.cs" />
     <Compile Include="Abstractions\IHttpRequest.cs" />
+    <Compile Include="Abstractions\IHttpResponse.cs" />
     <Compile Include="Abstractions\ISession.cs" />
     <Compile Include="Abstractions\IUserContext.cs" />
     <Compile Include="Abstractions\IWikiSettings.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="ContainerConfiguration\EntryPositioning.cs" />
     <Compile Include="ContainerConfiguration\MarkupFormatting.cs" />
     <Compile Include="ContainerConfiguration\Abstractions.cs" />
+    <Compile Include="ContainerConfiguration\Security.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
@@ -122,6 +125,7 @@
     <Compile Include="Formatting\Lists\OrderedListFormatter.cs" />
     <Compile Include="Formatting\Lists\UnorderedListFormatter.cs" />
     <Compile Include="Formatting\RegistrationDataProvider.cs" />
+    <Compile Include="AutoRegistrationHandler.cs" />
     <Compile Include="Model\Request.cs" />
     <Compile Include="Model\ParticipationData.cs" />
     <Compile Include="Model\Preference.cs" />
