@@ -55,6 +55,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,7 @@
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
     <Compile Include="Abstractions\EmailNotificationSenderSpecs.cs" />
+    <Compile Include="AutoRegistrationHandlerSpecs.cs" />
     <Compile Include="AutoRegistrationPluginSpecs.cs" />
     <Compile Include="Commands\ActivateUserCommandSpecs.cs" />
     <Compile Include="Commands\ConfigureEnvironmentCommandSpecs.cs" />
