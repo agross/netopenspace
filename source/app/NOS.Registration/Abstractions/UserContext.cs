@@ -1,4 +1,4 @@
-using System.Web;
+using ScrewTurn.Wiki;
 
 namespace NOS.Registration.Abstractions
 {
@@ -6,7 +6,7 @@ namespace NOS.Registration.Abstractions
 	{
 		public string UserName
 		{
-			get { return HttpContext.Current.User.Identity.Name; }
+			get { return SessionFacade.CurrentUsername; }
 		}
 	}
 }
