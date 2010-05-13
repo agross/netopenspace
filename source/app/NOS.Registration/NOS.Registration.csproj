@@ -107,6 +107,7 @@
     <Compile Include="ContainerConfiguration\EntryPositioning.cs" />
     <Compile Include="ContainerConfiguration\MarkupFormatting.cs" />
     <Compile Include="ContainerConfiguration\ScrewTurnWikiAbstractions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Formatting\IDataProvider.cs" />
     <Compile Include="Formatting\ListItems\IListItemFormatter.cs" />
     <Compile Include="Formatting\ListItems\UserListItemFormatter.cs" />
@@ -148,7 +149,7 @@
     <Compile Include="Abstractions\INotificationSender.cs" />
     <Compile Include="Abstractions\IPluginConfiguration.cs" />
     <Compile Include="CrossContextSynchronization.cs" />
-    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Abstractions\FileReader.cs" />
     <Compile Include="Abstractions\FileWriter.cs" />
     <Compile Include="UI\IAutoRegistrationView.cs" />
