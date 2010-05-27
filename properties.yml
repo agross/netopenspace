@@ -76,3 +76,15 @@ karlsruhe:
       - wiki
     iis:
       app_name: (agross) karlsruhe.netopenspace.de/
+
+biztalk:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2010/
+      root_url: http://biztalkopenspace.de/
+  deployment:
+    tasks:
+      - wiki
+    iis:
+      app_name: (tweber) biztalkopenspace.de/
