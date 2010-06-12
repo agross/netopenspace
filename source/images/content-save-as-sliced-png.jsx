@@ -43,5 +43,6 @@ function saveAsPng(sourceDocument, document, filename)
 	png.PNG8 = false;
 	png.transparency = true; 
 
+  // TODO: check if the folder for [file] already exists. Otherwise an exception will appear.
 	document.saveAs(file, png, true, Extension.LOWERCASE);
 }
