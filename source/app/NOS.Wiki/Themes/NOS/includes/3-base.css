@@ -10,7 +10,7 @@ html, input, textarea {
 
 body {
 	line-height: 1.5em;
-	background: #e1df9e url(images/layout/page-background.png) repeat-x scroll left top;
+	background: #d9c2a3 url(images/layout/page-background.png) repeat-x scroll left top;
 	color: #111;
 }
 
@@ -27,7 +27,7 @@ pre {
 }
 
 a {
-	color: #648c13;
+	color: #66A000;
 	text-decoration: none;
 }
 
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.5em;
 	line-height: 1.6em;
 	padding-bottom: .5em;
-	color: #a12d0d;
+	color: #7D5700;
 }
 
 h2 {
@@ -296,60 +296,60 @@ Header
 
 #header .pos1 {
 	position: absolute;
-	top: 20px;
-	right: 7em;
+	top: 14px;
+	right: 9.5em;
 }
 
 #header .pos2 {
 	position: absolute;
-	top: 20px;
-	right: 25px;
+	top: 75px;
+	right: 20em;
 }
 
 #header .pos3 {
 	position: absolute;
 	top: 3.8em;
-	right: 7em;
+	right: 12.3em;
 }
 
 #header .pos4 {
 	position: absolute;
-	top: 5.5em;
-	right: 15px;
+	top: 5.9em;
+	right: 7px;
 }
 
 #header .pos5 {
 	position: absolute;
-	top: 3.5em;
-	right: 54px;
+	top: 7px;
+	right: 7px;
 }
 
 #header .pos6 {
 	position: absolute;
 	top: 6em;
-	right: 11.5em;
+	right: 16.5em;
 }
 
 #header .pos7 {
 	position: absolute;
 	top: 6em;
-	right: 6em;
+	right: 10em;
 }
 
 #header .pos8 {
 	position: absolute;
 	top: 20px;
-	right: 15.1em;
+	right: 18.1em;
 }
 
 #header .basictab li a {
 	color: #fff;
-	background-color: #9dab42;
+	background-color: #472801;
 	padding: 5px 9px;
 }
 
 #header .basictab li a:hover {
-	background-color: #e1df9e;
+	background-color: #81551D;
 	color: #111;
 }
 
@@ -495,7 +495,7 @@ Footer
 }
 
 #footer .content {
-	background-color: #132e28;
+	background-color: #180703;
 	color: #fff;
 }
 
