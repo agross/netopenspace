@@ -8,8 +8,8 @@
 
 		</div>
 		Das Design dieser Seite wurde von [http://therightstuff.de/|Alexander Groß] erstellt.{BR}
-		Einige Icons stammen von [http://www.famfamfam.com|FamFamFam]. Die Figuren im Logo sind von [http://pixelplastic.de/|Marcel Hoyer].{BR}
-		Bildquelle: [http://www.aboutpixel.de|aboutpixel.de] / [http://www.aboutpixel.de/index.php4?toppage=imagedetails&image_id=44930|Weißgrün - das Zebragras] / &copy; [http://www.aboutpixel.de/index.php4?toppage=imagebank&subpage=member&user_id=52283|Thorwald Hoffmann].
+		Einige Icons stammen von [http://www.famfamfam.com|FamFamFam]. {BR}
+    Die Figuren im Logo sind von [http://pixelplastic.de/|Marcel Hoyer].
 	</div>
 	<div class="clearfix"></div>
 </div>
