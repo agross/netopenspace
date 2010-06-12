@@ -27,7 +27,7 @@ pre {
 }
 
 a {
-	color: #66A000;
+	color: #B56C00;
 	text-decoration: none;
 }
 
@@ -349,8 +349,9 @@ Header
 }
 
 #header .basictab li a:hover {
-	background-color: #81551D;
-	color: #111;
+	background-color: #E8980E;
+	color: #fff;
+  text-shadow: 1px 1px 1px #5B4B00
 }
 
 #header .basictab li.selected a {
