@@ -35,39 +35,6 @@
 	zoom: 1;
 }
 
-#header .pos1 {
-	top: 11px;
-}
-
-#header .pos2, #header .pos8 {
-	top: 14px;
-}
-
-#header .pos3 {
-	top: 3.5em;
-}
-
-#header .pos4 {
-	top: 5.3em;
-}
-
-#header .pos5 {
-	top: 3.5em;
-}
-
-#header .pos6 {
-	top: 5.7em;
-}
-
-#header .pos7 {
-	top: 5.7em;
-	right: 5.8em;
-}
-
-#header .pos8 {
-	right: 15.3em;;
-}
-
 #MainDiv {
 	margin-left: 205px;
 }
