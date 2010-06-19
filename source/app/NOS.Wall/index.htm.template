@@ -14,7 +14,7 @@
 </head>
 <body id="body">
 	<div id="wrapper">
-		<a href="@configatron.app.iis.root_url@"><h1>Twitter-Hashtag <em>#netos2010</em> benutzen!</h1></a>
+		<a href="@configatron.app.iis.root_url@"><h1>Twitter-Hashtag <em>#nos_sued</em> benutzen!</h1></a>
 		<div id="next-update"></div>
 		<div id="tweets">
 			<span class="loading" style="display: block; text-align: center; padding-top: 100px;"><img src="images/ajax-loader.gif" alt="Laden..." /></span>
