@@ -18,7 +18,7 @@
 				"URL": "http://netopenspace.de/2009/"
 			}
 		],
-		"TwitterSearch": ["#netos2010", "#netos2009", "from:netopenspace"]
+		"TwitterSearch": ["#netos2010", "from:netopenspace"]
 	},
 	{
 		"City": "Ulm",
@@ -28,7 +28,7 @@
 	{
 		"City": "Wien",
 		"URL": "http://wien.netopenspace.de/",
-		"TwitterSearch": ["from:vienna_open"]
+		"TwitterSearch": []
 	},
 	{
 		"City": "Development",
