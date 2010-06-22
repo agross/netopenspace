@@ -28,13 +28,13 @@
 					<span class="pos8" id="workspaces">
 						<span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span>
 						<ul class="submenu smallest" style="display: none">
-							<li>[Arbeitsbereich ALT_NET|ALT.NET]</li>
-							<li>[Arbeitsbereich Clean Code Developer|Clean Code]</li>
-							<li>[Arbeitsbereich Language Oriented Programming|Language-Oriented Programming]</li>
-							<li>[Arbeitsbereich Mobile Computing|Mobile Computing]</li>
-							<li>[Arbeitsbereich Soft Skills|Soft Skills]</li>
-							<li>[Arbeitsbereich Microsoft SQL Server 2008|SQL Server]</li>
-							<li>[Arbeitsbereich UI und UX|UI und UX]</li>
+							<li>[BizTalk2010|BizTalk 2010]</li>
+							<li>[EAI_SOA|EAI/SOA]</li>
+							<li>[ESB|Enterprise Service Bus]</li>
+							<li>[LOB_Adapter|LOB Adapter]</li>
+							<li>[Cloud_Computing|Cloud Computing]</li>
+							<li>[WF|WF 4.0]</li>
+							<li>[Deployment|Deployment]</li>
 						</ul>
 					</span>
 				</li>
