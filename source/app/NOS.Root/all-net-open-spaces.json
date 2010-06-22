@@ -21,11 +21,6 @@
 		"TwitterSearch": ["#netos2010", "from:netopenspace"]
 	},
 	{
-		"City": "Ulm",
-		"URL": "http://ulm.netopenspace.de/",
-		"TwitterSearch": ["#nos_sued", "from:nos_sued"]
-	},
-	{
 		"City": "Wien",
 		"URL": "http://wien.netopenspace.de/",
 		"TwitterSearch": []
