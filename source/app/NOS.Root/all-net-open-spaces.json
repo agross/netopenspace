@@ -1,4 +1,4 @@
-[
+﻿[
 	{
 		"City": "Karlsruhe",
 		"URL": "http://karlsruhe.netopenspace.de/",
@@ -31,7 +31,7 @@
 		"TwitterSearch": []
 	},
 	{
-		"City": "M�nchen",
+		"City": "München",
 		"URL": "http://biztalkopenspace.de/",
 		"TwitterSearch": ["#bizos2010"]
 	},
