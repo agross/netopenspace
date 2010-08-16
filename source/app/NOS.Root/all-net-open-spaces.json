@@ -26,11 +26,6 @@
 		"TwitterSearch": []
 	},
 	{
-		"City": "München",
-		"URL": "http://biztalkopenspace.de/",
-		"TwitterSearch": ["#bizos2010"]
-	},
-	{
 		"City": "Development",
 		"URL": "http://nos.local/",
 		"Private": true,
