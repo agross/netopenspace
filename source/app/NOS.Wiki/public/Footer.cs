@@ -7,8 +7,8 @@
 * [Impressum]
 
 		</div>
-		Das Design dieser Seite wurde von [http://therightstuff.de/|Alexander Groß] erstellt.{BR}
-		Einige Icons stammen von [http://www.famfamfam.com|FamFamFam]. Die Figuren im Logo sind von [http://pixelplastic.de/|Marcel Hoyer].{BR}
+		.NET Open Space ist [http://github.com/agross/netopenspace|Open Source].{BR}
+		Design: [http://therightstuff.de/|Alexander Groß], Icons: [http://www.famfamfam.com|FamFamFam], Figuren im Logo: [http://pixelplastic.de/|Marcel Hoyer].{BR}
 		Bildquelle: [http://www.aboutpixel.de|aboutpixel.de] / Weißgrün - das Zebragras / &copy; Thorwald Hoffmann.
 	</div>
 	<div class="clearfix"></div>
