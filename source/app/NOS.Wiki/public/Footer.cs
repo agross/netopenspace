@@ -7,7 +7,7 @@
 * [Impressum]
 
 		</div>
-		.NET Open Space ist [http://github.com/agross/netopenspace|Open Source].{BR}
+		Das .NET Open Space-Wiki ist [http://github.com/agross/netopenspace|Open Source].{BR}
 		Design: [http://therightstuff.de/|Alexander Groß], Icons: [http://www.famfamfam.com|FamFamFam], Figuren im Logo: [http://pixelplastic.de/|Marcel Hoyer].{BR}
 		Bildquelle: [http://www.aboutpixel.de|aboutpixel.de] / Weißgrün - das Zebragras / &copy; Thorwald Hoffmann.
 	</div>
