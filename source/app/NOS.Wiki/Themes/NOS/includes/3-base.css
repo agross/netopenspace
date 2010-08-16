@@ -427,6 +427,11 @@ Sidebar
 	width: 8.8em;
 }
 
+.buzz .header {
+	background: transparent url("images/twitter.png") top left scroll no-repeat;
+	padding: 0 0 0 18px;
+}
+
 /*
 Partners
 ------------------------------------------------------------------------------------------------------------------------
