@@ -16,9 +16,13 @@
 			{
 				"Year": 2009,
 				"URL": "http://netopenspace.de/2009/"
+			},
+			{
+				"Year": 2010,
+				"URL": "http://netopenspace.de/2010/"
 			}
 		],
-		"TwitterSearch": ["#netos2010", "from:netopenspace"]
+		"TwitterSearch": ["#nos", "from:netopenspace"]
 	},
 	{
 		"City": "Wien",
