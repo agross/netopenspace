@@ -23,7 +23,7 @@
 {t:Partnerlogos}
 ====Sponsors====
 {t:Sponsorenlogos}
-('''Want to sponsor?''' [slieser@netopenspace.de| Write us!])
+('''Want to sponsor?''' [orga@netopenspace.de| Write us!])
 </en-us>
 
 <de-de>
