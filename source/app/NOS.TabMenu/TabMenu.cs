@@ -16,7 +16,7 @@ namespace NOS.TabMenu
 
 			Log(String.Format("Rendering tab menu, requested page is {0}", requestedPage));
 
-			return new Formatter(this).FormatMenu(raw, context.Page.FullName);
+			return new Formatter(this).FormatMenu(raw, requestedPage);
 		}
 
 		public string PrepareTitle(string title, ContextInformation context)
@@ -87,7 +87,14 @@ namespace NOS.TabMenu
 
 		string GetRequestedPage(ContextInformation context)
 		{
-			return context.Page.FullName ?? _host.GetSettingValue(SettingName.RootNamespaceDefaultPage);
+			var defaultPage = _host.GetSettingValue(SettingName.RootNamespaceDefaultPage);
+			
+			if (context.Page == null)
+			{
+				return defaultPage;
+			}
+
+			return context.Page.FullName ?? defaultPage;
 		}
 	}
 }
