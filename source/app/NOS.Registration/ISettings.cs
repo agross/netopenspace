@@ -21,5 +21,10 @@
 		{
 			get;
 		}
+
+		string DataDirectory
+		{
+			get;
+		}
 	}
 }

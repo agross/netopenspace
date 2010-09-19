@@ -1,4 +1,6 @@
-﻿using ScrewTurn.Wiki;
+﻿using System;
+
+using ScrewTurn.Wiki;
 
 namespace NOS.Registration
 {
@@ -22,6 +24,11 @@ namespace NOS.Registration
 		public string SenderEmail
 		{
 			get { return Settings.SenderEmail; }
+		}
+
+		public string DataDirectory
+		{
+			get { return Settings.PublicDirectory; }
 		}
 	}
 }

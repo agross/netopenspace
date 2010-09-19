@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Script.Serialization;
 
-using ScrewTurn.Wiki;
-
 namespace NOS.Registration
 {
 	internal class RegistrationRepository : IRegistrationRepository
@@ -15,7 +13,7 @@ namespace NOS.Registration
 		readonly ISynchronizer _synchronizer;
 		readonly IFileWriter _writer;
 
-		public RegistrationRepository() : this(Settings.PublicDirectory + "AutoRegistration.cs",
+		public RegistrationRepository() : this(typeof(AutoRegistrationPlugin).FullName + ".Data",
 		                                       new CrossContextSynchronizer(),
 		                                       new DefaultFileReader(),
 		                                       new DefaultFileWriter())
