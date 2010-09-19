@@ -44,7 +44,9 @@ namespace NOS.Registration
 				           			Blog = _view.Blog,
 				           			Email = _view.Email,
 				           			Picture = _view.Picture,
-				           			Sponsoring = _view.Sponsoring
+				           			Sponsoring = _view.Sponsoring,
+				           			InvoiceAddress = _view.InvoiceAddress,
+				           			RegisteredAt = DateTime.Now
 				           		}
 				           };
 

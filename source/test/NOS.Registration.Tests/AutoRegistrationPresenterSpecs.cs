@@ -46,6 +46,7 @@ namespace NOS.Registration.Tests
 				View.Stub(x => x.Blog).Return("blog");
 				View.Stub(x => x.Picture).Return("picture");
 				View.Stub(x => x.Sponsoring).Return(12.34m);
+				View.Stub(x => x.InvoiceAddress).Return("the address");
 
 				new AutoRegistrationPresenter(View, Repository, Logger);
 			};
@@ -78,6 +79,12 @@ namespace NOS.Registration.Tests
 	
 		It should_save_the_sponsoring_value_from_the_view =
 			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.Sponsoring.Equals(12.34m))));
+		
+		It should_save_the_invoice_address =
+			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y => y.Data.InvoiceAddress.Equals("the address"))));
+		
+		It should_save_the_registration_date =
+			() => Repository.AssertWasCalled(x => x.Save(Arg<User>.Matches(y =>  DateTime.Now.Subtract(y.Data.RegisteredAt) < TimeSpan.FromSeconds(10) )));
 	}
 
 	[Subject(typeof(AutoRegistrationPresenter))]
