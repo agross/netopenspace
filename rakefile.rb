@@ -246,6 +246,7 @@ namespace :package do
 					.include("#{sourceDir}/**/*.deploy") \
 					.include("#{sourceDir}/**/*.txt") \
 					.include("#{sourceDir}/**/*.as?x") \
+					.include("#{sourceDir}/**/*.ascx.cs") \
 					.include("#{sourceDir}/**/*.master") \
 					.include("#{sourceDir}/**/*.gif") \
 					.include("#{sourceDir}/**/*.jpeg") \
