@@ -74,7 +74,16 @@ namespace NOS
 			}
 		}
 
+		public string InvoiceAddress
+		{
+			get
+			{
+				return txtInvoiceAddress.Text != null ? txtInvoiceAddress.Text.Trim() : null;
+			}
+		}
+
 		public event EventHandler<EventArgs> UserCreated;
+		public event EventHandler<ServerValidateEventArgs> ValidateInvoiceAddress;
 
 		protected override void OnLoad(EventArgs e)
 		{
@@ -131,6 +140,11 @@ namespace NOS
 
 		protected void rfvInvoiceAddress_ServerValidate(object source, ServerValidateEventArgs args)
 		{
+			var temp = ValidateInvoiceAddress;
+			if (temp != null)
+			{
+				temp(this, args);
+			}
 		}
 	}
 }

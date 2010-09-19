@@ -1,4 +1,5 @@
 using System;
+using System.Web.UI.WebControls;
 
 namespace NOS.Registration
 {
@@ -49,6 +50,12 @@ namespace NOS.Registration
 			get;
 		}
 
+		string InvoiceAddress
+		{
+			get;
+		}
+
 		event EventHandler<EventArgs> UserCreated;
+		event EventHandler<ServerValidateEventArgs> ValidateInvoiceAddress;
 	}
 }

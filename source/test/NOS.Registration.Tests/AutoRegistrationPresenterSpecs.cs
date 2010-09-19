@@ -1,4 +1,5 @@
 using System;
+using System.Web.UI.WebControls;
 
 using Machine.Specifications;
 
@@ -124,5 +125,47 @@ namespace NOS.Registration.Tests
 			() =>
 			Logger.AssertWasCalled(
 				x => x.Info(Arg<string>.Matches(y => y.Contains("opted-out")), Arg<string>.Is.Equal("username")));
+	}
+
+	[Subject(typeof(AutoRegistrationPresenter))]
+	public class When_a_user_sponsors_but_supplies_an_empty_invoice_address : With_auto_registration_view
+	{
+		static ServerValidateEventArgs Args;
+
+		Establish context = () =>
+			{
+				View.Stub(x => x.AutoRegisterUser).Return(true);
+				View.Stub(x => x.Sponsoring).Return(12.34m);
+				View.Stub(x => x.InvoiceAddress).Return(null);
+
+				new AutoRegistrationPresenter(View, Repository, Logger);
+				Args = new ServerValidateEventArgs(null, false);
+			};
+
+		Because of = () => View.Raise(x => x.ValidateInvoiceAddress += null, null, Args);
+
+		It should_consider_the_invoice_address_invalid =
+			() => Args.IsValid.ShouldBeFalse();
+	}
+
+	[Subject(typeof(AutoRegistrationPresenter))]
+	public class When_a_user_sponsors_and_supplies_an_invoice_address : With_auto_registration_view
+	{
+		static ServerValidateEventArgs Args;
+
+		Establish context = () =>
+			{
+				View.Stub(x => x.AutoRegisterUser).Return(true);
+				View.Stub(x => x.Sponsoring).Return(12.34m);
+				View.Stub(x => x.InvoiceAddress).Return("the address");
+
+				new AutoRegistrationPresenter(View, Repository, Logger);
+				Args = new ServerValidateEventArgs(null, false);
+			};
+
+		Because of = () => View.Raise(x => x.ValidateInvoiceAddress += null, null, Args);
+
+		It should_consider_the_invoice_address_valid =
+			() => Args.IsValid.ShouldBeTrue();
 	}
 }

@@ -71,6 +71,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -101,7 +102,7 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="DefaultFileReader.cs" />
     <Compile Include="DefaultFileWriter.cs" />
-    <Compile Include="IAutoRegistrationPresenter.cs" />
+    <Compile Include="IAutoRegistrationView.cs" />
     <Compile Include="IPageFormatter.cs" />
     <Compile Include="IFileReader.cs" />
     <Compile Include="IFileWriter.cs" />

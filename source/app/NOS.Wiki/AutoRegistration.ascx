@@ -218,6 +218,7 @@
 			<td>
 				<asp:TextBox ID="txtInvoiceAddress" runat="server" Width="75%" Height="100px" meta:resourcekey="txtInvoiceAddress" 
 					CausesValidation="True" TextMode="MultiLine"/>
+				<br />
 				<asp:CustomValidator ID="rfvInvoiceAddress" 
 									 Display="Dynamic"
 									 runat="server"  
@@ -225,7 +226,7 @@
 									 OnServerValidate="rfvInvoiceAddress_ServerValidate" 
 									 meta:resourcekey="rfvInvoiceAddress" 
 									 EnableClientScript="False"
-									 CssClass="resulterror" />
+									 CssClass="resulterror" ValidateEmptyText="True" />
 				<div>
 					<asp:Literal ID="litInvoice" runat="server" meta:resourcekey="litInvoice" />
 				</div>
