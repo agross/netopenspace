@@ -4,7 +4,7 @@ namespace NOS.Registration
 {
 	public interface INotificationSender
 	{
-		void SendMessage(string userName, string recipient, string subject, bool failed);
-		void Configure(IHostV30 host, IFileReader fileReader, ISettings settings);
+		void SendMessage(string recipient, string subject, string message);
+		void Configure(IHostV30 host, ISettings settings);
 	}
 }

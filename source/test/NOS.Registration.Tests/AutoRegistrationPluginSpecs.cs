@@ -173,7 +173,7 @@ namespace NOS.Registration.Tests
 				Plugin.Init(Host, String.Empty);
 
 				EntryFormatter
-					.Stub(x => x.FormatUserEntry(User, Configuration.EntryTemplate))
+					.Stub(x => x.FormatUserEntry(User, Settings, Configuration.EntryTemplate))
 					.Return(Configuration.EntryTemplate);
 				PageFormatter
 					.Stub(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration))
@@ -192,7 +192,7 @@ namespace NOS.Registration.Tests
 			() => Host.AssertWasCalled(x => x.GetPageContent(PageInfo));
 
 		It should_format_the_users_entry =
-			() => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User, Configuration.EntryTemplate));
+			() => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User, Settings, Configuration.EntryTemplate));
 
 		It should_add_the_users_entry_to_the_attendee_page =
 			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration));
@@ -226,10 +226,14 @@ namespace NOS.Registration.Tests
 			                                                 Arg<string>.Is.Anything));
 
 		It should_notify_the_user_about_the_activation =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Username),
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Email),
 			                                                            Arg<string>.Is.Equal(Configuration.Comment),
-			                                                            Arg<bool>.Is.Equal(false)));
+																		Arg<string>.Is.Anything));
+		
+		It should_notify_the_administrator_about_the_activation =
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(Settings.ContactEmail),
+			                                                            Arg<string>.Is.Equal(Configuration.Comment),
+																		Arg<string>.Is.Anything));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -253,16 +257,14 @@ namespace NOS.Registration.Tests
 		protected static UserInfo UserInfo;
 
 		It should_notify_the_administrator_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.Equal("admin@example.com"),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal("admin@example.com"),
 			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
+																		Arg<string>.Is.Anything));
 
 		It should_notify_the_user_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Email),
 			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
+																		Arg<string>.Is.Anything));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]

@@ -15,21 +15,20 @@ namespace NOS.Registration
 			_engine.Init();
 		}
 
-		#region IEntryFormatter Members
-		public string FormatUserEntry(User user, string entryTemplate)
+		public string FormatUserEntry(User user, ISettings settings, string template)
 		{
 			var context = new VelocityContext();
 			context.Put("user", user);
+			context.Put("settings", settings);
 
 			using (StringWriter writer = new StringWriter())
 			{
-				entryTemplate = PrepareTemplate(entryTemplate);
-				_engine.Evaluate(context, writer, null, entryTemplate);
+				template = PrepareTemplate(template);
+				_engine.Evaluate(context, writer, null, template);
 
 				return writer.ToString();
 			}
 		}
-		#endregion
 
 		static string PrepareTemplate(string value)
 		{
