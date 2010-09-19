@@ -139,7 +139,7 @@
     <value>Bild-URL</value>
   </data>
   <data name="lblSponsoring.Text" xml:space="preserve">
-    <value>Mein Sponsoring-Beitrag</value>
+    <value>Mein Sponsoringbeitrag</value>
   </data>
   <data name="lblTwitterUserName.Text" xml:space="preserve">
     <value>Twitter</value>
@@ -157,7 +157,7 @@
     <value> bearbeitest.</value>
   </data>
   <data name="litInvoice.Text" xml:space="preserve">
-    <value>Wir senden eine Rechnung über deinen Sponsoringbetrag inkl. ausgewiesener Mehrwertsteuer an diese Adresse. Firmen erhalten in den meisten Fällen die Mehrwertsteuer vom Finanzamt zurückerstattet (Vorsteuerabzug), sodass du deinen Sponsoringbetrag gerne zugunsten des .NET Open Space um die gültigen 19% erhöhen kannst.</value>
+    <value>Wir senden eine Rechnung über deinen Sponsoringbeitrag inkl. ausgewiesener Mehrwertsteuer an diese Adresse. Firmen erhalten in den meisten Fällen die Mehrwertsteuer vom Finanzamt zurückerstattet (Vorsteuerabzug), sodass du deinen Sponsoringbeitrag gerne zugunsten des .NET Open Space um die gültigen 19% erhöhen kannst.</value>
   </data>
   <data name="lnkAttendeeList.Text" xml:space="preserve">
     <value>Teilnehmerliste</value>
