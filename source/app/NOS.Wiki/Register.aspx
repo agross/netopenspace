@@ -1,5 +1,6 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPageSA.master" AutoEventWireup="true" Inherits="ScrewTurn.Wiki.Register" Title="Untitled Page" EnableSessionState="True" Culture="auto" meta:resourcekey="PageResource1" UICulture="auto" Codebehind="Register.aspx.cs" %>
 <%@ Register TagPrefix="st" TagName="Captcha" Src="~/Captcha.ascx" %>
+<%@ Register TagPrefix="nos" TagName="AutoRegistration" Src="~/AutoRegistration.ascx" %>
 
 <asp:Content ID="CtnRegister" ContentPlaceHolderID="CphMasterSA" Runat="Server">
 
@@ -43,7 +44,11 @@
     <asp:Panel ID="pnlRegister" runat="server" 
 		meta:resourcekey="pnlRegisterResource1">
         <br /><br /> 
-        <table width="600" cellpadding="0" cellspacing="4">
+        <table style="width: 100%;" cellpadding="0" cellspacing="4">
+			<colgroup>
+				<col width="30%" />
+				<col width="*" />
+			</colgroup>
             <tr>
                 <td><p style="text-align: right;"><asp:Literal ID="lblUsername" runat="server" meta:resourcekey="lblUsernameResource1" Text="Username" />:</p></td>
                 <td><asp:TextBox ID="txtUsername" runat="server" Width="200px" meta:resourcekey="txtUsernameResource1" ToolTip="Type here your Username" CausesValidation="True" />
@@ -135,6 +140,7 @@
 						meta:resourcekey="cvPassword2Resource1" />
 			    </td>
             </tr>
+			<nos:AutoRegistration ID="AutoRegistration" runat="server" />
             <tr>
                 <td style="vertical-align: top;"><p style="text-align: right;"><asp:Literal ID="lblCaptcha" runat="server" Text="Control Text (case sensitive)" meta:resourcekey="lblCaptchaResource1" />:</p></td>
                 <td><st:Captcha ID="captcha" runat="server" /></td>
