@@ -64,7 +64,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\tools\Rhino Mocks\Rhino.Mocks.dll</HintPath>
     </Reference>
-    <Reference Include="ScrewTurn.Wiki.Core, Version=3.0.2.538, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="ScrewTurn.Wiki.PluginFramework, Version=3.0.2.538, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\app\NOS.Wiki\bin\ScrewTurn.Wiki.PluginFramework.dll</HintPath>
