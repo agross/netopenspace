@@ -92,6 +92,7 @@
     <Compile Include="IEntryFormatter.cs" />
     <Compile Include="INotificationSender.cs" />
     <Compile Include="IPluginConfiguration.cs" />
+    <Compile Include="ISettings.cs" />
     <Compile Include="PageFormatter.cs" />
     <Compile Include="CrossContextSynchronization.cs" />
     <Compile Include="EnumerableExtensions.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="NVelocityEntryFormatter.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserData.cs" />
+    <Compile Include="WikiSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

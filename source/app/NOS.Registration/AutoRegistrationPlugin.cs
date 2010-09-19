@@ -3,7 +3,6 @@ using System.Linq;
 
 using NOS.Registration.EntryPositioning;
 
-using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration
@@ -12,13 +11,14 @@ namespace NOS.Registration
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
+		readonly IFileReader _fileReader;
 		readonly ILogger _logger;
 		readonly INotificationSender _notificationSender;
 		readonly IPageFormatter _pageFormatter;
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
 		readonly ISynchronizer _synchronizer;
-		readonly IFileReader _fileReader;
+		readonly ISettings _settings;
 		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
@@ -37,7 +37,8 @@ namespace NOS.Registration
 			       new EmailNotificationSender(),
 			       new DefaultLogger(),
 			       new DefaultPluginConfiguration(),
-			       new DefaultFileReader())
+			       new DefaultFileReader(),
+			       new WikiSettings())
 		{
 		}
 
@@ -49,10 +50,12 @@ namespace NOS.Registration
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
 		                              IPluginConfiguration configuration,
-		                              IFileReader fileReader)
+		                              IFileReader fileReader,
+		                              ISettings settings)
 		{
 			_synchronizer = synchronizer;
 			_fileReader = fileReader;
+			_settings = settings;
 			_registrationRepository = registrationRepository;
 			_pageRepository = pageRepository;
 			_pageFormatter = pageFormatter;
@@ -70,7 +73,7 @@ namespace NOS.Registration
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
-				_notificationSender.Configure(_host, _fileReader);
+				_notificationSender.Configure(_host, _fileReader, _settings);
 
 				_logger.Info(String.Format("Waiting list is enabled after {0} attendees with a hard limit of {1}.",
 				                           _configuration.MaximumAttendees,
@@ -199,7 +202,7 @@ namespace NOS.Registration
 						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
 						if (failed)
 						{
-							_notificationSender.SendMessage(e.User.Username, Settings.ContactEmail, _configuration.Comment, true);
+							_notificationSender.SendMessage(e.User.Username, _settings.ContactEmail, _configuration.Comment, true);
 						}
 					}
 				});

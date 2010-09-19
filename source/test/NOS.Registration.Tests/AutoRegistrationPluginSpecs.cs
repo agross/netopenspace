@@ -7,7 +7,6 @@ using Machine.Specifications;
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
 
-using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Tests
@@ -24,6 +23,7 @@ namespace NOS.Registration.Tests
 		protected static AutoRegistrationPlugin Plugin;
 		protected static IRegistrationRepository RegistrationRepository;
 		protected static IFileReader FileReader;
+		protected static ISettings Settings;
 
 		Establish context = () =>
 			{
@@ -46,6 +46,15 @@ namespace NOS.Registration.Tests
 				FileReader = MockRepository.GenerateStub<IFileReader>();
 
 				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();
+
+				Settings = MockRepository.GenerateStub<ISettings>();
+				Settings
+					.Stub(x => x.SenderEmail)
+					.Return("sender@example.com");
+				Settings
+					.Stub(x => x.ContactEmail)
+					.Return("admin@example.com");
+
 				Plugin = new AutoRegistrationPlugin(synchronizer,
 				                                    RegistrationRepository,
 				                                    PageRepository,
@@ -54,7 +63,8 @@ namespace NOS.Registration.Tests
 				                                    NotificationSender,
 				                                    Logger,
 				                                    Configuration,
-													FileReader);
+													FileReader,
+													Settings);
 			};
 	}
 
@@ -246,7 +256,7 @@ namespace NOS.Registration.Tests
 
 		It should_notify_the_administrator_about_the_failure =
 			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.NotEqual(UserInfo.Email),
+			                                                            Arg<string>.Is.Equal("admin@example.com"),
 			                                                            Arg<string>.Is.NotNull,
 			                                                            Arg<bool>.Is.Equal(true)));
 
