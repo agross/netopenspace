@@ -73,6 +73,10 @@ span.prefix {
 	padding-right: 0;
 }
 
+span.prefix.disabled {
+	background-color: #F0F0F0;
+}
+
 input.has-prefix {
 	border-left: 0;
 	padding-left: 0;
@@ -489,6 +493,10 @@ h1.pagetitle {
 	margin-left: 80%;
 	cursor: pointer;
 	width: 77px;
+}
+
+.highlight {
+	background-color: #E1DF9E;
 }
 
 /*

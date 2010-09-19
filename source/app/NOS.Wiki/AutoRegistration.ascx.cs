@@ -128,5 +128,9 @@ namespace NOS
 				revPicture.Enabled =
 				revBlog.Enabled = chkAutoRegister.Checked;
 		}
+
+		protected void rfvInvoiceAddress_ServerValidate(object source, ServerValidateEventArgs args)
+		{
+		}
 	}
 }

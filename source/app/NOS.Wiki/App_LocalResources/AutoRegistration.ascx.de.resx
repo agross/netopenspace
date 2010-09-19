@@ -129,6 +129,9 @@
   <data name="lblEmail.Text" xml:space="preserve">
     <value>E-Mail-Adresse veröffentlichen?</value>
   </data>
+  <data name="lblInvoiceAddress.Text" xml:space="preserve">
+    <value>Rechnungsadresse</value>
+  </data>
   <data name="lblName.Text" xml:space="preserve">
     <value>Name für deine Namenskarte</value>
   </data>
@@ -153,6 +156,9 @@
   <data name="litIntroduction3.Text" xml:space="preserve">
     <value> bearbeitest.</value>
   </data>
+  <data name="litInvoice.Text" xml:space="preserve">
+    <value>Wir senden eine Rechnung über deinen Sponsoringbetrag inkl. ausgewiesener Mehrwertsteuer an diese Adresse. Firmen erhalten in den meisten Fällen die Mehrwertsteuer vom Finanzamt zurückerstattet (Vorsteuerabzug), sodass du deinen Sponsoringbetrag gerne zugunsten des .NET Open Space um die gültigen 19% erhöhen kannst.</value>
+  </data>
   <data name="lnkAttendeeList.Text" xml:space="preserve">
     <value>Teilnehmerliste</value>
   </data>
@@ -162,6 +168,9 @@
   <data name="revUrl.ErrorMessage" xml:space="preserve">
     <value>Bitte gib eine gültige URL ein</value>
   </data>
+  <data name="rfvInvoiceAddress.ErrorMessage" xml:space="preserve">
+    <value>Die Rechnungsadresse ist erforderlich wenn du einen Sponsoringbetrag einträgst.</value>
+  </data>
   <data name="rfvRequired.ErrorMessage" xml:space="preserve">
     <value>Ein benötigtes Feld wurde nicht ausgefüllt</value>
   </data>
@@ -170,6 +179,9 @@
   </data>
   <data name="txtBlog.ToolTip" xml:space="preserve">
     <value>Sofern vorhanden, gib hier den URL deines Blogs an</value>
+  </data>
+  <data name="txtInvoiceAddress.ToolTip" xml:space="preserve">
+    <value>Gib hier die vollständige Rechnungsadresse ein. Du kannst auch die Adresse deines Arbeitgebers eintragen falls das Sponsoring von ihm übernommen wird.</value>
   </data>
   <data name="txtName.ToolTip" xml:space="preserve">
     <value>Gib hier deinen vollständigen Namen an. Dieser Name wird auf deine Namenskarte gedruckt.</value>

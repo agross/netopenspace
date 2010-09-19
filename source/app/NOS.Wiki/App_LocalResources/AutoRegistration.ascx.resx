@@ -133,7 +133,7 @@
     <value>Name to be printed on your name card</value>
   </data>
   <data name="lblPicture.Text" xml:space="preserve">
-    <value>Picture URL:</value>
+    <value>Picture URL</value>
   </data>
   <data name="lblSponsoring.Text" xml:space="preserve">
     <value>My sponsoring</value>
@@ -186,10 +186,16 @@
   <data name="txtXingUserName.ToolTip" xml:space="preserve">
     <value>Type your XING profile name, if available</value>
   </data>
-  <data name="lnkInvoiceContact.Text" xml:space="preserve">
-    <value>Torsten</value>
+  <data name="lblInvoiceAddress.Text" xml:space="preserve">
+    <value>Invoice address</value>
   </data>
-  <data name="lnkInvoiceContact.NavigateUrl" xml:space="preserve">
-    <value>mailto:tweber@netopenspace.de</value>
+  <data name="litInvoice.Text" xml:space="preserve">
+    <value>We'll send an invoice amounting to your sponsoring value including VAT (19%) to this address.</value>
+  </data>
+  <data name="rfvInvoiceAddress.ErrorMessage" xml:space="preserve">
+    <value>The invoice address is required if you sponsor the .NET Open Space.</value>
+  </data>
+  <data name="txtInvoiceAddress.ToolTip" xml:space="preserve">
+    <value>Please enter the full address of </value>
   </data>
 </root>

@@ -11,14 +11,15 @@
 			ValidatorEnable($("#<%= revPicture.ClientID %>").get(0), enabled);
 			ValidatorEnable($("#<%= rngSponsoring.ClientID %>").get(0), enabled);
 
-			$("#user-data input").attr("disabled", enabled ? "" : "disabled");
+			var elements = $("#user-data input, #user-data textarea, #user-data .prefix");			
+			elements.attr("disabled", enabled ? "" : "disabled");
 			if (enabled)
 			{
-				$("#user-data .prefix").removeClass("disabled");
+				elements.removeClass("disabled");
 			}
 			else
 			{
-				$("#user-data .prefix").addClass("disabled");
+				elements.addClass("disabled");
 			}
 			$(this).attr("disabled", "");
 		});
@@ -43,7 +44,8 @@
 				link = $("<a>")
 					.addClass("preview")
 					.addClass("externallink")
-					.attr("target", "_blank");
+					.attr("target", "_blank")
+					.attr("title", "Link testen");
 
 				if (!$(element).hasClass("has-prefix"))
 				{
@@ -127,7 +129,7 @@
 			</td>
 			<td>
 				<asp:TextBox ID="txtName" runat="server" Width="200px" meta:resourcekey="txtName" CausesValidation="True" />
-				<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" meta:resourcekey="rfvRequired"><img src="Images/InputError.png" alt="*" /></asp:RequiredFieldValidator>
+				<asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" meta:resourcekey="rfvRequired" Display="Dynamic" CssClass="resulterror" />
 			</td>
 		</tr>
 		<tr>
@@ -147,7 +149,7 @@
 			<td>
 				<asp:TextBox ID="txtBlog" runat="server" Width="200px" meta:resourcekey="txtBlog" CssClass="linkify" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revBlog" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"
-					ControlToValidate="txtBlog" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
+					ControlToValidate="txtBlog" meta:resourcekey="revUrl" Display="Dynamic" CssClass="resulterror" />
 			</td>
 		</tr>
 		<tr>
@@ -176,18 +178,16 @@
 			<td>
 				<asp:TextBox ID="txtPicture" runat="server" Width="200px" meta:resourcekey="txtPicture" CssClass="linkify" CausesValidation="True" />
 				<asp:RegularExpressionValidator ID="revPicture" runat="server" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/.*)?"
-					ControlToValidate="txtPicture" meta:resourcekey="revUrl"><img src="Images/InputError.png" alt="*" /></asp:RegularExpressionValidator>
+					ControlToValidate="txtPicture" meta:resourcekey="revUrl" Display="Dynamic" CssClass="resulterror" />
 			</td>
 		</tr>
-		<tr>
+		<tr class="highlight">
 			<td colspan="2">
 				<p>
-					Die Teilnahme am .NET Open Space ist völlig kostenlos. Wenn du möchtest, kannst du den
-					<a href="Organisation.ashx"> Organisatoren</a> einen Geldbetrag zukommen lassen, welcher für die Gestaltung
-					(Abendveranstaltung, Getränke etc.) verwendet wird. Trage den Betrag hier mit in die Teilnehmerliste ein.
-					<asp:HyperLink ID="lnkInvoiceContact" runat="server" meta:resourcekey="lnkInvoiceContact" /> gibt dir per
-					E-Mail wegen einer Rechnung Bescheid. Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR oder mehr,
-					entscheidest du vollkommen frei und selbst.
+					Die Teilnahme am .NET Open Space ist völlig kostenlos. Wenn du möchtest, kannst du der
+					<a href="Organisation.ashx">Organisation</a> einen Geldbetrag zukommen lassen, welcher für die Gestaltung
+					(Mittagessen, Getränke etc.) verwendet wird.
+					Über die Höhe des Betrages, ob z. B. 25 EUR, 50 EUR, 100 EUR oder mehr, entscheidest du vollkommen frei und selbst.
 					<strong>Bedenke, dass die Veranstaltung gerade vom Sponsoring der Teilnehmer lebt.</strong>
 					<br/>
 					<br/>
@@ -198,7 +198,7 @@
 				</p>--%>
 			</td>
 		</tr>
-		<tr>
+		<tr class="highlight">
 			<td>
 				<p style="text-align: right;">
 					<asp:Literal ID="lblSponsoring" runat="server" meta:resourcekey="lblSponsoring" />:</p>
@@ -207,7 +207,28 @@
 				<asp:TextBox ID="txtSponsoring" runat="server" Width="200px" meta:resourcekey="txtSponsoring" CausesValidation="True" />
 				&euro;
 				<asp:RangeValidator ID="rngSponsoring" runat="server" ControlToValidate="txtSponsoring" meta:resourcekey="rngSponsoring"
-					MinimumValue="0" MaximumValue="9999999" Type="Currency"><img src="Images/InputError.png" alt="*" /></asp:RangeValidator>
+					MinimumValue="0" MaximumValue="9999999" Type="Currency" Display="Dynamic" CssClass="resulterror" />
+			</td>
+		</tr>
+		<tr class="highlight">
+			<td>
+				<p style="text-align: right;">
+					<asp:Label ID="lblInvoiceAddress" runat="server" meta:resourcekey="lblInvoiceAddress" />:</p>
+			</td>
+			<td>
+				<asp:TextBox ID="txtInvoiceAddress" runat="server" Width="75%" Height="100px" meta:resourcekey="txtInvoiceAddress" 
+					CausesValidation="True" TextMode="MultiLine"/>
+				<asp:CustomValidator ID="rfvInvoiceAddress" 
+									 Display="Dynamic"
+									 runat="server"  
+									 ControlToValidate="txtInvoiceAddress" 
+									 OnServerValidate="rfvInvoiceAddress_ServerValidate" 
+									 meta:resourcekey="rfvInvoiceAddress" 
+									 EnableClientScript="False"
+									 CssClass="resulterror" />
+				<div>
+					<asp:Literal ID="litInvoice" runat="server" meta:resourcekey="litInvoice" />
+				</div>
 			</td>
 		</tr>
 	</table>
