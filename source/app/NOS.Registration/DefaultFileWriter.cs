@@ -7,7 +7,9 @@ namespace NOS.Registration
 		#region IFileWriter Members
 		public void Write(string path, string content)
 		{
-			Tools.WriteFile(path, content);
+			var provider = Collectors.SettingsProvider;
+
+			provider.SetPluginConfiguration(path, content);
 		}
 		#endregion
 	}

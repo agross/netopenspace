@@ -7,6 +7,7 @@ using Machine.Specifications;
 using Rhino.Mocks;
 using Rhino.Mocks.Constraints;
 
+using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration.Tests
@@ -15,17 +16,18 @@ namespace NOS.Registration.Tests
 	{
 		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
-		protected static IHost Host;
+		protected static IHostV30 Host;
 		protected static ILogger Logger;
 		protected static INotificationSender NotificationSender;
 		protected static IPageFormatter PageFormatter;
 		protected static IPageRepository PageRepository;
 		protected static AutoRegistrationPlugin Plugin;
 		protected static IRegistrationRepository RegistrationRepository;
+		protected static IFileReader FileReader;
 
 		Establish context = () =>
 			{
-				Host = MockRepository.GenerateStub<IHost>();
+				Host = MockRepository.GenerateStub<IHostV30>();
 
 				ISynchronizer synchronizer = MockRepository.GenerateStub<ISynchronizer>();
 				synchronizer
@@ -41,6 +43,7 @@ namespace NOS.Registration.Tests
 				PageFormatter = MockRepository.GenerateStub<IPageFormatter>();
 
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
+				FileReader = MockRepository.GenerateStub<IFileReader>();
 
 				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();
 				Plugin = new AutoRegistrationPlugin(synchronizer,
@@ -50,7 +53,8 @@ namespace NOS.Registration.Tests
 				                                    EntryFormatter,
 				                                    NotificationSender,
 				                                    Logger,
-				                                    Configuration);
+				                                    Configuration,
+													FileReader);
 			};
 	}
 
@@ -110,7 +114,7 @@ namespace NOS.Registration.Tests
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_a_user_account_is_activated : With_auto_registration_plugin
 	{
-		static IPagesStorageProvider Provider;
+		static IPagesStorageProviderV30 Provider;
 		static UserAccountActivityEventArgs EventArgs;
 		protected static UserInfo UserInfo;
 		protected static User User;
@@ -119,11 +123,11 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "Jon Doe",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountActivated);
 
 				User = new User("user");
@@ -138,7 +142,7 @@ namespace NOS.Registration.Tests
 				Configuration.Stub(x => x.PageName).Return("page");
 				Configuration.Stub(x => x.EntryTemplate).Return(" and entry");
 
-				PageInfo = new PageInfo(Configuration.PageName, null, PageStatus.Normal, DateTime.Now);
+				PageInfo = new PageInfo(Configuration.PageName, null, DateTime.Now);
 				PageRepository.Stub(x => x.FindPage(Configuration.PageName)).Return(PageInfo);
 
 				Host
@@ -148,7 +152,9 @@ namespace NOS.Registration.Tests
 					                        "user that saved the content last",
 					                        DateTime.Now,
 					                        String.Empty,
-					                        "content"));
+					                        "content",
+					                        new[] { "keyword" },
+					                        "description"));
 				Host
 					.Stub(x => x.SendEmail(null, null, null, null, false))
 					.IgnoreArguments()
@@ -328,11 +334,11 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "Jon Doe",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountAdded);
 			};
 

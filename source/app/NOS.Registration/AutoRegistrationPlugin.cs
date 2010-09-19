@@ -8,7 +8,7 @@ using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration
 {
-	public class AutoRegistrationPlugin : IFormatterProvider
+	public class AutoRegistrationPlugin : IFormatterProviderV30
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
@@ -18,7 +18,8 @@ namespace NOS.Registration
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
 		readonly ISynchronizer _synchronizer;
-		IHost _host;
+		readonly IFileReader _fileReader;
+		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
 			: this(new CrossContextSynchronizer(),
@@ -35,7 +36,8 @@ namespace NOS.Registration
 			       new NVelocityEntryFormatter(),
 			       new EmailNotificationSender(),
 			       new DefaultLogger(),
-			       new DefaultPluginConfiguration())
+			       new DefaultPluginConfiguration(),
+			       new DefaultFileReader())
 		{
 		}
 
@@ -46,9 +48,11 @@ namespace NOS.Registration
 		                              IEntryFormatter entryFormatter,
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
-		                              IPluginConfiguration configuration)
+		                              IPluginConfiguration configuration,
+		                              IFileReader fileReader)
 		{
 			_synchronizer = synchronizer;
+			_fileReader = fileReader;
 			_registrationRepository = registrationRepository;
 			_pageRepository = pageRepository;
 			_pageFormatter = pageFormatter;
@@ -59,14 +63,14 @@ namespace NOS.Registration
 		}
 
 		#region IFormatterProvider Members
-		public void Init(IHost host, string config)
+		public void Init(IHostV30 host, string config)
 		{
 			_host = host;
 
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
-				_notificationSender.Configure(_host);
+				_notificationSender.Configure(_host, _fileReader);
 
 				_logger.Info(String.Format("Waiting list is enabled after {0} attendees with a hard limit of {1}.",
 				                           _configuration.MaximumAttendees,
@@ -85,12 +89,22 @@ namespace NOS.Registration
 
 		public ComponentInformation Information
 		{
-			get { return new ComponentInformation(GetType().Name, "Alexander Groﬂ", "http://therightstuff.de"); }
+			get { return new ComponentInformation(GetType().Name, "Alexander Groﬂ", "1.1", "http://therightstuff.de", null); }
+		}
+
+		public string ConfigHelpHtml
+		{
+			get { return String.Empty; }
 		}
 
 		public string Format(string raw, ContextInformation context, FormattingPhase phase)
 		{
 			return raw;
+		}
+
+		public string PrepareTitle(string title, ContextInformation context)
+		{
+			return title;
 		}
 
 		public bool PerformPhase1
@@ -106,6 +120,11 @@ namespace NOS.Registration
 		public bool PerformPhase3
 		{
 			get { return false; }
+		}
+
+		public int ExecutionPriority
+		{
+			get { return 100; }
 		}
 		#endregion
 

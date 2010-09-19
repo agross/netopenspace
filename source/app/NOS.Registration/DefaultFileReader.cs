@@ -7,7 +7,9 @@ namespace NOS.Registration
 		#region IFileReader Members
 		public string Read(string path)
 		{
-			return Tools.LoadFile(path);
+			var provider = Collectors.SettingsProvider;
+
+			return provider.GetPluginConfiguration(path);
 		}
 		#endregion
 	}

@@ -1,4 +1,5 @@
 using ScrewTurn.Wiki;
+using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration
 {

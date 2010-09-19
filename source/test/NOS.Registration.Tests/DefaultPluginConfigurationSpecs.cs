@@ -49,7 +49,7 @@ namespace NOS.Registration.Tests
 				PageRepository = MockRepository.GenerateStub<IPageRepository>();
 				PageRepository
 					.Stub(x => x.FindPage("page"))
-					.Return(new PageInfo("page", null, PageStatus.Normal, DateTime.Now));
+					.Return(new PageInfo("page", null, DateTime.Now));
 			};
 
 		Because of = () => { Errors = Configuration.Parse(ConfigString, PageRepository); };
