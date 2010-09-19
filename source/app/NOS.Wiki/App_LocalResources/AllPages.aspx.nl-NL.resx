@@ -112,22 +112,22 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lnkCategoriesResource1.Text" xml:space="preserve">
-    <value>Page Categories</value>
+    <value>Pagina Categorieën</value>
   </data>
   <data name="lnkCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>View all Page Categories</value>
+    <value>Bekijk alle pagina Categorieën</value>
   </data>
   <data name="lnkSearchResource1.Text" xml:space="preserve">
-    <value>Search</value>
+    <value>Zoek</value>
   </data>
   <data name="lnkSearchResource1.ToolTip" xml:space="preserve">
-    <value>Perform a Search</value>
+    <value>oe</value>
   </data>
   <data name="pnlPageListResource1.GroupingText" xml:space="preserve">
     <value />
@@ -136,12 +136,12 @@
     <value />
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>The list of all pages contained in the current namespace.</value>
+    <value>De lijst van alle pagina's in de huidige namespace.</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
     <value>Page Index</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Untitled Page</value>
+    <value>Naamloze Pagina</value>
   </data>
 </root>

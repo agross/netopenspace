@@ -1,0 +1,1080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAutoWikiUrlResource1.Text" xml:space="preserve">
+    <value>یافتن خودکار</value>
+  </data>
+  <data name="btnAutoWikiUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>ذخیره پیکربندی</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowScriptTagsResource1.Text" xml:space="preserve">
+    <value>اجازه ذخیره تگ‌های اسکریپت در WikiMarkup</value>
+  </data>
+  <data name="chkAllowScriptTagsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.Text" xml:space="preserve">
+    <value>اجازه به کاربران برای ثبت نام</value>
+  </data>
+  <data name="chkAllowUsersToRegisterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisableCacheResource1.Text" xml:space="preserve">
+    <value>از کار انداختن کامل cach</value>
+  </data>
+  <data name="chkDisableCacheResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDisplayGravatarsResource1.Text" xml:space="preserve">
+    <value>نمایش نمایه برای حساب‌های کاربری</value>
+  </data>
+  <data name="chkDisplayGravatarsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی برای بررسی وجود به روزرسانی خودکار (سیستم و سرویس‌دهنده‌ها)</value>
+  </data>
+  <data name="chkEnableAutomaticUpdateChecksResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی دنباله  Breadcrumb ها</value>
+  </data>
+  <data name="chkEnableBreadcrumbsTrailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableCaptchaControlResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی کنترل کپچا برای تمام قابلیت‌های عمومی</value>
+  </data>
+  <data name="chkEnableCaptchaControlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی ویرایش با دابل کلیک</value>
+  </data>
+  <data name="chkEnableDoubleClickEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableHttpCompressionResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی متراکم‌سازی HTTP</value>
+  </data>
+  <data name="chkEnableHttpCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageInfoDivResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی بخش اطلاعات صفحه (تغییر یافته در، دسته‌بندی شده بر اساس و غیره)</value>
+  </data>
+  <data name="chkEnablePageInfoDivResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnablePageToolbarResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی ابزار صفحه (ویرایش این صفحه، تاریخچه، مدیر)</value>
+  </data>
+  <data name="chkEnablePageToolbarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSectionEditingResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی ویرایش بخش‌های صفحه</value>
+  </data>
+  <data name="chkEnableSectionEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableSslForSmtpResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی SSL</value>
+  </data>
+  <data name="chkEnableSslForSmtpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewPageCodeResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی قابلیت «نمایش کد صفحه»</value>
+  </data>
+  <data name="chkEnableViewPageCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.Text" xml:space="preserve">
+    <value>فعال‌سازی متراکم‌سازی ViewState</value>
+  </data>
+  <data name="chkEnableViewStateCompressionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.Text" xml:space="preserve">
+    <value>جلوگیری کردن از ویرایش همزمان صفحه</value>
+  </data>
+  <data name="chkPreventConcurrentEditingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.Text" xml:space="preserve">
+    <value>پردازش خطوط تفکیک واحد در محتوا (آزمایشی)</value>
+  </data>
+  <data name="chkProcessSingleLineBreaksResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.Text" xml:space="preserve">
+    <value>استفاده از ویرایشگر بصری (WYSIWYG) به صورت پیش فرض</value>
+  </data>
+  <data name="chkUseVisualEditorAsDefaultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>قالب تاریخ / زمان نامعتبر</value>
+  </data>
+  <data name="cvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس ایمیل نامعتبر</value>
+  </data>
+  <data name="cvErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>کلمه کاربری مورد نیاز است</value>
+  </data>
+  <data name="cvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>کلمه عبور مورد نیاز است</value>
+  </data>
+  <data name="cvUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblActivationModeResource1.Text" xml:space="preserve">
+    <value>طریقه فعال‌سازی حساب کاربری</value>
+  </data>
+  <data name="lblAdvancedConfigResource1.Text" xml:space="preserve">
+    <value>پیکربندی پیشرفته</value>
+  </data>
+  <data name="lblCacheCutSizeResource1.Text" xml:space="preserve">
+    <value>اندازه برش cache</value>
+  </data>
+  <data name="lblCacheSizeResource1.Text" xml:space="preserve">
+    <value>اندازه cache</value>
+  </data>
+  <data name="lblChangeModerationModeResource1.Text" xml:space="preserve">
+    <value>طریقه تعدیل تغییر صفحه</value>
+  </data>
+  <data name="lblConfigResource1.Text" xml:space="preserve">
+    <value>پیکربندی</value>
+  </data>
+  <data name="lblContactEmailResource1.Text" xml:space="preserve">
+    <value>ایمیل تماس</value>
+  </data>
+  <data name="lblContentConfigResource1.Text" xml:space="preserve">
+    <value>پیکربندی تماس</value>
+  </data>
+  <data name="lblDateTimeFormatResource1.Text" xml:space="preserve">
+    <value>قالب تاریخ / زمان</value>
+  </data>
+  <data name="lblDateTimeFormatTemplatesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultAdministratorsGroupResource1.Text" xml:space="preserve">
+    <value>گروه مدیران پیش فرض</value>
+  </data>
+  <data name="lblDefaultAnonymousGroupResource1.Text" xml:space="preserve">
+    <value>گروه کاربران بی‌نام پیش فرض</value>
+  </data>
+  <data name="lblDefaultLanguageResource1.Text" xml:space="preserve">
+    <value>زبان پیش فرض</value>
+  </data>
+  <data name="lblDefaultTimeZoneResource1.Text" xml:space="preserve">
+    <value>منطقه زمانی پیش فرض</value>
+  </data>
+  <data name="lblDefaultUsersGroupResource1.Text" xml:space="preserve">
+    <value>گروه کاربران پیش فرض</value>
+  </data>
+  <data name="lblErrorsEmailsResource1.Text" xml:space="preserve">
+    <value>آدرس‌های ایمیل جهت اطلاع‌رسانی در موارد بروز خطا (توسط ویرگول جدا شود)</value>
+  </data>
+  <data name="lblExtensionsAllowedForUploadResource2.Text" xml:space="preserve">
+    <value>پسوند فایل‌های اجازه داده شده برای بارگزاری (توسط ویرگول جدا شود، * برای تمامی موارد)</value>
+  </data>
+  <data name="lblGeneralConfigResource1.Text" xml:space="preserve">
+    <value>پیکربندی عمومی</value>
+  </data>
+  <data name="lblKeptBackupNumberPreResource1.Text" xml:space="preserve">
+    <value>نگهداری در انتها</value>
+  </data>
+  <data name="lblLoggingLevelResource1.Text" xml:space="preserve">
+    <value>سطح واقعه‌نگاری</value>
+  </data>
+  <data name="lblMaxFileSizeResource1.Text" xml:space="preserve">
+    <value>بزرگترین اندازه مجاز فایل برای بارگزاری</value>
+  </data>
+  <data name="lblMaxLogSizeResource1.Text" xml:space="preserve">
+    <value>بیشترین اندازه ثبت وقایع</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
+    <value>آیتم‌های موجود بین تگ‌های &lt;code&gt;{RecentChanges}&lt;/code&gt;</value>
+  </data>
+  <data name="lblMaxRecentChangesToDisplayPreResource1.Text" xml:space="preserve">
+    <value>نمایش در انتها</value>
+  </data>
+  <data name="lblNamespaces1Resource1.Text" xml:space="preserve">
+    <value>فضای نام‌ها</value>
+  </data>
+  <data name="lblNamespaces2Resource1.Text" xml:space="preserve">
+    <value>فضای نام‌ها</value>
+  </data>
+  <data name="lblPages1Resource1.Text" xml:space="preserve">
+    <value>صفحات</value>
+  </data>
+  <data name="lblPages2Resource1.Text" xml:space="preserve">
+    <value>صفحات</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRootMainPageResource1.Text" xml:space="preserve">
+    <value>فضای نام ریشه صفحه اصلی</value>
+  </data>
+  <data name="lblRootThemeResource1.Text" xml:space="preserve">
+    <value>پوسته فضای نام ریشه</value>
+  </data>
+  <data name="lblSecurityConfigResource1.Text" xml:space="preserve">
+    <value>پیکربندی امنیت</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces1Resource1.Text" xml:space="preserve">
+    <value>همچنین ببیند</value>
+  </data>
+  <data name="lblSeeAlsoNamespaces2Resource1.Text" xml:space="preserve">
+    <value>همچنین ببیند</value>
+  </data>
+  <data name="lblSelectFormatResource1.Text" xml:space="preserve">
+    <value>انتخاب...</value>
+  </data>
+  <data name="lblSenderEmailResource1.Text" xml:space="preserve">
+    <value>ایمیل فرستنده</value>
+  </data>
+  <data name="lblSmtpAuthenticationResource1.Text" xml:space="preserve">
+    <value>کلمه کاربری و کلمه عبور SMTP</value>
+  </data>
+  <data name="lblSmtpServerResource1.Text" xml:space="preserve">
+    <value>آدرس سرور و پورت SMTP</value>
+  </data>
+  <data name="lblStringsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
+    <value>برای ارتباطات ایمیل استفاده شده</value>
+  </data>
+  <data name="lblWikiTitleResource1.Text" xml:space="preserve">
+    <value>عنوان ویکی</value>
+  </data>
+  <data name="lblWikiUrlResource1.Text" xml:space="preserve">
+    <value>آدرس اینترنتی ویکی</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>غرب خط بین‌المللی تغییر تاریخ (GMT-12:00)</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>-720</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>جزیره نیوفاوندلند (GMT-03:30)</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>-210</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>گرینلند (GMT-03:00)</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>-180</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>اقیانوس اطلس میانی (GMT-02:00)</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>-120</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>آزورس (GMT-01:00)</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>-60</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>گرینویچ (GMT)</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>اروپای مرکزی (GMT+01:00)</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>اروپای شرقی (GMT+02:00)</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>مسکو، بغداد (GMT+03:00)</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>ایران (GMT+03:30)</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>210</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>ابوظبی، دبی (GMT+04:00)</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>240</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>وسط ایسلند، ساموا (GMT-11:00)</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>-660</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>کابل (GMT+04:30)</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>270</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>اسلام آباد، کراچی (GMT+05:00)</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>300</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>هندوستان (GMT+05:30)</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>330</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>کاتماندو (GMT+05:30)</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>345</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>آستانا، داکا (GMT+06:00)</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>رنگون (GMT+06:30)</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>390</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>بانکوک، جاکارتا (GMT+07:00)</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>420</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>کرانه چین، استرالیای غربی (GMT+08:00)</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>480</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>ژاپن، کره (GMT+09:00)</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>540</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>استرالیای مرکزی (GMT+09:30)</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>570</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>هاوایی (GMT-10:00)</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>-600</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>استرالیای شرقی (GMT+10:00)</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>ماگادان، جزیره سلیمان (GMT+11:00)</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>660</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>نیوزلند، فیجی (GMT+12:00)</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>720</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>جزیره کاتاهام نیوزلند (GMT+12:45)</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>765</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>تونگا، جزایر سیمرغ (GMT+13:00)</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>780</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>جزایر کریسمس (GMT+14:00)</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>840</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>کاربران باید حساب کاربری خود را از طریق ایمیل فعال نمایند</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>مدیرها باید حساب‌های کاربری را فعال نمایند</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>حساب‌های کاربری به صورت پیش فرض فعال شوند</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>آلاسکا (GMT-09:00)</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>-540</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>اقیانوس آرام (GMT-08:00)</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>-480</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>کوهستان (GMT-07:00)</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>-420</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>مرکزی (GMT-06:00)</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>-360</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>شرقی (GMT-05:00)</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>-300</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>اقیانوس اطلس (GMT-04:00)</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>-240</value>
+  </data>
+  <data name="lstAccountActivationModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAdministratorsGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultAnonymousGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultTimeZoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDefaultUsersGroupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstMainPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRootThemeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>مدیریت</value>
+  </data>
+  <data name="rdoAllMessagesResource1.Text" xml:space="preserve">
+    <value>تمام پیام‌ها</value>
+  </data>
+  <data name="rdoAllMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoDisableLogResource1.Text" xml:space="preserve">
+    <value>غیرفعال کردن ثبت وقایع</value>
+  </data>
+  <data name="rdoDisableLogResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoErrorsOnlyResource1.Text" xml:space="preserve">
+    <value>فقط خطاها</value>
+  </data>
+  <data name="rdoErrorsOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoNoModerationResource1.Text" xml:space="preserve">
+    <value>غیرفعال کردن تعدیل</value>
+  </data>
+  <data name="rdoNoModerationResource1.ToolTip" xml:space="preserve">
+    <value>هیچ سیستم تعدیلی استفاده نشده: صفحات فقط می‌توانند توسط کاربرانی که مجاز هستند ویرایش شوند</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.Text" xml:space="preserve">
+    <value>مجوزهای ویرابش صفحه لازم است</value>
+  </data>
+  <data name="rdoRequirePageEditingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>صفحات می‌توانند توسط کاربرانی که مجوز دیدن دارند اما مجوزهای مدیریت ندارند ویرایش شوند، و تغییرات در شرایط معتدل نگه داشته شده است</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.Text" xml:space="preserve">
+    <value>مجوزهای دیدن صفحه لازم است</value>
+  </data>
+  <data name="rdoRequirePageViewingPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>صفحات می‌توانند توسط کاربرانی که مجوز دیدن دارند اما مجوزهای ویرایش ندارند ویرایش شوند، و تغییرات در شرایط معتدل نگه داشته شده است</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.Text" xml:space="preserve">
+    <value>اخطارها و خطاها</value>
+  </data>
+  <data name="rdoWarningsAndErrorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس ایمیل نامعتبر</value>
+  </data>
+  <data name="revContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس اینترنتی ویکی نامعتبر</value>
+  </data>
+  <data name="revMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس ایمیل نامعتبر</value>
+  </data>
+  <data name="revSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس سرور SMTP نامعتبر</value>
+  </data>
+  <data name="revSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>عنوان ویکی نامعتبر</value>
+  </data>
+  <data name="revWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="revWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه برش cache مورد نیاز است</value>
+  </data>
+  <data name="rfvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه cache مورد نیاز است</value>
+  </data>
+  <data name="rfvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>ایمیل تماس نیاز است</value>
+  </data>
+  <data name="rfvContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ErrorMessage" xml:space="preserve">
+    <value>قالب تاریخ / زمان مورد نیاز است</value>
+  </data>
+  <data name="rfvDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>آدرس اینترنتی ویکی مورد نیاز است</value>
+  </data>
+  <data name="rfvMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>بیشترین اندازه فایل مورد نیاز است</value>
+  </data>
+  <data name="rfvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>بیشترین اندازه فایل واقعه‌نگاری مورد نیاز است</value>
+  </data>
+  <data name="rfvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>عدد مورد نیاز است</value>
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>ایمیل فرستنده مورد نیاز است</value>
+  </data>
+  <data name="rfvSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ErrorMessage" xml:space="preserve">
+    <value>سرور SMTP مورد نیاز است</value>
+  </data>
+  <data name="rfvSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>عنوان ویکی مورد نیاز است</value>
+  </data>
+  <data name="rfvWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه برش cache نامعتبر است (حداقل ۵ و حداکثر ۵۰۰۰۰)</value>
+  </data>
+  <data name="rvCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه نامعتبر است (حداقل ۱۰ و حداکثر ۱۰۰۰۰)</value>
+  </data>
+  <data name="rvCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ErrorMessage" xml:space="preserve">
+    <value>عدد باید بین ۰ و ۱۰۰۰ باشد</value>
+  </data>
+  <data name="rvKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه فایل نامعتبر است (حداقل ۲۵۶ و حداکثر ۱۰۲۴۰۰)</value>
+  </data>
+  <data name="rvMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>اندازه فایل واقعه‌نگاری نامعتبر است (حداقل ۱۶ و حداکثر ۱۰۲۴۰)</value>
+  </data>
+  <data name="rvMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ErrorMessage" xml:space="preserve">
+    <value>عدد باید بین ۰ و ۵۰ باشد</value>
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ErrorMessage" xml:space="preserve">
+    <value>پورت نامعتبر (حداقل ۱ و حداکثر ۶۵۵۳۵)</value>
+  </data>
+  <data name="rvSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheCutSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCacheSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateTimeFormatResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtErrorsEmailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionsAllowedResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeptBackupNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxFileSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxLogSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRecentChangesToDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSenderEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpPortResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSmtpServerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>تمام بارگیری فایل‌ها شمارش شود</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>CountAll</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>شمارش بارگیری فایل‌های با پسوند مشخص شده (توسط ویرگول جدا شود)</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>CountSpecifiedExtensions</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>شمارش بارگیری فایل‌ها برای تمام پسوندها به جز (توسط ویرگول جدا شود)</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>ExcludeSpecifiedExtensions</value>
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileDownloadCountFilterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstFileDownloadCountFilterModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRssFeedsModeResource1.Text" xml:space="preserve">
+    <value>طریقه به کار رفتن خوراک‌های RSS</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>متن کامل</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>FullText</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>خلاصه</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>غیرفعال (غیرفعال شدن کامل خوراک‌های RSS)</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="lblUsernameRegExResource2.Text" xml:space="preserve">
+    <value>عبارت منظم برای اعتبارسنجی کلمات کاربری و نام گروه‌هاعبارت منظم برای اعتبارسنجی کلمات کاربری و نام گروه‌ها</value>
+  </data>
+  <data name="lblPasswordRegExResource2.Text" xml:space="preserve">
+    <value>عبارت منظم برای اعتبارسنجی کلمات عبور</value>
+  </data>
+  <data name="chkAutoGeneratePageNamesResource1.Text" xml:space="preserve">
+    <value>تولید خودکار نام صفحات در ویرایشگر به صورت پیش فرض</value>
+  </data>
+  <data name="lblIpHostFilterResource1.Text" xml:space="preserve">
+    <value>فیلتر آی‌پی برای ویرایش مجاز (توسط ویرگول جدا شود، استفاده از * برای همه مثلا 192.168.1.*)</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.Text" xml:space="preserve">
+    <value>نمایش anchor ها برای بخش‌های صفحه</value>
+  </data>
+  <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeptBackupNumberPostResource1.Text" xml:space="preserve">
+    <value>برای هر صفحه پشتیبان گرفته شود (رها کردن صفحات خالی)</value>
+  </data>
+</root>

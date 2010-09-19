@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Du har ikke rettigheter til å se denne siden!</value>
+    <value>Du har ikke lov til &amp;aring; g&amp;aring; inn p&amp;aring; denne siden!</value>
     <comment>You do not have the permission to enter the page!</comment>
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Nektet tilgang</value>
+    <value>Ikke tilgang</value>
     <comment>Access Denied</comment>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">

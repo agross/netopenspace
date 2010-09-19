@@ -127,15 +127,15 @@
     <value />
   </data>
   <data name="lnkMainPageResource1.Text" xml:space="preserve">
-    <value>Main Page</value>
+    <value>Forside</value>
   </data>
   <data name="lnkMainPageResource1.ToolTip" xml:space="preserve">
-    <value>Go to the main page of the current namespace</value>
+    <value>Gå til forsiden af det nuværende navnerum</value>
   </data>
   <data name="lnkPreviousPageResource1.Text" xml:space="preserve">
-    <value>« Back to previous page</value>
+    <value>« Tilbage til forrige side</value>
   </data>
   <data name="lnkPreviousPageResource1.ToolTip" xml:space="preserve">
-    <value>Go to the previous page</value>
+    <value>Gå til den forrige side</value>
   </data>
 </root>

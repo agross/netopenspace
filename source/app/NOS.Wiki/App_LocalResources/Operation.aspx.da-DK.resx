@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancelDeleteMessageResource1.Text" xml:space="preserve">
-    <value>Afbryd</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelDeleteMessageResource1.ToolTip" xml:space="preserve">
     <value />
@@ -130,7 +130,7 @@
     <value />
   </data>
   <data name="chkDeleteMessageRepliesResource1.Text" xml:space="preserve">
-    <value>Slet meddelses svar</value>
+    <value>Slet beskedens svar</value>
   </data>
   <data name="chkDeleteMessageRepliesResource1.ToolTip" xml:space="preserve">
     <value />
@@ -139,10 +139,10 @@
     <value />
   </data>
   <data name="lblDeleteMessageDescriptionResource1.Text" xml:space="preserve">
-    <value>For at slette meddelsen, tryk på slet.</value>
+    <value>Tryk på 'Slet' knappen for at slette den valgte besked.</value>
   </data>
   <data name="lblDeleteMessageResource1.Text" xml:space="preserve">
-    <value>Slet meddelse</value>
+    <value>Slet besked</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Unavngiven side</value>

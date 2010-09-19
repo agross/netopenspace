@@ -118,82 +118,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancelResource2.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>Luk</value>
   </data>
   <data name="btnCancelResource2.ToolTip" xml:space="preserve">
-    <value>Close this tolbox</value>
+    <value>Luk dette værktøj</value>
   </data>
   <data name="lblRotateResource1.Text" xml:space="preserve">
     <value>Rotation</value>
   </data>
   <data name="chkNewNameResource2.Text" xml:space="preserve">
-    <value>Save as new file</value>
+    <value>Gem som ny fil</value>
   </data>
   <data name="chkNewNameResource2.ToolTip" xml:space="preserve">
-    <value>If not selected, the original file is overwritten</value>
+    <value>Den originale fil overskrives, hvis denne ikke vælges</value>
   </data>
   <data name="rdoJpegHighResource2.Text" xml:space="preserve">
     <value>JPEG 100%</value>
   </data>
   <data name="rdoJpegHighResource2.ToolTip" xml:space="preserve">
-    <value>JPEG format, full quality</value>
+    <value>JPEG format, fuld kvalitet</value>
   </data>
   <data name="rdoJpegMediumResource2.Text" xml:space="preserve">
     <value>JPEG 60%</value>
   </data>
   <data name="rdoJpegMediumResource2.ToolTip" xml:space="preserve">
-    <value>JPEG format, medium quality</value>
+    <value>JPEG format, medium kvalitet</value>
   </data>
   <data name="rdoPercentageResource2.Text" xml:space="preserve">
-    <value>Resize by scale</value>
+    <value>Ny størrelse efter skala</value>
   </data>
   <data name="rdoPercentageResource2.ToolTip" xml:space="preserve">
-    <value>Resize the image specifying a scale</value>
+    <value>Giv billedet en ny størrelse ved at angive en skala</value>
   </data>
   <data name="rdoPixelResource2.Text" xml:space="preserve">
-    <value>Resize by absolute size</value>
+    <value>Ny størrelse efter absolut størrelse</value>
   </data>
   <data name="rdoPixelResource2.ToolTip" xml:space="preserve">
-    <value>Resize the image specifying the size in pixels</value>
+    <value>Giv billedet en ny størrelse ved at angive størrelsen i pixels</value>
   </data>
   <data name="rdoPngResource2.ToolTip" xml:space="preserve">
-    <value>PNG format (alpha channel is preserved)</value>
+    <value>PNG format (alfakanal er bevaret)</value>
   </data>
   <data name="txtPercentageResource2.Text" xml:space="preserve">
     <value>100</value>
   </data>
   <data name="txtPercentageResource2.ToolTip" xml:space="preserve">
-    <value>Resize scale (percentage)</value>
+    <value>Størrelsesskala (procent)</value>
   </data>
   <data name="rdoPngResource2.Text" xml:space="preserve">
     <value>PNG</value>
   </data>
   <data name="btnPreviewResource1.Text" xml:space="preserve">
-    <value>Update Preview</value>
+    <value>Opdater eksempel</value>
   </data>
   <data name="btnPreviewResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save the modified Image</value>
+    <value>Gem det ændrede billede</value>
   </data>
   <data name="chkAspectRatioResource1.Text" xml:space="preserve">
-    <value>Maintain Aspect Ratio</value>
+    <value>Bibehold størrelsesforhold</value>
   </data>
   <data name="chkAspectRatioResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="imgPreviewResource1.AlternateText" xml:space="preserve">
-    <value>Image Preview</value>
+    <value>Billedeeksempel</value>
   </data>
   <data name="imgPreviewResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblCurrentSizeInfoResource1.Text" xml:space="preserve">
-    <value>Current size: </value>
+    <value>Nuværende størrelse: </value>
   </data>
   <data name="lblCurrentSizePixelsResource1.Text" xml:space="preserve">
     <value> pixels</value>
@@ -205,7 +205,7 @@
     <value />
   </data>
   <data name="lblOptionsResource1.Text" xml:space="preserve">
-    <value>Image Resize Options</value>
+    <value>Billedestørrelsesmuligheder</value>
   </data>
   <data name="lblOptionsResource1.ToolTip" xml:space="preserve">
     <value />
@@ -223,7 +223,7 @@
     <value />
   </data>
   <data name="lblScalePreResource1.Text" xml:space="preserve">
-    <value>(Scale: </value>
+    <value>(Skala: </value>
   </data>
   <data name="lblScalePreResource1.ToolTip" xml:space="preserve">
     <value />
@@ -238,13 +238,13 @@
     <value> pixels</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Image Editor</value>
+    <value>Billederedigering</value>
   </data>
   <data name="txtHeightResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtHeightResource1.ToolTip" xml:space="preserve">
-    <value>Height</value>
+    <value>Højde</value>
   </data>
   <data name="txtNewNameResource1.Text" xml:space="preserve">
     <value />
@@ -256,6 +256,6 @@
     <value />
   </data>
   <data name="txtWidthResource1.ToolTip" xml:space="preserve">
-    <value>Width</value>
+    <value>Bredde</value>
   </data>
 </root>

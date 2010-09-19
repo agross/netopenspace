@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAccessDeniedNoticeResource1.Text" xml:space="preserve">
+    <value>Åtkomst nekad (Globalt)</value>
+  </data>
+  <data name="btnAccessDeniedNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnAccountActivationMessageResource1.Text" xml:space="preserve">
+    <value>Konto aktiverat (Globalt)</value>
+  </data>
+  <data name="btnAccountActivationMessageResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnApproveDraftMessageResource1.Text" xml:space="preserve">
+    <value>Godkänn utkast (Globalt)</value>
+  </data>
+  <data name="btnApproveDraftMessageResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value>Avbryt och återgå</value>
+  </data>
+  <data name="btnDiscussionChangeMessageResource1.Text" xml:space="preserve">
+    <value>Diskussionsmeddelande (Globalt)</value>
+  </data>
+  <data name="btnDiscussionChangeMessageResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
+    <value>Sida redigeras (Namnrymdsspecifikt)</value>
+  </data>
+  <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnFooterResource1.Text" xml:space="preserve">
+    <value>Sidfot för html</value>
+  </data>
+  <data name="btnFooterResource1.ToolTip" xml:space="preserve">
+    <value>Ändra sidfoten för hela htmlsidan</value>
+  </data>
+  <data name="btnHeaderResource1.Text" xml:space="preserve">
+    <value>Sidhuvud för html</value>
+  </data>
+  <data name="btnHeaderResource1.ToolTip" xml:space="preserve">
+    <value>Ändra sidhuvudet för hela htmlsidan</value>
+  </data>
+  <data name="btnHtmlHeadResource1.Text" xml:space="preserve">
+    <value>&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;</value>
+  </data>
+  <data name="btnHtmlHeadResource1.ToolTip" xml:space="preserve">
+    <value>Ändra innehållet i head-märkordet</value>
+  </data>
+  <data name="btnLoginNoticeResource1.Text" xml:space="preserve">
+    <value>Inloggning (Globalt)</value>
+  </data>
+  <data name="btnLoginNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnPageChangeMessageResource1.Text" xml:space="preserve">
+    <value>Sida ändrad (Global)</value>
+  </data>
+  <data name="btnPageChangeMessageResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnPageFooterResource1.Text" xml:space="preserve">
+    <value>Sidfot</value>
+  </data>
+  <data name="btnPageFooterResource1.ToolTip" xml:space="preserve">
+    <value>Ändra sidfoten</value>
+  </data>
+  <data name="btnPageHeaderResource1.Text" xml:space="preserve">
+    <value>Sidhuvud</value>
+  </data>
+  <data name="btnPageHeaderResource1.ToolTip" xml:space="preserve">
+    <value>Ändra sidhuvudet</value>
+  </data>
+  <data name="btnPasswordResetProcedureMessageResource1.Text" xml:space="preserve">
+    <value>Lösenord återställt (Globalt)</value>
+  </data>
+  <data name="btnPasswordResetProcedureMessageResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnRegisterNoticeResource1.Text" xml:space="preserve">
+    <value>Registrering (Globalt)</value>
+  </data>
+  <data name="btnRegisterNoticeResource1.ToolTip" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Spara</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value>Spara innehållet</value>
+  </data>
+  <data name="btnSidebarResource1.Text" xml:space="preserve">
+    <value>Sidomeny</value>
+  </data>
+  <data name="btnSidebarResource1.ToolTip" xml:space="preserve">
+    <value>Ändra sidomenyn</value>
+  </data>
+  <data name="lblAccessDeniedNoticeInfoResource1.Text" xml:space="preserve">
+    <value>Meddelande som visas längst upp på sidan för nekad åtkomst.</value>
+  </data>
+  <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
+    <value>E-postmeddelandet som skickas till en ny användare som måste aktivera sitt konto.</value>
+  </data>
+  <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
+    <value>E-postmeddelande som skickas till administratör/moderator när ett utkast måste godkännas.</value>
+  </data>
+  <data name="lblContentResource1.Text" xml:space="preserve">
+    <value>Innehåll</value>
+  </data>
+  <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
+    <value>E-postmeddelande som skickas till användare när ett nytt inlägg skrivs i en diskussionstråd.</value>
+  </data>
+  <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
+    <value>Meddelande som visas längst upp när en sidas innehåll redigeras.</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Obs&lt;/b&gt;: det verkliga utseendet på det valda visuella temat kan skilja sig från den layout som visas här.</value>
+  </data>
+  <data name="lblLoginNoticeInfoResource1.Text" xml:space="preserve">
+    <value>Meddelande som visas vid inloggning.</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Namnrymd</value>
+  </data>
+  <data name="lblOtherResource1.Text" xml:space="preserve">
+    <value>Meddelanden</value>
+  </data>
+  <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
+    <value>E-postmeddelande som skickas till användare när en sida ändrats.</value>
+  </data>
+  <data name="lblPageContentResource1.Text" xml:space="preserve">
+    <value>Sidinnehåll</value>
+  </data>
+  <data name="lblPageLayoutResource1.Text" xml:space="preserve">
+    <value>Sidlayout (namnrymdsspecifik)</value>
+  </data>
+  <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
+    <value>E-postmeddelande som skickas till en användare när denna vill återställa sitt lösenord.</value>
+  </data>
+  <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">
+    <value>Meddelande som visas vid registrering av konto.</value>
+  </data>
+  <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="pnlEditorResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCopyFromResource1.Text" xml:space="preserve">
+    <value>Kopiera</value>
+  </data>
+  <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
+    <value>Kopiera innehållet från den markerade namnrymden</value>
+  </data>
+  <data name="lblCopyFromResource1.Text" xml:space="preserve">
+    <value>Kopiera innehåll från:</value>
+  </data>
+</root>

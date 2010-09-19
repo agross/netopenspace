@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Afbryd</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
     <value />
@@ -139,10 +139,10 @@
     <value>Emne</value>
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Send meddelse</value>
+    <value>Post besked</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Unavngiven </value>
+    <value>Unavngiven side</value>
   </data>
   <data name="txtSubjectResource1.Text" xml:space="preserve">
     <value />

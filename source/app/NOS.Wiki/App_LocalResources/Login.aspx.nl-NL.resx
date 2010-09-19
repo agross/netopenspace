@@ -112,19 +112,19 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSaveNewPasswordResource1.Text" xml:space="preserve">
-    <value>Save New Password</value>
+    <value>Bewaar nieuwe wachtwoord</value>
   </data>
   <data name="btnSaveNewPasswordResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvNewPasswordsResource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Wachtwoorden zijn niet gelijk</value>
   </data>
   <data name="cvNewPasswordsResource1.Text" xml:space="preserve">
     <value />
@@ -136,28 +136,28 @@
     <value />
   </data>
   <data name="lblNewPassword1Resource1.Text" xml:space="preserve">
-    <value>Password</value>
+    <value>Wachtwoord</value>
   </data>
   <data name="lblNewPassword2Resource1.Text" xml:space="preserve">
-    <value>Password (repeat)</value>
+    <value>Wachtwoord (herhaal)</value>
   </data>
   <data name="lblOrResource1.Text" xml:space="preserve">
-    <value>or</value>
+    <value>of</value>
   </data>
   <data name="lblResetPassword2InfoResource1.Text" xml:space="preserve">
-    <value>Please enter your new password twice.</value>
+    <value>AUB tweemaal wachtwoord intypen.</value>
   </data>
   <data name="lblResetPassword2Resource1.Text" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Reset wachtwoord</value>
   </data>
   <data name="lblResetPasswordInformationResource1.Text" xml:space="preserve">
-    <value>If you forgot your Password, please insert your Username &lt;b&gt;or&lt;/b&gt; Email address, then click on the Reset Password button.&lt;br /&gt;You will receive an email with a link to reset your password.</value>
+    <value>Als u uw wachtwoord bent vergeten, kunt u uw Gebruikersnaam &lt;b&gt;of&lt;/b&gt; Email adres invullen, klik vervolgens op de Reset Wachtwoord knop.&lt;br /&gt;U ontvangt dan een e-mail met een link om uw wachtwoord te resetten.</value>
   </data>
   <data name="lblResultResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvNewPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Wachtwoord is niet verplicht</value>
   </data>
   <data name="rfvNewPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -166,7 +166,7 @@
     <value />
   </data>
   <data name="rfvNewPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Wachtwoord is verplicht</value>
   </data>
   <data name="rfvNewPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -175,7 +175,7 @@
     <value />
   </data>
   <data name="rxNewPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ongeldig wachtwoord</value>
   </data>
   <data name="rxNewPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -184,7 +184,7 @@
     <value />
   </data>
   <data name="rxNewPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ongeldig wachtwoord</value>
   </data>
   <data name="rxNewPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -242,7 +242,7 @@
     <value>Wachtwoord</value>
   </data>
   <data name="lblResetPasswordResource1.Text" xml:space="preserve">
-    <value>Wachtwoord herstellen.</value>
+    <value>Wachtwoord resetten.</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -257,7 +257,7 @@
     <value>Gebruikersnaam</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Untitled Page</value>
+    <value>Pagina zonder Titel</value>
   </data>
   <data name="txtEmailResetResource1.Text" xml:space="preserve">
     <value />

@@ -118,100 +118,100 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblMigrationInfoResource2.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note 1&lt;/b&gt;: always perform a full backup of all your data before performing a migration.&lt;br /&gt;&lt;b&gt;Note 2&lt;/b&gt;: migrations usually take several minutes to complete: during this time, do not perform any other activity in the wiki, and do not close this page.&lt;br /&gt;&lt;b&gt;Note 3&lt;/b&gt;: the destination provider should be completely empty: if it contains any data, it might cause consistency issues. Refer to the target provider's documentation for details.&lt;br /&gt;&lt;b&gt;Timeouts&lt;/b&gt;: it is strongly suggested that you increase the executionTimeout parameter in web.config before migrating data.</value>
+    <value>&lt;b&gt;Note 1&lt;/b&gt;: Tag altid en fuld backup af alle dine data før du foretager en flytning.&lt;br /&gt;&lt;b&gt;Note 2&lt;/b&gt;: Flytninger tager normalt flere minutter før de er færdige - in denne tid: foretag ikke anden aktivitet i wiki'en og luk ikke denne side.&lt;br /&gt;&lt;b&gt;Note 3&lt;/b&gt;: Destinationsudbyderen bør være fuldstændig tom - hvis den indeholder data kan der opstå uoverensstemmelser. Kig i destinationsudbyderens dokumentation for detaljer.&lt;br /&gt;&lt;b&gt;Timeouts&lt;/b&gt;: Det anbefales på det kraftigste at øge 'executionTimeout' parameteren i web.config filen før flytningen startes.</value>
   </data>
   <data name="btnAutoUpdateProvidersResource1.Text" xml:space="preserve">
-    <value>Auto-update Providers</value>
+    <value>Auto-opdater udbydere</value>
   </data>
   <data name="btnAutoUpdateProvidersResource1.ToolTip" xml:space="preserve">
-    <value>Automatically update all installed providers, of all types</value>
+    <value>Automatisk opdater alle installerede udbydere, af alle typer</value>
   </data>
   <data name="lblCannotDisableResource1.Text" xml:space="preserve">
-    <value>Cannot disable the provider because it is the default provider or,&lt;br /&gt;in case of a Pages Provider, it manages the default page of the root namespace</value>
+    <value>Udbyderen kan ikke deaktiveres, fordi det er standardudbyderen,&lt;br /&gt;eller i tilfælde af en sideudbyder, den håndterer standardsiden i rodnavnerummet.</value>
   </data>
   <data name="lblCannotDisableResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblUpdateStatusResource1.Text" xml:space="preserve">
-    <value>Update Status</value>
+    <value>Opdateringsstatus</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Deselect the Provider</value>
+    <value>Fravælg udbyderen</value>
   </data>
   <data name="btnCopySettingsResource1.Text" xml:space="preserve">
-    <value>Copy</value>
+    <value>Kopier</value>
   </data>
   <data name="btnCopySettingsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnDeleteDllResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteDllResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnDisableResource1.Text" xml:space="preserve">
-    <value>Disable</value>
+    <value>Deaktiver</value>
   </data>
   <data name="btnDisableResource1.ToolTip" xml:space="preserve">
-    <value>Disable the Provider</value>
+    <value>Deaktiver udbyderen</value>
   </data>
   <data name="btnEnableResource1.Text" xml:space="preserve">
-    <value>Enable</value>
+    <value>Aktiver</value>
   </data>
   <data name="btnEnableResource1.ToolTip" xml:space="preserve">
-    <value>Enable the Provider</value>
+    <value>Aktiver udbyderen</value>
   </data>
   <data name="btnMigrateFilesResource1.Text" xml:space="preserve">
-    <value>Migrate</value>
+    <value>Flyt</value>
   </data>
   <data name="btnMigrateFilesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnMigratePagesResource1.Text" xml:space="preserve">
-    <value>Migrate</value>
+    <value>Flyt</value>
   </data>
   <data name="btnMigratePagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnMigrateUsersResource1.Text" xml:space="preserve">
-    <value>Migrate</value>
+    <value>Flyt</value>
   </data>
   <data name="btnMigrateUsersResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveDefaultProvidersResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveDefaultProvidersResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save the Configuration String</value>
+    <value>Gem konfigurationsstrengen</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnUnloadResource1.Text" xml:space="preserve">
-    <value>Unload</value>
+    <value>Fjern</value>
   </data>
   <data name="btnUnloadResource1.ToolTip" xml:space="preserve">
-    <value>Unloads the Provider</value>
+    <value>Fjerner udbyderen</value>
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
     <value>Upload</value>
@@ -220,19 +220,19 @@
     <value />
   </data>
   <data name="lblAuthorResource1.Text" xml:space="preserve">
-    <value>Author</value>
+    <value>Forfatter</value>
   </data>
   <data name="lblConfigHelpResource1.Text" xml:space="preserve">
-    <value>Help</value>
+    <value>Hjælp</value>
   </data>
   <data name="lblConfigurationStringTitleResource1.Text" xml:space="preserve">
-    <value>Configuration String</value>
+    <value>Konfigurationsstreng</value>
   </data>
   <data name="lblCopySettingsInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: in order to be detected, the destination Provider must be uploaded using the upload tool.&lt;br /&gt;Log and recent changes will not be copied.</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: For at blive fundet skal destinationsudbyderen uploades med uploadfunktionen.&lt;br /&gt;Loggen og seneste ændringer vil ikke blive kopieret.</value>
   </data>
   <data name="lblCopySettingsResource1.Text" xml:space="preserve">
-    <value>Copy Settings and related data</value>
+    <value>Kopier konfiguration og relaterede data</value>
   </data>
   <data name="lblCopySettingsResultResource1.Text" xml:space="preserve">
     <value />
@@ -241,13 +241,13 @@
     <value />
   </data>
   <data name="lblDataMigrationResource1.Text" xml:space="preserve">
-    <value>Data Migration</value>
+    <value>Dataflytning</value>
   </data>
   <data name="lblDefaultProvCacheResource1.Text" xml:space="preserve">
-    <value>Cache Provider</value>
+    <value>Cache udbyder</value>
   </data>
   <data name="lblDefaultProvFilesResource1.Text" xml:space="preserve">
-    <value>Files Provider</value>
+    <value>Filudbyder</value>
   </data>
   <data name="lblDefaultProvidersResultResource1.Text" xml:space="preserve">
     <value />
@@ -256,16 +256,16 @@
     <value />
   </data>
   <data name="lblDefaultProvidersTitleResource1.Text" xml:space="preserve">
-    <value>Default Providers</value>
+    <value>Standardudbydere</value>
   </data>
   <data name="lblDefaultProvPagesResource1.Text" xml:space="preserve">
-    <value>Pages Provider</value>
+    <value>Sideudbyder</value>
   </data>
   <data name="lblDefaultProvUsersResource1.Text" xml:space="preserve">
-    <value>Users Provider</value>
+    <value>Brugerudbyder</value>
   </data>
   <data name="lblDisplayResource1.Text" xml:space="preserve">
-    <value>Display</value>
+    <value>Vis</value>
   </data>
   <data name="lblDllResultResource1.Text" xml:space="preserve">
     <value />
@@ -274,7 +274,7 @@
     <value />
   </data>
   <data name="lblMigrateFilesResource1.Text" xml:space="preserve">
-    <value>Migrate Files and related data</value>
+    <value>Flyt filer og relaterede data</value>
   </data>
   <data name="lblMigrateFilesResultResource1.Text" xml:space="preserve">
     <value />
@@ -283,7 +283,7 @@
     <value />
   </data>
   <data name="lblMigratePagesResource1.Text" xml:space="preserve">
-    <value>Migrate Pages and related data</value>
+    <value>Flyt sider og relaterede data</value>
   </data>
   <data name="lblMigratePagesResultResource1.Text" xml:space="preserve">
     <value />
@@ -292,10 +292,10 @@
     <value />
   </data>
   <data name="lblMigrateUsersInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: migrating user accounts will reset all their passwords (an email notice will be sent to all users).</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: Flytning af brugerkonti vil nulstille deres adgangskoder (en email besked vil blive sendt til alle brugere).</value>
   </data>
   <data name="lblMigrateUsersResource1.Text" xml:space="preserve">
-    <value>Migrate Users and related data</value>
+    <value>Flyt brugere og relaterede data</value>
   </data>
   <data name="lblMigrateUsersResultResource1.Text" xml:space="preserve">
     <value />
@@ -304,7 +304,7 @@
     <value />
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblProviderConfigHelpResource1.Text" xml:space="preserve">
     <value />
@@ -319,7 +319,7 @@
     <value />
   </data>
   <data name="lblProvidersResource1.Text" xml:space="preserve">
-    <value>Providers</value>
+    <value>Udbydere</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -334,13 +334,13 @@
     <value />
   </data>
   <data name="lblUploadInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: removing a DLL won't disable the Providers it contains until the next wiki restart,&lt;br /&gt;but uploading a new DLL will automatically load the Providers it contains.</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: At fjerne en DLL vil ikke deaktivere de udbydere den indeholder før næste wiki genstart, men upload af en ny DLL vil automatisk hente de udbydere DLL' indeholder.</value>
   </data>
   <data name="lblUploadNewDllResource1.Text" xml:space="preserve">
-    <value>Upload new DLL</value>
+    <value>Upload ny DLL</value>
   </data>
   <data name="lblUploadProvidersTitleResource1.Text" xml:space="preserve">
-    <value>Providers DLLs Management</value>
+    <value>Udbyderes DLL administration</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />
@@ -391,31 +391,31 @@
     <value />
   </data>
   <data name="rdoCacheResource1.Text" xml:space="preserve">
-    <value>Cache Providers</value>
+    <value>Cache udbydere</value>
   </data>
   <data name="rdoCacheResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoFilesResource1.Text" xml:space="preserve">
-    <value>Files Providers</value>
+    <value>Filudbydere</value>
   </data>
   <data name="rdoFilesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoFormatterResource1.Text" xml:space="preserve">
-    <value>Formatter Providers</value>
+    <value>Formatteringsudbydere</value>
   </data>
   <data name="rdoFormatterResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoPagesResource1.Text" xml:space="preserve">
-    <value>Pages Providers</value>
+    <value>Sideudbydere</value>
   </data>
   <data name="rdoPagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoUsersResource1.Text" xml:space="preserve">
-    <value>Users Providers</value>
+    <value>Brugerudbydere</value>
   </data>
   <data name="rdoUsersResource1.ToolTip" xml:space="preserve">
     <value />

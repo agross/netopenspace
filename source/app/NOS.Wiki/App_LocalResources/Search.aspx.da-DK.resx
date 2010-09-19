@@ -118,49 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="chkFilesAndAttachmentsResource1.Text" xml:space="preserve">
-    <value>Search Files and Attachments</value>
+    <value>Søg i filer og vedhæftninger</value>
   </data>
   <data name="chkFilesAndAttachmentsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkAllNamespacesResource1.Text" xml:space="preserve">
-    <value>Search in all Namespaces and all Categories</value>
+    <value>Søg i alle navnerum og kategorier</value>
   </data>
   <data name="chkAllNamespacesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkUncategorizedPagesResource1.Text" xml:space="preserve">
-    <value>Uncategorized Pages</value>
+    <value>Ukategoriserede sider</value>
   </data>
   <data name="chkUncategorizedPagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblCategoryFilterResource1.Text" xml:space="preserve">
-    <value>Filter by Category</value>
+    <value>Filtrer efter kategori</value>
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Here you can search through the pages of this Namespace, their attachments and the files uploaded to the system.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the results will only display the items you have permissions to read.</value>
+    <value>Her kan du søge i siderne i dette navnerum, deres vedhæftninger og filerne uploadet til systemet.&lt;br /&gt;&lt;b&gt;Bemærk&lt;/b&gt;: Søgeresultaterne vil kun blive vist hvis du har rettigheder til at læse dem.</value>
   </data>
   <data name="lblStatsResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Search Engine</value>
+    <value>Søgemaskine</value>
   </data>
   <data name="rdoAllWordsResource1.Text" xml:space="preserve">
-    <value>All words</value>
+    <value>Alle ord</value>
   </data>
   <data name="rdoAllWordsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoAtLeastOneWordResource1.Text" xml:space="preserve">
-    <value>At least one word</value>
+    <value>Mindst et ord</value>
   </data>
   <data name="rdoAtLeastOneWordResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoExactPhraseResource1.Text" xml:space="preserve">
-    <value>Exact phrase</value>
+    <value>Nøjagtigt udtryk</value>
   </data>
   <data name="rdoExactPhraseResource1.ToolTip" xml:space="preserve">
     <value />
@@ -172,15 +172,15 @@
     <value />
   </data>
   <data name="btnGoResource1.Text" xml:space="preserve">
-    <value>Start</value>
+    <value>Søg</value>
   </data>
   <data name="btnGoResource1.ToolTip" xml:space="preserve">
-    <value>Klik her for at starte søgningen</value>
+    <value />
   </data>
   <data name="lstCategoriesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Side uden titel</value>
+    <value>Titel</value>
   </data>
 </root>

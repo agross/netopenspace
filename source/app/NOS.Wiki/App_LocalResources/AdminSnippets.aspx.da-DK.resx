@@ -118,58 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblEditSnippetWarningResource1.Text" xml:space="preserve">
-    <value>&lt;div class='warning' style='float: right;'&gt;You are now editing a snippet. After you are done,&lt;br /&gt;it is &lt;b&gt;strongly&lt;/b&gt; suggested to rebuild the search engine index in the &lt;i&gt;Admin Home&lt;/i&gt; page.&lt;/div&gt;</value>
+    <value>&lt;div class='warning' style='float: right;'&gt;Du retter nu i en kodestump. Når du er færdig, anbefales det på det &lt;b&gt;kraftigste&lt;/b&gt; at du genopbygger søgeindekset på &lt;i&gt;Admin hjem&lt;/i&gt; siden.</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancel and return to the items list</value>
+    <value>Annuller og returner til listen</value>
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
-    <value>Create Item</value>
+    <value>Opret element</value>
   </data>
   <data name="btnCreateResource1.ToolTip" xml:space="preserve">
-    <value>Save the new Item</value>
+    <value>Gem det nye element</value>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Delete the Item</value>
+    <value>Slet elementet</value>
   </data>
   <data name="btnNewSnippetResource1.Text" xml:space="preserve">
-    <value>New Snippet</value>
+    <value>Ny kodestump</value>
   </data>
   <data name="btnNewSnippetResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnNewTemplateResource1.Text" xml:space="preserve">
-    <value>New Template</value>
+    <value>Ny skabelon</value>
   </data>
   <data name="btnNewTemplateResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save Item</value>
+    <value>Gem element</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save modifications</value>
+    <value>Gem ændringer</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Edit or delete this item</value>
+    <value>Rediger eller slet dette element</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Edit or delete this item</value>
+    <value>Rediger eller slet dette element</value>
   </data>
   <data name="cvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Snippet Name</value>
+    <value>Ugyldigt kodestumpnavn</value>
   </data>
   <data name="cvNameResource1.Text" xml:space="preserve">
     <value />
@@ -178,25 +178,25 @@
     <value />
   </data>
   <data name="lblEditTitleSnippetResource1.Text" xml:space="preserve">
-    <value>Snippet Details</value>
+    <value>Kodestump detaljer</value>
   </data>
   <data name="lblEditTitleTemplateResource1.Text" xml:space="preserve">
-    <value>Template Details</value>
+    <value>Skabelon detaljer</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNameResource2.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblParametersResource1.Text" xml:space="preserve">
-    <value>Params</value>
+    <value>Parametre</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblProviderResource2.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -205,7 +205,7 @@
     <value />
   </data>
   <data name="lblSnippetsTemplatesResource1.Text" xml:space="preserve">
-    <value>Snippets and Templates</value>
+    <value>Kodestumper og skabeloner</value>
   </data>
   <data name="lblTypeResource1.Text" xml:space="preserve">
     <value>Type</value>
@@ -226,7 +226,7 @@
     <value />
   </data>
   <data name="rfvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Name is required</value>
+    <value>Navn er påkrævet</value>
   </data>
   <data name="rfvNameResource1.Text" xml:space="preserve">
     <value />

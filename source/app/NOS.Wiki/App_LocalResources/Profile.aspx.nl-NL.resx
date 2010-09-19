@@ -112,19 +112,19 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
-    <value>Receive an email notification whenever a &lt;b&gt;message&lt;/b&gt; is posted for a page in the following namespaces (only discussions you have access to):</value>
+    <value>Ontvang een email notificatie wanneer een &lt;b&gt;bericht&lt;/b&gt; is geplaatst voor een pagina in de volgende namespaces (alleen disicussies waar u toegangsrechten voor heeft):</value>
   </data>
   <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
-    <value>Receive an email notification whenever a &lt;b&gt;page&lt;/b&gt; in the following namespaces is updated (only pages you have access to):</value>
+    <value>Ontvang een email notificatie als een  &lt;b&gt;pagina&lt;/b&gt; in de volgende namespaces is bijgewerkt (alleen pagina's waarvoor u toegangsrechten heeft):</value>
   </data>
   <data name="lblNoChangesResource1.Text" xml:space="preserve">
-    <value>Current system settings do not allow any change to your personal information.</value>
+    <value>Huidige systeeminstellingen staan niet toe om uw persooblijke instellingen te wijzigen.</value>
   </data>
   <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
     <value />
@@ -139,16 +139,16 @@
     <value />
   </data>
   <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
-    <value>Save Display Name</value>
+    <value>Bewaar Weergavenaam</value>
   </data>
   <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Click here to save your Display Name</value>
+    <value>Klik hier om Weergavenaam te bewareen</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Display Name</value>
+    <value>Weergavenaam</value>
   </data>
   <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
-    <value>Edit Display Name, Email and Password</value>
+    <value>Bewerk Weergavenaam, Email en Wachtwoord</value>
   </data>
   <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
     <value />
@@ -157,7 +157,7 @@
     <value />
   </data>
   <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Display Name</value>
+    <value>Incorrecte Display Naam</value>
   </data>
   <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -169,10 +169,10 @@
     <value />
   </data>
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Type here a display name for your account</value>
+    <value>Type hier een weergavenaam voor uw inschrijving (account)</value>
   </data>
   <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Bewaar</value>
   </data>
   <data name="btnSaveLanguageResource1.ToolTip" xml:space="preserve">
     <value />
@@ -181,7 +181,7 @@
     <value />
   </data>
   <data name="lblGroupsResource1.Text" xml:space="preserve">
-    <value>You are member of the following groups:</value>
+    <value>U bent lid van de volgende groepen:</value>
   </data>
   <data name="lblLanguageResultResource1.Text" xml:space="preserve">
     <value />
@@ -190,16 +190,16 @@
     <value />
   </data>
   <data name="lblLanguageTimeZoneResource1.Text" xml:space="preserve">
-    <value>Language and Time Zone</value>
+    <value>Taal en Tijdszone</value>
   </data>
   <data name="btnSaveNotificationsResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Bewaar</value>
   </data>
   <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email addresses are not equal</value>
+    <value>Email addressen zijn  niet gelijk</value>
   </data>
   <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -208,7 +208,7 @@
     <value />
   </data>
   <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email addresses are not equal</value>
+    <value>Email addressen zijn niet gelijk</value>
   </data>
   <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -217,7 +217,7 @@
     <value />
   </data>
   <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
-    <value>Incorrect Password</value>
+    <value>Onjuist wachtwoord</value>
   </data>
   <data name="cvOldPasswordResource1.Text" xml:space="preserve">
     <value />
@@ -226,7 +226,7 @@
     <value />
   </data>
   <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Wachtwoorden zijn niet gelijk</value>
   </data>
   <data name="cvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -235,7 +235,7 @@
     <value />
   </data>
   <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Wachtwoorden zijn niet gelijk</value>
   </data>
   <data name="cvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -244,7 +244,7 @@
     <value />
   </data>
   <data name="lblNotificationsResource1.Text" xml:space="preserve">
-    <value>Email Notification Settings</value>
+    <value>Email Notificatie Instellingen</value>
   </data>
   <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
     <value />
@@ -271,7 +271,7 @@
     <value />
   </data>
   <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>Email is verplicht</value>
   </data>
   <data name="rfvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -280,7 +280,7 @@
     <value />
   </data>
   <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>Email is verplicht</value>
   </data>
   <data name="rfvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -289,7 +289,7 @@
     <value />
   </data>
   <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
-    <value>Old Password is required</value>
+    <value>Oud wachtwoord is verplicht</value>
   </data>
   <data name="rfvOldPasswordResource1.Text" xml:space="preserve">
     <value />
@@ -298,7 +298,7 @@
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Wachtwoord is verplicht</value>
   </data>
   <data name="rfvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -307,7 +307,7 @@
     <value />
   </data>
   <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Wachtwoord is verplicht</value>
   </data>
   <data name="rfvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -316,7 +316,7 @@
     <value />
   </data>
   <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Email address</value>
+    <value>Incorrect Email adres</value>
   </data>
   <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -325,7 +325,7 @@
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Incorrect wachtwoord</value>
   </data>
   <data name="rxvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -399,7 +399,7 @@
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Untitled Page</value>
+    <value>Pagina zonder titel</value>
   </data>
   <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />

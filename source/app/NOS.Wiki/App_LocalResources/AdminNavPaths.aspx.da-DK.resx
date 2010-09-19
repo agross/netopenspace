@@ -118,79 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAddResource1.Text" xml:space="preserve">
-    <value>Add</value>
+    <value>Tilføj</value>
   </data>
   <data name="btnAddResource1.ToolTip" xml:space="preserve">
-    <value>Add the selected Page to the list</value>
+    <value>Tilføj den valgte side til listen</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancel and return to the Navigation Path list</value>
+    <value>Annuller og returner til navigationsstislisten</value>
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
-    <value>Create Nav. Path</value>
+    <value>Opret navigationssti</value>
   </data>
   <data name="btnCreateResource1.ToolTip" xml:space="preserve">
-    <value>Save the new Navigation Path</value>
+    <value>Gem den nye navigationssti</value>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Delete the Navigation Path</value>
+    <value>Slet navigationsstien</value>
   </data>
   <data name="btnDownResource1.Text" xml:space="preserve">
-    <value>Down</value>
+    <value>Ned</value>
   </data>
   <data name="btnDownResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnNewNavPathResource1.Text" xml:space="preserve">
-    <value>New Nav. Path</value>
+    <value>Ny navigationssti</value>
   </data>
   <data name="btnNewNavPathResource1.ToolTip" xml:space="preserve">
-    <value>Create a new Navigation Path</value>
+    <value>Opret ny navigationssti</value>
   </data>
   <data name="btnRemoveResource1.Text" xml:space="preserve">
-    <value>Remove</value>
+    <value>Fjern</value>
   </data>
   <data name="btnRemoveResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save Nav. Path</value>
+    <value>Gem nav.sti</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save modifications</value>
+    <value>Gem ændringer</value>
   </data>
   <data name="btnSearchResource1.Text" xml:space="preserve">
-    <value>Search</value>
+    <value>Søg</value>
   </data>
   <data name="btnSearchResource1.ToolTip" xml:space="preserve">
-    <value>Search for a Page</value>
+    <value>Søg efter en side</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnUpResource1.Text" xml:space="preserve">
-    <value>Up</value>
+    <value>Op</value>
   </data>
   <data name="btnUpResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvName1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Name</value>
+    <value>Ugyldigt navn</value>
   </data>
   <data name="cvName1Resource1.Text" xml:space="preserve">
     <value />
@@ -199,7 +199,7 @@
     <value />
   </data>
   <data name="cvName2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Navigation Path already exists</value>
+    <value>Navigationssti eksisterer allerede</value>
   </data>
   <data name="cvName2Resource1.Text" xml:space="preserve">
     <value />
@@ -208,25 +208,25 @@
     <value />
   </data>
   <data name="lblEditTitleResource1.Text" xml:space="preserve">
-    <value>Navigation Paths Details</value>
+    <value>Navigationssti detaljer</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNameResource2.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namespace</value>
+    <value>Navnerum</value>
   </data>
   <data name="lblNavPathsResource1.Text" xml:space="preserve">
-    <value>Navigation Paths</value>
+    <value>Navigationsstier</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
-    <value>Pages</value>
+    <value>Sider</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -259,7 +259,7 @@
     <value />
   </data>
   <data name="rfvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Name is required</value>
+    <value>Navn er påkrævet</value>
   </data>
   <data name="rfvNameResource1.Text" xml:space="preserve">
     <value />

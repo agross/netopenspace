@@ -118,118 +118,118 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
-    <value>Send Bulk Email</value>
+    <value>Send massee-mail</value>
   </data>
   <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
-    <value>You must select at least one group</value>
+    <value>Du skal vælge mindst én gruppe</value>
   </data>
   <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to all users of one or more groups.</value>
+    <value>Du kan sende en e-mail til alle brugere af en eller flere grupper</value>
   </data>
   <data name="lblBulkEmailResource1.Text" xml:space="preserve">
-    <value>Mass Email</value>
+    <value>Massee-mail</value>
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
-    <value>Subject</value>
+    <value>Emne</value>
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Indhold er påkrævet</value>
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Emne er påkrævet</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
-    <value>Shutdown Application</value>
+    <value>Luk applikationen</value>
   </data>
   <data name="btnShutdownConfirmResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRebuildPageLinksResource1.Text" xml:space="preserve">
-    <value>Rebuild Page Links</value>
+    <value>Genopbyg sidelinks</value>
   </data>
   <data name="btnRebuildPageLinksResource1.ToolTip" xml:space="preserve">
-    <value>Rebuild the links structure</value>
+    <value>Genopbygger linksstrukturen</value>
   </data>
   <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
-    <value>orphan pages in the wiki</value>
+    <value>forældreløse side i wiki'e</value>
   </data>
   <data name="lblOrphanPagesInfoPreResource1.Text" xml:space="preserve">
-    <value>There seem to be </value>
+    <value>Der ser ud til at være</value>
   </data>
   <data name="lblOrphanPagesInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: a page is considered an &lt;i&gt;orphan&lt;/i&gt; when it has no incoming links from other pages.</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: En side bliver anset som at være &lt;i&gt;forældreløs&lt;/i&gt;, når der ikke er nogle andre sider der linker til den.</value>
   </data>
   <data name="lblOrphanPagesResource1.Text" xml:space="preserve">
-    <value>Orphan Pages</value>
+    <value>Forældreløse sider</value>
   </data>
   <data name="lblRebuildPageLinksInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: rebuilding page links might take some time. Please do not close this screen while the links are being rebuilt.</value>
+    <value>&lt;b&gt;Advarsel&lt;/b&gt;: Genopbygning af sidelinks kan tage noget tid. Luk venligst ikke vinduet, mens alle links genopbygges.</value>
   </data>
   <data name="lnkPagesResource1.Text" xml:space="preserve">
-    <value>see Pages</value>
+    <value>se sider</value>
   </data>
   <data name="lnkPagesResource1.ToolTip" xml:space="preserve">
-    <value>Go to the Pages administration tab</value>
+    <value>Gå til sideadministrationsfanen</value>
   </data>
   <data name="btnClearCacheResource1.Text" xml:space="preserve">
-    <value>Clear Cache</value>
+    <value>Ryd cache</value>
   </data>
   <data name="btnClearCacheResource1.ToolTip" xml:space="preserve">
-    <value>Clears the Cache</value>
+    <value>Rydder cachen</value>
   </data>
   <data name="btnRebuildResource1.Text" xml:space="preserve">
-    <value>Rebuild</value>
+    <value>Genopbyg</value>
   </data>
   <data name="btnRebuildResource1.ToolTip" xml:space="preserve">
-    <value>Rebuild this index</value>
+    <value>Genopbyg dette indeks</value>
   </data>
   <data name="btnRebuildResource2.Text" xml:space="preserve">
-    <value>Rebuild</value>
+    <value>Genopbyg</value>
   </data>
   <data name="btnRebuildResource2.ToolTip" xml:space="preserve">
-    <value>Rebuild this index</value>
+    <value>Genopbyg dette indeks</value>
   </data>
   <data name="lblAdminHomeResource1.Text" xml:space="preserve">
-    <value>Administration Home</value>
+    <value>Administration hjem</value>
   </data>
   <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
-    <value>You can force a shutdown-and-restart cycle of the Web Application. You will be asked to confirm the restart twice, then the Web Application will restart at the first subsequent request.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: all the open sessions will be lost, and users may experience errors.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the restart will affect only this Web Application.</value>
+    <value>Du kan gennemtvinge en luknings- og genstartscyklus af webapplikationen. Du vil blive bedt om at bekræfte genstarten to gange, og så vil webapplikationen blive genstartet næste gang en side hentes.&lt;br /&gt;&lt;b&gt;Advarsel&lt;/b&gt;: Alle åbne sessioner vil blive tabt og brugere vil muligvis opleve fejl.&lt;br /&gt;&lt;b&gt;Bemærk&lt;/b&gt;: Genstarten vil kun påvirke denne webapplikation.</value>
   </data>
   <data name="lblAppShutdownResource1.Text" xml:space="preserve">
-    <value>Web Application Shutdown</value>
+    <value>Lukning af webapplikation</value>
   </data>
   <data name="lblDocCountResource1.Text" xml:space="preserve">
-    <value>Docs</value>
+    <value>Dok.</value>
   </data>
   <data name="lblIndexStatusResource1.Text" xml:space="preserve">
-    <value>Search Index Status</value>
+    <value>Søgeindeks status</value>
   </data>
   <data name="lblLinkedInResource1.Text" xml:space="preserve">
-    <value>Linked in</value>
+    <value>Linket i</value>
   </data>
   <data name="lblMissingPagesResource1.Text" xml:space="preserve">
-    <value>Missing Pages</value>
+    <value>Manglende sider</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namespace</value>
+    <value>Navnerum</value>
   </data>
   <data name="lblOccurrenceCountResource1.Text" xml:space="preserve">
-    <value>Matches</value>
+    <value>Søgeresultater</value>
   </data>
   <data name="lblPageResource1.Text" xml:space="preserve">
-    <value>Page Name</value>
+    <value>Sidenavn</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblRebuildIndexInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: rebuilding a search index might take some time. Please do not close this screen while the index is being rebuilt. After the index is rebuilt, it is recommended to restart the application.</value>
+    <value>&lt;b&gt;Advarsel&lt;/b&gt;: Genopbygning af søgeindekset kan tage noget tid. Luk venligst ikke dette vindue, mens indeks genopbygges. Efter indekset er genopbygget, anbefales det at genstarte applikationen.</value>
   </data>
   <data name="lblSizeResource1.Text" xml:space="preserve">
-    <value>Size</value>
+    <value>Størrelse</value>
   </data>
   <data name="lblStatusResource1.Text" xml:space="preserve">
     <value>Status</value>
@@ -238,7 +238,7 @@
     <value />
   </data>
   <data name="lblWordCountResource1.Text" xml:space="preserve">
-    <value>Words</value>
+    <value>Ord</value>
   </data>
   <data name="PageResource2.Title" xml:space="preserve">
     <value>Administration</value>

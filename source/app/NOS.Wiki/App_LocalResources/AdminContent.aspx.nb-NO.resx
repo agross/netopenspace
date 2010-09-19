@@ -118,166 +118,166 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCopyFromResource1.Text" xml:space="preserve">
-    <value>Go</value>
+    <value>Ok</value>
   </data>
   <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
-    <value>Copy the content of the same layout area from the selected Namespace</value>
+    <value>Kopier innholdet av samme layout-omr&amp;aring;de fra valgte Namespace</value>
   </data>
   <data name="lblCopyFromResource1.Text" xml:space="preserve">
-    <value>Copy content from:</value>
+    <value>Kopier innhold fra:</value>
   </data>
   <data name="btnAccessDeniedNoticeResource1.Text" xml:space="preserve">
-    <value>Access Denied Notice (Global)</value>
+    <value>Varsel om adgangsnekt</value>
   </data>
   <data name="btnAccessDeniedNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnAccountActivationMessageResource1.Text" xml:space="preserve">
-    <value>Account Activation Message (Global)</value>
+    <value>Kontoaktiviserings-melding (global)</value>
   </data>
   <data name="btnAccountActivationMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnApproveDraftMessageResource1.Text" xml:space="preserve">
-    <value>Approve Draft Message (Global)</value>
+    <value>Godkjenn kladd (global)</value>
   </data>
   <data name="btnApproveDraftMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Avbryt</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancel and return</value>
+    <value>Avbryt og tilbake</value>
   </data>
   <data name="btnDiscussionChangeMessageResource1.Text" xml:space="preserve">
-    <value>Discussion Change Message (Global)</value>
+    <value>Melding om endring av diskusjonen</value>
   </data>
   <data name="btnDiscussionChangeMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
     <value>Editing Page Notice (Namespace-specific)</value>
   </data>
   <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnFooterResource1.Text" xml:space="preserve">
-    <value>Footer</value>
+    <value>Bunn</value>
   </data>
   <data name="btnFooterResource1.ToolTip" xml:space="preserve">
-    <value>Edit the global footer</value>
+    <value>Rediger global bunn</value>
   </data>
   <data name="btnHeaderResource1.Text" xml:space="preserve">
     <value>Header</value>
   </data>
   <data name="btnHeaderResource1.ToolTip" xml:space="preserve">
-    <value>Edit the global header</value>
+    <value>Rediger globalt hode</value>
   </data>
   <data name="btnHtmlHeadResource1.Text" xml:space="preserve">
-    <value>HTML Head</value>
+    <value>HTML-hode</value>
   </data>
   <data name="btnHtmlHeadResource1.ToolTip" xml:space="preserve">
-    <value>Edit the HTML Head tag</value>
+    <value>Rediger HTML-hodet</value>
   </data>
   <data name="btnLoginNoticeResource1.Text" xml:space="preserve">
-    <value>Login Notice (Global)</value>
+    <value>Innloggingsmelding</value>
   </data>
   <data name="btnLoginNoticeResource1.ToolTip" xml:space="preserve">
     <value>Edit</value>
   </data>
   <data name="btnPageChangeMessageResource1.Text" xml:space="preserve">
-    <value>Page Change Message (Global)</value>
+    <value>Sideendrings-melding (global)</value>
   </data>
   <data name="btnPageChangeMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnPageFooterResource1.Text" xml:space="preserve">
-    <value>Page Footer</value>
+    <value>Bunnen p&amp;aring; siden</value>
   </data>
   <data name="btnPageFooterResource1.ToolTip" xml:space="preserve">
-    <value>Edit the page footer</value>
+    <value>Rediger bunnen p&amp;aring; siden</value>
   </data>
   <data name="btnPageHeaderResource1.Text" xml:space="preserve">
-    <value>Page Header</value>
+    <value>Hodet p&amp;aring; siden</value>
   </data>
   <data name="btnPageHeaderResource1.ToolTip" xml:space="preserve">
-    <value>Edit the page header</value>
+    <value>Rediger hodet p&amp;aring; siden</value>
   </data>
   <data name="btnPasswordResetProcedureMessageResource1.Text" xml:space="preserve">
-    <value>Password Reset Procedure Message (Global)</value>
+    <value>Melding om nullstilling av passordet (Global)</value>
   </data>
   <data name="btnPasswordResetProcedureMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnRegisterNoticeResource1.Text" xml:space="preserve">
-    <value>Register Notice (Global)</value>
+    <value>Registreringsvarsel (Global)</value>
   </data>
   <data name="btnRegisterNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Lagre</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save the content</value>
+    <value>Lagre innholdet</value>
   </data>
   <data name="btnSidebarResource1.Text" xml:space="preserve">
-    <value>Sidebar</value>
+    <value>Sidelinje</value>
   </data>
   <data name="btnSidebarResource1.ToolTip" xml:space="preserve">
-    <value>Edit the sidebar (menu)</value>
+    <value>Rediger sidemenyen (meny)</value>
   </data>
   <data name="lblAccessDeniedNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the access denied page (if not empty).</value>
+    <value>Meldingen som erstatter informasjonen som vises på Tilgang nektet-siden.</value>
   </data>
   <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to a newly registered user that have to activate her account.</value>
+    <value>Epost-meldingen som sendes nye brukere som må aktivisere kontoen</value>
   </data>
   <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to editor/administrators when a page draft requires approval.</value>
+    <value>Meldingen sendt til redaktører / administratorer når et utkast skal godkjennes</value>
   </data>
   <data name="lblContentResource1.Text" xml:space="preserve">
-    <value>Content Editing</value>
+    <value>Innholdsredigering</value>
   </data>
   <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to users when a new message is poste to a discussion.</value>
+    <value>Epost-meldingen som sendes brukerne når det legges inn ny melding i en diskusjon.</value>
   </data>
   <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message displayed on top of the editing page.</value>
+    <value>Meldingen som vises på toppen av den siden man redigerer</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: the actual layout of your current theme might differ from the one displayed here.</value>
+    <value>&lt;b&gt;OBS&lt;/b&gt;: Utseendet er ikke nødvendigivs likt det som vises her.</value>
   </data>
   <data name="lblLoginNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the login screen (if not empty).</value>
+    <value>Meldingen som vises &amp;oslash;verst p&amp;aring; innloggings-skjermbildet</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
     <value>Namespace</value>
   </data>
   <data name="lblOtherResource1.Text" xml:space="preserve">
-    <value>Other Elements</value>
+    <value>Andre elementer</value>
   </data>
   <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to users when a page is modified.</value>
+    <value>Eposten som sendes brukerne n&amp;aring;r en side endres</value>
   </data>
   <data name="lblPageContentResource1.Text" xml:space="preserve">
     <value>Page Content</value>
   </data>
   <data name="lblPageLayoutResource1.Text" xml:space="preserve">
-    <value>Page Layout Elements (Namespace-Specific)</value>
+    <value>Elementer i side-layouten (Namespace-Specific)</value>
   </data>
   <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to when a user want to reset her password.</value>
+    <value>Eposten som sendes når en bruker vil endre passordet</value>
   </data>
   <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the register screen (if not empty).</value>
+    <value>Melding som vises &amp;oslash;verst p&amp;aring; registrerings-siden</value>
   </data>
   <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Administration</value>
+    <value>Administrasjon</value>
   </data>
   <data name="pnlEditorResource1.GroupingText" xml:space="preserve">
     <value />

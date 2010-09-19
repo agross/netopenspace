@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value>عدم انتخاب سرویس دهنده</value>
+  </data>
+  <data name="btnCopySettingsResource1.Text" xml:space="preserve">
+    <value>کپی کردن</value>
+  </data>
+  <data name="btnCopySettingsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteDllResource1.Text" xml:space="preserve">
+    <value>حذف کردن</value>
+  </data>
+  <data name="btnDeleteDllResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDisableResource1.Text" xml:space="preserve">
+    <value>از کار انداختن</value>
+  </data>
+  <data name="btnDisableResource1.ToolTip" xml:space="preserve">
+    <value>از کار انداختن سرویس دهنده</value>
+  </data>
+  <data name="btnEnableResource1.Text" xml:space="preserve">
+    <value>راه اندازی</value>
+  </data>
+  <data name="btnEnableResource1.ToolTip" xml:space="preserve">
+    <value>راه اندازی سرویس دهنده</value>
+  </data>
+  <data name="btnMigrateFilesResource1.Text" xml:space="preserve">
+    <value>مهاجرت کردن</value>
+  </data>
+  <data name="btnMigrateFilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnMigratePagesResource1.Text" xml:space="preserve">
+    <value>مهاجرت کردن</value>
+  </data>
+  <data name="btnMigratePagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnMigrateUsersResource1.Text" xml:space="preserve">
+    <value>مهاجرت کردن</value>
+  </data>
+  <data name="btnMigrateUsersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDefaultProvidersResource1.Text" xml:space="preserve">
+    <value>ذخیره کردن</value>
+  </data>
+  <data name="btnSaveDefaultProvidersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>ذخیره کردن</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value>ذخیره کردن رشته پیکربندی</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>انتخاب کردن</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>انتخاب کردن</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUnloadResource1.Text" xml:space="preserve">
+    <value>خالی کردن</value>
+  </data>
+  <data name="btnUnloadResource1.ToolTip" xml:space="preserve">
+    <value>خالی کردن سرویس دهنده</value>
+  </data>
+  <data name="btnUploadResource1.Text" xml:space="preserve">
+    <value>بارگزاری</value>
+  </data>
+  <data name="btnUploadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAuthorResource1.Text" xml:space="preserve">
+    <value>نویسنده</value>
+  </data>
+  <data name="lblConfigHelpResource1.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="lblConfigurationStringTitleResource1.Text" xml:space="preserve">
+    <value>رشته پیکربندی</value>
+  </data>
+  <data name="lblCopySettingsInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;توجه&lt;b/&gt;: دایر شده تا کشف شود، سرویس دهنده مقصد باید توسط ابزار بارگزاری، بارگزاری شده باشد.&lt;br /&gt;فایل ثبت وقایع و تغییرات جدید کپی نخواهند شد.</value>
+  </data>
+  <data name="lblCopySettingsResource1.Text" xml:space="preserve">
+    <value>تنظیمات کپی و داده‌های مرتبط</value>
+  </data>
+  <data name="lblCopySettingsResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCopySettingsResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDataMigrationResource1.Text" xml:space="preserve">
+    <value>مهاجرت داده‌ها</value>
+  </data>
+  <data name="lblDefaultProvCacheResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده Cache</value>
+  </data>
+  <data name="lblDefaultProvFilesResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده فایل‌ها</value>
+  </data>
+  <data name="lblDefaultProvidersResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultProvidersResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultProvidersTitleResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های پیش‌فرض</value>
+  </data>
+  <data name="lblDefaultProvPagesResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده صفحات</value>
+  </data>
+  <data name="lblDefaultProvUsersResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده کاربران</value>
+  </data>
+  <data name="lblDisplayResource1.Text" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="lblDllResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDllResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateFilesResource1.Text" xml:space="preserve">
+    <value>مهاجرت فایل‌ها و داده‌های مرتبط</value>
+  </data>
+  <data name="lblMigrateFilesResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateFilesResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigratePagesResource1.Text" xml:space="preserve">
+    <value>مهاجرت صفحات و داده‌های مرتبط</value>
+  </data>
+  <data name="lblMigratePagesResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigratePagesResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateUsersInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;توجه&lt;b/&gt;: مهاجرت دادن حساب‌های کاربری تمام کلمات کاربری کاربران را مجددا تنظیم می‌کند (یک پیام اطلاع‌رسانی به تمام کاربران ارسال خواهد شد)</value>
+  </data>
+  <data name="lblMigrateUsersResource1.Text" xml:space="preserve">
+    <value>مهاجرت کاربران و داده‌های مرتبط</value>
+  </data>
+  <data name="lblMigrateUsersResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateUsersResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="lblProviderConfigHelpResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderConfigHelpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderDllResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProvidersResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌ها</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSettingsSourceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSettingsSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUploadInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;توجه&lt;b/&gt;: حذف کردن یک DLL ، سرویس دهنده آن را تا راه‌اندازی مجدد بعدی ویکی از کار نمی‌اندازد، &lt;br /&gt; اما بارگزاری یک DLL جدید به طور خودکار باعث بارگیری سرویس دهنده‌های آن می‌شود.</value>
+  </data>
+  <data name="lblUploadNewDllResource1.Text" xml:space="preserve">
+    <value>بارگزاری DLL جدید</value>
+  </data>
+  <data name="lblUploadProvidersTitleResource1.Text" xml:space="preserve">
+    <value>مدیریت DLL های سرویس دهنده‌ها</value>
+  </data>
+  <data name="lblUploadResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUploadResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVersionResource1.Text" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="lstDllsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstFilesDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstFilesSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPagesDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPagesSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstSettingsDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstUsersDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstUsersSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>مدیریت</value>
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlProviderDetailsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlProviderDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoCacheResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های Cache</value>
+  </data>
+  <data name="rdoCacheResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoFilesResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های فایل‌ها</value>
+  </data>
+  <data name="rdoFilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoFormatterResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های شکل دهنده</value>
+  </data>
+  <data name="rdoFormatterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoPagesResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های صفحات</value>
+  </data>
+  <data name="rdoPagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoUsersResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های کاربران</value>
+  </data>
+  <data name="rdoUsersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfigurationStringResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfigurationStringResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="upDllResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUpdateStatusResource1.Text" xml:space="preserve">
+    <value>به روزرسانی وضعیت</value>
+  </data>
+  <data name="lblCannotDisableResource1.Text" xml:space="preserve">
+    <value>نمی‌توان سرویس دهنده را از کار انداخت زیرا سرویس دهنده پیش‌فرض است یا، &lt;br /&gt; در حالت سرویس دهنده صفحات، صفحه پیش‌فرض فضای نام ریشه را مدیریت می‌کند</value>
+  </data>
+  <data name="lblCannotDisableResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrationInfoResource2.Text" xml:space="preserve">
+    <value>&lt;b&gt;توجه ۱&lt;b/&gt;: همیشه قبل از انجام عملیات مهاجرت یک پشتیبان کامل از تمام داده‌های خود بگیرید.&lt;br /&gt;&lt;b&gt;توجه ۲&lt;/b&gt;: عملیات مهاجرت معمولا چندین دقیقه طول می‌کشد، در حین انجام این کار، هیج فعالیتی روی ویکی انجام ندهید و این صفحه را نبندید.&lt;b&gt;توجه ۳&lt;b/&gt;: سرویس دهنده مقصد باید کاملا خالی باشد: اگر شامل هر داده‌ای باشد ممکن است باعث مباحث سازگاری شود. برای جزئیات بیشتر به مستندات سرویس دهنده مقصد مراجعه کنید.&lt;br /&gt;&lt;b&gt;اتمام زمان&lt;/b&gt;: به شدت توصیه می‌شود که قبل از مهاجرت دادن داده‌ها پارامتر مربوط به اتمام زمان اجرا در web.config را افزایش دهید.</value>
+  </data>
+  <data name="btnAutoUpdateProvidersResource1.Text" xml:space="preserve">
+    <value>سرویس دهنده‌های خود به روز شو</value>
+  </data>
+  <data name="btnAutoUpdateProvidersResource1.ToolTip" xml:space="preserve">
+    <value>به صورت خودکار تمام سرویس دهنده‌های نصب شده از هر نوع را به روزرسانی کن</value>
+  </data>
+</root>

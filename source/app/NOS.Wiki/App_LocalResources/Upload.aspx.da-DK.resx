@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Here you can manage files and directories stored in the Wiki.</value>
+    <value>Her kan du administrere filer og foldere gemt i wiki'en.</value>
   </data>
   <data name="lblManagementTitleResource1.Text" xml:space="preserve">
-    <value>Fil håndtering</value>
+    <value>Filadministration</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Side uden titel</value>
+    <value>Unavngiven side</value>
   </data>
 </root>

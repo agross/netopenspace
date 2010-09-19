@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Navigationsstier guide dig gennem indholdet af Wiki.</value>
+    <value>Navigationsstier kan guide dig gennem wiki'ens indhold.</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Her kan du starte med at kikke på en sti</value>
+    <value>Her kan du starte med at følge en sti.</value>
   </data>
   <data name="lblNavPathResource1.Text" xml:space="preserve">
-    <value>Navigations stier</value>
+    <value>Navigationsstier</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Side uden titel</value>
+    <value>Unavngiven side</value>
   </data>
 </root>

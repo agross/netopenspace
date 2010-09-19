@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblFooterDivResource1.Text" xml:space="preserve">
     <value />
@@ -127,15 +127,15 @@
     <value />
   </data>
   <data name="lnkMainPageResource1.Text" xml:space="preserve">
-    <value>Main Page</value>
+    <value>Hoofdpagina</value>
   </data>
   <data name="lnkMainPageResource1.ToolTip" xml:space="preserve">
-    <value>Go to the main page of the current namespace</value>
+    <value>Ga naar de hoofdpagina van de huidige namespace</value>
   </data>
   <data name="lnkPreviousPageResource1.Text" xml:space="preserve">
-    <value>« Back to previous page</value>
+    <value>« Terug naar vorige pagina</value>
   </data>
   <data name="lnkPreviousPageResource1.ToolTip" xml:space="preserve">
-    <value>Go to the previous page</value>
+    <value>Ga naar de vorige pagina</value>
   </data>
 </root>

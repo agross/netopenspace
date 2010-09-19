@@ -124,19 +124,19 @@
     <value />
   </data>
   <data name="lblActivityResource1.Text" xml:space="preserve">
-    <value>Recent activity by this user:</value>
+    <value>Nylig aktivitet af denne bruger:</value>
   </data>
   <data name="lblGravatarResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblMessageInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to this user. &lt;b&gt;Note&lt;/b&gt;: your email address won't be disclosed.</value>
+    <value>Du kan sende en e-mail til denne bruger. &lt;b&gt;Bemærk:&lt;/b&gt; Din e-mail-adresse vil ikke blive vist til modtageren.</value>
   </data>
   <data name="lblMessageTitleResource1.Text" xml:space="preserve">
-    <value>Send a Message</value>
+    <value>Send en besked</value>
   </data>
   <data name="lblNoActivityResource1.Text" xml:space="preserve">
-    <value>&lt;i&gt;No recent activity&lt;/i&gt;</value>
+    <value>&lt;i&gt;Ingen nylig aktivitet&lt;/i&gt;</value>
   </data>
   <data name="lblRecentActivityResource1.Text" xml:space="preserve">
     <value />
@@ -148,13 +148,13 @@
     <value />
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
-    <value>Subject</value>
+    <value>Emne</value>
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>##NAME## - User's Details</value>
+    <value>##NAME## - brugerdetaljer</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Titel</value>
   </data>
   <data name="pnlMessageResource1.GroupingText" xml:space="preserve">
     <value />
@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Indhold er påkrævet</value>
   </data>
   <data name="rfvBodyResource1.Text" xml:space="preserve">
     <value />
@@ -172,7 +172,7 @@
     <value />
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Emne er påkrævet</value>
   </data>
   <data name="rfvSubjectResource1.Text" xml:space="preserve">
     <value />

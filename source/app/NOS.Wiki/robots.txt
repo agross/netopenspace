@@ -10,6 +10,7 @@ Disallow: /History.aspx
 Disallow: /User.aspx
 Disallow: /RandPage.aspx
 Disallow: /Register.aspx
+Disallow: /RSS.aspx
 Disallow: /AccessDenied.aspx
 Disallow: /Language.aspx
 Disallow: /GetFile.aspx

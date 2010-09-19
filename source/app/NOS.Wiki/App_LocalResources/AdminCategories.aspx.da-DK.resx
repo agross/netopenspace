@@ -118,88 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="rdoBulkAddResource2.Text" xml:space="preserve">
-    <value>Add selected categories to selected pages, preserving existing categories mapping</value>
+    <value>Tilføj valgte kategorier til valgte sider, hvor sidernes eksisterende kategorier bibeholdes</value>
   </data>
   <data name="rdoBulkAddResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rdoBulkReplaceResource2.Text" xml:space="preserve">
-    <value>For selected pages, replace existing categories mapping with selected categories (selecting no categories causes the pages to be uncategorized)</value>
+    <value>Erstat de valgte siders kategorier, med de valgte kategorier (hvis der er ingen valgte kategorier, vil siderne blive ukategoriserede)</value>
   </data>
   <data name="rdoBulkReplaceResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnBulkBackResource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Tilbage</value>
   </data>
   <data name="btnBulkBackResource1.ToolTip" xml:space="preserve">
-    <value>Back to the Category list</value>
+    <value>Tilbage til kategorilisten</value>
   </data>
   <data name="btnBulkManageResource1.Text" xml:space="preserve">
-    <value>Bulk Manage</value>
+    <value>Masseadministrer</value>
   </data>
   <data name="btnBulkManageResource1.ToolTip" xml:space="preserve">
-    <value>Manage categories binding for many pages at once</value>
+    <value>Administrer kategori binding for mange sider på en gang</value>
   </data>
   <data name="btnBulkSaveResouce1.Text" xml:space="preserve">
-    <value>Save Binding</value>
+    <value>Gem binding</value>
   </data>
   <data name="btnBulkSaveResouce1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
-    <value>1. Select Pages</value>
+    <value>1. Vælg sider</value>
   </data>
   <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
-    <value>2. Select Categories</value>
+    <value>2. Vælg kategorier</value>
   </data>
   <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
-    <value>3. Save Binding</value>
+    <value>3. Gem binding</value>
   </data>
   <data name="btnBackResource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Tilbage</value>
   </data>
   <data name="btnBackResource1.ToolTip" xml:space="preserve">
-    <value>Back to the Category list</value>
+    <value>Tilbage til kategorilisten</value>
   </data>
   <data name="btnDeleteCategoryResource1.Text" xml:space="preserve">
-    <value>Delete Category</value>
+    <value>Slet kategori</value>
   </data>
   <data name="btnDeleteCategoryResource1.ToolTip" xml:space="preserve">
-    <value>Delete this Category</value>
+    <value>Slet denne kategori</value>
   </data>
   <data name="btnMergeResource1.Text" xml:space="preserve">
-    <value>Merge</value>
+    <value>Sammenlæg</value>
   </data>
   <data name="btnMergeResource1.ToolTip" xml:space="preserve">
-    <value>Merges the Category</value>
+    <value>Sammenlægger kategorien</value>
   </data>
   <data name="btnNewCategoryResource1.Text" xml:space="preserve">
-    <value>Create</value>
+    <value>Opret</value>
   </data>
   <data name="btnNewCategoryResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Omdøb</value>
   </data>
   <data name="btnRenameResource1.ToolTip" xml:space="preserve">
-    <value>Rename the Category</value>
+    <value>Omdøb kategorien</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Select this Category</value>
+    <value>Vælg denne kategori</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Select this Category</value>
+    <value>Vælg denne kategori</value>
   </data>
   <data name="cvNewCategoryResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Category Name</value>
+    <value>Ugyldigt kategorinavn</value>
   </data>
   <data name="cvNewCategoryResource1.Text" xml:space="preserve">
     <value />
@@ -208,7 +208,7 @@
     <value />
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Category Name</value>
+    <value>Ugyldigt kategorinavn</value>
   </data>
   <data name="cvNewNameResource1.Text" xml:space="preserve">
     <value />
@@ -217,13 +217,13 @@
     <value />
   </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Categories</value>
+    <value>Kategorier</value>
   </data>
   <data name="lblCurrentCategoryResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblDeleteCategoryResource1.Text" xml:space="preserve">
-    <value>Delete Category</value>
+    <value>Slet kategori</value>
   </data>
   <data name="lblDeleteResultResource1.Text" xml:space="preserve">
     <value />
@@ -232,13 +232,13 @@
     <value />
   </data>
   <data name="lblEditTitleResource1.Text" xml:space="preserve">
-    <value>Category Operations</value>
+    <value>Kategorifunktioner</value>
   </data>
   <data name="lblMergeCategoryTitleResource1.Text" xml:space="preserve">
-    <value>Merge Category</value>
+    <value>Administer kategori</value>
   </data>
   <data name="lblMergeIntoResource1.Text" xml:space="preserve">
-    <value>Merge into</value>
+    <value>Sammenlæg med</value>
   </data>
   <data name="lblMergeResultResource1.Text" xml:space="preserve">
     <value />
@@ -247,13 +247,13 @@
     <value />
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namespace</value>
+    <value>Navnerum</value>
   </data>
   <data name="lblNewCategoryResource1.Text" xml:space="preserve">
-    <value>New Category</value>
+    <value>Ny kategori</value>
   </data>
   <data name="lblNewCategoryResultResource1.Text" xml:space="preserve">
     <value />
@@ -262,16 +262,16 @@
     <value />
   </data>
   <data name="lblNewNameResource1.Text" xml:space="preserve">
-    <value>New Name</value>
+    <value>Nyt navn</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
-    <value>Pages</value>
+    <value>Sider</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblRenameCategoryTitleResource1.Text" xml:space="preserve">
-    <value>Rename Category</value>
+    <value>Omdøb kategori</value>
   </data>
   <data name="lblRenameResultResource1.Text" xml:space="preserve">
     <value />
@@ -301,7 +301,7 @@
     <value />
   </data>
   <data name="rfvNewCategoryResource1.ErrorMessage" xml:space="preserve">
-    <value>Category Name is required</value>
+    <value>Kategorinavn er påkrævet</value>
   </data>
   <data name="rfvNewCategoryResource1.Text" xml:space="preserve">
     <value />
@@ -310,7 +310,7 @@
     <value />
   </data>
   <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>New Name is required</value>
+    <value>Nyt navn er påkrævet</value>
   </data>
   <data name="rfvNewNameResource1.Text" xml:space="preserve">
     <value />
