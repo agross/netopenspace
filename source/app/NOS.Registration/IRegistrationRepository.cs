@@ -7,6 +7,5 @@ namespace NOS.Registration
 		void Save(User user);
 		IEnumerable<User> GetAll();
 		User FindByUserName(string userName);
-		void Delete(string userName);
 	}
 }

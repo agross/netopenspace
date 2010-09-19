@@ -32,7 +32,6 @@ namespace NOS.Registration
 			_file = file;
 		}
 
-		#region IRegistrationRepository Members
 		public void Save(User user)
 		{
 			_synchronizer.Lock(() =>
@@ -76,19 +75,5 @@ namespace NOS.Registration
 
 			return user;
 		}
-
-		public void Delete(string userName)
-		{
-			_synchronizer.Lock(() =>
-				{
-					var allUsers = GetAll().ToList();
-					var toRemove = allUsers.Where(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)).ToList();
-					toRemove.Each(x => allUsers.Remove(x));
-
-					string serialized = _serializer.Serialize(allUsers);
-					_writer.Write(_file, serialized);
-				});
-		}
-		#endregion
 	}
 }

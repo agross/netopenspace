@@ -187,9 +187,7 @@ namespace NOS.Registration
 
 							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, _configuration.Comment, newContent);
 
-							_registrationRepository.Delete(user.UserName);
-
-							_logger.Info("User entry written successfully, registration data has been deleted", user.UserName);
+							_logger.Info("User entry written successfully", user.UserName);
 						}
 						catch (Exception ex)
 						{

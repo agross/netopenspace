@@ -124,36 +124,4 @@ namespace NOS.Registration.Tests
 
 		It should_return_null = () => User.ShouldBeNull();
 	}
-
-	[Subject(typeof(RegistrationRepository))]
-	public class When_an_existing_user_is_deleted : With_user_data
-	{
-		Establish context = () => Reader
-		                          	.Stub(x => x.Read("file"))
-		                          	.Return(
-		                          	"[ { UserName: \"torsten\", Data: { Xing: \"foo\", Twitter: \"bar\" } }, { UserName: \"alex\", Data: { Xing: \"baz\" } } ]");
-
-		Because of = () => Repository.Delete("torsten");
-
-		It should_remove_the_user_from_the_list = () => Writer.AssertWasCalled(x => x.Write(null, null),
-		                                                                       o => o.Constraints(Is.Equal("file"),
-		                                                                                          Is.Matching<string>(
-		                                                                                          	x => !x.Contains("torsten"))));
-
-		It should_retain_all_other_users = () => Writer.AssertWasCalled(x => x.Write(null, null),
-		                                                                o => o.Constraints(Is.Equal("file"),
-		                                                                                   Text.Contains("alex")));
-	}
-
-	[Subject(typeof(RegistrationRepository))]
-	public class When_a_user_is_deleted_and_no_users_exist : With_user_data
-	{
-		Establish context = () => Reader
-		                          	.Stub(x => x.Read("file"))
-		                          	.Return(null);
-
-		Because of = () => Repository.Delete("torsten");
-
-		It should_succeed = () => true.ShouldBeTrue();
-	}
 }

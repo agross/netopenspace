@@ -230,8 +230,6 @@ namespace NOS.Registration.Tests
 			                                                            Arg<string>.Is.Equal(UserInfo.Email),
 			                                                            Arg<string>.Is.Equal(Configuration.Comment),
 			                                                            Arg<bool>.Is.Equal(false)));
-
-		It should_delete_the_user = () => RegistrationRepository.AssertWasCalled(x => x.Delete("user"));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -354,10 +352,10 @@ namespace NOS.Registration.Tests
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
-		It should_not_load_users = () => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
+		It should_not_load_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
 
-		It should_not_save_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
-
-		It should_not_delete_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Delete(Arg<string>.Is.Anything));
+		It should_not_save_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
 	}
 }
