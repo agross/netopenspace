@@ -26,11 +26,11 @@ namespace NOS.Registration
 
 		string LoadTemplate(string userName, bool failed)
 		{
-			string file = "AutoRegistrationSuccessfulMessage.cs";
+			string file = typeof(AutoRegistrationPlugin).FullName + ".SuccessMessage";
 
 			if (failed)
 			{
-				file = "AutoRegistrationFailedMessage.cs";
+				file = typeof(AutoRegistrationPlugin).FullName + ".FailureMessage";
 			}
 
 			var template = _fileReader.Read(file);
@@ -45,7 +45,7 @@ namespace NOS.Registration
 		{
 			_host.SendEmail(userEmail,
 							_settings.SenderEmail,
-							String.Format("{0} - {1}", subject, _settings.WikiTitle),
+							String.Format("{0} - {1}", _settings.WikiTitle, subject),
 			                message,
 			                false);
 		}

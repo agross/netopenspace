@@ -17,8 +17,8 @@ namespace NOS.Registration
 		readonly IPageFormatter _pageFormatter;
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
-		readonly ISynchronizer _synchronizer;
 		readonly ISettings _settings;
+		readonly ISynchronizer _synchronizer;
 		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
@@ -198,10 +198,12 @@ namespace NOS.Registration
 					finally
 					{
 						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
-						if (failed)
-						{
-							_notificationSender.SendMessage(e.User.Username, _settings.ContactEmail, _configuration.Comment, true);
-						}
+						_logger.Info(String.Format("Sent activation message to user. User entry {0}.", failed ? "failed" : "successful"),
+						             e.User.Username);
+
+						_notificationSender.SendMessage(e.User.Username, _settings.ContactEmail, _configuration.Comment, failed);
+						_logger.Info(String.Format("Sent activation message to administrator. User entry {0}.", failed ? "failed" : "successful"),
+									 e.User.Username);
 					}
 				});
 		}
