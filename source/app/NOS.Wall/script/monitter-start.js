@@ -1,5 +1,20 @@
 ﻿$(document).ready(function()
 {
+	String.prototype.twitpicify = function () {
+		var prepend = [];
+		var str = this.replace(/<a href="http:\/\/twitpic\.com\/([a-z0-9]+)">http:\/\/twitpic\.com\/[a-z0-9]+<\/a>/gi, function (m) {
+			var img_id = RegExp.$1;
+			prepend.push($("<div>")
+							.append($("<a>")
+									.attr("href", "http://twitpic.com/" + img_id)
+									.attr("target", "_blank")
+										.append($("<img>").attr("src", "http://twitpic.com/show/thumb/" + img_id)))
+							.html());
+			return '';
+		});
+		return prepend.join("") + str;
+	};
+	
 	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
 		function(json)
 		{
@@ -51,7 +66,7 @@
 							.append($('<div>')
 								.addClass('bubble')
 								.append($('<p>')
-									.html(this.text.linkify().linkuser().linktag())))
+									.html(this.text.linkify().linkuser().linktag().twitpicify())))
 							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')
