@@ -7,7 +7,7 @@
 * [AllPages.aspx|All Pages]
 
 * [Login.aspx|Login/Logout]
-* [Register|Register]
+* [Register.aspx|Register]
 * [Profile.aspx|Your Profile]
 * [Language.aspx|Language Selection]
 
@@ -35,7 +35,7 @@
 * [Category.aspx|Nach Kategorien]
 
 * [Login.aspx|An-/Abmelden]
-* [Register|Registrieren]
+* [Register.aspx|Registrieren]
 * [Profile.aspx|Dein Profil]
 * [Language.aspx|Sprachauswahl]
 
