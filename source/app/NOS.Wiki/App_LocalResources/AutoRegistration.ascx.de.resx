@@ -133,7 +133,7 @@
     <value>Rechnungsadresse</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
-    <value>Name für deine Namenskarte</value>
+    <value>Vor- und Nachname für die Namenskarte</value>
   </data>
   <data name="lblPicture.Text" xml:space="preserve">
     <value>Bild-URL</value>
