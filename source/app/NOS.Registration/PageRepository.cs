@@ -9,7 +9,7 @@ namespace NOS.Registration
 	{
 		public void Save(PageInfo page, string title, string userName, string comment, string content)
 		{
-			Pages.ModifyPage(page, title, userName, DateTime.Now, comment, content, new string[] { }, null, SaveMode.Normal);
+			Pages.ModifyPage(page, title, userName, DateTime.Now, comment, content, new string[] { }, null, SaveMode.Backup);
 		}
 
 		public PageInfo FindPage(string pageName)
