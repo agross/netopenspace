@@ -9,11 +9,13 @@
 		process: function(tweet, link) {
 			var rematch = yfrog.match(link);
 			var img_id = RegExp.$1;
-			return $("<a>")
+			var anchor = $("<a>")
 				.attr("href", link)
-				.attr("target", "_blank")
+				.attr("target", "_blank");
+			return anchor
+					.clone()
 					.append($("<img>").attr("src", "http://yfrog.com/" + img_id + ".th.jpg"))
-				.prependTo(tweet);
+				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
 	
@@ -26,11 +28,13 @@
 		process: function(tweet, link) {
 			var rematch = twitpic.match(link);
 			var img_id = RegExp.$1;
-			return $("<a>")
+			var anchor = $("<a>")
 				.attr("href", link)
-				.attr("target", "_blank")
+				.attr("target", "_blank");
+			return anchor
+					.clone()
 					.append($("<img>").attr("src", "http://twitpic.com/show/thumb/" + img_id))
-				.prependTo(tweet);
+				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
 
