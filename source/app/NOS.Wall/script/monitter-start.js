@@ -47,7 +47,7 @@
 			return tweet.append($("<a>")
 				.attr("href", link)
 				.attr("target", "_blank")
-				.html(link));
+				.text(link));
 		}
 	};
 	
@@ -61,7 +61,7 @@
 			return tweet.append($("<a>")
 				.attr("href", "http://twitter.com/" + u)
 				.attr("target", "_blank")
-				.html(user));
+				.text(user));
 		}
 	};
 	
@@ -76,7 +76,7 @@
 				.append($("<a>")
 				.attr("href", "http://search.twitter.com/search?q=" + t)
 				.attr("target", "_blank")
-				.html(tag));
+				.text(tag));
 		}
 	};
 	
@@ -128,7 +128,7 @@
 		};
 		
 		// console.log("result: <" + result.html() + ">");	
-		return $(this).html(result);
+		return $(this).append(result);
 	};
 	
 	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
@@ -192,7 +192,7 @@
 										.addClass('avatar')
 										.attr('src', this.profile_image_url))
 									.append($('<span>')
-										.html(this.from_user))));
+										.text(this.from_user))));
 						return element;
 					},
 					showTweet: function(index, limit) {
