@@ -1,18 +1,130 @@
 ﻿$(document).ready(function()
 {
-	String.prototype.twitpicify = function () {
-		var prepend = [];
-		var str = this.replace(/<a href="http:\/\/twitpic\.com\/([a-z0-9]+)">http:\/\/twitpic\.com\/[a-z0-9]+<\/a>/gi, function (m) {
+	var yfrog = {
+		name: "yfrog",
+		match: function (text)
+		{
+			return text.match(/^http:\/\/yfrog\.com\/([a-z0-9]+)/i);
+		},
+		process: function(tweet, link) {
+			var rematch = yfrog.match(link);
 			var img_id = RegExp.$1;
-			prepend.push($("<div>")
-							.append($("<a>")
-									.attr("href", "http://twitpic.com/" + img_id)
-									.attr("target", "_blank")
-										.append($("<img>").attr("src", "http://twitpic.com/show/thumb/" + img_id)))
-							.html());
-			return '';
-		});
-		return prepend.join("") + str;
+			return $("<a>")
+				.attr("href", link)
+				.attr("target", "_blank")
+					.append($("<img>").attr("src", "http://yfrog.com/" + img_id + ".th.jpg"))
+				.prependTo(tweet);
+		}
+	};
+	
+	var twitpic = {
+		name: "twitpic",
+		match: function (text)
+		{
+			return text.match(/^http:\/\/twitpic\.com\/([a-z0-9]+)/i);
+		},
+		process: function(tweet, link) {
+			var rematch = twitpic.match(link);
+			var img_id = RegExp.$1;
+			return $("<a>")
+				.attr("href", link)
+				.attr("target", "_blank")
+					.append($("<img>").attr("src", "http://twitpic.com/show/thumb/" + img_id))
+				.prependTo(tweet);
+		}
+	};
+
+	var link = {
+		name: "link",
+		match: function (text) {
+			return text.match(/^[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=]+/i);
+		},
+		process: function(tweet, link) {
+			return tweet.append($("<a>")
+				.attr("href", link)
+				.attr("target", "_blank")
+				.html(link));
+		}
+	};
+	
+	var user = {
+		name: "user",
+		match: function (text) {
+			return text.match(/^@[\w-äöüß]+/i);
+		},
+		process: function(tweet, user) {
+			var u = user.replace("@", "")
+			return tweet.append($("<a>")
+				.attr("href", "http://twitter.com/" + u)
+				.attr("target", "_blank")
+				.html(user));
+		}
+	};
+	
+	var tag = {
+		name: "tag",
+		match: function (text) {
+			return text.match(/^#[\w-äöüß]+/i);
+		},
+		process: function(tweet, tag) {
+			var t = tag.replace("#", "%23")
+			return tweet
+				.append($("<a>")
+				.attr("href", "http://search.twitter.com/search?q=" + t)
+				.attr("target", "_blank")
+				.html(tag));
+		}
+	};
+	
+	var whitespace = {
+		name: "whitespace",
+		match: function (text) {
+			return text.match(/^\s+/i);
+		},
+		process: function(tweet, text) {
+			return tweet
+				.append(text);
+		}
+	};
+	
+	var text = {
+		name: "text",
+		match: function (text) {
+			return text.match(/^\s*\S+\s*/i);
+		},
+		process: function(tweet, text) {
+			return tweet
+				.append(text);
+		}
+	};
+	
+	$.fn.tweet = function(tweet) {
+		var result = $("<span>");
+		var parsers = [whitespace, yfrog, twitpic, link, tag, user, text];
+		
+		// console.log("remainder: <" + tweet + ">");
+		while(tweet)
+		{
+			for(var k = 0; k < parsers.length; k++)
+			{
+				var parser = parsers[k];
+				var match = parser.match(tweet);
+				if (match)
+				{
+					match = match[0];
+					
+					// console.log(parser.name + ": <" + match + "> ");
+					parser.process(result, match);
+					
+					tweet = tweet.substring(match.length);
+					// console.log("remainder: <" + tweet + ">");
+					break;
+				}
+			}
+		};
+		
+		// console.log("result: <" + result.html() + ">");	
+		return $(this).html(result);
 	};
 	
 	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
@@ -65,8 +177,7 @@
 							$('<div>')
 							.append($('<div>')
 								.addClass('bubble')
-								.append($('<p>')
-									.html(this.text.linkify().linkuser().linktag().twitpicify())))
+								.append($('<p>').tweet(this.text)))
 							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')

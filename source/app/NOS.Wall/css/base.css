@@ -78,6 +78,7 @@ img {
 .bubble p img {
 	float: left;
 	margin: .3em .3em 0 0;
+	max-width: 70px;
 	max-height: 130px;
 }
 
