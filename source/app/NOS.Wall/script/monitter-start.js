@@ -14,7 +14,10 @@
 				.attr("target", "_blank");
 			return anchor
 					.clone()
-					.append($("<img>").attr("src", "http://yfrog.com/" + img_id + ".th.jpg"))
+					.append($("<img>")
+						.attr("src", "http://yfrog.com/" + img_id + ".th.jpg")
+						.data("preview", "http://yfrog.com/" + img_id + ":iphone")
+						.zoomer({ parent: $("#wrapper") }))
 				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
@@ -33,7 +36,10 @@
 				.attr("target", "_blank");
 			return anchor
 					.clone()
-					.append($("<img>").attr("src", "http://twitpic.com/show/thumb/" + img_id))
+					.append($("<img>")
+						.attr("src", "http://twitpic.com/show/mini/" + img_id)
+						.data("preview", "http://twitpic.com/show/thumb/" + img_id)
+						.zoomer({ parent: $("#wrapper") }))
 				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
@@ -128,7 +134,7 @@
 		};
 		
 		// console.log("result: <" + result.html() + ">");	
-		return $(this).append(result);
+		return $(this).html(result);
 	};
 	
 	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
