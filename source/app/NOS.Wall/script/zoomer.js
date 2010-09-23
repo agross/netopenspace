@@ -38,8 +38,10 @@
 				top: container.position().top,
 				width: container.outerWidth(),
 				height: container.outerHeight(),
-			}, opts.view, function() { img.fadeIn(); })
-			.delay(opts.display)
+			}, opts.view, function() { 
+				layer.css("border", 0);
+				img.fadeIn();
+			}).delay(opts.display)
 			.fadeOut(opts.remove, function() {
 				$(this).remove();
 			});
