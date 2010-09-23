@@ -49,6 +49,7 @@
 					
 					var tweet = $('<div>')
 							.attr('id', 'tw' + this.id)
+							.data('id', this.id)
 							.addClass('tweet')
 							.append(params.buildTweet.call(this))
 							.hide();

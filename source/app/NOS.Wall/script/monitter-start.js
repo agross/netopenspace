@@ -16,8 +16,7 @@
 					.clone()
 					.append($("<img>")
 						.attr("src", "http://yfrog.com/" + img_id + ".th.jpg")
-						.data("preview", "http://yfrog.com/" + img_id + ":iphone")
-						.zoomer({ parent: $("#wrapper") }))
+						.data("preview", "http://yfrog.com/" + img_id + ":iphone"))
 				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
@@ -38,8 +37,7 @@
 					.clone()
 					.append($("<img>")
 						.attr("src", "http://twitpic.com/show/mini/" + img_id)
-						.data("preview", "http://twitpic.com/show/thumb/" + img_id)
-						.zoomer({ parent: $("#wrapper") }))
+						.data("preview", "http://twitpic.com/show/thumb/" + img_id))
 				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
@@ -217,4 +215,20 @@
 					}
 				});
 		});
+	
+	var currentPreview = 0;
+	$(document).everyTime("10s", function() {
+		var nextPreview = $(".bubble img")
+			.filter(function() {
+				return $(this).closest(".tweet").data("id") < currentPreview;
+			}).first();
+		
+		if (!nextPreview.length)
+		{
+			nextPreview = $(".bubble img:first");
+		}
+		
+		currentPreview = nextPreview.first().closest(".tweet").data("id");
+		nextPreview.zoomer({ parent: $("#wrapper") }); 
+	});
 });

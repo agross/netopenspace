@@ -14,40 +14,37 @@
         
 		var opts = $.extend(defaults, params);
 		
-		$(this).click(
-			function() {
-				var img = $("<img>")
+		$(this).each(function() {
+			var img = $("<img>")
+						.addClass("preview")
+						.attr("src", $(this).data("preview"))
+						.hide();
+						
+			var layer = $("<div>")
 							.addClass("preview")
-							.attr("src", $(this).data("preview"))
-							.hide();
-							
-				var layer = $("<div>")
-								.addClass("preview")
-								.css({
-									left: $(this).position().left,
-									top: $(this).position().top,
-									width: $(this).width(),
-									height: $(this).height(),
-								}).append(img);
-				
-				opts.parent.append(layer);
-				
-				var container = opts.previewContainer(this);
-				
-				layer.animate({
-					left: container.position().left,
-					top: container.position().top,
-					width: container.outerWidth(),
-					height: container.outerHeight(),
-				}, opts.view, function() { img.fadeIn(); })
-				.delay(opts.display)
-				.fadeOut(opts.remove, function() {
-					$(this).remove();
-				});
-				
-				return false;
+							.css({
+								left: $(this).position().left,
+								top: $(this).position().top,
+								width: $(this).width(),
+								height: $(this).height(),
+							}).append(img);
+			
+			opts.parent.append(layer);
+			
+			var container = opts.previewContainer(this);
+			
+			layer.animate({
+				left: container.position().left,
+				top: container.position().top,
+				width: container.outerWidth(),
+				height: container.outerHeight(),
+			}, opts.view, function() { img.fadeIn(); })
+			.delay(opts.display)
+			.fadeOut(opts.remove, function() {
+				$(this).remove();
 			});
-		
+		});
+				
 		return $(this);
     }
 }
