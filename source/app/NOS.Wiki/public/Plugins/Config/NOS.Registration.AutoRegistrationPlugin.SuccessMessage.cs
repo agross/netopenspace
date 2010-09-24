@@ -1,6 +1,6 @@
 ﻿Hallo $user.Data.Name!
 
-Deinem Wunsch nach automatischer Eintragung in die Teilnehmerliste sind wir nachgekommen, du bist nun auf der Teilnehmerliste eingetragen.
+Deinem Wunsch nach automatischer Eintragung in die Teilnehmerliste sind wir nachgekommen, du bist nun auf der Teilnehmerliste bzw. Warteliste eingetragen. Bitte prüfe deinen Eintrag online unter:
 
 ${settings.MainUrl}Teilnehmer.ashx
 
