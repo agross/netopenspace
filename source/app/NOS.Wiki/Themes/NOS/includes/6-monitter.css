@@ -2,16 +2,16 @@
 	display: block;
 	clear: both;
 	margin: .7em 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	font-size: .8em;
 	line-height: 1.2em;
 }
 
 .tweet img {
 	float: left;
-	width: 20px;
-	height: 20px;
-	margin: 1px 2px 2px 0;
+	width: 24px;
+	height: 24px;
+	margin: 1px 3px 2px 0;
 }
 
 .tweet .time a {
