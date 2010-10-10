@@ -45,7 +45,7 @@
 	var link = {
 		name: "link",
 		match: function (text) {
-			return text.match(/^[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=]+/i);
+			return text.match(/^[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=#]+/i);
 		},
 		process: function(tweet, link) {
 			return tweet.append($("<a>")
