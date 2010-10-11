@@ -232,6 +232,11 @@
 				</div>
 			</td>
 		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Die <a href="Veranstalter.ashx">Veranstalter</a> behalten sich das Recht vor, die Veranstaltung aus wichtigen Gründen zu verschieben, Änderungen vorzunehmen oder abzusagen. Gezahlte Beträge werden dann erstattet. Änderungen an der Agenda sind möglich.</p>
+			</td>
+		</tr>
 	</table>
 	<table style="width: 100%; margin-top: 2em;" cellpadding="0" cellspacing="4">
 		<colgroup>
