@@ -100,13 +100,6 @@ img {
 	display: inline-block;
 }
 
-.permalink {
-	margin-left: .5em;
-	font-size: .8em;
-	vertical-align: super;
-	color: #aaa !important;
-}
-
 div.preview {
 	position: absolute;
 	border: 1px solid #ccc;

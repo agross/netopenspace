@@ -189,20 +189,14 @@
 							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')
-									.attr('href', 'http://twitter.com/' + this.from_user)
+									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
 									.attr('target', '_blank')
-									.attr('title', this.from_user)
+									.attr('title', 'Tweet anzeigen')
 									.append($('<img>')
 										.addClass('avatar')
 										.attr('src', this.profile_image_url))
 									.append($('<span>')
-										.text(this.from_user)))
-								.append($('<a>')
-									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
-									.attr('target', '_blank')
-									.attr('title', 'Tweet anzeigen')
-									.addClass('permalink')
-									.text('#')));
+										.text(this.from_user))));
 						return element;
 					},
 					showTweet: function(index, limit) {
