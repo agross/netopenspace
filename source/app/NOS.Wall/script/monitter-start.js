@@ -26,16 +26,14 @@
 			return text.match(/^http:\/\/yfrog\.com\/([a-z0-9]+)/i);
 		},
 		process: function(tweet, link) {
-			var rematch = yfrog.match(link);
-			var img_id = RegExp.$1;
 			var anchor = $("<a>")
 				.attr("href", link)
 				.attr("target", "_blank");
 			return anchor
 					.clone()
 					.append($("<img>")
-						.attr("src", "http://yfrog.com/" + img_id + ".th.jpg")
-						.data("preview", "http://yfrog.com/" + img_id + ":iphone"))
+						.attr("src", link + ".th.jpg")
+						.data("preview", link + ":iphone"))
 				.prependTo(tweet.append(anchor.text(link)));
 		}
 	};
