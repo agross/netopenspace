@@ -1,5 +1,24 @@
 ﻿$(document).ready(function()
 {
+	var mobypicture = {
+		name: "mobypicture",
+		match: function (text)
+		{
+			return text.match(/^http:\/\/moby\.to\/([a-z0-9]+)/i);
+		},
+		process: function(tweet, link) {
+			var anchor = $("<a>")
+				.attr("href", link)
+				.attr("target", "_blank");
+			return anchor
+					.clone()
+					.append($("<img>")
+						.attr("src", link + ":thumb")
+						.data("preview", link + ":medium"))
+				.prependTo(tweet.append(anchor.text(link)));
+		}
+	};
+	
 	var yfrog = {
 		name: "yfrog",
 		match: function (text)
@@ -108,7 +127,7 @@
 	
 	$.fn.tweet = function(tweet) {
 		var result = $("<span>");
-		var parsers = [whitespace, yfrog, twitpic, link, tag, user, text];
+		var parsers = [whitespace, mobypicture, yfrog, twitpic, link, tag, user, text];
 		
 		// console.log("remainder: <" + tweet + ">");
 		while(tweet)
