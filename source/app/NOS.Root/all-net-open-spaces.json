@@ -2,6 +2,13 @@
 	{
 		"City": "Karlsruhe",
 		"URL": "http://karlsruhe.netopenspace.de/",
+		"PastEvents":
+		[
+			{
+				"Year": 2010,
+				"URL": "http://karlsruhe.netopenspace.de/2010/"
+			}
+		],
 		"TwitterSearch": ["#nos_sued", "from:nos_sued"]
 	},
 	{
