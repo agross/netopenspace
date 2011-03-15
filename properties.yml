@@ -69,7 +69,7 @@ karlsruhe:
   default_to: production
   app:
     iis:
-      cookie_path: 2010/
+      cookie_path: 2011/
       root_url: http://karlsruhe.netopenspace.de/
   deployment:
     tasks:
