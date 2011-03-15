@@ -118,97 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnBackResource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Tilbage</value>
   </data>
   <data name="btnBackResource1.ToolTip" xml:space="preserve">
-    <value>Back to the Namespace list</value>
+    <value>Tilbage til navnerumslisten</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancel and return to the Namespace list</value>
+    <value>Annuller og returner til navnerumslisten</value>
   </data>
   <data name="btnConfirmDeletionResource1.Text" xml:space="preserve">
-    <value>Confirm Namespace Deletion</value>
+    <value>Bekræft sletning af navnerum</value>
   </data>
   <data name="btnConfirmDeletionResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
-    <value>Create Namespace</value>
+    <value>Opret navnerum</value>
   </data>
   <data name="btnCreateResource1.ToolTip" xml:space="preserve">
-    <value>Save the new Namespace</value>
+    <value>Gem nyt navnerum</value>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Delete the Namespace</value>
+    <value>Slet navnerummet</value>
   </data>
   <data name="btnNewNamespaceResource1.Text" xml:space="preserve">
-    <value>New Namespace</value>
+    <value>Nyt navnerum</value>
   </data>
   <data name="btnNewNamespaceResource1.ToolTip" xml:space="preserve">
-    <value>Create a new Namespace</value>
+    <value>Opret nyt navnerum</value>
   </data>
   <data name="btnNormalResource1.Text" xml:space="preserve">
     <value>Normal</value>
   </data>
   <data name="btnNormalResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Brug denne skabelon</value>
   </data>
   <data name="btnPermsResource1.Text" xml:space="preserve">
-    <value>Permissions</value>
+    <value>Rettigheder</value>
   </data>
   <data name="btnPermsResource1.ToolTip" xml:space="preserve">
-    <value>Manage permissions for this Namespace</value>
+    <value>Administrer rettigheder for dette navnerum</value>
   </data>
   <data name="btnPermsResource2.Text" xml:space="preserve">
-    <value>Permissions</value>
+    <value>Rettigheder</value>
   </data>
   <data name="btnPermsResource2.ToolTip" xml:space="preserve">
-    <value>Manage permissions for this Namespace</value>
+    <value>Administrer rettigheder for dette navnerum</value>
   </data>
   <data name="btnPrivateResource1.Text" xml:space="preserve">
-    <value>Private</value>
+    <value>Privat</value>
   </data>
   <data name="btnPrivateResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Brug denne skabelon</value>
   </data>
   <data name="btnPublicResource1.Text" xml:space="preserve">
-    <value>Public</value>
+    <value>Offentlig</value>
   </data>
   <data name="btnPublicResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Brug denne skabelon</value>
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Omdøb</value>
   </data>
   <data name="btnRenameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save Namespace</value>
+    <value>Gem navnerum</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save modifications</value>
+    <value>Gem ændringer</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Select this Namespace for editing</value>
+    <value>Vælg dette navnerum til redigering</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Vælg</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Select this Namespace for editing</value>
+    <value>Vælg dette navnerum til redigering</value>
   </data>
   <data name="cvName2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Name</value>
+    <value>Ugyldigt navn</value>
   </data>
   <data name="cvName2Resource1.Text" xml:space="preserve">
     <value />
@@ -217,7 +217,7 @@
     <value />
   </data>
   <data name="cvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Namespace already exists</value>
+    <value>Navnerum eksisterer allerede</value>
   </data>
   <data name="cvNameResource1.Text" xml:space="preserve">
     <value />
@@ -226,7 +226,7 @@
     <value />
   </data>
   <data name="cvNewName2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Name</value>
+    <value>Ugyldigt navn</value>
   </data>
   <data name="cvNewName2Resource1.Text" xml:space="preserve">
     <value />
@@ -235,7 +235,7 @@
     <value />
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Namespace already exists</value>
+    <value>Navnerum eksisterer allerede</value>
   </data>
   <data name="cvNewNameResource1.Text" xml:space="preserve">
     <value />
@@ -244,76 +244,76 @@
     <value />
   </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Categories</value>
+    <value>Kategorier</value>
   </data>
   <data name="lblConfirmDeletionResource1.Text" xml:space="preserve">
-    <value>Are you sure you want to premanently delete the selected Namespace? Doing so, all the data contained in it will be lost.</value>
+    <value>Er du sikker på at du vil slette dette navnerum permanent? Hvis du gør det, vil alt data i det forsvinde.</value>
   </data>
   <data name="lblDefaultPageInfoResource1.Text" xml:space="preserve">
-    <value>The default page will be created automatically with name 'MainPage'.</value>
+    <value>Standardsiden vil automatisk blive oprettet med navnet 'MainPage'.</value>
   </data>
   <data name="lblDefaultPageInfoResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblDefaultPageResource1.Text" xml:space="preserve">
-    <value>Default Page</value>
+    <value>Standardside</value>
   </data>
   <data name="lblDefaultPageResource2.Text" xml:space="preserve">
-    <value>Default Page</value>
+    <value>Standardside</value>
   </data>
   <data name="lblEditTitleResource1.Text" xml:space="preserve">
-    <value>Namespace Details</value>
+    <value>Navnerumsdetaljer</value>
   </data>
   <data name="lblInheritanceInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: sub-namespaces always inherit permissions from the &lt;b&gt;root&lt;/b&gt; namespace.&lt;br /&gt;Changing the permissions in the &lt;b&gt;root&lt;/b&gt; namespace does not change the permissions explicitly set in sub-namespaces.</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: Navnerum vil altid arve rettigheder fra &lt;b&gt;rod&lt;/b&gt; navnerummet.&lt;br /&gt;Ændring af rettigheder i &lt;b&gt;rod&lt;/b&gt; navnerummet, ændrer ikke rettigheder eksplicit sat i andre navnerum.</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNameResource2.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNamespaceNameResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblNamespacePermissionsResource1.Text" xml:space="preserve">
-    <value>Namespace Permissions</value>
+    <value>Navnerumsrettigheder</value>
   </data>
   <data name="lblNamespacesResource1.Text" xml:space="preserve">
-    <value>Namespaces</value>
+    <value>Navnerum</value>
   </data>
   <data name="lblNewNameResource1.Text" xml:space="preserve">
-    <value>New Name</value>
+    <value>Nyt navn</value>
   </data>
   <data name="lblNormalInfoResource1.Text" xml:space="preserve">
-    <value>Registered Users can &lt;b&gt;edit&lt;/b&gt; and &lt;b&gt;create&lt;/b&gt; pages and &lt;b&gt;manage&lt;/b&gt; categories.</value>
+    <value>Registerede brugere kan &lt;b&gt;redigere&lt;/b&gt; og &lt;b&gt;oprette&lt;/b&gt; sider, og &lt;b&gt;administrere&lt;/b&gt; kategorier.</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
-    <value>Pages</value>
+    <value>Sider</value>
   </data>
   <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: setting a template will replace all existing permissions for the default user groups.</value>
+    <value>&lt;b&gt;Advarsel&lt;/b&gt;: Valg af en skabelon vil overskrive alle eksisterende rettigheder for standard brugergrupperne.</value>
   </data>
   <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
-    <value>Permissions Templates</value>
+    <value>Rettighedsskabeloner</value>
   </data>
   <data name="lblPrivateInfoResource1.Text" xml:space="preserve">
-    <value>Only registered users can &lt;b&gt;view&lt;/b&gt; pages (and also &lt;b&gt;create&lt;/b&gt; and &lt;b&gt;edit&lt;/b&gt; them as well as &lt;b&gt;manage&lt;/b&gt; categories).</value>
+    <value>Kun registrerede brugere kan &lt;b&gt;se&lt;/b&gt; sider (og også &lt;b&gt;oprette&lt;/b&gt; og &lt;b&gt;redigere&lt;/b&gt; dem såvel som &lt;b&gt;administrere&lt;/b&gt; kategorier).</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblProviderResource2.Text" xml:space="preserve">
-    <value>Provider</value>
+    <value>Udbyder</value>
   </data>
   <data name="lblPublicInfoResource1.Text" xml:space="preserve">
-    <value>Anyone, including anonymous users, can &lt;b&gt;edit&lt;/b&gt; pages, registered users can also &lt;b&gt;create&lt;/b&gt; pages and &lt;b&gt;manage&lt;/b&gt; categories.</value>
+    <value>Alle, også annonyme brugere, kan &lt;b&gt;redigere&lt;/b&gt; sider - registerede brugere kan også &lt;b&gt;oprette&lt;/b&gt; sider og &lt;b&gt;administrere&lt;/b&gt; kategorier.</value>
   </data>
   <data name="lblRenameInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: renaming a namespace will break all existing inter-namespace links.</value>
+    <value>&lt;b&gt;Advarsel&lt;/b&gt;: Omdøbning af et navnerum, vil bryde alle eksisterende links til sider i det navnerum.</value>
   </data>
   <data name="lblRenameResource1.Text" xml:space="preserve">
-    <value>Rename this Namespace</value>
+    <value>Omdøb dette navnerum</value>
   </data>
   <data name="lblRenameResultResource1.Text" xml:space="preserve">
     <value />
@@ -328,10 +328,10 @@
     <value />
   </data>
   <data name="lblThemeResource1.Text" xml:space="preserve">
-    <value>Theme</value>
+    <value>Tema</value>
   </data>
   <data name="lblThemeResource2.Text" xml:space="preserve">
-    <value>Theme</value>
+    <value>Tema</value>
   </data>
   <data name="lstDefaultPageResource1.ToolTip" xml:space="preserve">
     <value />
@@ -367,7 +367,7 @@
     <value />
   </data>
   <data name="rfvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Name is required</value>
+    <value>Navn er påkrævet</value>
   </data>
   <data name="rfvNameResource1.Text" xml:space="preserve">
     <value />
@@ -376,7 +376,7 @@
     <value />
   </data>
   <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>New Name is required</value>
+    <value>Nyt navn er påkrævet</value>
   </data>
   <data name="rfvNewNameResource1.Text" xml:space="preserve">
     <value />

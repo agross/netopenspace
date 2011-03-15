@@ -118,46 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Delete this Item</value>
+    <value>Slet dette element</value>
   </data>
   <data name="btnDeleteResource2.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Slet</value>
   </data>
   <data name="btnDeleteResource2.ToolTip" xml:space="preserve">
-    <value>Delete this Item</value>
+    <value>Slet dette element</value>
   </data>
   <data name="btnNewDirectoryResource1.Text" xml:space="preserve">
-    <value>Create</value>
+    <value>Opret</value>
   </data>
   <data name="btnNewDirectoryResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Omdøb</value>
   </data>
   <data name="btnRenameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRenameResource2.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Omdøb</value>
   </data>
   <data name="btnRenameResource2.ToolTip" xml:space="preserve">
-    <value>Rename this Item</value>
+    <value>Omdøb dette element</value>
   </data>
   <data name="btnRenameResource3.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Omdøb</value>
   </data>
   <data name="btnRenameResource3.ToolTip" xml:space="preserve">
-    <value>Rename this Item</value>
+    <value>Omdøb dette element</value>
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
     <value>Upload</value>
@@ -166,7 +166,7 @@
     <value />
   </data>
   <data name="chkOverwriteResource1.Text" xml:space="preserve">
-    <value>Overwrite existing file</value>
+    <value>Overskriv eksisterende fil</value>
   </data>
   <data name="chkOverwriteResource1.ToolTip" xml:space="preserve">
     <value />
@@ -175,7 +175,7 @@
     <value />
   </data>
   <data name="lblDirectoryNameResource1.Text" xml:space="preserve">
-    <value>Directory Name</value>
+    <value>Foldernavn</value>
   </data>
   <data name="lblDownloadsResource1.Text" xml:space="preserve">
     <value>Downloads</value>
@@ -190,10 +190,10 @@
     <value>Link</value>
   </data>
   <data name="lblManagePermissionsResource1.Text" xml:space="preserve">
-    <value>Manage Permissions</value>
+    <value>Administrer rettigheder</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Name</value>
+    <value>Navn</value>
   </data>
   <data name="lblNewDirectoryResultResource1.Text" xml:space="preserve">
     <value />
@@ -202,16 +202,16 @@
     <value />
   </data>
   <data name="lblNewDirectoryTitleResource1.Text" xml:space="preserve">
-    <value>Create New Directory</value>
+    <value>Opret ny folder</value>
   </data>
   <data name="lblNoListResource1.Text" xml:space="preserve">
-    <value>You cannot list the contents of this directory.</value>
+    <value>Du kan ikke få vist indholdet af denne folder.</value>
   </data>
   <data name="lblNoListResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblRenameResource1.Text" xml:space="preserve">
-    <value>Rename file/directory</value>
+    <value>Omdøb fil/folder</value>
   </data>
   <data name="lblRenameResultResource1.Text" xml:space="preserve">
     <value />
@@ -226,16 +226,16 @@
     <value />
   </data>
   <data name="lblSizeResource1.Text" xml:space="preserve">
-    <value>Size</value>
+    <value>Størrelse</value>
   </data>
   <data name="lblStringsResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblUploadFilesInfoResource1.Text" xml:space="preserve">
-    <value>You can upload files up to $1. Allowed file types are: $2.</value>
+    <value>Du kan uploade filer op til $1. Tilladte filtyper er: $2.</value>
   </data>
   <data name="lblUploadFilesResource1.Text" xml:space="preserve">
-    <value>Upload Files</value>
+    <value>Upload filer</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />

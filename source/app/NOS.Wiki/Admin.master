@@ -2,7 +2,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html dir="<%= ScrewTurn.Wiki.Settings.Direction %>" xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Administration</title>
@@ -65,8 +65,8 @@
     
         <asp:ContentPlaceHolder ID="cphAdmin" runat="server" />
         <br /><br /><br />
-        
-        <div id="LicenseInfoDiv">
+		
+		<div id="LicenseInfoDiv">
 			<h2 class="separator">GNU General Public License v2</h2>
 			<p>This Program is released under the GNU General Public License v2. You cannot remove this statement.<br />
 			<a href="GPL.txt" target="_blank">View the GNU General Public License v2</a> or visit the <a class="externallink" href="http://www.gnu.org" target="_blank">GNU</a> website.</p>

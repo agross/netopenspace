@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnBulkMigrateResource1.Text" xml:space="preserve">
+    <value>Bulk Migrate</value>
+  </data>
+  <data name="btnBulkMigrateResource1.ToolTip" xml:space="preserve">
+    <value>Migrate many Pages to another namespace</value>
+  </data>
   <data name="btnMigrateResource1.Text" xml:space="preserve">
     <value>Migrate</value>
   </data>

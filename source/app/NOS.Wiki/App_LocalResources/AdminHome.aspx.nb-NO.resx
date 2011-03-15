@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
-    <value>Send Bulk Email</value>
+    <value>Send masse-epost</value>
   </data>
   <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
-    <value>You must select at least one group</value>
+    <value>Du må vel</value>
   </data>
   <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
     <value>You can send an email message to all users of one or more groups.</value>
@@ -142,16 +142,16 @@
     <value>Subject is required</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
-    <value>Shutdown Application</value>
+    <value>Steng programmet</value>
   </data>
   <data name="btnShutdownConfirmResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRebuildPageLinksResource1.Text" xml:space="preserve">
-    <value>Rebuild Page Links</value>
+    <value>Gjennoppbygg lenker</value>
   </data>
   <data name="btnRebuildPageLinksResource1.ToolTip" xml:space="preserve">
-    <value>Rebuild the links structure</value>
+    <value>Gjennoppbygger lenke-strukturen</value>
   </data>
   <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
     <value>orphan pages in the wiki</value>
@@ -175,31 +175,31 @@
     <value>Go to the Pages administration tab</value>
   </data>
   <data name="btnClearCacheResource1.Text" xml:space="preserve">
-    <value>Clear Cache</value>
+    <value>Slett cache</value>
   </data>
   <data name="btnClearCacheResource1.ToolTip" xml:space="preserve">
-    <value>Clears the Cache</value>
+    <value>Sletter cachen</value>
   </data>
   <data name="btnRebuildResource1.Text" xml:space="preserve">
-    <value>Rebuild</value>
+    <value>Gjennoppbygg</value>
   </data>
   <data name="btnRebuildResource1.ToolTip" xml:space="preserve">
-    <value>Rebuild this index</value>
+    <value>Gjennoppbygger indexen</value>
   </data>
   <data name="btnRebuildResource2.Text" xml:space="preserve">
-    <value>Rebuild</value>
+    <value>Gjennoppbygg</value>
   </data>
   <data name="btnRebuildResource2.ToolTip" xml:space="preserve">
-    <value>Rebuild this index</value>
+    <value>Gjennoppbygg indexen</value>
   </data>
   <data name="lblAdminHomeResource1.Text" xml:space="preserve">
-    <value>Administration Home</value>
+    <value>Administrasjon hjem</value>
   </data>
   <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
-    <value>You can force a shutdown-and-restart cycle of the Web Application. You will be asked to confirm the restart twice, then the Web Application will restart at the first subsequent request.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: all the open sessions will be lost, and users may experience errors.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the restart will affect only this Web Application.</value>
+    <value>Du kan tvinge wikien til å restartes. Du må bekrefte to ganger, og </value>
   </data>
   <data name="lblAppShutdownResource1.Text" xml:space="preserve">
-    <value>Web Application Shutdown</value>
+    <value>Steng web-applikasjonen</value>
   </data>
   <data name="lblDocCountResource1.Text" xml:space="preserve">
     <value>Docs</value>

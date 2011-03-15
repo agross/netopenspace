@@ -118,88 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblAdminTitleResource1.Text" xml:space="preserve">
-    <value>Administration</value>
+    <value>Administrasjon</value>
   </data>
   <data name="lblBrowserSupportResource1.Text" xml:space="preserve">
-    <value>Your Browser might present problems with this Page (Internet Explorer 7+ and Firefox 3+ are suggested).</value>
+    <value>Nettleseren din har få problem med å denne siden, vi foresl&amp;aring;r Internet Explorer 7 eller nyere, eventuelt Friefox 3 eller nyere</value>
   </data>
   <data name="lblBrowserSupportResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblHomeLinkResource1.Text" xml:space="preserve">
-    <value>Main Page</value>
+    <value>Hovedside</value>
   </data>
   <data name="lblStringsResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectAccountsResource1.Text" xml:space="preserve">
-    <value>Accounts</value>
+    <value>Kontoer</value>
   </data>
   <data name="lnkSelectAccountsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectAdminHomeResource1.Text" xml:space="preserve">
-    <value>Admin Home</value>
+    <value>Admin hjem</value>
   </data>
   <data name="lnkSelectAdminHomeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectCategoriesResource1.Text" xml:space="preserve">
-    <value>Categories</value>
+    <value>Kategorier</value>
   </data>
   <data name="lnkSelectCategoriesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectConfigResource1.Text" xml:space="preserve">
-    <value>Configuration</value>
+    <value>Oppsett</value>
   </data>
   <data name="lnkSelectConfigResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectContentResource1.Text" xml:space="preserve">
-    <value>Content Editing</value>
+    <value>Innholdsredigering</value>
   </data>
   <data name="lnkSelectContentResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectGroupsResource1.Text" xml:space="preserve">
-    <value>User Groups</value>
+    <value>Brukergrupper</value>
   </data>
   <data name="lnkSelectGroupsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectLogResource1.Text" xml:space="preserve">
-    <value>System Log</value>
+    <value>Systemlogg</value>
   </data>
   <data name="lnkSelectLogResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectNamespacesResource1.Text" xml:space="preserve">
-    <value>Namespaces</value>
+    <value>Navn</value>
   </data>
   <data name="lnkSelectNamespacesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectNavPathsResource1.Text" xml:space="preserve">
-    <value>Nav. Paths</value>
+    <value>Nav. sti</value>
   </data>
   <data name="lnkSelectNavPathsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectPagesResource1.Text" xml:space="preserve">
-    <value>Wiki Pages</value>
+    <value>Wiki-sider</value>
   </data>
   <data name="lnkSelectPagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectProvidersResource1.Text" xml:space="preserve">
-    <value>Providers</value>
+    <value>Leverand&amp;oring;rer</value>
   </data>
   <data name="lnkSelectProvidersResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectSnippetsResource1.Text" xml:space="preserve">
-    <value>Snippets/Templates</value>
+    <value>Snutter/maler</value>
   </data>
   <data name="lnkSelectSnippetsResource1.ToolTip" xml:space="preserve">
     <value />

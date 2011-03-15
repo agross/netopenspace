@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
-    <value>Receive an email notification whenever a &lt;b&gt;message&lt;/b&gt; is posted for a page in the following namespaces (only discussions you have access to):</value>
+    <value>Modtag orientering på e-mail når en &lt;b&gt;besked&lt;/b&gt; bliver postet på en side i de følgende navnerum (kun debatter du har adgang til):</value>
   </data>
   <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
-    <value>Receive an email notification whenever a &lt;b&gt;page&lt;/b&gt; in the following namespaces is updated (only pages you have access to):</value>
+    <value>Modtag orientering på e-mail når en &lt;b&gt;side&lt;/b&gt; i de følgende navnerum opdateres (kun sider du har adgang til):</value>
   </data>
   <data name="lblNoChangesResource1.Text" xml:space="preserve">
-    <value>Current system settings do not allow any change to your personal information.</value>
+    <value>De nuværende systemindstillinger tillader ikke ændringer i dine personlige infomationer.</value>
   </data>
   <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
     <value />
@@ -139,16 +139,16 @@
     <value />
   </data>
   <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
-    <value>Save Display Name</value>
+    <value>Gem visningsnavn</value>
   </data>
   <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Click here to save your Display Name</value>
+    <value>Klik her for at gemme dit visningsnavn</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Display Name</value>
+    <value>Visningsnavn</value>
   </data>
   <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
-    <value>Edit Display Name, Email and Password</value>
+    <value>Rediger visningsnavn, e-mail og adgangskode</value>
   </data>
   <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
     <value />
@@ -157,7 +157,7 @@
     <value />
   </data>
   <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Display Name</value>
+    <value>Ugyldigt visningsnavn</value>
   </data>
   <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -169,22 +169,22 @@
     <value />
   </data>
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Type here a display name for your account</value>
+    <value>Indtast et visningsnavn for din konto her</value>
   </data>
   <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveLanguageResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveNotificationsResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email addresses are not equal</value>
+    <value>E-mail-adresserne er ikke ens</value>
   </data>
   <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -193,7 +193,7 @@
     <value />
   </data>
   <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email addresses are not equal</value>
+    <value>E-mail-adresserne er ikke ens</value>
   </data>
   <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -202,7 +202,7 @@
     <value />
   </data>
   <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
-    <value>Incorrect Password</value>
+    <value>Forkert adgangskode</value>
   </data>
   <data name="cvOldPasswordResource1.Text" xml:space="preserve">
     <value />
@@ -211,7 +211,7 @@
     <value />
   </data>
   <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Adgangskoderne er ikke ens</value>
   </data>
   <data name="cvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -220,7 +220,7 @@
     <value />
   </data>
   <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Adgangskoderne er ikke ens</value>
   </data>
   <data name="cvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -232,7 +232,7 @@
     <value />
   </data>
   <data name="lblGroupsResource1.Text" xml:space="preserve">
-    <value>You are member of the following groups:</value>
+    <value>Du er medlem af de følgende grupper:</value>
   </data>
   <data name="lblLanguageResultResource1.Text" xml:space="preserve">
     <value />
@@ -241,10 +241,10 @@
     <value />
   </data>
   <data name="lblLanguageTimeZoneResource1.Text" xml:space="preserve">
-    <value>Language and Time Zone</value>
+    <value>Sprog og tidszone</value>
   </data>
   <data name="lblNotificationsResource1.Text" xml:space="preserve">
-    <value>Email Notification Settings</value>
+    <value>Indstillinger for orientering på e-mail</value>
   </data>
   <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
     <value />
@@ -271,7 +271,7 @@
     <value />
   </data>
   <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>E-mail er påkrævet</value>
   </data>
   <data name="rfvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -280,7 +280,7 @@
     <value />
   </data>
   <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>E-mail er påkrævet</value>
   </data>
   <data name="rfvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -289,7 +289,7 @@
     <value />
   </data>
   <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
-    <value>Old Password is required</value>
+    <value>Gammel adgangskode er påkrævet</value>
   </data>
   <data name="rfvOldPasswordResource1.Text" xml:space="preserve">
     <value />
@@ -298,7 +298,7 @@
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -307,7 +307,7 @@
     <value />
   </data>
   <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -316,7 +316,7 @@
     <value />
   </data>
   <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Email address</value>
+    <value>Ugyldig e-mailadresse</value>
   </data>
   <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -325,7 +325,7 @@
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ugyldig adgangskode</value>
   </data>
   <data name="rxvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -334,7 +334,7 @@
     <value />
   </data>
   <data name="btnConfirmResource1.Text" xml:space="preserve">
-    <value>Konfirmer</value>
+    <value>Bekræft</value>
   </data>
   <data name="btnConfirmResource1.ToolTip" xml:space="preserve">
     <value />
@@ -346,43 +346,43 @@
     <value />
   </data>
   <data name="btnSaveEmailResource1.Text" xml:space="preserve">
-    <value>Gem E-Mail</value>
+    <value>Gem e-mail</value>
   </data>
   <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
-    <value>Klik her for at gemme E-mail</value>
+    <value>Klik her for at gemme din e-mail-adresse</value>
   </data>
   <data name="btnSavePasswordResource1.Text" xml:space="preserve">
-    <value>Gem kodeord</value>
+    <value>Gem adgangskode</value>
   </data>
   <data name="btnSavePasswordResource1.ToolTip" xml:space="preserve">
-    <value>Klik her for at gemme dit nye kodeord</value>
+    <value>Klik her for at gemme din nye adgangskode</value>
   </data>
   <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
-    <value>Du kan slette din konto ved at trykke slet og konformere det igen på konfirmer knappen.&lt;br /&gt;&lt;b&gt;Advarsel&lt;/b&gt;: Sletningen kan ikke gøres om!.</value>
+    <value>Du kan slette din konto ved at trykke på 'Slet konto' knappen, og så bekræfte det på 'Bekræft' knappen.&lt;br /&gt;&lt;b&gt;Advarsel&lt;/b&gt;: Sletningen kan ikke fortrydes efterfølgende.</value>
   </data>
   <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
     <value>Slet konto</value>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Velkommen til din profil</value>
+    <value>Velkommen til din profil,</value>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
-    <value>E-Mail</value>
+    <value>E-mail</value>
   </data>
   <data name="lblEmail2Resource1.Text" xml:space="preserve">
     <value>E-mail (gentag)</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Her kan du ændre din profil, password m.m. Du kan ikke ændre dit bruger navn.</value>
+    <value>Her kan du ændre din profil, såsom e-mail-adresse og adgangskode. Du kan ikke ændre dit brugernavn.</value>
   </data>
   <data name="lblOldPasswordResource1.Text" xml:space="preserve">
-    <value>Gemmelt kodeord</value>
+    <value>Gammel adgangskode</value>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
-    <value>Kodeord</value>
+    <value>Adgangskode</value>
   </data>
   <data name="lblPassword2Resource1.Text" xml:space="preserve">
-    <value>Kodeord (gentag)</value>
+    <value>Adgangskode (gentag)</value>
   </data>
   <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">
     <value />
@@ -391,7 +391,7 @@
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Bruger profil</value>
+    <value>Brugerprofil</value>
   </data>
   <data name="lblUsernameResource1.Text" xml:space="preserve">
     <value />
@@ -403,30 +403,30 @@
     <value />
   </data>
   <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
-    <value>Skriv din E-mail adresse her</value>
+    <value>Indtast din e-mail-adresse her</value>
   </data>
   <data name="txtEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
-    <value>Gentag din E-mail adresse her</value>
+    <value>Gentag din e-mail adresse</value>
   </data>
   <data name="txtOldPasswordResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtOldPasswordResource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit nuværende kodeord her</value>
+    <value>Indtast din nuværende adgangskode her</value>
   </data>
   <data name="txtPassword1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit nye kodeord her</value>
+    <value>Indtast din nye adgangskode her</value>
   </data>
   <data name="txtPassword2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
-    <value>Gentag dit kodeord her</value>
+    <value>Gentag din adgangskode</value>
   </data>
 </root>

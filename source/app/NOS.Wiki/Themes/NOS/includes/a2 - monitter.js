@@ -5,20 +5,20 @@
 		jQuery.fn.reverse = Array.prototype.reverse;
 
 		String.prototype.linkify = function () {
-			return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/g, function (m) {
+			return this.replace(/[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=]+/gi, function (m) {
 				return m.link(m);
 			});
 		};
 
 		String.prototype.linkuser = function () {
-			return this.replace(/[@]+[A-Za-z0-9-_]+/g, function (u) {
+			return this.replace(/@[\w-äöüß]+/gi, function (u) {
 				var username = u.replace("@", "")
 				return u.link("http://twitter.com/" + username);
 			});
 		};
 
 		String.prototype.linktag = function () {
-			return this.replace(/[#]+[A-Za-z0-9-_]+/, function (t) {
+			return this.replace(/#[\w-äöüß]+/gi, function (t) {
 				var tag = t.replace("#", "%23")
 				return t.link("http://search.twitter.com/search?q=" + tag);
 			});
@@ -49,6 +49,7 @@
 					
 					var tweet = $('<div>')
 							.attr('id', 'tw' + this.id)
+							.data('id', this.id)
 							.addClass('tweet')
 							.append(params.buildTweet.call(this))
 							.hide();

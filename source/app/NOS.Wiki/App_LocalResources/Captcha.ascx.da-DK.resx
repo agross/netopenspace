@@ -145,6 +145,6 @@
     <value />
   </data>
   <data name="txtCaptchaResource1.ToolTip" xml:space="preserve">
-    <value>Kopier den ovenstående tekst hertil (husk der er forskel på store og små bogstaver)</value>
+    <value>Kopier den ovenstående tekst hertil (der er forskel på store og små bogstaver)</value>
   </data>
 </root>

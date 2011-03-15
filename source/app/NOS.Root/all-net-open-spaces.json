@@ -1,4 +1,4 @@
-[
+﻿[
 	{
 		"City": "Karlsruhe",
 		"URL": "http://karlsruhe.netopenspace.de/",
@@ -16,19 +16,18 @@
 			{
 				"Year": 2009,
 				"URL": "http://netopenspace.de/2009/"
+			},
+			{
+				"Year": 2010,
+				"URL": "http://netopenspace.de/2010/"
 			}
 		],
-		"TwitterSearch": ["#netos2010", "#netos2009", "from:netopenspace"]
-	},
-	{
-		"City": "Ulm",
-		"URL": "http://ulm.netopenspace.de/",
-		"TwitterSearch": ["#nos_sued", "from:nos_sued"]
+		"TwitterSearch": ["#netos", "from:netopenspace"]
 	},
 	{
 		"City": "Wien",
 		"URL": "http://wien.netopenspace.de/",
-		"TwitterSearch": ["from:vienna_open"]
+		"TwitterSearch": []
 	},
 	{
 		"City": "Development",
@@ -37,13 +36,18 @@
 		"PastEvents":
 		[
 			{
-				"Year": 2008,
-				"URL": "http://netopenspace.de/2008/"
+				"Year": 2006,
+				"URL": "http://nos.local/2006/"
 			},
 			{
-				"Year": 2006,
-				"URL": "http://netopenspace.de/2006/"
+				"Year": 2008,
+				"URL": "http://nos.local/2008/"
+			},
+			{
+				"Year": "dieses Jahr",
+				"URL": "http://nos.local/"
 			}
+
 		],
 		"TwitterSearch": ["from:agross", "twitter"]
 	}

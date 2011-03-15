@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelAnchorResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelAnchorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelFileLinkResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelFileLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelImageResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelImageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelLinkResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelPageLinkResource1.Text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="btnCancelPageLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOkAnchorResource1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOkAnchorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOkFileLinkResource1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOkFileLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOkImageResource1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOkImageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOkLinkResource1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOkLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOkPageLinkResource1.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOkPageLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFileNWResource1.Text" xml:space="preserve">
+    <value>Öppna länk i nytt fönster</value>
+  </data>
+  <data name="chkFileNWResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkFilesAttachmentsResource1.Text" xml:space="preserve">
+    <value>Välj från bilagor för sida</value>
+  </data>
+  <data name="chkFilesAttachmentsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkImageAttachmentsResource1.Text" xml:space="preserve">
+    <value>Välj från bifogade bilder för sida</value>
+  </data>
+  <data name="chkImageAttachmentsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkImageNWResource1.Text" xml:space="preserve">
+    <value>Öppna länk i nytt fönster</value>
+  </data>
+  <data name="chkImageNWResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkLinkNWResource1.Text" xml:space="preserve">
+    <value>Öppna länk i nytt fönster</value>
+  </data>
+  <data name="chkLinkNWResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPageNWResource1.Text" xml:space="preserve">
+    <value>Öppna länk i nytt fönster</value>
+  </data>
+  <data name="chkPageNWResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAnchorIDResource1.Text" xml:space="preserve">
+    <value>Bokmärkesid (måste anges)</value>
+  </data>
+  <data name="lblAnchorTitleResource1.Text" xml:space="preserve">
+    <value>Rubrik (valfritt)</value>
+  </data>
+  <data name="lblExistingAnchorsResource1.Text" xml:space="preserve">
+    <value>Länka till:</value>
+  </data>
+  <data name="lblFilePathResource1.Text" xml:space="preserve">
+    <value>Filsökväg (måste anges)</value>
+  </data>
+  <data name="lblFileTitleResource1.Text" xml:space="preserve">
+    <value>Länkrubrik (valfritt)</value>
+  </data>
+  <data name="lblImageDescrResource1.Text" xml:space="preserve">
+    <value>Beskrivning (valfritt)</value>
+  </data>
+  <data name="lblImageLinkResource1.Text" xml:space="preserve">
+    <value>Länk (valfritt)</value>
+  </data>
+  <data name="lblImagePathResource1.Text" xml:space="preserve">
+    <value>Bildsökväg/-url (måste anges)</value>
+  </data>
+  <data name="lblInsertAnchorResource1.Text" xml:space="preserve">
+    <value>Infoga:</value>
+  </data>
+  <data name="lblLinkTitleResource1.Text" xml:space="preserve">
+    <value>Länkrubrik (valfritt)</value>
+  </data>
+  <data name="lblLinkUrlResource1.Text" xml:space="preserve">
+    <value>Url eller e-postadress (måste anges)</value>
+  </data>
+  <data name="lblPageNameResource1.Text" xml:space="preserve">
+    <value>Sidnamn (måste anges)</value>
+  </data>
+  <data name="lblPageTitleResource1.Text" xml:space="preserve">
+    <value>Länkrubrik (valfritt)</value>
+  </data>
+  <data name="lblStringsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstExistingAnchorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstProviderFilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstProviderImagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>ScrewTurn Wiki</value>
+  </data>
+  <data name="pnlAnchorLinkResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAnchorLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNewAnchorResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNewAnchorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoAnchorLinkResource1.Text" xml:space="preserve">
+    <value>Länk till ett existerande bokmärke</value>
+  </data>
+  <data name="rdoAnchorLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImageAutoResource1.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="rdoImageAutoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImageInlineResource1.Text" xml:space="preserve">
+    <value>Infogad</value>
+  </data>
+  <data name="rdoImageInlineResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImageLeftResource1.Text" xml:space="preserve">
+    <value>Vänsterjusterad</value>
+  </data>
+  <data name="rdoImageLeftResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImageLinkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImageLinkResource1.ToolTip" xml:space="preserve">
+    <value>Markera för att välja länkad bild</value>
+  </data>
+  <data name="rdoImagePathResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoImagePathResource1.ToolTip" xml:space="preserve">
+    <value>Markera för att välja bild</value>
+  </data>
+  <data name="rdoImageRightResource1.Text" xml:space="preserve">
+    <value>Högerjusterad</value>
+  </data>
+  <data name="rdoImageRightResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoNewAnchorResource1.Text" xml:space="preserve">
+    <value>Nytt bokmärke</value>
+  </data>
+  <data name="rdoNewAnchorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnchorIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnchorIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnchorTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnchorTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilePathResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilePathResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageDescrResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageDescrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageLinkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImageLinkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImagePathResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImagePathResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLinkTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLinkTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLinkUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLinkUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

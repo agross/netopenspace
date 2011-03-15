@@ -112,31 +112,31 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSendResource1.Text" xml:space="preserve">
-    <value>Send</value>
+    <value>Verstuur</value>
   </data>
   <data name="btnSendResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblActivityResource1.Text" xml:space="preserve">
-    <value>Recent activity by this user:</value>
+    <value>Recente activiteiten door deze gebruiker:</value>
   </data>
   <data name="lblGravatarResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblMessageInfoResource1.Text" xml:space="preserve">
-    <value>You can send an email message to this user. &lt;b&gt;Note&lt;/b&gt;: your email address won't be disclosed.</value>
+    <value>U kunt een email bericht naar deze gebruiker sturen. &lt;b&gt;Merk op&lt;/b&gt;: uw email adres zal niet openbaar worden gemaakt.</value>
   </data>
   <data name="lblMessageTitleResource1.Text" xml:space="preserve">
-    <value>Send a Message</value>
+    <value>Verstuur een bericht</value>
   </data>
   <data name="lblNoActivityResource1.Text" xml:space="preserve">
-    <value>&lt;i&gt;No recent activity&lt;/i&gt;</value>
+    <value>&lt;i&gt;Geen recente activiteiten&lt;/i&gt;</value>
   </data>
   <data name="lblRecentActivityResource1.Text" xml:space="preserve">
     <value />
@@ -148,13 +148,13 @@
     <value />
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
-    <value>Subject</value>
+    <value>Onderwerp</value>
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>##NAME## - User's Details</value>
+    <value>##NAME## - Gebruiker Details</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Titel</value>
   </data>
   <data name="pnlMessageResource1.GroupingText" xml:space="preserve">
     <value />
@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Body is required</value>
+    <value>Body is vereist</value>
   </data>
   <data name="rfvBodyResource1.Text" xml:space="preserve">
     <value />
@@ -172,7 +172,7 @@
     <value />
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Subject is required</value>
+    <value>Onderwerp is vereist</value>
   </data>
   <data name="rfvSubjectResource1.Text" xml:space="preserve">
     <value />

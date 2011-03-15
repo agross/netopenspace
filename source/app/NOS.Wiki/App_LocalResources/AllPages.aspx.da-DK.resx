@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lnkCategoriesResource1.Text" xml:space="preserve">
-    <value>Page Categories</value>
+    <value>Sidekategorier</value>
   </data>
   <data name="lnkCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>View all Page Categories</value>
+    <value>Vis alle sidekategorier</value>
   </data>
   <data name="lnkSearchResource1.Text" xml:space="preserve">
-    <value>Search</value>
+    <value>Søg</value>
   </data>
   <data name="lnkSearchResource1.ToolTip" xml:space="preserve">
-    <value>Perform a Search</value>
+    <value>Foretag en søgning</value>
   </data>
   <data name="pnlPageListResource1.GroupingText" xml:space="preserve">
     <value />
@@ -136,12 +136,12 @@
     <value />
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Den komplette liste over sider på denne WIKI</value>
+    <value>Dette er en liste over alle sider i den valgte kategori i det nuværende navnerum.</value>
   </data>
   <data name="lblPagesResource1.Text" xml:space="preserve">
-    <value>Sider</value>
+    <value>Sideindeks</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Side uden navn</value>
+    <value>Unavngiven side</value>
   </data>
 </root>

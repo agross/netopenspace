@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSaveNewPasswordResource1.Text" xml:space="preserve">
-    <value>Save New Password</value>
+    <value>Gem ny adgangskode</value>
   </data>
   <data name="btnSaveNewPasswordResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="cvNewPasswordsResource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Adgangskoder er ikke ens</value>
   </data>
   <data name="cvNewPasswordsResource1.Text" xml:space="preserve">
     <value />
@@ -136,25 +136,25 @@
     <value />
   </data>
   <data name="lblNewPassword1Resource1.Text" xml:space="preserve">
-    <value>Password</value>
+    <value>Adgangskode</value>
   </data>
   <data name="lblNewPassword2Resource1.Text" xml:space="preserve">
-    <value>Password (repeat)</value>
+    <value>Adgangskode (gentag)</value>
   </data>
   <data name="lblResetPassword2InfoResource1.Text" xml:space="preserve">
-    <value>Please enter your new password twice.</value>
+    <value>Indtast venligst din adgangskode to gange.</value>
   </data>
   <data name="lblResetPassword2Resource1.Text" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Nulstil adgangskode</value>
   </data>
   <data name="lblResetPasswordInformationResource1.Text" xml:space="preserve">
-    <value>If you forgot your Password, please insert your Username &lt;b&gt;or&lt;/b&gt; Email address, then click on the Reset Password button.&lt;br /&gt;You will receive an email with a link to reset your password.</value>
+    <value>Hvis du har glemt din adgangskode, så indtast venligst dit brugernavn &lt;b&gt;eller&lt;/b&gt; din e-mail-adresse, og klik på 'Nulstil adgangskode' knappen.&lt;br /&gt;Du vil modtage en email med et link, hvor du kan nulstille din adgangskode.</value>
   </data>
   <data name="lblResultResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rfvNewPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvNewPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="rfvNewPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvNewPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -172,7 +172,7 @@
     <value />
   </data>
   <data name="rxNewPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ugyldig adgangskode</value>
   </data>
   <data name="rxNewPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -181,7 +181,7 @@
     <value />
   </data>
   <data name="rxNewPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ugyldig adgangskode</value>
   </data>
   <data name="rxNewPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -202,58 +202,58 @@
     <value />
   </data>
   <data name="lblOrResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;--- or ---&lt;/b&gt;</value>
+    <value>&lt;b&gt;--- eller ---&lt;/b&gt;</value>
   </data>
   <data name="btnLoginResource1.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Log ind</value>
   </data>
   <data name="btnLoginResource1.ToolTip" xml:space="preserve">
     <value>Klik for at logge ind</value>
   </data>
   <data name="btnLogoutResource1.Text" xml:space="preserve">
-    <value>Logud</value>
+    <value>Log ud</value>
   </data>
   <data name="btnLogoutResource1.ToolTip" xml:space="preserve">
     <value>Klik for at logge ud</value>
   </data>
   <data name="btnResetPasswordResource1.Text" xml:space="preserve">
-    <value>Nulstill password</value>
+    <value>Nulstil adgangskode</value>
   </data>
   <data name="btnResetPasswordResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkRememberResource1.Text" xml:space="preserve">
-    <value>Husk mig!</value>
+    <value>Husk mig</value>
   </data>
   <data name="chkRememberResource1.ToolTip" xml:space="preserve">
-    <value>Marker her hvis du vil have systemet til at huske dig, på denne computer</value>
+    <value>Afkryds her hvis du vil have systemet til at huske dit log ind næste gang</value>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Her kan du logge ind på wikien. Du vil være i stand til at redigere og oprette sider. Hvis du er administrator, kan du også være i stand til at udføre administration opgaver. &lt;br /&gt; Har du ikke har en konto? Du kan &lt;a href="Register.aspx" title="Oprette en ny konto her"&gt;create one&lt;/a&gt;.</value>
+    <value>Her kan du logge ind på wiki'en. Har du ikke har en konto? Du kan &lt;a href="Register.aspx" title="Opret ny konto"&gt;oprette en konto her&lt;/a&gt;.</value>
   </data>
   <data name="lblEmailResetResource1.Text" xml:space="preserve">
-    <value>E-Mail</value>
+    <value>E-mail</value>
   </data>
   <data name="lblLogoutResource1.Text" xml:space="preserve">
-    <value>De er i øjeblikket logget ind for at logge af, skal du klikke på Log af knappen.</value>
+    <value>du er i øjeblikket logget ind. For at logge ud, skal du klikke på Log ud knappen.</value>
   </data>
   <data name="lblPasswordResource1.Text" xml:space="preserve">
-    <value>Password</value>
+    <value>Adgangskode</value>
   </data>
   <data name="lblResetPasswordResource1.Text" xml:space="preserve">
-    <value>Nulstil konto</value>
+    <value>Nulstil adgangskode</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Login</value>
+    <value>Log ind</value>
   </data>
   <data name="lblUsernameResetResource1.Text" xml:space="preserve">
-    <value>Bruger navn</value>
+    <value>Brugernavn</value>
   </data>
   <data name="lblUsernameResource1.Text" xml:space="preserve">
-    <value>Bruger navn</value>
+    <value>Brugernavn</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Unavngiven side</value>
@@ -268,7 +268,7 @@
     <value />
   </data>
   <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit password her</value>
+    <value>Indtast din adgangskode her</value>
   </data>
   <data name="txtUsernameResetResource1.Text" xml:space="preserve">
     <value />
@@ -280,6 +280,6 @@
     <value />
   </data>
   <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit brugernavn her</value>
+    <value>Indtast dit brugernavn her</value>
   </data>
 </root>

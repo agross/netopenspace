@@ -4,10 +4,10 @@
  * Licensed under the MIT license.
  */
 
-// Takes an ISO time and returns a string representing how
+// Takes an date and time string and returns a string representing how
 // long ago the date represents.
 function prettyDate(time){
-	var date = new Date((time || "").replace(/-/g,"/").replace(/[TZ]/g," ")),
+	var date = new Date(time && time.toString()),
 		diff = (((new Date()).getTime() - date.getTime()) / 1000),
 		day_diff = Math.floor(diff / 86400);
 			

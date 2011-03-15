@@ -118,160 +118,160 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCopyFromResource1.Text" xml:space="preserve">
-    <value>Go</value>
+    <value>Gå</value>
   </data>
   <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
-    <value>Copy the content of the same layout area from the selected Namespace</value>
+    <value>Kopier indholdet af samme layout område fra det valgte navnerum</value>
   </data>
   <data name="lblCopyFromResource1.Text" xml:space="preserve">
-    <value>Copy content from:</value>
+    <value>Kopier indholdet fra:</value>
   </data>
   <data name="btnAccessDeniedNoticeResource1.Text" xml:space="preserve">
-    <value>Access Denied Notice (Global)</value>
+    <value>Besked for adgang nægtet (global)</value>
   </data>
   <data name="btnAccessDeniedNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnAccountActivationMessageResource1.Text" xml:space="preserve">
-    <value>Account Activation Message (Global)</value>
+    <value>Besked for aktivering af konto (global)</value>
   </data>
   <data name="btnAccountActivationMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnApproveDraftMessageResource1.Text" xml:space="preserve">
-    <value>Approve Draft Message (Global)</value>
+    <value>Besked for udkastsgodkendelse (global)</value>
   </data>
   <data name="btnApproveDraftMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuller</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancel and return</value>
+    <value>Annuler og retuner</value>
   </data>
   <data name="btnDiscussionChangeMessageResource1.Text" xml:space="preserve">
-    <value>Discussion Change Message (Global)</value>
+    <value>Besked for debatændring (global)</value>
   </data>
   <data name="btnDiscussionChangeMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
-    <value>Editing Page Notice (Namespace-specific)</value>
+    <value>Redigering af sidebesked (navnerumsspecifik)</value>
   </data>
   <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnFooterResource1.Text" xml:space="preserve">
-    <value>Footer</value>
+    <value>Sidefod</value>
   </data>
   <data name="btnFooterResource1.ToolTip" xml:space="preserve">
-    <value>Edit the global footer</value>
+    <value>Rediger den globale sidefod</value>
   </data>
   <data name="btnHeaderResource1.Text" xml:space="preserve">
-    <value>Header</value>
+    <value>Sidehoved</value>
   </data>
   <data name="btnHeaderResource1.ToolTip" xml:space="preserve">
-    <value>Edit the global header</value>
+    <value>Rediger det globale sidehoved</value>
   </data>
   <data name="btnHtmlHeadResource1.Text" xml:space="preserve">
-    <value>HTML Head</value>
+    <value>HTML sidehoved</value>
   </data>
   <data name="btnHtmlHeadResource1.ToolTip" xml:space="preserve">
-    <value>Edit the HTML Head tag</value>
+    <value>Rediger HTML sidehovedet</value>
   </data>
   <data name="btnLoginNoticeResource1.Text" xml:space="preserve">
-    <value>Login Notice (Global)</value>
+    <value>Besked for logind (global)</value>
   </data>
   <data name="btnLoginNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnPageChangeMessageResource1.Text" xml:space="preserve">
-    <value>Page Change Message (Global)</value>
+    <value>Besked for sideændring (global)</value>
   </data>
   <data name="btnPageChangeMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnPageFooterResource1.Text" xml:space="preserve">
-    <value>Page Footer</value>
+    <value>Sidefod</value>
   </data>
   <data name="btnPageFooterResource1.ToolTip" xml:space="preserve">
-    <value>Edit the page footer</value>
+    <value>Rediger sidefod</value>
   </data>
   <data name="btnPageHeaderResource1.Text" xml:space="preserve">
-    <value>Page Header</value>
+    <value>Sidehoved</value>
   </data>
   <data name="btnPageHeaderResource1.ToolTip" xml:space="preserve">
-    <value>Edit the page header</value>
+    <value>Rediger sidehoved</value>
   </data>
   <data name="btnPasswordResetProcedureMessageResource1.Text" xml:space="preserve">
-    <value>Password Reset Procedure Message (Global)</value>
+    <value>Besked for procedure for nulstilling af adgangskode (global)</value>
   </data>
   <data name="btnPasswordResetProcedureMessageResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnRegisterNoticeResource1.Text" xml:space="preserve">
-    <value>Register Notice (Global)</value>
+    <value>Besked for registrering (global)</value>
   </data>
   <data name="btnRegisterNoticeResource1.ToolTip" xml:space="preserve">
-    <value>Edit</value>
+    <value>Rediger</value>
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Gem</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save the content</value>
+    <value>Gem indhold</value>
   </data>
   <data name="btnSidebarResource1.Text" xml:space="preserve">
     <value>Sidebar</value>
   </data>
   <data name="btnSidebarResource1.ToolTip" xml:space="preserve">
-    <value>Edit the sidebar (menu)</value>
+    <value>Rediger sidebaren (menuen)</value>
   </data>
   <data name="lblAccessDeniedNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the access denied page (if not empty).</value>
+    <value>Beskeden erstatter informationen i toppen af 'adgang nægtet' siden (hvis den ikke tom).</value>
   </data>
   <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to a newly registered user that have to activate her account.</value>
+    <value>Emailbeskeden der skal sendes til en nyregistreret bruger, som er nødt til at aktivere sin konto.</value>
   </data>
   <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to editor/administrators when a page draft requires approval.</value>
+    <value>Emailbeskeden der skal sendes til en redaktør / administrator når et sideudkast skal godkendes.</value>
   </data>
   <data name="lblContentResource1.Text" xml:space="preserve">
-    <value>Content Editing</value>
+    <value>Indholdsr</value>
   </data>
   <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to users when a new message is poste to a discussion.</value>
+    <value>Emailbeskeden der skal sendes til brugere når en ny besked er postet i en debat.</value>
   </data>
   <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message displayed on top of the editing page.</value>
+    <value>Beskeden der bliver vist på toppen af en side der redigeres.</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: the actual layout of your current theme might differ from the one displayed here.</value>
+    <value>&lt;b&gt;Bemærk&lt;/b&gt;: det aktuelle layout af dit valgte tema ser måske anderledes ud end det der vises her.</value>
   </data>
   <data name="lblLoginNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the login screen (if not empty).</value>
+    <value>Beskeden erstatter informationen i toppen af logindsiden (hvis den ikke er tom).</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namespace</value>
+    <value>Navnerum</value>
   </data>
   <data name="lblOtherResource1.Text" xml:space="preserve">
-    <value>Other Elements</value>
+    <value>Andre elementer</value>
   </data>
   <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to users when a page is modified.</value>
+    <value>Emailbeskeden der skal sendes til brugere når en side bliver ændret.</value>
   </data>
   <data name="lblPageContentResource1.Text" xml:space="preserve">
-    <value>Page Content</value>
+    <value>Sideindhold</value>
   </data>
   <data name="lblPageLayoutResource1.Text" xml:space="preserve">
-    <value>Page Layout Elements (Namespace-Specific)</value>
+    <value>Sidelayout elementer (navnerumsspecifik)</value>
   </data>
   <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
-    <value>The email message sent to when a user want to reset her password.</value>
+    <value>Emailbeskeden der skal sendes til en bruger, der vil nulstille sin adgangskode.</value>
   </data>
   <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">
-    <value>The message replacing the information at the top of the register screen (if not empty).</value>
+    <value>Beskeden erstattet informationen i toppen af registreringssiden (hvis den ikke er tom).</value>
   </data>
   <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
     <value />

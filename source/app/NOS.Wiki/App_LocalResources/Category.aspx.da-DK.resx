@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>The complete list of Page Categories of this Namespace.</value>
+    <value>Den komplette liste over sidekategorier i dette navnerum.</value>
   </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
-    <value>Side kategorier</value>
+    <value>Sidekategorier</value>
   </data>
   <data name="lblCatListResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Siden uden navn</value>
+    <value>Unavngiven side</value>
   </data>
 </root>

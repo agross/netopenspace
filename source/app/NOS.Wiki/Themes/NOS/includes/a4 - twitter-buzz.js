@@ -20,7 +20,7 @@
 					.addClass('buzz')
 					.addClass('no-print')
 					.append($('<div>').addClass('content')
-						.append($('<p>').append($('<a>').attr('href', 'http://live.netopenspace.de/').attr('target', '_blank').attr('title', 'Live-Ticker').text('Buzz')))
+						.append($('<p>').append($('<a>').attr('href', 'http://live.netopenspace.de/').attr('target', '_blank').attr('title', 'Live-Ticker').text('Buzz').addClass('header')))
 						.append($('<div>')
 							.monitter({
 								query: query,

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Script.Serialization;
 
-using ScrewTurn.Wiki;
-
 namespace NOS.Registration
 {
 	internal class RegistrationRepository : IRegistrationRepository
@@ -15,7 +13,7 @@ namespace NOS.Registration
 		readonly ISynchronizer _synchronizer;
 		readonly IFileWriter _writer;
 
-		public RegistrationRepository() : this(Settings.PublicDirectory + "AutoRegistration.cs",
+		public RegistrationRepository() : this(typeof(AutoRegistrationPlugin).FullName + ".Data",
 		                                       new CrossContextSynchronizer(),
 		                                       new DefaultFileReader(),
 		                                       new DefaultFileWriter())
@@ -32,7 +30,6 @@ namespace NOS.Registration
 			_file = file;
 		}
 
-		#region IRegistrationRepository Members
 		public void Save(User user)
 		{
 			_synchronizer.Lock(() =>
@@ -76,19 +73,5 @@ namespace NOS.Registration
 
 			return user;
 		}
-
-		public void Delete(string userName)
-		{
-			_synchronizer.Lock(() =>
-				{
-					var allUsers = GetAll().ToList();
-					var toRemove = allUsers.Where(x => x.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)).ToList();
-					toRemove.Each(x => allUsers.Remove(x));
-
-					string serialized = _serializer.Serialize(allUsers);
-					_writer.Write(_file, serialized);
-				});
-		}
-		#endregion
 	}
 }

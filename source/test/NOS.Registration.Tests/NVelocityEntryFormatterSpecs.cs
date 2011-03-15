@@ -2,6 +2,8 @@ using System;
 
 using Machine.Specifications;
 
+using Rhino.Mocks;
+
 namespace NOS.Registration.Tests
 {
 	public abstract class With_entry_formatter
@@ -9,10 +11,13 @@ namespace NOS.Registration.Tests
 		protected static string Entry;
 		protected static IEntryFormatter Formatter;
 		protected static User User;
+		protected static ISettings Settings;
 
 		Establish context = () =>
 			{
 				Formatter = new NVelocityEntryFormatter();
+
+				Settings = MockRepository.GenerateStub<ISettings>();
 
 				User = new User("user")
 				       {
@@ -29,7 +34,7 @@ namespace NOS.Registration.Tests
 	public class When_a_simple_entry_with_escaped_newlines_in_the_template_is_formatted
 		: With_entry_formatter
 	{
-		Because of = () => { Entry = Formatter.FormatUserEntry(User, "some template\\n\\n"); };
+		Because of = () => { Entry = Formatter.FormatUserEntry(User, Settings, "some template\\n\\n"); };
 
 		It should_convert_escaped_newline_characters_to_newline_characters = () => Entry.ShouldEndWith("\n\n");
 	}
@@ -37,11 +42,11 @@ namespace NOS.Registration.Tests
 	[Subject(typeof(NVelocityEntryFormatter))]
 	public class When_a_simple_entry_with_a_placeholder_is_formatted : With_entry_formatter
 	{
-		Because of = () => { Entry = Formatter.FormatUserEntry(User, "$user.UserName"); };
+		Because of = () => { Entry = Formatter.FormatUserEntry(User, Settings, "$user.UserName"); };
 
 		It should_fill_the_template_with_the_user_name = () => Entry.ShouldEqual("user");
 	}
-
+	
 	[Subject(typeof(NVelocityEntryFormatter))]
 	public class When_an_entry_with_conditional_placeholders_is_formatted : With_entry_formatter
 	{
@@ -66,7 +71,7 @@ namespace NOS.Registration.Tests
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.FormatUserEntry(User, EntryTemplate); };
+		Because of = () => { Entry = Formatter.FormatUserEntry(User, Settings, EntryTemplate); };
 
 		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("twitter was given");
 		It should_turn_empty_strings_into_null_values = () => Entry.ShouldEqual("twitter was given");
@@ -92,7 +97,7 @@ namespace NOS.Registration.Tests
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.FormatUserEntry(User, EntryTemplate); };
+		Because of = () => { Entry = Formatter.FormatUserEntry(User, Settings, EntryTemplate); };
 
 		It should_fill_the_template_with_satisfied_conditonals = () => Entry.ShouldContain("was given");
 	}
@@ -135,7 +140,7 @@ namespace NOS.Registration.Tests
 				       };
 			};
 
-		Because of = () => { Entry = Formatter.FormatUserEntry(User, EntryTemplate); };
+		Because of = () => { Entry = Formatter.FormatUserEntry(User, Settings, EntryTemplate); };
 
 		It should_fill_the_template_with_just_the_satisfied_conditonals =
 			() =>

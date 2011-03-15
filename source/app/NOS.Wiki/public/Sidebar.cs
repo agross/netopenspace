@@ -1,4 +1,4 @@
-﻿<en-us>
+<en-us>
 ====Navigation <div class="rss"><a href="{MAINURL}RSS.aspx" title="Subscribe to the RSS Feed of {WIKITITLE}"><img src="{THEMEPATH}images/RSS-16x16.png" alt="RSS" title="Subscribe to the RSS Feed of {WIKITITLE}"/></a></div>====
 * '''[MainPage|Main Page]'''
 * [News]
@@ -21,10 +21,9 @@
 
 ====Partners====
 {t:Partnerlogos}
-
 ====Sponsors====
 {t:Sponsorenlogos}
-('''Want to sponsor?''' [slieser@netopenspace.de| Write us!])
+('''Want to sponsor?''' [orga@netopenspace.de| Write us!])
 </en-us>
 
 <de-de>
@@ -50,7 +49,6 @@
 
 ====Partner====
 {t:Partnerlogos}
-
 ====[Sponsoren]====
 {t:Sponsorenlogos}
 ('''[FAQ#Sponsoring_Unternehmen|Wie wird gesponsert?]''')

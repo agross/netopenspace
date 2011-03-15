@@ -112,25 +112,25 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancelResource2.Text" xml:space="preserve">
-    <value>Close</value>
+    <value>Sluit</value>
   </data>
   <data name="btnCancelResource2.ToolTip" xml:space="preserve">
-    <value>Close this tolbox</value>
+    <value>Sluit deze toolbox</value>
   </data>
   <data name="lblRotateResource1.Text" xml:space="preserve">
-    <value>Rotation</value>
+    <value>Rotatie</value>
   </data>
   <data name="chkNewNameResource2.Text" xml:space="preserve">
-    <value>Save as new file</value>
+    <value>Bewaar als nieuw bestand</value>
   </data>
   <data name="chkNewNameResource2.ToolTip" xml:space="preserve">
-    <value>If not selected, the original file is overwritten</value>
+    <value>als niet geselecteerd, het originele bestand is overschreven</value>
   </data>
   <data name="rdoJpegHighResource2.Text" xml:space="preserve">
     <value>JPEG 100%</value>
@@ -169,31 +169,31 @@
     <value>PNG</value>
   </data>
   <data name="btnPreviewResource1.Text" xml:space="preserve">
-    <value>Update Preview</value>
+    <value>Bijwerken Preview</value>
   </data>
   <data name="btnPreviewResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Bewaar</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Save the modified Image</value>
+    <value>Bewaar het gewijzigde plaatje</value>
   </data>
   <data name="chkAspectRatioResource1.Text" xml:space="preserve">
-    <value>Maintain Aspect Ratio</value>
+    <value>Behoud Aspect Ratio</value>
   </data>
   <data name="chkAspectRatioResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="imgPreviewResource1.AlternateText" xml:space="preserve">
-    <value>Image Preview</value>
+    <value>Plaatje Preview</value>
   </data>
   <data name="imgPreviewResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblCurrentSizeInfoResource1.Text" xml:space="preserve">
-    <value>Current size: </value>
+    <value>Huidige grootte: </value>
   </data>
   <data name="lblCurrentSizePixelsResource1.Text" xml:space="preserve">
     <value> pixels</value>
@@ -205,7 +205,7 @@
     <value />
   </data>
   <data name="lblOptionsResource1.Text" xml:space="preserve">
-    <value>Image Resize Options</value>
+    <value>Opties voor aanpassen grootte van plaatje</value>
   </data>
   <data name="lblOptionsResource1.ToolTip" xml:space="preserve">
     <value />
@@ -223,7 +223,7 @@
     <value />
   </data>
   <data name="lblScalePreResource1.Text" xml:space="preserve">
-    <value>(Scale: </value>
+    <value>(Sc: </value>
   </data>
   <data name="lblScalePreResource1.ToolTip" xml:space="preserve">
     <value />
@@ -235,7 +235,7 @@
     <value />
   </data>
   <data name="lblSizePixelsResource1.Text" xml:space="preserve">
-    <value> pixels</value>
+    <value>pixels</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Image Editor</value>
@@ -256,6 +256,6 @@
     <value />
   </data>
   <data name="txtWidthResource1.ToolTip" xml:space="preserve">
-    <value>Width</value>
+    <value>Breedte</value>
   </data>
 </root>

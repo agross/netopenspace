@@ -26,7 +26,7 @@
 				OnClick="btnNewPage_Click" meta:resourcekey="btnNewPageResource1" />
 			<br /><br />
 			<anthem:Button ID="btnBulkMigrate" runat="server" Text="Bulk Migrate" ToolTip="Migrate many Pages to another namespace"
-				AutoUpdateAfterCallback="true" OnClick="btnBulkMigrate_Click" />
+				AutoUpdateAfterCallback="true" OnClick="btnBulkMigrate_Click" meta:resourcekey="btnBulkMigrateResource1" />
 		</div>
 		
 		<div id="NamespaceSelectorDiv">

@@ -46,7 +46,16 @@
 			function(json)
 			{
 				json = $.grep(json, developmentFilter);
-				var local = $.grep(json, localEventFilter)[0];
+				var local = $.grep(json, localEventFilter);
+				if (local && local[0])
+				{
+					local = local[0];
+				}
+
+				if (local && local.PastEvents)
+				{
+					local.PastEvents = $.grep(local.PastEvents, localEventFilter, true);
+				}
 				var remotes = $($.grep(json, localEventFilter, true));
 
 				if (local && local.PastEvents)

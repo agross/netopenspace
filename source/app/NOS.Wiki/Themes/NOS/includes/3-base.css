@@ -73,6 +73,10 @@ span.prefix {
 	padding-right: 0;
 }
 
+span.prefix.disabled {
+	background-color: #F0F0F0;
+}
+
 input.has-prefix {
 	border-left: 0;
 	padding-left: 0;
@@ -427,6 +431,11 @@ Sidebar
 	width: 8.8em;
 }
 
+.buzz .header {
+	background: transparent url("images/twitter.png") top left scroll no-repeat;
+	padding: 0 0 0 18px;
+}
+
 /*
 Partners
 ------------------------------------------------------------------------------------------------------------------------
@@ -484,6 +493,10 @@ h1.pagetitle {
 	margin-left: 80%;
 	cursor: pointer;
 	width: 77px;
+}
+
+.highlight {
+	background-color: #E1DF9E;
 }
 
 /*

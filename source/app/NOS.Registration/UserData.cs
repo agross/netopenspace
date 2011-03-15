@@ -76,6 +76,18 @@ namespace NOS.Registration
 			}
 		}
 
+		public string InvoiceAddress
+		{
+			get;
+			set;
+		}
+
+		public DateTime RegisteredAt
+		{
+			get;
+			set;
+		}
+
 		static string EmptyStringToNull(string value)
 		{
 			return String.IsNullOrEmpty(value) ? null : value;

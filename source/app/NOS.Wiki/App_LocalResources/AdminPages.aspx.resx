@@ -570,4 +570,10 @@
   <data name="rfvBulkMigrateTargetNamespaceResource1.ErrorMessage" xml:space="preserve">
     <value>Target Namespace is required</value>
   </data>
+  <data name="btnBulkMigrateResource1.Text" xml:space="preserve">
+    <value>Bulk Migrate</value>
+  </data>
+  <data name="btnBulkMigrateResource1.ToolTip" xml:space="preserve">
+    <value>Migrate many Pages to another namespace</value>
+  </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Emails are not equal</value>
+    <value>E-mails er ikke ens</value>
   </data>
   <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -127,7 +127,7 @@
     <value />
   </data>
   <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Emails are not equal</value>
+    <value>E-mails er ikke ens</value>
   </data>
   <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -136,7 +136,7 @@
     <value />
   </data>
   <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Adgangskoder er ikke ens</value>
   </data>
   <data name="cvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -145,7 +145,7 @@
     <value />
   </data>
   <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords are not equal</value>
+    <value>Adgangskoder er ikke ens</value>
   </data>
   <data name="cvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="cvUsernameResource1.ErrorMessage" xml:space="preserve">
-    <value>Username already exists</value>
+    <value>Brugernavnet findes allerede</value>
   </data>
   <data name="cvUsernameResource1.Text" xml:space="preserve">
     <value />
@@ -166,7 +166,7 @@
     <value />
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Display Name</value>
+    <value>Visningsnavn</value>
   </data>
   <data name="lblResultResource1.ToolTip" xml:space="preserve">
     <value />
@@ -178,7 +178,7 @@
     <value />
   </data>
   <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>E-mail er påkrævet</value>
   </data>
   <data name="rfvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -187,7 +187,7 @@
     <value />
   </data>
   <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Email is required</value>
+    <value>E-mail er påkrævet</value>
   </data>
   <data name="rfvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -196,7 +196,7 @@
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -205,7 +205,7 @@
     <value />
   </data>
   <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password is required</value>
+    <value>Adgangskode er påkrævet</value>
   </data>
   <data name="rfvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -214,7 +214,7 @@
     <value />
   </data>
   <data name="rfvUsernameResource1.ErrorMessage" xml:space="preserve">
-    <value>Username is required</value>
+    <value>Brugernavn er påkrævet</value>
   </data>
   <data name="rfvUsernameResource1.Text" xml:space="preserve">
     <value />
@@ -223,7 +223,7 @@
     <value />
   </data>
   <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Display Name</value>
+    <value>Ugyldigt visningsnavn</value>
   </data>
   <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -232,7 +232,7 @@
     <value />
   </data>
   <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Email</value>
+    <value>Ugyldig e-mail</value>
   </data>
   <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -241,7 +241,7 @@
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Password</value>
+    <value>Ugyldig adgangskode</value>
   </data>
   <data name="rxvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -250,7 +250,7 @@
     <value />
   </data>
   <data name="rxvUserNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Username</value>
+    <value>Ugyldigt brugernavn</value>
   </data>
   <data name="rxvUserNameResource1.Text" xml:space="preserve">
     <value />
@@ -262,16 +262,16 @@
     <value />
   </data>
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Type here a display name for your account</value>
+    <value>Indtast et visningsnavn for din konto her</value>
   </data>
   <data name="btnRegisterResource1.Text" xml:space="preserve">
     <value>Opret konto</value>
   </data>
   <data name="btnRegisterResource1.ToolTip" xml:space="preserve">
-    <value>Klik er for at oprette en konto</value>
+    <value>Klik her for at oprette en konto</value>
   </data>
   <data name="lblCaptchaResource1.Text" xml:space="preserve">
-    <value>Kontrol tekst</value>
+    <value>Kontroltekst (der er forskel på store og små bogstaver)</value>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
     <value>E-mail</value>
@@ -280,13 +280,13 @@
     <value>E-mail (gentag)</value>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
-    <value>Kodeord</value>
+    <value>Adgangskode</value>
   </data>
   <data name="lblPassword2Resource1.Text" xml:space="preserve">
-    <value>Kodeord (gentag)</value>
+    <value>Adgangskode (gentag)</value>
   </data>
   <data name="lblRegisterDescriptionResource1.Text" xml:space="preserve">
-    <value>Her kan du oprette en ny konto til denne Wiki. &lt;br /&gt; &lt;b&gt; Bemærk &lt;/ b&gt;: alle felter er obligatoriske. E-mail-adressen vil ikke blive offentliggjort på nogen måde, men det vil være synlig for administratorer.</value>
+    <value>Her kan du oprette en ny konto til denne Wiki. &lt;br /&gt;&lt;b&gt;Bemærk&lt;/ b&gt;: Alle felter er obligatoriske. E-mail-adressen vil ikke blive offentliggjort på nogen måde, men den vil være synlig for administratorer.</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -298,36 +298,36 @@
     <value>Brugernavn</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Side uden titel</value>
+    <value>Unavngiven side</value>
   </data>
   <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
-    <value>Skriv din E-mail adresse her</value>
+    <value>Indtast din e-mail-adresse her</value>
   </data>
   <data name="txtEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
-    <value>Gentag din E-mail adresse her</value>
+    <value>Gentag din e-mail-adresse</value>
   </data>
   <data name="txtPassword1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit kodeord her</value>
+    <value>Indtast din adgangskode her</value>
   </data>
   <data name="txtPassword2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
-    <value>Gentag dit kodeord her</value>
+    <value>Gentag din adgangskode</value>
   </data>
   <data name="txtUsernameResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
-    <value>Skriv dit burgernavn her</value>
+    <value>Indtast dit brugernavn her</value>
   </data>
 </root>

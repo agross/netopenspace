@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Wiki", "app\NOS.Wiki\", "{9042FB6F-5A70-409D-A1DF-31A1092196A0}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/NOS.Wiki"
 		Debug.AspNetCompiler.PhysicalPath = "app\NOS.Wiki\"
@@ -24,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Wiki", "app\NOS.Wiki\",
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Root", "app\NOS.Root\", "{A042FB6F-5A70-409D-A1DF-31A1092196A0}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/NOS.Root"
 		Debug.AspNetCompiler.PhysicalPath = "app\NOS.Root\"
@@ -45,7 +45,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Root", "app\NOS.Root\",
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NOS.Wall", "app\NOS.Wall\", "{B042FB6F-5A70-409D-A1DF-31A1092196A0}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/NOS.Wall"
 		Debug.AspNetCompiler.PhysicalPath = "app\NOS.Wall\"

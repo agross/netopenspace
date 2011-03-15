@@ -15,17 +15,19 @@ namespace NOS.Registration.Tests
 	{
 		protected static IPluginConfiguration Configuration;
 		protected static IEntryFormatter EntryFormatter;
-		protected static IHost Host;
+		protected static IHostV30 Host;
 		protected static ILogger Logger;
 		protected static INotificationSender NotificationSender;
 		protected static IPageFormatter PageFormatter;
 		protected static IPageRepository PageRepository;
 		protected static AutoRegistrationPlugin Plugin;
 		protected static IRegistrationRepository RegistrationRepository;
+		protected static IFileReader FileReader;
+		protected static ISettings Settings;
 
 		Establish context = () =>
 			{
-				Host = MockRepository.GenerateStub<IHost>();
+				Host = MockRepository.GenerateStub<IHostV30>();
 
 				ISynchronizer synchronizer = MockRepository.GenerateStub<ISynchronizer>();
 				synchronizer
@@ -41,8 +43,18 @@ namespace NOS.Registration.Tests
 				PageFormatter = MockRepository.GenerateStub<IPageFormatter>();
 
 				NotificationSender = MockRepository.GenerateStub<INotificationSender>();
+				FileReader = MockRepository.GenerateStub<IFileReader>();
 
 				Configuration = MockRepository.GenerateStub<IPluginConfiguration>();
+
+				Settings = MockRepository.GenerateStub<ISettings>();
+				Settings
+					.Stub(x => x.SenderEmail)
+					.Return("sender@example.com");
+				Settings
+					.Stub(x => x.ContactEmail)
+					.Return("admin@example.com");
+
 				Plugin = new AutoRegistrationPlugin(synchronizer,
 				                                    RegistrationRepository,
 				                                    PageRepository,
@@ -50,7 +62,9 @@ namespace NOS.Registration.Tests
 				                                    EntryFormatter,
 				                                    NotificationSender,
 				                                    Logger,
-				                                    Configuration);
+				                                    Configuration,
+													FileReader,
+													Settings);
 			};
 	}
 
@@ -110,7 +124,7 @@ namespace NOS.Registration.Tests
 	[Subject(typeof(AutoRegistrationPlugin))]
 	public class When_a_user_account_is_activated : With_auto_registration_plugin
 	{
-		static IPagesStorageProvider Provider;
+		static IPagesStorageProviderV30 Provider;
 		static UserAccountActivityEventArgs EventArgs;
 		protected static UserInfo UserInfo;
 		protected static User User;
@@ -119,11 +133,11 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "Jon Doe",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountActivated);
 
 				User = new User("user");
@@ -138,7 +152,7 @@ namespace NOS.Registration.Tests
 				Configuration.Stub(x => x.PageName).Return("page");
 				Configuration.Stub(x => x.EntryTemplate).Return(" and entry");
 
-				PageInfo = new PageInfo(Configuration.PageName, null, PageStatus.Normal, DateTime.Now);
+				PageInfo = new PageInfo(Configuration.PageName, null, DateTime.Now);
 				PageRepository.Stub(x => x.FindPage(Configuration.PageName)).Return(PageInfo);
 
 				Host
@@ -148,7 +162,9 @@ namespace NOS.Registration.Tests
 					                        "user that saved the content last",
 					                        DateTime.Now,
 					                        String.Empty,
-					                        "content"));
+					                        "content",
+					                        new[] { "keyword" },
+					                        "description"));
 				Host
 					.Stub(x => x.SendEmail(null, null, null, null, false))
 					.IgnoreArguments()
@@ -157,7 +173,7 @@ namespace NOS.Registration.Tests
 				Plugin.Init(Host, String.Empty);
 
 				EntryFormatter
-					.Stub(x => x.FormatUserEntry(User, Configuration.EntryTemplate))
+					.Stub(x => x.FormatUserEntry(User, Settings, Configuration.EntryTemplate))
 					.Return(Configuration.EntryTemplate);
 				PageFormatter
 					.Stub(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration))
@@ -176,7 +192,7 @@ namespace NOS.Registration.Tests
 			() => Host.AssertWasCalled(x => x.GetPageContent(PageInfo));
 
 		It should_format_the_users_entry =
-			() => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User, Configuration.EntryTemplate));
+			() => EntryFormatter.AssertWasCalled(x => x.FormatUserEntry(User, Settings, Configuration.EntryTemplate));
 
 		It should_add_the_users_entry_to_the_attendee_page =
 			() => PageFormatter.AssertWasCalled(x => x.AddEntry("content", Configuration.EntryTemplate, User, Configuration));
@@ -210,12 +226,14 @@ namespace NOS.Registration.Tests
 			                                                 Arg<string>.Is.Anything));
 
 		It should_notify_the_user_about_the_activation =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Username),
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Email),
 			                                                            Arg<string>.Is.Equal(Configuration.Comment),
-			                                                            Arg<bool>.Is.Equal(false)));
-
-		It should_delete_the_user = () => RegistrationRepository.AssertWasCalled(x => x.Delete("user"));
+																		Arg<string>.Is.Anything));
+		
+		It should_notify_the_administrator_about_the_activation =
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(Settings.ContactEmail),
+			                                                            Arg<string>.Is.Equal(Configuration.Comment),
+																		Arg<string>.Is.Anything));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -239,16 +257,14 @@ namespace NOS.Registration.Tests
 		protected static UserInfo UserInfo;
 
 		It should_notify_the_administrator_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.NotEqual(UserInfo.Email),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal("admin@example.com"),
 			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
+																		Arg<string>.Is.Anything));
 
 		It should_notify_the_user_about_the_failure =
-			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.NotNull,
-			                                                            Arg<string>.Is.Equal(UserInfo.Email),
+			() => NotificationSender.AssertWasCalled(x => x.SendMessage(Arg<string>.Is.Equal(UserInfo.Email),
 			                                                            Arg<string>.Is.NotNull,
-			                                                            Arg<bool>.Is.Equal(true)));
+																		Arg<string>.Is.Anything));
 	}
 
 	[Subject(typeof(AutoRegistrationPlugin))]
@@ -328,20 +344,20 @@ namespace NOS.Registration.Tests
 		Establish context = () =>
 			{
 				UserInfo = new UserInfo("user",
+				                        "Jon Doe",
 				                        "email@example.com",
 				                        true,
 				                        DateTime.Now,
-				                        false,
-				                        MockRepository.GenerateStub<IUsersStorageProvider>());
+				                        MockRepository.GenerateStub<IUsersStorageProviderV30>());
 				EventArgs = new UserAccountActivityEventArgs(UserInfo, UserAccountActivity.AccountAdded);
 			};
 
 		Because of = () => Host.Raise(x => x.UserAccountActivity += null, null, EventArgs);
 
-		It should_not_load_users = () => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
+		It should_not_load_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.GetAll());
 
-		It should_not_save_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
-
-		It should_not_delete_users = () => RegistrationRepository.AssertWasNotCalled(x => x.Delete(Arg<string>.Is.Anything));
+		It should_not_save_users =
+			() => RegistrationRepository.AssertWasNotCalled(x => x.Save(Arg<User>.Is.Anything));
 	}
 }

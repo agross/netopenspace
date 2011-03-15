@@ -3,22 +3,23 @@ using System.Linq;
 
 using NOS.Registration.EntryPositioning;
 
-using ScrewTurn.Wiki;
 using ScrewTurn.Wiki.PluginFramework;
 
 namespace NOS.Registration
 {
-	public class AutoRegistrationPlugin : IFormatterProvider
+	public class AutoRegistrationPlugin : IFormatterProviderV30
 	{
 		readonly IPluginConfiguration _configuration;
 		readonly IEntryFormatter _entryFormatter;
+		readonly IFileReader _fileReader;
 		readonly ILogger _logger;
 		readonly INotificationSender _notificationSender;
 		readonly IPageFormatter _pageFormatter;
 		readonly IPageRepository _pageRepository;
 		readonly IRegistrationRepository _registrationRepository;
+		readonly ISettings _settings;
 		readonly ISynchronizer _synchronizer;
-		IHost _host;
+		IHostV30 _host;
 
 		public AutoRegistrationPlugin()
 			: this(new CrossContextSynchronizer(),
@@ -35,7 +36,9 @@ namespace NOS.Registration
 			       new NVelocityEntryFormatter(),
 			       new EmailNotificationSender(),
 			       new DefaultLogger(),
-			       new DefaultPluginConfiguration())
+			       new DefaultPluginConfiguration(),
+			       new DefaultFileReader(),
+			       new WikiSettings())
 		{
 		}
 
@@ -46,9 +49,13 @@ namespace NOS.Registration
 		                              IEntryFormatter entryFormatter,
 		                              INotificationSender notificationSender,
 		                              ILogger logger,
-		                              IPluginConfiguration configuration)
+		                              IPluginConfiguration configuration,
+		                              IFileReader fileReader,
+		                              ISettings settings)
 		{
 			_synchronizer = synchronizer;
+			_fileReader = fileReader;
+			_settings = settings;
 			_registrationRepository = registrationRepository;
 			_pageRepository = pageRepository;
 			_pageFormatter = pageFormatter;
@@ -59,14 +66,14 @@ namespace NOS.Registration
 		}
 
 		#region IFormatterProvider Members
-		public void Init(IHost host, string config)
+		public void Init(IHostV30 host, string config)
 		{
 			_host = host;
 
 			if (Configure(config))
 			{
 				_host.UserAccountActivity += Host_UserAccountActivity;
-				_notificationSender.Configure(_host);
+				_notificationSender.Configure(_host, _settings);
 
 				_logger.Info(String.Format("Waiting list is enabled after {0} attendees with a hard limit of {1}.",
 				                           _configuration.MaximumAttendees,
@@ -85,12 +92,22 @@ namespace NOS.Registration
 
 		public ComponentInformation Information
 		{
-			get { return new ComponentInformation(GetType().Name, "Alexander Groß", "http://therightstuff.de"); }
+			get { return new ComponentInformation(GetType().Name, "Alexander Groß", "1.1", "http://therightstuff.de", null); }
+		}
+
+		public string ConfigHelpHtml
+		{
+			get { return String.Empty; }
 		}
 
 		public string Format(string raw, ContextInformation context, FormattingPhase phase)
 		{
 			return raw;
+		}
+
+		public string PrepareTitle(string title, ContextInformation context)
+		{
+			return title;
 		}
 
 		public bool PerformPhase1
@@ -106,6 +123,11 @@ namespace NOS.Registration
 		public bool PerformPhase3
 		{
 			get { return false; }
+		}
+
+		public int ExecutionPriority
+		{
+			get { return 100; }
 		}
 		#endregion
 
@@ -128,9 +150,10 @@ namespace NOS.Registration
 			_synchronizer.Lock(() =>
 				{
 					var failed = false;
+					User user = null;
 					try
 					{
-						var user = _registrationRepository.FindByUserName(e.User.Username);
+						user = _registrationRepository.FindByUserName(e.User.Username);
 						if (user == null)
 						{
 							return;
@@ -140,8 +163,7 @@ namespace NOS.Registration
 						if (pageInfo == null)
 						{
 							_logger.Error(String.Format("The attendee page '{0}' does not exist.", _configuration.PageName), "SYSTEM");
-							failed = true;
-							return;
+							throw new Exception("Attendee page does not exist.");
 						}
 
 						PageContent pageContent;
@@ -151,39 +173,59 @@ namespace NOS.Registration
 						}
 						catch (Exception ex)
 						{
-							_logger.Error(
-								String.Format("The attendee page's content ('{0}') could not be loaded: {1}", _configuration.PageName, ex),
-								"SYSTEM");
-							failed = true;
-							return;
+							_logger.Error(String.Format("The attendee page's content ('{0}') could not be loaded: {1}", _configuration.PageName, ex),
+								          "SYSTEM");
+							throw;
 						}
 
 						try
 						{
-							string entry = _entryFormatter.FormatUserEntry(user, _configuration.EntryTemplate);
+							string entry = _entryFormatter.FormatUserEntry(user, _settings, _configuration.EntryTemplate);
 							string newContent = _pageFormatter.AddEntry(pageContent.Content, entry, user, _configuration);
 
 							_pageRepository.Save(pageInfo, pageContent.Title, user.UserName, _configuration.Comment, newContent);
 
-							_registrationRepository.Delete(user.UserName);
-
-							_logger.Info("User entry written successfully, registration data has been deleted", user.UserName);
+							_logger.Info("User entry written successfully", user.UserName);
 						}
 						catch (Exception ex)
 						{
 							_logger.Error(String.Format("Could not add the user's entry to the attendee list: {0}", ex), "SYSTEM");
-							failed = true;
+							throw;
 						}
+					}
+					catch
+					{
+						failed = true;
 					}
 					finally
 					{
-						_notificationSender.SendMessage(e.User.Username, e.User.Email, _configuration.Comment, failed);
-						if (failed)
+						if (user != null)
 						{
-							_notificationSender.SendMessage(e.User.Username, Settings.ContactEmail, _configuration.Comment, true);
+							string message = LoadEmailTemplate(failed);
+							message = FillTemplate(message, user);
+
+							_notificationSender.SendMessage(e.User.Email, _configuration.Comment, message);
+							_notificationSender.SendMessage(_settings.ContactEmail, _configuration.Comment, message);
 						}
 					}
 				});
+		}
+
+		string LoadEmailTemplate(bool failed)
+		{
+			string file = typeof(AutoRegistrationPlugin).FullName + ".SuccessMessage";
+
+			if (failed)
+			{
+				file = typeof(AutoRegistrationPlugin).FullName + ".FailureMessage";
+			}
+
+			return _fileReader.Read(file);
+		}
+
+		string FillTemplate(string template, User user)
+		{
+			return _entryFormatter.FormatUserEntry(user, _settings, template);
 		}
 	}
 }

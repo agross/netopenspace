@@ -38,7 +38,7 @@
 	</appSettings>
 
 	<system.web>
-		<customErrors mode="@configatron.app.iis.custom_errors@" />
+		<customErrors mode="@configatron.app.iis.custom_errors@" defaultRedirect="~/Error.aspx" />
 
 		<authentication mode="Forms">
 			<forms path="@configatron.app.iis.cookie_path@" />
@@ -52,7 +52,7 @@
 				<add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
 			</assemblies>
 		</compilation>
-		<sessionState cookieless="AutoDetect"/>
+		<sessionState cookieless="false"/>
 		<!-- Execution Timeout default is 110 seconds. Increase it to several hours when migrating data between providers
 			 or when rebuilding the search engine index or page links.
 			 1 hour = 3600 seconds. -->
