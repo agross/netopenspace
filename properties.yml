@@ -59,8 +59,19 @@ leipzig:
       root_url: http://netopenspace.de/
   deployment:
     tasks:
-      - root
       - wiki
+    iis:
+      app_name: (agross) netopenspace.de/
+      
+root:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2010/
+      root_url: http://netopenspace.de/
+  deployment:
+    tasks:
+      - root
       - wall
     iis:
       app_name: (agross) netopenspace.de/
