@@ -55,7 +55,7 @@ leipzig:
   default_to: production
   app:
     iis:
-      cookie_path: 2010/
+      cookie_path: 2011/
       root_url: http://netopenspace.de/
   deployment:
     tasks:
@@ -67,7 +67,7 @@ root:
   default_to: production
   app:
     iis:
-      cookie_path: 2010/
+      cookie_path: 2011/
       root_url: http://netopenspace.de/
   deployment:
     tasks:

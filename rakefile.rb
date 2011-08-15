@@ -5,6 +5,8 @@ Dir.glob(File.join(File.dirname(__FILE__), 'tools/Rake/*.rb')).each do |f|
 	require f
 end
 
+include Rake::DSL
+
 task :default => [:clobber, 'compile:all', 'tests:run', 'package:all']
 
 namespace :env do
@@ -326,7 +328,7 @@ namespace :package do
 end
 
 namespace :deploy do
-	task :root, :remote, :needs => ['package:all'] do |t, args|
+	task :root, [:remote] => ['package:all'] do |t, args|
 		remote = args[:remote]
 		
 		MSDeploy.run \
@@ -342,7 +344,7 @@ namespace :deploy do
 			:enableRule => ["DoNotDeleteRule", "SkipNewerFilesRule"]
 	end
 	
-	task :wiki, :remote, :needs => ['package:all'] do |t, args|
+	task :wiki, [:remote] => ['package:all'] do |t, args|
 		remote = args[:remote]
 		
 		MSDeploy.run \
@@ -393,7 +395,7 @@ namespace :deploy do
 				})
 	end
 	
-	task :wall, :remote, :needs => ['package:all'] do |t, args|
+	task :wall, [:remote] => ['package:all'] do |t, args|
 		remote = args[:remote]
 		
 		MSDeploy.run \
