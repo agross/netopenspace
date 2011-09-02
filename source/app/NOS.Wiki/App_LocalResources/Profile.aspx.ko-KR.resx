@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmResource1.Text" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="btnConfirmResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteAccountResource1.Text" xml:space="preserve">
+    <value>계정 삭제</value>
+  </data>
+  <data name="btnDeleteAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
+    <value>표시 이름 저장</value>
+  </data>
+  <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>표시된 이름을 저장하려면 여기를 클릭</value>
+  </data>
+  <data name="btnSaveEmailResource1.Text" xml:space="preserve">
+    <value>이메일 저장</value>
+  </data>
+  <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
+    <value>이메일을 저장하려면 여기를 클릭</value>
+  </data>
+  <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="btnSaveLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveNotificationsResource1.Text" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="btnSaveNotificationsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSavePasswordResource1.Text" xml:space="preserve">
+    <value>비밀번호 저장</value>
+  </data>
+  <data name="btnSavePasswordResource1.ToolTip" xml:space="preserve">
+    <value>새 비밀번호를 저장하려면 여기를 클릭</value>
+  </data>
+  <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>이메일이 일치하지 않습니다</value>
+  </data>
+  <data name="cvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>이메일이 일치하지 않습니다</value>
+  </data>
+  <data name="cvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>틀린 비밀번호</value>
+  </data>
+  <data name="cvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>비밀번호가  일치하지 않습니다</value>
+  </data>
+  <data name="cvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>비밀번호가  일치하지 않습니다</value>
+  </data>
+  <data name="cvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
+    <value>계정삭제버튼을 클릭하고 확인을 누르면 계정을 삭제할 수 있습니다.&lt;br /&gt;&lt;b&gt;경고&lt;/b&gt;: 이작업은 복구가 불가능합니다.</value>
+  </data>
+  <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
+    <value>계정 삭제</value>
+  </data>
+  <data name="lblDescriptionResource1.Text" xml:space="preserve">
+    <value>프로파일 설정에 오신것을 환영합니다, </value>
+  </data>
+  <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
+    <value>다음 네임스페이스로 포스팅된 &lt;b&gt;메세지&lt;/b&gt;에 대한 이메일알림을 받습니다.(접근권한이 있는 메세지만)</value>
+  </data>
+  <data name="lblDisplayNameResource1.Text" xml:space="preserve">
+    <value>표시이름</value>
+  </data>
+  <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
+    <value>표시이름, 이메일 비밀번호 편집</value>
+  </data>
+  <data name="lblEmail1Resource1.Text" xml:space="preserve">
+    <value>이메일</value>
+  </data>
+  <data name="lblEmail2Resource1.Text" xml:space="preserve">
+    <value>이메일 (반복)</value>
+  </data>
+  <data name="lblGroupsListResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGroupsResource1.Text" xml:space="preserve">
+    <value>You are member of the following groups:</value>
+  </data>
+  <data name="lblInfoResource1.Text" xml:space="preserve">
+    <value>Here you can edit your Profile settings, such as Email address and Password. You cannot change your Username.</value>
+  </data>
+  <data name="lblLanguageResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageTimeZoneResource1.Text" xml:space="preserve">
+    <value>언어와 시간설정</value>
+  </data>
+  <data name="lblNoChangesResource1.Text" xml:space="preserve">
+    <value>현재 시스템설정은 어떤 개인적인 정보변경도 허용하지 않습니다.</value>
+  </data>
+  <data name="lblNotificationsResource1.Text" xml:space="preserve">
+    <value>이메일알림 설정</value>
+  </data>
+  <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotificationsResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOldPasswordResource1.Text" xml:space="preserve">
+    <value>예전 비밀번호</value>
+  </data>
+  <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
+    <value>다음 네임스페이스로 업데이트된 &lt;b&gt;페이지&lt;/b&gt;에 대한 이메일알림을 받습니다.(접근권한이 있는 페이지만):</value>
+  </data>
+  <data name="lblPassword1Resource1.Text" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="lblPassword2Resource1.Text" xml:space="preserve">
+    <value>비밀번호 (반복)</value>
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveDisplayNameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveEmailResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSaveEmailResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavePasswordResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>사용자 프로파일</value>
+  </data>
+  <data name="lblUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstDiscussionMessagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPageChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>제목없음</value>
+  </data>
+  <data name="pnlAccountResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlNoChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>이메일은  필수항목입니다.</value>
+  </data>
+  <data name="rfvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
+    <value>이메일은  필수항목입니다.</value>
+  </data>
+  <data name="rfvEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvEmail2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>이메일은  필수항목입니다.</value>
+  </data>
+  <data name="rfvOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>비밀번호는 필수항목입니다.</value>
+  </data>
+  <data name="rfvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
+    <value>비밀번호는 필수항목입니다.</value>
+  </data>
+  <data name="rfvPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPassword2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
+    <value>유효하지 않은 표시이름</value>
+  </data>
+  <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
+    <value>틀린 이메일주소</value>
+  </data>
+  <data name="rxvEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvEmail1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
+    <value>틀린 비밀번호</value>
+  </data>
+  <data name="rxvPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rxvPassword1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
+    <value>계정의 표시이름을 입력하세요</value>
+  </data>
+  <data name="txtEmail1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
+    <value>Type here your Email address</value>
+  </data>
+  <data name="txtEmail2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
+    <value>Repeat your Email address</value>
+  </data>
+  <data name="txtOldPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOldPasswordResource1.ToolTip" xml:space="preserve">
+    <value>현재 비밀번호를 입력하세요</value>
+  </data>
+  <data name="txtPassword1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword1Resource1.ToolTip" xml:space="preserve">
+    <value>새 비밀번호를 입력하세요</value>
+  </data>
+  <data name="txtPassword2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword2Resource1.ToolTip" xml:space="preserve">
+    <value>새 비밀번호  재입력</value>
+  </data>
+</root>

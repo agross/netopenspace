@@ -171,12 +171,6 @@
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>Sélectionner ce compte</value>
   </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Sélectionner</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Sélectionner ce compte</value>
-  </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>Comptes actifs</value>
   </data>

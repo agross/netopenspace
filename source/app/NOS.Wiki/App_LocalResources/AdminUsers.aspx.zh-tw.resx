@@ -171,12 +171,6 @@
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>選擇此帳戶</value>
   </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>選擇</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>選擇此帳戶</value>
-  </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>已啟動帳戶</value>
   </data>

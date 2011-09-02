@@ -294,12 +294,6 @@
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>Vybere toto konto</value>
   </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Vybrat</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Vybere toto konto</value>
-  </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>Aktivní konta</value>
   </data>

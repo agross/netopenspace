@@ -124,7 +124,7 @@
     <value>Godkänn denna version</value>
   </data>
   <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
-    <value>Ärv från namnrymd</value>
+    <value>Ärv från namnområde</value>
   </data>
   <data name="btnAsNamespaceResource1.ToolTip" xml:space="preserve">
     <value>Använd denna mall</value>
@@ -331,13 +331,13 @@
     <value>Namn</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namnrymd</value>
+    <value>Namnområde</value>
   </data>
   <data name="lblNewNameResource1.Text" xml:space="preserve">
     <value>Nytt namn</value>
   </data>
   <data name="lblNormalInfoResource1.Text" xml:space="preserve">
-    <value>Ärv rättigheter från namnrymden förälder.</value>
+    <value>Ärv rättigheter från namnområdets förälder.</value>
   </data>
   <data name="lblOrphanResource1.Text" xml:space="preserve">
     <value>Olänkad</value>
@@ -514,7 +514,7 @@
     <value>Kopiera sidkategorier</value>
   </data>
   <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Kopiera sidkategorier till namnrymd</value>
+    <value>Kopiera sidkategorier till namnområde</value>
   </data>
   <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
     <value>Flytta sida</value>
@@ -523,7 +523,7 @@
     <value />
   </data>
   <data name="lblTargetNamespaceResource1.Text" xml:space="preserve">
-    <value>Destinationsnamnrymd</value>
+    <value>Destinationsnamnområde</value>
   </data>
   <data name="lstTargetNamespaceResource1.ToolTip" xml:space="preserve">
     <value />
@@ -550,30 +550,30 @@
     <value>Kopiera sidkategorier</value>
   </data>
   <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Kopiera sidkategorier till namnrymd</value>
+    <value>Kopiera sidkategorier till namnområde</value>
   </data>
   <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Obs&lt;/b&gt;: standardsidan för namnrymden kommer inte att flyttas.</value>
+    <value>&lt;b&gt;Obs&lt;/b&gt;: standardsidan för namnområdet kommer inte att flyttas.</value>
   </data>
   <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Obs&lt;/b&gt;: denna lista visar endast namnrymder där du har rättighet att hantera alla sidor.</value>
+    <value>&lt;b&gt;Obs&lt;/b&gt;: denna lista visar endast namnområden där du har rättighet att hantera alla sidor.</value>
   </data>
   <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
     <value>1. Välj sidor</value>
   </data>
   <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
-    <value>2. Välj destinationsnamnrymd</value>
+    <value>2. Välj destinationsnamnområde</value>
   </data>
   <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
     <value>3. Genomför flytt</value>
   </data>
   <data name="rfvBulkMigrateTargetNamespaceResource1.ErrorMessage" xml:space="preserve">
-    <value>Destinationsnamnrymd måste anges</value>
+    <value>Destinationsnamnområde måste anges</value>
   </data>
   <data name="btnBulkMigrateResource1.Text" xml:space="preserve">
     <value>Mängdflytt</value>
   </data>
   <data name="btnBulkMigrateResource1.ToolTip" xml:space="preserve">
-    <value>Flytta flera sidor till en annan namnrymd</value>
+    <value>Flytta flera sidor till ett annan namnområde</value>
   </data>
 </root>

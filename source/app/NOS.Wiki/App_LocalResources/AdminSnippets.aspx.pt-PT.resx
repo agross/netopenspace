@@ -238,6 +238,6 @@
     <value />
   </data>
   <data name="lblEditSnippetWarningResource1.Text" xml:space="preserve">
-    <value>&lt;div class='warning' style='float: right;'&gt;Está a editar um snippet. Depois de terminar,&lt;br /&gt;é&lt;b&gt;altamente&lt;/b&gt; sugerido reconstruir o  índice do motor de busca na &lt;i&gt;Admin Home&lt;/i&gt; página.&lt;/div&gt;</value>
+    <value>&lt;div class='warning' style='float: right;'&gt;Está a editar um snippet. Depois de terminar,&lt;br /&gt;é &lt;b&gt;altamente&lt;/b&gt; sugerido reconstruir o  índice do motor de busca na página &lt;i&gt;Admin Home&lt;/i&gt;.&lt;/div&gt;</value>
   </data>
 </root>

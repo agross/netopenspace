@@ -166,15 +166,9 @@
     <value>Gem ændr</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Vælg denne konto</value>
-  </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
     <value>Vælg</value>
   </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>Vælg denne konto</value>
   </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">

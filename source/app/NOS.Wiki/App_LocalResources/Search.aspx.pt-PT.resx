@@ -133,7 +133,7 @@
     <value>Filtrar por Categoria</value>
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Aqui pode pesquisar nas páginas deste Namespace,  anexos e os ficheiros enviados para o sistema.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: nos resultados só serão apresentados os itens que você tem permissão para ler.</value>
+    <value>Aqui pode pesquisar nas páginas deste Namespace,  seus anexos e ficheiros carregados no sistema.&lt;br /&gt;&lt;b&gt;Nota&lt;/b&gt;: nos resultados só serão apresentados os items para os quais possui permissões de leitura.</value>
   </data>
   <data name="lblStatsResource1.Text" xml:space="preserve">
     <value />
@@ -182,5 +182,14 @@
   </data>
   <data name="chkFilesAndAttachmentsResource1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="lblSelectAllResource1.Text" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="lblSelectInverseResource1.Text" xml:space="preserve">
+    <value>Invert</value>
+  </data>
+  <data name="lblSelectNoneResource1.Text" xml:space="preserve">
+    <value>None</value>
   </data>
 </root>

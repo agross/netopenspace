@@ -44,7 +44,7 @@
 		</div>
 		
 		<div id="PageSelectorDiv">
-			<st:PageSelector ID="pageSelector" runat="server" PageSize='<%# ScrewTurn.Wiki.AdminPages.PageSize %>' OnSelectedPageChanged="pageSelector_SelectedPageChanged" />
+			<st:PageSelector ID="pageSelector" runat="server" PageSize='<%# PageSize %>' OnSelectedPageChanged="pageSelector_SelectedPageChanged" />
 		</div>
 		
 		<div id="PagesListContainerDiv">

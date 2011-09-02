@@ -325,7 +325,7 @@
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Невірний email</value>
+    <value>Невірний пароль</value>
   </data>
   <data name="rxvPassword1Resource1.Text" xml:space="preserve">
     <value />

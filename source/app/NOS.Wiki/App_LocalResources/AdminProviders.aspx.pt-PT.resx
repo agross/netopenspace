@@ -121,7 +121,7 @@
     <value>Cancelar</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Desseleccionar o Provider</value>
+    <value>Limpar a selecção do Provider</value>
   </data>
   <data name="btnCopySettingsResource1.Text" xml:space="preserve">
     <value>Copiar</value>
@@ -136,16 +136,16 @@
     <value />
   </data>
   <data name="btnDisableResource1.Text" xml:space="preserve">
-    <value>Desactivado</value>
+    <value>Desactivar</value>
   </data>
   <data name="btnDisableResource1.ToolTip" xml:space="preserve">
-    <value>Descativar Provider</value>
+    <value>Desactivar Provider</value>
   </data>
   <data name="btnEnableResource1.Text" xml:space="preserve">
-    <value>Permitir</value>
+    <value>Activar</value>
   </data>
   <data name="btnEnableResource1.ToolTip" xml:space="preserve">
-    <value>Autorizar o Provider</value>
+    <value>Activar o Provider</value>
   </data>
   <data name="btnMigrateFilesResource1.Text" xml:space="preserve">
     <value>Migrar</value>
@@ -175,7 +175,7 @@
     <value>Guardar</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Guardar a sequência de Confguração</value>
+    <value>Guardar a Configuração</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
     <value>Seleccionar</value>
@@ -190,10 +190,10 @@
     <value />
   </data>
   <data name="btnUnloadResource1.Text" xml:space="preserve">
-    <value>Unload</value>
+    <value>Eliminar</value>
   </data>
   <data name="btnUnloadResource1.ToolTip" xml:space="preserve">
-    <value>Unloads the Provider</value>
+    <value>Eliminar o Provider</value>
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
     <value>Upload</value>
@@ -211,7 +211,7 @@
     <value>Sequência de Configuração</value>
   </data>
   <data name="lblCopySettingsInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: para ser detectado, o provider de destino deve ser carregado usando a ferramenta de upload.&lt;br /&gt;Log e alterações recentes nao são copiados.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: para ser detectado, o provider de destino deve ser carregado usando a ferramenta de upload.&lt;br /&gt;Log e alterações recentes nao são copiados.</value>
   </data>
   <data name="lblCopySettingsResource1.Text" xml:space="preserve">
     <value>Copiar definições e dados relacionados</value>
@@ -223,13 +223,13 @@
     <value />
   </data>
   <data name="lblDataMigrationResource1.Text" xml:space="preserve">
-    <value>Data da Migração</value>
+    <value>Dados da Migração</value>
   </data>
   <data name="lblDefaultProvCacheResource1.Text" xml:space="preserve">
-    <value>Cache Provider</value>
+    <value>Provider de Cache</value>
   </data>
   <data name="lblDefaultProvFilesResource1.Text" xml:space="preserve">
-    <value>Ficheiros do Provider</value>
+    <value>Provider de Ficheiros</value>
   </data>
   <data name="lblDefaultProvidersResultResource1.Text" xml:space="preserve">
     <value />
@@ -238,16 +238,16 @@
     <value />
   </data>
   <data name="lblDefaultProvidersTitleResource1.Text" xml:space="preserve">
-    <value> Providers Padrão</value>
+    <value>Providers Padrão</value>
   </data>
   <data name="lblDefaultProvPagesResource1.Text" xml:space="preserve">
-    <value>Provider das Páginas</value>
+    <value>Provider de Páginas</value>
   </data>
   <data name="lblDefaultProvUsersResource1.Text" xml:space="preserve">
-    <value>Provider dos Utilizadores</value>
+    <value>Provider de Utilizadores</value>
   </data>
   <data name="lblDisplayResource1.Text" xml:space="preserve">
-    <value>Display</value>
+    <value>Mostrar</value>
   </data>
   <data name="lblDllResultResource1.Text" xml:space="preserve">
     <value />
@@ -256,7 +256,7 @@
     <value />
   </data>
   <data name="lblMigrateFilesResource1.Text" xml:space="preserve">
-    <value>Migrar ficheiros e dados relacionados</value>
+    <value>Migrar Ficheiros e dados relacionados</value>
   </data>
   <data name="lblMigrateFilesResultResource1.Text" xml:space="preserve">
     <value />
@@ -274,7 +274,7 @@
     <value />
   </data>
   <data name="lblMigrateUsersInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: migrar contas de utilizadores irá repor todas as passwords (notificação por e-mail será enviado para todos os utilizadores).</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: migrar as contas dos utilizadores irá repor todas as passwords (notificação por email será enviada para todos os utilizadores).</value>
   </data>
   <data name="lblMigrateUsersResource1.Text" xml:space="preserve">
     <value>Migrar utilizadores e informação</value>
@@ -316,13 +316,13 @@
     <value />
   </data>
   <data name="lblUploadInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: remover uma DLL não irá desativar os providers, até à proxima reiniciação da Wiki,&lt;br /&gt;mas o upload de um novo DLL irá automaticamente carregar os providers que ele contém.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: remover uma DLL não irá desactivar os Providers respectivos até que a Wiki seja reiniciada,&lt;br /&gt;mas o upload de uma nova DLL irá automaticamente carregar os providers que a mesma contém.</value>
   </data>
   <data name="lblUploadNewDllResource1.Text" xml:space="preserve">
-    <value>Upload new DLL</value>
+    <value>Upload de nova DLL</value>
   </data>
   <data name="lblUploadProvidersTitleResource1.Text" xml:space="preserve">
-    <value>Gestão dos DLL dos Providers</value>
+    <value>Gestão das DLL dos Providers</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />
@@ -412,21 +412,21 @@
     <value />
   </data>
   <data name="lblUpdateStatusResource1.Text" xml:space="preserve">
-    <value>Update Status</value>
+    <value>Estado</value>
   </data>
   <data name="lblCannotDisableResource1.Text" xml:space="preserve">
-    <value>Cannot disable the provider because it is the default provider or,&lt;br /&gt;in case of a Pages Provider, it manages the default page of the root namespace</value>
+    <value>Não é possível desactivar o provider. Verifique se é o provider padrão ou,&lt;br /&gt;se é um provider de páginas que gere a página principal do Namespace "raiz"</value>
   </data>
   <data name="lblCannotDisableResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblMigrationInfoResource2.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note 1&lt;/b&gt;: Fazer sempre um backup completo de todos os dados antes de executar uma migração.&lt;br /&gt;&lt;b&gt;Note 2&lt;/b&gt;: migrações geralmente levam vários minutos para concluir: durante esse tempo, não realizar qualquer outra atividade na Wiki, e não fechar esta página.&lt;br /&gt;&lt;b&gt;Note 3&lt;/b&gt;: o provider de destino deve estar completamente vazio: se contém dados, pode causar problemas de consistência. Consulte a documentação do provider de destino para obter detalhes.&lt;br /&gt;&lt;b&gt;Timeouts&lt;/b&gt;: é altamente recomendável que aumente o parâmetro executionTimeout no web.config antes de migrar os dados.</value>
+    <value>&lt;b&gt;Nota 1&lt;/b&gt;: Fazer sempre um backup completo de todos os dados antes de executar uma migração.&lt;br /&gt;&lt;b&gt;Nota 2&lt;/b&gt;: migrações geralmente levam vários minutos a concluir: durante esse tempo, não realize qualquer outra actividade na Wiki, e não feche esta página.&lt;br /&gt;&lt;b&gt;Nota 3&lt;/b&gt;: o provider de destino deve estar completamente vazio: se contém dados, pode causar problemas de consistência. Consulte a documentação do provider de destino para obter detalhes.&lt;br /&gt;&lt;b&gt;Timeouts&lt;/b&gt;: é altamente recomendável que aumente o parâmetro executionTimeout no web.config antes de migrar os dados.</value>
   </data>
   <data name="btnAutoUpdateProvidersResource1.Text" xml:space="preserve">
-    <value>Auto-update Providers</value>
+    <value>Actualizar automaticamente os Providers</value>
   </data>
   <data name="btnAutoUpdateProvidersResource1.ToolTip" xml:space="preserve">
-    <value>Actualizar Automaticamente todos os providers instalados, de todos os tipos</value>
+    <value>Actualizar automaticamente todos os providers instalados, de todos os tipos</value>
   </data>
 </root>

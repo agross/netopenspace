@@ -121,13 +121,13 @@
     <value>Adicionar</value>
   </data>
   <data name="btnAddResource1.ToolTip" xml:space="preserve">
-    <value>Adicionar Página selecionada à lista</value>
+    <value>Adicionar Página seleccionada à lista</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
     <value>Cancelar</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancelar e voltar a lista de Directórios de Navegação</value>
+    <value>Cancelar e voltar à lista de Directórios de Navegação</value>
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
     <value>Criar Dir de Navegação</value>
@@ -139,7 +139,7 @@
     <value>Eliminar</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Eliminar  Directório de Navegação</value>
+    <value>Eliminar Directório de Navegação</value>
   </data>
   <data name="btnDownResource1.Text" xml:space="preserve">
     <value>Descer</value>

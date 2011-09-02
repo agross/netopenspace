@@ -112,46 +112,46 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnBackResource1.Text" xml:space="preserve">
     <value>Återgå</value>
   </data>
   <data name="btnBackResource1.ToolTip" xml:space="preserve">
-    <value>Återgå till namnrymdslistan</value>
+    <value>Återgå till namnområdeslistan</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
     <value>Avbryt</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Avbryt och återgå till namnrymdslistan</value>
+    <value>Avbryt och återgå till namnområdeslistan</value>
   </data>
   <data name="btnConfirmDeletionResource1.Text" xml:space="preserve">
-    <value>Bekräfta borttagning av namnrymd</value>
+    <value>Bekräfta borttagning av namnområde</value>
   </data>
   <data name="btnConfirmDeletionResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
-    <value>Skapa namnrymd</value>
+    <value>Skapa namnområde</value>
   </data>
   <data name="btnCreateResource1.ToolTip" xml:space="preserve">
-    <value>Spara den nya namnrymden</value>
+    <value>Spara det nya namnområdet</value>
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
     <value>Ta bort</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Ta bort namnrymden</value>
+    <value>Ta bort namnområdet</value>
   </data>
   <data name="btnNewNamespaceResource1.Text" xml:space="preserve">
-    <value>Ny namnrymd</value>
+    <value>Nytt namnområde</value>
   </data>
   <data name="btnNewNamespaceResource1.ToolTip" xml:space="preserve">
-    <value>Skapa en ny namnrymd</value>
+    <value>Skapa en nytt namnområde</value>
   </data>
   <data name="btnNormalResource1.Text" xml:space="preserve">
     <value>Normal</value>
@@ -163,13 +163,13 @@
     <value>Rättigheter</value>
   </data>
   <data name="btnPermsResource1.ToolTip" xml:space="preserve">
-    <value>Hantera rättigheter för denna namnrymd</value>
+    <value>Hantera rättigheter för detta namnområde</value>
   </data>
   <data name="btnPermsResource2.Text" xml:space="preserve">
     <value>Rättigheter</value>
   </data>
   <data name="btnPermsResource2.ToolTip" xml:space="preserve">
-    <value>Hantera rättigheter för denna namnrymd</value>
+    <value>Hantera rättigheter för detta namnområde</value>
   </data>
   <data name="btnPrivateResource1.Text" xml:space="preserve">
     <value>Privat</value>
@@ -190,7 +190,7 @@
     <value />
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Spara namnrymd</value>
+    <value>Spara namnområde</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
     <value>Spara förändringar</value>
@@ -199,13 +199,13 @@
     <value>Välj</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Välj denna namnrymd för redigering</value>
+    <value>Välj detta namnområde för redigering</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
     <value>Välj</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Välj denna namnrymd för redigering</value>
+    <value>Välj detta namnområde för redigering</value>
   </data>
   <data name="cvName2Resource1.ErrorMessage" xml:space="preserve">
     <value>Ogiltigt namn</value>
@@ -217,7 +217,7 @@
     <value />
   </data>
   <data name="cvNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Namnrymd finns redan</value>
+    <value>Namnområde finns redan</value>
   </data>
   <data name="cvNameResource1.Text" xml:space="preserve">
     <value />
@@ -235,7 +235,7 @@
     <value />
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Namnrymd finns redan</value>
+    <value>Namnområde finns redan</value>
   </data>
   <data name="cvNewNameResource1.Text" xml:space="preserve">
     <value />
@@ -247,7 +247,7 @@
     <value>Kategorier</value>
   </data>
   <data name="lblConfirmDeletionResource1.Text" xml:space="preserve">
-    <value>Är du säker på att du vill ta bort namnrymden? All data i namnrymden kommer att gå förlorad.</value>
+    <value>Är du säker på att du vill ta bort namnområdet? All information i namnområdet kommer att gå förlorad.</value>
   </data>
   <data name="lblDefaultPageInfoResource1.Text" xml:space="preserve">
     <value>Standardsidan kommer att skapas automatiskt med namnet 'MainPage'.</value>
@@ -262,10 +262,10 @@
     <value>Standardsida</value>
   </data>
   <data name="lblEditTitleResource1.Text" xml:space="preserve">
-    <value>Detaljer för namnrymd</value>
+    <value>Detaljer för namnområde</value>
   </data>
   <data name="lblInheritanceInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Obs&lt;/b&gt;: undernamnrymder ärver alltid rättigheter från &lt;b&gt;rotnamnrymden&lt;/b&gt;.&lt;br /&gt;Ändringar i rotnamnrymden påverkar inte rättigheter som satts specifikt på undernamnrymden.</value>
+    <value>&lt;b&gt;Obs&lt;/b&gt;: undernamnområden ärver alltid rättigheter från &lt;b&gt;rotnamnområdet&lt;/b&gt;.&lt;br /&gt;Ändringar i rotnamnområdet påverkar inte rättigheter som satts specifikt på undernamnområdet.</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
     <value>Namn</value>
@@ -277,10 +277,10 @@
     <value />
   </data>
   <data name="lblNamespacePermissionsResource1.Text" xml:space="preserve">
-    <value>Rättigheter för namnrymd</value>
+    <value>Rättigheter för namnområde</value>
   </data>
   <data name="lblNamespacesResource1.Text" xml:space="preserve">
-    <value>Namnrymder</value>
+    <value>Namnområden</value>
   </data>
   <data name="lblNewNameResource1.Text" xml:space="preserve">
     <value>Nytt namn</value>
@@ -310,10 +310,10 @@
     <value>Alla, inklusive anonyma användare, kan &lt;b&gt;redigera&lt;/b&gt; sidor. Registrerade användare kan även &lt;b&gt;skapa&lt;/b&gt; sidor och &lt;b&gt;hantera&lt;/b&gt; kategorier.</value>
   </data>
   <data name="lblRenameInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Varning&lt;/b&gt;: namnbyte av namnrymd kommer att bryta alla existerande länkar mellan mellan namnrymder.</value>
+    <value>&lt;b&gt;Varning&lt;/b&gt;: namnbyte av namnområde kommer att bryta alla existerande länkar mellan namnområden.</value>
   </data>
   <data name="lblRenameResource1.Text" xml:space="preserve">
-    <value>Byt namn på denna namnrymd</value>
+    <value>Byt namn på detta namnområde</value>
   </data>
   <data name="lblRenameResultResource1.Text" xml:space="preserve">
     <value />

@@ -33,6 +33,9 @@
 	
 	<div id="CategoryFilterDiv">
 		<h4><asp:Literal ID="lblCategoryFilter" runat="server" Text="Filter by Category" EnableViewState="False" meta:resourcekey="lblCategoryFilterResource1" /></h4>
+		<a href="#" onclick="javascript:$('#CategoryFilterInternalDiv input').each(function() { $(this).get(0).checked = true; }); return false;"><asp:Literal ID="lblSelectAll" runat="server" Text="Select all" meta:resourcekey="lblSelectAllResource1" /></a> &mdash;
+		<a href="#" onclick="javascript:$('#CategoryFilterInternalDiv input').each(function() { $(this).get(0).checked = false; }); return false;"><asp:Literal ID="lblSelectNone" runat="server" Text="None" meta:resourcekey="lblSelectNoneResource1" /></a> &mdash;
+		<a href="#" onclick="javascript:$('#CategoryFilterInternalDiv input').each(function() { $(this).get(0).checked = !$(this).get(0).checked; });return false;"><asp:Literal ID="lblSelectInverse" runat="server" Text="Invert" meta:resourcekey="lblSelectInverseResource1" /></a>
 		<div id="CategoryFilterInternalDiv">
 			<i><asp:CheckBox ID="chkUncategorizedPages" runat="server" Text="Uncategorized Pages" Checked="True" meta:resourcekey="chkUncategorizedPagesResource1" /></i><br />
 			<asp:CheckBoxList ID="lstCategories" runat="server" RepeatLayout="Flow" meta:resourcekey="lstCategoriesResource1" />

@@ -45,7 +45,7 @@
 			<asp:Literal ID="lblWikiUrl" runat="server" Text="Wiki URL" 
 				EnableViewState="False" meta:resourcekey="lblWikiUrlResource1" />
 			<span class="smalllabel">(<asp:Literal ID="lblUsedForEmailCommunications" 
-				runat="server" Text="used for email communications" EnableViewState="False" 
+				runat="server" Text="used for email communications and redirects" EnableViewState="False" 
 				meta:resourcekey="lblUsedForEmailCommunicationsResource1" /> - 
 			<anthem:LinkButton ID="btnAutoWikiUrl" runat="server" Text="autodetect" 
 				CausesValidation="False" OnClick="btnAutoWikiUrl_Click" 
@@ -232,73 +232,73 @@
 				CssClass="configlarge" meta:resourcekey="lstDefaultTimeZoneResource1">
 				<asp:ListItem Value="-720" Text="(GMT-12:00) International Date Line West" 
 					meta:resourcekey="ListItemResource1" />
-                <asp:ListItem Value="-660" Text="(GMT-11:00) Midway Island, Samoa" 
+				<asp:ListItem Value="-660" Text="(GMT-11:00) Midway Island, Samoa" 
 					meta:resourcekey="ListItemResource2" />
-                <asp:ListItem Value="-600" Text="(GMT-10:00) Hawaii" 
+				<asp:ListItem Value="-600" Text="(GMT-10:00) Hawaii" 
 					meta:resourcekey="ListItemResource3" />
-                <asp:ListItem Value="-540" Text="(GMT-09:00) Alaska" 
+				<asp:ListItem Value="-540" Text="(GMT-09:00) Alaska" 
 					meta:resourcekey="ListItemResource4" />
-                <asp:ListItem Value="-480" Text="(GMT-08:00) Pacific" 
+				<asp:ListItem Value="-480" Text="(GMT-08:00) Pacific" 
 					meta:resourcekey="ListItemResource5" />
-                <asp:ListItem Value="-420" Text="(GMT-07:00) Mountain" 
+				<asp:ListItem Value="-420" Text="(GMT-07:00) Mountain" 
 					meta:resourcekey="ListItemResource6" />
-                <asp:ListItem Value="-360" Text="(GMT-06:00) Central" 
+				<asp:ListItem Value="-360" Text="(GMT-06:00) Central" 
 					meta:resourcekey="ListItemResource7" />
-                <asp:ListItem Value="-300" Text="(GMT-05:00) Eastern" 
+				<asp:ListItem Value="-300" Text="(GMT-05:00) Eastern" 
 					meta:resourcekey="ListItemResource8" />
-                <asp:ListItem Value="-240" Text="(GMT-04:00) Atlantic" 
+				<asp:ListItem Value="-240" Text="(GMT-04:00) Atlantic" 
 					meta:resourcekey="ListItemResource9" />
-                <asp:ListItem Value="-210" Text="(GMT-03:30) Newfoundland" 
+				<asp:ListItem Value="-210" Text="(GMT-03:30) Newfoundland" 
 					meta:resourcekey="ListItemResource10" />
-                <asp:ListItem Value="-180" Text="(GMT-03:00) Greenland" 
+				<asp:ListItem Value="-180" Text="(GMT-03:00) Greenland" 
 					meta:resourcekey="ListItemResource11" />
-                <asp:ListItem Value="-120" Text="(GMT-02:00) Mid-Atlantic" 
+				<asp:ListItem Value="-120" Text="(GMT-02:00) Mid-Atlantic" 
 					meta:resourcekey="ListItemResource12" />
-                <asp:ListItem Value="-60" Text="(GMT-01:00) Azores" 
+				<asp:ListItem Value="-60" Text="(GMT-01:00) Azores" 
 					meta:resourcekey="ListItemResource13" />
-                <asp:ListItem Value="0" Text="(GMT) Greenwich" Selected="True" 
+				<asp:ListItem Value="0" Text="(GMT) Greenwich" Selected="True" 
 					meta:resourcekey="ListItemResource14" />
-                <asp:ListItem Value="60" Text="(GMT+01:00) Central European" 
+				<asp:ListItem Value="60" Text="(GMT+01:00) Central European" 
 					meta:resourcekey="ListItemResource15" />
-                <asp:ListItem Value="120" Text="(GMT+02:00) Eastern European" 
+				<asp:ListItem Value="120" Text="(GMT+02:00) Eastern European" 
 					meta:resourcekey="ListItemResource16" />
-                <asp:ListItem Value="180" Text="(GMT+03:00) Moscow, Baghdad" 
+				<asp:ListItem Value="180" Text="(GMT+03:00) Moscow, Baghdad" 
 					meta:resourcekey="ListItemResource17" />
-                <asp:ListItem Value="210" Text="(GMT+03:30) Iran" 
+				<asp:ListItem Value="210" Text="(GMT+03:30) Iran" 
 					meta:resourcekey="ListItemResource18" />
-                <asp:ListItem Value="240" Text="(GMT+04:00) Abu Dhabi, Dubai" 
+				<asp:ListItem Value="240" Text="(GMT+04:00) Abu Dhabi, Dubai" 
 					meta:resourcekey="ListItemResource19" />
-                <asp:ListItem Value="270" Text="(GMT+04:30) Kabul" 
+				<asp:ListItem Value="270" Text="(GMT+04:30) Kabul" 
 					meta:resourcekey="ListItemResource20" />
-                <asp:ListItem Value="300" Text="(GMT+05:00) Islamabad, Karachi" 
+				<asp:ListItem Value="300" Text="(GMT+05:00) Islamabad, Karachi" 
 					meta:resourcekey="ListItemResource21" />
-                <asp:ListItem Value="330" Text="(GMT+05:30) India" 
+				<asp:ListItem Value="330" Text="(GMT+05:30) India" 
 					meta:resourcekey="ListItemResource22" />
-                <asp:ListItem Value="345" Text="(GMT+05:45) Kathmandu" 
+				<asp:ListItem Value="345" Text="(GMT+05:45) Kathmandu" 
 					meta:resourcekey="ListItemResource23" />
-                <asp:ListItem Value="360" Text="(GMT+06:00) Astana, Dhaka" 
+				<asp:ListItem Value="360" Text="(GMT+06:00) Astana, Dhaka" 
 					meta:resourcekey="ListItemResource24" />
-                <asp:ListItem Value="390" Text="(GMT+06:30) Rangoon" 
+				<asp:ListItem Value="390" Text="(GMT+06:30) Rangoon" 
 					meta:resourcekey="ListItemResource25" />
-                <asp:ListItem Value="420" Text="(GMT+07:00) Bangkok, Jakarta" 
+				<asp:ListItem Value="420" Text="(GMT+07:00) Bangkok, Jakarta" 
 					meta:resourcekey="ListItemResource26" />
-                <asp:ListItem Value="480" Text="(GMT+08:00) China Coast, Western Australia" 
+				<asp:ListItem Value="480" Text="(GMT+08:00) China Coast, Western Australia" 
 					meta:resourcekey="ListItemResource27" />
-                <asp:ListItem Value="540" Text="(GMT+09:00) Japan, Korea" 
+				<asp:ListItem Value="540" Text="(GMT+09:00) Japan, Korea" 
 					meta:resourcekey="ListItemResource28" />
-                <asp:ListItem Value="570" Text="(GMT+09:30) Central Australia" 
+				<asp:ListItem Value="570" Text="(GMT+09:30) Central Australia" 
 					meta:resourcekey="ListItemResource29" />
-                <asp:ListItem Value="600" Text="(GMT+10:00) Eastern Australia" 
+				<asp:ListItem Value="600" Text="(GMT+10:00) Eastern Australia" 
 					meta:resourcekey="ListItemResource30" />
-                <asp:ListItem Value="660" Text="(GMT+11:00) Magadan, Solomon Island" 
+				<asp:ListItem Value="660" Text="(GMT+11:00) Magadan, Solomon Island" 
 					meta:resourcekey="ListItemResource31" />
-                <asp:ListItem Value="720" Text="(GMT+12:00) New Zealand, Fiji" 
+				<asp:ListItem Value="720" Text="(GMT+12:00) New Zealand, Fiji" 
 					meta:resourcekey="ListItemResource32" />
-                <asp:ListItem Value="765" Text="(GMT+12:45) Chatham Island NZ" 
+				<asp:ListItem Value="765" Text="(GMT+12:45) Chatham Island NZ" 
 					meta:resourcekey="ListItemResource33" />
-                <asp:ListItem Value="780" Text="(GMT+13:00) Tonga, Phoenix Islands" 
+				<asp:ListItem Value="780" Text="(GMT+13:00) Tonga, Phoenix Islands" 
 					meta:resourcekey="ListItemResource34" />
-                <asp:ListItem Value="840" Text="(GMT+14:00) Christmas Islands" 
+				<asp:ListItem Value="840" Text="(GMT+14:00) Christmas Islands" 
 					meta:resourcekey="ListItemResource35" />
 			</anthem:DropDownList>
 		</div>
@@ -419,6 +419,21 @@
 				Text="Display Gravatars for user accounts" 
 				meta:resourcekey="chkDisplayGravatarsResource1" />
 		</div>
+
+		<div class="featurecontainer">
+			<asp:Literal ID="lblDisplayAtMostPre" runat="server" Text="Display at most"
+				EnableViewState="false" meta:resourcekey="lblDisplayAtMostPreResource1" />
+			<anthem:TextBox ID="txtListSize" runat="server"
+				CssClass="configsmallest" meta:resourceKey="txtListSizeResource1" />
+			<asp:Literal ID="lblDisplayAtMostPost" runat="server" Text="items in a list, then start paging"
+				EnableViewState="false" meta:resourcekey="lblDisplayAtMostPostResource1" />
+
+			<anthem:RangeValidator ID="rvListSize" runat="server" Display="Dynamic" 
+				AutoUpdateAfterCallBack="True" CssClass="resulterror"
+				ControlToValidate="txtListSize" ErrorMessage="Number must be between 10 and 1000"
+				Type="Integer" MinimumValue="10" MaximumValue="1000" 
+				meta:resourcekey="rvListSizeResource1" UpdateAfterCallBack="True" />
+		</div>
 	</div>
 	
 	<div id="ConfigSecurityDiv">
@@ -442,9 +457,9 @@
 				CssClass="configlarge" meta:resourcekey="lstAccountActivationModeResource1">
 				<asp:ListItem Value="EMAIL" Text="Users must activate their account via Email" 
 					meta:resourcekey="ListItemResource36" />
-                <asp:ListItem Value="ADMIN" Text="Administrators must activate accounts" 
+				<asp:ListItem Value="ADMIN" Text="Administrators must activate accounts" 
 					meta:resourcekey="ListItemResource37" />
-                <asp:ListItem Value="AUTO" Text="Accounts are active by default" 
+				<asp:ListItem Value="AUTO" Text="Accounts are active by default" 
 					meta:resourcekey="ListItemResource38" />
 			</anthem:DropDownList>
 		</div>
@@ -584,10 +599,10 @@
 		</div>
 		
 		<div class="featurecontainer">
-		    <asp:Literal ID="lblIpHostFilter" runat="server" Text="IP Filter for allowed editing (seperate with commas, Use '*' for wild cards, Example: 192.168.1.*)" 
-		        EnableViewState="false" meta:resourceKey="lblIpHostFilterResource1" /><br />
-            <anthem:TextBox ID="txtIpHostFilter" runat="server" CssClass="configlarge" 
-		        meta:resourcekey="txtIpHostFilterResource1" />
+			<asp:Literal ID="lblIpHostFilter" runat="server" Text="IP Filter for allowed editing (seperate with commas, Use '*' for wild cards, Example: 192.168.1.*)" 
+				EnableViewState="false" meta:resourceKey="lblIpHostFilterResource1" /><br />
+			<anthem:TextBox ID="txtIpHostFilter" runat="server" CssClass="configlarge" 
+				meta:resourcekey="txtIpHostFilterResource1" />
 		</div>
 		
 	</div>
@@ -600,21 +615,21 @@
 		</div>
 		
 		<div class="featurecontainer">
-		    <asp:Literal ID="lblUsernameRegEx" Text="Regular Expression for validating usernames and group names" runat="server" EnableViewState="false"
-		    meta:resourcekey="lblUsernameRegExResource2" /><br />
-		    <anthem:TextBox ID="txtUsernameRegEx" runat="server" CssClass="configlarge" 
-				    meta:resourcekey="txtUsernameRegExResource1" />
-				    <anthem:CustomValidator ID="cvUsernameRegEx" runat="server" Display="Dynamic" CssClass="resulterror"
+			<asp:Literal ID="lblUsernameRegEx" Text="Regular Expression for validating usernames and group names" runat="server" EnableViewState="false"
+			meta:resourcekey="lblUsernameRegExResource2" /><br />
+			<anthem:TextBox ID="txtUsernameRegEx" runat="server" CssClass="configlarge" 
+					meta:resourcekey="txtUsernameRegExResource1" />
+					<anthem:CustomValidator ID="cvUsernameRegEx" runat="server" Display="Dynamic" CssClass="resulterror"
 				ControlToValidate="txtUsernameRegEx" ErrorMessage="Invalid Regular Expression"
 				OnServerValidate="cvUsernameRegEx_ServerValidate" AutoUpdateAfterCallBack="True" 
 				meta:resourcekey="cvUsernameRegExResource1" UpdateAfterCallBack="True" />
 		</div>
 		
 		<div class="featurecontainer">
-		    <asp:Literal ID="lblPasswordRegEx" Text="Regular Expression for validating passwords" runat="server" EnableViewState="false"
-		    meta:resourcekey="lblPasswordRegExResource2" /><br />
-		    <anthem:TextBox ID="txtPasswordRegEx" runat="server" CssClass="configlarge" 
-				    meta:resourcekey="txtPasswordRegExResource1" />
+			<asp:Literal ID="lblPasswordRegEx" Text="Regular Expression for validating passwords" runat="server" EnableViewState="false"
+			meta:resourcekey="lblPasswordRegExResource2" /><br />
+			<anthem:TextBox ID="txtPasswordRegEx" runat="server" CssClass="configlarge" 
+					meta:resourcekey="txtPasswordRegExResource1" />
 			<anthem:CustomValidator ID="cvPasswordRegEx" runat="server" Display="Dynamic" CssClass="resulterror"
 				ControlToValidate="txtPasswordRegEx" ErrorMessage="Invalid Regular Expression"
 				OnServerValidate="cvPasswordRegEx_ServerValidate" AutoUpdateAfterCallBack="True" 

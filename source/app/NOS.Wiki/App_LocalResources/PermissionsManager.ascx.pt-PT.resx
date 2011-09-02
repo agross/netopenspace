@@ -121,7 +121,7 @@
     <value>Adicionar</value>
   </data>
   <data name="btnAddResource1.ToolTip" xml:space="preserve">
-    <value>Adicionar o assunto selecionado</value>
+    <value>Adicionar o assunto seleccionado</value>
   </data>
   <data name="btnRemoveResource1.Text" xml:space="preserve">
     <value>Remover</value>
@@ -160,7 +160,7 @@
     <value />
   </data>
   <data name="lblSubjectsResource1.Text" xml:space="preserve">
-    <value>Contas de utilizadore e Grupos</value>
+    <value>Contas de Utilizadores e Grupos</value>
   </data>
   <data name="lstFoundSubjectsResource1.ToolTip" xml:space="preserve">
     <value />

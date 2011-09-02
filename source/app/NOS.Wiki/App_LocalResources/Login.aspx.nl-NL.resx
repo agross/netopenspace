@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSaveNewPasswordResource1.Text" xml:space="preserve">
     <value>Bewaar nieuwe wachtwoord</value>
@@ -208,10 +208,10 @@
     <value>Inloggen</value>
   </data>
   <data name="btnLoginResource1.ToolTip" xml:space="preserve">
-    <value>Klik hier om u aan te melden</value>
+    <value>Klik hier om in te loggen</value>
   </data>
   <data name="btnLogoutResource1.Text" xml:space="preserve">
-    <value>Afmelden</value>
+    <value>Uitloggen</value>
   </data>
   <data name="btnLogoutResource1.ToolTip" xml:space="preserve">
     <value>Klik hier om uit te loggen</value>
@@ -223,19 +223,19 @@
     <value />
   </data>
   <data name="chkRememberResource1.Text" xml:space="preserve">
-    <value>Aanmeldgegevens onthouden</value>
+    <value>Inloggegevens onthouden</value>
   </data>
   <data name="chkRememberResource1.ToolTip" xml:space="preserve">
-    <value>Vink dit veld als u wilt dat uw aanmeldgegevens op deze computer onthouden worden.</value>
+    <value>Vink dit veld als u wilt dat uw inloggegevens op deze computer onthouden worden.</value>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Hier kunt u zich aanmelden. Na het aanmelden heeft u de mogelijkheid om pagina's aan te passen en aan te maken.  Als u een beheerder bent, kunt u beheerdersfuncties uitvoeren. &lt;br /&gt;Nog geen gebruiker? &lt;a href="Register.aspx" title="gebruikersprofiel aanmaken"&gt;Maak een  nieuw gebruikersprofiel aan!&lt;/a&gt;.</value>
+    <value>Hier kunt u inloggen. Na het inloggen heeft u de mogelijkheid om pagina's aan te passen en aan te maken.  Als u een beheerder bent, kunt u beheerdersfuncties uitvoeren. &lt;br /&gt;Nog geen gebruiker? &lt;a href="Register.aspx" title="gebruikersprofiel aanmaken"&gt;Maak een  nieuw gebruikersprofiel aan!&lt;/a&gt;.</value>
   </data>
   <data name="lblEmailResetResource1.Text" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="lblLogoutResource1.Text" xml:space="preserve">
-    <value>u bent nu aangemeld. Klik de Afmelden knop om uzelf af te melden.</value>
+    <value>u bent nu ingelogd. Klik op Uitloggen knop om uit te loggen.</value>
     <comment>you are currently logged in. To logout, please click on the Logout button.</comment>
   </data>
   <data name="lblPasswordResource1.Text" xml:space="preserve">
@@ -248,7 +248,7 @@
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Aanmelden</value>
+    <value>Inloggen</value>
   </data>
   <data name="lblUsernameResetResource1.Text" xml:space="preserve">
     <value>Gebruikersnaam</value>

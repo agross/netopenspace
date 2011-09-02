@@ -20,7 +20,7 @@
 		-->
 		
 		<!-- Set this item with your "data" directory path, which MUST have write permissions for the ASP.NET
-			worker process. This path must be relative to the Root Directory path. This parameter is mandatory. -->
+			worker process. This path can be relative to the application root, or it can be an absolute path. This parameter is mandatory. -->
 		<add key="PublicDirectory" value="public\" />
 		
 		<!-- Set this item with your preferred password, used for the root administrator (username 'admin').
@@ -99,7 +99,7 @@
 		</handlers>
 	</system.webServer>
 	<runtime>
-		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v2.0.50727">
 			<dependentAssembly>
 				<assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35"/>
 				<bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>

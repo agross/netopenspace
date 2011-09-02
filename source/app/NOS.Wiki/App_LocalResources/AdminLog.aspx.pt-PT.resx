@@ -148,7 +148,7 @@
     <value>Mostrar:</value>
   </data>
   <data name="lblLogResource1.Text" xml:space="preserve">
-    <value>Log d sistema</value>
+    <value>Log de sistema</value>
   </data>
   <data name="lblMessageResource1.Text" xml:space="preserve">
     <value>Mensagem</value>
@@ -160,12 +160,12 @@
     <value>Administração</value>
   </data>
   <data name="btnNoLimitResource1.Text" xml:space="preserve">
-    <value>Mostrar Todos</value>
+    <value>Mostrar todos</value>
   </data>
   <data name="btnNoLimitResource1.ToolTip" xml:space="preserve">
     <value>Mostrar todas as entradas de log (pode demorar alguns segundos)</value>
   </data>
   <data name="lblLimitResource1.Text" xml:space="preserve">
-    <value>Atualmente mostra apenas 100 entradas de log&amp;mdash;</value>
+    <value>A mostrar actualmente apenas 100 entradas de log&amp;mdash;</value>
   </data>
 </root>

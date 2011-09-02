@@ -415,7 +415,7 @@
     <value>Uppdateringar</value>
   </data>
   <data name="lblCannotDisableResource1.Text" xml:space="preserve">
-    <value>Det går inte att avaktivera leverantören eftersom den är standardleverantör, eller&lt;br /&gt; sidleverantörer och hanterar standardsidan för rotnamnrymden.</value>
+    <value>Det går inte att avaktivera leverantören eftersom den är standardleverantör, eller&lt;br /&gt; sidleverantörer och hanterar standardsidan för rotnamnområdet.</value>
   </data>
   <data name="lblCannotDisableResource1.ToolTip" xml:space="preserve">
     <value />

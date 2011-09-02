@@ -163,7 +163,7 @@
     <value>Saknade sidor</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namnrymd</value>
+    <value>Namnområde</value>
   </data>
   <data name="lblOccurrenceCountResource1.Text" xml:space="preserve">
     <value>Träffar</value>

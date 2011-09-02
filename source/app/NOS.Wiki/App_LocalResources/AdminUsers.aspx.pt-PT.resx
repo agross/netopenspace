@@ -121,7 +121,7 @@
     <value>Cancelar</value>
   </data>
   <data name="btnCancelResource1.ToolTip" xml:space="preserve">
-    <value>Cancelar e voltar à lista  Contas de utilizador</value>
+    <value>Cancelar e voltar à lista de Contas</value>
   </data>
   <data name="btnCreateResource1.Text" xml:space="preserve">
     <value>Criar Conta</value>
@@ -139,31 +139,25 @@
     <value />
   </data>
   <data name="btnFilterResource1.ToolTip" xml:space="preserve">
-    <value>Aplicar filtro</value>
+    <value>Aplicar Filtro</value>
   </data>
   <data name="btnNewUserResource1.Text" xml:space="preserve">
-    <value>Novo utilizador</value>
+    <value>Novo Utilizador</value>
   </data>
   <data name="btnNewUserResource1.ToolTip" xml:space="preserve">
-    <value>Criar Novo Utilizador</value>
+    <value>Criar novo Utilizador</value>
   </data>
   <data name="btnSaveResource1.Text" xml:space="preserve">
     <value>Guardar Conta</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
-    <value>Guardar Alterações</value>
+    <value>Guardar alterações</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
     <value>Seleccionar</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Selecionar Conta</value>
-  </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Seleccionar</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Selecionar Conta</value>
+    <value>Seleccionar esta Conta</value>
   </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>Contas Activas</value>
@@ -184,7 +178,7 @@
     <value>Se marcado, permite o login do utilizador</value>
   </data>
   <data name="cvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password deve ser igual</value>
+    <value>Passwords devem ser igua</value>
   </data>
   <data name="cvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -205,22 +199,22 @@
     <value>Contas de Utilizador</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Nome do Display</value>
+    <value>Nome Público</value>
   </data>
   <data name="lblDisplayNameResource2.Text" xml:space="preserve">
-    <value>Nome do Display</value>
+    <value>Nome Público</value>
   </data>
   <data name="lblEditTitleResource1.Text" xml:space="preserve">
     <value>Detalhes da Conta</value>
   </data>
   <data name="lblEmailResource1.Text" xml:space="preserve">
-    <value>E-mail</value>
+    <value>Email</value>
   </data>
   <data name="lblEmailResource2.Text" xml:space="preserve">
-    <value>E-mail</value>
+    <value>Email</value>
   </data>
   <data name="lblFilterResource1.Text" xml:space="preserve">
-    <value>Display: </value>
+    <value>Mostrar: </value>
   </data>
   <data name="lblGlobalPermissionsResource1.Text" xml:space="preserve">
     <value>Permissões Globais</value>
@@ -238,7 +232,7 @@
     <value>Password (repetir)</value>
   </data>
   <data name="lblPasswordInfoResource1.Text" xml:space="preserve">
-    <value>Para manter a Password actual deixe os campos em branco.</value>
+    <value>Para manter a password actual deixe os campos da Password em branco.</value>
   </data>
   <data name="lblPasswordInfoResource1.ToolTip" xml:space="preserve">
     <value />
@@ -289,7 +283,7 @@
     <value />
   </data>
   <data name="revDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value> Display Name Inválido</value>
+    <value>Nome Público inválido</value>
   </data>
   <data name="revDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -298,7 +292,7 @@
     <value />
   </data>
   <data name="revEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>E-mail Inválido</value>
+    <value>Email inválido</value>
   </data>
   <data name="revEmailResource1.Text" xml:space="preserve">
     <value />
@@ -307,7 +301,7 @@
     <value />
   </data>
   <data name="revPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password Inválida</value>
+    <value>Password inválida</value>
   </data>
   <data name="revPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -316,7 +310,7 @@
     <value />
   </data>
   <data name="revUsernameResource1.ErrorMessage" xml:space="preserve">
-    <value>Utilizador Inválido</value>
+    <value>Utilizador inválido</value>
   </data>
   <data name="revUsernameResource1.Text" xml:space="preserve">
     <value />
@@ -325,7 +319,7 @@
     <value />
   </data>
   <data name="rfvEmailResource1.ErrorMessage" xml:space="preserve">
-    <value>E-mail é obrigatório</value>
+    <value>Email é obrigatório</value>
   </data>
   <data name="rfvEmailResource1.Text" xml:space="preserve">
     <value />
@@ -334,7 +328,7 @@
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password é obrigatório</value>
+    <value>Password é obrigatória</value>
   </data>
   <data name="rfvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -394,9 +388,9 @@
     <value>Eliminar contas de utilizador inactivas</value>
   </data>
   <data name="lblBulkDeleteResource1.Text" xml:space="preserve">
-    <value>Eliminar todas &lt;b&gt;inactivas&lt;/b&gt; contas mais antigas que &lt;b&gt;1 Mês&lt;/b&gt;.&lt;br /&gt;Faça backup dos dados antes de prosseguir.</value>
+    <value>Eliminar todas as contas &lt;b&gt;inactivas&lt;/b&gt; mais antigas que &lt;b&gt;1 mês&lt;/b&gt;.&lt;br /&gt;Faça backup dos dados antes de prosseguir.</value>
   </data>
   <data name="lblBulkDeleteTitleResource1.Text" xml:space="preserve">
-    <value>Eliminar bulk</value>
+    <value>Eliminar vários</value>
   </data>
 </root>

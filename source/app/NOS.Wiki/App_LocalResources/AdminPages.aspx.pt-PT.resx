@@ -223,13 +223,13 @@
     <value>Seleccionar</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Selecionar Página para Administração</value>
+    <value>Seleccionar Página para Administração</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
     <value>Seleccionar</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Selecionar Página para Administração</value>
+    <value>Seleccionar Página para Administração</value>
   </data>
   <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
     <value>Mostrar só Páginas órfãs</value>
@@ -241,7 +241,7 @@
     <value>Manter Página Sombra</value>
   </data>
   <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
-    <value>Manter a página antiga e redirecionar automáticamente para a nova página</value>
+    <value>Manter a página antiga e redirecionar automaticamente para a nova página</value>
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
     <value>Noma da Página Inválido</value>
@@ -358,7 +358,7 @@
     <value>Páginas Wiki</value>
   </data>
   <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: definir um template irá substituir todas as permissões existentes para os grupos de utilizadores.</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: definir um template irá substituir todas as permissões existentes para os grupos de utilizadores.</value>
   </data>
   <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
     <value>Templates de Permissões</value>
@@ -559,13 +559,13 @@
     <value />
   </data>
   <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: a página padrão do namespace nao pode ser migrada e é ignorada.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: a página padrão do namespace não pode ser migrada e é ignorada.</value>
   </data>
   <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: esta lista apenas apresenta namespaces emq ue pode gerir todas as páginas.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: esta lista apenas apresenta os namespaces em que pode gerir todas as páginas.</value>
   </data>
   <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
-    <value>1.Selecionar Página</value>
+    <value>1.Seleccionar Página</value>
   </data>
   <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
     <value>2.Seleccionar Namespace</value>

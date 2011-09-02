@@ -171,12 +171,6 @@
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>选择此帐户</value>
   </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>选择</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>选择此帐户</value>
-  </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>已激活帐户</value>
   </data>

@@ -1210,4 +1210,27 @@
   <data name="txtWikiTitleResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblDisplayAtMostPostResource1.Text" xml:space="preserve">
+    <value>items in a list, then start paging</value>
+    <comment>As in 'Display at most 5 items in a list, ...'</comment>
+  </data>
+  <data name="lblDisplayAtMostPreResource1.Text" xml:space="preserve">
+    <value>Display at most</value>
+    <comment>As in 'Display at most: 5 items'</comment>
+  </data>
+  <data name="rvListSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Number must be between 10 and 1000</value>
+  </data>
+  <data name="rvListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvListSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
 </root>

@@ -99,7 +99,7 @@
 			Display="Dynamic" ControlToValidate="txtTitle" ValidationGroup="nametitle" meta:resourcekey="rfvTitleResource1" />
 	</div>
 	
-	<div id="TemplatesDiv" runat="server">
+	<div id="TemplatesDiv">
 		<anthem:LinkButton ID="btnTemplates" runat="server" Text="Content Templates..." OnClick="btnTemplates_Click" 
 			AutoUpdateAfterCallBack="True" meta:resourcekey="btnTemplatesResource1" CssClass="small" />
 		

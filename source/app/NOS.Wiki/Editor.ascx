@@ -49,9 +49,9 @@
 
     function getSelectedText() {
       if(document.all)
-        var selected=iframe.document.selection.createRange().text;
+        var selected=iframe.document.selection.createRange().htmlText;
       else
-        var selected=iframe.document.defaultView.getSelection().getRangeAt(0); 
+        var selected=iframe.document.defaultView.getSelection().getRangeAt(0).commonAncestorContainer.innerHTML;
       return selected;
     }
 
@@ -206,7 +206,7 @@
 			</div>
         </div>
         
-        <anthem:TextBox ID="txtMarkup" runat="server" TextMode="MultiLine" Width="99%" Height="400px" AutoUpdateAfterCallBack="True" meta:resourcekey="txtMarkupResource3" UpdateAfterCallBack="True" />
+        <anthem:TextBox ID="txtMarkup" runat="server" TextMode="MultiLine" Width="99%" Height="400px" style="width: 700px; min-width: 99%; max-width: 99%;" AutoUpdateAfterCallBack="True" meta:resourcekey="txtMarkupResource3" UpdateAfterCallBack="True" />
     
     </anthem:View>
     
@@ -304,6 +304,7 @@
 </div>
 
 <div id="SpecialTagsMenuDiv" class="menucontainer" style="display: none;">
+    <asp:Literal ID="lblCustomSpecialTags" runat="server" EnableViewState="false" />
 	<a href="#" onclick="javascript:return InsertMarkup('{WIKITITLE}');" class="menulink">{WikiTitle}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{UP}');" class="menulink">{Up}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{TOP}');" class="menulink">{Top}</a>
@@ -330,7 +331,6 @@
     <a href="#" onclick="javascript:return InsertMarkup('{OUTGOING}');" class="menulink">{Outgoing}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{RECENTCHANGES}');" class="menulink">{RecentChanges}</a>
     <a href="#" onclick="javascript:return InsertMarkup('{RECENTCHANGES(*)}');" class="menulink">{RecentChanges(*)}</a>
-    <asp:Literal ID="lblCustomSpecialTags" runat="server" EnableViewState="false" />
 </div>
 
 <div id="SymbolsMenuDiv" class="menucontainer" style="display: none;">

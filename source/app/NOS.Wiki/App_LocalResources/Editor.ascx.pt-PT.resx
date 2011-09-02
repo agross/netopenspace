@@ -163,7 +163,7 @@
     <value />
   </data>
   <data name="lblPreviewWarningResource3.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: isto é apenas uma pré-visualização. Os conteúdos não foram guardados.</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: isto é apenas uma pré-visualização. Os conteúdos não foram guardados.</value>
   </data>
   <data name="lblPreviewWarningResource3.ToolTip" xml:space="preserve">
     <value />

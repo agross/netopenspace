@@ -55,7 +55,7 @@
 			meta:resourcekey="btnFilterResource1" />
 		
 		<div id="PageSelectorDiv">
-			<st:PageSelector ID="pageSelector" runat="server" PageSize='<%# ScrewTurn.Wiki.AdminUsers.PageSize %>' OnSelectedPageChanged="pageSelector_SelectedPageChanged" />
+			<st:PageSelector ID="pageSelector" runat="server" PageSize='<%# PageSize %>' OnSelectedPageChanged="pageSelector_SelectedPageChanged" />
 		</div>
 	
 		<div id="UsersListContainerDiv">
@@ -97,7 +97,7 @@
 						<td><%# Eval("RegDateTime") %></td>
 						<td><%# Eval("Provider") %></td>
 						<td><anthem:LinkButton ID="btnSelect" runat="server" Text="Select" ToolTip="Select this Account" CommandName="Select"
-								CommandArgument='<%# Eval("Username") %>' meta:resourcekey="btnSelectResource2" /></td>
+								CommandArgument='<%# Eval("Username") %>' meta:resourcekey="btnSelectResource1" /></td>
 					</tr>
 				</AlternatingItemTemplate>
 				<FooterTemplate>

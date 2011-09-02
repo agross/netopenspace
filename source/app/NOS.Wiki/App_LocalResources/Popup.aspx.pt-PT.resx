@@ -307,13 +307,13 @@
     <value />
   </data>
   <data name="rdoImageLinkResource1.ToolTip" xml:space="preserve">
-    <value>Marque esta opção para selecionar a imagem usando o browser</value>
+    <value>Marque esta opção para seleccionar a imagem usando o browser</value>
   </data>
   <data name="rdoImagePathResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="rdoImagePathResource1.ToolTip" xml:space="preserve">
-    <value>Marque esta opção para selecionar a imagem usando o browser</value>
+    <value>Marque esta opção para seleccionar a imagem usando o browser</value>
   </data>
   <data name="rdoImageRightResource1.Text" xml:space="preserve">
     <value>Alinhar à Direita</value>
