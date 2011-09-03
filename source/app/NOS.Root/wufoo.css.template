@@ -10,11 +10,22 @@ form.wufoo {
 	width: 100%;
 }
 
-form.wufoo h2 {
+form.wufoo #header {
+	background: none !important;
+	margin: 0 !important;
+	margin-bottom: 1em;
+	height: auto !important;
+	padding: 0 !important;
+}
+form.wufoo h2, form.wufoo h3 {
 	font-family: Georgia, Palatino, Serif !important;
 	font-weight: inherit !important;
-	font-size: 1.4em !important;
+	font-size: 1.5em !important;
 	margin: 0;
+}
+
+form.wufoo h3 {
+	font-size: 1.4em !important;
 }
 
 form.wufoo .info {
@@ -22,29 +33,56 @@ form.wufoo .info {
 }
 
 form.wufoo .info div {
-	color: inherit !important;
+	color: #444 !important;
 	font-family: inherit !important;
-	font-size: inherit !important;
 	line-height: inherit !important;
 	margin: 0 !important;
 }
 
 form.wufoo li {
 	padding: 0;
-	margin: .5em 0;
+	margin: .5em 0 1em 0;
 }
 
 form.wufoo label {
-	font-size: 100% !important;
+	font-size: 90% !important;
+}
+
+form.wufoo span label {
+	padding: 0 !important;
 }
 
 form.wufoo input.text, form.wufoo textarea.textarea {
 	background-image: none !important;
+	margin: 0 !important;
+}
+
+form.wufoo .buttons {
+	margin-top: 2em;
 }
 
 form.wufoo .buttons input {
 	font-weight: bold;
 	font-size: 100% !important;
+}
+
+.wufoo .section h3 {
+	margin: 0;
+	padding: 0;
+	color: #A12D0D;
+}
+
+.wufoo .section div {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.wufoo .instruct {
+	margin-top: .9em;
+}
+
+.wufoo .instruct small {
+	font-size: 70% !important;
 }
 
 .embed .confirm h2 {
@@ -62,6 +100,7 @@ form.wufoo li.error {
 form.wufoo p.error {
 	font-size: 100% !important;
 	line-height: 115% !important;
+	margin: .5em 0 1em 0 !important;
 }
 
 .embed a.power, .embed a.power strong {
