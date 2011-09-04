@@ -19,17 +19,16 @@
 					<span class="pos5"><span class="smallest">[FAQ|Fragen]</span></span>
 				</li>	
 				<li>
-					<span class="pos7"><span class="smallest">[Schwarzes Brett|Schwarzes Brett]</span></span>
+					<span class="pos6"><span class="smallest">[Zeitplan|Zeitplan]</span></span>
 				</li>
 				<li>
-					
+					<span class="pos7"><span class="smallest">[Schwarzes Brett|Schwarzes Brett]</span></span>
 				</li>		
 				<li>
 					<span class="pos8" id="workspaces">
 						<span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span>
 						<ul class="submenu smallest" style="display: none">
 							<li>[Arbeitsbereich-ALT_NET|ALT.NET]</li>
-							<li>[Arbeitsbereich-Android|Android]</li>
 							<li>[Arbeitsbereich-Clean-Code|Clean Code]</li>
 							<li>[Arbeitsbereich-CQRS|CQRS]</li>
 							<li>[Arbeitsbereich-HTML-5|HTML 5]</li>
