@@ -32,6 +32,7 @@
 							<li>[Arbeitsbereich-Clean-Code|Clean Code]</li>
 							<li>[Arbeitsbereich-CQRS|CQRS]</li>
 							<li>[Arbeitsbereich-HTML-5|HTML 5]</li>
+							<li>[Arbeitsbereich-Kinect|Kinect]</li>
 							<li>[Arbeitsbereich-Knockout_js|Knockout.js &amp; Co.]</li>
 							<li>[Arbeitsbereich-Mobile|Mobile]</li>
 							<li>[Arbeitsbereich-Ruby-Rails|Ruby &amp; Rails]</li>
