@@ -46,7 +46,7 @@ production:
   deployment:
     connection:
       wmsvc: true
-      allow_untrusted_https: false
+      allow_untrusted_https: true
       address: team.torstenweber.de
       user: <%= ENV['DEPLOY_USER'] || 'secret' %>
       password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
@@ -68,13 +68,13 @@ root:
   app:
     iis:
       cookie_path: 2011/
-      root_url: http://netopenspace.de/
+      root_url: http://spartakiade.org/
   deployment:
     tasks:
       - root
       - wall
     iis:
-      app_name: (agross) netopenspace.de/
+      app_name: (tweber) spartakiade.org/
   
 karlsruhe:
   default_to: production
@@ -87,3 +87,15 @@ karlsruhe:
       - wiki
     iis:
       app_name: (agross) karlsruhe.netopenspace.de/
+      
+berlin:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2011/
+      root_url: http://spartakiade.org/
+  deployment:
+    tasks:
+      - wiki
+    iis:
+      app_name: (tweber) spartakiade.org/

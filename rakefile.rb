@@ -24,6 +24,11 @@ namespace :env do
 		
 		yaml = Configuration.load_yaml 'properties.yml', :hash => env_key, :inherit => :default_to, :override_with => :local_properties
 		configatron.configure_from_hash yaml
+    
+    if File.exists? 'local-properties.yml'
+      puts "Loading local settings from 'local-properties.yml'"
+      configatron.configure_from_yaml 'local-properties.yml'
+    end
 		
 		configatron.app.debugging_enabled = configatron.build.configuration == 'Debug'
 		configatron.deployment.package = "#{configatron.project}-#{configatron.build.number || '1.0.0.0'}.zip".in(configatron.dir.deploy)
