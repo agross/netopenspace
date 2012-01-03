@@ -34,7 +34,7 @@
 			params.lastId = 0;
 		}
 		
-		var url = "http://search.twitter.com/search.json?q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
+		var url = "http://search.twitter.com/search.json?include_entities=1&q=" + query + "&rpp=" + params.limit + "&since_id=" +  params.lastId + "&callback=?";
 	
 		$.jsonp({
 			url: url,
