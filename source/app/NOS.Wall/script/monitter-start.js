@@ -233,7 +233,7 @@
 							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')
-									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
+									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id_str)
 									.attr('target', '_blank')
 									.attr('title', 'Tweet anzeigen')
 									.append($('<img>')
