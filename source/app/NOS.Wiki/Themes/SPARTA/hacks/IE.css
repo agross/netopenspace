@@ -1,0 +1,106 @@
+﻿.clearfix {
+	height: 0;
+}
+
+#logo {
+	cursor: pointer;
+}
+
+#header .basictab li a {
+	display: block;
+}
+
+#header .basictab li .largest a {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+#header .basictab li .large a {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#header .basictab li .smaller a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#header .basictab li .smallest a {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#header .basictab ul.submenu {
+	margin-top: 0;
+	zoom: 1;
+}
+
+#header .pos1 {
+	top: 11px;
+}
+
+#header .pos2, #header .pos8 {
+	top: 14px;
+}
+
+#header .pos3 {
+	top: 3.5em;
+}
+
+#header .pos4 {
+	top: 5.3em;
+}
+
+#header .pos5 {
+	top: 3.5em;
+}
+
+#header .pos6 {
+	top: 5.7em;
+}
+
+#header .pos7 {
+	top: 5.7em;
+	right: 5.8em;
+}
+
+#header .pos8 {
+	right: 15.3em;;
+}
+
+#MainDiv {
+	margin-left: 205px;
+}
+
+#MainFooterDiv {
+	clear: both;
+}
+
+#footer .logos {
+	width: 38%;
+}
+
+#footer .logos li img {
+	vertical-align: text-bottom;
+}
+
+textarea {
+	width: 97% !important;
+}
+
+#SearchControlsDiv input {
+	vertical-align: top;
+}
+
+#PageContentDiv div.copy-code {
+	margin-left: 61%;
+}
+
+table td * {
+	vertical-align: top;
+}
+
+table td span.prefix {
+	position: relative;
+	top: 5px;
+}

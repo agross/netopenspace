@@ -82,27 +82,36 @@ namespace :generate do
 		end
 	end
 	
+	def themes
+		themes = FileList.new("#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/*/").exclude(/Default/)
+	end
+	
 	desc 'Minifies and packages up JavaScript files'
 	task :javascript do
-		scripts = FileList.new("#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/includes/*.js")
+		themes.each do |theme|
+			scripts = FileList.new("#{theme}/includes/*.js")
 		
-		Minify.javascript \
-			:tool => configatron.tools.ajaxmin,
-			:pretty => configatron.app.debugging_enabled,
-			:source => scripts,
-			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/#{configatron.project}.generated.js"
+			Minify.javascript \
+				:tool => configatron.tools.ajaxmin,
+				:pretty => configatron.app.debugging_enabled,
+				:source => scripts,
+				:destination => "#{theme}/#{File.basename(theme)}.generated.js"
+		end
 	end
 	
 	desc 'Minifies and packages up CSS files'
 	task :css do
-		css = FileList.new("#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/includes/*.css")
+		themes.each do |theme|
+			css = FileList.new("#{theme}/includes/*.css")
 		
-		Minify.css \
-			:tool => configatron.tools.ajaxmin,
-			:pretty => configatron.app.debugging_enabled,
-			:opts => ["-comments:hacks"],
-			:source => css,
-			:destination => "#{configatron.dir.app}/#{configatron.project}.Wiki/Themes/#{configatron.project}/#{configatron.project}.generated.css"
+			Minify.css \
+				:tool => configatron.tools.ajaxmin,
+				:pretty => configatron.app.debugging_enabled,
+				:opts => ["-comments:hacks"],
+				:source => css,
+				:destination => "#{theme}/#{File.basename(theme)}.generated.css"
+
+		end
 	end
 end
 
