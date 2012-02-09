@@ -10,7 +10,7 @@ html, input, textarea {
 
 body {
 	line-height: 1.5em;
-	background: #e1df9e url(images/layout/page-background.png) repeat-x scroll left top;
+	background-color: #202020; 
 	color: #111;
 }
 
