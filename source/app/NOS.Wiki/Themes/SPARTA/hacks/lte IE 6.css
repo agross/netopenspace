@@ -1,0 +1,15 @@
+﻿body form {
+	background-color: #AFAAA6;
+}
+
+.clearfix {
+	font-size: 0;
+}
+
+#HeaderDiv {
+	overflow: hidden;
+}
+
+#FooterDiv {
+	padding-bottom: 5px;
+}
