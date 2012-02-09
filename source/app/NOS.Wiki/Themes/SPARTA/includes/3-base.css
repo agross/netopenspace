@@ -27,7 +27,7 @@ pre {
 }
 
 a {
-	color: #648c13;
+	color: #ea9917;
 	text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ a.direct-link {
 }
 
 .separator:hover a.direct-link {
-	color: #648c13;
+	color: #ea9917;
 }
 
 strong, b, strong *, b * {
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.5em;
 	line-height: 1.6em;
 	padding-bottom: .5em;
-	color: #a12d0d;
+	color: #093164;
 }
 
 h2 {
@@ -348,12 +348,12 @@ Header
 
 #header .basictab li a {
 	color: #fff;
-	background-color: #9dab42;
+	background-color: #986107;
 	padding: 5px 9px;
 }
 
 #header .basictab li a:hover {
-	background-color: #e1df9e;
+	background-color: #B08239;
 	color: #111;
 }
 
@@ -508,7 +508,7 @@ Footer
 }
 
 #footer .content {
-	background-color: #132e28;
+	background-color: #1B0B69;
 	color: #fff;
 }
 
