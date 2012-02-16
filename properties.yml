@@ -1,7 +1,7 @@
 <%= optional_yaml('local-properties') %>
 
 global:
-  project: NOS
+  project: Spartakiade
   dir:
     build: build
     test_results: build/test-results
@@ -19,7 +19,7 @@ global:
     iis:
       custom_errors: "Off"
       cookie_path: /
-      root_url: http://nos.local/
+      root_url: http://spartakiade.local/
   deployment:
     logfile: build/msdeploy.log
   tools:
