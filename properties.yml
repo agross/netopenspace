@@ -50,18 +50,6 @@ production:
       address: team.torstenweber.de
       user: <%= ENV['DEPLOY_USER'] || 'secret' %>
       password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
-  
-leipzig:
-  default_to: production
-  app:
-    iis:
-      cookie_path: 2011/
-      root_url: http://netopenspace.de/
-  deployment:
-    tasks:
-      - wiki
-    iis:
-      app_name: (agross) netopenspace.de/
       
 root:
   default_to: production
@@ -75,18 +63,6 @@ root:
       - wall
     iis:
       app_name: (tweber) spartakiade.org/
-  
-karlsruhe:
-  default_to: production
-  app:
-    iis:
-      cookie_path: 2010/
-      root_url: http://karlsruhe.netopenspace.de/
-  deployment:
-    tasks:
-      - wiki
-    iis:
-      app_name: (agross) karlsruhe.netopenspace.de/
       
 berlin:
   default_to: production
