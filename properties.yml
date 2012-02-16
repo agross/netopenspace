@@ -68,7 +68,7 @@ berlin:
   default_to: production
   app:
     iis:
-      cookie_path: 2011/
+      cookie_path: 2012/
       root_url: http://spartakiade.org/
   deployment:
     tasks:
