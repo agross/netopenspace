@@ -55,23 +55,36 @@ root:
   default_to: production
   app:
     iis:
-      cookie_path: 2011/
-      root_url: http://spartakiade.org/
-  deployment:
-    tasks:
-      - root
-      - wall
-    iis:
-      app_name: (tweber) spartakiade.org/
-      
-berlin:
-  default_to: production
-  app:
-    iis:
       cookie_path: 2012/
       root_url: http://spartakiade.org/
   deployment:
     tasks:
-      - wiki
+      - root
     iis:
       app_name: (tweber) spartakiade.org/
+      
+net:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2012/
+      root_url: http://net.spartakiade.org/
+  deployment:
+    tasks:
+      - wiki
+      - wall
+    iis:
+      app_name: (tweber) net.spartakiade.org/
+      
+appup:
+  default_to: production
+  app:
+    iis:
+      cookie_path: 2012/
+      root_url: http://appup.spartakiade.org/
+  deployment:
+    tasks:
+      - wiki
+      - wall
+    iis:
+      app_name: (tweber) appup.spartakiade.org/
