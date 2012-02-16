@@ -47,7 +47,7 @@ production:
     connection:
       wmsvc: true
       allow_untrusted_https: true
-      address: team.torstenweber.de
+      address: spartakiade.org
       user: <%= ENV['DEPLOY_USER'] || 'secret' %>
       password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
       
