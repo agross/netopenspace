@@ -41,7 +41,7 @@ namespace :env do
 		CLOBBER.clear
 		CLOBBER.include(configatron.dir.build)
 		CLOBBER.include(configatron.dir.deploy)
-		CLOBBER.exclude('NOS.Wiki/bin'.in(configatron.dir.app))
+		CLOBBER.exclude("#{configatron.project}.Wiki/bin".in(configatron.dir.app))
 		CLOBBER.include('**/bin'.in(configatron.dir.source))
 		CLOBBER.include('**/*.template'.in(configatron.dir.source))
 		CLOBBER.include('**/*.generated.*'.in(configatron.dir.source))

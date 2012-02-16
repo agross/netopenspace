@@ -5,5 +5,5 @@
 // associated with an assembly.
 
 [assembly: AssemblyCompany("Alexander Groß")]
-[assembly: AssemblyProduct(".NET Open Space Wiki")]
+[assembly: AssemblyProduct("Spartakiade Wiki")]
 [assembly: AssemblyCopyright("Copyright © Alexander Groß 2008-2010")]

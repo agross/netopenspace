@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Spartakiade.Wiki", "app\Spartakiade.Wiki\", "{9042FB6F-5A70-409D-A1DF-31A1092196A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/Spartakiade.Wiki"
+		Debug.AspNetCompiler.PhysicalPath = "app\Spartakiade.Wiki\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Wiki\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Spartakiade.Wiki"
+		Release.AspNetCompiler.PhysicalPath = "app\Spartakiade.Wiki\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Wiki\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1071"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Spartakiade.Root", "app\Spartakiade.Root\", "{A042FB6F-5A70-409D-A1DF-31A1092196A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/Spartakiade.Root"
+		Debug.AspNetCompiler.PhysicalPath = "app\Spartakiade.Root\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Root\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Spartakiade.Root"
+		Release.AspNetCompiler.PhysicalPath = "app\Spartakiade.Root\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Root\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1072"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Spartakiade.Wall", "app\Spartakiade.Wall\", "{B042FB6F-5A70-409D-A1DF-31A1092196A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/Spartakiade.Wall"
+		Debug.AspNetCompiler.PhysicalPath = "app\Spartakiade.Wall\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Wall\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Spartakiade.Wall"
+		Release.AspNetCompiler.PhysicalPath = "app\Spartakiade.Wall\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Spartakiade.Wall\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1073"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spartakiade.TabMenu", "app\Spartakiade.TabMenu\Spartakiade.TabMenu.csproj", "{5061E26D-2408-4C19-9F4F-CCCBF96482DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spartakiade.TabMenu.Tests", "test\Spartakiade.TabMenu.Tests\Spartakiade.TabMenu.Tests.csproj", "{1F097985-39BD-4EE5-A52F-45C1375B0AE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9042FB6F-5A70-409D-A1DF-31A1092196A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9042FB6F-5A70-409D-A1DF-31A1092196A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A042FB6F-5A70-409D-A1DF-31A1092196A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A042FB6F-5A70-409D-A1DF-31A1092196A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B042FB6F-5A70-409D-A1DF-31A1092196A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B042FB6F-5A70-409D-A1DF-31A1092196A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5061E26D-2408-4C19-9F4F-CCCBF96482DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F097985-39BD-4EE5-A52F-45C1375B0AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F097985-39BD-4EE5-A52F-45C1375B0AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F097985-39BD-4EE5-A52F-45C1375B0AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F097985-39BD-4EE5-A52F-45C1375B0AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
