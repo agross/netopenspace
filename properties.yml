@@ -46,7 +46,7 @@ production:
   deployment:
     connection:
       wmsvc: true
-      allow_untrusted_https: false
+      allow_untrusted_https: true
       address: team.torstenweber.de
       user: <%= ENV['DEPLOY_USER'] || 'secret' %>
       password: <%= ENV['DEPLOY_PASSWORD'] || 'secret' %>
