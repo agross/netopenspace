@@ -7,6 +7,10 @@
 			{
 				"Year": 2010,
 				"URL": "http://karlsruhe.netopenspace.de/2010/"
+			},
+			{
+				"Year": 2011,
+				"URL": "http://karlsruhe.netopenspace.de/2011/"
 			}
 		],
 		"TwitterSearch": ["#nos_sued", "#nossued", "from:nos_sued"]
