@@ -31,6 +31,10 @@
 			{
 				"Year": 2010,
 				"URL": "http://netopenspace.de/2010/"
+			},
+			{
+				"Year": 2011,
+				"URL": "http://netopenspace.de/2011/"
 			}
 		],
 		"TwitterSearch": ["#netos", "from:netopenspace"]
