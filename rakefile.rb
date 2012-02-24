@@ -374,6 +374,11 @@ namespace :deploy do
 					:absolutePath, "App_Offline\\.htm$"
 				],
 				Dictionary[
+					:objectName, "dirPath",
+					:skipAction, "Delete",
+					:absolutePath, "aspnet_client"
+				],
+				Dictionary[
 					:objectName, "filePath",
 					:skipAction, "Delete",
 					:absolutePath, "/public\\\\.*$"
@@ -407,7 +412,14 @@ namespace :deploy do
 			:dest => remote.merge({
 				:contentPath => "#{configatron.deployment.iis.app_name}#{configatron.app.iis.cookie_path}/wall".escape
 				}),
-			:usechecksum => true
+			:usechecksum => true,
+			:skip =>[
+				Dictionary[
+					:objectName, "dirPath",
+					:skipAction, "Delete",
+					:absolutePath, "aspnet_client"
+				]
+			]
 	end
 	
 	desc 'Deploys the build artifacts to QA or production systems'
