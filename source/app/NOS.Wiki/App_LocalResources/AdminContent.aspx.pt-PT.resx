@@ -148,7 +148,7 @@
     <value>Editar</value>
   </data>
   <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
-    <value>Editar Avisos de Página (Namespace-specific)</value>
+    <value>Editar Avisos de Página (específicos do Namespace)</value>
   </data>
   <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
     <value>Editar</value>
@@ -178,7 +178,7 @@
     <value>Editar</value>
   </data>
   <data name="btnPageChangeMessageResource1.Text" xml:space="preserve">
-    <value>Mensagem Alteraçãode Pagina(Global)</value>
+    <value>Mensagem de Alteração de Página (Global)</value>
   </data>
   <data name="btnPageChangeMessageResource1.ToolTip" xml:space="preserve">
     <value>Editar</value>
@@ -223,22 +223,22 @@
     <value>A mensagem de substituição da informação no topo da página de acesso negado (caso não esteja vazia).</value>
   </data>
   <data name="lblAccountActivationMessageInfoResource1.Text" xml:space="preserve">
-    <value>A mensagem de e-mail eviada a um novo utilizador registado que tem de activar a sua conta.</value>
+    <value>A mensagem de email enviada a um utilizador recém registado que tem de activar a sua conta.</value>
   </data>
   <data name="lblApproveDraftMessageInfoResource1.Text" xml:space="preserve">
-    <value>A mensagem de e-mail eviada ao Editor/administrador quando uma página de rascunho requer aprovação.</value>
+    <value>A mensagem de email enviada aos editores/administradores quando uma página de rascunho requer aprovação.</value>
   </data>
   <data name="lblContentResource1.Text" xml:space="preserve">
     <value>Editar Conteúdo</value>
   </data>
   <data name="lblDiscussionChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>A Mensagem de e-mail enviada aos utilizadores quando uma nova mensagem é carregada na discussão.</value>
+    <value>A Mensagem de email enviada aos utilizadores quando existe uma nova mensagem numa discussão.</value>
   </data>
   <data name="lblEditingPageNoticeInfoResource1.Text" xml:space="preserve">
-    <value>A mensagem exibida no inicio da pagina de edição.</value>
+    <value>A mensagem exibida no inicio da página de edição.</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: o layout actual do tema pode ser diferente do apresentado aqui</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: o layout actual do tema pode ser diferente do aqui apresentado</value>
   </data>
   <data name="lblLoginNoticeInfoResource1.Text" xml:space="preserve">
     <value>A mensagem de substituição da informação no topo da página de login (caso não esteja vazia).</value>
@@ -250,16 +250,16 @@
     <value>Outros Elementos</value>
   </data>
   <data name="lblPageChangeMessageInfoResource1.Text" xml:space="preserve">
-    <value>A Mensagem de e-mail de modificação de página enviada aos utilizadores.</value>
+    <value>A mensagem de email enviada aos utilizadores quando uma página é modificada.</value>
   </data>
   <data name="lblPageContentResource1.Text" xml:space="preserve">
     <value>Conteúdo da Página</value>
   </data>
   <data name="lblPageLayoutResource1.Text" xml:space="preserve">
-    <value>Elementos do layout da Página (Namespace-Specific)</value>
+    <value>Elementos do layout da Página (específicos do Namespace)</value>
   </data>
   <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
-    <value>A Mensagem de e-mail enviada quando um utilizador pretende repõe a password.</value>
+    <value>A mensagem de email enviada a um utilizador quando pretende repor a sua password.</value>
   </data>
   <data name="lblRegisterNoticeInfoResource1.Text" xml:space="preserve">
     <value>A mensagem de substituição da informação no topo da página de registo (caso não esteja vazia).</value>
@@ -286,7 +286,7 @@
     <value>Ir</value>
   </data>
   <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
-    <value>Copiar o conteúdo da mesma área de layout do Namespace selecionado </value>
+    <value>Copiar o conteúdo da mesma área de layout do Namespace seleccionado </value>
   </data>
   <data name="lblCopyFromResource1.Text" xml:space="preserve">
     <value>Copiar Conteúdos de:</value>

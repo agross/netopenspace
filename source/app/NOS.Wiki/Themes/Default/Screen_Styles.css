@@ -550,7 +550,7 @@ div.pageoutgoinglinksmenu a:hover {
 #RssLink {
 	background-image: url(Images/RSS.png);
 	background-repeat: no-repeat;
-	text-indent: -2500px;
+	text-indent: -4000px;
 	display: block;
 	height: 17px;
 	width: 24px;
@@ -568,7 +568,7 @@ div.pageoutgoinglinksmenu a:hover {
 #PrintLink {
 	background-image: url(Images/Print.png);
 	background-repeat: no-repeat;
-	text-indent: -2500px;
+	text-indent: -4000px;
 	display: block;
 	margin-left: 4px;
 	height: 16px;

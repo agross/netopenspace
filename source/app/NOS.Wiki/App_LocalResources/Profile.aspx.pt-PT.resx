@@ -130,16 +130,16 @@
     <value />
   </data>
   <data name="btnSaveDisplayNameResource1.Text" xml:space="preserve">
-    <value>Guardar Nome do Display</value>
+    <value>Guardar Nome Público</value>
   </data>
   <data name="btnSaveDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Clique aqui para guardar o Nome do Display</value>
+    <value>Clique aqui para guardar seu o Nome Público</value>
   </data>
   <data name="btnSaveEmailResource1.Text" xml:space="preserve">
-    <value>Guardar E-mail</value>
+    <value>Guardar Email</value>
   </data>
   <data name="btnSaveEmailResource1.ToolTip" xml:space="preserve">
-    <value>Clique aqui para guardar o endereço de e-mail</value>
+    <value>Clique aqui para guardar o endereço de Email</value>
   </data>
   <data name="btnSaveLanguageResource1.Text" xml:space="preserve">
     <value>Guardar</value>
@@ -160,7 +160,7 @@
     <value>Clique aqui para guardar a nova Password</value>
   </data>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Endereços de E-mail não sao iguais</value>
+    <value>Endereços de Email não sao iguais</value>
   </data>
   <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -169,7 +169,7 @@
     <value />
   </data>
   <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Endereços de E-mail não sao iguais</value>
+    <value>Endereços de Email não sao iguais</value>
   </data>
   <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -205,22 +205,22 @@
     <value />
   </data>
   <data name="lblDeleteAccountInfoResource1.Text" xml:space="preserve">
-    <value>Pode eliminar a conta clicando no botao Eliminar Conta e confirmar com o botão de comfirmação.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: A operação é irreversivel</value>
+    <value>Pode eliminar a conta clicando no botão Eliminar Conta e confirmando no botão Confirmação.&lt;br /&gt;&lt;b&gt;Aviso&lt;/b&gt;: A operação é irreversivel</value>
   </data>
   <data name="lblDeleteAccountResource1.Text" xml:space="preserve">
     <value>Eliminar Conta</value>
   </data>
   <data name="lblDescriptionResource1.Text" xml:space="preserve">
-    <value>Bem vindo ao seu Perfil, </value>
+    <value>Bem-vindo ao seu Perfil, </value>
   </data>
   <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
-    <value>Receber uma notificação sempre que uma &lt;b&gt;mensagem&lt;/b&gt; é publicado na página do namespaces seguinte (somente discussões que tenha acesso a):</value>
+    <value>Receber uma notificação de email sempre que uma &lt;b&gt;mensagem&lt;/b&gt; for publicada numa página dos seguintes namespaces (apenas discussões a que tenha acesso):</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Display Name</value>
+    <value>Nome Público</value>
   </data>
   <data name="lblEditEmailPasswordResource1.Text" xml:space="preserve">
-    <value>Editar o Nome do Display, E-mail e Password</value>
+    <value>Editar o Nome Público, Email e Password</value>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
     <value>Email</value>
@@ -235,7 +235,7 @@
     <value>É membro dos seguintes Grupos:</value>
   </data>
   <data name="lblInfoResource1.Text" xml:space="preserve">
-    <value>Aqui pode editar as configurações do Perfil, assim como o E-mail e Password. Não consegue alterar o nome de Utilizador.</value>
+    <value>Aqui pode editar as configurações do Perfil, tais como o Email e Password. Não é possível alterar o seu nome de Utilizador.</value>
   </data>
   <data name="lblLanguageResultResource1.Text" xml:space="preserve">
     <value />
@@ -247,10 +247,10 @@
     <value>Linguagem e Fuso Horário</value>
   </data>
   <data name="lblNoChangesResource1.Text" xml:space="preserve">
-    <value>Configurações actuais do sistema não permitem quaisquer alterações de informações pessoais.</value>
+    <value>Configurações actuais do sistema não permitem quaisquer alterações à sua informação pessoal.</value>
   </data>
   <data name="lblNotificationsResource1.Text" xml:space="preserve">
-    <value>Definições das Notificações por E-mail</value>
+    <value>Definições das Notificações por Email</value>
   </data>
   <data name="lblNotificationsResultResource1.Text" xml:space="preserve">
     <value />
@@ -262,7 +262,7 @@
     <value>Password antiga</value>
   </data>
   <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
-    <value>Receber uma notificação sempre que uma &lt;b&gt;página&lt;/b&gt; é actualizada no namespaces seguinte (somente páginas que tenha acesso a):</value>
+    <value>Receber uma notificação de email sempre que uma &lt;b&gt;página&lt;/b&gt; nos seguintes namespaces for actualizada (somente páginas às quais tem acesso):</value>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
     <value>Password</value>
@@ -322,7 +322,7 @@
     <value />
   </data>
   <data name="rfvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>E-mail é obrigatório</value>
+    <value>Email é obrigatório</value>
   </data>
   <data name="rfvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -331,7 +331,7 @@
     <value />
   </data>
   <data name="rfvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>E-mail é obrigatório</value>
+    <value>Email é obrigatório</value>
   </data>
   <data name="rfvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -349,7 +349,7 @@
     <value />
   </data>
   <data name="rfvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password é Obrigatória</value>
+    <value>Password é obrigatória</value>
   </data>
   <data name="rfvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -358,7 +358,7 @@
     <value />
   </data>
   <data name="rfvPassword2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password é Obrigatória</value>
+    <value>Password é obrigatória</value>
   </data>
   <data name="rfvPassword2Resource1.Text" xml:space="preserve">
     <value />
@@ -367,7 +367,7 @@
     <value />
   </data>
   <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Nome do Display Inválido</value>
+    <value>Nome Público  Inválido</value>
   </data>
   <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -376,7 +376,7 @@
     <value />
   </data>
   <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Endereço de E-mail Inválido</value>
+    <value>Endereço de Email inválido</value>
   </data>
   <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -385,7 +385,7 @@
     <value />
   </data>
   <data name="rxvPassword1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Password Inválida</value>
+    <value>Password inválida</value>
   </data>
   <data name="rxvPassword1Resource1.Text" xml:space="preserve">
     <value />
@@ -397,19 +397,19 @@
     <value />
   </data>
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Escreva aqui o nome do display para a sua conta </value>
+    <value>Escreva aqui o nome público para a sua conta </value>
   </data>
   <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail1Resource1.ToolTip" xml:space="preserve">
-    <value>Escreva aqui o endereço de E-mail</value>
+    <value>Escreva aqui o endereço de Email</value>
   </data>
   <data name="txtEmail2Resource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="txtEmail2Resource1.ToolTip" xml:space="preserve">
-    <value>Repita o endereço de E-mail</value>
+    <value>Repita o endereço de Email</value>
   </data>
   <data name="txtOldPasswordResource1.Text" xml:space="preserve">
     <value />

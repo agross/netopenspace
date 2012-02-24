@@ -244,10 +244,10 @@
     <value>Título do Link (opcional)</value>
   </data>
   <data name="lblLinkUrlResource1.Text" xml:space="preserve">
-    <value>ligar URL ou endereço de e-mail (obrigatório)</value>
+    <value>URL do Link ou endereço de email (obrigatório)</value>
   </data>
   <data name="lblPageNameResource1.Text" xml:space="preserve">
-    <value>Nome  Página (obrigatório)</value>
+    <value>Nome da Página (obrigatório)</value>
   </data>
   <data name="lblPageTitleResource1.Text" xml:space="preserve">
     <value>Título do Link (opcional)</value>

@@ -214,7 +214,7 @@
     <value>Välkommen till din användarprofil, </value>
   </data>
   <data name="lblDiscussionMessagesInfoResource2.Text" xml:space="preserve">
-    <value>Underrätta mig via e-post varje gång det skapas ett nytt &lt;b&gt;meddelande&lt;/b&gt; för en sida i följande namnrymder (endast diskussionstrådar du har tillgång till):</value>
+    <value>Underrätta mig via e-post varje gång det skapas ett nytt &lt;b&gt;meddelande&lt;/b&gt; för en sida i följande namnområden (endast diskussionstrådar du har tillgång till):</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
     <value>Synligt namn</value>
@@ -262,7 +262,7 @@
     <value>Gammalt lösenord</value>
   </data>
   <data name="lblPageChangesInfoResource2.Text" xml:space="preserve">
-    <value>Underrätta mig via e-post varje gång en &lt;b&gt;sida&lt;/b&gt; i följande namnrymder uppdateras (endast sidor du har tillgång till):</value>
+    <value>Underrätta mig via e-post varje gång en &lt;b&gt;sida&lt;/b&gt; i följande namnområden uppdateras (endast sidor du har tillgång till):</value>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
     <value>Lösenord</value>

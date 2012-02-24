@@ -132,7 +132,7 @@
     <value />
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Hier können Sie durch die Seiten in diesem Namensraum, sowie den Anhängen und Dateien die ins Wiki hochgeladen wurden suchen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Es werden nur Objekte aufgelistet für die Sie Leseberechtigung besitzen.</value>
+    <value>Hier kannst du in den Seiten in diesem Namensraum, sowie den Anhängen und Dateien die ins Wiki hochgeladen wurden suchen.&lt;br /&gt;&lt;b&gt;Hinweis&lt;/b&gt;: Es werden nur Objekte aufgelistet für die du eine Leseberechtigung besitzt.</value>
     <comment>Here you can search through the pages of this Namespace, their attachments and the files uploaded to the system.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: the results will only display the items you have permissions to read.</comment>
   </data>
   <data name="btnGoResource1.Text" xml:space="preserve">
@@ -194,5 +194,14 @@
   </data>
   <data name="txtQueryResource1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="lblSelectAllResource1.Text" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="lblSelectInverseResource1.Text" xml:space="preserve">
+    <value>Invert</value>
+  </data>
+  <data name="lblSelectNoneResource1.Text" xml:space="preserve">
+    <value>None</value>
   </data>
 </root>

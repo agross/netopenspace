@@ -148,7 +148,7 @@
     <value>Ändra</value>
   </data>
   <data name="btnEditingPageNoticeResource1.Text" xml:space="preserve">
-    <value>Sida redigeras (Namnrymdsspecifikt)</value>
+    <value>Sida redigeras (Namnområdespecifikt)</value>
   </data>
   <data name="btnEditingPageNoticeResource1.ToolTip" xml:space="preserve">
     <value>Ändra</value>
@@ -244,7 +244,7 @@
     <value>Meddelande som visas vid inloggning.</value>
   </data>
   <data name="lblNamespaceResource1.Text" xml:space="preserve">
-    <value>Namnrymd</value>
+    <value>Namnområde</value>
   </data>
   <data name="lblOtherResource1.Text" xml:space="preserve">
     <value>Meddelanden</value>
@@ -256,7 +256,7 @@
     <value>Sidinnehåll</value>
   </data>
   <data name="lblPageLayoutResource1.Text" xml:space="preserve">
-    <value>Sidlayout (namnrymdsspecifik)</value>
+    <value>Sidlayout (namnområdesspecifik)</value>
   </data>
   <data name="lblPasswordResetProcedureMessageInfoResource1.Text" xml:space="preserve">
     <value>E-postmeddelande som skickas till en användare när denna vill återställa sitt lösenord.</value>
@@ -286,7 +286,7 @@
     <value>Kopiera</value>
   </data>
   <data name="btnCopyFromResource1.ToolTip" xml:space="preserve">
-    <value>Kopiera innehållet från den markerade namnrymden</value>
+    <value>Kopiera innehållet från det markerade namnområdet</value>
   </data>
   <data name="lblCopyFromResource1.Text" xml:space="preserve">
     <value>Kopiera innehåll från:</value>

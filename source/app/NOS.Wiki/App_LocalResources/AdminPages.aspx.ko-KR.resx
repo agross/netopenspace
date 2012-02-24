@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnApproveResource1.Text" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="btnApproveResource1.ToolTip" xml:space="preserve">
+    <value>이 리비전 승인</value>
+  </data>
+  <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
+    <value>네임스페이스</value>
+  </data>
+  <data name="btnAsNamespaceResource1.ToolTip" xml:space="preserve">
+    <value>이 템플릿 사용</value>
+  </data>
+  <data name="btnBack2Resource1.Text" xml:space="preserve">
+    <value>돌아가기</value>
+  </data>
+  <data name="btnBack2Resource1.ToolTip" xml:space="preserve">
+    <value>페이지리스트로 돌아가기</value>
+  </data>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>돌아가기</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>페이지리스트로 돌아가기</value>
+  </data>
+  <data name="btnClearDiscussionResource1.Text" xml:space="preserve">
+    <value>토론 삭제</value>
+  </data>
+  <data name="btnClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value>페이지 토론의 모든 메세지 삭제</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.Text" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="btnDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value>페이지 백업 삭제</value>
+  </data>
+  <data name="btnDeletePageResource1.Text" xml:space="preserve">
+    <value>페이지 삭제</value>
+  </data>
+  <data name="btnDeletePageResource1.ToolTip" xml:space="preserve">
+    <value>이 페이지 삭제</value>
+  </data>
+  <data name="btnFilterResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFilterResource1.ToolTip" xml:space="preserve">
+    <value>Apply Filter</value>
+  </data>
+  <data name="btnLockedResource1.Text" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="btnLockedResource1.ToolTip" xml:space="preserve">
+    <value>Use this Template</value>
+  </data>
+  <data name="btnNewPageResource1.Text" xml:space="preserve">
+    <value>새 페이지</value>
+  </data>
+  <data name="btnNewPageResource1.ToolTip" xml:space="preserve">
+    <value>새 페이지 생성</value>
+  </data>
+  <data name="btnPermissionsResource1.Text" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="btnPermissionsResource1.ToolTip" xml:space="preserve">
+    <value>이 페이지 권한관리</value>
+  </data>
+  <data name="btnPermissionsResource2.Text" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="btnPermissionsResource2.ToolTip" xml:space="preserve">
+    <value>이 페이지 권한관리</value>
+  </data>
+  <data name="btnPublicResource1.Text" xml:space="preserve">
+    <value>공용</value>
+  </data>
+  <data name="btnPublicResource1.ToolTip" xml:space="preserve">
+    <value>이 템플릿 사용</value>
+  </data>
+  <data name="btnRejectResource1.Text" xml:space="preserve">
+    <value>거부</value>
+  </data>
+  <data name="btnRejectResource1.ToolTip" xml:space="preserve">
+    <value>리비전 거부</value>
+  </data>
+  <data name="btnRenameResource1.Text" xml:space="preserve">
+    <value>이름 바꾸기</value>
+  </data>
+  <data name="btnRenameResource1.ToolTip" xml:space="preserve">
+    <value>페이지 이름 바꾸기</value>
+  </data>
+  <data name="btnRollbackResource1.Text" xml:space="preserve">
+    <value>롤백</value>
+  </data>
+  <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
+    <value>페이지 롤백</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value>관리를 위해 이 페이지 선택</value>
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value>관리자를 위해 이 페이지 선택</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
+    <value>고아 페이지만 나타내기</value>
+  </data>
+  <data name="chkOrphansOnlyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkShadowPageResource1.Text" xml:space="preserve">
+    <value>새도우 페이지 유지</value>
+  </data>
+  <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
+    <value>오래된 페이지 유지와 새페이지로 자동 리다이렉트</value>
+  </data>
+  <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>유효하지 않은 페이지 이름</value>
+  </data>
+  <data name="cvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveTitleResource1.Text" xml:space="preserve">
+    <value>승인/거절 이동</value>
+  </data>
+  <data name="lblBackupResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBackupResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblByResource1.Text" xml:space="preserve">
+    <value>By:</value>
+  </data>
+  <data name="lblClearDiscussionTitleResource1.Text" xml:space="preserve">
+    <value>페이지 토론 삭제</value>
+  </data>
+  <data name="lblCreatedByResource1.Text" xml:space="preserve">
+    <value>생성자</value>
+  </data>
+  <data name="lblCreatedOnResource1.Text" xml:space="preserve">
+    <value>생성일</value>
+  </data>
+  <data name="lblCurrentPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCurrentTitleResource1.Text" xml:space="preserve">
+    <value>현재 제목</value>
+  </data>
+  <data name="lblDateTimeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteBackupsTitleResource1.Text" xml:space="preserve">
+    <value>Delete Backups</value>
+  </data>
+  <data name="lblDeletePageResource1.Text" xml:space="preserve">
+    <value>Delete Page</value>
+  </data>
+  <data name="lblDeleteResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeleteResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResource1.Text" xml:space="preserve">
+    <value>Disc.</value>
+  </data>
+  <data name="lblDiscussionResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDiscussionResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDraftPreviewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEditResource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lblEditResource2.Text" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="lblEditTitleResource1.Text" xml:space="preserve">
+    <value>페이지 오퍼레이션</value>
+  </data>
+  <data name="lblLastModifiedByResource1.Text" xml:space="preserve">
+    <value>수정자</value>
+  </data>
+  <data name="lblLastModifiedOnResource1.Text" xml:space="preserve">
+    <value>수정일</value>
+  </data>
+  <data name="lblLockedInfoResource1.Text" xml:space="preserve">
+    <value>오직 관리자만 이 페이지를 &lt;b&gt;편집&lt;/b&gt;할 수 있습니다.</value>
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>네임스페이스</value>
+  </data>
+  <data name="lblNewNameResource1.Text" xml:space="preserve">
+    <value>새 이름</value>
+  </data>
+  <data name="lblNormalInfoResource1.Text" xml:space="preserve">
+    <value>부모 네임스페이스로부터 권한 상속</value>
+  </data>
+  <data name="lblOrphanResource1.Text" xml:space="preserve">
+    <value>고아</value>
+  </data>
+  <data name="lblPageNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPagePermissionsResource1.Text" xml:space="preserve">
+    <value>페이지 권한</value>
+  </data>
+  <data name="lblPagesResource1.Text" xml:space="preserve">
+    <value>위키 페이지</value>
+  </data>
+  <data name="lblPermissionsTemplatesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;경고&lt;/b&gt;: 템플릿 설정은 기본 사용자그룹에 존재하는 모든 권한을 변경합니다.</value>
+  </data>
+  <data name="lblPermissionsTemplatesResource1.Text" xml:space="preserve">
+    <value>권한 템플릿</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>프로바이더</value>
+  </data>
+  <data name="lblPublicInfoResource1.Text" xml:space="preserve">
+    <value>익명사용자를 포함한 누구든지 이 페이지를 &lt;b&gt;편집&lt;/b&gt;할 수 있습니다.</value>
+  </data>
+  <data name="lblRenamePageTitleResource1.Text" xml:space="preserve">
+    <value>페이지 이름바꾸기</value>
+  </data>
+  <data name="lblRenameResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRenameResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRevisionResource1.Text" xml:space="preserve">
+    <value>타겟 리비전</value>
+  </data>
+  <data name="lblRevisionsResource1.Text" xml:space="preserve">
+    <value>Rev.</value>
+  </data>
+  <data name="lblRollbackPageTitleResource1.Text" xml:space="preserve">
+    <value>롤백 페이지</value>
+  </data>
+  <data name="lblRollbackResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRollbackResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSavedOnResource1.Text" xml:space="preserve">
+    <value>Saved on:</value>
+  </data>
+  <data name="lblUserResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkDiffResource1.Text" xml:space="preserve">
+    <value>Diff</value>
+  </data>
+  <data name="lnkDiffResource1.ToolTip" xml:space="preserve">
+    <value>변경내용 보기</value>
+  </data>
+  <data name="lnkEditResource1.Text" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="lnkEditResource1.ToolTip" xml:space="preserve">
+    <value>이 드래프트 편집</value>
+  </data>
+  <data name="lstBackupResource1.ToolTip" xml:space="preserve">
+    <value>사용가능한 백업, 새버전 우선</value>
+  </data>
+  <data name="lstNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstRevisionResource1.ToolTip" xml:space="preserve">
+    <value>사용가능한 리비전, 새버전 우선</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>관리</value>
+  </data>
+  <data name="pnlApproveRevisionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlApproveRevisionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlClearDiscussionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlEditPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPermissionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRenameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlRollbackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoAllBackupsResource1.Text" xml:space="preserve">
+    <value>전체 백업 삭제</value>
+  </data>
+  <data name="rdoAllBackupsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoUpToResource1.Text" xml:space="preserve">
+    <value>오래되거나 포함된 백업 삭제</value>
+  </data>
+  <data name="rdoUpToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ErrorMessage" xml:space="preserve">
+    <value>새이름은 필수 항목입니다</value>
+  </data>
+  <data name="rfvNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNewNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFilterResource1.ToolTip" xml:space="preserve">
+    <value>이름으로 페이지 필터</value>
+  </data>
+  <data name="btnMigrateResource1.Text" xml:space="preserve">
+    <value>마이그레이션</value>
+  </data>
+  <data name="btnMigrateResource1.ToolTip" xml:space="preserve">
+    <value>페이지 마이그레이션</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>페이지 분류 복사</value>
+  </data>
+  <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>타겟 네임스페이스로 페이지 분류 복사</value>
+  </data>
+  <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
+    <value>페이지 마이그레이션</value>
+  </data>
+  <data name="lblMigrateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTargetNamespaceResource1.Text" xml:space="preserve">
+    <value>Target Namespace</value>
+  </data>
+  <data name="lstTargetNamespaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMigrateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnBulkMigrateBackResource1.Text" xml:space="preserve">
+    <value>돌아가기</value>
+  </data>
+  <data name="btnBulkMigrateBackResource1.ToolTip" xml:space="preserve">
+    <value>페이지리스트로 돌아가기</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.Text" xml:space="preserve">
+    <value>마이그레이션</value>
+  </data>
+  <data name="btnBulkMigratePagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.Text" xml:space="preserve">
+    <value>페이지 분류 복사</value>
+  </data>
+  <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
+    <value>타겟 네임스페이스로 페이지 분류 복사</value>
+  </data>
+  <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;주의&lt;/b&gt;: 네임스페이스의 기본페이지는 마이그레이션되거나 건너뛸수 없습니다.</value>
+  </data>
+  <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;주의&lt;/b&gt;: 이 목록은 관리가 허용된 모든 페이지의 네임스페이스를 나타냅니다.</value>
+  </data>
+  <data name="lblBulkStep1Resource1.Text" xml:space="preserve">
+    <value>1. 페이지 선택</value>
+  </data>
+  <data name="lblBulkStep2Resource1.Text" xml:space="preserve">
+    <value>2. 타겟 네임스페이스 선택</value>
+  </data>
+  <data name="lblBulkStep3Resource1.Text" xml:space="preserve">
+    <value>3. 이동 수행</value>
+  </data>
+  <data name="rfvBulkMigrateTargetNamespaceResource1.ErrorMessage" xml:space="preserve">
+    <value>타겟 네임스페이스는  필수 항목입니다</value>
+  </data>
+  <data name="btnBulkMigrateResource1.Text" xml:space="preserve">
+    <value>대량 마이그레이션</value>
+  </data>
+  <data name="btnBulkMigrateResource1.ToolTip" xml:space="preserve">
+    <value>다른 네임스페이스로 여러 페이지 마이그레이션</value>
+  </data>
+</root>

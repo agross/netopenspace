@@ -1,6 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPageSA.master" AutoEventWireup="true" Inherits="ScrewTurn.Wiki.Register" Title="Untitled Page" EnableSessionState="True" Culture="auto" meta:resourcekey="PageResource1" UICulture="auto" Codebehind="Register.aspx.cs" %>
 <%@ Register TagPrefix="st" TagName="Captcha" Src="~/Captcha.ascx" %>
-<%@ Register TagPrefix="nos" TagName="AutoRegistration" Src="~/AutoRegistration.ascx" %>
 
 <asp:Content ID="CtnRegister" ContentPlaceHolderID="CphMasterSA" Runat="Server">
 
@@ -140,7 +139,6 @@
 						meta:resourcekey="cvPassword2Resource1" />
 			    </td>
             </tr>
-			<nos:AutoRegistration ID="AutoRegistration" runat="server" />
             <tr style="display: none;">
                 <td style="vertical-align: top;"><p style="text-align: right;"><asp:Literal ID="lblCaptcha" runat="server" Text="Control Text (case sensitive)" meta:resourcekey="lblCaptchaResource1" />:</p></td>
                 <td><st:Captcha ID="captcha" runat="server" /></td>

@@ -11,6 +11,9 @@ desktop.ini
 /build
 /deploy
 
+!/tools/Ruby/bin/
+!/tools/Ruby/lib/ruby/gems/1.8/gems/rake-0.9.2/bin/
+
 local-properties.yml
 *.generated.*
 !/source/app/NOS.Wiki/bin

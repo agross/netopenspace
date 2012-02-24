@@ -127,13 +127,13 @@
     <value>Refazer</value>
   </data>
   <data name="btnRebuildResource1.ToolTip" xml:space="preserve">
-    <value>Reconstruir este índice</value>
+    <value>Refazer este índice</value>
   </data>
   <data name="btnRebuildResource2.Text" xml:space="preserve">
     <value>Refazer</value>
   </data>
   <data name="btnRebuildResource2.ToolTip" xml:space="preserve">
-    <value>Reconstruir este índice</value>
+    <value>Refazer este índice</value>
   </data>
   <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
     <value>Fechar Aplicação</value>
@@ -142,10 +142,10 @@
     <value />
   </data>
   <data name="lblAdminHomeResource1.Text" xml:space="preserve">
-    <value>Página de Administração</value>
+    <value>Administração - Home</value>
   </data>
   <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
-    <value>Pode forçar o shutdown e o reinício do ciclo da Aplicação Web. Será pedido duas vezes a confirmação para reiniciar, em seguida, a Aplicação Web será reiniciada.&lt;br /&gt;&lt;b&gt;Warning&lt;/b&gt;: todas as sessões abertas serão perdidas, e os utilizadores podem encontrar alguns erros.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: o reinício afectará apenas esta Aplicação Web.</value>
+    <value>Pode forçar o reinício da Aplicação Web. Será pedido duas vezes confirmação para reiniciar, em seguida, a Aplicação Web será reiniciada.&lt;br /&gt;&lt;b&gt;Aviso&lt;/b&gt;: todas as sessões abertas serão perdidas e os utilizadores podem encontrar alguns erros.&lt;br /&gt;&lt;b&gt;Nota&lt;/b&gt;: o reinício afectará apenas esta Aplicação Web.</value>
   </data>
   <data name="lblAppShutdownResource1.Text" xml:space="preserve">
     <value>Encerrar a Aplicação Web</value>
@@ -169,13 +169,13 @@
     <value>Correspondências</value>
   </data>
   <data name="lblPageResource1.Text" xml:space="preserve">
-    <value>Nome Página</value>
+    <value>Nome da Página</value>
   </data>
   <data name="lblProviderResource1.Text" xml:space="preserve">
     <value>Provider</value>
   </data>
   <data name="lblRebuildIndexInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: a recriação de um índice de busca pode demorar algum tempo. Por favor,não feche esta janela enquanto o índice é reconstruído. Depois do índice recriado, recomenda-se reiniciar a aplicação.</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: a recriação de um índice de busca pode demorar algum tempo. Por favor não feche esta janela enquanto o índice é reconstruído. Depois do índice recriado, recomenda-se reiniciar a aplicação.</value>
   </data>
   <data name="lblSizeResource1.Text" xml:space="preserve">
     <value>Tamanho</value>
@@ -193,34 +193,34 @@
     <value>Administração</value>
   </data>
   <data name="btnRebuildPageLinksResource1.Text" xml:space="preserve">
-    <value>Refazer links da Página</value>
+    <value>Refazer Links da Página</value>
   </data>
   <data name="btnRebuildPageLinksResource1.ToolTip" xml:space="preserve">
-    <value>Reconstruir a estrutura de links</value>
+    <value>Refazer a estrutura de links</value>
   </data>
   <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
-    <value>Páginas órfãs na Wiki</value>
+    <value>páginas órfãs na Wiki</value>
   </data>
   <data name="lblOrphanPagesInfoPreResource1.Text" xml:space="preserve">
     <value>Parece haver</value>
   </data>
   <data name="lblOrphanPagesInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: uma página é considerada uma&lt;i&gt;orphan&lt;/i&gt; quando não há ligações a outras páginas.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: uma página é considerada &lt;i&gt;orfã&lt;/i&gt;, quando não existem ligações provenientes de outras páginas.</value>
   </data>
   <data name="lblOrphanPagesResource1.Text" xml:space="preserve">
-    <value>Páginas órfãs</value>
+    <value>Páginas Órfãs</value>
   </data>
   <data name="lblRebuildPageLinksInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: reconstrução links da página pode demorar algum tempo. Por favor, não feche esta janela enquanto os links estão a ser reconstruídos.</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: recontruir os links das páginas pode demorar algum tempo. Por favor não feche esta janela enquanto os links estão a ser reconstruídos.</value>
   </data>
   <data name="lnkPagesResource1.Text" xml:space="preserve">
     <value>ver Páginas</value>
   </data>
   <data name="lnkPagesResource1.ToolTip" xml:space="preserve">
-    <value>Ir para o separador Páginas de Administração</value>
+    <value>Ir para o separador Páginas Wiki</value>
   </data>
   <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
-    <value>Enviar bulk e-mail</value>
+    <value>Enviar Email</value>
   </data>
   <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
     <value />
@@ -232,15 +232,15 @@
     <value>Pode enviar uma mensagem a todos os utilizadores de um ou mais grupos.</value>
   </data>
   <data name="lblBulkEmailResource1.Text" xml:space="preserve">
-    <value>Mass Email</value>
+    <value>Email em Massa</value>
   </data>
   <data name="lblSubjectResource1.Text" xml:space="preserve">
     <value>Assunto</value>
   </data>
   <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
-    <value>Requer Corpo de Texto</value>
+    <value>Corpo de Texto obrigatório</value>
   </data>
   <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
-    <value>Assunto é Obrigatório</value>
+    <value>Assunto obrigatório</value>
   </data>
 </root>

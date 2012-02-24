@@ -217,7 +217,7 @@
     <value />
   </data>
   <data name="chkOverwriteResource1.Text" xml:space="preserve">
-    <value>Записати на існуючий</value>
+    <value>Записати замість існуючого</value>
   </data>
   <data name="chkOverwriteResource1.ToolTip" xml:space="preserve">
     <value />

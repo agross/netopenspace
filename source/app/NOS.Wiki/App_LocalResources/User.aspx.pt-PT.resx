@@ -130,7 +130,7 @@
     <value />
   </data>
   <data name="lblMessageInfoResource1.Text" xml:space="preserve">
-    <value>Pode enviar uma mensagem por e-mail para este utilizador. &lt;b&gt;Note&lt;/b&gt;: o endereço de email não será divulgado.</value>
+    <value>Pode enviar uma mensagem de email para este utilizador. &lt;b&gt;Nota&lt;/b&gt;: o seu endereço de email não será divulgado.</value>
   </data>
   <data name="lblMessageTitleResource1.Text" xml:space="preserve">
     <value>Enviar Mensagem</value>

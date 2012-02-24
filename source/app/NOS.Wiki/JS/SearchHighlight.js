@@ -60,6 +60,7 @@ searchhi = {
 		if (qmIndex == -1) return;
 		var ampIndex = url.indexOf("&");
 		var query = url.substring(qmIndex + 4, ampIndex != -1 ? ampIndex : url.length);
+		if(query == "" || query.length < 2) return;
 		query = query.replace(/,/g, ' ');
 		query = unescape(query);
 		searchhi.process(query);

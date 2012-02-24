@@ -121,7 +121,7 @@
     <value>Administração</value>
   </data>
   <data name="lblBrowserSupportResource1.Text" xml:space="preserve">
-    <value>O Browser pode apresentar probelmas com esta Página (sugere-se o Internet Explorer 7+ e Firefox 3+).</value>
+    <value>O Browser pode apresentar problemas com esta Página (sugere-se o Internet Explorer 7+ e Firefox 3+).</value>
   </data>
   <data name="lblBrowserSupportResource1.ToolTip" xml:space="preserve">
     <value />
@@ -133,7 +133,7 @@
     <value />
   </data>
   <data name="lnkSelectAccountsResource1.Text" xml:space="preserve">
-    <value>Contas de Utilizador</value>
+    <value>Contas</value>
   </data>
   <data name="lnkSelectAccountsResource1.ToolTip" xml:space="preserve">
     <value />
@@ -163,13 +163,13 @@
     <value />
   </data>
   <data name="lnkSelectGroupsResource1.Text" xml:space="preserve">
-    <value>Grupo de Utilizadores</value>
+    <value>Grupos</value>
   </data>
   <data name="lnkSelectGroupsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectLogResource1.Text" xml:space="preserve">
-    <value>Log do Sistema</value>
+    <value>Logs Sistema</value>
   </data>
   <data name="lnkSelectLogResource1.ToolTip" xml:space="preserve">
     <value />
@@ -181,13 +181,13 @@
     <value />
   </data>
   <data name="lnkSelectNavPathsResource1.Text" xml:space="preserve">
-    <value>Directórios de Navegação</value>
+    <value>Dir. Navegação</value>
   </data>
   <data name="lnkSelectNavPathsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lnkSelectPagesResource1.Text" xml:space="preserve">
-    <value>Páginas da Wiki</value>
+    <value>Páginas Wiki</value>
   </data>
   <data name="lnkSelectPagesResource1.ToolTip" xml:space="preserve">
     <value />

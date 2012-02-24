@@ -171,12 +171,6 @@
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
     <value>Выбрать эту Учётную Запись</value>
   </data>
-  <data name="btnSelectResource2.Text" xml:space="preserve">
-    <value>Выбрать</value>
-  </data>
-  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Выбрать эту Учётную Запись</value>
-  </data>
   <data name="chkActiveResource1.Text" xml:space="preserve">
     <value>Активированные Учётные Записи</value>
   </data>

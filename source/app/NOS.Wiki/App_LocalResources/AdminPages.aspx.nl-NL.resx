@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnBulkMigrateResource1.Text" xml:space="preserve">
-    <value>Bulk Migrate</value>
+    <value>Bulk Migreren</value>
   </data>
   <data name="btnBulkMigrateResource1.ToolTip" xml:space="preserve">
-    <value>Migrate many Pages to another namespace</value>
+    <value>Migreer veel Paginas naar andere  namespace</value>
   </data>
   <data name="btnBulkMigrateBackResource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Terug</value>
   </data>
   <data name="btnBulkMigrateBackResource1.ToolTip" xml:space="preserve">
-    <value>Back to the Page list</value>
+    <value>Terug naar de Paginalijst</value>
   </data>
   <data name="btnBulkMigratePagesResource1.Text" xml:space="preserve">
-    <value>Migrate</value>
+    <value>Migreer</value>
   </data>
   <data name="btnBulkMigratePagesResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="chkBulkMigrateCopyCategoriesResource1.Text" xml:space="preserve">
-    <value>Copy Page Categories</value>
+    <value>Kopieer Pagina Categorieën</value>
   </data>
   <data name="chkBulkMigrateCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Copy Page Categories to target Namespace</value>
+    <value>Kopieer Pagina Categorieën naar beoogde Namespace</value>
   </data>
   <data name="lblBulkMigrateInfo2Resource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: the default page of the namespace cannot be migrated and is silently skipped.</value>
+    <value>&lt;b&gt;Let op&lt;/b&gt;: de default pagina van de namespace kan niet migcannot be migrated and is silently skipped.</value>
   </data>
   <data name="lblBulkMigrateInfoResource1.Text" xml:space="preserve">
     <value>&lt;b&gt;Note&lt;/b&gt;: this list only displays namespaces in which you are allowed to manage all pages.</value>
@@ -160,16 +160,16 @@
     <value>Target Namespace is required</value>
   </data>
   <data name="btnMigrateResource1.Text" xml:space="preserve">
-    <value>Migrate</value>
+    <value>Migreer</value>
   </data>
   <data name="btnMigrateResource1.ToolTip" xml:space="preserve">
-    <value>Migrate the Page</value>
+    <value>Migreer de Pagina</value>
   </data>
   <data name="chkCopyCategoriesResource1.Text" xml:space="preserve">
-    <value>Copy Page Categories</value>
+    <value>Kopieer Pagina Categorieën</value>
   </data>
   <data name="chkCopyCategoriesResource1.ToolTip" xml:space="preserve">
-    <value>Copy Page Categories to target Namespace</value>
+    <value>Kopieer Pagina Categorieën naar beoogde Namespace</value>
   </data>
   <data name="lblMigratePageTitleResource1.Text" xml:space="preserve">
     <value>Migrate Page</value>
@@ -196,127 +196,127 @@
     <value>Filter Pages by name</value>
   </data>
   <data name="btnApproveResource1.Text" xml:space="preserve">
-    <value>Approve</value>
+    <value>Accordeer</value>
   </data>
   <data name="btnApproveResource1.ToolTip" xml:space="preserve">
-    <value>Approve this Revision</value>
+    <value>Accordeer deze Revisie</value>
   </data>
   <data name="btnAsNamespaceResource1.Text" xml:space="preserve">
-    <value>As Namespace</value>
+    <value>Als Namespace</value>
   </data>
   <data name="btnAsNamespaceResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Gebruik deze Template</value>
   </data>
   <data name="btnBack2Resource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Terug</value>
   </data>
   <data name="btnBack2Resource1.ToolTip" xml:space="preserve">
-    <value>Back to the Page list</value>
+    <value>Terug naar de Paginalijst</value>
   </data>
   <data name="btnBackResource1.Text" xml:space="preserve">
-    <value>Back</value>
+    <value>Terug</value>
   </data>
   <data name="btnBackResource1.ToolTip" xml:space="preserve">
-    <value>Back to the Page list</value>
+    <value>Terug naar de Paginalijst</value>
   </data>
   <data name="btnClearDiscussionResource1.Text" xml:space="preserve">
-    <value>Clear Discussion</value>
+    <value>Maak Discussie leeg</value>
   </data>
   <data name="btnClearDiscussionResource1.ToolTip" xml:space="preserve">
-    <value>Delete all Messages in the Page's Discussion</value>
+    <value>Verwijder alle berichten in discussie bij deze pagina</value>
   </data>
   <data name="btnDeleteBackupsResource1.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Verwijder</value>
   </data>
   <data name="btnDeleteBackupsResource1.ToolTip" xml:space="preserve">
-    <value>Delete the Page's Backups</value>
+    <value>Verwijder de Backups van de Pagina</value>
   </data>
   <data name="btnDeletePageResource1.Text" xml:space="preserve">
-    <value>Delete Page</value>
+    <value>Verwijder Pagina</value>
   </data>
   <data name="btnDeletePageResource1.ToolTip" xml:space="preserve">
-    <value>Delete this Page</value>
+    <value>Verwijder deze Pagina</value>
   </data>
   <data name="btnFilterResource1.AlternateText" xml:space="preserve">
     <value />
   </data>
   <data name="btnFilterResource1.ToolTip" xml:space="preserve">
-    <value>Apply Filter</value>
+    <value>Pas Filter toe</value>
   </data>
   <data name="btnLockedResource1.Text" xml:space="preserve">
-    <value>Locked</value>
+    <value>Geblokkeerd</value>
   </data>
   <data name="btnLockedResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Gebruik deze Template</value>
   </data>
   <data name="btnNewPageResource1.Text" xml:space="preserve">
-    <value>New Page</value>
+    <value>Nieuwe Pagina</value>
   </data>
   <data name="btnNewPageResource1.ToolTip" xml:space="preserve">
-    <value>Create a new Page</value>
+    <value>Maak nieuwe Pagina</value>
   </data>
   <data name="btnPermissionsResource1.Text" xml:space="preserve">
-    <value>Permissions</value>
+    <value>Toegangsrechten</value>
   </data>
   <data name="btnPermissionsResource1.ToolTip" xml:space="preserve">
-    <value>Manage Permissions for this Page</value>
+    <value>Aanpassen Toegangsrechten voor deze Pagina</value>
   </data>
   <data name="btnPermissionsResource2.Text" xml:space="preserve">
-    <value>Permissions</value>
+    <value>Toegangsrechten</value>
   </data>
   <data name="btnPermissionsResource2.ToolTip" xml:space="preserve">
-    <value>Manage Permissions for this Page</value>
+    <value>Aanpassen Toegangsrechten voor deze Pagina</value>
   </data>
   <data name="btnPublicResource1.Text" xml:space="preserve">
-    <value>Public</value>
+    <value>Openbaar</value>
   </data>
   <data name="btnPublicResource1.ToolTip" xml:space="preserve">
-    <value>Use this Template</value>
+    <value>Gebruik deze Template</value>
   </data>
   <data name="btnRejectResource1.Text" xml:space="preserve">
-    <value>Reject</value>
+    <value>Annuleer</value>
   </data>
   <data name="btnRejectResource1.ToolTip" xml:space="preserve">
-    <value>Reject this Revision</value>
+    <value>Annuleer deze Aanpassingen</value>
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
-    <value>Rename</value>
+    <value>Hernoem</value>
   </data>
   <data name="btnRenameResource1.ToolTip" xml:space="preserve">
-    <value>Rename the Page</value>
+    <value>Hernoem de Pagina</value>
   </data>
   <data name="btnRollbackResource1.Text" xml:space="preserve">
-    <value>Rollback</value>
+    <value>Terugzetten</value>
   </data>
   <data name="btnRollbackResource1.ToolTip" xml:space="preserve">
-    <value>Rollback the Page</value>
+    <value>Terugzetten (Rollback) van de Pagina</value>
   </data>
   <data name="btnSelectResource1.Text" xml:space="preserve">
-    <value>Select</value>
+    <value>Selecteer</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Select this Page for administration</value>
+    <value>Selecteer deze Pagina voor beheer</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
     <value>Select</value>
   </data>
   <data name="btnSelectResource2.ToolTip" xml:space="preserve">
-    <value>Select this Page for administration</value>
+    <value>Selecteer deze pagina voor beheer</value>
   </data>
   <data name="chkOrphansOnlyResource1.Text" xml:space="preserve">
-    <value>Display orphan pages only</value>
+    <value>Toon alleen de wees Pagina's</value>
   </data>
   <data name="chkOrphansOnlyResource1.ToolTip" xml:space="preserve">
-    <value />
+    <value>Wees pagina's zijn pagina's waarnaar nergens wordt verwezen</value>
   </data>
   <data name="chkShadowPageResource1.Text" xml:space="preserve">
-    <value>Keep shadow Page</value>
+    <value>Bewaar schaduw pagina</value>
   </data>
   <data name="chkShadowPageResource1.ToolTip" xml:space="preserve">
-    <value>Keep the old Page and set it to auto-redirect to the new Page</value>
+    <value>Bewaar de oude pagina en stel deze in op automatisch doorschakelen naar nieuwe pagina</value>
   </data>
   <data name="cvNewNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Invalid Page Name</value>
+    <value>Ongeldige Pagina Naam</value>
   </data>
   <data name="cvNewNameResource1.Text" xml:space="preserve">
     <value />
@@ -331,7 +331,7 @@
     <value />
   </data>
   <data name="lblApproveTitleResource1.Text" xml:space="preserve">
-    <value>Approve/Reject Draft</value>
+    <value>Goedkeuren /Annuleren Klad</value>
   </data>
   <data name="lblBackupResultResource1.Text" xml:space="preserve">
     <value />

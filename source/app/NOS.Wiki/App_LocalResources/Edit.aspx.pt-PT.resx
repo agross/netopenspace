@@ -121,7 +121,7 @@
     <value>Fechar</value>
   </data>
   <data name="btnAutoTemplateOKResource1.ToolTip" xml:space="preserve">
-    <value>Fechar a Mensagem</value>
+    <value>Fechar esta mensagem</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
     <value>Cancelar</value>
@@ -220,7 +220,7 @@
     <value>Gestao de Anexos da Página</value>
   </data>
   <data name="lblAutoTemplateResource1.Text" xml:space="preserve">
-    <value>O Conteúdo do Template "##TEMPLATE##" foi seleccionado automaticamente. Pode descartar o conteúdo, bem como selecionar outro template usando o link acima.</value>
+    <value>O Conteúdo do Template "##TEMPLATE##" foi seleccionado automaticamente. Pode descartar o conteúdo, bem como seleccionar outro template usando o link acima.</value>
   </data>
   <data name="lblCategoriesResource1.Text" xml:space="preserve">
     <value>Categorias da Página</value>
@@ -235,7 +235,7 @@
     <value>Comentário a esta Alteração</value>
   </data>
   <data name="lblConcurrentEditingResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: esta Página está a ser editada por outro utilizador</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: esta Página está a ser editada por outro utilizador</value>
   </data>
   <data name="lblConcurrentEditingUsernameResource1.Text" xml:space="preserve">
     <value />
@@ -253,16 +253,16 @@
     <value />
   </data>
   <data name="lblIpLoggedResource1.Text" xml:space="preserve">
-    <value>Como não fez login, o endereço de IP vai ser usado como nome do utilizador.</value>
+    <value>Como não fez login, o seu endereço de IP vai ser usado como nome do utilizador.</value>
   </data>
   <data name="lblKeywordsResource1.Text" xml:space="preserve">
     <value>Meta Keywords (separado por virgulas)</value>
   </data>
   <data name="lblMetaResource1.Text" xml:space="preserve">
-    <value>Meta Information</value>
+    <value>Meta Informação</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
-    <value>Nome da Página (usando para ligar Páginas)</value>
+    <value>Nome da Página (usado para ligar Páginas)</value>
   </data>
   <data name="lblNewCategoryResource1.Text" xml:space="preserve">
     <value>Nova Categoria</value>
@@ -277,10 +277,10 @@
     <value />
   </data>
   <data name="lblSaveDangerousResource1.Text" xml:space="preserve">
-    <value>Partilhar esta Página pode resultar na&lt;b&gt;perda de dados&lt;/b&gt;.</value>
+    <value>Gravar esta Página pode resultar na&lt;b&gt;perda de dados&lt;/b&gt;.</value>
   </data>
   <data name="lblSaveDisabledResource1.Text" xml:space="preserve">
-    <value>O Administrador não permite guardar esta Página.</value>
+    <value>Os Administradores não permitem guardar esta Página.</value>
   </data>
   <data name="lblSessionRefreshResource1.Text" xml:space="preserve">
     <value />
@@ -292,7 +292,7 @@
     <value />
   </data>
   <data name="lblTitleResource1.Text" xml:space="preserve">
-    <value>Título da Pagina</value>
+    <value>Título da Página</value>
   </data>
   <data name="lblUnloadPageResource1.Text" xml:space="preserve">
     <value />

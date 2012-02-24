@@ -148,7 +148,7 @@
     <value>Marque esta opção se pretende ser lembrado pelo sistema na próxima vez.</value>
   </data>
   <data name="cvNewPasswordsResource1.ErrorMessage" xml:space="preserve">
-    <value>Passwords são diferentes</value>
+    <value>Passwords não são iguais</value>
   </data>
   <data name="cvNewPasswordsResource1.Text" xml:space="preserve">
     <value />
@@ -187,7 +187,7 @@
     <value>Redefinir Password</value>
   </data>
   <data name="lblResetPasswordInformationResource1.Text" xml:space="preserve">
-    <value>Se esqueceu a password, insira o nome de utilizador &lt;b&gt;or&lt;/b&gt; Endereço de email, de seguida clique no botão Redefinir Password.&lt;br /&gt;Irá receber um e-mail com um link para redefinir password</value>
+    <value>Se esqueceu a sua password, insira o nome de utilizador &lt;b&gt;ou&lt;/b&gt; endereço de Email, de seguida clique no botão Redefinir Password.&lt;br /&gt;Irá receber um email com um link para redefinir password</value>
   </data>
   <data name="lblResetPasswordResource1.Text" xml:space="preserve">
     <value>Redefinir Password</value>

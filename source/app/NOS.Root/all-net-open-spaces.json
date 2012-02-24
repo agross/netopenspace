@@ -2,7 +2,18 @@
 	{
 		"City": "Karlsruhe",
 		"URL": "http://karlsruhe.netopenspace.de/",
-		"TwitterSearch": ["#nos_sued", "from:nos_sued"]
+		"PastEvents":
+		[
+			{
+				"Year": 2010,
+				"URL": "http://karlsruhe.netopenspace.de/2010/"
+			},
+			{
+				"Year": 2011,
+				"URL": "http://karlsruhe.netopenspace.de/2011/"
+			}
+		],
+		"TwitterSearch": ["#nos_sued", "#nossued", "from:nos_sued"]
 	},
 	{
 		"City": "Leipzig",

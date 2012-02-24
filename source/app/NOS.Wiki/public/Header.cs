@@ -19,22 +19,26 @@
 					<span class="pos5"><span class="smallest">[FAQ|Fragen]</span></span>
 				</li>	
 				<li>
-					<span class="pos6"><span class="smallest">[Presse]</span></span>
+					<span class="pos6"><span class="smallest">[Zeitplan|Zeitplan]</span></span>
 				</li>
 				<li>
-					<span class="pos7"><span class="smaller">[Sponsoren]</span></span>
+					<span class="pos7"><span class="smallest">[Schwarzes Brett|Schwarzes Brett]</span></span>
 				</li>		
 				<li>
 					<span class="pos8" id="workspaces">
 						<span class="large">[AllPages.aspx?Cat=Arbeitsbereiche|Arbeitsbereiche]</span>
 						<ul class="submenu smallest" style="display: none">
-							<li>[Arbeitsbereich ALT_NET|ALT.NET]</li>
-							<li>[Arbeitsbereich Clean Code Developer|Clean Code]</li>
-							<li>[Arbeitsbereich Language Oriented Programming|Language-Oriented Programming]</li>
-							<li>[Arbeitsbereich Mobile Computing|Mobile Computing]</li>
-							<li>[Arbeitsbereich Soft Skills|Soft Skills]</li>
-							<li>[Arbeitsbereich Microsoft SQL Server 2008|SQL Server]</li>
-							<li>[Arbeitsbereich UI und UX|UI und UX]</li>
+							<li>[Arbeitsbereich-ALT_NET|ALT.NET]</li>
+							<li>[Arbeitsbereich-Clean-Code|Clean Code]</li>
+							<li>[Arbeitsbereich-CQRS|CQRS]</li>
+							<li>[Arbeitsbereich-HTML-5|HTML 5]</li>
+							<li>[Arbeitsbereich-Kinect|Kinect]</li>
+							<li>[Arbeitsbereich-Knockout_js|Knockout.js &amp; Co.]</li>
+							<li>[Arbeitsbereich-Mobile|Mobile]</li>
+							<li>[Arbeitsbereich-Ruby-Rails|Ruby &amp; Rails]</li>
+							<li>[Arbeitsbereich-Testing|Testing TDD, BDD &amp; Co.]</li>
+							<li>[Arbeitsbereich-UI-und-UX|UI und UX]</li>
+							<li>[Arbeitsbereich-Windows-8|Windows 8]</li>
 						</ul>
 					</span>
 				</li>

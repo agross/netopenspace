@@ -104,7 +104,7 @@
 	</span>
     <asp:Label ID="lblNoUpload" runat="server" CssClass="small" Text="<br />Save the page before uploading" meta:resourcekey="lblNoUploadResource1" />
     <span id="UploadProgressSpan" style="display: none;"><img src="Images/Wait.gif" alt="Uploading..." /></span>
-    <asp:Label ID="lblUploadResult" runat="server" AutoUpdateAfterCallBack="True" meta:resourcekey="lblUploadResultResource1" />
+    <asp:Label ID="lblUploadResult" runat="server" meta:resourcekey="lblUploadResultResource1" />
 </div>
 
 <div class="cleanup"></div>

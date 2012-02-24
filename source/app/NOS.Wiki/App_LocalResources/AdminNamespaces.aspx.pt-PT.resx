@@ -121,7 +121,7 @@
     <value>Voltar</value>
   </data>
   <data name="btnBackResource1.ToolTip" xml:space="preserve">
-    <value>Voltar á lista de Namespaces</value>
+    <value>Voltar à lista de Namespaces</value>
   </data>
   <data name="btnCancelResource1.Text" xml:space="preserve">
     <value>Cancelar</value>
@@ -199,7 +199,7 @@
     <value>Seleccionar</value>
   </data>
   <data name="btnSelectResource1.ToolTip" xml:space="preserve">
-    <value>Selecionar Namespace para Edição</value>
+    <value>Seleccionar Namespace para Edição</value>
   </data>
   <data name="btnSelectResource2.Text" xml:space="preserve">
     <value>Seleccionar</value>
@@ -247,7 +247,7 @@
     <value>Categorias</value>
   </data>
   <data name="lblConfirmDeletionResource1.Text" xml:space="preserve">
-    <value>Tem a certeza que quer apagar o Namespace selecionado? Ao eliminar, todos os dados serão perdidos.</value>
+    <value>Tem a certeza que quer apagar o Namespace seleccionado? Ao eliminar, todos os dados serão perdidos.</value>
   </data>
   <data name="lblDefaultPageInfoResource1.Text" xml:space="preserve">
     <value>A página padrão será criada automaticamente com o nome 'MainPage'.</value>
@@ -265,7 +265,7 @@
     <value>Detalhes do Namespace</value>
   </data>
   <data name="lblInheritanceInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Note&lt;/b&gt;: sub-namespaces herdam sempre permissões do &lt;b&gt;root&lt;/b&gt; namespace.&lt;br /&gt;Alterando as permissões de &lt;b&gt;root&lt;/b&gt; namespace não altera as permissões explicitamente definido no sub-namespaces.</value>
+    <value>&lt;b&gt;Nota&lt;/b&gt;: sub-namespaces herdam sempre permissões do namespace &lt;b&gt;raíz&lt;/b&gt;.&lt;br /&gt;Alterar as permissões do namespace &lt;b&gt;raíz&lt;/b&gt; não afecta as permissões explicitamente definidas nos sub-namespaces.</value>
   </data>
   <data name="lblNameResource1.Text" xml:space="preserve">
     <value>Nome</value>
@@ -310,7 +310,7 @@
     <value>Qualquer utilizador, incluindo anónimos, podem&lt;b&gt;editar&lt;/b&gt; páginas, utilizadores registados podem ainda&lt;b&gt;criar&lt;/b&gt; páginas e &lt;b&gt;gerir&lt;/b&gt; categorias.</value>
   </data>
   <data name="lblRenameInfoResource1.Text" xml:space="preserve">
-    <value>&lt;b&gt;Warning&lt;/b&gt;: Alterar o nome do namespace vai quebrar todas as ligações inter-namespace.</value>
+    <value>&lt;b&gt;Aviso&lt;/b&gt;: Alterar o nome do namespace vai quebrar todas as ligações inter-namespace.</value>
   </data>
   <data name="lblRenameResource1.Text" xml:space="preserve">
     <value>Alterar o nome do Namespace</value>

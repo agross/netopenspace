@@ -124,7 +124,7 @@
     <value>Clique aqui para criar uma conta</value>
   </data>
   <data name="cvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>E-mails não são iguais</value>
+    <value>Emails não são iguais</value>
   </data>
   <data name="cvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -133,7 +133,7 @@
     <value />
   </data>
   <data name="cvEmail2Resource1.ErrorMessage" xml:space="preserve">
-    <value>E-mails não são iguais</value>
+    <value>Emails não são iguais</value>
   </data>
   <data name="cvEmail2Resource1.Text" xml:space="preserve">
     <value />
@@ -175,13 +175,13 @@
     <value>Controle de Texto (case sensitive)</value>
   </data>
   <data name="lblDisplayNameResource1.Text" xml:space="preserve">
-    <value>Nome do Display</value>
+    <value>Nome Público</value>
   </data>
   <data name="lblEmail1Resource1.Text" xml:space="preserve">
-    <value>E-mail</value>
+    <value>Email</value>
   </data>
   <data name="lblEmail2Resource1.Text" xml:space="preserve">
-    <value>E-mail (repetir)</value>
+    <value>Email (repetir)</value>
   </data>
   <data name="lblPassword1Resource1.Text" xml:space="preserve">
     <value>Password</value>
@@ -190,7 +190,7 @@
     <value>Password (repetir)</value>
   </data>
   <data name="lblRegisterDescriptionResource1.Text" xml:space="preserve">
-    <value>Aqui pode criar uma nova conta para a Wiki.&lt;br /&gt;&lt;b&gt;Note&lt;/b&gt;: Todos os campos são obrigatórios. O endereço de email não será divulgado de forma alguma, mas será visível para os administradores.</value>
+    <value>Aqui pode criar uma nova conta para a Wiki.&lt;br /&gt;&lt;b&gt;Nota&lt;/b&gt;: Todos os campos são obrigatórios. O endereço de email não será divulgado de forma alguma, mas será visível para os administradores.</value>
   </data>
   <data name="lblResultResource1.Text" xml:space="preserve">
     <value />
@@ -259,7 +259,7 @@
     <value />
   </data>
   <data name="rxvDisplayNameResource1.ErrorMessage" xml:space="preserve">
-    <value>Nome do Display inválido</value>
+    <value>Nome Público inválido</value>
   </data>
   <data name="rxvDisplayNameResource1.Text" xml:space="preserve">
     <value />
@@ -268,7 +268,7 @@
     <value />
   </data>
   <data name="rxvEmail1Resource1.ErrorMessage" xml:space="preserve">
-    <value>E-mail Inválido</value>
+    <value>Email Inválido</value>
   </data>
   <data name="rxvEmail1Resource1.Text" xml:space="preserve">
     <value />
@@ -298,7 +298,7 @@
     <value />
   </data>
   <data name="txtDisplayNameResource1.ToolTip" xml:space="preserve">
-    <value>Escreva aqui um Nome para o Display da sua conta</value>
+    <value>Escreva aqui o Nome Público da sua conta</value>
   </data>
   <data name="txtEmail1Resource1.Text" xml:space="preserve">
     <value />

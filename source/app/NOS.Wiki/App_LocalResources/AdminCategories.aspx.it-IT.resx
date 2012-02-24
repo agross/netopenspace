@@ -301,7 +301,7 @@
     <value />
   </data>
   <data name="rfvNewCategoryResource1.ErrorMessage" xml:space="preserve">
-    <value>Il nome è richieso</value>
+    <value>Il nome è richiesto</value>
   </data>
   <data name="rfvNewCategoryResource1.Text" xml:space="preserve">
     <value />

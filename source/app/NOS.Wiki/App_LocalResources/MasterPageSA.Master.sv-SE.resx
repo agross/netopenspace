@@ -130,7 +130,7 @@
     <value>Startsida</value>
   </data>
   <data name="lnkMainPageResource1.ToolTip" xml:space="preserve">
-    <value>Gå till startsidan för aktuell namnrymd</value>
+    <value>Gå till startsidan för aktuellt namnområde</value>
   </data>
   <data name="lnkPreviousPageResource1.Text" xml:space="preserve">
     <value>« Återgå</value>

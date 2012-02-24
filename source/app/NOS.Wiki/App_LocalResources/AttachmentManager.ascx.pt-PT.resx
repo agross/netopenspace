@@ -124,40 +124,40 @@
     <value />
   </data>
   <data name="btnDeleteResource1.Text" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Apagar</value>
   </data>
   <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
-    <value>Eliminar Anexo</value>
+    <value>Apagar este Anexo</value>
   </data>
   <data name="btnDeleteResource2.Text" xml:space="preserve">
-    <value>Eliminar</value>
+    <value>Apagar</value>
   </data>
   <data name="btnDeleteResource2.ToolTip" xml:space="preserve">
-    <value>Eliminar   Anexo</value>
+    <value>Apagar este Anexo</value>
   </data>
   <data name="btnRefreshResource1.Text" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Actualizar</value>
   </data>
   <data name="btnRefreshResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRenameResource1.Text" xml:space="preserve">
-    <value>Alterar Nome</value>
+    <value>Renomear</value>
   </data>
   <data name="btnRenameResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnRenameResource2.Text" xml:space="preserve">
-    <value>Alterar Nome</value>
+    <value>Renomear</value>
   </data>
   <data name="btnRenameResource2.ToolTip" xml:space="preserve">
-    <value>Mudar nome do Anexo</value>
+    <value>Renomear este Anexo</value>
   </data>
   <data name="btnRenameResource3.Text" xml:space="preserve">
-    <value>Alterar Nome</value>
+    <value>Renomear</value>
   </data>
   <data name="btnRenameResource3.ToolTip" xml:space="preserve">
-    <value>Mudar nome do Anexo</value>
+    <value>Renomear este Anexo</value>
   </data>
   <data name="btnUploadResource1.Text" xml:space="preserve">
     <value>Upload</value>
@@ -166,7 +166,7 @@
     <value />
   </data>
   <data name="chkOverwriteResource1.Text" xml:space="preserve">
-    <value>Substituir Anexo Existente</value>
+    <value>Substituir anexo Existente</value>
   </data>
   <data name="chkOverwriteResource1.ToolTip" xml:space="preserve">
     <value />
@@ -187,13 +187,13 @@
     <value>Nome</value>
   </data>
   <data name="lblNoUploadResource1.Text" xml:space="preserve">
-    <value>&lt;br /&gt;Guarde a Página antes de fazer upload</value>
+    <value>&lt;br /&gt;Guarde a página antes de fazer upload</value>
   </data>
   <data name="lblNoUploadResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblRenameResource1.Text" xml:space="preserve">
-    <value>Alterar nome do Ficheiro/Directório</value>
+    <value>Renomear ficheiro/directório</value>
   </data>
   <data name="lblRenameResultResource1.Text" xml:space="preserve">
     <value />
@@ -208,7 +208,7 @@
     <value />
   </data>
   <data name="lblUploadFilesInfoResource1.Text" xml:space="preserve">
-    <value>Pode carregar os anexos para a página atual até US $ 1. Tipos de arquivos permitidos são: $ 2.</value>
+    <value>Pode carregar até $1 anexo(s) para a Página actual. Os tipos de ficheiros permitidos são:  $2.</value>
   </data>
   <data name="lblUploadResultResource1.Text" xml:space="preserve">
     <value />

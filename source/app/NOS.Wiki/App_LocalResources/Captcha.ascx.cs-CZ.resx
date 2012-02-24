@@ -135,4 +135,16 @@
   <data name="txtCaptchaResource1.ToolTip" xml:space="preserve">
     <value>Vložte text zobrazený výše (záleží na velikosti)</value>
   </data>
+  <data name="cvCaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgCaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvCaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCaptchaResource1.Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

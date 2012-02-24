@@ -7,11 +7,11 @@
 
 <html dir="<%= ScrewTurn.Wiki.Settings.Direction %>" xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title runat="server">ScrewTurn Wiki</title>
-    <link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
-    
-    <script type="text/javascript">
-    <!--
+	<title runat="server">ScrewTurn Wiki</title>
+	<link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
+	
+	<script type="text/javascript">
+	<!--
 		function Execute(code) {
 			window.opener.eval(code);
 			window.close();
@@ -35,6 +35,7 @@
 		
 		function ProcessFileLink() {
 			var name = GetValue("txtFilePath");
+			name = name.replace(/\\/g, '\\\\');
 			if(name == "") return false;
 			var title = GetValue("txtFileTitle");
 			var c = IsChecked("chkFileNW") ? "^" : "";
@@ -137,11 +138,11 @@
 			window.close();
 			return false;
 		}
-    // -->
-    </script>
+	// -->
+	</script>
 </head>
 <body id="ToolWindowBody">
-    <form id="frmPopup" runat="server">
+	<form id="frmPopup" runat="server">
 		<div id="MainPopupDiv">
 		
 			<asp:Literal ID="lblStrings" runat="server" meta:resourcekey="lblStringsResource1" />
@@ -174,19 +175,23 @@
 						document.getElementById("btnOkPageLink").onclick = ProcessPageLink;
 						document.getElementById("btnCancelPageLink").onclick = CancelAll;
 
-						$(function() {
-							$("#<%= txtPageName.ClientID %>").keyup(function() {
+						$(function () {
+							$("#<%= txtPageName.ClientID %>").keyup(function () {
 								var value = $("#<%= txtPageName.ClientID %>").val().toLowerCase();
-								$("div.treecontainer a.menulink").each(function() {
+								$("div.treecontainer a.menulink").each(function () {
 									var elem = $(this);
-									var match = elem.attr("title").toLowerCase().indexOf(value) != -1;
+									var txt = elem.attr("title");
+									txt = txt.substring(txt.indexOf(".") + 1);
+									value = value.replace(/_/g, '-');
+									var match = txt.toLowerCase().indexOf(value) != -1;
 									elem.css("display", match ? "" : "none");
 								});
 							});
-							$("#<%= txtPageTitle.ClientID %>").keyup(function() {
+							$("#<%= txtPageTitle.ClientID %>").keyup(function () {
 								var value = $("#<%= txtPageTitle.ClientID %>").val().toLowerCase();
-								$("div.treecontainer a.menulink").each(function() {
+								$("div.treecontainer a.menulink").each(function () {
 									var elem = $(this);
+									value = value.replace(/_/g, '-');
 									var match = elem.text().toLowerCase().indexOf(value) != -1;
 									elem.css("display", match ? "" : "none");
 								});
@@ -364,6 +369,6 @@
 			</asp:MultiView>
 			
 		</div>
-    </form>
+	</form>
 </body>
 </html>

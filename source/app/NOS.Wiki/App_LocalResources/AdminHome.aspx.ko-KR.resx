@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnClearCacheResource1.Text" xml:space="preserve">
+    <value>캐시 삭제</value>
+  </data>
+  <data name="btnClearCacheResource1.ToolTip" xml:space="preserve">
+    <value>캐시 삭제</value>
+  </data>
+  <data name="btnRebuildResource1.Text" xml:space="preserve">
+    <value>리빌드</value>
+  </data>
+  <data name="btnRebuildResource1.ToolTip" xml:space="preserve">
+    <value>이 색인 리빌드</value>
+  </data>
+  <data name="btnRebuildResource2.Text" xml:space="preserve">
+    <value>리빌드</value>
+  </data>
+  <data name="btnRebuildResource2.ToolTip" xml:space="preserve">
+    <value>이 색인 리빌드</value>
+  </data>
+  <data name="btnShutdownConfirmResource2.Text" xml:space="preserve">
+    <value>어플리케이션 닫기</value>
+  </data>
+  <data name="btnShutdownConfirmResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdminHomeResource1.Text" xml:space="preserve">
+    <value>관리자 홈</value>
+  </data>
+  <data name="lblAppShutdownInfoResource1.Text" xml:space="preserve">
+    <value>웹어플리케이션의 끄기와 재시작순환을 강제할 수 있습니다. 두번 재시작시 확인을 요청받습니다, 그리고 웹어플리케이션은 첫 요청때 재시작됩니다.&lt;br /&gt;&lt;b&gt;경고&lt;/b&gt;: 모든 열린 세션이 유실되며 사용자가 에러로 느낄 수 있습니다.&lt;br /&gt;&lt;b&gt;주의&lt;/b&gt;: 재시작은 웹어플리케이션에만 영향을 미칩니다.</value>
+  </data>
+  <data name="lblAppShutdownResource1.Text" xml:space="preserve">
+    <value>웹어플리케이션 끄기</value>
+  </data>
+  <data name="lblDocCountResource1.Text" xml:space="preserve">
+    <value>문서</value>
+  </data>
+  <data name="lblIndexStatusResource1.Text" xml:space="preserve">
+    <value>검색 색인 상태</value>
+  </data>
+  <data name="lblLinkedInResource1.Text" xml:space="preserve">
+    <value>링크됨</value>
+  </data>
+  <data name="lblMissingPagesResource1.Text" xml:space="preserve">
+    <value>유실된 페이지</value>
+  </data>
+  <data name="lblNamespaceResource1.Text" xml:space="preserve">
+    <value>Namespace</value>
+  </data>
+  <data name="lblOccurrenceCountResource1.Text" xml:space="preserve">
+    <value>Matches</value>
+  </data>
+  <data name="lblPageResource1.Text" xml:space="preserve">
+    <value>페이지 이름</value>
+  </data>
+  <data name="lblProviderResource1.Text" xml:space="preserve">
+    <value>프로바이더</value>
+  </data>
+  <data name="lblRebuildIndexInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;경고&lt;/b&gt;: 검색 색인 리빌드는 시간이 소요됩니다. 작업이 완료될때까지 이 창을 닫지마시기 바랍니다. 리빌드후 어플리케이션 재시작을 권합니다.</value>
+  </data>
+  <data name="lblSizeResource1.Text" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="lblStatusResource1.Text" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="lblSystemStatusContentResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWordCountResource1.Text" xml:space="preserve">
+    <value>단어</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>관리</value>
+  </data>
+  <data name="btnRebuildPageLinksResource1.Text" xml:space="preserve">
+    <value>페이지 링크 리빌드</value>
+  </data>
+  <data name="btnRebuildPageLinksResource1.ToolTip" xml:space="preserve">
+    <value>링크구조 리빌드</value>
+  </data>
+  <data name="lblOrphanPagesInfoPostResource1.Text" xml:space="preserve">
+    <value>orphan pages in the wiki</value>
+  </data>
+  <data name="lblOrphanPagesInfoPreResource1.Text" xml:space="preserve">
+    <value>로 보입니다</value>
+  </data>
+  <data name="lblOrphanPagesInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;주의&lt;/b&gt;: 다른 페이지로부터 링크를 타고 들어올때 &lt;i&gt;고아&lt;/i&gt; 페이지로 보입니다.</value>
+  </data>
+  <data name="lblOrphanPagesResource1.Text" xml:space="preserve">
+    <value>고아 페이지</value>
+  </data>
+  <data name="lblRebuildPageLinksInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;경고&lt;/b&gt;: 검색 색인 리빌드는 시간이 소요됩니다.작업이 완료될때까지 이 창을 닫지마시기 바랍니다.</value>
+  </data>
+  <data name="lnkPagesResource1.Text" xml:space="preserve">
+    <value>페이지 보기</value>
+  </data>
+  <data name="lnkPagesResource1.ToolTip" xml:space="preserve">
+    <value>관리자 탭페이지로 가기</value>
+  </data>
+  <data name="btnSendBulkEmailResource1.Text" xml:space="preserve">
+    <value>대량메일 전송</value>
+  </data>
+  <data name="btnSendBulkEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvGroupsResource1.ErrorMessage" xml:space="preserve">
+    <value>적어도 한그룹이상 선택해야합니다</value>
+  </data>
+  <data name="lblBulkEmailInfoResource1.Text" xml:space="preserve">
+    <value>하나나 그이상 그룹의 모든사용자에게 메일을 전송할 수 있습니다.</value>
+  </data>
+  <data name="lblBulkEmailResource1.Text" xml:space="preserve">
+    <value>대량 메일</value>
+  </data>
+  <data name="lblSubjectResource1.Text" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="rfvBodyResource1.ErrorMessage" xml:space="preserve">
+    <value>본문은 필수입니다</value>
+  </data>
+  <data name="rfvSubjectResource1.ErrorMessage" xml:space="preserve">
+    <value>제목은  필수입니다</value>
+  </data>
+</root>

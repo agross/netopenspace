@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value>Desmarque o Provedor</value>
+  </data>
+  <data name="btnCopySettingsResource1.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="btnCopySettingsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteDllResource1.Text" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="btnDeleteDllResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDisableResource1.Text" xml:space="preserve">
+    <value>Desativar</value>
+  </data>
+  <data name="btnDisableResource1.ToolTip" xml:space="preserve">
+    <value>Disable the Provider</value>
+  </data>
+  <data name="btnEnableResource1.Text" xml:space="preserve">
+    <value>Habilitar</value>
+  </data>
+  <data name="btnEnableResource1.ToolTip" xml:space="preserve">
+    <value>Habilitar o Provedor</value>
+  </data>
+  <data name="btnMigrateFilesResource1.Text" xml:space="preserve">
+    <value>Migrate</value>
+  </data>
+  <data name="btnMigrateFilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnMigratePagesResource1.Text" xml:space="preserve">
+    <value>Migrar</value>
+  </data>
+  <data name="btnMigratePagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnMigrateUsersResource1.Text" xml:space="preserve">
+    <value>Migrar</value>
+  </data>
+  <data name="btnMigrateUsersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDefaultProvidersResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSaveDefaultProvidersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value>Save the String de Configuração</value>
+  </data>
+  <data name="btnSelectResource1.Text" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="btnSelectResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSelectResource2.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="btnSelectResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUnloadResource1.Text" xml:space="preserve">
+    <value>Descarregar</value>
+  </data>
+  <data name="btnUnloadResource1.ToolTip" xml:space="preserve">
+    <value>Descarrega o Provedor</value>
+  </data>
+  <data name="btnUploadResource1.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="btnUploadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAuthorResource1.Text" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="lblConfigHelpResource1.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="lblConfigurationStringTitleResource1.Text" xml:space="preserve">
+    <value>String de Configuração</value>
+  </data>
+  <data name="lblCopySettingsInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Nota&lt;/b&gt;: para ser detectado, o provedor de destino deve ser carregado usando a ferramenta de upload.&lt;br /&gt;Log e alterações recentes não são copiados.</value>
+  </data>
+  <data name="lblCopySettingsResource1.Text" xml:space="preserve">
+    <value>Copiar configurações e dados relacionados</value>
+  </data>
+  <data name="lblCopySettingsResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCopySettingsResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDataMigrationResource1.Text" xml:space="preserve">
+    <value>Migração de Dados</value>
+  </data>
+  <data name="lblDefaultProvCacheResource1.Text" xml:space="preserve">
+    <value>Provedor de Cache</value>
+  </data>
+  <data name="lblDefaultProvFilesResource1.Text" xml:space="preserve">
+    <value>Provedor de Arquivos</value>
+  </data>
+  <data name="lblDefaultProvidersResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultProvidersResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefaultProvidersTitleResource1.Text" xml:space="preserve">
+    <value> Provedores Padrão</value>
+  </data>
+  <data name="lblDefaultProvPagesResource1.Text" xml:space="preserve">
+    <value>Provedor de Páginas</value>
+  </data>
+  <data name="lblDefaultProvUsersResource1.Text" xml:space="preserve">
+    <value>Provedor de Usuários</value>
+  </data>
+  <data name="lblDisplayResource1.Text" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="lblDllResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDllResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateFilesResource1.Text" xml:space="preserve">
+    <value>Migrar arquivos e dados relacionados</value>
+  </data>
+  <data name="lblMigrateFilesResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateFilesResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigratePagesResource1.Text" xml:space="preserve">
+    <value>Migrar páginas e dados relacionados</value>
+  </data>
+  <data name="lblMigratePagesResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigratePagesResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateUsersInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Nota&lt;/b&gt;: migrar contas de usuários vai resetar todas as senhas (notificação por e-mail será enviado para todos os usuários).</value>
+  </data>
+  <data name="lblMigrateUsersResource1.Text" xml:space="preserve">
+    <value>Migrar usuários e dados relacionados</value>
+  </data>
+  <data name="lblMigrateUsersResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrateUsersResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNameResource1.Text" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="lblProviderConfigHelpResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderConfigHelpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderDllResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProviderNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblProvidersResource1.Text" xml:space="preserve">
+    <value>Provedores</value>
+  </data>
+  <data name="lblResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSettingsSourceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSettingsSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUploadInfoResource1.Text" xml:space="preserve">
+    <value>&lt;b&gt;Nota&lt;/b&gt;: remover uma DLL não irá desativar os providers até o próximo re da Wiki,&lt;br /&gt;mas o upload de um novo DLL irá automaticamente carregar os provedores que ele contém.</value>
+  </data>
+  <data name="lblUploadNewDllResource1.Text" xml:space="preserve">
+    <value>Upload nova DLL</value>
+  </data>
+  <data name="lblUploadProvidersTitleResource1.Text" xml:space="preserve">
+    <value>Gerenciamento de DLL dos provedores</value>
+  </data>
+  <data name="lblUploadResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUploadResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVersionResource1.Text" xml:space="preserve">
+    <value>Ver.</value>
+  </data>
+  <data name="lstDllsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstFilesDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstFilesSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPagesDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstPagesSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstSettingsDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstUsersDestinationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lstUsersSourceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Administração</value>
+  </data>
+  <data name="pnlListResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlProviderDetailsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlProviderDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoCacheResource1.Text" xml:space="preserve">
+    <value>Provedores de Cache</value>
+  </data>
+  <data name="rdoCacheResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoFilesResource1.Text" xml:space="preserve">
+    <value>Provedores de Arquivos</value>
+  </data>
+  <data name="rdoFilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoFormatterResource1.Text" xml:space="preserve">
+    <value>Provedores de Formatação</value>
+  </data>
+  <data name="rdoFormatterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoPagesResource1.Text" xml:space="preserve">
+    <value>Provedores de Páginas</value>
+  </data>
+  <data name="rdoPagesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoUsersResource1.Text" xml:space="preserve">
+    <value>Provedores de Usuários</value>
+  </data>
+  <data name="rdoUsersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfigurationStringResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfigurationStringResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="upDllResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUpdateStatusResource1.Text" xml:space="preserve">
+    <value>Status da Atualização</value>
+  </data>
+  <data name="lblCannotDisableResource1.Text" xml:space="preserve">
+    <value>Não é possível desativar o provedor, porque é o provedor padrão ou,  no caso de um provedor de páginas, que controle a página padrão do namespace raiz</value>
+  </data>
+  <data name="lblCannotDisableResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMigrationInfoResource2.Text" xml:space="preserve">
+    <value>&lt;b&gt;Nota 1&lt;/b&gt;: Fazer sempre um backup completo de todos os dados antes de executar uma migração.&lt;br /&gt;&lt;b&gt;Nota 2&lt;/b&gt;: migrações geralmente levam vários minutos para concluir: durante esse tempo, não realizar qualquer outra atividade na Wiki, e não fechar esta página.&lt;br /&gt;&lt;b&gt;Note 3&lt;/b&gt;: o provider de destino deve estar completamente vazio: se contém dados, pode causar problemas de consistência. Consulte a documentação do provedor de destino para obter detalhes.&lt;br /&gt;&lt;b&gt;Timeouts&lt;/b&gt;: é altamente recomendável que aumente o parâmetro executionTimeout no web.config antes de migrar os dados.</value>
+  </data>
+  <data name="btnAutoUpdateProvidersResource1.Text" xml:space="preserve">
+    <value>Provedores de Auto-update</value>
+  </data>
+  <data name="btnAutoUpdateProvidersResource1.ToolTip" xml:space="preserve">
+    <value>Atualizar automaticamente todos os provedores instalados, todos os tipos</value>
+  </data>
+</root>

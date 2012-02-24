@@ -183,4 +183,13 @@
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Titel</value>
   </data>
+  <data name="lblSelectAllResource1.Text" xml:space="preserve">
+    <value>Vælg alle</value>
+  </data>
+  <data name="lblSelectInverseResource1.Text" xml:space="preserve">
+    <value>Inverter</value>
+  </data>
+  <data name="lblSelectNoneResource1.Text" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
 </root>

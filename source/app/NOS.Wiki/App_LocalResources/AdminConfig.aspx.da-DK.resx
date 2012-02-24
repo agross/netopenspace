@@ -463,7 +463,7 @@
     <value />
   </data>
   <data name="lblUsedForEmailCommunicationsResource1.Text" xml:space="preserve">
-    <value>brugt til e-mailkommunikation</value>
+    <value>brugt til e-mailkommunikation og omdirigeringer</value>
   </data>
   <data name="lblWikiTitleResource1.Text" xml:space="preserve">
     <value>Wiki titel</value>
@@ -1075,6 +1075,29 @@
     <value />
   </data>
   <data name="txtWikiTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDisplayAtMostPostResource1.Text" xml:space="preserve">
+    <value>elementer i en liste, derefter opdel på flere sider</value>
+    <comment>As in 'Display at most 5 items in a list, ...'</comment>
+  </data>
+  <data name="lblDisplayAtMostPreResource1.Text" xml:space="preserve">
+    <value>Vis højst</value>
+    <comment>As in 'Display at most: 5 items'</comment>
+  </data>
+  <data name="rvListSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Tallet skal være mellem 10 og 1000</value>
+  </data>
+  <data name="rvListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvListSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

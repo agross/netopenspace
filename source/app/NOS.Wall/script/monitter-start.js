@@ -2,11 +2,11 @@
 {
 	var mobypicture = {
 		name: "mobypicture",
-		match: function (text)
+		match: function (remainder)
 		{
-			return text.match(/^http:\/\/moby\.to\/([a-z0-9]+)/i);
+			return remainder.match(/^http:\/\/moby\.to\/([a-z0-9]+)/i);
 		},
-		process: function(tweet, link) {
+		process: function(remainder, link) {
 			var anchor = $("<a>")
 				.attr("href", link)
 				.attr("target", "_blank");
@@ -15,17 +15,17 @@
 					.append($("<img>")
 						.attr("src", link + ":thumb")
 						.data("preview", link + ":medium"))
-				.prependTo(tweet.append(anchor.text(link)));
+				.prependTo(remainder.append(anchor.text(link)));
 		}
 	};
 	
 	var yfrog = {
 		name: "yfrog",
-		match: function (text)
+		match: function (remainder)
 		{
-			return text.match(/^http:\/\/yfrog\.com\/([a-z0-9]+)/i);
+			return remainder.match(/^http:\/\/yfrog\.com\/([a-z0-9]+)/i);
 		},
-		process: function(tweet, link) {
+		process: function(remainder, link) {
 			var anchor = $("<a>")
 				.attr("href", link)
 				.attr("target", "_blank");
@@ -34,17 +34,17 @@
 					.append($("<img>")
 						.attr("src", link + ".th.jpg")
 						.data("preview", link + ":iphone"))
-				.prependTo(tweet.append(anchor.text(link)));
+				.prependTo(remainder.append(anchor.text(link)));
 		}
 	};
 	
 	var twitpic = {
 		name: "twitpic",
-		match: function (text)
+		match: function (remainder)
 		{
-			return text.match(/^http:\/\/twitpic\.com\/([a-z0-9]+)/i);
+			return remainder.match(/^http:\/\/twitpic\.com\/([a-z0-9]+)/i);
 		},
-		process: function(tweet, link) {
+		process: function(remainder, link) {
 			var rematch = twitpic.match(link);
 			var img_id = RegExp.$1;
 			var anchor = $("<a>")
@@ -55,17 +55,38 @@
 					.append($("<img>")
 						.attr("src", "http://twitpic.com/show/mini/" + img_id)
 						.data("preview", "http://twitpic.com/show/thumb/" + img_id))
-				.prependTo(tweet.append(anchor.text(link)));
+				.prependTo(remainder.append(anchor.text(link)));
+		}
+	};
+
+	var picTwitter = {
+		name: "picTwitter",
+		match: function (remainder, tweet)
+		{
+			return tweet.entities.media;
+		},
+		process: function(remainder, ignored, tweet) {
+			var media = tweet.entities.media[0].media_url;
+			var link = tweet.entities.media[0].url;
+			var anchor = $("<a>")
+				.attr("href", link)
+				.attr("target", "_blank");
+			return anchor
+					.clone()
+					.append($("<img>")
+						.attr("src", media)
+						.data("preview", media))
+				.prependTo(remainder.append(anchor.text(link)));
 		}
 	};
 
 	var link = {
 		name: "link",
-		match: function (text) {
-			return text.match(/^[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=#]+/i);
+		match: function (remainder) {
+			return remainder.match(/^[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:%&\?\/.=#]+/i);
 		},
-		process: function(tweet, link) {
-			return tweet.append($("<a>")
+		process: function(remainder, link) {
+			return remainder.append($("<a>")
 				.attr("href", link)
 				.attr("target", "_blank")
 				.text(link));
@@ -74,12 +95,12 @@
 	
 	var user = {
 		name: "user",
-		match: function (text) {
-			return text.match(/^@[\w-äöüß]+/i);
+		match: function (remainder) {
+			return remainder.match(/^@[\w-äöüß]+/i);
 		},
-		process: function(tweet, user) {
+		process: function(remainder, user) {
 			var u = user.replace("@", "")
-			return tweet.append($("<a>")
+			return remainder.append($("<a>")
 				.attr("href", "http://twitter.com/" + u)
 				.attr("target", "_blank")
 				.text(user));
@@ -88,12 +109,12 @@
 	
 	var tag = {
 		name: "tag",
-		match: function (text) {
-			return text.match(/^#[\w-äöüß]+/i);
+		match: function (remainder) {
+			return remainder.match(/^#[\w-äöüß]+/i);
 		},
-		process: function(tweet, tag) {
+		process: function(remainder, tag) {
 			var t = tag.replace("#", "%23")
-			return tweet
+			return remainder
 				.append($("<a>")
 				.attr("href", "http://search.twitter.com/search?q=" + t)
 				.attr("target", "_blank")
@@ -103,11 +124,11 @@
 	
 	var whitespace = {
 		name: "whitespace",
-		match: function (text) {
-			return text.match(/^\s+/i);
+		match: function (remainder) {
+			return remainder.match(/^\s+/i);
 		},
-		process: function(tweet, text) {
-			return tweet
+		process: function(remainder, text) {
+			return remainder
 				.append(text);
 		}
 	};
@@ -117,37 +138,43 @@
 		match: function (text) {
 			return text.match(/^\s*\S+\s*/i);
 		},
-		process: function(tweet, text) {
-			return tweet
+		process: function(remainder, text) {
+			return remainder
 				.append(text);
 		}
 	};
 	
 	$.fn.tweet = function(tweet) {
+		var remainder = tweet.text;
 		var result = $("<span>");
 		var parsers = [whitespace, mobypicture, yfrog, twitpic, link, tag, user, text];
 		
-		// console.log("remainder: <" + tweet + ">");
-		while(tweet)
+		// console.log("remainder: <" + remainder + ">");
+		while(remainder)
 		{
 			for(var k = 0; k < parsers.length; k++)
 			{
 				var parser = parsers[k];
-				var match = parser.match(tweet);
+				var match = parser.match(remainder, tweet);
 				if (match)
 				{
 					match = match[0];
 					
 					// console.log(parser.name + ": <" + match + "> ");
-					parser.process(result, match);
+					parser.process(result, match, tweet);
 					
-					tweet = tweet.substring(match.length);
-					// console.log("remainder: <" + tweet + ">");
+					remainder = remainder.substring(match.length);
+					// console.log("remainder: <" + remainder + ">");
 					break;
 				}
 			}
 		};
-		
+	
+	if (picTwitter.match(remainder, tweet))
+	{
+		picTwitter.process(result, "", tweet);
+	}
+	
 		// console.log("result: <" + result.html() + ">");	
 		return $(this).html(result);
 	};
@@ -202,11 +229,11 @@
 							$('<div>')
 							.append($('<div>')
 								.addClass('bubble')
-								.append($('<p>').tweet(this.text)))
+								.append($('<p>').tweet(this)))
 							.append($('<div>')
 								.addClass('author')
 								.append($('<a>')
-									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id)
+									.attr('href', 'http://twitter.com/' + this.from_user + '/status/' + this.id_str)
 									.attr('target', '_blank')
 									.attr('title', 'Tweet anzeigen')
 									.append($('<img>')

@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAutoWikiUrlResource1.Text" xml:space="preserve">
     <value>ta reda på automatiskt</value>
@@ -343,16 +343,16 @@
     <value>Max loggstorlek</value>
   </data>
   <data name="lblMaxRecentChangesToDisplayPostResource1.Text" xml:space="preserve">
-    <value>poster vid expadering av &lt;code&gt;{RecentChanges}&lt;/code&gt;</value>
+    <value>poster vid expandering av &lt;code&gt;{RecentChanges}&lt;/code&gt;</value>
   </data>
   <data name="lblMaxRecentChangesToDisplayPreResource1.Text" xml:space="preserve">
     <value>Visa som mest</value>
   </data>
   <data name="lblNamespaces1Resource1.Text" xml:space="preserve">
-    <value>Namnrymder</value>
+    <value>Namnområden</value>
   </data>
   <data name="lblNamespaces2Resource1.Text" xml:space="preserve">
-    <value>Namnrymder</value>
+    <value>Namnområden</value>
   </data>
   <data name="lblPages1Resource1.Text" xml:space="preserve">
     <value>sidor</value>
@@ -364,13 +364,14 @@
     <value />
   </data>
   <data name="lblResultResource1.ToolTip" xml:space="preserve">
-    <value />
+    <value>
+</value>
   </data>
   <data name="lblRootMainPageResource1.Text" xml:space="preserve">
-    <value>Huvudsida för rotnamnrymd</value>
+    <value>Huvudsida för rotnamnområde</value>
   </data>
   <data name="lblRootThemeResource1.Text" xml:space="preserve">
-    <value>Visuellt tema för rotnamnrymd</value>
+    <value>Visuellt tema för rotnamnområde</value>
   </data>
   <data name="lblSecurityConfigResource1.Text" xml:space="preserve">
     <value>Säkerhet</value>
@@ -1051,7 +1052,7 @@
     <value>Sammanfattning</value>
   </data>
   <data name="ListItemResource43.Value" xml:space="preserve">
-    <value>Sammanfattning</value>
+    <value>Summary</value>
   </data>
   <data name="ListItemResource44.Text" xml:space="preserve">
     <value>Inaktiv (RSS-flöden är inaktiverade)</value>
@@ -1075,6 +1076,29 @@
     <value>Visa bokmärken för sidsektioner</value>
   </data>
   <data name="chkEnableSectionAnchorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDisplayAtMostPostResource1.Text" xml:space="preserve">
+    <value>items in a list, then start paging</value>
+    <comment>As in 'Display at most 5 items in a list, ...'</comment>
+  </data>
+  <data name="lblDisplayAtMostPreResource1.Text" xml:space="preserve">
+    <value>Display at most</value>
+    <comment>As in 'Display at most: 5 items'</comment>
+  </data>
+  <data name="rvListSizeResource1.ErrorMessage" xml:space="preserve">
+    <value>Number must be between 10 and 1000</value>
+  </data>
+  <data name="rvListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvListSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtListSizeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

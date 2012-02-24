@@ -7,13 +7,13 @@
 
 <html dir="<%= ScrewTurn.Wiki.Settings.Direction %>" xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title runat="server">ScrewTurn Wiki</title>
-    <link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
-    
-    <script type="text/javascript">
-    <!--
+	<title runat="server">ScrewTurn Wiki</title>
+	<link rel="stylesheet" type="text/css" href="Themes/Editor.css" />
+	
+	<script type="text/javascript">
+	<!--
 		function Execute(code) {
-		    window.opener.eval(code);
+			window.opener.eval(code);
 			window.close();
 			return false;
 		}
@@ -31,8 +31,8 @@
 			if(IsChecked("chkPageNW")) html += "target=\"_blank\" ";
 			html += "href=\"" + name + ".ashx\" ";
 			html += "title=\"" + title + "\">" + title + "</a>";
-            
-            Execute("insertHTML('" + html + "');");
+			
+			Execute("insertHTML('" + html + "');");
 			
 			window.close();
 			return false;
@@ -52,25 +52,25 @@
 			var page = GetPageName(rawUrl);
 
 			var hasProvider = rawUrl.indexOf(':') == 3;
-            
+			
 			var name = rawUrl;
 
 			if (page != "") {
-			    if (hasProvider) name = name.replace("{UP:", "GetFile.aspx?Provider=");
-			    else name = name.replace("{UP", "GetFile.aspx?");
-			    name = name.replace("(" + page + ")", "");
-			    if (hasProvider) name = name.replace("}", "&Page=" + page + "&File=");
-			    else name = name.replace("}", "Page=" + page + "&File=");
+				if (hasProvider) name = name.replace("{UP:", "GetFile.aspx?Provider=");
+				else name = name.replace("{UP", "GetFile.aspx?");
+				name = name.replace("(" + page + ")", "");
+				if (hasProvider) name = name.replace("}", "&Page=" + page + "&File=");
+				else name = name.replace("}", "Page=" + page + "&File=");
 			}
 			else {
-			    if (hasProvider) {
-			        name = name.replace("{UP:", "GetFile.aspx?Provider=");
-			        name = name.replace("}", "&File=");
-			    }
-			    else {
-			        name = name.replace("{UP", "GetFile.aspx?");
-			        name = name.replace("}", "File=");
-			    }
+				if (hasProvider) {
+					name = name.replace("{UP:", "GetFile.aspx?Provider=");
+					name = name.replace("}", "&File=");
+				}
+				else {
+					name = name.replace("{UP", "GetFile.aspx?");
+					name = name.replace("}", "File=");
+				}
 			}
 
 			return name;
@@ -84,10 +84,10 @@
 			var title = GetValue("txtFileTitle");
 
 			if(title == "") title = GetValue("txtFilePath");
-			title = title.replace('\'', '&#39;');
-			title = title.replace('\'', '&#39;');
-			title = title.replace('\'', '&#39;');
-			title = title.replace('\'', '&#39;');
+			title = title.replace(/\'/g, '&#39;');
+			title = title.replace(/\\/g, '\\\\');
+			name = name.replace(/\'/g, '&#39;');
+			name = name.replace(/\\/g, '\\\\');
 
 			// Sample string: <a class="internallink" [target="_blank" ]href="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" title="TITLE">TITLE</a>
 			// Sample string: <a class="internallink" [target="_blank" ]href="GetFile.aspx?Provider=PROVIDER&amp;IsPageAttachment=1&amp;Page=PAGE&amp;File=FILE" title="TITLE">TITLE</a>
@@ -148,49 +148,49 @@
 			
 			if(imageType == "imageleft" || imageType == "imageright") {
 				// Sample string: <div class="imageleft">[<a href="LINK"[ target="_blank"] title="TITLE">]<img class="image" src="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" alt="Image" />[</a>][<p class="imagedescription">DESCRIPTION</p>]</div>
-			    
-			    var html = "<div class=\"" + imageType + "\">";
-			    if(link != "") {
-			        html += "<a href=\"" + link + "\"";
-			        if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
-			        html += " title=\"Image\">";
-			    }
-			    html += "<img class=\"image\" src=\"" + name + "\" alt=\"Image\">";
-			    if(link != "") html += "</a>";
-			    if(descr != "") html += "<p class=\"imagedescription\">" + descr + "</p>";
-			    html += "</div>";
-		        
-		        Execute("insertHTML('" + html + "');");
+				
+				var html = "<div class=\"" + imageType + "\">";
+				if(link != "") {
+					html += "<a href=\"" + link + "\"";
+					if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
+					html += " title=\"Image\">";
+				}
+				html += "<img class=\"image\" src=\"" + name + "\" alt=\"Image\">";
+				if(link != "") html += "</a>";
+				if(descr != "") html += "<p class=\"imagedescription\">" + descr + "</p>";
+				html += "</div>";
+				
+				Execute("insertHTML('" + html + "');");
 			}
 			else if(imageType == "imageauto") {
-			    // Sample string: <table class="imageauto" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td>[<a href="LINK"[ target="_blank"] title="TITLE">]<img class="image" src="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" alt="Image">[</a>][<p class="imagedescription">description</p>]</td></tr></tbody></table>
-			    
-			    var html = "<table class=\"" + imageType + "\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td>";
-			    if(link != "") {
-			        html += "<a href=\"" + link + "\"";
-			        if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
-			        html += " title=\"Image\">";
-			    }
-			    html += "<img class=\"image\" src=\"" + name + "\" alt=\"Image\">";
-			    if(link != "") html += "</a>";
-			    if(descr != "") html += "<p class=\"imagedescription\">" + descr + "</p>";
-			    html += "</td></tr></tbody></table>";
-		        
-		        Execute("insertHTML('" + html + "');");
+				// Sample string: <table class="imageauto" align="center" cellpadding="0" cellspacing="0"><tbody><tr><td>[<a href="LINK"[ target="_blank"] title="TITLE">]<img class="image" src="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" alt="Image">[</a>][<p class="imagedescription">description</p>]</td></tr></tbody></table>
+				
+				var html = "<table class=\"" + imageType + "\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td>";
+				if(link != "") {
+					html += "<a href=\"" + link + "\"";
+					if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
+					html += " title=\"Image\">";
+				}
+				html += "<img class=\"image\" src=\"" + name + "\" alt=\"Image\">";
+				if(link != "") html += "</a>";
+				if(descr != "") html += "<p class=\"imagedescription\">" + descr + "</p>";
+				html += "</td></tr></tbody></table>";
+				
+				Execute("insertHTML('" + html + "');");
 			}
 			else if(imageType == "image") {
-			    // Sample string [<a [target="_blank" ]href="LINK" title="TITLE">]<img src="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" alt="Image">[</a>]
-			    
-			    var html = "";
-			    if(link != "") {
-			        html += "<a href=\"" + link + "\"";
-			        if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
-			        html += " title=\"Title\">";
-			    }
-			    html += "<img src=\"" + name + "\" alt=\"Image\">";
-			    if(link != "") html += "</a>";
-		        
-		        Execute("insertHTML('" + html + "');");
+				// Sample string [<a [target="_blank" ]href="LINK" title="TITLE">]<img src="GetFile.aspx?Provider=PROVIDER&amp;File=FILE" alt="Image">[</a>]
+				
+				var html = "";
+				if(link != "") {
+					html += "<a href=\"" + link + "\"";
+					if(IsChecked("chkImageNW")) html += " target=\"_blank\"";
+					html += " title=\"Title\">";
+				}
+				html += "<img src=\"" + name + "\" alt=\"Image\">";
+				if(link != "") html += "</a>";
+				
+				Execute("insertHTML('" + html + "');");
 			}
 		}
 		
@@ -250,11 +250,11 @@
 			window.close();
 			return false;
 		}
-    // -->
-    </script>
+	// -->
+	</script>
 </head>
 <body id="ToolWindowBody">
-    <form id="frmPopup" runat="server">
+	<form id="frmPopup" runat="server">
 		<div id="MainPopupDiv">
 		
 			<asp:Literal ID="lblStrings" runat="server" meta:resourcekey="lblStringsResource1" />
@@ -292,7 +292,10 @@
 								var value = $("#<%= txtPageName.ClientID %>").val().toLowerCase();
 								$("div.treecontainer a.menulink").each(function() {
 									var elem = $(this);
-									var match = elem.attr("title").toLowerCase().indexOf(value) != -1;
+									var txt = elem.attr("title");
+									txt = txt.substring(txt.indexOf(".") + 1);
+									value = value.replace(/_/g, '-');
+									var match = txt.toLowerCase().indexOf(value) != -1;
 									elem.css("display", match ? "" : "none");
 								});
 							});
@@ -300,6 +303,7 @@
 								var value = $("#<%= txtPageTitle.ClientID %>").val().toLowerCase();
 								$("div.treecontainer a.menulink").each(function() {
 									var elem = $(this);
+									value = value.replace(/_/g, '-');
 									var match = elem.text().toLowerCase().indexOf(value) != -1;
 									elem.css("display", match ? "" : "none");
 								});
@@ -477,6 +481,6 @@
 			</asp:MultiView>
 			
 		</div>
-    </form>
+	</form>
 </body>
 </html>

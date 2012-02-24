@@ -133,7 +133,7 @@
     <value>Filtrera per kategori</value>
   </data>
   <data name="lblInstructionsResource1.Text" xml:space="preserve">
-    <value>Här kan du söka i sidorna för denna namnrymd, deras bifogade filer och uppladdade filer.&lt;br /&gt;&lt;b&gt;Obs&lt;/b&gt;: resultatet kommer endast visa sidor och filer som du har läsbehörighet till.</value>
+    <value>Här kan du söka i sidorna för detta namnområde, deras bifogade filer och uppladdade filer.&lt;br /&gt;&lt;b&gt;Obs&lt;/b&gt;: resultatet kommer endast visa sidor och filer som du har läsbehörighet till.</value>
   </data>
   <data name="lblStatsResource1.Text" xml:space="preserve">
     <value />
@@ -172,7 +172,7 @@
     <value />
   </data>
   <data name="chkAllNamespacesResource1.Text" xml:space="preserve">
-    <value>Sök i alla namnrymder och kategorier</value>
+    <value>Sök i alla namnområden och kategorier</value>
   </data>
   <data name="chkAllNamespacesResource1.ToolTip" xml:space="preserve">
     <value />
@@ -182,5 +182,14 @@
   </data>
   <data name="chkFilesAndAttachmentsResource1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="lblSelectAllResource1.Text" xml:space="preserve">
+    <value>Markera alla</value>
+  </data>
+  <data name="lblSelectInverseResource1.Text" xml:space="preserve">
+    <value>Invertera</value>
+  </data>
+  <data name="lblSelectNoneResource1.Text" xml:space="preserve">
+    <value>Ingen</value>
   </data>
 </root>
