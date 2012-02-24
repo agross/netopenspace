@@ -63,7 +63,7 @@
 		name: "picTwitter",
 		match: function (remainder, tweet)
 		{
-			return tweet.entities.media;
+			return tweet.entities && tweet.entities.media;
 		},
 		process: function(remainder, ignored, tweet) {
 			var media = tweet.entities.media[0].media_url;
