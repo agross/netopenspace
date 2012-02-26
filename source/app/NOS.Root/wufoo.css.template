@@ -58,6 +58,10 @@ form.wufoo input.text, form.wufoo textarea.textarea {
 	margin: 0 !important;
 }
 
+form.wufoo input.large, form.wufoo select.large {
+	width: 98% !important;
+}
+
 form.wufoo .buttons {
 	margin-top: 2em;
 }
