@@ -1,0 +1,36 @@
+﻿[
+	{
+		"City": ".NET",
+		"URL": "http://net.spartakiade.org/",
+		"PastEvents":
+		[
+			{
+				"Year": 2012,
+				"URL": "http://net.spartakiade.org/"
+			}
+		],
+		"TwitterSearch": ["#spartanet", "#spataorg"]
+	},
+	{
+		"City": "Development",
+		"URL": "http://nos.local/",
+		"Private": true,
+		"PastEvents":
+		[
+			{
+				"Year": 2006,
+				"URL": "http://nos.local/2006/"
+			},
+			{
+				"Year": 2008,
+				"URL": "http://nos.local/2008/"
+			},
+			{
+				"Year": "dieses Jahr",
+				"URL": "http://nos.local/"
+			}
+
+		],
+		"TwitterSearch": ["from:agross", "twitter"]
+	}
+]

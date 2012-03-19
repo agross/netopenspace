@@ -5,7 +5,7 @@
 		return !(!(/^http:\/\/nos\.local/i.test(document.URL)) && item.Private);
 	}
 	
-	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
+	$.getJSON('http://spartakiade.org/all.json?json=?',
 			function(json)
 			{
 				json = $.grep(json, developmentFilter);
@@ -20,7 +20,7 @@
 					.addClass('buzz')
 					.addClass('no-print')
 					.append($('<div>').addClass('content')
-						.append($('<p>').append($('<a>').attr('href', 'http://live.netopenspace.de/').attr('target', '_blank').attr('title', 'Live-Ticker').text('Buzz').addClass('header')))
+						.append($('<p>').append($('<a>').attr('href', 'http://live.spartakiade.org/').attr('target', '_blank').attr('title', 'Live-Ticker').text('Buzz').addClass('header')))
 						.append($('<div>')
 							.monitter({
 								query: query,

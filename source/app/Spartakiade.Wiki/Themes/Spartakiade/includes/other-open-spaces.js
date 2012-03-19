@@ -42,7 +42,7 @@
 		return list;
 	}
 
-	$.getJSON('http://netopenspace.de/all-net-open-spaces.json?json=?',
+	$.getJSON('http://spartakiade.org/all.json?json=?',
 			function(json)
 			{
 				json = $.grep(json, developmentFilter);
