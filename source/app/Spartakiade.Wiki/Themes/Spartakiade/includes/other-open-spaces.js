@@ -22,6 +22,8 @@
 
 	var buildList = function(items, listClass, listHeader, itemText, itemTitle, itemUrl)
 	{
+		if (!items || items.length === 0) return;
+
 		var ul = $("<ul>");
 
 		var list = $("<div>")
